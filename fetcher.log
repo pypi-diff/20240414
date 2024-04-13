@@ -981,3 +981,20 @@
 [2024-04-14 01:38:48] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.7.tar.gz]
 [2024-04-14 01:38:48] INFO root fetch - main [MainThread]: End processing [gena]: success
 [2024-04-14 01:38:48] INFO root fetch - main [MainThread]: Store serial: [22755505]
+[2024-04-14 01:40:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755505]
+[2024-04-14 01:40:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 01:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlmodel-filters
+[2024-04-14 01:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Heema
+[2024-04-14 01:40:56] INFO root fetch - processPackages [Heema]: New version: [2.0.0.7] Old Version: [2.0.0.5]
+[2024-04-14 01:40:56] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/e2/c6/0dc27fcf2fb54e43114a9e6622a85d309f34090667b11047a6833f72f940/Heema-2.0.0.5.tar.gz
+[2024-04-14 01:40:56] INFO root fetch - processPackages [sqlmodel-filters]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 01:40:56] INFO root fetch - processPackages [sqlmodel-filters]: Downloading https://files.pythonhosted.org/packages/8c/33/a83ad68483272aadce1bafc6da645013d536af8c604d160a643eb559cd91/sqlmodel_filters-0.0.3.tar.gz
+[2024-04-14 01:40:57] ERROR root fetch - processPackages [Heema]: Unable to fetch info: No such project/version 'Heema' 2.0.0.7
+[2024-04-14 01:40:57] INFO root fetch - main [MainThread]: End processing [Heema] error
+[2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: Downloading https://files.pythonhosted.org/packages/f6/e2/587bc83aea50f827da87fc81a51be2e403d6e58663cb1b8f460cf4699331/sqlmodel_filters-0.0.4.tar.gz
+[2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: executing diffoscope
+[2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmodel_filters-0.0.3.tar.gz tmp/sqlmodel_filters-0.0.4.tar.gz --markdown 20240414/s/sqlmodel-filters/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: Remove: archive file [/home/abi/fetcher/tmp/sqlmodel_filters-0.0.3.tar.gz]
+[2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: Remove: archive file [/home/abi/fetcher/tmp/sqlmodel_filters-0.0.4.tar.gz]
+[2024-04-14 01:40:57] INFO root fetch - main [MainThread]: End processing [sqlmodel-filters]: success
+[2024-04-14 01:40:57] INFO root fetch - main [MainThread]: Store serial: [22755513]
