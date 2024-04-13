@@ -218,3 +218,24 @@
 [2024-04-14 00:27:08] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
 [2024-04-14 00:27:08] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
 [2024-04-14 00:27:08] INFO root fetch - main [MainThread]: Store serial: [22755127]
+[2024-04-14 00:29:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755127]
+[2024-04-14 00:29:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lama2923
+[2024-04-14 00:29:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: setuptools
+[2024-04-14 00:29:16] INFO root fetch - processPackages [lama2923]: New version: [0.6] Old Version: [0.5]
+[2024-04-14 00:29:16] INFO root fetch - processPackages [setuptools]: New version: [9.1] Old Version: [9.0.1]
+[2024-04-14 00:29:16] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/a2/58/de4ae86d9c649950df2c73b2c6f013918b02fe0f4e050e620ee426011add/lama2923-0.5.tar.gz
+[2024-04-14 00:29:16] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/16/2c/1ad571e85048c57b4e7ba2218d0fff3db0452e8bfa0c20e1543e26f85121/setuptools-9.0.1.zip
+[2024-04-14 00:29:16] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/a6/4c/087bcbbc844e98f4b0e431f0fdcb741c5629b43193d3b1e759888c6adaac/lama2923-0.6.tar.gz
+[2024-04-14 00:29:16] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-04-14 00:29:16] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-0.5.tar.gz tmp/lama2923-0.6.tar.gz --markdown 20240414/l/lama2923/0.5-0.6/README.md --exclude *.pyd
+[2024-04-14 00:29:17] INFO root fetch - processPackages [setuptools]: Downloading https://files.pythonhosted.org/packages/35/b2/626974cb6f02c4d58c33471b597f6723560f74be322857e9cd24700c3c70/setuptools-9.1.zip
+[2024-04-14 00:29:17] INFO root fetch - processPackages [setuptools]: executing diffoscope
+[2024-04-14 00:29:17] INFO root fetch - processPackages [setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-9.0.1.zip tmp/setuptools-9.1.zip --markdown 20240414/s/setuptools/9.0.1-9.1/README.md --exclude *.pyd
+[2024-04-14 00:29:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.5.tar.gz]
+[2024-04-14 00:29:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.6.tar.gz]
+[2024-04-14 00:29:17] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-04-14 00:29:18] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.0.1.zip]
+[2024-04-14 00:29:18] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
+[2024-04-14 00:29:18] INFO root fetch - main [MainThread]: End processing [setuptools]: success
+[2024-04-14 00:29:18] INFO root fetch - main [MainThread]: Store serial: [22755140]
