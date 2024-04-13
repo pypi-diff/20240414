@@ -475,3 +475,36 @@
 [2024-04-14 00:48:48] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev94.tar.gz]
 [2024-04-14 00:48:48] INFO root fetch - main [MainThread]: End processing [releaserr]: success
 [2024-04-14 00:48:48] INFO root fetch - main [MainThread]: Store serial: [22755244]
+[2024-04-14 00:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755244]
+[2024-04-14 00:50:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 00:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xaivision
+[2024-04-14 00:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleAxel-Pay
+[2024-04-14 00:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulcan-utils
+[2024-04-14 00:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyQtUIkit
+[2024-04-14 00:50:57] INFO root fetch - processPackages [vulcan-utils]: New version: [1.12.2] Old Version: [1.12.1]
+[2024-04-14 00:50:57] INFO root fetch - processPackages [xaivision]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-14 00:50:57] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-04-14 00:50:57] WARNING root fetch - processPackages [SimpleAxel-Pay]: Skipping, unable to determine old version
+[2024-04-14 00:50:57] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Pay] error
+[2024-04-14 00:50:57] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/b1/e4/2af009cd13022b8026a1d9262cc4492ec4c3ed54ba4b75cc1b1680e2b157/vulcan-utils-1.12.1.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/f7/8f/2c9ea98614a7b1e09c79987ea8f26496df35ea06146c371a0e829bfb0997/xaivision-0.2.0.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/4b/1c/300968faf784aa23accdd994c4fbce8a0fc1c5e1182147872b7ba9acbf11/PyQtUIkit-2.4.1.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/e4/49/0029a0c4efeb526c1e5c117023fbadf2974e8f906d70f58c84f9fd2bdd24/xaivision-0.3.0.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/d5/d1/09abca7804019cf2fdae29b15c2f1f2cc128cc7962dc55f3c40ca63837b7/vulcan-utils-1.12.2.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [xaivision]: executing diffoscope
+[2024-04-14 00:50:57] INFO root fetch - processPackages [xaivision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xaivision-0.2.0.tar.gz tmp/xaivision-0.3.0.tar.gz --markdown 20240414/x/xaivision/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-14 00:50:57] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/67/47/0068b4cb90b9cab431ddb04a93f558956785c7c24299023bfade809510c1/PyQtUIkit-2.4.2.tar.gz
+[2024-04-14 00:50:57] INFO root fetch - processPackages [vulcan-utils]: executing diffoscope
+[2024-04-14 00:50:57] INFO root fetch - processPackages [vulcan-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-utils-1.12.1.tar.gz tmp/vulcan-utils-1.12.2.tar.gz --markdown 20240414/v/vulcan-utils/1.12.1-1.12.2/README.md --exclude *.pyd
+[2024-04-14 00:50:58] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-04-14 00:50:58] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.4.1.tar.gz tmp/PyQtUIkit-2.4.2.tar.gz --markdown 20240414/P/PyQtUIkit/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-04-14 00:50:58] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.2.0.tar.gz]
+[2024-04-14 00:50:58] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.3.0.tar.gz]
+[2024-04-14 00:50:58] INFO root fetch - main [MainThread]: End processing [xaivision]: success
+[2024-04-14 00:50:58] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.1.tar.gz]
+[2024-04-14 00:50:58] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.2.tar.gz]
+[2024-04-14 00:50:58] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
+[2024-04-14 00:50:59] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.1.tar.gz]
+[2024-04-14 00:50:59] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.2.tar.gz]
+[2024-04-14 00:50:59] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-04-14 00:50:59] INFO root fetch - main [MainThread]: Store serial: [22755254]
