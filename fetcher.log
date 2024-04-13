@@ -702,3 +702,15 @@
 [2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_adbc-0.1.1.tar.gz]
 [2024-04-14 01:10:32] INFO root fetch - main [MainThread]: End processing [harlequin-adbc]: success
 [2024-04-14 01:10:32] INFO root fetch - main [MainThread]: Store serial: [22755374]
+[2024-04-14 01:12:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755374]
+[2024-04-14 01:12:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 01:12:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SQLDataModel
+[2024-04-14 01:12:40] INFO root fetch - processPackages [SQLDataModel]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-14 01:12:41] INFO root fetch - processPackages [SQLDataModel]: Downloading https://files.pythonhosted.org/packages/e0/21/db77eab3c3c97028b8108196f885fa3664d8c13d102acbb71cd21e1393ee/SQLDataModel-0.3.7.tar.gz
+[2024-04-14 01:12:41] INFO root fetch - processPackages [SQLDataModel]: Downloading https://files.pythonhosted.org/packages/15/2d/f5f255dd538e67b2b5d74b92bf2e44f351e8090fb4fed50902d109f88ce4/SQLDataModel-0.3.8.tar.gz
+[2024-04-14 01:12:41] INFO root fetch - processPackages [SQLDataModel]: executing diffoscope
+[2024-04-14 01:12:41] INFO root fetch - processPackages [SQLDataModel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLDataModel-0.3.7.tar.gz tmp/SQLDataModel-0.3.8.tar.gz --markdown 20240414/S/SQLDataModel/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-14 01:12:42] INFO root fetch - processPackages [SQLDataModel]: Remove: archive file [/home/abi/fetcher/tmp/SQLDataModel-0.3.7.tar.gz]
+[2024-04-14 01:12:42] INFO root fetch - processPackages [SQLDataModel]: Remove: archive file [/home/abi/fetcher/tmp/SQLDataModel-0.3.8.tar.gz]
+[2024-04-14 01:12:42] INFO root fetch - main [MainThread]: End processing [SQLDataModel]: success
+[2024-04-14 01:12:42] INFO root fetch - main [MainThread]: Store serial: [22755378]
