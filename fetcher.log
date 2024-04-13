@@ -1,0 +1,33 @@
+[2024-04-14 00:01:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755048]
+[2024-04-14 00:01:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 00:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llamabot
+[2024-04-14 00:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: europarser
+[2024-04-14 00:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sc-gallery
+[2024-04-14 00:01:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-14 00:01:17] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-14 00:01:17] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/62/b1/e49728d0ae1c3ddfd698d0d0e991113b5bc44e8b6b2840372335e097ff58/dune_rivals-0.3.4.tar.gz
+[2024-04-14 00:01:17] ERROR root fetch - processPackages [sc-gallery]: Unable to get metadata: No such project 'sc-gallery'
+[2024-04-14 00:01:17] INFO root fetch - main [MainThread]: End processing [sc-gallery] error
+[2024-04-14 00:01:17] INFO root fetch - processPackages [llamabot]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-14 00:01:17] INFO root fetch - processPackages [europarser]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 00:01:18] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/46/a6/38701786754d5507967654fcb16f14f7371444d641ed70e77134db5c178f/llamabot-0.4.3.tar.gz
+[2024-04-14 00:01:18] INFO root fetch - processPackages [europarser]: Downloading https://files.pythonhosted.org/packages/03/b7/6120cfc8f91a11be67eff4fe77db2568789f21029734f015df238d550ccd/europarser-0.1.5.tar.gz
+[2024-04-14 00:01:18] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/66/9a/b58aac0b36fcb9de189eadf29a1116a769ea858670f29614413ed6838c9a/dune_rivals-0.3.5.tar.gz
+[2024-04-14 00:01:18] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/f4/32/f98cc6773095b1b0a8544201c4292028c0672f39ba29ca4ebac44d313642/llamabot-0.4.4.tar.gz
+[2024-04-14 00:01:18] INFO root fetch - processPackages [europarser]: Downloading https://files.pythonhosted.org/packages/db/f6/4f999cc30a77b65e212749a983d043662915f855430f791424d7131c71a0/europarser-0.1.6.tar.gz
+[2024-04-14 00:01:18] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:01:18] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.4.tar.gz tmp/dune_rivals-0.3.5.tar.gz --markdown 20240414/d/dune-rivals/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-14 00:01:18] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2024-04-14 00:01:18] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.4.3.tar.gz tmp/llamabot-0.4.4.tar.gz --markdown 20240414/l/llamabot/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-14 00:01:18] INFO root fetch - processPackages [europarser]: executing diffoscope
+[2024-04-14 00:01:18] INFO root fetch - processPackages [europarser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/europarser-0.1.5.tar.gz tmp/europarser-0.1.6.tar.gz --markdown 20240414/e/europarser/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 00:01:18] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.4.tar.gz]
+[2024-04-14 00:01:18] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.5.tar.gz]
+[2024-04-14 00:01:18] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:01:19] INFO root fetch - processPackages [llamabot]: Remove: archive file [/home/abi/fetcher/tmp/llamabot-0.4.3.tar.gz]
+[2024-04-14 00:01:19] INFO root fetch - processPackages [llamabot]: Remove: archive file [/home/abi/fetcher/tmp/llamabot-0.4.4.tar.gz]
+[2024-04-14 00:01:19] INFO root fetch - main [MainThread]: End processing [llamabot]: success
+[2024-04-14 00:01:19] INFO root fetch - processPackages [europarser]: Remove: archive file [/home/abi/fetcher/tmp/europarser-0.1.5.tar.gz]
+[2024-04-14 00:01:19] INFO root fetch - processPackages [europarser]: Remove: archive file [/home/abi/fetcher/tmp/europarser-0.1.6.tar.gz]
+[2024-04-14 00:01:19] INFO root fetch - main [MainThread]: End processing [europarser]: success
+[2024-04-14 00:01:19] INFO root fetch - main [MainThread]: Store serial: [22755063]
