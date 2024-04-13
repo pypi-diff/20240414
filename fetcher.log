@@ -365,3 +365,15 @@
 [2024-04-14 00:40:07] INFO root fetch - processPackages [openmc-plasma-source]: Remove: archive file [/home/abi/fetcher/tmp/openmc_plasma_source-0.3.1.tar.gz]
 [2024-04-14 00:40:07] INFO root fetch - main [MainThread]: End processing [openmc-plasma-source]: success
 [2024-04-14 00:40:07] INFO root fetch - main [MainThread]: Store serial: [22755209]
+[2024-04-14 00:42:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755209]
+[2024-04-14 00:42:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 00:42:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xaivision
+[2024-04-14 00:42:15] INFO root fetch - processPackages [xaivision]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-14 00:42:15] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/b5/66/5e27d0e5f7a2aedd85ae7487a92b1fec05b349ba39a1a591be15e8a0c9bc/xaivision-0.1.0.tar.gz
+[2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: Downloading https://files.pythonhosted.org/packages/f7/8f/2c9ea98614a7b1e09c79987ea8f26496df35ea06146c371a0e829bfb0997/xaivision-0.2.0.tar.gz
+[2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: executing diffoscope
+[2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xaivision-0.1.0.tar.gz tmp/xaivision-0.2.0.tar.gz --markdown 20240414/x/xaivision/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.1.0.tar.gz]
+[2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.2.0.tar.gz]
+[2024-04-14 00:42:16] INFO root fetch - main [MainThread]: End processing [xaivision]: success
+[2024-04-14 00:42:16] INFO root fetch - main [MainThread]: Store serial: [22755212]
