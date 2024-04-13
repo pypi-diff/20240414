@@ -304,3 +304,34 @@
 [2024-04-14 00:35:47] INFO root fetch - processPackages [icad-tone-detection]: Remove: archive file [/home/abi/fetcher/tmp/icad_tone_detection-0.7.tar.gz]
 [2024-04-14 00:35:47] INFO root fetch - main [MainThread]: End processing [icad-tone-detection]: success
 [2024-04-14 00:35:47] INFO root fetch - main [MainThread]: Store serial: [22755192]
+[2024-04-14 00:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755192]
+[2024-04-14 00:37:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 00:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-14 00:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-utils
+[2024-04-14 00:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Simple-Aula7
+[2024-04-14 00:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 00:37:56] INFO root fetch - processPackages [vulcan-utils]: New version: [1.12.1] Old Version: [1.12.0]
+[2024-04-14 00:37:56] WARNING root fetch - processPackages [Simple-Aula7]: Skipping, unable to determine old version
+[2024-04-14 00:37:56] INFO root fetch - main [MainThread]: End processing [Simple-Aula7] error
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/9a/df/a446f2e57c9540ea64efe449667b781adde2ac8340bf644a758bb98eaf96/vulcan-utils-1.12.0.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 00:37:56] INFO root fetch - processPackages [vulcan-utils]: Downloading https://files.pythonhosted.org/packages/b1/e4/2af009cd13022b8026a1d9262cc4492ec4c3ed54ba4b75cc1b1680e2b157/vulcan-utils-1.12.1.tar.gz
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:37:56] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 00:37:56] INFO root fetch - processPackages [vulcan-utils]: executing diffoscope
+[2024-04-14 00:37:56] INFO root fetch - processPackages [vulcan-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-utils-1.12.0.tar.gz tmp/vulcan-utils-1.12.1.tar.gz --markdown 20240414/v/vulcan-utils/1.12.0-1.12.1/README.md --exclude *.pyd
+[2024-04-14 00:37:57] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 00:37:57] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 00:37:57] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:37:57] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:37:57] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.0.tar.gz]
+[2024-04-14 00:37:57] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.1.tar.gz]
+[2024-04-14 00:37:57] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
+[2024-04-14 00:37:57] INFO root fetch - main [MainThread]: Store serial: [22755200]
