@@ -407,3 +407,50 @@
 [2024-04-14 00:44:26] INFO root fetch - processPackages [c2dataviewer]: Remove: archive file [/home/abi/fetcher/tmp/c2dataviewer-1.9.1.tar.gz]
 [2024-04-14 00:44:26] INFO root fetch - main [MainThread]: End processing [c2dataviewer]: success
 [2024-04-14 00:44:26] INFO root fetch - main [MainThread]: Store serial: [22755220]
+[2024-04-14 00:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755220]
+[2024-04-14 00:46:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synnax-freighter
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enma
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synnax
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroblack
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SimpleAxel-Auth
+[2024-04-14 00:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: LedFx
+[2024-04-14 00:46:35] INFO root fetch - processPackages [enma]: New version: [2.4.1] Old Version: [2.3.1]
+[2024-04-14 00:46:35] WARNING root fetch - processPackages [SimpleAxel-Auth]: Skipping, unable to determine old version
+[2024-04-14 00:46:35] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Auth] error
+[2024-04-14 00:46:35] INFO root fetch - processPackages [LedFx]: New version: [2.0.98] Old Version: [2.0.97]
+[2024-04-14 00:46:35] INFO root fetch - processPackages [pyroblack]: New version: [2.3.65] Old Version: [2.3.64]
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax-freighter]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 00:46:35] INFO root fetch - processPackages [enma]: Downloading https://files.pythonhosted.org/packages/ef/62/e3e4f24fc3e140b36e8bb6f0c62151e02c04106f03bdf1414e6fedb05a97/enma-2.3.1.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/4e/11/3be65cff660233c3041ab874c65e8274cd8266db341fb7a407b0eb8215cf/pyroblack-2.3.64.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/c5/d9/664b57d912f0c6522b054ff83f07a4cb4cd63e612fabcab33143ad1021e7/synnax_freighter-0.6.4.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/89/a1/f0d76d0706e47ba3dcdbf0fe8c7b2e90c98bd073d40a3c4c7c1c1025aab8/synnax-0.8.0.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [LedFx]: Downloading https://files.pythonhosted.org/packages/1c/a4/08d755262cf807f7b2c5c3d0f1b511ded29a298c798b165cc5f8020a489d/ledfx-2.0.97.tar.gz
+[2024-04-14 00:46:35] WARNING root fetch - processPackages [LedFx]: Skipping package: exceeds size limit 28042380>=10485760
+[2024-04-14 00:46:35] INFO root fetch - main [MainThread]: End processing [LedFx] error
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/ff/27/10ccdd7fe6528f9b2e5b90ed27f1dd0f0adf282f0d6dd6269797b3680f4c/synnax_freighter-0.6.5.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/b3/bc/76e9b03b96c7ab72f4b39e5e03c396b86efd6fb650bedcff8a7118679e9b/synnax-0.9.0.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/5e/69/13546e4ab73c50a6ef467c6415f1a7954b26fb64eb006c8f8e90952af5df/pyroblack-2.3.65.tar.gz
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax-freighter]: executing diffoscope
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax-freighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax_freighter-0.6.4.tar.gz tmp/synnax_freighter-0.6.5.tar.gz --markdown 20240414/s/synnax-freighter/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax]: executing diffoscope
+[2024-04-14 00:46:35] INFO root fetch - processPackages [synnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax-0.8.0.tar.gz tmp/synnax-0.9.0.tar.gz --markdown 20240414/s/synnax/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 00:46:36] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-04-14 00:46:36] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.64.tar.gz tmp/pyroblack-2.3.65.tar.gz --markdown 20240414/p/pyroblack/2.3.64-2.3.65/README.md --exclude *.pyd
+[2024-04-14 00:46:36] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.4.tar.gz]
+[2024-04-14 00:46:36] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.5.tar.gz]
+[2024-04-14 00:46:36] INFO root fetch - main [MainThread]: End processing [synnax-freighter]: success
+[2024-04-14 00:46:36] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.8.0.tar.gz]
+[2024-04-14 00:46:36] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
+[2024-04-14 00:46:36] INFO root fetch - main [MainThread]: End processing [synnax]: success
+[2024-04-14 00:46:36] INFO root fetch - processPackages [enma]: Downloading https://files.pythonhosted.org/packages/cc/61/b0adf6b3c9642f261a2e376b4f148531a22f2ac2596c35d31b780ee3f86f/enma-2.4.1.tar.gz
+[2024-04-14 00:46:37] INFO root fetch - processPackages [enma]: executing diffoscope
+[2024-04-14 00:46:37] INFO root fetch - processPackages [enma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enma-2.3.1.tar.gz tmp/enma-2.4.1.tar.gz --markdown 20240414/e/enma/2.3.1-2.4.1/README.md --exclude *.pyd
+[2024-04-14 00:46:38] INFO root fetch - processPackages [enma]: Remove: archive file [/home/abi/fetcher/tmp/enma-2.3.1.tar.gz]
+[2024-04-14 00:46:38] INFO root fetch - processPackages [enma]: Remove: archive file [/home/abi/fetcher/tmp/enma-2.4.1.tar.gz]
+[2024-04-14 00:46:38] INFO root fetch - main [MainThread]: End processing [enma]: success
+[2024-04-14 00:46:38] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.64.tar.gz]
+[2024-04-14 00:46:38] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.65.tar.gz]
+[2024-04-14 00:46:38] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-04-14 00:46:38] INFO root fetch - main [MainThread]: Store serial: [22755239]
