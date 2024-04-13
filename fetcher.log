@@ -69,3 +69,24 @@
 [2024-04-14 00:07:44] INFO root fetch - processPackages [pdfCropMargins]: Remove: archive file [/home/abi/fetcher/tmp/pdfCropMargins-2.1.2-py2.py3-none-any.whl.zip]
 [2024-04-14 00:07:44] INFO root fetch - main [MainThread]: End processing [pdfCropMargins]: success
 [2024-04-14 00:07:44] INFO root fetch - main [MainThread]: Store serial: [22755076]
+[2024-04-14 00:09:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755076]
+[2024-04-14 00:09:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-14 00:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudstop
+[2024-04-14 00:09:52] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-14 00:09:52] INFO root fetch - processPackages [fudstop]: New version: [2.4.8] Old Version: [2.4.7]
+[2024-04-14 00:09:52] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/66/9a/b58aac0b36fcb9de189eadf29a1116a769ea858670f29614413ed6838c9a/dune_rivals-0.3.5.tar.gz
+[2024-04-14 00:09:52] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/d2/49/cde2b17482d2f778ff28262ba1401d6bb55767ec0dd9efd5abd8c51dc1b9/fudstop-2.4.7.tar.gz
+[2024-04-14 00:09:52] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/89/6f/04674e40c5a8f0598cf968420849ddb59f02d41b795c1ea004d903cf4f99/dune_rivals-0.3.6.tar.gz
+[2024-04-14 00:09:53] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/ba/5a/dc0876e761c55572c38f48009f9872efaf52563649708c04ef93ff49665f/fudstop-2.4.8.tar.gz
+[2024-04-14 00:09:53] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:09:53] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.5.tar.gz tmp/dune_rivals-0.3.6.tar.gz --markdown 20240414/d/dune-rivals/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-14 00:09:53] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-14 00:09:53] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.7.tar.gz tmp/fudstop-2.4.8.tar.gz --markdown 20240414/f/fudstop/2.4.7-2.4.8/README.md --exclude *.pyd
+[2024-04-14 00:09:53] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.5.tar.gz]
+[2024-04-14 00:09:53] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.6.tar.gz]
+[2024-04-14 00:09:53] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:09:54] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.7.tar.gz]
+[2024-04-14 00:09:54] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.8.tar.gz]
+[2024-04-14 00:09:54] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-14 00:09:54] INFO root fetch - main [MainThread]: Store serial: [22755082]
