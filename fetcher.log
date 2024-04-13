@@ -929,3 +929,27 @@
 [2024-04-14 01:34:22] INFO root fetch - processPackages [tinyflux]: Remove: archive file [/home/abi/fetcher/tmp/tinyflux-0.4.2.tar.gz]
 [2024-04-14 01:34:22] INFO root fetch - main [MainThread]: End processing [tinyflux]: success
 [2024-04-14 01:34:22] INFO root fetch - main [MainThread]: Store serial: [22755483]
+[2024-04-14 01:36:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755483]
+[2024-04-14 01:36:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zoomegastash
+[2024-04-14 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-dlp
+[2024-04-14 01:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wordcel
+[2024-04-14 01:36:30] INFO root fetch - processPackages [wordcel]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 01:36:30] WARNING root fetch - processPackages [zoomegastash]: Skipping, unable to determine old version
+[2024-04-14 01:36:30] INFO root fetch - main [MainThread]: End processing [zoomegastash] error
+[2024-04-14 01:36:30] INFO root fetch - processPackages [yt-dlp]: New version: [2024.4.9.232723.dev0] Old Version: [2024.4.9]
+[2024-04-14 01:36:31] INFO root fetch - processPackages [wordcel]: Downloading https://files.pythonhosted.org/packages/de/6a/e20de61c60d2f9d0be02b7b6a3e81f596583bf03b6334188bec22828fe06/wordcel-0.0.8.tar.gz
+[2024-04-14 01:36:31] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/52/85/af44c30f0cc5d94ebbce365f8ee40eea6e9d7a1d26d50f16e3766ca8410c/yt_dlp-2024.4.9.tar.gz
+[2024-04-14 01:36:31] INFO root fetch - processPackages [wordcel]: Downloading https://files.pythonhosted.org/packages/37/1b/efd0defcf1365657dd7be37fbd0f2c7a68355263d8b1d3f65b1ecf9e001c/wordcel-0.0.9.tar.gz
+[2024-04-14 01:36:31] INFO root fetch - processPackages [wordcel]: executing diffoscope
+[2024-04-14 01:36:31] INFO root fetch - processPackages [wordcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordcel-0.0.8.tar.gz tmp/wordcel-0.0.9.tar.gz --markdown 20240414/w/wordcel/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 01:36:31] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/3d/26/45a9189ceae8b6fa894afcbb6e4dfa15bfa476b1c4750920529f8dce5039/yt_dlp-2024.4.9.232723.dev0.tar.gz
+[2024-04-14 01:36:31] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-04-14 01:36:31] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.4.9.tar.gz tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz --markdown 20240414/y/yt-dlp/2024.4.9-2024.4.9.232723.dev0/README.md --exclude *.pyd
+[2024-04-14 01:36:32] INFO root fetch - processPackages [wordcel]: Remove: archive file [/home/abi/fetcher/tmp/wordcel-0.0.8.tar.gz]
+[2024-04-14 01:36:32] INFO root fetch - processPackages [wordcel]: Remove: archive file [/home/abi/fetcher/tmp/wordcel-0.0.9.tar.gz]
+[2024-04-14 01:36:32] INFO root fetch - main [MainThread]: End processing [wordcel]: success
+[2024-04-14 01:36:37] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.tar.gz]
+[2024-04-14 01:36:37] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz]
+[2024-04-14 01:36:37] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-04-14 01:36:37] INFO root fetch - main [MainThread]: Store serial: [22755494]
