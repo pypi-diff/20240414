@@ -648,3 +648,33 @@
 [2024-04-14 01:06:12] INFO root fetch - processPackages [pyglet]: Remove: archive file [/home/abi/fetcher/tmp/pyglet-2.1.dev2.tar.gz]
 [2024-04-14 01:06:12] INFO root fetch - main [MainThread]: End processing [pyglet]: success
 [2024-04-14 01:06:12] INFO root fetch - main [MainThread]: Store serial: [22755357]
+[2024-04-14 01:08:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755357]
+[2024-04-14 01:08:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:08:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-04-14 01:08:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simple-Aula7
+[2024-04-14 01:08:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apstools
+[2024-04-14 01:08:21] INFO root fetch - processPackages [Simple-Aula7]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 01:08:21] INFO root fetch - processPackages [tmnt]: New version: [0.7.52] Old Version: [0.7.51b20240412]
+[2024-04-14 01:08:21] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/10/f9/658a3c6362b7dc42aec41d3156cffee24a494e7e0b4dfae234d12ba22abd/simple_aula7-0.0.2.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [apstools]: New version: [1.6.9rc1] Old Version: [1.6.9]
+[2024-04-14 01:08:21] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/4a/64/868eeb6a42ed1f7dc3d113a36c8930b7525af3901cbef525c39ca2f2d374/tmnt-0.7.51b20240412.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [apstools]: Downloading https://files.pythonhosted.org/packages/bb/e8/af2920d3a7fedda68a11081779a3935b639643858f29f2c5af211c0c8f6f/apstools-1.6.9.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/b0/fd/88297edd349e4cfd0b8bf25a0330cce541b0bbb94a6f3a63c710f19a819b/simple_aula7-0.0.3.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/70/1c/87e0da8b76dd81f407b337d85760053e4461885301c3330cdaf58b72dab3/tmnt-0.7.52.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [Simple-Aula7]: executing diffoscope
+[2024-04-14 01:08:21] INFO root fetch - processPackages [Simple-Aula7]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_aula7-0.0.2.tar.gz tmp/simple_aula7-0.0.3.tar.gz --markdown 20240414/S/Simple-Aula7/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 01:08:21] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-14 01:08:21] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.51b20240412.tar.gz tmp/tmnt-0.7.52.tar.gz --markdown 20240414/t/tmnt/0.7.51b20240412-0.7.52/README.md --exclude *.pyd
+[2024-04-14 01:08:21] INFO root fetch - processPackages [apstools]: Downloading https://files.pythonhosted.org/packages/d4/ce/7740563ebafc7c2c86fb4241495a359ea6bc1dfda4e7084e39092b35f8ce/apstools-1.6.9rc1.tar.gz
+[2024-04-14 01:08:21] INFO root fetch - processPackages [apstools]: executing diffoscope
+[2024-04-14 01:08:21] INFO root fetch - processPackages [apstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apstools-1.6.9.tar.gz tmp/apstools-1.6.9rc1.tar.gz --markdown 20240414/a/apstools/1.6.9-1.6.9rc1/README.md --exclude *.pyd
+[2024-04-14 01:08:22] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.2.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.3.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - main [MainThread]: End processing [Simple-Aula7]: success
+[2024-04-14 01:08:22] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.51b20240412.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-14 01:08:22] INFO root fetch - processPackages [apstools]: Remove: archive file [/home/abi/fetcher/tmp/apstools-1.6.9.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - processPackages [apstools]: Remove: archive file [/home/abi/fetcher/tmp/apstools-1.6.9rc1.tar.gz]
+[2024-04-14 01:08:22] INFO root fetch - main [MainThread]: End processing [apstools]: success
+[2024-04-14 01:08:22] INFO root fetch - main [MainThread]: Store serial: [22755365]
