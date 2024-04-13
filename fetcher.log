@@ -335,3 +335,33 @@
 [2024-04-14 00:37:57] INFO root fetch - processPackages [vulcan-utils]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-utils-1.12.1.tar.gz]
 [2024-04-14 00:37:57] INFO root fetch - main [MainThread]: End processing [vulcan-utils]: success
 [2024-04-14 00:37:57] INFO root fetch - main [MainThread]: Store serial: [22755200]
+[2024-04-14 00:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755200]
+[2024-04-14 00:40:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 00:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-14 00:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Heema
+[2024-04-14 00:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openmc-plasma-source
+[2024-04-14 00:40:05] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 00:40:05] INFO root fetch - processPackages [Heema]: New version: [2.0.0.1] Old Version: [1.0.0.1]
+[2024-04-14 00:40:05] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/24/df/03f836a815130758393cc4747537fe759b80313bacb938d940a98ded5dae/Heema-1.0.0.1.tar.gz
+[2024-04-14 00:40:05] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 00:40:05] INFO root fetch - processPackages [openmc-plasma-source]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-14 00:40:05] INFO root fetch - processPackages [openmc-plasma-source]: Downloading https://files.pythonhosted.org/packages/ef/af/5e8200b07812608aeaa12bf9ed568123a798dcd6ad9f5d6f57817c39a0bc/openmc_plasma_source-0.3.0.tar.gz
+[2024-04-14 00:40:05] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/f4/2c/88d37d14e57f209a8c4320debf6dd270c554b817a841d659d96a1be4f96c/Heema-2.0.0.1.tar.gz
+[2024-04-14 00:40:05] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 00:40:05] INFO root fetch - processPackages [Heema]: executing diffoscope
+[2024-04-14 00:40:05] INFO root fetch - processPackages [Heema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Heema-1.0.0.1.tar.gz tmp/Heema-2.0.0.1.tar.gz --markdown 20240414/H/Heema/1.0.0.1-2.0.0.1/README.md --exclude *.pyd
+[2024-04-14 00:40:05] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:40:05] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 00:40:06] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-1.0.0.1.tar.gz]
+[2024-04-14 00:40:06] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.1.tar.gz]
+[2024-04-14 00:40:06] INFO root fetch - main [MainThread]: End processing [Heema]: success
+[2024-04-14 00:40:06] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 00:40:06] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 00:40:06] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:40:06] INFO root fetch - processPackages [openmc-plasma-source]: Downloading https://files.pythonhosted.org/packages/17/d9/f3cdfb827e6364bc71cf252c597830a28a545aaa7af6e2637283a8edcd81/openmc_plasma_source-0.3.1.tar.gz
+[2024-04-14 00:40:06] INFO root fetch - processPackages [openmc-plasma-source]: executing diffoscope
+[2024-04-14 00:40:06] INFO root fetch - processPackages [openmc-plasma-source]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmc_plasma_source-0.3.0.tar.gz tmp/openmc_plasma_source-0.3.1.tar.gz --markdown 20240414/o/openmc-plasma-source/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-14 00:40:07] INFO root fetch - processPackages [openmc-plasma-source]: Remove: archive file [/home/abi/fetcher/tmp/openmc_plasma_source-0.3.0.tar.gz]
+[2024-04-14 00:40:07] INFO root fetch - processPackages [openmc-plasma-source]: Remove: archive file [/home/abi/fetcher/tmp/openmc_plasma_source-0.3.1.tar.gz]
+[2024-04-14 00:40:07] INFO root fetch - main [MainThread]: End processing [openmc-plasma-source]: success
+[2024-04-14 00:40:07] INFO root fetch - main [MainThread]: Store serial: [22755209]
