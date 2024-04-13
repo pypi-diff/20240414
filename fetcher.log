@@ -627,3 +627,24 @@
 [2024-04-14 01:04:00] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/denoising-diffusion-pytorch-1.9.6.tar.gz]
 [2024-04-14 01:04:00] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
 [2024-04-14 01:04:00] INFO root fetch - main [MainThread]: Store serial: [22755348]
+[2024-04-14 01:06:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755348]
+[2024-04-14 01:06:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 01:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglet
+[2024-04-14 01:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleAxel-Account
+[2024-04-14 01:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SimpleAxel-Pay
+[2024-04-14 01:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimpleAxel-Auth
+[2024-04-14 01:06:08] WARNING root fetch - processPackages [SimpleAxel-Account]: Skipping, unable to determine old version
+[2024-04-14 01:06:08] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Account] error
+[2024-04-14 01:06:08] WARNING root fetch - processPackages [SimpleAxel-Auth]: Skipping, unable to determine old version
+[2024-04-14 01:06:08] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Auth] error
+[2024-04-14 01:06:08] WARNING root fetch - processPackages [SimpleAxel-Pay]: Skipping, unable to determine old version
+[2024-04-14 01:06:08] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Pay] error
+[2024-04-14 01:06:08] INFO root fetch - processPackages [pyglet]: New version: [2.1.dev2] Old Version: [2.1.dev1]
+[2024-04-14 01:06:08] INFO root fetch - processPackages [pyglet]: Downloading https://files.pythonhosted.org/packages/7e/21/a514b8358e5f3c49e54edd055637ecb8e6f52af2d9c25bd0d9435c9fa6e0/pyglet-2.1.dev1.tar.gz
+[2024-04-14 01:06:09] INFO root fetch - processPackages [pyglet]: Downloading https://files.pythonhosted.org/packages/49/c8/02cc0eb8407c7b7c0181ebf2ab72bc46acd2db41c8a50efb67fb145ca5c8/pyglet-2.1.dev2.tar.gz
+[2024-04-14 01:06:10] INFO root fetch - processPackages [pyglet]: executing diffoscope
+[2024-04-14 01:06:10] INFO root fetch - processPackages [pyglet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglet-2.1.dev1.tar.gz tmp/pyglet-2.1.dev2.tar.gz --markdown 20240414/p/pyglet/2.1.dev1-2.1.dev2/README.md --exclude *.pyd
+[2024-04-14 01:06:12] INFO root fetch - processPackages [pyglet]: Remove: archive file [/home/abi/fetcher/tmp/pyglet-2.1.dev1.tar.gz]
+[2024-04-14 01:06:12] INFO root fetch - processPackages [pyglet]: Remove: archive file [/home/abi/fetcher/tmp/pyglet-2.1.dev2.tar.gz]
+[2024-04-14 01:06:12] INFO root fetch - main [MainThread]: End processing [pyglet]: success
+[2024-04-14 01:06:12] INFO root fetch - main [MainThread]: Store serial: [22755357]
