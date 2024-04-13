@@ -953,3 +953,31 @@
 [2024-04-14 01:36:37] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz]
 [2024-04-14 01:36:37] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-04-14 01:36:37] INFO root fetch - main [MainThread]: Store serial: [22755494]
+[2024-04-14 01:38:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755494]
+[2024-04-14 01:38:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gena
+[2024-04-14 01:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easyencryption
+[2024-04-14 01:38:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easyencryption
+[2024-04-14 01:38:46] INFO root fetch - processPackages [easyencryption]: New version: [0.2.0.2] Old Version: [0.2.0.1]
+[2024-04-14 01:38:46] INFO root fetch - processPackages [easyencryption]: New version: [0.2.0.2] Old Version: [0.2.0.1]
+[2024-04-14 01:38:46] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/30/8e/28172a48610d4a1e15754817ff0f63680a2a856f76a69458743506122241/easyencryption-0.2.0.1.tar.gz
+[2024-04-14 01:38:46] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/30/8e/28172a48610d4a1e15754817ff0f63680a2a856f76a69458743506122241/easyencryption-0.2.0.1.tar.gz
+[2024-04-14 01:38:46] INFO root fetch - processPackages [gena]: New version: [1.6.7] Old Version: [1.6.6]
+[2024-04-14 01:38:47] INFO root fetch - processPackages [gena]: Downloading https://files.pythonhosted.org/packages/ea/c1/180414b3b92e8c2eb54eb7284798961cf19267f3e095287cfdae9c71210d/gena-1.6.6.tar.gz
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/df/89/8d2cf806345f7077d2cc7c2b25ffe2f39508686694384372b164386bfe1d/easyencryption-0.2.0.2.tar.gz
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: Downloading https://files.pythonhosted.org/packages/df/89/8d2cf806345f7077d2cc7c2b25ffe2f39508686694384372b164386bfe1d/easyencryption-0.2.0.2.tar.gz
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: executing diffoscope
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: executing diffoscope
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyencryption-0.2.0.1.tar.gz tmp/easyencryption-0.2.0.2.tar.gz --markdown 20240414/e/easyencryption/0.2.0.1-0.2.0.2/README.md --exclude *.pyd
+[2024-04-14 01:38:47] INFO root fetch - processPackages [easyencryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyencryption-0.2.0.1.tar.gz tmp/easyencryption-0.2.0.2.tar.gz --markdown 20240414/e/easyencryption/0.2.0.1-0.2.0.2/README.md --exclude *.pyd
+[2024-04-14 01:38:47] INFO root fetch - processPackages [gena]: Downloading https://files.pythonhosted.org/packages/d1/18/ad34db0d6d9d91039ea5447a4ba6591acb5d74ac3e33d632d3e8322dc195/gena-1.6.7.tar.gz
+[2024-04-14 01:38:47] INFO root fetch - processPackages [gena]: executing diffoscope
+[2024-04-14 01:38:47] INFO root fetch - processPackages [gena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gena-1.6.6.tar.gz tmp/gena-1.6.7.tar.gz --markdown 20240414/g/gena/1.6.6-1.6.7/README.md --exclude *.pyd
+[2024-04-14 01:38:48] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.0.1.tar.gz]
+[2024-04-14 01:38:48] INFO root fetch - processPackages [easyencryption]: Remove: archive file [/home/abi/fetcher/tmp/easyencryption-0.2.0.2.tar.gz]
+[2024-04-14 01:38:48] INFO root fetch - main [MainThread]: End processing [easyencryption]: success
+[2024-04-14 01:38:48] INFO root fetch - main [MainThread]: End processing [easyencryption]: success
+[2024-04-14 01:38:48] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.6.tar.gz]
+[2024-04-14 01:38:48] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.7.tar.gz]
+[2024-04-14 01:38:48] INFO root fetch - main [MainThread]: End processing [gena]: success
+[2024-04-14 01:38:48] INFO root fetch - main [MainThread]: Store serial: [22755505]
