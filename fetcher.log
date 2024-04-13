@@ -164,3 +164,24 @@
 [2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: Remove: archive file [/home/abi/fetcher/tmp/pars_hitmotop-0.0.8.tar.gz]
 [2024-04-14 00:20:39] INFO root fetch - main [MainThread]: End processing [pars-hitmotop]: success
 [2024-04-14 00:20:39] INFO root fetch - main [MainThread]: Store serial: [22755109]
+[2024-04-14 00:22:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755109]
+[2024-04-14 00:22:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agentrun
+[2024-04-14 00:22:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Tooldelta
+[2024-04-14 00:22:47] INFO root fetch - processPackages [agentrun]: New version: [0.1a0] Old Version: [0.1.1]
+[2024-04-14 00:22:47] INFO root fetch - processPackages [Tooldelta]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-04-14 00:22:48] INFO root fetch - processPackages [agentrun]: Downloading https://files.pythonhosted.org/packages/ba/02/d3bb2a58d3c65a9978d7d6d5a780712011b8ac525b163781d66c84d560bc/agentrun-0.1.1.tar.gz
+[2024-04-14 00:22:48] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/1f/f5/f48e66193791d2a764ce152ec99c43ef19351454731d6fe1b69560abc87f/tooldelta-0.4.9.tar.gz
+[2024-04-14 00:22:48] INFO root fetch - processPackages [agentrun]: Downloading https://files.pythonhosted.org/packages/41/63/862f24fdc29696f5210e9b4190a12cc8e0516d0e51554e001070f9cce525/agentrun-0.1a0.tar.gz
+[2024-04-14 00:22:48] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/ef/cf/2c6ce5ddffc59276077d817f51886011579d1d15c17a3a5c67b2372c6137/tooldelta-0.5.0.tar.gz
+[2024-04-14 00:22:48] INFO root fetch - processPackages [agentrun]: executing diffoscope
+[2024-04-14 00:22:48] INFO root fetch - processPackages [agentrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentrun-0.1.1.tar.gz tmp/agentrun-0.1a0.tar.gz --markdown 20240414/a/agentrun/0.1.1-0.1a0/README.md --exclude *.pyd
+[2024-04-14 00:22:48] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-04-14 00:22:48] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.4.9.tar.gz tmp/tooldelta-0.5.0.tar.gz --markdown 20240414/T/Tooldelta/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-04-14 00:22:49] INFO root fetch - processPackages [agentrun]: Remove: archive file [/home/abi/fetcher/tmp/agentrun-0.1.1.tar.gz]
+[2024-04-14 00:22:49] INFO root fetch - processPackages [agentrun]: Remove: archive file [/home/abi/fetcher/tmp/agentrun-0.1a0.tar.gz]
+[2024-04-14 00:22:49] INFO root fetch - main [MainThread]: End processing [agentrun]: success
+[2024-04-14 00:22:49] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.4.9.tar.gz]
+[2024-04-14 00:22:49] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.0.tar.gz]
+[2024-04-14 00:22:49] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-04-14 00:22:49] INFO root fetch - main [MainThread]: Store serial: [22755115]
