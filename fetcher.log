@@ -885,3 +885,20 @@
 [2024-04-14 01:30:02] INFO root fetch - processPackages [onnx-graphsurgeon]: Remove: archive file [/home/abi/fetcher/tmp/onnx_graphsurgeon-0.5.2-py2.py3-none-any.whl.zip]
 [2024-04-14 01:30:02] INFO root fetch - main [MainThread]: End processing [onnx-graphsurgeon]: success
 [2024-04-14 01:30:02] INFO root fetch - main [MainThread]: Store serial: [22755463]
+[2024-04-14 01:32:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755463]
+[2024-04-14 01:32:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 01:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onnx-graphsurgeon
+[2024-04-14 01:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AITracker
+[2024-04-14 01:32:11] INFO root fetch - processPackages [onnx-graphsurgeon]: New version: [0.5.2] Old Version: [0.0.1.dev5]
+[2024-04-14 01:32:11] INFO root fetch - processPackages [AITracker]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-14 01:32:11] INFO root fetch - processPackages [onnx-graphsurgeon]: Downloading https://files.pythonhosted.org/packages/e8/c8/26f338891498d8a193a9d1698832399979636273f26a67a555e3952a3a7f/onnx-graphsurgeon-0.0.1.dev5.tar.gz
+[2024-04-14 01:32:11] INFO root fetch - processPackages [AITracker]: Downloading https://files.pythonhosted.org/packages/dc/d7/38ea085db8ceadb47cb7198344671aa7e0bc0a00a412d8caca03038f119b/AITracker-0.9.7.tar.gz
+[2024-04-14 01:32:11] WARNING root fetch - processPackages [AITracker]: Skipping package: exceeds size limit 26179679>=10485760
+[2024-04-14 01:32:11] INFO root fetch - main [MainThread]: End processing [AITracker] error
+[2024-04-14 01:32:11] INFO root fetch - processPackages [onnx-graphsurgeon]: Downloading https://files.pythonhosted.org/packages/0d/20/93e7143af3a0b3b3d9f3306bfc46e55d0d307242b4c1bf36ff108460e5a3/onnx_graphsurgeon-0.5.2-py2.py3-none-any.whl
+[2024-04-14 01:32:11] INFO root fetch - processPackages [onnx-graphsurgeon]: executing diffoscope
+[2024-04-14 01:32:11] INFO root fetch - processPackages [onnx-graphsurgeon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx-graphsurgeon-0.0.1.dev5.tar.gz tmp/onnx_graphsurgeon-0.5.2-py2.py3-none-any.whl.zip --markdown 20240414/o/onnx-graphsurgeon/0.0.1.dev5-0.5.2/README.md --exclude *.pyd
+[2024-04-14 01:32:12] INFO root fetch - processPackages [onnx-graphsurgeon]: Remove: archive file [/home/abi/fetcher/tmp/onnx-graphsurgeon-0.0.1.dev5.tar.gz]
+[2024-04-14 01:32:12] INFO root fetch - processPackages [onnx-graphsurgeon]: Remove: archive file [/home/abi/fetcher/tmp/onnx_graphsurgeon-0.5.2-py2.py3-none-any.whl.zip]
+[2024-04-14 01:32:12] INFO root fetch - main [MainThread]: End processing [onnx-graphsurgeon]: success
+[2024-04-14 01:32:12] INFO root fetch - main [MainThread]: Store serial: [22755468]
