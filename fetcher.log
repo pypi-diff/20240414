@@ -902,3 +902,30 @@
 [2024-04-14 01:32:12] INFO root fetch - processPackages [onnx-graphsurgeon]: Remove: archive file [/home/abi/fetcher/tmp/onnx_graphsurgeon-0.5.2-py2.py3-none-any.whl.zip]
 [2024-04-14 01:32:12] INFO root fetch - main [MainThread]: End processing [onnx-graphsurgeon]: success
 [2024-04-14 01:32:12] INFO root fetch - main [MainThread]: Store serial: [22755468]
+[2024-04-14 01:34:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755468]
+[2024-04-14 01:34:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 01:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hearthistory
+[2024-04-14 01:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinyflux
+[2024-04-14 01:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Heema
+[2024-04-14 01:34:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: comfy-cli
+[2024-04-14 01:34:21] INFO root fetch - processPackages [Heema]: New version: [2.0.0.5] Old Version: [2.0.0.4]
+[2024-04-14 01:34:21] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/cd/67/1c60de2e0279097d78307d80f8c56cc0cffa5134ad1e75c58c1891cf6647/Heema-2.0.0.4.tar.gz
+[2024-04-14 01:34:21] INFO root fetch - processPackages [tinyflux]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-14 01:34:21] WARNING root fetch - processPackages [comfy-cli]: Skipping, unable to determine old version
+[2024-04-14 01:34:21] INFO root fetch - main [MainThread]: End processing [comfy-cli] error
+[2024-04-14 01:34:21] WARNING root fetch - processPackages [hearthistory]: Skipping, unable to determine old version
+[2024-04-14 01:34:21] INFO root fetch - main [MainThread]: End processing [hearthistory] error
+[2024-04-14 01:34:21] INFO root fetch - processPackages [tinyflux]: Downloading https://files.pythonhosted.org/packages/b6/59/88d49a1e723db0d05c2c7ed46a543e3e9b3d4ec42d9f5bdd05aff61b04ea/tinyflux-0.4.1.tar.gz
+[2024-04-14 01:34:21] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/e2/c6/0dc27fcf2fb54e43114a9e6622a85d309f34090667b11047a6833f72f940/Heema-2.0.0.5.tar.gz
+[2024-04-14 01:34:21] INFO root fetch - processPackages [Heema]: executing diffoscope
+[2024-04-14 01:34:21] INFO root fetch - processPackages [Heema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Heema-2.0.0.4.tar.gz tmp/Heema-2.0.0.5.tar.gz --markdown 20240414/H/Heema/2.0.0.4-2.0.0.5/README.md --exclude *.pyd
+[2024-04-14 01:34:21] INFO root fetch - processPackages [tinyflux]: Downloading https://files.pythonhosted.org/packages/d4/8a/4a099822262318ab9e0e3e9f40b1e71a3301712899f8c1e172ac97d3cd70/tinyflux-0.4.2.tar.gz
+[2024-04-14 01:34:21] INFO root fetch - processPackages [tinyflux]: executing diffoscope
+[2024-04-14 01:34:21] INFO root fetch - processPackages [tinyflux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyflux-0.4.1.tar.gz tmp/tinyflux-0.4.2.tar.gz --markdown 20240414/t/tinyflux/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-14 01:34:22] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.4.tar.gz]
+[2024-04-14 01:34:22] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.5.tar.gz]
+[2024-04-14 01:34:22] INFO root fetch - main [MainThread]: End processing [Heema]: success
+[2024-04-14 01:34:22] INFO root fetch - processPackages [tinyflux]: Remove: archive file [/home/abi/fetcher/tmp/tinyflux-0.4.1.tar.gz]
+[2024-04-14 01:34:22] INFO root fetch - processPackages [tinyflux]: Remove: archive file [/home/abi/fetcher/tmp/tinyflux-0.4.2.tar.gz]
+[2024-04-14 01:34:22] INFO root fetch - main [MainThread]: End processing [tinyflux]: success
+[2024-04-14 01:34:22] INFO root fetch - main [MainThread]: Store serial: [22755483]
