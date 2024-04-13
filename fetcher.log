@@ -206,3 +206,15 @@
 [2024-04-14 00:24:58] INFO root fetch - processPackages [SimpleSDK]: Remove: archive file [/home/abi/fetcher/tmp/simplesdk-0.0.2.tar.gz]
 [2024-04-14 00:24:58] INFO root fetch - main [MainThread]: End processing [SimpleSDK]: success
 [2024-04-14 00:24:58] INFO root fetch - main [MainThread]: Store serial: [22755122]
+[2024-04-14 00:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755122]
+[2024-04-14 00:27:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 00:27:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbrownell-DevTools
+[2024-04-14 00:27:07] INFO root fetch - processPackages [dbrownell-DevTools]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-14 00:27:07] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/e4/4d/0e19372b5607400e51d720966eaf41f18a1b6b007cc87ac6eb6d9f8becb6/dbrownell_DevTools-0.8.1-py3-none-any.whl
+[2024-04-14 00:27:07] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/6a/4c/d64b516137d9b57df6580e99ae3c7beb287715418efefbdf0c8260ba6e5d/dbrownell_DevTools-0.9.0-py3-none-any.whl
+[2024-04-14 00:27:07] INFO root fetch - processPackages [dbrownell-DevTools]: executing diffoscope
+[2024-04-14 00:27:07] INFO root fetch - processPackages [dbrownell-DevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip --markdown 20240414/d/dbrownell-DevTools/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-14 00:27:08] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip]
+[2024-04-14 00:27:08] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
+[2024-04-14 00:27:08] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
+[2024-04-14 00:27:08] INFO root fetch - main [MainThread]: Store serial: [22755127]
