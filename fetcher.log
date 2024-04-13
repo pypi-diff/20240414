@@ -837,3 +837,15 @@
 [2024-04-14 01:23:31] INFO root fetch - processPackages [taskiq-psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/taskiq_psqlpy-0.1.2.tar.gz]
 [2024-04-14 01:23:31] INFO root fetch - main [MainThread]: End processing [taskiq-psqlpy]: success
 [2024-04-14 01:23:31] INFO root fetch - main [MainThread]: Store serial: [22755427]
+[2024-04-14 01:25:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755427]
+[2024-04-14 01:25:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 01:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zrb-noto
+[2024-04-14 01:25:40] INFO root fetch - processPackages [zrb-noto]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 01:25:40] INFO root fetch - processPackages [zrb-noto]: Downloading https://files.pythonhosted.org/packages/7e/e5/c0af5ce6a13bfc5c2766a125c522f959175a8acc29cdcd5acb451e9300d9/zrb_noto-0.0.4.tar.gz
+[2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: Downloading https://files.pythonhosted.org/packages/54/a1/078a48373aa9a6daeeca0fd3a8b19a85139da7b70352b723931ff0973bc1/zrb_noto-0.0.5.tar.gz
+[2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: executing diffoscope
+[2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb_noto-0.0.4.tar.gz tmp/zrb_noto-0.0.5.tar.gz --markdown 20240414/z/zrb-noto/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: Remove: archive file [/home/abi/fetcher/tmp/zrb_noto-0.0.4.tar.gz]
+[2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: Remove: archive file [/home/abi/fetcher/tmp/zrb_noto-0.0.5.tar.gz]
+[2024-04-14 01:25:41] INFO root fetch - main [MainThread]: End processing [zrb-noto]: success
+[2024-04-14 01:25:41] INFO root fetch - main [MainThread]: Store serial: [22755430]
