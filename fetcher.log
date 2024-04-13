@@ -583,3 +583,20 @@
 [2024-04-14 00:59:40] INFO root fetch - processPackages [airbyte-source-shopify]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_shopify-2.0.5.dev202404132146.tar.gz]
 [2024-04-14 00:59:40] INFO root fetch - main [MainThread]: End processing [airbyte-source-shopify]: success
 [2024-04-14 00:59:40] INFO root fetch - main [MainThread]: Store serial: [22755283]
+[2024-04-14 01:01:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755283]
+[2024-04-14 01:01:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 01:01:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gb-io
+[2024-04-14 01:01:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codebase-to-text
+[2024-04-14 01:01:48] INFO root fetch - processPackages [codebase-to-text]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-14 01:01:48] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/19/07/504a39bf7edacbde5265e7aea9938a9daf1bdfd37517af918fcf40beaa07/codebase-to-text-1.0.3.tar.gz
+[2024-04-14 01:01:49] INFO root fetch - processPackages [gb-io]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-14 01:01:49] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/02/b1/30adc885f85b8185f4c0c87635506dd3e7ec50f729865d0848ad19f5844a/codebase-to-text-1.0.4.tar.gz
+[2024-04-14 01:01:49] INFO root fetch - processPackages [codebase-to-text]: executing diffoscope
+[2024-04-14 01:01:49] INFO root fetch - processPackages [codebase-to-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebase-to-text-1.0.3.tar.gz tmp/codebase-to-text-1.0.4.tar.gz --markdown 20240414/c/codebase-to-text/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-14 01:01:49] INFO root fetch - processPackages [gb-io]: Downloading https://files.pythonhosted.org/packages/81/9f/a0dbbbc0a69138672d83ec2ecf9f4627eaafe945b25c833351b7f6186ac9/gb-io-0.3.2.tar.gz
+[2024-04-14 01:01:49] WARNING root fetch - processPackages [gb-io]: Skipping package: exceeds size limit 18442576>=10485760
+[2024-04-14 01:01:49] INFO root fetch - main [MainThread]: End processing [gb-io] error
+[2024-04-14 01:01:49] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.3.tar.gz]
+[2024-04-14 01:01:49] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.4.tar.gz]
+[2024-04-14 01:01:49] INFO root fetch - main [MainThread]: End processing [codebase-to-text]: success
+[2024-04-14 01:01:49] INFO root fetch - main [MainThread]: Store serial: [22755299]
