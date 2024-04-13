@@ -377,3 +377,33 @@
 [2024-04-14 00:42:16] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.2.0.tar.gz]
 [2024-04-14 00:42:16] INFO root fetch - main [MainThread]: End processing [xaivision]: success
 [2024-04-14 00:42:16] INFO root fetch - main [MainThread]: Store serial: [22755212]
+[2024-04-14 00:44:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755212]
+[2024-04-14 00:44:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 00:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: c2dataviewer
+[2024-04-14 00:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alamos
+[2024-04-14 00:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Simple-Aula7
+[2024-04-14 00:44:25] INFO root fetch - processPackages [Simple-Aula7]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 00:44:25] INFO root fetch - processPackages [c2dataviewer]: New version: [1.9.1] Old Version: [1.8.4]
+[2024-04-14 00:44:25] INFO root fetch - processPackages [alamos]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-14 00:44:25] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/15/be/e6e0d8868ea6a5c9780a8589d86556eb818e5207d10c2d5313a2de3635a9/simple_aula7-0.0.1.tar.gz
+[2024-04-14 00:44:25] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/5f/62/620b1598e078ddfdce66aad784feee70775fd060cb1be6c7dd327c5c7696/alamos-0.3.4.tar.gz
+[2024-04-14 00:44:25] INFO root fetch - processPackages [c2dataviewer]: Downloading https://files.pythonhosted.org/packages/48/be/b690a6815551c375fa00d8bc1f29b07e826fb3aa140edf3de0a7ebd6e620/c2dataviewer-1.8.4.tar.gz
+[2024-04-14 00:44:25] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/10/f9/658a3c6362b7dc42aec41d3156cffee24a494e7e0b4dfae234d12ba22abd/simple_aula7-0.0.2.tar.gz
+[2024-04-14 00:44:25] INFO root fetch - processPackages [Simple-Aula7]: executing diffoscope
+[2024-04-14 00:44:25] INFO root fetch - processPackages [Simple-Aula7]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_aula7-0.0.1.tar.gz tmp/simple_aula7-0.0.2.tar.gz --markdown 20240414/S/Simple-Aula7/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 00:44:25] INFO root fetch - processPackages [c2dataviewer]: Downloading https://files.pythonhosted.org/packages/6e/d7/61e00b2c5d5314b8b13ca50d06210896507467777f521c8c76f7fdabd72d/c2dataviewer-1.9.1.tar.gz
+[2024-04-14 00:44:25] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c7/af/aa0a689256583f2fbbb92b25ab0a2e07ca51633c64d4687f919969295cad/alamos-0.3.5.tar.gz
+[2024-04-14 00:44:26] INFO root fetch - processPackages [c2dataviewer]: executing diffoscope
+[2024-04-14 00:44:26] INFO root fetch - processPackages [c2dataviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c2dataviewer-1.8.4.tar.gz tmp/c2dataviewer-1.9.1.tar.gz --markdown 20240414/c/c2dataviewer/1.8.4-1.9.1/README.md --exclude *.pyd
+[2024-04-14 00:44:26] INFO root fetch - processPackages [alamos]: executing diffoscope
+[2024-04-14 00:44:26] INFO root fetch - processPackages [alamos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alamos-0.3.4.tar.gz tmp/alamos-0.3.5.tar.gz --markdown 20240414/a/alamos/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-14 00:44:26] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.1.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.2.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - main [MainThread]: End processing [Simple-Aula7]: success
+[2024-04-14 00:44:26] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.4.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.5.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - main [MainThread]: End processing [alamos]: success
+[2024-04-14 00:44:26] INFO root fetch - processPackages [c2dataviewer]: Remove: archive file [/home/abi/fetcher/tmp/c2dataviewer-1.8.4.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - processPackages [c2dataviewer]: Remove: archive file [/home/abi/fetcher/tmp/c2dataviewer-1.9.1.tar.gz]
+[2024-04-14 00:44:26] INFO root fetch - main [MainThread]: End processing [c2dataviewer]: success
+[2024-04-14 00:44:26] INFO root fetch - main [MainThread]: Store serial: [22755220]
