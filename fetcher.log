@@ -1115,3 +1115,35 @@
 [2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.9.tar.gz]
 [2024-04-14 01:49:38] INFO root fetch - main [MainThread]: End processing [Heema]: success
 [2024-04-14 01:49:38] INFO root fetch - main [MainThread]: Store serial: [22755586]
+[2024-04-14 01:51:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755586]
+[2024-04-14 01:51:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 01:53:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755592]
+[2024-04-14 01:53:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cad-to-dagmc
+[2024-04-14 01:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autopipeline
+[2024-04-14 01:53:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tinyflux
+[2024-04-14 01:53:52] INFO root fetch - processPackages [tinyflux]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-14 01:53:52] INFO root fetch - processPackages [tinyflux]: Downloading https://files.pythonhosted.org/packages/b6/59/88d49a1e723db0d05c2c7ed46a543e3e9b3d4ec42d9f5bdd05aff61b04ea/tinyflux-0.4.1.tar.gz
+[2024-04-14 01:53:52] INFO root fetch - processPackages [cad-to-dagmc]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-04-14 01:53:52] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 01:53:52] INFO root fetch - processPackages [cad-to-dagmc]: Downloading https://files.pythonhosted.org/packages/7c/ff/d1ce2cad3219aeb78ad053a2aaaf9567e9e8d286e1da5989f51c688fc551/cad_to_dagmc-0.6.2.tar.gz
+[2024-04-14 01:53:52] INFO root fetch - processPackages [tinyflux]: Downloading https://files.pythonhosted.org/packages/d4/8a/4a099822262318ab9e0e3e9f40b1e71a3301712899f8c1e172ac97d3cd70/tinyflux-0.4.2.tar.gz
+[2024-04-14 01:53:52] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 01:53:53] INFO root fetch - processPackages [tinyflux]: executing diffoscope
+[2024-04-14 01:53:53] INFO root fetch - processPackages [tinyflux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyflux-0.4.1.tar.gz tmp/tinyflux-0.4.2.tar.gz --markdown 20240414/t/tinyflux/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-14 01:53:53] INFO root fetch - processPackages [cad-to-dagmc]: Downloading https://files.pythonhosted.org/packages/eb/d8/6217cadcaaf4aab280299a8891d854bb604fde5d3db1579fc54b77ca48ef/cad_to_dagmc-0.7.0.tar.gz
+[2024-04-14 01:53:53] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 01:53:53] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 01:53:53] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 01:53:53] INFO root fetch - processPackages [cad-to-dagmc]: executing diffoscope
+[2024-04-14 01:53:53] INFO root fetch - processPackages [cad-to-dagmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cad_to_dagmc-0.6.2.tar.gz tmp/cad_to_dagmc-0.7.0.tar.gz --markdown 20240414/c/cad-to-dagmc/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-04-14 01:53:53] INFO root fetch - processPackages [tinyflux]: Remove: archive file [/home/abi/fetcher/tmp/tinyflux-0.4.1.tar.gz]
+[2024-04-14 01:53:53] INFO root fetch - processPackages [tinyflux]: Remove: archive file [/home/abi/fetcher/tmp/tinyflux-0.4.2.tar.gz]
+[2024-04-14 01:53:53] INFO root fetch - main [MainThread]: End processing [tinyflux]: success
+[2024-04-14 01:53:53] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 01:53:53] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 01:53:53] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 01:53:54] INFO root fetch - processPackages [cad-to-dagmc]: Remove: archive file [/home/abi/fetcher/tmp/cad_to_dagmc-0.6.2.tar.gz]
+[2024-04-14 01:53:54] INFO root fetch - processPackages [cad-to-dagmc]: Remove: archive file [/home/abi/fetcher/tmp/cad_to_dagmc-0.7.0.tar.gz]
+[2024-04-14 01:53:54] INFO root fetch - main [MainThread]: End processing [cad-to-dagmc]: success
+[2024-04-14 01:53:54] INFO root fetch - main [MainThread]: Store serial: [22755601]
