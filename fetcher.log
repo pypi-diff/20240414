@@ -55,3 +55,17 @@
 [2024-04-14 00:03:29] INFO root fetch - processPackages [vcorelib]: Remove: archive file [/home/abi/fetcher/tmp/vcorelib-3.2.3.tar.gz]
 [2024-04-14 00:03:29] INFO root fetch - main [MainThread]: End processing [vcorelib]: success
 [2024-04-14 00:03:29] INFO root fetch - main [MainThread]: Store serial: [22755074]
+[2024-04-14 00:05:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755074]
+[2024-04-14 00:05:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 00:07:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755074]
+[2024-04-14 00:07:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 00:07:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdfCropMargins
+[2024-04-14 00:07:42] INFO root fetch - processPackages [pdfCropMargins]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-14 00:07:43] INFO root fetch - processPackages [pdfCropMargins]: Downloading https://files.pythonhosted.org/packages/65/7c/75e83350be2d55de194a8c36ea5599cef360df784901c5f9c4f969783c1f/pdfCropMargins-2.1.1-py2.py3-none-any.whl
+[2024-04-14 00:07:43] INFO root fetch - processPackages [pdfCropMargins]: Downloading https://files.pythonhosted.org/packages/ad/af/17707613067642f6ca164e9772ac4af3d81647b44778cbf62cb8ba4a0d9a/pdfCropMargins-2.1.2-py2.py3-none-any.whl
+[2024-04-14 00:07:43] INFO root fetch - processPackages [pdfCropMargins]: executing diffoscope
+[2024-04-14 00:07:43] INFO root fetch - processPackages [pdfCropMargins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfCropMargins-2.1.1-py2.py3-none-any.whl.zip tmp/pdfCropMargins-2.1.2-py2.py3-none-any.whl.zip --markdown 20240414/p/pdfCropMargins/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-04-14 00:07:44] INFO root fetch - processPackages [pdfCropMargins]: Remove: archive file [/home/abi/fetcher/tmp/pdfCropMargins-2.1.1-py2.py3-none-any.whl.zip]
+[2024-04-14 00:07:44] INFO root fetch - processPackages [pdfCropMargins]: Remove: archive file [/home/abi/fetcher/tmp/pdfCropMargins-2.1.2-py2.py3-none-any.whl.zip]
+[2024-04-14 00:07:44] INFO root fetch - main [MainThread]: End processing [pdfCropMargins]: success
+[2024-04-14 00:07:44] INFO root fetch - main [MainThread]: Store serial: [22755076]
