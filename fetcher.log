@@ -239,3 +239,27 @@
 [2024-04-14 00:29:18] INFO root fetch - processPackages [setuptools]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-9.1.zip]
 [2024-04-14 00:29:18] INFO root fetch - main [MainThread]: End processing [setuptools]: success
 [2024-04-14 00:29:18] INFO root fetch - main [MainThread]: Store serial: [22755140]
+[2024-04-14 00:31:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755140]
+[2024-04-14 00:31:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 00:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rich-click
+[2024-04-14 00:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xaivision
+[2024-04-14 00:31:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BoostCLI
+[2024-04-14 00:31:26] INFO root fetch - processPackages [BoostCLI]: New version: [0.6.0] Old Version: [0.5.3]
+[2024-04-14 00:31:26] WARNING root fetch - processPackages [xaivision]: Skipping, unable to determine old version
+[2024-04-14 00:31:26] INFO root fetch - main [MainThread]: End processing [xaivision] error
+[2024-04-14 00:31:26] INFO root fetch - processPackages [BoostCLI]: Downloading https://files.pythonhosted.org/packages/dd/36/efb7a9d2dd98380aabd4af7a31a7ad785576c1968ffbd472430110a4f23c/BoostCLI-0.5.3.tar.gz
+[2024-04-14 00:31:26] INFO root fetch - processPackages [rich-click]: New version: [1.8.0.dev5] Old Version: [1.8.0.dev4]
+[2024-04-14 00:31:27] INFO root fetch - processPackages [rich-click]: Downloading https://files.pythonhosted.org/packages/8e/fa/e8cae22d7debdc1332b32ee7529364ee0a6f2361d21587e51ab53d21338f/rich-click-1.8.0.dev4.tar.gz
+[2024-04-14 00:31:27] INFO root fetch - processPackages [BoostCLI]: Downloading https://files.pythonhosted.org/packages/a6/9f/961199131fccecf08277c2cf83b6dc61a950c9f50cab5ebef453b6396c39/BoostCLI-0.6.0.tar.gz
+[2024-04-14 00:31:27] INFO root fetch - processPackages [BoostCLI]: executing diffoscope
+[2024-04-14 00:31:27] INFO root fetch - processPackages [BoostCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoostCLI-0.5.3.tar.gz tmp/BoostCLI-0.6.0.tar.gz --markdown 20240414/B/BoostCLI/0.5.3-0.6.0/README.md --exclude *.pyd
+[2024-04-14 00:31:27] INFO root fetch - processPackages [rich-click]: Downloading https://files.pythonhosted.org/packages/e9/6f/7b82d6b9555f2ca3158c308a19dade1fee21c81fad6d5fe8e88677e1663a/rich_click-1.8.0.dev5.tar.gz
+[2024-04-14 00:31:27] INFO root fetch - processPackages [rich-click]: executing diffoscope
+[2024-04-14 00:31:27] INFO root fetch - processPackages [rich-click]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rich-click-1.8.0.dev4.tar.gz tmp/rich_click-1.8.0.dev5.tar.gz --markdown 20240414/r/rich-click/1.8.0.dev4-1.8.0.dev5/README.md --exclude *.pyd
+[2024-04-14 00:31:27] INFO root fetch - processPackages [BoostCLI]: Remove: archive file [/home/abi/fetcher/tmp/BoostCLI-0.5.3.tar.gz]
+[2024-04-14 00:31:27] INFO root fetch - processPackages [BoostCLI]: Remove: archive file [/home/abi/fetcher/tmp/BoostCLI-0.6.0.tar.gz]
+[2024-04-14 00:31:27] INFO root fetch - main [MainThread]: End processing [BoostCLI]: success
+[2024-04-14 00:31:28] INFO root fetch - processPackages [rich-click]: Remove: archive file [/home/abi/fetcher/tmp/rich-click-1.8.0.dev4.tar.gz]
+[2024-04-14 00:31:28] INFO root fetch - processPackages [rich-click]: Remove: archive file [/home/abi/fetcher/tmp/rich_click-1.8.0.dev5.tar.gz]
+[2024-04-14 00:31:28] INFO root fetch - main [MainThread]: End processing [rich-click]: success
+[2024-04-14 00:31:28] INFO root fetch - main [MainThread]: Store serial: [22755160]
