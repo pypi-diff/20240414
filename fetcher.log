@@ -678,3 +678,27 @@
 [2024-04-14 01:08:22] INFO root fetch - processPackages [apstools]: Remove: archive file [/home/abi/fetcher/tmp/apstools-1.6.9rc1.tar.gz]
 [2024-04-14 01:08:22] INFO root fetch - main [MainThread]: End processing [apstools]: success
 [2024-04-14 01:08:22] INFO root fetch - main [MainThread]: Store serial: [22755365]
+[2024-04-14 01:10:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755365]
+[2024-04-14 01:10:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystaleds
+[2024-04-14 01:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codebase-to-text
+[2024-04-14 01:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: harlequin-adbc
+[2024-04-14 01:10:31] INFO root fetch - processPackages [codebase-to-text]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-14 01:10:31] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/02/b1/30adc885f85b8185f4c0c87635506dd3e7ec50f729865d0848ad19f5844a/codebase-to-text-1.0.4.tar.gz
+[2024-04-14 01:10:31] INFO root fetch - processPackages [harlequin-adbc]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 01:10:31] WARNING root fetch - processPackages [pystaleds]: Skipping, unable to determine old version
+[2024-04-14 01:10:31] INFO root fetch - main [MainThread]: End processing [pystaleds] error
+[2024-04-14 01:10:31] INFO root fetch - processPackages [harlequin-adbc]: Downloading https://files.pythonhosted.org/packages/f4/dc/ed86369db0c25a6a54176a4b6cf74f9f3c323f4dd60dfe68076aaf5be372/harlequin_adbc-0.1.0.tar.gz
+[2024-04-14 01:10:31] INFO root fetch - processPackages [codebase-to-text]: Downloading https://files.pythonhosted.org/packages/ac/6d/660058207f9cfc8d2e98d58ab5bca1e3189978f2e360e8f2936962c3b480/codebase-to-text-1.0.5.tar.gz
+[2024-04-14 01:10:31] INFO root fetch - processPackages [codebase-to-text]: executing diffoscope
+[2024-04-14 01:10:31] INFO root fetch - processPackages [codebase-to-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebase-to-text-1.0.4.tar.gz tmp/codebase-to-text-1.0.5.tar.gz --markdown 20240414/c/codebase-to-text/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: Downloading https://files.pythonhosted.org/packages/ce/f3/0b2a2881d8ed7ac711da8ee4df1fa3ea113e4341d2ed982975eca3adb331/harlequin_adbc-0.1.1.tar.gz
+[2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: executing diffoscope
+[2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harlequin_adbc-0.1.0.tar.gz tmp/harlequin_adbc-0.1.1.tar.gz --markdown 20240414/h/harlequin-adbc/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 01:10:32] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.4.tar.gz]
+[2024-04-14 01:10:32] INFO root fetch - processPackages [codebase-to-text]: Remove: archive file [/home/abi/fetcher/tmp/codebase-to-text-1.0.5.tar.gz]
+[2024-04-14 01:10:32] INFO root fetch - main [MainThread]: End processing [codebase-to-text]: success
+[2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_adbc-0.1.0.tar.gz]
+[2024-04-14 01:10:32] INFO root fetch - processPackages [harlequin-adbc]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_adbc-0.1.1.tar.gz]
+[2024-04-14 01:10:32] INFO root fetch - main [MainThread]: End processing [harlequin-adbc]: success
+[2024-04-14 01:10:32] INFO root fetch - main [MainThread]: Store serial: [22755374]
