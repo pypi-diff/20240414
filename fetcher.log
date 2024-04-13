@@ -1055,3 +1055,39 @@
 [2024-04-14 01:45:17] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.2.tar.gz]
 [2024-04-14 01:45:17] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
 [2024-04-14 01:45:17] INFO root fetch - main [MainThread]: Store serial: [22755556]
+[2024-04-14 01:47:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755556]
+[2024-04-14 01:47:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 01:47:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dspygen
+[2024-04-14 01:47:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onebag
+[2024-04-14 01:47:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyMutSpec
+[2024-04-14 01:47:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyExtra
+[2024-04-14 01:47:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyemvue
+[2024-04-14 01:47:26] INFO root fetch - processPackages [PyMutSpec]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 01:47:26] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/02/76/d7c36773e78be82bbf8cb3df9311a292886e01af198f5689a676502341f3/PyMutSpec-0.0.7.tar.gz
+[2024-04-14 01:47:26] WARNING root fetch - processPackages [onebag]: Skipping, unable to determine old version
+[2024-04-14 01:47:26] INFO root fetch - main [MainThread]: End processing [onebag] error
+[2024-04-14 01:47:26] INFO root fetch - processPackages [pyemvue]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 01:47:26] WARNING root fetch - processPackages [PyExtra]: Skipping, unable to determine old version
+[2024-04-14 01:47:26] INFO root fetch - main [MainThread]: End processing [PyExtra] error
+[2024-04-14 01:47:26] INFO root fetch - processPackages [dspygen]: New version: [2024.4.8] Old Version: [2024.4.13]
+[2024-04-14 01:47:26] INFO root fetch - processPackages [dspygen]: Downloading https://files.pythonhosted.org/packages/86/1f/e03f03757c184be699be92977cb437df8bcb69975fe44d75ac1f27b8aa93/dspygen-2024.4.13.tar.gz
+[2024-04-14 01:47:26] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/2c/c7/8a57fb895f54b1b02dd8ca01a567a5f835aa383d85c1448a96f19d6d2d01/PyMutSpec-0.0.8.tar.gz
+[2024-04-14 01:47:26] INFO root fetch - processPackages [pyemvue]: Downloading https://files.pythonhosted.org/packages/89/60/d761d288786887ed5eca20a36b6169a1932ffb0e6f10eeede718ecc5fa16/pyemvue-0.9.8.tar.gz
+[2024-04-14 01:47:26] INFO root fetch - processPackages [PyMutSpec]: executing diffoscope
+[2024-04-14 01:47:26] INFO root fetch - processPackages [PyMutSpec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMutSpec-0.0.7.tar.gz tmp/PyMutSpec-0.0.8.tar.gz --markdown 20240414/P/PyMutSpec/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 01:47:27] INFO root fetch - processPackages [dspygen]: Downloading https://files.pythonhosted.org/packages/b8/d2/67abba8675544ab98e98ff7bc3479521e1562052e572ea82c30eccce5120/dspygen-2024.4.8.tar.gz
+[2024-04-14 01:47:27] INFO root fetch - processPackages [pyemvue]: Downloading https://files.pythonhosted.org/packages/5a/28/a098a184fe8de2bcd880b3a30e1877ab4234ac435291074f532111359eee/pyemvue-0.9.9.tar.gz
+[2024-04-14 01:47:27] INFO root fetch - processPackages [dspygen]: executing diffoscope
+[2024-04-14 01:47:27] INFO root fetch - processPackages [dspygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspygen-2024.4.13.tar.gz tmp/dspygen-2024.4.8.tar.gz --markdown 20240414/d/dspygen/2024.4.13-2024.4.8/README.md --exclude *.pyd
+[2024-04-14 01:47:27] INFO root fetch - processPackages [pyemvue]: executing diffoscope
+[2024-04-14 01:47:27] INFO root fetch - processPackages [pyemvue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyemvue-0.9.8.tar.gz tmp/pyemvue-0.9.9.tar.gz --markdown 20240414/p/pyemvue/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 01:47:27] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.7.tar.gz]
+[2024-04-14 01:47:27] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.8.tar.gz]
+[2024-04-14 01:47:27] INFO root fetch - main [MainThread]: End processing [PyMutSpec]: success
+[2024-04-14 01:47:28] INFO root fetch - processPackages [pyemvue]: Remove: archive file [/home/abi/fetcher/tmp/pyemvue-0.9.8.tar.gz]
+[2024-04-14 01:47:28] INFO root fetch - processPackages [pyemvue]: Remove: archive file [/home/abi/fetcher/tmp/pyemvue-0.9.9.tar.gz]
+[2024-04-14 01:47:28] INFO root fetch - main [MainThread]: End processing [pyemvue]: success
+[2024-04-14 01:47:28] INFO root fetch - processPackages [dspygen]: Remove: archive file [/home/abi/fetcher/tmp/dspygen-2024.4.13.tar.gz]
+[2024-04-14 01:47:28] INFO root fetch - processPackages [dspygen]: Remove: archive file [/home/abi/fetcher/tmp/dspygen-2024.4.8.tar.gz]
+[2024-04-14 01:47:28] INFO root fetch - main [MainThread]: End processing [dspygen]: success
+[2024-04-14 01:47:28] INFO root fetch - main [MainThread]: Store serial: [22755576]
