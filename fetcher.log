@@ -849,3 +849,18 @@
 [2024-04-14 01:25:41] INFO root fetch - processPackages [zrb-noto]: Remove: archive file [/home/abi/fetcher/tmp/zrb_noto-0.0.5.tar.gz]
 [2024-04-14 01:25:41] INFO root fetch - main [MainThread]: End processing [zrb-noto]: success
 [2024-04-14 01:25:41] INFO root fetch - main [MainThread]: Store serial: [22755430]
+[2024-04-14 01:27:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755430]
+[2024-04-14 01:27:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 01:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapython
+[2024-04-14 01:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaogmaneo
+[2024-04-14 01:27:50] WARNING root fetch - processPackages [sapython]: Skipping, unable to determine old version
+[2024-04-14 01:27:50] INFO root fetch - main [MainThread]: End processing [sapython] error
+[2024-04-14 01:27:50] INFO root fetch - processPackages [pyaogmaneo]: New version: [2.5.0] Old Version: [2.4.6]
+[2024-04-14 01:27:50] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/bf/cf/634cfd44e3946141d219ea71f1d76428bbde06c5025dd9f6bc7adcf15ec8/pyaogmaneo-2.4.6.tar.gz
+[2024-04-14 01:27:51] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/d7/b0/5197c7130d8897ccc46b35e7d5d63ed163adc2a47d2de53a71bbc292a3bd/pyaogmaneo-2.5.0-cp312-cp312-musllinux_1_1_x86_64.whl
+[2024-04-14 01:27:52] INFO root fetch - processPackages [pyaogmaneo]: executing diffoscope
+[2024-04-14 01:27:52] INFO root fetch - processPackages [pyaogmaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaogmaneo-2.4.6.tar.gz tmp/pyaogmaneo-2.5.0-cp312-cp312-musllinux_1_1_x86_64.whl.zip --markdown 20240414/p/pyaogmaneo/2.4.6-2.5.0/README.md --exclude *.pyd
+[2024-04-14 01:27:52] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.4.6.tar.gz]
+[2024-04-14 01:27:52] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.5.0-cp312-cp312-musllinux_1_1_x86_64.whl.zip]
+[2024-04-14 01:27:52] INFO root fetch - main [MainThread]: End processing [pyaogmaneo]: success
+[2024-04-14 01:27:52] INFO root fetch - main [MainThread]: Store serial: [22755449]
