@@ -1091,3 +1091,27 @@
 [2024-04-14 01:47:28] INFO root fetch - processPackages [dspygen]: Remove: archive file [/home/abi/fetcher/tmp/dspygen-2024.4.8.tar.gz]
 [2024-04-14 01:47:28] INFO root fetch - main [MainThread]: End processing [dspygen]: success
 [2024-04-14 01:47:28] INFO root fetch - main [MainThread]: Store serial: [22755576]
+[2024-04-14 01:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755576]
+[2024-04-14 01:49:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscreeps-arena
+[2024-04-14 01:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Heema
+[2024-04-14 01:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mousepad
+[2024-04-14 01:49:37] WARNING root fetch - processPackages [mousepad]: Skipping, unable to determine old version
+[2024-04-14 01:49:37] INFO root fetch - main [MainThread]: End processing [mousepad] error
+[2024-04-14 01:49:37] INFO root fetch - processPackages [pyscreeps-arena]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 01:49:37] INFO root fetch - processPackages [Heema]: New version: [2.0.0.9] Old Version: [1.0.0.1]
+[2024-04-14 01:49:37] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/24/df/03f836a815130758393cc4747537fe759b80313bacb938d940a98ded5dae/Heema-1.0.0.1.tar.gz
+[2024-04-14 01:49:37] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/c5/b1/8292299cae71977950db03b9fd25232d4405091d7ed0590a568571f371fe/pyscreeps-arena-0.1.8.tar.gz
+[2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: Downloading https://files.pythonhosted.org/packages/51/ba/e7f545014f71caeac93d1fd9d1b6395a79bd2eb256d48f516a2b9ed2c705/Heema-2.0.0.9.tar.gz
+[2024-04-14 01:49:38] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/8d/64/60d19e221d5c72437543c5f504c88d32093797848354c0dd1c4da297ceca/pyscreeps-arena-0.1.9.tar.gz
+[2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: executing diffoscope
+[2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Heema-1.0.0.1.tar.gz tmp/Heema-2.0.0.9.tar.gz --markdown 20240414/H/Heema/1.0.0.1-2.0.0.9/README.md --exclude *.pyd
+[2024-04-14 01:49:38] INFO root fetch - processPackages [pyscreeps-arena]: executing diffoscope
+[2024-04-14 01:49:38] INFO root fetch - processPackages [pyscreeps-arena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscreeps-arena-0.1.8.tar.gz tmp/pyscreeps-arena-0.1.9.tar.gz --markdown 20240414/p/pyscreeps-arena/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 01:49:38] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.8.tar.gz]
+[2024-04-14 01:49:38] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.9.tar.gz]
+[2024-04-14 01:49:38] INFO root fetch - main [MainThread]: End processing [pyscreeps-arena]: success
+[2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-1.0.0.1.tar.gz]
+[2024-04-14 01:49:38] INFO root fetch - processPackages [Heema]: Remove: archive file [/home/abi/fetcher/tmp/Heema-2.0.0.9.tar.gz]
+[2024-04-14 01:49:38] INFO root fetch - main [MainThread]: End processing [Heema]: success
+[2024-04-14 01:49:38] INFO root fetch - main [MainThread]: Store serial: [22755586]
