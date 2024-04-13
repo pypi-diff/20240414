@@ -454,3 +454,24 @@
 [2024-04-14 00:46:38] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.65.tar.gz]
 [2024-04-14 00:46:38] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-04-14 00:46:38] INFO root fetch - main [MainThread]: Store serial: [22755239]
+[2024-04-14 00:48:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755239]
+[2024-04-14 00:48:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: releaserr
+[2024-04-14 00:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jb-news
+[2024-04-14 00:48:47] INFO root fetch - processPackages [releaserr]: New version: [0.1.dev94] Old Version: [0.1.dev131]
+[2024-04-14 00:48:47] INFO root fetch - processPackages [jb-news]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-14 00:48:47] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/8b/37/9cd17829b99f906a4fa7e2b46bc5c3f58bbe8e8a3b18d25aed95e0ca978e/releaserr-0.1.dev131.tar.gz
+[2024-04-14 00:48:47] INFO root fetch - processPackages [jb-news]: Downloading https://files.pythonhosted.org/packages/b5/b3/4c68b7ec994602240d0c837a4d14c46d66ee5e865068f574ccdc95e20405/jb_news-2.1.0-py3-none-any.whl
+[2024-04-14 00:48:47] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/7a/26/736d01b0c1fa4abbf6135fbc5d7c506888433b18ec54dd9a7ec8472d992e/releaserr-0.1.dev94.tar.gz
+[2024-04-14 00:48:47] INFO root fetch - processPackages [jb-news]: Downloading https://files.pythonhosted.org/packages/9e/af/7f5d5810d464813799e4f337b7983ff8caefd632fdbef08e3da770da8485/jb_news-2.1.1-py3-none-any.whl
+[2024-04-14 00:48:47] INFO root fetch - processPackages [jb-news]: executing diffoscope
+[2024-04-14 00:48:47] INFO root fetch - processPackages [jb-news]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jb_news-2.1.0-py3-none-any.whl.zip tmp/jb_news-2.1.1-py3-none-any.whl.zip --markdown 20240414/j/jb-news/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-14 00:48:47] INFO root fetch - processPackages [releaserr]: executing diffoscope
+[2024-04-14 00:48:47] INFO root fetch - processPackages [releaserr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releaserr-0.1.dev131.tar.gz tmp/releaserr-0.1.dev94.tar.gz --markdown 20240414/r/releaserr/0.1.dev131-0.1.dev94/README.md --exclude *.pyd
+[2024-04-14 00:48:48] INFO root fetch - processPackages [jb-news]: Remove: archive file [/home/abi/fetcher/tmp/jb_news-2.1.0-py3-none-any.whl.zip]
+[2024-04-14 00:48:48] INFO root fetch - processPackages [jb-news]: Remove: archive file [/home/abi/fetcher/tmp/jb_news-2.1.1-py3-none-any.whl.zip]
+[2024-04-14 00:48:48] INFO root fetch - main [MainThread]: End processing [jb-news]: success
+[2024-04-14 00:48:48] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev131.tar.gz]
+[2024-04-14 00:48:48] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev94.tar.gz]
+[2024-04-14 00:48:48] INFO root fetch - main [MainThread]: End processing [releaserr]: success
+[2024-04-14 00:48:48] INFO root fetch - main [MainThread]: Store serial: [22755244]
