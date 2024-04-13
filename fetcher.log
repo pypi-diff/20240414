@@ -1028,3 +1028,30 @@
 [2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: Remove: archive file [/home/abi/fetcher/tmp/factscorelite-1.0.0.tar.gz]
 [2024-04-14 01:43:07] INFO root fetch - main [MainThread]: End processing [FactScoreLite]: success
 [2024-04-14 01:43:07] INFO root fetch - main [MainThread]: Store serial: [22755520]
+[2024-04-14 01:45:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755520]
+[2024-04-14 01:45:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 01:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyreqwest-impersonate
+[2024-04-14 01:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zoomegastash
+[2024-04-14 01:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zoomegastash
+[2024-04-14 01:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lama2923
+[2024-04-14 01:45:16] WARNING root fetch - processPackages [zoomegastash]: Skipping, unable to determine old version
+[2024-04-14 01:45:16] INFO root fetch - main [MainThread]: End processing [zoomegastash] error
+[2024-04-14 01:45:16] INFO root fetch - processPackages [pyreqwest-impersonate]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 01:45:16] WARNING root fetch - processPackages [zoomegastash]: Skipping, unable to determine old version
+[2024-04-14 01:45:16] INFO root fetch - main [MainThread]: End processing [zoomegastash] error
+[2024-04-14 01:45:16] INFO root fetch - processPackages [lama2923]: New version: [0.7] Old Version: [0.6]
+[2024-04-14 01:45:16] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/0e/98/fa8e633b3a8591ce573267cf6f5e4225f9ea5a36ca8a33502e7e39cfd953/pyreqwest_impersonate-0.1.1.tar.gz
+[2024-04-14 01:45:16] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/a6/4c/087bcbbc844e98f4b0e431f0fdcb741c5629b43193d3b1e759888c6adaac/lama2923-0.6.tar.gz
+[2024-04-14 01:45:16] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/e5/dc/d4fb172246182b41ee86df47dd5f5ea3f6ded4c7be0f7ff891ace9a1feda/pyreqwest_impersonate-0.1.2.tar.gz
+[2024-04-14 01:45:16] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/0e/68/7de3b327869ecf56fd27aecdae8b995c9688a9c8d19cb968e35dc58e7003/lama2923-0.7.tar.gz
+[2024-04-14 01:45:16] INFO root fetch - processPackages [pyreqwest-impersonate]: executing diffoscope
+[2024-04-14 01:45:16] INFO root fetch - processPackages [pyreqwest-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreqwest_impersonate-0.1.1.tar.gz tmp/pyreqwest_impersonate-0.1.2.tar.gz --markdown 20240414/p/pyreqwest-impersonate/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 01:45:16] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-04-14 01:45:16] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-0.6.tar.gz tmp/lama2923-0.7.tar.gz --markdown 20240414/l/lama2923/0.6-0.7/README.md --exclude *.pyd
+[2024-04-14 01:45:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.6.tar.gz]
+[2024-04-14 01:45:17] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.tar.gz]
+[2024-04-14 01:45:17] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-04-14 01:45:17] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.1.tar.gz]
+[2024-04-14 01:45:17] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.2.tar.gz]
+[2024-04-14 01:45:17] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
+[2024-04-14 01:45:17] INFO root fetch - main [MainThread]: Store serial: [22755556]
