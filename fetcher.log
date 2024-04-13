@@ -141,3 +141,26 @@
 [2024-04-14 00:16:24] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
 [2024-04-14 00:16:24] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
 [2024-04-14 00:16:24] INFO root fetch - main [MainThread]: Store serial: [22755104]
+[2024-04-14 00:18:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755104]
+[2024-04-14 00:18:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 00:20:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755104]
+[2024-04-14 00:20:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:20:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pars-hitmotop
+[2024-04-14 00:20:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-14 00:20:38] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 00:20:38] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 00:20:38] INFO root fetch - processPackages [pars-hitmotop]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 00:20:38] INFO root fetch - processPackages [pars-hitmotop]: Downloading https://files.pythonhosted.org/packages/57/8d/decfd4908cd78e1bb576e41107277cd82169837379c8dc3a7eea9223c165/pars_hitmotop-0.0.7.tar.gz
+[2024-04-14 00:20:39] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 00:20:39] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 00:20:39] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: Downloading https://files.pythonhosted.org/packages/7f/f5/047f6e9e6595e6c8d187d7d48ea38adf3f6860dfa15820454dcdefb2e070/pars_hitmotop-0.0.8.tar.gz
+[2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: executing diffoscope
+[2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pars_hitmotop-0.0.7.tar.gz tmp/pars_hitmotop-0.0.8.tar.gz --markdown 20240414/p/pars-hitmotop/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 00:20:39] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 00:20:39] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 00:20:39] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: Remove: archive file [/home/abi/fetcher/tmp/pars_hitmotop-0.0.7.tar.gz]
+[2024-04-14 00:20:39] INFO root fetch - processPackages [pars-hitmotop]: Remove: archive file [/home/abi/fetcher/tmp/pars_hitmotop-0.0.8.tar.gz]
+[2024-04-14 00:20:39] INFO root fetch - main [MainThread]: End processing [pars-hitmotop]: success
+[2024-04-14 00:20:39] INFO root fetch - main [MainThread]: Store serial: [22755109]
