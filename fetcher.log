@@ -998,3 +998,33 @@
 [2024-04-14 01:40:57] INFO root fetch - processPackages [sqlmodel-filters]: Remove: archive file [/home/abi/fetcher/tmp/sqlmodel_filters-0.0.4.tar.gz]
 [2024-04-14 01:40:57] INFO root fetch - main [MainThread]: End processing [sqlmodel-filters]: success
 [2024-04-14 01:40:57] INFO root fetch - main [MainThread]: Store serial: [22755513]
+[2024-04-14 01:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755513]
+[2024-04-14 01:43:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scwrypts
+[2024-04-14 01:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FactScoreLite
+[2024-04-14 01:43:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyreqwest-impersonate
+[2024-04-14 01:43:06] INFO root fetch - processPackages [pyreqwest-impersonate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 01:43:06] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/9d/d3/49c5ae3a2111a6b20d275cf1f6795b5211e452ef3c3910e593725676d52e/pyreqwest_impersonate-0.1.0.tar.gz
+[2024-04-14 01:43:06] INFO root fetch - processPackages [scwrypts]: New version: [4.2.0] Old Version: [4.1.5]
+[2024-04-14 01:43:06] INFO root fetch - processPackages [FactScoreLite]: New version: [1.0.0] Old Version: [0.3.1]
+[2024-04-14 01:43:06] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/79/ef/196c162e90eecef2a4ff1699b922db9ce101658828e3791d6389234808b0/scwrypts-4.1.5.tar.gz
+[2024-04-14 01:43:06] INFO root fetch - processPackages [pyreqwest-impersonate]: Downloading https://files.pythonhosted.org/packages/0e/98/fa8e633b3a8591ce573267cf6f5e4225f9ea5a36ca8a33502e7e39cfd953/pyreqwest_impersonate-0.1.1.tar.gz
+[2024-04-14 01:43:06] INFO root fetch - processPackages [FactScoreLite]: Downloading https://files.pythonhosted.org/packages/63/18/ea5aefdb882b4ff5640b357d05c2abccb219e650a22b98a4a02d23ba476b/FactScoreLite-0.3.1.tar.gz
+[2024-04-14 01:43:06] INFO root fetch - processPackages [pyreqwest-impersonate]: executing diffoscope
+[2024-04-14 01:43:06] INFO root fetch - processPackages [pyreqwest-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyreqwest_impersonate-0.1.0.tar.gz tmp/pyreqwest_impersonate-0.1.1.tar.gz --markdown 20240414/p/pyreqwest-impersonate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 01:43:07] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/90/be/c5d761a8748bd3c5a406e23c054d3a7cfe0a80d236dd43052c81a84030a6/scwrypts-4.2.0.tar.gz
+[2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: Downloading https://files.pythonhosted.org/packages/42/5a/92cd0e51e82d1abf7945233647667bf258e6bb0fef03373d6b68dce4c280/factscorelite-1.0.0.tar.gz
+[2024-04-14 01:43:07] INFO root fetch - processPackages [scwrypts]: executing diffoscope
+[2024-04-14 01:43:07] INFO root fetch - processPackages [scwrypts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scwrypts-4.1.5.tar.gz tmp/scwrypts-4.2.0.tar.gz --markdown 20240414/s/scwrypts/4.1.5-4.2.0/README.md --exclude *.pyd
+[2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: executing diffoscope
+[2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FactScoreLite-0.3.1.tar.gz tmp/factscorelite-1.0.0.tar.gz --markdown 20240414/F/FactScoreLite/0.3.1-1.0.0/README.md --exclude *.pyd
+[2024-04-14 01:43:07] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.0.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.1.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
+[2024-04-14 01:43:07] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.1.5.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.2.0.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - main [MainThread]: End processing [scwrypts]: success
+[2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: Remove: archive file [/home/abi/fetcher/tmp/FactScoreLite-0.3.1.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - processPackages [FactScoreLite]: Remove: archive file [/home/abi/fetcher/tmp/factscorelite-1.0.0.tar.gz]
+[2024-04-14 01:43:07] INFO root fetch - main [MainThread]: End processing [FactScoreLite]: success
+[2024-04-14 01:43:07] INFO root fetch - main [MainThread]: Store serial: [22755520]
