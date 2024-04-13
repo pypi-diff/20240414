@@ -1159,3 +1159,33 @@
 [2024-04-14 01:56:03] INFO root fetch - processPackages [xaivision]: Remove: archive file [/home/abi/fetcher/tmp/xaivision-0.4.0.tar.gz]
 [2024-04-14 01:56:03] INFO root fetch - main [MainThread]: End processing [xaivision]: success
 [2024-04-14 01:56:03] INFO root fetch - main [MainThread]: Store serial: [22755604]
+[2024-04-14 01:58:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755604]
+[2024-04-14 01:58:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 01:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adls-acl
+[2024-04-14 01:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SAMMEC2
+[2024-04-14 01:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autopipeline
+[2024-04-14 01:58:12] INFO root fetch - processPackages [SAMMEC2]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-04-14 01:58:12] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 01:58:12] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/48/30/da403f4086e233cb41ded9ab89a9c192ab46bc4c5bb136e8a8155d0058a0/SAMMEC2-0.0.5.tar.gz
+[2024-04-14 01:58:12] INFO root fetch - processPackages [adls-acl]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 01:58:12] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 01:58:12] INFO root fetch - processPackages [adls-acl]: Downloading https://files.pythonhosted.org/packages/02/00/c76ad7307339a8e1a29070067abc179ac48f4751a075c7f87e6aa0bbeff6/adls_acl-0.0.4.tar.gz
+[2024-04-14 01:58:12] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/f5/fa/a402803ad000ad23be17cffd60c4d78461296c58fc1150bc9d70da47c477/SAMMEC2-0.0.7.tar.gz
+[2024-04-14 01:58:12] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 01:58:12] INFO root fetch - processPackages [SAMMEC2]: executing diffoscope
+[2024-04-14 01:58:12] INFO root fetch - processPackages [SAMMEC2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAMMEC2-0.0.5.tar.gz tmp/SAMMEC2-0.0.7.tar.gz --markdown 20240414/S/SAMMEC2/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-04-14 01:58:12] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 01:58:12] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 01:58:12] INFO root fetch - processPackages [adls-acl]: Downloading https://files.pythonhosted.org/packages/59/89/f50b2f8be65d4933335c1ff87208047b8dd9ab08d0ea5bc8440dc35da648/adls_acl-0.0.5.tar.gz
+[2024-04-14 01:58:13] INFO root fetch - processPackages [adls-acl]: executing diffoscope
+[2024-04-14 01:58:13] INFO root fetch - processPackages [adls-acl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adls_acl-0.0.4.tar.gz tmp/adls_acl-0.0.5.tar.gz --markdown 20240414/a/adls-acl/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 01:58:13] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.5.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.7.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - main [MainThread]: End processing [SAMMEC2]: success
+[2024-04-14 01:58:13] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 01:58:13] INFO root fetch - processPackages [adls-acl]: Remove: archive file [/home/abi/fetcher/tmp/adls_acl-0.0.4.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - processPackages [adls-acl]: Remove: archive file [/home/abi/fetcher/tmp/adls_acl-0.0.5.tar.gz]
+[2024-04-14 01:58:13] INFO root fetch - main [MainThread]: End processing [adls-acl]: success
+[2024-04-14 01:58:13] INFO root fetch - main [MainThread]: Store serial: [22755614]
