@@ -263,3 +263,20 @@
 [2024-04-14 00:31:28] INFO root fetch - processPackages [rich-click]: Remove: archive file [/home/abi/fetcher/tmp/rich_click-1.8.0.dev5.tar.gz]
 [2024-04-14 00:31:28] INFO root fetch - main [MainThread]: End processing [rich-click]: success
 [2024-04-14 00:31:28] INFO root fetch - main [MainThread]: Store serial: [22755160]
+[2024-04-14 00:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755160]
+[2024-04-14 00:33:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ado_wrapper
+[2024-04-14 00:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AITracker
+[2024-04-14 00:33:36] INFO root fetch - processPackages [ado_wrapper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 00:33:36] INFO root fetch - processPackages [AITracker]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-14 00:33:36] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/bf/e2/ecf82704d30c46486a1dd55e1da519b1a1debcd04ed7a5ad19509df6e0e9/ado_wrapper-0.0.6.tar.gz
+[2024-04-14 00:33:36] INFO root fetch - processPackages [AITracker]: Downloading https://files.pythonhosted.org/packages/dc/d7/38ea085db8ceadb47cb7198344671aa7e0bc0a00a412d8caca03038f119b/AITracker-0.9.7.tar.gz
+[2024-04-14 00:33:36] WARNING root fetch - processPackages [AITracker]: Skipping package: exceeds size limit 26179679>=10485760
+[2024-04-14 00:33:36] INFO root fetch - main [MainThread]: End processing [AITracker] error
+[2024-04-14 00:33:36] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/30/9c/4a5f0a8f9f2737aeeb00ea3a8ef8cd8f3794feeefe27c1c6fe3ce2127b2d/ado_wrapper-0.0.7.tar.gz
+[2024-04-14 00:33:37] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-04-14 00:33:37] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-0.0.6.tar.gz tmp/ado_wrapper-0.0.7.tar.gz --markdown 20240414/a/ado_wrapper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 00:33:37] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.6.tar.gz]
+[2024-04-14 00:33:37] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.7.tar.gz]
+[2024-04-14 00:33:37] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-04-14 00:33:37] INFO root fetch - main [MainThread]: Store serial: [22755181]
