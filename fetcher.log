@@ -508,3 +508,24 @@
 [2024-04-14 00:50:59] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.2.tar.gz]
 [2024-04-14 00:50:59] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
 [2024-04-14 00:50:59] INFO root fetch - main [MainThread]: Store serial: [22755254]
+[2024-04-14 00:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755254]
+[2024-04-14 00:53:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 00:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQtUIkit
+[2024-04-14 00:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-04-14 00:53:07] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.5.0] Old Version: [2.4.2]
+[2024-04-14 00:53:07] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240413.258] Old Version: [0.44.20240413.257]
+[2024-04-14 00:53:07] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/67/47/0068b4cb90b9cab431ddb04a93f558956785c7c24299023bfade809510c1/PyQtUIkit-2.4.2.tar.gz
+[2024-04-14 00:53:07] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/1a/eb/beb397b9c233d626d5565bc44aa3c776e6474428c5342c83c87b3b34589d/pkscreener-0.44.20240413.257.tar.gz
+[2024-04-14 00:53:08] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e3/3e/cd1747fa3bcb06650b729fca172b04e2f032b2cb69715b56bdb4901cf2b1/pkscreener-0.44.20240413.258.tar.gz
+[2024-04-14 00:53:08] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-14 00:53:08] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240413.257.tar.gz tmp/pkscreener-0.44.20240413.258.tar.gz --markdown 20240414/p/pkscreener/0.44.20240413.257-0.44.20240413.258/README.md --exclude *.pyd
+[2024-04-14 00:53:08] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/28/34/32feafebbdc5ae03030b36a7faf43b7b9610dedfc1f6c1d264e273030d92/PyQtUIkit-2.5.0.tar.gz
+[2024-04-14 00:53:08] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-04-14 00:53:08] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.4.2.tar.gz tmp/PyQtUIkit-2.5.0.tar.gz --markdown 20240414/P/PyQtUIkit/2.4.2-2.5.0/README.md --exclude *.pyd
+[2024-04-14 00:53:09] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.257.tar.gz]
+[2024-04-14 00:53:09] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.258.tar.gz]
+[2024-04-14 00:53:09] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-14 00:53:09] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.4.2.tar.gz]
+[2024-04-14 00:53:09] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.5.0.tar.gz]
+[2024-04-14 00:53:09] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-04-14 00:53:09] INFO root fetch - main [MainThread]: Store serial: [22755260]
