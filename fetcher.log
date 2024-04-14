@@ -8107,3 +8107,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:40:45] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
 [2024-04-14 13:40:45] INFO root fetch - main [MainThread]: End processing [swibots]: success
 [2024-04-14 13:40:45] INFO root fetch - main [MainThread]: Store serial: [22758581]
+[2024-04-14 13:42:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758581]
+[2024-04-14 13:43:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adetailer
+[2024-04-14 13:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: elgas
+[2024-04-14 13:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb-nightly
+[2024-04-14 13:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsonrpyc
+[2024-04-14 13:43:01] INFO root fetch - processPackages [adetailer]: New version: [24.4.1] Old Version: [24.4.0]
+[2024-04-14 13:43:01] INFO root fetch - processPackages [jsonrpyc]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-14 13:43:01] INFO root fetch - processPackages [elgas]: New version: [24.1.0b2] Old Version: [24.1.0b1]
+[2024-04-14 13:43:01] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-14 13:43:01] INFO root fetch - processPackages [adetailer]: Downloading https://files.pythonhosted.org/packages/85/d0/0798307ebed6dc5906aed64d60903694619ed0c5a955d27d7462e5f60c49/adetailer-24.4.0.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [elgas]: Downloading https://files.pythonhosted.org/packages/cf/2c/47be7ce05278e9bc6c9bf02ba8b896d4eeaa7679b2eb27b1d7621634ac24/elgas-24.1.0b1.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [jsonrpyc]: Downloading https://files.pythonhosted.org/packages/0b/1c/4a36d1cfdb5beb40c5638ac5c28b99fe787546940ed00034fa43c4f05255/jsonrpyc-1.2.1.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-14 13:43:01] INFO root fetch - processPackages [adetailer]: Downloading https://files.pythonhosted.org/packages/2e/dd/f8f4f5de4ee4ce4a1e06603f113c41c0b512ad91cd9cdfe762402fd419aa/adetailer-24.4.1.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [jsonrpyc]: Downloading https://files.pythonhosted.org/packages/16/bc/f270a6eb3bf365dfbd591a3e1bfacf9639a61886a15ca2d4d304ba687707/jsonrpyc-1.2.2.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [elgas]: Downloading https://files.pythonhosted.org/packages/ec/f3/1dc8a16b89a5c17b085d4438ee5e9e0260c0b63dde389a9a97602b64f0dc/elgas-24.1.0b2.tar.gz
+[2024-04-14 13:43:01] INFO root fetch - processPackages [adetailer]: executing diffoscope
+[2024-04-14 13:43:01] INFO root fetch - processPackages [adetailer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adetailer-24.4.0.tar.gz tmp/adetailer-24.4.1.tar.gz --markdown 20240414/a/adetailer/24.4.0-24.4.1/README.md --exclude *.pyd
+[2024-04-14 13:43:02] INFO root fetch - processPackages [elgas]: executing diffoscope
+[2024-04-14 13:43:02] INFO root fetch - processPackages [elgas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elgas-24.1.0b1.tar.gz tmp/elgas-24.1.0b2.tar.gz --markdown 20240414/e/elgas/24.1.0b1-24.1.0b2/README.md --exclude *.pyd
+[2024-04-14 13:43:02] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-14 13:43:02] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-14 13:43:02] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240414/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-04-14 13:43:02] INFO root fetch - processPackages [adetailer]: Remove: archive file [/home/abi/fetcher/tmp/adetailer-24.4.0.tar.gz]
+[2024-04-14 13:43:02] INFO root fetch - processPackages [adetailer]: Remove: archive file [/home/abi/fetcher/tmp/adetailer-24.4.1.tar.gz]
+[2024-04-14 13:43:02] INFO root fetch - main [MainThread]: End processing [adetailer]: success
+[2024-04-14 13:43:02] INFO root fetch - processPackages [elgas]: Remove: archive file [/home/abi/fetcher/tmp/elgas-24.1.0b1.tar.gz]
+[2024-04-14 13:43:02] INFO root fetch - processPackages [elgas]: Remove: archive file [/home/abi/fetcher/tmp/elgas-24.1.0b2.tar.gz]
+[2024-04-14 13:43:02] INFO root fetch - main [MainThread]: End processing [elgas]: success
+[2024-04-14 13:43:03] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-14 13:43:03] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-14 13:43:03] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-14 13:43:04] INFO root fetch - processPackages [jsonrpyc]: executing diffoscope
+[2024-04-14 13:43:04] INFO root fetch - processPackages [jsonrpyc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonrpyc-1.2.1.tar.gz tmp/jsonrpyc-1.2.2.tar.gz --markdown 20240414/j/jsonrpyc/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-14 13:43:05] INFO root fetch - processPackages [jsonrpyc]: Remove: archive file [/home/abi/fetcher/tmp/jsonrpyc-1.2.1.tar.gz]
+[2024-04-14 13:43:05] INFO root fetch - processPackages [jsonrpyc]: Remove: archive file [/home/abi/fetcher/tmp/jsonrpyc-1.2.2.tar.gz]
+[2024-04-14 13:43:05] INFO root fetch - main [MainThread]: End processing [jsonrpyc]: success
+[2024-04-14 13:43:05] INFO root fetch - main [MainThread]: Store serial: [22758591]
