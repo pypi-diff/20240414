@@ -9028,3 +9028,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:47:06] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-04-14 14:47:06] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-04-14 14:47:06] INFO root fetch - main [MainThread]: Store serial: [22758968]
+[2024-04-14 14:49:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758968]
+[2024-04-14 14:49:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 14:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prettyAnything
+[2024-04-14 14:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyiron-atomistics
+[2024-04-14 14:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygitpub
+[2024-04-14 14:49:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mediapipe-nightly
+[2024-04-14 14:49:21] WARNING root fetch - processPackages [prettyAnything]: Skipping, unable to determine old version
+[2024-04-14 14:49:21] INFO root fetch - main [MainThread]: End processing [prettyAnything] error
+[2024-04-14 14:49:21] INFO root fetch - processPackages [pygitpub]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 14:49:21] INFO root fetch - processPackages [mediapipe-nightly]: New version: [0.10.13.post20240414] Old Version: [0.10.13.post20240413]
+[2024-04-14 14:49:21] INFO root fetch - processPackages [pyiron-atomistics]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-14 14:49:21] INFO root fetch - processPackages [pyiron-atomistics]: Downloading https://files.pythonhosted.org/packages/3e/86/6dd12056c7225f2e38515dc7587c7b3880f63d5689e9ef9e70a845bec9f8/pyiron_atomistics-0.5.0.tar.gz
+[2024-04-14 14:49:21] INFO root fetch - processPackages [pygitpub]: Downloading https://files.pythonhosted.org/packages/2d/0b/63751894c06acce591148ead54ef22ff96409f4f173321132a4d03c56405/pygitpub-0.0.8.tar.gz
+[2024-04-14 14:49:21] INFO root fetch - processPackages [mediapipe-nightly]: Downloading https://files.pythonhosted.org/packages/e5/e1/4c356b004e845a8693a9b7f20a1ee732407c8fafe6cb8958d420d05e0b91/mediapipe_nightly-0.10.13.post20240413-cp39-cp39-macosx_11_0_x86_64.whl
+[2024-04-14 14:49:21] WARNING root fetch - processPackages [mediapipe-nightly]: Skipping package: exceeds size limit 49965760>=10485760
+[2024-04-14 14:49:21] INFO root fetch - main [MainThread]: End processing [mediapipe-nightly] error
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pyiron-atomistics]: Downloading https://files.pythonhosted.org/packages/2d/60/cfe58053a3741509e36a75f38b9dfa28d8effed5973185c540af5e54a2e1/pyiron_atomistics-0.5.1.tar.gz
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pygitpub]: Downloading https://files.pythonhosted.org/packages/14/96/752057f31b33b1fd8411d1912dff98141e2c829e9579f5a5e6111740820f/pygitpub-0.0.9.tar.gz
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pygitpub]: executing diffoscope
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pygitpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygitpub-0.0.8.tar.gz tmp/pygitpub-0.0.9.tar.gz --markdown 20240414/p/pygitpub/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pyiron-atomistics]: executing diffoscope
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pyiron-atomistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiron_atomistics-0.5.0.tar.gz tmp/pyiron_atomistics-0.5.1.tar.gz --markdown 20240414/p/pyiron-atomistics/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pygitpub]: Remove: archive file [/home/abi/fetcher/tmp/pygitpub-0.0.8.tar.gz]
+[2024-04-14 14:49:22] INFO root fetch - processPackages [pygitpub]: Remove: archive file [/home/abi/fetcher/tmp/pygitpub-0.0.9.tar.gz]
+[2024-04-14 14:49:22] INFO root fetch - main [MainThread]: End processing [pygitpub]: success
+[2024-04-14 14:49:23] INFO root fetch - processPackages [pyiron-atomistics]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_atomistics-0.5.0.tar.gz]
+[2024-04-14 14:49:23] INFO root fetch - processPackages [pyiron-atomistics]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_atomistics-0.5.1.tar.gz]
+[2024-04-14 14:49:23] INFO root fetch - main [MainThread]: End processing [pyiron-atomistics]: success
+[2024-04-14 14:49:23] INFO root fetch - main [MainThread]: Store serial: [22758983]
