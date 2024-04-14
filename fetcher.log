@@ -4217,3 +4217,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.43.tar.gz]
 [2024-04-14 07:26:01] INFO root fetch - main [MainThread]: End processing [monisha]: success
 [2024-04-14 07:26:01] INFO root fetch - main [MainThread]: Store serial: [22756692]
+[2024-04-14 07:28:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756692]
+[2024-04-14 07:28:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 07:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yq
+[2024-04-14 07:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-04-14 07:28:10] INFO root fetch - processPackages [yq]: New version: [3.3.0] Old Version: [3.2.3]
+[2024-04-14 07:28:10] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-14 07:28:10] INFO root fetch - processPackages [yq]: Downloading https://files.pythonhosted.org/packages/e3/c6/adfbfb59eda5d2eccf2e0af9e906b9919febe62bc444f2f5891944c2be9f/yq-3.2.3.tar.gz
+[2024-04-14 07:28:11] INFO root fetch - processPackages [yq]: Downloading https://files.pythonhosted.org/packages/e1/4b/26a31d6016596d27a06f158ae04b7b27d3c51cd15e444a0d5dbac03c0298/yq-3.3.0.tar.gz
+[2024-04-14 07:28:11] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-14 07:28:11] INFO root fetch - processPackages [yq]: executing diffoscope
+[2024-04-14 07:28:11] INFO root fetch - processPackages [yq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yq-3.2.3.tar.gz tmp/yq-3.3.0.tar.gz --markdown 20240414/y/yq/3.2.3-3.3.0/README.md --exclude *.pyd
+[2024-04-14 07:28:11] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-14 07:28:11] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-14 07:28:11] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240414/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-14 07:28:11] INFO root fetch - processPackages [yq]: Remove: archive file [/home/abi/fetcher/tmp/yq-3.2.3.tar.gz]
+[2024-04-14 07:28:11] INFO root fetch - processPackages [yq]: Remove: archive file [/home/abi/fetcher/tmp/yq-3.3.0.tar.gz]
+[2024-04-14 07:28:11] INFO root fetch - main [MainThread]: End processing [yq]: success
+[2024-04-14 07:28:14] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-14 07:28:14] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-14 07:28:14] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-14 07:28:14] INFO root fetch - main [MainThread]: Store serial: [22756697]
