@@ -14468,3 +14468,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:32:26] INFO root fetch - processPackages [esbuild-py]: Remove: archive file [/home/abi/fetcher/tmp/esbuild_py-0.1.2-pp39-pypy39_pp73-macosx_11_0_arm64.whl.zip]
 [2024-04-14 21:32:26] INFO root fetch - main [MainThread]: End processing [esbuild-py]: success
 [2024-04-14 21:32:26] INFO root fetch - main [MainThread]: Store serial: [22761860]
+[2024-04-14 21:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761860]
+[2024-04-14 21:34:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scmopy
+[2024-04-14 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gbnf
+[2024-04-14 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: corkit
+[2024-04-14 21:34:35] WARNING root fetch - processPackages [corkit]: Skipping, unable to determine old version
+[2024-04-14 21:34:35] INFO root fetch - main [MainThread]: End processing [corkit] error
+[2024-04-14 21:34:35] INFO root fetch - processPackages [gbnf]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 21:34:35] INFO root fetch - processPackages [scmopy]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-14 21:34:35] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/d1/12/af8961964cd53f9d262032af5d754949d83062216de9852b73ed1e54535f/scmopy-0.0.9.tar.gz
+[2024-04-14 21:34:35] INFO root fetch - processPackages [gbnf]: Downloading https://files.pythonhosted.org/packages/b2/90/5d4847daaee0db3e8708070aa8e5fa9ae2d3d1ed0c12171da075f5ec69ec/gbnf-0.0.1.tar.gz
+[2024-04-14 21:34:35] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/5e/55/518ebff8744c4d4fb921a15f8af134d8b573cc6d9690f22a802bb6815196/scmopy-0.1.0.tar.gz
+[2024-04-14 21:34:36] INFO root fetch - processPackages [gbnf]: Downloading https://files.pythonhosted.org/packages/60/b8/72762c5d237b1f61d7999fde2a30044cbbc81dffbbb11cd50a4aacfccf0f/gbnf-0.0.2.tar.gz
+[2024-04-14 21:34:36] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 21:34:36] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.9.tar.gz tmp/scmopy-0.1.0.tar.gz --markdown 20240414/s/scmopy/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-14 21:34:36] INFO root fetch - processPackages [gbnf]: executing diffoscope
+[2024-04-14 21:34:36] INFO root fetch - processPackages [gbnf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gbnf-0.0.1.tar.gz tmp/gbnf-0.0.2.tar.gz --markdown 20240414/g/gbnf/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 21:34:36] INFO root fetch - processPackages [gbnf]: Remove: archive file [/home/abi/fetcher/tmp/gbnf-0.0.1.tar.gz]
+[2024-04-14 21:34:36] INFO root fetch - processPackages [gbnf]: Remove: archive file [/home/abi/fetcher/tmp/gbnf-0.0.2.tar.gz]
+[2024-04-14 21:34:36] INFO root fetch - main [MainThread]: End processing [gbnf]: success
+[2024-04-14 21:34:36] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.9.tar.gz]
+[2024-04-14 21:34:36] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.1.0.tar.gz]
+[2024-04-14 21:34:36] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 21:34:36] INFO root fetch - main [MainThread]: Store serial: [22761874]
