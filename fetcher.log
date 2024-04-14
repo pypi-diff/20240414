@@ -3860,3 +3860,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:32:00] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
 [2024-04-14 06:32:00] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-04-14 06:32:00] INFO root fetch - main [MainThread]: Store serial: [22756570]
+[2024-04-14 06:34:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756570]
+[2024-04-14 06:34:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-geoacumen
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyplotlib
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ts-soup
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: disinfo-domains
+[2024-04-14 06:34:20] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ts-soup]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 06:34:20] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.4.7] Old Version: [2024.4.14]
+[2024-04-14 06:34:20] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-14 06:34:20] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/ef/7d/dd1e70383d9aa68b1ca595b951493265bdc0904487cd270e2e593b3d7016/python_geoacumen-2024.4.14-py3-none-any.whl
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/c0/70/3e03c92f94ce38a08f435c76a7a44bcecad66807faec92746a3c25b7ced1/ts-soup-0.1.5.tar.gz
+[2024-04-14 06:34:20] WARNING root fetch - processPackages [disinfo-domains]: Skipping, unable to determine old version
+[2024-04-14 06:34:20] INFO root fetch - main [MainThread]: End processing [disinfo-domains] error
+[2024-04-14 06:34:20] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-14 06:34:20] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/26/f0/8717be3d809894e0e8f6e497b22907d4d0e7314540b67ef5d994cce037e0/ts_soup-0.1.6.tar.gz
+[2024-04-14 06:34:21] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-14 06:34:21] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240414/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 06:34:21] INFO root fetch - processPackages [ts-soup]: executing diffoscope
+[2024-04-14 06:34:21] INFO root fetch - processPackages [ts-soup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-soup-0.1.5.tar.gz tmp/ts_soup-0.1.6.tar.gz --markdown 20240414/t/ts-soup/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 06:34:21] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/f6/4d/d2bd3da5d4357004c515ec3a07f006b6e719414f1ed9f74e0e7d072f9f59/python-geoacumen-2024.4.7.tar.gz
+[2024-04-14 06:34:21] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-04-14 06:34:21] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_geoacumen-2024.4.14-py3-none-any.whl.zip tmp/python-geoacumen-2024.4.7.tar.gz --markdown 20240414/p/python-geoacumen/2024.4.14-2024.4.7/README.md --exclude *.pyd
+[2024-04-14 06:34:21] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.1.5.tar.gz]
+[2024-04-14 06:34:21] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts_soup-0.1.6.tar.gz]
+[2024-04-14 06:34:21] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
+[2024-04-14 06:34:21] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-14 06:34:21] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-14 06:34:21] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-14 06:34:26] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python_geoacumen-2024.4.14-py3-none-any.whl.zip]
+[2024-04-14 06:34:26] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
+[2024-04-14 06:34:26] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-04-14 06:34:26] INFO root fetch - main [MainThread]: Store serial: [22756579]
