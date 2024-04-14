@@ -14070,3 +14070,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:05:57] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
 [2024-04-14 21:05:57] INFO root fetch - main [MainThread]: End processing [marcel]: success
 [2024-04-14 21:05:57] INFO root fetch - main [MainThread]: Store serial: [22761523]
+[2024-04-14 21:08:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761523]
+[2024-04-14 21:08:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 21:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spit
+[2024-04-14 21:08:06] INFO root fetch - processPackages [spit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 21:08:06] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/b0/7d/95b428f5054ceaa7df9d2570781e0a517f600a27a4088a45806eaf3f7ccf/spit-0.1.8.tar.gz
+[2024-04-14 21:08:06] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/a3/41/95c2b32d3c225f7fa0cd1b957d8a4e11da5b22cececd0396c623963ac6eb/spit-0.1.9.tar.gz
+[2024-04-14 21:08:06] INFO root fetch - processPackages [spit]: executing diffoscope
+[2024-04-14 21:08:06] INFO root fetch - processPackages [spit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spit-0.1.8.tar.gz tmp/spit-0.1.9.tar.gz --markdown 20240414/s/spit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 21:08:07] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.8.tar.gz]
+[2024-04-14 21:08:07] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.9.tar.gz]
+[2024-04-14 21:08:07] INFO root fetch - main [MainThread]: End processing [spit]: success
+[2024-04-14 21:08:07] INFO root fetch - main [MainThread]: Store serial: [22761526]
