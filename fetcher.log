@@ -6399,3 +6399,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:48:31] INFO root fetch - processPackages [prometheus-pve-sd]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_sd-3.2.8.tar.gz]
 [2024-04-14 11:48:31] INFO root fetch - main [MainThread]: End processing [prometheus-pve-sd]: success
 [2024-04-14 11:48:31] INFO root fetch - main [MainThread]: Store serial: [22757675]
+[2024-04-14 11:50:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757675]
+[2024-04-14 11:50:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: git-batch
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipgogogo
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docker-tidy
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-research
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asgebsmanager
+[2024-04-14 11:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mlmw
+[2024-04-14 11:50:43] INFO root fetch - processPackages [git-batch]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-14 11:50:43] WARNING root fetch - processPackages [asgebsmanager]: Skipping, unable to determine old version
+[2024-04-14 11:50:44] INFO root fetch - main [MainThread]: End processing [asgebsmanager] error
+[2024-04-14 11:50:44] WARNING root fetch - processPackages [ipgogogo]: Skipping, unable to determine old version
+[2024-04-14 11:50:44] INFO root fetch - main [MainThread]: End processing [ipgogogo] error
+[2024-04-14 11:50:44] WARNING root fetch - processPackages [mlmw]: Skipping, unable to determine old version
+[2024-04-14 11:50:44] INFO root fetch - main [MainThread]: End processing [mlmw] error
+[2024-04-14 11:50:44] INFO root fetch - processPackages [docker-tidy]: New version: [2.1.7] Old Version: [2.1.6]
+[2024-04-14 11:50:44] INFO root fetch - processPackages [py-research]: New version: [5.0.0] Old Version: [4.8.0]
+[2024-04-14 11:50:44] INFO root fetch - processPackages [git-batch]: Downloading https://files.pythonhosted.org/packages/18/19/56f451e389bff31ac773d2482f10bb48a149637f4fffa61d08e33b3e8070/git_batch-3.0.5.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [docker-tidy]: Downloading https://files.pythonhosted.org/packages/77/cf/6a4bd59d3baf6bf6a0b06f4c8976b3be5b7d9a81bfaaed3ff938c542cd9f/docker_tidy-2.1.6.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [py-research]: Downloading https://files.pythonhosted.org/packages/71/7d/e82af5493d3384219d89404f87fc1310318b4f9d6937a6dca630af50854d/py_research-4.8.0.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [docker-tidy]: Downloading https://files.pythonhosted.org/packages/db/0d/b095c6fedf588119a235c3739e7a2406e9ee95545a6a0ab4ecc552281434/docker_tidy-2.1.7.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [py-research]: Downloading https://files.pythonhosted.org/packages/b7/39/7d01cfe4e8aac4915f5848542918f3c17e43d5f06d507817c1e67196fa5e/py_research-5.0.0.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [docker-tidy]: executing diffoscope
+[2024-04-14 11:50:44] INFO root fetch - processPackages [docker-tidy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_tidy-2.1.6.tar.gz tmp/docker_tidy-2.1.7.tar.gz --markdown 20240414/d/docker-tidy/2.1.6-2.1.7/README.md --exclude *.pyd
+[2024-04-14 11:50:44] INFO root fetch - processPackages [py-research]: executing diffoscope
+[2024-04-14 11:50:44] INFO root fetch - processPackages [py-research]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_research-4.8.0.tar.gz tmp/py_research-5.0.0.tar.gz --markdown 20240414/p/py-research/4.8.0-5.0.0/README.md --exclude *.pyd
+[2024-04-14 11:50:44] INFO root fetch - processPackages [git-batch]: Downloading https://files.pythonhosted.org/packages/48/08/4f32048dc7b467ebac82e6d6fa8a4867d6dbc524fe68be6ced35a1882c8d/git_batch-3.0.6.tar.gz
+[2024-04-14 11:50:44] INFO root fetch - processPackages [git-batch]: executing diffoscope
+[2024-04-14 11:50:44] INFO root fetch - processPackages [git-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_batch-3.0.5.tar.gz tmp/git_batch-3.0.6.tar.gz --markdown 20240414/g/git-batch/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-04-14 11:50:45] INFO root fetch - processPackages [docker-tidy]: Remove: archive file [/home/abi/fetcher/tmp/docker_tidy-2.1.6.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - processPackages [docker-tidy]: Remove: archive file [/home/abi/fetcher/tmp/docker_tidy-2.1.7.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - main [MainThread]: End processing [docker-tidy]: success
+[2024-04-14 11:50:45] INFO root fetch - processPackages [git-batch]: Remove: archive file [/home/abi/fetcher/tmp/git_batch-3.0.5.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - processPackages [git-batch]: Remove: archive file [/home/abi/fetcher/tmp/git_batch-3.0.6.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - main [MainThread]: End processing [git-batch]: success
+[2024-04-14 11:50:45] INFO root fetch - processPackages [py-research]: Remove: archive file [/home/abi/fetcher/tmp/py_research-4.8.0.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - processPackages [py-research]: Remove: archive file [/home/abi/fetcher/tmp/py_research-5.0.0.tar.gz]
+[2024-04-14 11:50:45] INFO root fetch - main [MainThread]: End processing [py-research]: success
+[2024-04-14 11:50:45] INFO root fetch - main [MainThread]: Store serial: [22757701]
