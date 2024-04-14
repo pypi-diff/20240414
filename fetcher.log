@@ -15396,3 +15396,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:36:26] INFO root fetch - processPackages [pystaleds]: Remove: archive file [/home/abi/fetcher/tmp/pystaleds-0.1.2.tar.gz]
 [2024-04-14 22:36:26] INFO root fetch - main [MainThread]: End processing [pystaleds]: success
 [2024-04-14 22:36:26] INFO root fetch - main [MainThread]: Store serial: [22762304]
+[2024-04-14 22:38:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762304]
+[2024-04-14 22:38:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 22:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-04-14 22:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indexify
+[2024-04-14 22:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smart-parallelize
+[2024-04-14 22:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: privates.py
+[2024-04-14 22:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airton_ac
+[2024-04-14 22:38:34] WARNING root fetch - processPackages [yoto-api]: Skipping, unable to determine old version
+[2024-04-14 22:38:34] INFO root fetch - main [MainThread]: End processing [yoto-api] error
+[2024-04-14 22:38:34] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/22/7f/fa42624efbf0c7c2f1496ca0280bb7e65439dcf475db49370394c77cff1d/smart_parallelize-2.0.4.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [airton_ac]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-14 22:38:35] ERROR root fetch - processPackages [privates.py]: Unable to get metadata: No such project 'privates.py'
+[2024-04-14 22:38:35] INFO root fetch - main [MainThread]: End processing [privates.py] error
+[2024-04-14 22:38:35] INFO root fetch - processPackages [indexify]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:38:35] INFO root fetch - processPackages [airton_ac]: Downloading https://files.pythonhosted.org/packages/cd/3b/dbb6d6246a2c72c0f2734961a3673bee825fafc0ed43b768c346dce45c9a/airton_ac-2.2.0.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [indexify]: Downloading https://files.pythonhosted.org/packages/f8/a3/de0a3191fc02ea1f246e36e2907d80b8e522872eacb5fbfcd5bf72733b5c/indexify-0.0.8.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/00/d8/30cde6688f805d7fd1943736d737b5d5887a226395a0d133426070e2d14e/smart_parallelize-2.0.5.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.4.tar.gz tmp/smart_parallelize-2.0.5.tar.gz --markdown 20240414/s/smart-parallelize/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 22:38:35] INFO root fetch - processPackages [indexify]: Downloading https://files.pythonhosted.org/packages/4e/e0/a60b294a8d7968ee0e712e54f1e8c22a898a1db1870c852c6523d9f6c569/indexify-0.0.9.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [airton_ac]: Downloading https://files.pythonhosted.org/packages/55/c6/a7dea125961c495b350e24d99fdadfb6b62ed74c84330f4f1960c85bb698/airton_ac-2.2.1.tar.gz
+[2024-04-14 22:38:35] INFO root fetch - processPackages [indexify]: executing diffoscope
+[2024-04-14 22:38:35] INFO root fetch - processPackages [indexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-0.0.8.tar.gz tmp/indexify-0.0.9.tar.gz --markdown 20240414/i/indexify/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:38:35] INFO root fetch - processPackages [airton_ac]: executing diffoscope
+[2024-04-14 22:38:35] INFO root fetch - processPackages [airton_ac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airton_ac-2.2.0.tar.gz tmp/airton_ac-2.2.1.tar.gz --markdown 20240414/a/airton_ac/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.4.tar.gz]
+[2024-04-14 22:38:35] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.5.tar.gz]
+[2024-04-14 22:38:35] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-04-14 22:38:36] INFO root fetch - processPackages [indexify]: Remove: archive file [/home/abi/fetcher/tmp/indexify-0.0.8.tar.gz]
+[2024-04-14 22:38:36] INFO root fetch - processPackages [indexify]: Remove: archive file [/home/abi/fetcher/tmp/indexify-0.0.9.tar.gz]
+[2024-04-14 22:38:36] INFO root fetch - main [MainThread]: End processing [indexify]: success
+[2024-04-14 22:38:36] INFO root fetch - processPackages [airton_ac]: Remove: archive file [/home/abi/fetcher/tmp/airton_ac-2.2.0.tar.gz]
+[2024-04-14 22:38:36] INFO root fetch - processPackages [airton_ac]: Remove: archive file [/home/abi/fetcher/tmp/airton_ac-2.2.1.tar.gz]
+[2024-04-14 22:38:36] INFO root fetch - main [MainThread]: End processing [airton_ac]: success
+[2024-04-14 22:38:36] INFO root fetch - main [MainThread]: Store serial: [22762330]
