@@ -2022,3 +2022,36 @@
 [2024-04-14 02:58:14] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.3.7-py3-none-any.whl.zip]
 [2024-04-14 02:58:14] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
 [2024-04-14 02:58:14] INFO root fetch - main [MainThread]: Store serial: [22755938]
+[2024-04-14 03:00:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755938]
+[2024-04-14 03:00:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ts-soup
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autopipeline
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: avocentdpdu
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofscraper
+[2024-04-14 03:00:23] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 03:00:23] WARNING root fetch - processPackages [avocentdpdu]: Skipping, unable to determine old version
+[2024-04-14 03:00:23] INFO root fetch - main [MainThread]: End processing [avocentdpdu] error
+[2024-04-14 03:00:23] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ts-soup]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ofscraper]: New version: [3.9.0.dev9] Old Version: [3.9.0.dev7]
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/c0/70/3e03c92f94ce38a08f435c76a7a44bcecad66807faec92746a3c25b7ced1/ts-soup-0.1.5.tar.gz
+[2024-04-14 03:00:23] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 03:00:23] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/df/b3/41b423314e8536bb62d01eaed102796197ae0d08e41e81bed773f70359db/ofscraper-3.9.0.dev7.tar.gz
+[2024-04-14 03:00:23] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 03:00:23] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/26/f0/8717be3d809894e0e8f6e497b22907d4d0e7314540b67ef5d994cce037e0/ts_soup-0.1.6.tar.gz
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ts-soup]: executing diffoscope
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ts-soup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-soup-0.1.5.tar.gz tmp/ts_soup-0.1.6.tar.gz --markdown 20240414/t/ts-soup/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/2c/a7/19187a41b609fe0073f8560c9536929661f7d47dc67892c1020d2a39d063/ofscraper-3.9.0.dev9.tar.gz
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-3.9.0.dev7.tar.gz tmp/ofscraper-3.9.0.dev9.tar.gz --markdown 20240414/o/ofscraper/3.9.0.dev7-3.9.0.dev9/README.md --exclude *.pyd
+[2024-04-14 03:00:24] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 03:00:24] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 03:00:24] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.1.5.tar.gz]
+[2024-04-14 03:00:24] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts_soup-0.1.6.tar.gz]
+[2024-04-14 03:00:24] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
+[2024-04-14 03:00:25] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.0.dev7.tar.gz]
+[2024-04-14 03:00:25] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.0.dev9.tar.gz]
+[2024-04-14 03:00:25] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2024-04-14 03:00:25] INFO root fetch - main [MainThread]: Store serial: [22755952]
