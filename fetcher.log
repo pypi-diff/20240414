@@ -4857,3 +4857,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:00:30] INFO root fetch - processPackages [solaxx3]: Remove: archive file [/home/abi/fetcher/tmp/solaxx3-1.0.0.tar.gz]
 [2024-04-14 09:00:30] INFO root fetch - main [MainThread]: End processing [solaxx3]: success
 [2024-04-14 09:00:30] INFO root fetch - main [MainThread]: Store serial: [22756958]
+[2024-04-14 09:02:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756958]
+[2024-04-14 09:02:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 09:02:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-models-nightly
+[2024-04-14 09:02:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazylinop
+[2024-04-14 09:02:38] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-04-14 09:02:38] INFO root fetch - processPackages [lazylinop]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-04-14 09:02:38] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-04-14 09:02:39] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/1e/8f/9ca46f76d2a73a2cc600e3d3c0d75516a46db8c5f60e41804f07e71b5480/lazylinop-1.7.1-py3-none-any.whl
+[2024-04-14 09:02:39] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-04-14 09:02:39] INFO root fetch - processPackages [lazylinop]: Downloading https://files.pythonhosted.org/packages/53/03/72782da5ec660bf8199e0cfe9d82be70d801ec1608ad67172744318d3086/lazylinop-1.8.0-py3-none-any.whl
+[2024-04-14 09:02:39] INFO root fetch - processPackages [lazylinop]: executing diffoscope
+[2024-04-14 09:02:39] INFO root fetch - processPackages [lazylinop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazylinop-1.7.1-py3-none-any.whl.zip tmp/lazylinop-1.8.0-py3-none-any.whl.zip --markdown 20240414/l/lazylinop/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-04-14 09:02:39] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-04-14 09:02:39] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240414/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-04-14 09:02:40] INFO root fetch - processPackages [lazylinop]: Remove: archive file [/home/abi/fetcher/tmp/lazylinop-1.7.1-py3-none-any.whl.zip]
+[2024-04-14 09:02:40] INFO root fetch - processPackages [lazylinop]: Remove: archive file [/home/abi/fetcher/tmp/lazylinop-1.8.0-py3-none-any.whl.zip]
+[2024-04-14 09:02:40] INFO root fetch - main [MainThread]: End processing [lazylinop]: success
+[2024-04-14 09:02:42] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-04-14 09:02:42] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-04-14 09:02:42] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-04-14 09:02:42] INFO root fetch - main [MainThread]: Store serial: [22756962]
