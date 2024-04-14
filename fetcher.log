@@ -9411,3 +9411,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:19:02] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
 [2024-04-14 15:19:02] INFO root fetch - main [MainThread]: End processing [swibots]: success
 [2024-04-14 15:19:02] INFO root fetch - main [MainThread]: Store serial: [22759113]
+[2024-04-14 15:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759113]
+[2024-04-14 15:21:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sae-vis
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsk-monster
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torcheval-nightly
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ytmdl
+[2024-04-14 15:21:18] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 15:21:18] INFO root fetch - processPackages [sae-vis]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 15:21:18] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/db/6a/f2a0417c109d3a023094ae4ea78cba9d3a6cbab45948adbb24947ad741a1/tsk_monster-0.0.7.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/41/60/b7fdf368aed9c8dd61c0db677bd692930cc6ea73b861fd2925fab6460c71/sae-vis-0.2.8.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ytmdl]: New version: [2024.4.14] Old Version: [2023.7.27]
+[2024-04-14 15:21:18] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-14 15:21:18] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/7f/ab/3d421c7c8ad6574d57aec3c2ae9cf540fd37978ef92c9492e7a82839af9d/sae-vis-0.2.9.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/a3/6d/794af2087c6d670c1d6bd148a897d3a59b68e8d4b82c381b57d3e20ab544/torcheval-nightly-2024.4.8.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [ytmdl]: Downloading https://files.pythonhosted.org/packages/69/df/d9466868750bafa866d11538ff8aa52ddbf689255d6b347f5f2aa6bfe797/ytmdl-2023.7.27.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-14 15:21:18] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-14 15:21:18] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.8.tar.gz tmp/sae-vis-0.2.9.tar.gz --markdown 20240414/s/sae-vis/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 15:21:18] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-14 15:21:18] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.7.tar.gz tmp/tsk_monster-0.0.8.tar.gz --markdown 20240414/t/tsk-monster/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 15:21:19] INFO root fetch - processPackages [ytmdl]: Downloading https://files.pythonhosted.org/packages/da/dc/d846e19a8a64ec1cbd61cf008289bc88f127f0a245d05d92819e8184ff0c/ytmdl-2024.4.14-py3-none-any.whl
+[2024-04-14 15:21:19] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/01/5f/5d3ae8fee972a25478395600694aa6da7aecdf0fdc15b5bb79b52a372737/torcheval-nightly-2024.4.9.tar.gz
+[2024-04-14 15:21:19] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-04-14 15:21:19] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.4.8.tar.gz tmp/torcheval-nightly-2024.4.9.tar.gz --markdown 20240414/t/torcheval-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-14 15:21:19] INFO root fetch - processPackages [ytmdl]: executing diffoscope
+[2024-04-14 15:21:19] INFO root fetch - processPackages [ytmdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmdl-2023.7.27.tar.gz tmp/ytmdl-2024.4.14-py3-none-any.whl.zip --markdown 20240414/y/ytmdl/2023.7.27-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 15:21:19] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.7.tar.gz]
+[2024-04-14 15:21:19] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-14 15:21:19] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-14 15:21:19] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.8.tar.gz]
+[2024-04-14 15:21:19] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.9.tar.gz]
+[2024-04-14 15:21:19] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-14 15:21:19] INFO root fetch - processPackages [ytmdl]: Remove: archive file [/home/abi/fetcher/tmp/ytmdl-2023.7.27.tar.gz]
+[2024-04-14 15:21:19] INFO root fetch - processPackages [ytmdl]: Remove: archive file [/home/abi/fetcher/tmp/ytmdl-2024.4.14-py3-none-any.whl.zip]
+[2024-04-14 15:21:19] INFO root fetch - main [MainThread]: End processing [ytmdl]: success
+[2024-04-14 15:21:20] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.8.tar.gz]
+[2024-04-14 15:21:20] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.9.tar.gz]
+[2024-04-14 15:21:20] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-04-14 15:21:20] INFO root fetch - main [MainThread]: Store serial: [22759129]
