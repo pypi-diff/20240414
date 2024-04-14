@@ -15287,3 +15287,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:29:54] INFO root fetch - processPackages [librecell-lib]: Remove: archive file [/home/abi/fetcher/tmp/librecell-lib-0.0.9.tar.gz]
 [2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [librecell-lib]: success
 [2024-04-14 22:29:54] INFO root fetch - main [MainThread]: Store serial: [22762203]
+[2024-04-14 22:31:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762203]
+[2024-04-14 22:32:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipmaster
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maturin-watchdog
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: librecell
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipmaster
+[2024-04-14 22:32:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smart-parallelize
+[2024-04-14 22:32:03] INFO root fetch - processPackages [librecell]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [maturin-watchdog]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.84]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [librecell]: Downloading https://files.pythonhosted.org/packages/ea/4b/605f3437905259b90574ed85aa76e49f15d852ff62c85a632910bc78a88a/librecell-0.0.8.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/06/69/9e50ef7d392535d66e59f4c716a14741ebe16dedfeef46f4e28f60a68342/maturin_watchdog-0.1.8.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 22:32:03] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d4/51/6a2831c904dc0bd8a94d72c053d9e2c943c79a800cf685ee397471dfbf37/freegenius-0.0.84.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: Downloading https://files.pythonhosted.org/packages/2b/aa/35d8d72e77566ba4497b102ee39fa5f4679fb18713b51849cd5957203129/pipmaster-0.1.0.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: Downloading https://files.pythonhosted.org/packages/2b/aa/35d8d72e77566ba4497b102ee39fa5f4679fb18713b51849cd5957203129/pipmaster-0.1.0.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/c9/89/9d8fc5cca8de1da6023c5c61551c0f2b9908adaa788e915a2cb2a2952b51/maturin_watchdog-0.1.9.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [librecell]: Downloading https://files.pythonhosted.org/packages/8a/58/eb4ff3f473687ed975d21b37259f5137701bf74a7a6e096e2cfeedd8e783/librecell-0.0.9.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/22/7f/fa42624efbf0c7c2f1496ca0280bb7e65439dcf475db49370394c77cff1d/smart_parallelize-2.0.4.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [maturin-watchdog]: executing diffoscope
+[2024-04-14 22:32:03] INFO root fetch - processPackages [maturin-watchdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin_watchdog-0.1.8.tar.gz tmp/maturin_watchdog-0.1.9.tar.gz --markdown 20240414/m/maturin-watchdog/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 22:32:03] INFO root fetch - processPackages [librecell]: executing diffoscope
+[2024-04-14 22:32:03] INFO root fetch - processPackages [librecell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-0.0.8.tar.gz tmp/librecell-0.0.9.tar.gz --markdown 20240414/l/librecell/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:32:03] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: Downloading https://files.pythonhosted.org/packages/87/96/c7be21426a4340c4dfbab9ba8329974ef053f9985cc2a1b964768c3cc3ee/pipmaster-0.1.1.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: Downloading https://files.pythonhosted.org/packages/87/96/c7be21426a4340c4dfbab9ba8329974ef053f9985cc2a1b964768c3cc3ee/pipmaster-0.1.1.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/00/d8/30cde6688f805d7fd1943736d737b5d5887a226395a0d133426070e2d14e/smart_parallelize-2.0.5.tar.gz
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: executing diffoscope
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipmaster-0.1.0.tar.gz tmp/pipmaster-0.1.1.tar.gz --markdown 20240414/p/pipmaster/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 22:32:03] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-14 22:32:03] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.84.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240414/f/freegenius/0.0.84-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: executing diffoscope
+[2024-04-14 22:32:03] INFO root fetch - processPackages [pipmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipmaster-0.1.0.tar.gz tmp/pipmaster-0.1.1.tar.gz --markdown 20240414/p/pipmaster/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 22:32:04] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-04-14 22:32:04] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.4.tar.gz tmp/smart_parallelize-2.0.5.tar.gz --markdown 20240414/s/smart-parallelize/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 22:32:04] INFO root fetch - processPackages [librecell]: Remove: archive file [/home/abi/fetcher/tmp/librecell-0.0.8.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - processPackages [librecell]: Remove: archive file [/home/abi/fetcher/tmp/librecell-0.0.9.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - main [MainThread]: End processing [librecell]: success
+[2024-04-14 22:32:04] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.8.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.9.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - main [MainThread]: End processing [maturin-watchdog]: success
+[2024-04-14 22:32:04] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.4.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.5.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-04-14 22:32:04] INFO root fetch - processPackages [pipmaster]: Remove: archive file [/home/abi/fetcher/tmp/pipmaster-0.1.0.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - processPackages [pipmaster]: Remove: archive file [/home/abi/fetcher/tmp/pipmaster-0.1.1.tar.gz]
+[2024-04-14 22:32:04] INFO root fetch - main [MainThread]: End processing [pipmaster]: success
+[2024-04-14 22:32:04] INFO root fetch - main [MainThread]: End processing [pipmaster]: success
+[2024-04-14 22:32:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.84.tar.gz]
+[2024-04-14 22:32:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-14 22:32:05] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-14 22:32:05] INFO root fetch - main [MainThread]: Store serial: [22762223]
