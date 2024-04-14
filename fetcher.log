@@ -5719,3 +5719,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:40:04] WARNING root fetch - processPackages [pygccxml]: None
 [2024-04-14 10:40:04] INFO root fetch - main [MainThread]: End processing [pygccxml] error
 [2024-04-14 10:40:04] INFO root fetch - main [MainThread]: Store serial: [22757352]
+[2024-04-14 10:42:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757352]
+[2024-04-14 10:42:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtutils
+[2024-04-14 10:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ossx
+[2024-04-14 10:42:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chromastone
+[2024-04-14 10:42:13] INFO root fetch - processPackages [chromastone]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-14 10:42:13] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 10:42:13] WARNING root fetch - processPackages [ossx]: Skipping, unable to determine old version
+[2024-04-14 10:42:13] INFO root fetch - main [MainThread]: End processing [ossx] error
+[2024-04-14 10:42:13] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/17/f0/94661ca0dbccb17ba5fa1f0eb9467853bff1f915d9c825252a613894070c/chromastone-0.2.0.tar.gz
+[2024-04-14 10:42:13] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 10:42:13] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 10:42:13] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 10:42:13] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 10:42:13] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/6d/48/ec255b11d2da07e36e0b1647599917681d56ddfaee4a1125d467f6359378/chromastone-0.2.1.tar.gz
+[2024-04-14 10:42:13] INFO root fetch - processPackages [chromastone]: executing diffoscope
+[2024-04-14 10:42:13] INFO root fetch - processPackages [chromastone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromastone-0.2.0.tar.gz tmp/chromastone-0.2.1.tar.gz --markdown 20240414/c/chromastone/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-14 10:42:14] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 10:42:14] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 10:42:14] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.0.tar.gz]
+[2024-04-14 10:42:14] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.1.tar.gz]
+[2024-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [chromastone]: success
+[2024-04-14 10:42:14] INFO root fetch - main [MainThread]: Store serial: [22757363]
