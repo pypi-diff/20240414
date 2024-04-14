@@ -14112,3 +14112,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:10:19] INFO root fetch - processPackages [neopyter]: Remove: archive file [/home/abi/fetcher/tmp/neopyter-0.2.1.tar.gz]
 [2024-04-14 21:10:19] INFO root fetch - main [MainThread]: End processing [neopyter]: success
 [2024-04-14 21:10:19] INFO root fetch - main [MainThread]: Store serial: [22761535]
+[2024-04-14 21:12:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761535]
+[2024-04-14 21:12:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 21:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystaleds
+[2024-04-14 21:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytplot-mpl-temp
+[2024-04-14 21:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-parse
+[2024-04-14 21:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scmopy
+[2024-04-14 21:12:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rtorrent-rpc
+[2024-04-14 21:12:28] INFO root fetch - processPackages [rtorrent-rpc]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-14 21:12:28] INFO root fetch - processPackages [scmopy]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 21:12:28] INFO root fetch - processPackages [llama-parse]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-14 21:12:28] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-14 21:12:28] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/ac/2c/3b0c995906df01437683e2db12fd9543b1155095a6948b2a5ab7e3b2a476/scmopy-0.0.7.tar.gz
+[2024-04-14 21:12:28] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/36/4f/0ddfb3ff414efaa604db345e4ad81be2bb497c23f336d467dd9b54b65f64/rtorrent_rpc-0.2.1.tar.gz
+[2024-04-14 21:12:28] INFO root fetch - processPackages [pystaleds]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 21:12:29] INFO root fetch - processPackages [llama-parse]: Downloading https://files.pythonhosted.org/packages/94/7a/8541f4af3128041abdfa0d7f792ecf5122103530509bbe330aa31818ba10/llama_parse-0.4.0.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/4a/3e/a5a5f1bb38b468da3d376ee81f842f2f8433d02dd89bf1e410d1a15a98e0/pytplot-mpl-temp-2.2.8.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pystaleds]: Downloading https://files.pythonhosted.org/packages/03/f7/820cbc46a25cfb949c273122407ce72919df742e21f0c65666fb236a405d/pystaleds-0.1.0.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/84/0e/3a95a0a1c4d84414955d3af0fc2adf539de3ff20427a9752f2b9728332fd/scmopy-0.0.8.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/c4/30/f9e15b1521dbb422d42d92044c72aa726e803f7ff29d1c4aca5d94555cfa/rtorrent_rpc-0.2.2.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 21:12:29] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.7.tar.gz tmp/scmopy-0.0.8.tar.gz --markdown 20240414/s/scmopy/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 21:12:29] INFO root fetch - processPackages [llama-parse]: Downloading https://files.pythonhosted.org/packages/ab/ac/e85f37d65d51439956289a39cb97d2b5b340fef2a6c1b54039de7d5be833/llama_parse-0.4.1.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [rtorrent-rpc]: executing diffoscope
+[2024-04-14 21:12:29] INFO root fetch - processPackages [rtorrent-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtorrent_rpc-0.2.1.tar.gz tmp/rtorrent_rpc-0.2.2.tar.gz --markdown 20240414/r/rtorrent-rpc/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-14 21:12:29] INFO root fetch - processPackages [llama-parse]: executing diffoscope
+[2024-04-14 21:12:29] INFO root fetch - processPackages [llama-parse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_parse-0.4.0.tar.gz tmp/llama_parse-0.4.1.tar.gz --markdown 20240414/l/llama-parse/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/21/aa/38c2164a03950b9adf6f62c59343823fefd067961a6402ad1c2311ef1a3a/pytplot-mpl-temp-2.2.9.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pystaleds]: Downloading https://files.pythonhosted.org/packages/ef/ac/39f7ff574df6f70bfc24ac59a7909d2d7a31d084a8347aca36ea125d5f19/pystaleds-0.1.1.tar.gz
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.2.8.tar.gz tmp/pytplot-mpl-temp-2.2.9.tar.gz --markdown 20240414/p/pytplot-mpl-temp/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pystaleds]: executing diffoscope
+[2024-04-14 21:12:29] INFO root fetch - processPackages [pystaleds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystaleds-0.1.0.tar.gz tmp/pystaleds-0.1.1.tar.gz --markdown 20240414/p/pystaleds/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 21:12:30] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.2.1.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.2.2.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: End processing [rtorrent-rpc]: success
+[2024-04-14 21:12:30] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.7.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.8.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 21:12:30] INFO root fetch - processPackages [llama-parse]: Remove: archive file [/home/abi/fetcher/tmp/llama_parse-0.4.0.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - processPackages [llama-parse]: Remove: archive file [/home/abi/fetcher/tmp/llama_parse-0.4.1.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: End processing [llama-parse]: success
+[2024-04-14 21:12:30] INFO root fetch - processPackages [pystaleds]: Remove: archive file [/home/abi/fetcher/tmp/pystaleds-0.1.0.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - processPackages [pystaleds]: Remove: archive file [/home/abi/fetcher/tmp/pystaleds-0.1.1.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: End processing [pystaleds]: success
+[2024-04-14 21:12:30] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.8.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - processPackages [pytplot-mpl-temp]: Remove: archive file [/home/abi/fetcher/tmp/pytplot-mpl-temp-2.2.9.tar.gz]
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2024-04-14 21:12:30] INFO root fetch - main [MainThread]: Store serial: [22761613]
