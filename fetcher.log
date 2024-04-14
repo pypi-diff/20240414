@@ -4203,3 +4203,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:21:46] INFO root fetch - processPackages [authx]: Remove: archive file [/home/abi/fetcher/tmp/authx-1.1.1.tar.gz]
 [2024-04-14 07:21:46] INFO root fetch - main [MainThread]: End processing [authx]: success
 [2024-04-14 07:21:46] INFO root fetch - main [MainThread]: Store serial: [22756689]
+[2024-04-14 07:23:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756689]
+[2024-04-14 07:23:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:25:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756689]
+[2024-04-14 07:26:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 07:26:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monisha
+[2024-04-14 07:26:00] INFO root fetch - processPackages [monisha]: New version: [0.0.43] Old Version: [0.0.42]
+[2024-04-14 07:26:00] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/e7/b5/ca455cd58648a2d35019cdaabe3ac0fa885153723a3c9b0907ca2eef2739/monisha-0.0.42.tar.gz
+[2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/79/14/e91f2eadfc9b2c7d60cf28a7d84a7d28526c7eed1b1e524c8409122e4a8d/monisha-0.0.43.tar.gz
+[2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.42.tar.gz tmp/monisha-0.0.43.tar.gz --markdown 20240414/m/monisha/0.0.42-0.0.43/README.md --exclude *.pyd
+[2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.42.tar.gz]
+[2024-04-14 07:26:01] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.43.tar.gz]
+[2024-04-14 07:26:01] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-14 07:26:01] INFO root fetch - main [MainThread]: Store serial: [22756692]
