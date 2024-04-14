@@ -2904,3 +2904,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 04:43:15] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2415.tar.gz]
 [2024-04-14 04:43:15] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-04-14 04:43:15] INFO root fetch - main [MainThread]: Store serial: [22756247]
+[2024-04-14 04:45:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756247]
+[2024-04-14 04:45:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-ptsl
+[2024-04-14 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sampa
+[2024-04-14 04:45:23] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-14 04:45:23] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 04:45:23] INFO root fetch - processPackages [py-ptsl]: New version: [301.0.0] Old Version: [101.1.0]
+[2024-04-14 04:45:24] INFO root fetch - processPackages [py-ptsl]: Downloading https://files.pythonhosted.org/packages/2f/7e/afffa9639c64702575579098922d5fce7d1acb070b2562d1b70d110d38fd/py_ptsl-101.1.0.tar.gz
+[2024-04-14 04:45:24] INFO root fetch - processPackages [py-ptsl]: Downloading https://files.pythonhosted.org/packages/14/42/398c75ed24dcf0659609511cead1877ca6bdf507ae0f210a6547aaa85bc7/py_ptsl-301.0.0.tar.gz
+[2024-04-14 04:45:24] INFO root fetch - processPackages [py-ptsl]: executing diffoscope
+[2024-04-14 04:45:24] INFO root fetch - processPackages [py-ptsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ptsl-101.1.0.tar.gz tmp/py_ptsl-301.0.0.tar.gz --markdown 20240414/p/py-ptsl/101.1.0-301.0.0/README.md --exclude *.pyd
+[2024-04-14 04:45:25] INFO root fetch - processPackages [py-ptsl]: Remove: archive file [/home/abi/fetcher/tmp/py_ptsl-101.1.0.tar.gz]
+[2024-04-14 04:45:25] INFO root fetch - processPackages [py-ptsl]: Remove: archive file [/home/abi/fetcher/tmp/py_ptsl-301.0.0.tar.gz]
+[2024-04-14 04:45:25] INFO root fetch - main [MainThread]: End processing [py-ptsl]: success
+[2024-04-14 04:45:25] INFO root fetch - main [MainThread]: Store serial: [22756254]
