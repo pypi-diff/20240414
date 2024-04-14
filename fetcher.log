@@ -2143,3 +2143,24 @@
 [2024-04-14 03:13:40] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.2.tar.gz]
 [2024-04-14 03:13:40] INFO root fetch - main [MainThread]: End processing [lama2923]: success
 [2024-04-14 03:13:40] INFO root fetch - main [MainThread]: Store serial: [22755986]
+[2024-04-14 03:15:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755986]
+[2024-04-14 03:15:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 03:15:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vacuum-map-parser-roborock
+[2024-04-14 03:15:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netbound
+[2024-04-14 03:15:49] INFO root fetch - processPackages [vacuum-map-parser-roborock]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 03:15:49] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 03:15:49] INFO root fetch - processPackages [vacuum-map-parser-roborock]: Downloading https://files.pythonhosted.org/packages/1c/bf/9351d94c4cad40d9ef7b2962e28a7e3c4d30e94f0c5d1ae8b0978afcc38e/vacuum_map_parser_roborock-0.1.1.tar.gz
+[2024-04-14 03:15:49] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-14 03:15:49] INFO root fetch - processPackages [vacuum-map-parser-roborock]: Downloading https://files.pythonhosted.org/packages/e0/b0/5dacc8bf0c252f107ea368a0bccafc4ddb77260134036209a1c963020caa/vacuum_map_parser_roborock-0.1.2.tar.gz
+[2024-04-14 03:15:49] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-14 03:15:50] INFO root fetch - processPackages [vacuum-map-parser-roborock]: executing diffoscope
+[2024-04-14 03:15:50] INFO root fetch - processPackages [vacuum-map-parser-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vacuum_map_parser_roborock-0.1.1.tar.gz tmp/vacuum_map_parser_roborock-0.1.2.tar.gz --markdown 20240414/v/vacuum-map-parser-roborock/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 03:15:50] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-14 03:15:50] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240414/n/netbound/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 03:15:50] INFO root fetch - processPackages [vacuum-map-parser-roborock]: Remove: archive file [/home/abi/fetcher/tmp/vacuum_map_parser_roborock-0.1.1.tar.gz]
+[2024-04-14 03:15:50] INFO root fetch - processPackages [vacuum-map-parser-roborock]: Remove: archive file [/home/abi/fetcher/tmp/vacuum_map_parser_roborock-0.1.2.tar.gz]
+[2024-04-14 03:15:50] INFO root fetch - main [MainThread]: End processing [vacuum-map-parser-roborock]: success
+[2024-04-14 03:15:50] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-14 03:15:50] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-14 03:15:50] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-14 03:15:50] INFO root fetch - main [MainThread]: Store serial: [22755993]
