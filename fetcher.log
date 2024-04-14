@@ -10264,3 +10264,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:17:26] INFO root fetch - processPackages [hspatial]: Remove: archive file [/home/abi/fetcher/tmp/hspatial-4.0.0.tar.gz]
 [2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [hspatial]: success
 [2024-04-14 16:17:26] INFO root fetch - main [MainThread]: Store serial: [22759577]
+[2024-04-14 16:19:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759577]
+[2024-04-14 16:19:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 16:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aisploit
+[2024-04-14 16:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testasteca
+[2024-04-14 16:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a2y-mew
+[2024-04-14 16:19:42] INFO root fetch - processPackages [testasteca]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-14 16:19:43] INFO root fetch - processPackages [a2y-mew]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-14 16:19:43] INFO root fetch - processPackages [aisploit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:19:43] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/20/ed/96aaa83e6ad7509d47c9159c09d9ebbb48380d8a60258ddb12e0ad0da88e/testasteca-0.5.1.tar.gz
+[2024-04-14 16:19:43] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-14 16:19:43] INFO root fetch - processPackages [a2y-mew]: Downloading https://files.pythonhosted.org/packages/e2/98/b47b27012ce66cd0b9886d18c23ae74d77dd122b9bf0e375cf19d671147e/a2y_mew-0.9.4-cp38-cp38-win_amd64.whl
+[2024-04-14 16:19:43] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/64/75/526e62165a55dd4e315f260f97c3485cb99fd446d82362245aba78221790/testasteca-0.5.2.tar.gz
+[2024-04-14 16:19:43] INFO root fetch - processPackages [a2y-mew]: Downloading https://files.pythonhosted.org/packages/53/7b/499757ad74dac21d60429d0be5d8c0c3f250fbe2ed16ecd21cfb09b990f1/a2y_mew-0.9.5-cp38-cp38-win_amd64.whl
+[2024-04-14 16:19:43] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/79/1a/32067b96fbd51e172e74fa8134d42b6721bd699ae2c9f8e5927b09de2401/aisploit-0.0.9.tar.gz
+[2024-04-14 16:19:43] INFO root fetch - processPackages [testasteca]: executing diffoscope
+[2024-04-14 16:19:43] INFO root fetch - processPackages [testasteca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testasteca-0.5.1.tar.gz tmp/testasteca-0.5.2.tar.gz --markdown 20240414/t/testasteca/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-14 16:19:43] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-14 16:19:43] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.8.tar.gz tmp/aisploit-0.0.9.tar.gz --markdown 20240414/a/aisploit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:19:43] INFO root fetch - processPackages [a2y-mew]: executing diffoscope
+[2024-04-14 16:19:43] INFO root fetch - processPackages [a2y-mew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a2y_mew-0.9.4-cp38-cp38-win_amd64.whl.zip tmp/a2y_mew-0.9.5-cp38-cp38-win_amd64.whl.zip --markdown 20240414/a/a2y-mew/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-14 16:19:44] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.1.tar.gz]
+[2024-04-14 16:19:44] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.2.tar.gz]
+[2024-04-14 16:19:44] INFO root fetch - main [MainThread]: End processing [testasteca]: success
+[2024-04-14 16:19:44] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-14 16:19:44] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.9.tar.gz]
+[2024-04-14 16:19:44] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-14 16:19:44] INFO root fetch - processPackages [a2y-mew]: Remove: archive file [/home/abi/fetcher/tmp/a2y_mew-0.9.4-cp38-cp38-win_amd64.whl.zip]
+[2024-04-14 16:19:44] INFO root fetch - processPackages [a2y-mew]: Remove: archive file [/home/abi/fetcher/tmp/a2y_mew-0.9.5-cp38-cp38-win_amd64.whl.zip]
+[2024-04-14 16:19:44] INFO root fetch - main [MainThread]: End processing [a2y-mew]: success
+[2024-04-14 16:19:44] INFO root fetch - main [MainThread]: Store serial: [22759585]
