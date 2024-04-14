@@ -16009,3 +16009,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:22:05] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.26.1.tar.gz]
 [2024-04-14 23:22:05] INFO root fetch - main [MainThread]: End processing [naludaq]: success
 [2024-04-14 23:22:05] INFO root fetch - main [MainThread]: Store serial: [22762555]
+[2024-04-14 23:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762555]
+[2024-04-14 23:24:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 23:24:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccxt
+[2024-04-14 23:24:14] INFO root fetch - processPackages [ccxt]: New version: [4.2.97] Old Version: [4.2.96]
+[2024-04-14 23:24:14] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/2b/d9/57d715f494eef16ed8965c1b1735266bdc8e680a10805868284e31babc8e/ccxt-4.2.96.tar.gz
+[2024-04-14 23:24:14] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/55/da/a713b62f3e1e29bdb1cfd111cc26b673e8b78a5632265717b3a2f82e9a4a/ccxt-4.2.97.tar.gz
+[2024-04-14 23:24:15] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-04-14 23:24:15] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.2.96.tar.gz tmp/ccxt-4.2.97.tar.gz --markdown 20240414/c/ccxt/4.2.96-4.2.97/README.md --exclude *.pyd
+[2024-04-14 23:24:20] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.96.tar.gz]
+[2024-04-14 23:24:20] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.97.tar.gz]
+[2024-04-14 23:24:20] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-04-14 23:24:20] INFO root fetch - main [MainThread]: Store serial: [22762558]
