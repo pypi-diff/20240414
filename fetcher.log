@@ -11340,3 +11340,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:33:37] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.1.9.tar.gz]
 [2024-04-14 17:33:37] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
 [2024-04-14 17:33:37] INFO root fetch - main [MainThread]: Store serial: [22760258]
+[2024-04-14 17:35:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760258]
+[2024-04-14 17:35:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 17:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: s360tools
+[2024-04-14 17:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Sentinel-2-band-downloader
+[2024-04-14 17:35:46] INFO root fetch - processPackages [s360tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 17:35:46] INFO root fetch - processPackages [Sentinel-2-band-downloader]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-14 17:35:46] INFO root fetch - processPackages [s360tools]: Downloading https://files.pythonhosted.org/packages/0d/7c/8be870f97f0339b8f2e7ace8fe106cac54ed02414402cee2c0b6a6752439/s360tools-0.1.8.tar.gz
+[2024-04-14 17:35:46] INFO root fetch - processPackages [Sentinel-2-band-downloader]: Downloading https://files.pythonhosted.org/packages/21/58/79480dbfb35a042d05821d254cf911d6d5b20389f04c9b47e45ba92a1c56/Sentinel_2_band_downloader-0.3.1.tar.gz
+[2024-04-14 17:35:46] INFO root fetch - processPackages [s360tools]: Downloading https://files.pythonhosted.org/packages/36/a7/b8ffea09fda00e3b858dd7c2d542c99922c6acee6cc2ab85d52ee832f477/s360tools-0.1.9.tar.gz
+[2024-04-14 17:35:46] INFO root fetch - processPackages [Sentinel-2-band-downloader]: Downloading https://files.pythonhosted.org/packages/ac/e9/839ab4f887adf4f97e73b40ec2a832feb13676807aa44e19f87a0cf00008/sentinel_2_band_downloader-0.3.2.tar.gz
+[2024-04-14 17:35:46] INFO root fetch - processPackages [s360tools]: executing diffoscope
+[2024-04-14 17:35:46] INFO root fetch - processPackages [s360tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s360tools-0.1.8.tar.gz tmp/s360tools-0.1.9.tar.gz --markdown 20240414/s/s360tools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 17:35:46] INFO root fetch - processPackages [Sentinel-2-band-downloader]: executing diffoscope
+[2024-04-14 17:35:46] INFO root fetch - processPackages [Sentinel-2-band-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sentinel_2_band_downloader-0.3.1.tar.gz tmp/sentinel_2_band_downloader-0.3.2.tar.gz --markdown 20240414/S/Sentinel-2-band-downloader/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-14 17:35:47] INFO root fetch - processPackages [s360tools]: Remove: archive file [/home/abi/fetcher/tmp/s360tools-0.1.8.tar.gz]
+[2024-04-14 17:35:47] INFO root fetch - processPackages [s360tools]: Remove: archive file [/home/abi/fetcher/tmp/s360tools-0.1.9.tar.gz]
+[2024-04-14 17:35:47] INFO root fetch - main [MainThread]: End processing [s360tools]: success
+[2024-04-14 17:35:47] INFO root fetch - processPackages [Sentinel-2-band-downloader]: Remove: archive file [/home/abi/fetcher/tmp/Sentinel_2_band_downloader-0.3.1.tar.gz]
+[2024-04-14 17:35:47] INFO root fetch - processPackages [Sentinel-2-band-downloader]: Remove: archive file [/home/abi/fetcher/tmp/sentinel_2_band_downloader-0.3.2.tar.gz]
+[2024-04-14 17:35:47] INFO root fetch - main [MainThread]: End processing [Sentinel-2-band-downloader]: success
+[2024-04-14 17:35:47] INFO root fetch - main [MainThread]: Store serial: [22760265]
