@@ -16400,3 +16400,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.5.tar.gz]
 [2024-04-14 23:57:27] INFO root fetch - main [MainThread]: End processing [watson-poetry]: success
 [2024-04-14 23:57:27] INFO root fetch - main [MainThread]: Store serial: [22762742]
+[2024-04-14 23:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762742]
+[2024-04-14 23:59:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 23:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdfToAudio
+[2024-04-14 23:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: watson-poetry
+[2024-04-14 23:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-graphql
+[2024-04-14 23:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: archyve
+[2024-04-14 23:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yoto-api
+[2024-04-14 23:59:36] INFO root fetch - processPackages [watson-poetry]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 23:59:36] INFO root fetch - processPackages [yoto-api]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-14 23:59:36] INFO root fetch - processPackages [pdfToAudio]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 23:59:36] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/9d/fc/b0a7711fd88520e44caaedc92ec1cb542985d7ba6ce00c92dbf97d5871c5/watson_poetry-0.1.5.tar.gz
+[2024-04-14 23:59:36] WARNING root fetch - processPackages [archyve]: Skipping, unable to determine old version
+[2024-04-14 23:59:36] INFO root fetch - main [MainThread]: End processing [archyve] error
+[2024-04-14 23:59:36] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-04-14 23:59:36] INFO root fetch - processPackages [pdfToAudio]: Downloading https://files.pythonhosted.org/packages/39/68/9dc67e89dd2363a46f26b7bf2c13e2aaa5462064ea37a0eb61cbcd99d3a6/pdfToAudio-1.0.0.tar.gz
+[2024-04-14 23:59:36] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/29/9b/7de737a341cb529b02f3c4aa567d794049fac2444141b0526a0df6fd3964/yoto_api-1.0.7.tar.gz
+[2024-04-14 23:59:36] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/19/88/4f577eeab59641881ad8e533d4178790377ffb7692f3e04ee07003ad5815/watson_poetry-0.1.6.tar.gz
+[2024-04-14 23:59:36] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-04-14 23:59:36] INFO root fetch - processPackages [pdfToAudio]: Downloading https://files.pythonhosted.org/packages/74/e0/94b1df7e0cdc265cf32e80f9e5c8bb20d7b54e3e26fc073f360b7285f417/pdfToAudio-1.0.1.tar.gz
+[2024-04-14 23:59:36] INFO root fetch - processPackages [watson-poetry]: executing diffoscope
+[2024-04-14 23:59:36] INFO root fetch - processPackages [watson-poetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watson_poetry-0.1.5.tar.gz tmp/watson_poetry-0.1.6.tar.gz --markdown 20240414/w/watson-poetry/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 23:59:36] INFO root fetch - processPackages [pdfToAudio]: executing diffoscope
+[2024-04-14 23:59:36] INFO root fetch - processPackages [pdfToAudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfToAudio-1.0.0.tar.gz tmp/pdfToAudio-1.0.1.tar.gz --markdown 20240414/p/pdfToAudio/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 23:59:36] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/de/f4/5ee0600af4a566d3f479406bf7395f04ea324d4c920e0a5443915f286413/yoto_api-1.0.8.tar.gz
+[2024-04-14 23:59:37] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-04-14 23:59:37] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.0.7.tar.gz tmp/yoto_api-1.0.8.tar.gz --markdown 20240414/y/yoto-api/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-14 23:59:37] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-04-14 23:59:37] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-04-14 23:59:37] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240414/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-04-14 23:59:37] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.5.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.6.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - main [MainThread]: End processing [watson-poetry]: success
+[2024-04-14 23:59:37] INFO root fetch - processPackages [pdfToAudio]: Remove: archive file [/home/abi/fetcher/tmp/pdfToAudio-1.0.0.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - processPackages [pdfToAudio]: Remove: archive file [/home/abi/fetcher/tmp/pdfToAudio-1.0.1.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - main [MainThread]: End processing [pdfToAudio]: success
+[2024-04-14 23:59:37] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.0.7.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.0.8.tar.gz]
+[2024-04-14 23:59:37] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-04-14 23:59:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-04-14 23:59:38] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-04-14 23:59:38] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-04-14 23:59:38] INFO root fetch - main [MainThread]: Store serial: [22762760]
