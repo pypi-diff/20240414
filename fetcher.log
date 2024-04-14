@@ -9915,3 +9915,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:54:27] INFO root fetch - processPackages [leap-model-parser]: Remove: archive file [/home/abi/fetcher/tmp/leap_model_parser-0.1.99.tar.gz]
 [2024-04-14 15:54:27] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
 [2024-04-14 15:54:27] INFO root fetch - main [MainThread]: Store serial: [22759432]
+[2024-04-14 15:56:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759432]
+[2024-04-14 15:56:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ontolocy
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utrc
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iop4
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chipmunkdb-python-client
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlite-shift
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ontolocy]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-14 15:56:43] INFO root fetch - processPackages [utrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 15:56:43] INFO root fetch - processPackages [chipmunkdb-python-client]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-14 15:56:43] WARNING root fetch - processPackages [sqlite-shift]: Skipping, unable to determine old version
+[2024-04-14 15:56:43] INFO root fetch - main [MainThread]: End processing [sqlite-shift] error
+[2024-04-14 15:56:43] INFO root fetch - processPackages [iop4]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-14 15:56:43] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/e1/5b/5bab5ee9dbe433afc03d19086031674913d595ee0927eab90f0af77d97ca/utrc-0.0.8.tar.gz
+[2024-04-14 15:56:43] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/e0/6e/7ab3ff9025d0730fa2b82c3d9778b29915e1334bf1832c06be7e949a1e82/ontolocy-0.7.5.tar.gz
+[2024-04-14 15:56:43] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/4f/c7/f002a900023c9ff73783c7dd696a1766082dec94d492b56022ec97752ff5/chipmunkdb_python_client-2.0.8.tar.gz
+[2024-04-14 15:56:43] INFO root fetch - processPackages [iop4]: Downloading https://files.pythonhosted.org/packages/b0/ed/16b739c3f02ede3f1b86fa1d4e9e5ce89963462795c0901828da50ad886c/iop4-1.1.0.tar.gz
+[2024-04-14 15:56:44] INFO root fetch - processPackages [chipmunkdb-python-client]: Downloading https://files.pythonhosted.org/packages/a2/44/4f3da7ddbd9a9346a01ae41698404a384d2203e5e8be8134fd74828ffd70/chipmunkdb_python_client-2.0.9.tar.gz
+[2024-04-14 15:56:44] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/13/67/ac8b2d0a4cf15c7e5208e284bde1099e9f2dfb20d98a1b52b4e7a88b1201/ontolocy-0.7.6.tar.gz
+[2024-04-14 15:56:44] INFO root fetch - processPackages [chipmunkdb-python-client]: executing diffoscope
+[2024-04-14 15:56:44] INFO root fetch - processPackages [chipmunkdb-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chipmunkdb_python_client-2.0.8.tar.gz tmp/chipmunkdb_python_client-2.0.9.tar.gz --markdown 20240414/c/chipmunkdb-python-client/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-14 15:56:44] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/48/ef/e1e762a82983835859161e58b5f2400b05e8fb6747cfc7a2a7fd92e43964/utrc-0.0.9.tar.gz
+[2024-04-14 15:56:44] INFO root fetch - processPackages [ontolocy]: executing diffoscope
+[2024-04-14 15:56:44] INFO root fetch - processPackages [ontolocy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontolocy-0.7.5.tar.gz tmp/ontolocy-0.7.6.tar.gz --markdown 20240414/o/ontolocy/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-04-14 15:56:44] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-14 15:56:44] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.8.tar.gz tmp/utrc-0.0.9.tar.gz --markdown 20240414/u/utrc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 15:56:44] INFO root fetch - processPackages [iop4]: Downloading https://files.pythonhosted.org/packages/92/c7/4626fec1b92803a0415356b3fdb70c5851a9627b3beb3b02841e6b820ad4/iop4-1.1.1.tar.gz
+[2024-04-14 15:56:44] INFO root fetch - processPackages [iop4]: executing diffoscope
+[2024-04-14 15:56:44] INFO root fetch - processPackages [iop4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iop4-1.1.0.tar.gz tmp/iop4-1.1.1.tar.gz --markdown 20240414/i/iop4/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-14 15:56:44] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.8.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - processPackages [chipmunkdb-python-client]: Remove: archive file [/home/abi/fetcher/tmp/chipmunkdb_python_client-2.0.9.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - main [MainThread]: End processing [chipmunkdb-python-client]: success
+[2024-04-14 15:56:44] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.5.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.6.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - main [MainThread]: End processing [ontolocy]: success
+[2024-04-14 15:56:44] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.8.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.9.tar.gz]
+[2024-04-14 15:56:44] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-14 15:56:45] INFO root fetch - processPackages [iop4]: Remove: archive file [/home/abi/fetcher/tmp/iop4-1.1.0.tar.gz]
+[2024-04-14 15:56:45] INFO root fetch - processPackages [iop4]: Remove: archive file [/home/abi/fetcher/tmp/iop4-1.1.1.tar.gz]
+[2024-04-14 15:56:45] INFO root fetch - main [MainThread]: End processing [iop4]: success
+[2024-04-14 15:56:45] INFO root fetch - main [MainThread]: Store serial: [22759453]
