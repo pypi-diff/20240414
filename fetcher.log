@@ -6584,3 +6584,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:59:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.1.tar.gz]
 [2024-04-14 11:59:38] INFO root fetch - main [MainThread]: End processing [pybts]: success
 [2024-04-14 11:59:38] INFO root fetch - main [MainThread]: Store serial: [22757824]
+[2024-04-14 12:01:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757824]
+[2024-04-14 12:01:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpg-utils
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipgogogo
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asgebsmanager
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pelican-linkclass
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ramses_rf
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jenkins-pysdk
+[2024-04-14 12:01:50] INFO root fetch - processPackages [cpg-utils]: New version: [5.0.0] Old Version: [4.9.4]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ipgogogo]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [asgebsmanager]: New version: [0.2] Old Version: [0.1]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [cpg-utils]: Downloading https://files.pythonhosted.org/packages/96/f7/3f4ff1940fe551a1650746dfd3913d16297c1713e428cae38a7e2a193c7b/cpg-utils-4.9.4.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ramses_rf]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [jenkins-pysdk]: New version: [0.2] Old Version: [0.1.1.1.dev0]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ipgogogo]: Downloading https://files.pythonhosted.org/packages/3e/a2/f576bcd98814ff3870bddbd362579b529a537694b991355e63d7aede1d7b/ipgogogo-1.0.1.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [pelican-linkclass]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-04-14 12:01:50] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/b1/dc/0b6b8cc26d698c7697895410faefc950d81c7304e5231ba7d39e0dea55b5/asgebsmanager-0.1.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [cpg-utils]: Downloading https://files.pythonhosted.org/packages/87/5f/f4b2772460c76c7f27afe3ce3694ce52756fda8aa0b307abdf54a6308add/cpg-utils-5.0.0.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [ramses_rf]: Downloading https://files.pythonhosted.org/packages/31/69/c22156a5d460fa779cb0e99aca5bd971823598d9ac7f5b9870c8eafecd6c/ramses-rf-0.9.7.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/d1/be/214d2348148f5beeb3e2a889a1281f95bb9c1f2dd7c8654cf573d3ab8065/jenkins_pysdk-0.1.1.1.dev0.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [pelican-linkclass]: Downloading https://files.pythonhosted.org/packages/ad/93/9fe4bd40e1e1f64068bfaea0728d63537f1bf4f7fbb6bdc19a76f5288c9f/pelican_linkclass-2.1.3.tar.gz
+[2024-04-14 12:01:50] ERROR root fetch - processPackages [ipgogogo]: Unable to fetch info: No such project/version 'ipgogogo' 1.0.2
+[2024-04-14 12:01:50] INFO root fetch - main [MainThread]: End processing [ipgogogo] error
+[2024-04-14 12:01:50] INFO root fetch - processPackages [cpg-utils]: executing diffoscope
+[2024-04-14 12:01:50] INFO root fetch - processPackages [cpg-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpg-utils-4.9.4.tar.gz tmp/cpg-utils-5.0.0.tar.gz --markdown 20240414/c/cpg-utils/4.9.4-5.0.0/README.md --exclude *.pyd
+[2024-04-14 12:01:50] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/d6/3b/3e9d49154afd5d963c8037f7ef688a616f578cf22cc5c56f847c01b77ad2/asgebsmanager-0.2.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 12:01:50] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-0.1.tar.gz tmp/asgebsmanager-0.2.tar.gz --markdown 20240414/a/asgebsmanager/0.1-0.2/README.md --exclude *.pyd
+[2024-04-14 12:01:50] INFO root fetch - processPackages [pelican-linkclass]: Downloading https://files.pythonhosted.org/packages/1b/2b/03424d7ea46fb93f5d78745a4dc33154255fd6d7eb52fbc0d0d1396d0721/pelican_linkclass-2.1.4.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/9c/59/45d603b6cda7e45fed79959f62a70250abd7a764e72c530ac666107c9d10/jenkins_pysdk-0.2.tar.gz
+[2024-04-14 12:01:50] INFO root fetch - processPackages [pelican-linkclass]: executing diffoscope
+[2024-04-14 12:01:50] INFO root fetch - processPackages [pelican-linkclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_linkclass-2.1.3.tar.gz tmp/pelican_linkclass-2.1.4.tar.gz --markdown 20240414/p/pelican-linkclass/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: Downloading https://files.pythonhosted.org/packages/18/a0/43658a1a48c44814ae483b284e64e578be651b9ce5719baa7923bbc0be95/ramses-rf-0.9.8.tar.gz
+[2024-04-14 12:01:51] INFO root fetch - processPackages [jenkins-pysdk]: executing diffoscope
+[2024-04-14 12:01:51] INFO root fetch - processPackages [jenkins-pysdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenkins_pysdk-0.1.1.1.dev0.tar.gz tmp/jenkins_pysdk-0.2.tar.gz --markdown 20240414/j/jenkins-pysdk/0.1.1.1.dev0-0.2/README.md --exclude *.pyd
+[2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: executing diffoscope
+[2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramses-rf-0.9.7.tar.gz tmp/ramses-rf-0.9.8.tar.gz --markdown 20240414/r/ramses_rf/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-14 12:01:51] INFO root fetch - processPackages [cpg-utils]: Remove: archive file [/home/abi/fetcher/tmp/cpg-utils-4.9.4.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - processPackages [cpg-utils]: Remove: archive file [/home/abi/fetcher/tmp/cpg-utils-5.0.0.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [cpg-utils]: success
+[2024-04-14 12:01:51] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.1.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.2.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 12:01:51] INFO root fetch - processPackages [pelican-linkclass]: Remove: archive file [/home/abi/fetcher/tmp/pelican_linkclass-2.1.3.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - processPackages [pelican-linkclass]: Remove: archive file [/home/abi/fetcher/tmp/pelican_linkclass-2.1.4.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [pelican-linkclass]: success
+[2024-04-14 12:01:51] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-0.1.1.1.dev0.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-0.2.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [jenkins-pysdk]: success
+[2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: Remove: archive file [/home/abi/fetcher/tmp/ramses-rf-0.9.7.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: Remove: archive file [/home/abi/fetcher/tmp/ramses-rf-0.9.8.tar.gz]
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [ramses_rf]: success
+[2024-04-14 12:01:51] INFO root fetch - main [MainThread]: Store serial: [22757843]
