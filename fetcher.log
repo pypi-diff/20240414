@@ -8953,3 +8953,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:42:31] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.8-py3-none-any.whl.zip]
 [2024-04-14 14:42:31] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
 [2024-04-14 14:42:31] INFO root fetch - main [MainThread]: Store serial: [22758932]
+[2024-04-14 14:44:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758932]
+[2024-04-14 14:44:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stigg-api-client
+[2024-04-14 14:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utrc
+[2024-04-14 14:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cq-extrusions
+[2024-04-14 14:44:47] INFO root fetch - processPackages [utrc]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 14:44:47] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-14 14:44:47] WARNING root fetch - processPackages [cq-extrusions]: Skipping, unable to determine old version
+[2024-04-14 14:44:47] INFO root fetch - main [MainThread]: End processing [cq-extrusions] error
+[2024-04-14 14:44:47] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/b7/9e/17b9e59e3010666add94a2b11658862a0b18b0da79fc6aa8d0dbce3e0b68/utrc-0.0.7.tar.gz
+[2024-04-14 14:44:47] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-04-14 14:44:47] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-04-14 14:44:47] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/e1/5b/5bab5ee9dbe433afc03d19086031674913d595ee0927eab90f0af77d97ca/utrc-0.0.8.tar.gz
+[2024-04-14 14:44:47] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-04-14 14:44:47] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240414/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-04-14 14:44:47] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-14 14:44:47] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.7.tar.gz tmp/utrc-0.0.8.tar.gz --markdown 20240414/u/utrc/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 14:44:48] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.7.tar.gz]
+[2024-04-14 14:44:48] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.8.tar.gz]
+[2024-04-14 14:44:48] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-14 14:44:48] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-04-14 14:44:48] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-04-14 14:44:48] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-04-14 14:44:48] INFO root fetch - main [MainThread]: Store serial: [22758946]
