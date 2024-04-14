@@ -3830,3 +3830,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:29:42] INFO root fetch - processPackages [interpret-core]: Remove: archive file [/home/abi/fetcher/tmp/interpret_core-0.6.1.tar.gz]
 [2024-04-14 06:29:42] INFO root fetch - main [MainThread]: End processing [interpret-core]: success
 [2024-04-14 06:29:42] INFO root fetch - main [MainThread]: Store serial: [22756564]
+[2024-04-14 06:31:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756564]
+[2024-04-14 06:31:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 06:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: erlab
+[2024-04-14 06:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twikit
+[2024-04-14 06:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-geoacumen
+[2024-04-14 06:31:52] INFO root fetch - processPackages [twikit]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-14 06:31:52] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/d1/57/b38a4888e6dcae925c5c63e9d55e7cc1edafa775ecc8feff6a37c535c4a5/twikit-1.4.7.tar.gz
+[2024-04-14 06:31:52] INFO root fetch - processPackages [erlab]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-14 06:31:52] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.4.7] Old Version: [2024.4.14]
+[2024-04-14 06:31:52] INFO root fetch - processPackages [erlab]: Downloading https://files.pythonhosted.org/packages/c5/ce/a8e95ee0ab0c9520bc1d6bb4b2f1a15793749410aa0e6c3a422eec4acbef/erlab-2.2.tar.gz
+[2024-04-14 06:31:52] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/04/24/1dbebec66499479a09a67675f0e15274328bce171b624726a0e5c7dee07e/twikit-1.4.8.tar.gz
+[2024-04-14 06:31:52] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/ef/7d/dd1e70383d9aa68b1ca595b951493265bdc0904487cd270e2e593b3d7016/python_geoacumen-2024.4.14-py3-none-any.whl
+[2024-04-14 06:31:52] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-04-14 06:31:52] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.4.7.tar.gz tmp/twikit-1.4.8.tar.gz --markdown 20240414/t/twikit/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-14 06:31:52] INFO root fetch - processPackages [erlab]: Downloading https://files.pythonhosted.org/packages/6e/49/cdc8c9e950d4cb546ca723c4c155ef16599ee2a992f2dd2a389b1446c61b/erlab-2.2.1.tar.gz
+[2024-04-14 06:31:53] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.4.7.tar.gz]
+[2024-04-14 06:31:53] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.4.8.tar.gz]
+[2024-04-14 06:31:53] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-04-14 06:31:53] INFO root fetch - processPackages [erlab]: executing diffoscope
+[2024-04-14 06:31:53] INFO root fetch - processPackages [erlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erlab-2.2.tar.gz tmp/erlab-2.2.1.tar.gz --markdown 20240414/e/erlab/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-14 06:31:54] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/f6/4d/d2bd3da5d4357004c515ec3a07f006b6e719414f1ed9f74e0e7d072f9f59/python-geoacumen-2024.4.7.tar.gz
+[2024-04-14 06:31:54] INFO root fetch - processPackages [erlab]: Remove: archive file [/home/abi/fetcher/tmp/erlab-2.2.tar.gz]
+[2024-04-14 06:31:54] INFO root fetch - processPackages [erlab]: Remove: archive file [/home/abi/fetcher/tmp/erlab-2.2.1.tar.gz]
+[2024-04-14 06:31:54] INFO root fetch - main [MainThread]: End processing [erlab]: success
+[2024-04-14 06:31:55] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-04-14 06:31:55] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_geoacumen-2024.4.14-py3-none-any.whl.zip tmp/python-geoacumen-2024.4.7.tar.gz --markdown 20240414/p/python-geoacumen/2024.4.14-2024.4.7/README.md --exclude *.pyd
+[2024-04-14 06:32:00] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python_geoacumen-2024.4.14-py3-none-any.whl.zip]
+[2024-04-14 06:32:00] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
+[2024-04-14 06:32:00] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-04-14 06:32:00] INFO root fetch - main [MainThread]: Store serial: [22756570]
