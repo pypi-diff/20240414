@@ -8392,3 +8392,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:03:36] INFO root fetch - processPackages [phytorchx]: Remove: archive file [/home/abi/fetcher/tmp/phytorchx-0.3.tar.gz]
 [2024-04-14 14:03:36] INFO root fetch - main [MainThread]: End processing [phytorchx]: success
 [2024-04-14 14:03:36] INFO root fetch - main [MainThread]: Store serial: [22758747]
+[2024-04-14 14:05:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758747]
+[2024-04-14 14:05:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fingerprintMatcher
+[2024-04-14 14:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: get-bibtex
+[2024-04-14 14:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtfx2console
+[2024-04-14 14:05:52] INFO root fetch - processPackages [fingerprintMatcher]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 14:05:52] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.7] Old Version: [0.4.5]
+[2024-04-14 14:05:52] INFO root fetch - processPackages [get-bibtex]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 14:05:52] INFO root fetch - processPackages [fingerprintMatcher]: Downloading https://files.pythonhosted.org/packages/70/69/ec7c89585ae08da039f5623dfce206571c79ef3d45b1b13ff48ecb63ac97/fingerprintMatcher-1.0.0.tar.gz
+[2024-04-14 14:05:52] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/43/97/b86c2c7aa7678e778c1174cff9e2951a4aaed252d28a4e6554a08eb5faf4/jgtfx2console-0.4.5.tar.gz
+[2024-04-14 14:05:52] INFO root fetch - processPackages [get-bibtex]: Downloading https://files.pythonhosted.org/packages/84/07/f02481e110f7a9d8456ed757e2a290f36b758225cf2affe27942be809ebd/get_bibtex-1.0.0.tar.gz
+[2024-04-14 14:05:52] INFO root fetch - processPackages [fingerprintMatcher]: Downloading https://files.pythonhosted.org/packages/9c/07/a9d16f5cad0280cdfe6b3ed1fdd9485a50943317508833dee7fc4c332f3d/fingerprintMatcher-1.0.1-py3-none-any.whl
+[2024-04-14 14:05:52] INFO root fetch - processPackages [fingerprintMatcher]: executing diffoscope
+[2024-04-14 14:05:52] INFO root fetch - processPackages [fingerprintMatcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fingerprintMatcher-1.0.0.tar.gz tmp/fingerprintMatcher-1.0.1-py3-none-any.whl.zip --markdown 20240414/f/fingerprintMatcher/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 14:05:52] INFO root fetch - processPackages [get-bibtex]: Downloading https://files.pythonhosted.org/packages/74/a6/e8991cf6ceab454f28c682eb9d99a020ff732fd4826f1ec73ab0a22a4713/get_bibtex-1.0.1.tar.gz
+[2024-04-14 14:05:52] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/e6/5e/c0ed9bc1ab42e8940e6782f9b4e5460f8cd85f34df6e7c2b14024bc1dfd1/jgtfx2console-0.4.7.tar.gz
+[2024-04-14 14:05:52] INFO root fetch - processPackages [get-bibtex]: executing diffoscope
+[2024-04-14 14:05:52] INFO root fetch - processPackages [get-bibtex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_bibtex-1.0.0.tar.gz tmp/get_bibtex-1.0.1.tar.gz --markdown 20240414/g/get-bibtex/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 14:05:52] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 14:05:52] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.5.tar.gz tmp/jgtfx2console-0.4.7.tar.gz --markdown 20240414/j/jgtfx2console/0.4.5-0.4.7/README.md --exclude *.pyd
+[2024-04-14 14:05:53] INFO root fetch - processPackages [fingerprintMatcher]: Remove: archive file [/home/abi/fetcher/tmp/fingerprintMatcher-1.0.0.tar.gz]
+[2024-04-14 14:05:53] INFO root fetch - processPackages [fingerprintMatcher]: Remove: archive file [/home/abi/fetcher/tmp/fingerprintMatcher-1.0.1-py3-none-any.whl.zip]
+[2024-04-14 14:05:53] INFO root fetch - main [MainThread]: End processing [fingerprintMatcher]: success
+[2024-04-14 14:05:53] INFO root fetch - processPackages [get-bibtex]: Remove: archive file [/home/abi/fetcher/tmp/get_bibtex-1.0.0.tar.gz]
+[2024-04-14 14:05:53] INFO root fetch - processPackages [get-bibtex]: Remove: archive file [/home/abi/fetcher/tmp/get_bibtex-1.0.1.tar.gz]
+[2024-04-14 14:05:53] INFO root fetch - main [MainThread]: End processing [get-bibtex]: success
+[2024-04-14 14:05:53] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.5.tar.gz]
+[2024-04-14 14:05:53] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.7.tar.gz]
+[2024-04-14 14:05:53] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 14:05:53] INFO root fetch - main [MainThread]: Store serial: [22758755]
