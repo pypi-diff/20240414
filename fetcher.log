@@ -16254,3 +16254,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:42:11] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.1.tar.gz]
 [2024-04-14 23:42:11] INFO root fetch - main [MainThread]: End processing [git-machete]: success
 [2024-04-14 23:42:11] INFO root fetch - main [MainThread]: Store serial: [22762664]
+[2024-04-14 23:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762664]
+[2024-04-14 23:44:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 23:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watson-poetry
+[2024-04-14 23:44:19] WARNING root fetch - processPackages [watson-poetry]: Skipping, unable to determine old version
+[2024-04-14 23:44:19] INFO root fetch - main [MainThread]: End processing [watson-poetry] error
+[2024-04-14 23:44:19] INFO root fetch - main [MainThread]: Store serial: [22762668]
