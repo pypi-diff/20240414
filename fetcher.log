@@ -15682,3 +15682,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:00:21] INFO root fetch - processPackages [pdfsyntax]: Remove: archive file [/home/abi/fetcher/tmp/pdfsyntax-0.1.0.tar.gz]
 [2024-04-14 23:00:21] INFO root fetch - main [MainThread]: End processing [pdfsyntax]: success
 [2024-04-14 23:00:21] INFO root fetch - main [MainThread]: Store serial: [22762433]
+[2024-04-14 23:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762433]
+[2024-04-14 23:02:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telescope-sdk
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krypper-tgstat
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: marsilea
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quotesgeneratorapi-wrapper
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tradingview-indicators
+[2024-04-14 23:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: piperider-nightly
+[2024-04-14 23:02:30] INFO root fetch - processPackages [krypper-tgstat]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [marsilea]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [tradingview-indicators]: New version: [0.3.7.1] Old Version: [0.3.7]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2024-04-14 23:02:30] INFO root fetch - processPackages [krypper-tgstat]: Downloading https://files.pythonhosted.org/packages/64/83/ca772c0487dcb6f6acd9e83cad1b7d503cdbdc65efce7617f3b0e40df807/krypper_tgstat-0.1.5.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: Downloading https://files.pythonhosted.org/packages/64/99/8b7111635c33bca726e66111daddd7718e19a503b7943fc7d7196945279c/quotesgeneratorapi-wrapper-0.2.2.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [tradingview-indicators]: Downloading https://files.pythonhosted.org/packages/e2/f9/f56aa61f78d1bb043c5083f0d3ad2d13bd8b5090a3a24104c92b581f145e/tradingview_indicators-0.3.7.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [marsilea]: Downloading https://files.pythonhosted.org/packages/07/aa/90ba8f0448cfa361c637d749e7cdf2f90574cffd12458e55f4b079967c9e/marsilea-0.3.3.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2024-04-14 23:02:30] WARNING root fetch - processPackages [marsilea]: Skipping package: exceeds size limit 56880566>=10485760
+[2024-04-14 23:02:30] INFO root fetch - main [MainThread]: End processing [marsilea] error
+[2024-04-14 23:02:30] INFO root fetch - processPackages [krypper-tgstat]: Downloading https://files.pythonhosted.org/packages/8a/d2/04f69285ce4867e7c21a1c1c0dd6c4712461f7b1cad2a67fb2baf62643f1/krypper_tgstat-0.1.6.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [krypper-tgstat]: executing diffoscope
+[2024-04-14 23:02:30] INFO root fetch - processPackages [krypper-tgstat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krypper_tgstat-0.1.5.tar.gz tmp/krypper_tgstat-0.1.6.tar.gz --markdown 20240414/k/krypper-tgstat/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 23:02:30] INFO root fetch - processPackages [tradingview-indicators]: Downloading https://files.pythonhosted.org/packages/ce/f6/53647829fb507edc1f76dd4da20c208c38470f566bcb8dccbdcb4930b87a/tradingview_indicators-0.3.7.1.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: Downloading https://files.pythonhosted.org/packages/bd/a5/8dc58196f3b93eb39e7b9391c6e27462b9e661620f6b064e2fda401296de/quotesgeneratorapi_wrapper-0.2.3.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2024-04-14 23:02:30] INFO root fetch - processPackages [tradingview-indicators]: executing diffoscope
+[2024-04-14 23:02:30] INFO root fetch - processPackages [tradingview-indicators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradingview_indicators-0.3.7.tar.gz tmp/tradingview_indicators-0.3.7.1.tar.gz --markdown 20240414/t/tradingview-indicators/0.3.7-0.3.7.1/README.md --exclude *.pyd
+[2024-04-14 23:02:30] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2024-04-14 23:02:30] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20240414/t/telescope-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 23:02:30] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: executing diffoscope
+[2024-04-14 23:02:30] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quotesgeneratorapi-wrapper-0.2.2.tar.gz tmp/quotesgeneratorapi_wrapper-0.2.3.tar.gz --markdown 20240414/q/quotesgeneratorapi-wrapper/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-14 23:02:31] INFO root fetch - processPackages [krypper-tgstat]: Remove: archive file [/home/abi/fetcher/tmp/krypper_tgstat-0.1.5.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - processPackages [krypper-tgstat]: Remove: archive file [/home/abi/fetcher/tmp/krypper_tgstat-0.1.6.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - main [MainThread]: End processing [krypper-tgstat]: success
+[2024-04-14 23:02:31] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.8.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.9.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - main [MainThread]: End processing [telescope-sdk]: success
+[2024-04-14 23:02:31] INFO root fetch - processPackages [tradingview-indicators]: Remove: archive file [/home/abi/fetcher/tmp/tradingview_indicators-0.3.7.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - processPackages [tradingview-indicators]: Remove: archive file [/home/abi/fetcher/tmp/tradingview_indicators-0.3.7.1.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - main [MainThread]: End processing [tradingview-indicators]: success
+[2024-04-14 23:02:31] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2024-04-14 23:02:31] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/quotesgeneratorapi-wrapper-0.2.2.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - processPackages [quotesgeneratorapi-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/quotesgeneratorapi_wrapper-0.2.3.tar.gz]
+[2024-04-14 23:02:31] INFO root fetch - main [MainThread]: End processing [quotesgeneratorapi-wrapper]: success
+[2024-04-14 23:02:32] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2024-04-14 23:02:32] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20240414/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/README.md --exclude *.pyd
+[2024-04-14 23:02:33] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220920.tar.gz]
+[2024-04-14 23:02:33] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
+[2024-04-14 23:02:33] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2024-04-14 23:02:33] INFO root fetch - main [MainThread]: Store serial: [22762450]
