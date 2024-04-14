@@ -2587,3 +2587,24 @@
 [2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 04:17:09] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 04:17:09] INFO root fetch - main [MainThread]: Store serial: [22756153]
+[2024-04-14 04:19:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756153]
+[2024-04-14 04:19:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:19:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiooss2
+[2024-04-14 04:19:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lama2923
+[2024-04-14 04:19:18] INFO root fetch - processPackages [lama2923]: New version: [1.0.0] Old Version: [0.7.2]
+[2024-04-14 04:19:18] INFO root fetch - processPackages [aiooss2]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 04:19:18] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/68/3c/f735ffa05c2f3c2787e4b4484838979ce7b58185cc3d2d4f604f5c838254/lama2923-0.7.2.tar.gz
+[2024-04-14 04:19:18] INFO root fetch - processPackages [aiooss2]: Downloading https://files.pythonhosted.org/packages/34/e4/9434bf112c1f869719edb71a5fe08f2661670a628409721e5ed7df124181/aiooss2-0.2.8.tar.gz
+[2024-04-14 04:19:19] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/4b/54/86599a2e3af9937cf0a33de01698c88aa2ef3aa0c298a2170df5443d97fd/lama2923-1.0.0.tar.gz
+[2024-04-14 04:19:19] INFO root fetch - processPackages [aiooss2]: Downloading https://files.pythonhosted.org/packages/c4/41/3eb8126661844a4d507fbfec92d26101a5191b1e1e7388f53f8ccf1f9577/aiooss2-0.2.9.tar.gz
+[2024-04-14 04:19:19] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-04-14 04:19:19] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-0.7.2.tar.gz tmp/lama2923-1.0.0.tar.gz --markdown 20240414/l/lama2923/0.7.2-1.0.0/README.md --exclude *.pyd
+[2024-04-14 04:19:19] INFO root fetch - processPackages [aiooss2]: executing diffoscope
+[2024-04-14 04:19:19] INFO root fetch - processPackages [aiooss2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiooss2-0.2.8.tar.gz tmp/aiooss2-0.2.9.tar.gz --markdown 20240414/a/aiooss2/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 04:19:19] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.2.tar.gz]
+[2024-04-14 04:19:19] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-1.0.0.tar.gz]
+[2024-04-14 04:19:19] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-04-14 04:19:20] INFO root fetch - processPackages [aiooss2]: Remove: archive file [/home/abi/fetcher/tmp/aiooss2-0.2.8.tar.gz]
+[2024-04-14 04:19:20] INFO root fetch - processPackages [aiooss2]: Remove: archive file [/home/abi/fetcher/tmp/aiooss2-0.2.9.tar.gz]
+[2024-04-14 04:19:20] INFO root fetch - main [MainThread]: End processing [aiooss2]: success
+[2024-04-14 04:19:20] INFO root fetch - main [MainThread]: Store serial: [22756171]
