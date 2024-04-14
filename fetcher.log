@@ -3461,3 +3461,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:43:39] INFO root fetch - processPackages [streamlit-cropperjs]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-cropperjs-0.0.9.tar.gz]
 [2024-04-14 05:43:39] INFO root fetch - main [MainThread]: End processing [streamlit-cropperjs]: success
 [2024-04-14 05:43:39] INFO root fetch - main [MainThread]: Store serial: [22756403]
+[2024-04-14 05:45:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756403]
+[2024-04-14 05:45:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 05:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotics-tools
+[2024-04-14 05:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: traceloop-sdk
+[2024-04-14 05:45:49] INFO root fetch - processPackages [robotics-tools]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 05:45:49] INFO root fetch - processPackages [traceloop-sdk]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-14 05:45:49] INFO root fetch - processPackages [robotics-tools]: Downloading https://files.pythonhosted.org/packages/9a/df/dd9f60a5f178845c580e4a8fae51fd8d2d80a3537aaf7d07bdd40fcff94f/robotics_tools-1.0.1.tar.gz
+[2024-04-14 05:45:49] INFO root fetch - processPackages [traceloop-sdk]: Downloading https://files.pythonhosted.org/packages/71/52/a865ce901951f5201da24334b1278104b1b370b18ce9595ea9035a6c3a0e/traceloop_sdk-0.9.3.tar.gz
+[2024-04-14 05:45:49] INFO root fetch - processPackages [robotics-tools]: Downloading https://files.pythonhosted.org/packages/9f/e3/5ef6b9a95a5b1785df20ce1d8296af277a342facc9e91abaf8bd6d08e8bf/robotics_tools-1.0.2.tar.gz
+[2024-04-14 05:45:49] INFO root fetch - processPackages [robotics-tools]: executing diffoscope
+[2024-04-14 05:45:49] INFO root fetch - processPackages [robotics-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotics_tools-1.0.1.tar.gz tmp/robotics_tools-1.0.2.tar.gz --markdown 20240414/r/robotics-tools/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 05:45:50] INFO root fetch - processPackages [traceloop-sdk]: Downloading https://files.pythonhosted.org/packages/ae/ca/192dff20dadbfa74c05ff4b865462f41b6cb019752812778ed2fbe2b45db/traceloop_sdk-0.9.4.tar.gz
+[2024-04-14 05:45:50] INFO root fetch - processPackages [traceloop-sdk]: executing diffoscope
+[2024-04-14 05:45:50] INFO root fetch - processPackages [traceloop-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceloop_sdk-0.9.3.tar.gz tmp/traceloop_sdk-0.9.4.tar.gz --markdown 20240414/t/traceloop-sdk/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-14 05:45:50] INFO root fetch - processPackages [robotics-tools]: Remove: archive file [/home/abi/fetcher/tmp/robotics_tools-1.0.1.tar.gz]
+[2024-04-14 05:45:50] INFO root fetch - processPackages [robotics-tools]: Remove: archive file [/home/abi/fetcher/tmp/robotics_tools-1.0.2.tar.gz]
+[2024-04-14 05:45:50] INFO root fetch - main [MainThread]: End processing [robotics-tools]: success
+[2024-04-14 05:45:50] INFO root fetch - processPackages [traceloop-sdk]: Remove: archive file [/home/abi/fetcher/tmp/traceloop_sdk-0.9.3.tar.gz]
+[2024-04-14 05:45:50] INFO root fetch - processPackages [traceloop-sdk]: Remove: archive file [/home/abi/fetcher/tmp/traceloop_sdk-0.9.4.tar.gz]
+[2024-04-14 05:45:50] INFO root fetch - main [MainThread]: End processing [traceloop-sdk]: success
+[2024-04-14 05:45:50] INFO root fetch - main [MainThread]: Store serial: [22756422]
