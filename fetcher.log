@@ -3714,3 +3714,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:18:05] INFO root fetch - processPackages [headline-gen]: Remove: archive file [/home/abi/fetcher/tmp/headline-gen-2.3.tar.gz]
 [2024-04-14 06:18:05] INFO root fetch - main [MainThread]: End processing [headline-gen]: success
 [2024-04-14 06:18:05] INFO root fetch - main [MainThread]: Store serial: [22756513]
+[2024-04-14 06:20:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756513]
+[2024-04-14 06:20:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 06:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TerminalGPT-main
+[2024-04-14 06:20:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chamco-ragbot
+[2024-04-14 06:20:14] WARNING root fetch - processPackages [TerminalGPT-main]: Skipping, unable to determine old version
+[2024-04-14 06:20:14] INFO root fetch - main [MainThread]: End processing [TerminalGPT-main] error
+[2024-04-14 06:20:14] WARNING root fetch - processPackages [chamco-ragbot]: Skipping, unable to determine old version
+[2024-04-14 06:20:14] INFO root fetch - main [MainThread]: End processing [chamco-ragbot] error
+[2024-04-14 06:20:14] INFO root fetch - main [MainThread]: Store serial: [22756522]
