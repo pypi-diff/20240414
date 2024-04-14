@@ -14708,3 +14708,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:54:14] INFO root fetch - processPackages [fastipy]: Remove: archive file [/home/abi/fetcher/tmp/fastipy-1.5.1.tar.gz]
 [2024-04-14 21:54:14] INFO root fetch - main [MainThread]: End processing [fastipy]: success
 [2024-04-14 21:54:14] INFO root fetch - main [MainThread]: Store serial: [22761944]
+[2024-04-14 21:56:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761944]
+[2024-04-14 21:56:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 21:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyontoenv
+[2024-04-14 21:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rio-ui
+[2024-04-14 21:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ffxiv_stats
+[2024-04-14 21:56:23] INFO root fetch - processPackages [pyontoenv]: New version: [0.1.4a2] Old Version: [0.1.4a1]
+[2024-04-14 21:56:23] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/c7/ae/fe07c1caf4638f3f3f1ba803a01915616eeb9eee9e55095c3e55cd7dbe57/pyontoenv-0.1.4a1.tar.gz
+[2024-04-14 21:56:23] INFO root fetch - processPackages [rio-ui]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-14 21:56:23] INFO root fetch - processPackages [ffxiv_stats]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-14 21:56:24] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/1d/77/6c8a6bfd4cd51a75fd7af006e79437579ee44c9b6e1da2d977858f4fe3cc/rio_ui-0.5.6.tar.gz
+[2024-04-14 21:56:24] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/fb/24/ea9042659b3e915e788d9b90a30231c43cab52f56f3322ed1c58c14e38fa/ffxiv_stats-0.4.3.tar.gz
+[2024-04-14 21:56:24] INFO root fetch - processPackages [pyontoenv]: Downloading https://files.pythonhosted.org/packages/fc/47/32b029760dc4a77140d8b8aaed37a9641448e2edd0e399f8be5214348559/pyontoenv-0.1.4a2.tar.gz
+[2024-04-14 21:56:24] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/8b/db/e25d5cef577ce30701747a3a5b76340f6daf0fc514345b566d89dd08782f/rio_ui-0.5.7.tar.gz
+[2024-04-14 21:56:24] INFO root fetch - processPackages [pyontoenv]: executing diffoscope
+[2024-04-14 21:56:24] INFO root fetch - processPackages [pyontoenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyontoenv-0.1.4a1.tar.gz tmp/pyontoenv-0.1.4a2.tar.gz --markdown 20240414/p/pyontoenv/0.1.4a1-0.1.4a2/README.md --exclude *.pyd
+[2024-04-14 21:56:24] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/cc/e5/efff5dc07df19d15f233ac555f48956197506e133f62af25dc968042a115/ffxiv_stats-0.4.4.tar.gz
+[2024-04-14 21:56:24] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-04-14 21:56:24] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.5.6.tar.gz tmp/rio_ui-0.5.7.tar.gz --markdown 20240414/r/rio-ui/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-14 21:56:25] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.4a1.tar.gz]
+[2024-04-14 21:56:25] INFO root fetch - processPackages [pyontoenv]: Remove: archive file [/home/abi/fetcher/tmp/pyontoenv-0.1.4a2.tar.gz]
+[2024-04-14 21:56:25] INFO root fetch - main [MainThread]: End processing [pyontoenv]: success
+[2024-04-14 21:56:26] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.6.tar.gz]
+[2024-04-14 21:56:26] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.7.tar.gz]
+[2024-04-14 21:56:26] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-04-14 21:56:26] INFO root fetch - processPackages [ffxiv_stats]: executing diffoscope
+[2024-04-14 21:56:26] INFO root fetch - processPackages [ffxiv_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffxiv_stats-0.4.3.tar.gz tmp/ffxiv_stats-0.4.4.tar.gz --markdown 20240414/f/ffxiv_stats/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-14 21:56:27] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.3.tar.gz]
+[2024-04-14 21:56:27] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.4.tar.gz]
+[2024-04-14 21:56:27] INFO root fetch - main [MainThread]: End processing [ffxiv_stats]: success
+[2024-04-14 21:56:27] INFO root fetch - main [MainThread]: Store serial: [22761950]
