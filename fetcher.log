@@ -14738,3 +14738,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:56:27] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.4.tar.gz]
 [2024-04-14 21:56:27] INFO root fetch - main [MainThread]: End processing [ffxiv_stats]: success
 [2024-04-14 21:56:27] INFO root fetch - main [MainThread]: Store serial: [22761950]
+[2024-04-14 21:58:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761950]
+[2024-04-14 21:58:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ffxiv_stats
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gql
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycid-dev
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xcloud-client
+[2024-04-14 21:58:36] WARNING root fetch - processPackages [xcloud-client]: Skipping, unable to determine old version
+[2024-04-14 21:58:36] INFO root fetch - main [MainThread]: End processing [xcloud-client] error
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ffxiv_stats]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-14 21:58:36] INFO root fetch - processPackages [pycid-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 21:58:36] INFO root fetch - processPackages [gql]: New version: [3.6.0b2] Old Version: [3.6.0b1]
+[2024-04-14 21:58:36] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/fb/24/ea9042659b3e915e788d9b90a30231c43cab52f56f3322ed1c58c14e38fa/ffxiv_stats-0.4.3.tar.gz
+[2024-04-14 21:58:36] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/d5/22/b7c070a92733e6018be94918e4720ff227ed8218e3b17eac3ef1666cc3c6/pycid-dev-0.0.8.tar.gz
+[2024-04-14 21:58:36] INFO root fetch - processPackages [gql]: Downloading https://files.pythonhosted.org/packages/b1/82/a809857e1f1b953d49d92531ec21ead28233ac3ca20008b42aabf8414a84/gql-3.6.0b1.tar.gz
+[2024-04-14 21:58:37] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/cc/e5/efff5dc07df19d15f233ac555f48956197506e133f62af25dc968042a115/ffxiv_stats-0.4.4.tar.gz
+[2024-04-14 21:58:37] INFO root fetch - processPackages [gql]: Downloading https://files.pythonhosted.org/packages/3c/dd/466b3d619b14d637f46043b412241f8a34a116b0647bf230e3f8b8b2f1fa/gql-3.6.0b2.tar.gz
+[2024-04-14 21:58:37] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/30/56/4fb156aed85eb11a3ee720a2844b34b174787e7e490858dee46e301b19b4/pycid-dev-0.0.9.tar.gz
+[2024-04-14 21:58:37] INFO root fetch - processPackages [gql]: executing diffoscope
+[2024-04-14 21:58:37] INFO root fetch - processPackages [gql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gql-3.6.0b1.tar.gz tmp/gql-3.6.0b2.tar.gz --markdown 20240414/g/gql/3.6.0b1-3.6.0b2/README.md --exclude *.pyd
+[2024-04-14 21:58:37] INFO root fetch - processPackages [pycid-dev]: executing diffoscope
+[2024-04-14 21:58:37] INFO root fetch - processPackages [pycid-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycid-dev-0.0.8.tar.gz tmp/pycid-dev-0.0.9.tar.gz --markdown 20240414/p/pycid-dev/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 21:58:37] INFO root fetch - processPackages [ffxiv_stats]: executing diffoscope
+[2024-04-14 21:58:37] INFO root fetch - processPackages [ffxiv_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffxiv_stats-0.4.3.tar.gz tmp/ffxiv_stats-0.4.4.tar.gz --markdown 20240414/f/ffxiv_stats/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-14 21:58:37] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.8.tar.gz]
+[2024-04-14 21:58:37] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.9.tar.gz]
+[2024-04-14 21:58:37] INFO root fetch - main [MainThread]: End processing [pycid-dev]: success
+[2024-04-14 21:58:37] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.3.tar.gz]
+[2024-04-14 21:58:37] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.4.tar.gz]
+[2024-04-14 21:58:37] INFO root fetch - main [MainThread]: End processing [ffxiv_stats]: success
+[2024-04-14 21:58:38] INFO root fetch - processPackages [gql]: Remove: archive file [/home/abi/fetcher/tmp/gql-3.6.0b1.tar.gz]
+[2024-04-14 21:58:38] INFO root fetch - processPackages [gql]: Remove: archive file [/home/abi/fetcher/tmp/gql-3.6.0b2.tar.gz]
+[2024-04-14 21:58:38] INFO root fetch - main [MainThread]: End processing [gql]: success
+[2024-04-14 21:58:38] INFO root fetch - main [MainThread]: Store serial: [22761963]
