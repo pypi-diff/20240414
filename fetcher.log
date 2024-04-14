@@ -16337,3 +16337,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:50:55] INFO root fetch - processPackages [daffodil]: Remove: archive file [/home/abi/fetcher/tmp/daffodil-0.3.0.tar.gz]
 [2024-04-14 23:50:55] INFO root fetch - main [MainThread]: End processing [daffodil]: success
 [2024-04-14 23:50:55] INFO root fetch - main [MainThread]: Store serial: [22762707]
+[2024-04-14 23:52:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762707]
+[2024-04-14 23:53:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 23:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solutions-builder
+[2024-04-14 23:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdfToAudio
+[2024-04-14 23:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notion2pandas
+[2024-04-14 23:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: recommender-agent
+[2024-04-14 23:53:03] WARNING root fetch - processPackages [recommender-agent]: Skipping, unable to determine old version
+[2024-04-14 23:53:03] INFO root fetch - main [MainThread]: End processing [recommender-agent] error
+[2024-04-14 23:53:03] WARNING root fetch - processPackages [pdfToAudio]: Skipping, unable to determine old version
+[2024-04-14 23:53:03] INFO root fetch - main [MainThread]: End processing [pdfToAudio] error
+[2024-04-14 23:53:04] INFO root fetch - processPackages [notion2pandas]: New version: [1.0.0] Old Version: [0.9.2]
+[2024-04-14 23:53:04] INFO root fetch - processPackages [solutions-builder]: New version: [1.18.0] Old Version: [1.17.9]
+[2024-04-14 23:53:04] INFO root fetch - processPackages [solutions-builder]: Downloading https://files.pythonhosted.org/packages/09/83/4c405e7051bde3343ce0117d47d6136eec213ab313425b7bf38043b51a19/solutions_builder-1.17.9.tar.gz
+[2024-04-14 23:53:04] INFO root fetch - processPackages [notion2pandas]: Downloading https://files.pythonhosted.org/packages/a2/c9/611b5cc1924473018abd079db6134e30e800a27f3636dc9aa0874d532627/notion2pandas-0.9.2-py3-none-any.whl
+[2024-04-14 23:53:04] INFO root fetch - processPackages [notion2pandas]: Downloading https://files.pythonhosted.org/packages/c6/dc/f01e6bc30f44caf29a9ceea40bba8358cc9ca3adbe5ac2260be33095266b/notion2pandas-1.0.0-py3-none-any.whl
+[2024-04-14 23:53:04] INFO root fetch - processPackages [solutions-builder]: Downloading https://files.pythonhosted.org/packages/3b/ef/006b2912c43f88e9879f7227e602c4761b128ae5bbf6da6e218a105b8e75/solutions_builder-1.18.0.tar.gz
+[2024-04-14 23:53:04] INFO root fetch - processPackages [notion2pandas]: executing diffoscope
+[2024-04-14 23:53:04] INFO root fetch - processPackages [notion2pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notion2pandas-0.9.2-py3-none-any.whl.zip tmp/notion2pandas-1.0.0-py3-none-any.whl.zip --markdown 20240414/n/notion2pandas/0.9.2-1.0.0/README.md --exclude *.pyd
+[2024-04-14 23:53:04] INFO root fetch - processPackages [solutions-builder]: executing diffoscope
+[2024-04-14 23:53:04] INFO root fetch - processPackages [solutions-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solutions_builder-1.17.9.tar.gz tmp/solutions_builder-1.18.0.tar.gz --markdown 20240414/s/solutions-builder/1.17.9-1.18.0/README.md --exclude *.pyd
+[2024-04-14 23:53:05] INFO root fetch - processPackages [notion2pandas]: Remove: archive file [/home/abi/fetcher/tmp/notion2pandas-0.9.2-py3-none-any.whl.zip]
+[2024-04-14 23:53:05] INFO root fetch - processPackages [notion2pandas]: Remove: archive file [/home/abi/fetcher/tmp/notion2pandas-1.0.0-py3-none-any.whl.zip]
+[2024-04-14 23:53:05] INFO root fetch - main [MainThread]: End processing [notion2pandas]: success
+[2024-04-14 23:53:05] INFO root fetch - processPackages [solutions-builder]: Remove: archive file [/home/abi/fetcher/tmp/solutions_builder-1.17.9.tar.gz]
+[2024-04-14 23:53:05] INFO root fetch - processPackages [solutions-builder]: Remove: archive file [/home/abi/fetcher/tmp/solutions_builder-1.18.0.tar.gz]
+[2024-04-14 23:53:05] INFO root fetch - main [MainThread]: End processing [solutions-builder]: success
+[2024-04-14 23:53:05] INFO root fetch - main [MainThread]: Store serial: [22762720]
