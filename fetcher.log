@@ -9236,3 +9236,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:07:33] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.4.14.tar.gz]
 [2024-04-14 15:07:33] INFO root fetch - main [MainThread]: End processing [getblocks]: success
 [2024-04-14 15:07:33] INFO root fetch - main [MainThread]: Store serial: [22759047]
+[2024-04-14 15:09:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759047]
+[2024-04-14 15:09:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 15:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtfxcon
+[2024-04-14 15:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nn-wrapper
+[2024-04-14 15:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtfxcon
+[2024-04-14 15:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: solaredge2mqtt
+[2024-04-14 15:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: micropython-home-assistant
+[2024-04-14 15:09:50] INFO root fetch - processPackages [nn-wrapper]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 15:09:50] WARNING root fetch - processPackages [micropython-home-assistant]: Skipping, unable to determine old version
+[2024-04-14 15:09:50] INFO root fetch - main [MainThread]: End processing [micropython-home-assistant] error
+[2024-04-14 15:09:50] INFO root fetch - processPackages [nn-wrapper]: Downloading https://files.pythonhosted.org/packages/1e/5d/924f6d2b9d5c675cbdcf013858cea7df43d067aa76f32c2c02b6124741c1/nn_wrapper-1.0.2.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [solaredge2mqtt]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/6c/b6/0b9f57b107df49ec80c3be96fffd8b3daad3fc04af359ea2c268d2b525b0/solaredge2mqtt-1.0.8.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [nn-wrapper]: Downloading https://files.pythonhosted.org/packages/84/46/4ca8d3c1176002d5cf83f8a8254ed45096105feddf9261299f08dc0cb541/nn_wrapper-1.0.3.tar.gz
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 15:09:50] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 15:09:50] INFO root fetch - processPackages [nn-wrapper]: executing diffoscope
+[2024-04-14 15:09:50] INFO root fetch - processPackages [nn-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nn_wrapper-1.0.2.tar.gz tmp/nn_wrapper-1.0.3.tar.gz --markdown 20240414/n/nn-wrapper/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-14 15:09:51] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/ca/c5/a64aea7e2c53a6394780bba16ed730d8ac2ea082c079e0a277582653596a/solaredge2mqtt-1.0.9.tar.gz
+[2024-04-14 15:09:51] INFO root fetch - processPackages [solaredge2mqtt]: executing diffoscope
+[2024-04-14 15:09:51] INFO root fetch - processPackages [solaredge2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge2mqtt-1.0.8.tar.gz tmp/solaredge2mqtt-1.0.9.tar.gz --markdown 20240414/s/solaredge2mqtt/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 15:09:51] INFO root fetch - processPackages [nn-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/nn_wrapper-1.0.2.tar.gz]
+[2024-04-14 15:09:51] INFO root fetch - processPackages [nn-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/nn_wrapper-1.0.3.tar.gz]
+[2024-04-14 15:09:51] INFO root fetch - main [MainThread]: End processing [nn-wrapper]: success
+[2024-04-14 15:09:51] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 15:09:51] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 15:09:51] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 15:09:51] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 15:09:52] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.8.tar.gz]
+[2024-04-14 15:09:52] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
+[2024-04-14 15:09:52] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
+[2024-04-14 15:09:52] INFO root fetch - main [MainThread]: Store serial: [22759064]
