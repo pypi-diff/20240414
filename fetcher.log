@@ -9099,3 +9099,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:53:58] INFO root fetch - processPackages [fusionscript-stubs]: Remove: archive file [/home/abi/fetcher/tmp/fusionscript_stubs-18.6.6.tar.gz]
 [2024-04-14 14:53:58] INFO root fetch - main [MainThread]: End processing [fusionscript-stubs]: success
 [2024-04-14 14:53:58] INFO root fetch - main [MainThread]: Store serial: [22758996]
+[2024-04-14 14:56:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758996]
+[2024-04-14 14:56:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 14:58:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758996]
+[2024-04-14 14:58:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 14:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazy-type-hint
+[2024-04-14 14:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QuickStart-Rhy
+[2024-04-14 14:58:20] INFO root fetch - processPackages [lazy-type-hint]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 14:58:20] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/2a/f0/4f8b3b46795d68624ea35e773f8a49d01e37dbb4e0c34fcd7ac245b8f54c/lazy_type_hint-1.0.0.tar.gz
+[2024-04-14 14:58:20] INFO root fetch - processPackages [QuickStart-Rhy]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-14 14:58:20] INFO root fetch - processPackages [QuickStart-Rhy]: Downloading https://files.pythonhosted.org/packages/00/46/101456ed92418b02a3448f81bb9d3ddcbc23c5f27de3115c47e5c966894c/quickstart_rhy-0.7.8.tar.gz
+[2024-04-14 14:58:21] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/01/86/07fbe3c30176de3cef90d1ce172ad3aae6719009e19016cb738e347b7feb/lazy_type_hint-1.0.1.tar.gz
+[2024-04-14 14:58:21] INFO root fetch - processPackages [lazy-type-hint]: executing diffoscope
+[2024-04-14 14:58:21] INFO root fetch - processPackages [lazy-type-hint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazy_type_hint-1.0.0.tar.gz tmp/lazy_type_hint-1.0.1.tar.gz --markdown 20240414/l/lazy-type-hint/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 14:58:21] INFO root fetch - processPackages [QuickStart-Rhy]: Downloading https://files.pythonhosted.org/packages/43/c7/6584633c1cdbc2319103ff6d01806304284c6174ade9fde40e742085fa39/quickstart_rhy-0.7.9.tar.gz
+[2024-04-14 14:58:21] INFO root fetch - processPackages [QuickStart-Rhy]: executing diffoscope
+[2024-04-14 14:58:21] INFO root fetch - processPackages [QuickStart-Rhy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart_rhy-0.7.8.tar.gz tmp/quickstart_rhy-0.7.9.tar.gz --markdown 20240414/Q/QuickStart-Rhy/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-14 14:58:21] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-1.0.0.tar.gz]
+[2024-04-14 14:58:21] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-1.0.1.tar.gz]
+[2024-04-14 14:58:21] INFO root fetch - main [MainThread]: End processing [lazy-type-hint]: success
+[2024-04-14 14:58:22] INFO root fetch - processPackages [QuickStart-Rhy]: Remove: archive file [/home/abi/fetcher/tmp/quickstart_rhy-0.7.8.tar.gz]
+[2024-04-14 14:58:22] INFO root fetch - processPackages [QuickStart-Rhy]: Remove: archive file [/home/abi/fetcher/tmp/quickstart_rhy-0.7.9.tar.gz]
+[2024-04-14 14:58:22] INFO root fetch - main [MainThread]: End processing [QuickStart-Rhy]: success
+[2024-04-14 14:58:22] INFO root fetch - main [MainThread]: Store serial: [22759006]
