@@ -4494,3 +4494,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:06:44] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.4.0.tar.gz]
 [2024-04-14 08:06:44] INFO root fetch - main [MainThread]: End processing [surrealist]: success
 [2024-04-14 08:06:44] INFO root fetch - main [MainThread]: Store serial: [22756795]
+[2024-04-14 08:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756795]
+[2024-04-14 08:08:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 08:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kobushi-trackviewer
+[2024-04-14 08:08:53] INFO root fetch - processPackages [kobushi-trackviewer]: New version: [1.2.0] Old Version: [1.1.7]
+[2024-04-14 08:08:53] INFO root fetch - processPackages [kobushi-trackviewer]: Downloading https://files.pythonhosted.org/packages/1e/1a/c33661b9c89ec8fd2e29fe9bfd25c39d2e75d8710ad08a1b2b52e3a61d50/kobushi_trackviewer-1.1.7-py3-none-any.whl
+[2024-04-14 08:08:53] INFO root fetch - processPackages [kobushi-trackviewer]: Downloading https://files.pythonhosted.org/packages/c9/e3/6e17d7db08a54b71797224ede6b597e7510dc00dfd93720665feab60bee7/kobushi_trackviewer-1.2.0-py3-none-any.whl
+[2024-04-14 08:08:53] INFO root fetch - processPackages [kobushi-trackviewer]: executing diffoscope
+[2024-04-14 08:08:53] INFO root fetch - processPackages [kobushi-trackviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobushi_trackviewer-1.1.7-py3-none-any.whl.zip tmp/kobushi_trackviewer-1.2.0-py3-none-any.whl.zip --markdown 20240414/k/kobushi-trackviewer/1.1.7-1.2.0/README.md --exclude *.pyd
+[2024-04-14 08:08:54] INFO root fetch - processPackages [kobushi-trackviewer]: Remove: archive file [/home/abi/fetcher/tmp/kobushi_trackviewer-1.1.7-py3-none-any.whl.zip]
+[2024-04-14 08:08:54] INFO root fetch - processPackages [kobushi-trackviewer]: Remove: archive file [/home/abi/fetcher/tmp/kobushi_trackviewer-1.2.0-py3-none-any.whl.zip]
+[2024-04-14 08:08:54] INFO root fetch - main [MainThread]: End processing [kobushi-trackviewer]: success
+[2024-04-14 08:08:54] INFO root fetch - main [MainThread]: Store serial: [22756797]
