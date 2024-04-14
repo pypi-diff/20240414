@@ -7464,3 +7464,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:49:40] INFO root fetch - processPackages [django-group-model]: Remove: archive file [/home/abi/fetcher/tmp/django-group-model-1.0.1.tar.gz]
 [2024-04-14 12:49:40] INFO root fetch - main [MainThread]: End processing [django-group-model]: success
 [2024-04-14 12:49:40] INFO root fetch - main [MainThread]: Store serial: [22758256]
+[2024-04-14 12:51:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758256]
+[2024-04-14 12:51:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 12:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tgate
+[2024-04-14 12:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rlogging
+[2024-04-14 12:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtutils
+[2024-04-14 12:51:55] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 12:51:55] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 12:51:55] INFO root fetch - processPackages [rlogging]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-04-14 12:51:55] INFO root fetch - processPackages [tgate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 12:51:56] INFO root fetch - processPackages [rlogging]: Downloading https://files.pythonhosted.org/packages/17/75/940b86b088d25ec8a6bdb9f4a6a9f053e5cf7fc230ac65a111ae1adee82f/rlogging-1.1.9.tar.gz
+[2024-04-14 12:51:56] INFO root fetch - processPackages [tgate]: Downloading https://files.pythonhosted.org/packages/e3/de/e040c08bc921da595d3dad1cdbeb6df273f10c28a8477437755a613a0a89/tgate-0.1.0.tar.gz
+[2024-04-14 12:51:56] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 12:51:56] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 12:51:56] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 12:51:56] INFO root fetch - processPackages [rlogging]: Downloading https://files.pythonhosted.org/packages/52/99/ca92b12d6b3dccfbd05b489da5931aaec36651357e7dbbf0ba07ef2e89b4/rlogging-1.2.0.tar.gz
+[2024-04-14 12:51:56] INFO root fetch - processPackages [tgate]: Downloading https://files.pythonhosted.org/packages/2b/fb/49f5e01fda1fa36a8448e89ddb41cdf9b78821194d1bdc7ab3daf086ff37/tgate-0.1.1.tar.gz
+[2024-04-14 12:51:56] INFO root fetch - processPackages [rlogging]: executing diffoscope
+[2024-04-14 12:51:56] INFO root fetch - processPackages [rlogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlogging-1.1.9.tar.gz tmp/rlogging-1.2.0.tar.gz --markdown 20240414/r/rlogging/1.1.9-1.2.0/README.md --exclude *.pyd
+[2024-04-14 12:51:56] INFO root fetch - processPackages [tgate]: executing diffoscope
+[2024-04-14 12:51:56] INFO root fetch - processPackages [tgate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgate-0.1.0.tar.gz tmp/tgate-0.1.1.tar.gz --markdown 20240414/t/tgate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 12:51:56] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 12:51:56] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 12:51:56] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 12:51:57] INFO root fetch - processPackages [rlogging]: Remove: archive file [/home/abi/fetcher/tmp/rlogging-1.1.9.tar.gz]
+[2024-04-14 12:51:57] INFO root fetch - processPackages [rlogging]: Remove: archive file [/home/abi/fetcher/tmp/rlogging-1.2.0.tar.gz]
+[2024-04-14 12:51:57] INFO root fetch - main [MainThread]: End processing [rlogging]: success
+[2024-04-14 12:51:57] INFO root fetch - processPackages [tgate]: Remove: archive file [/home/abi/fetcher/tmp/tgate-0.1.0.tar.gz]
+[2024-04-14 12:51:57] INFO root fetch - processPackages [tgate]: Remove: archive file [/home/abi/fetcher/tmp/tgate-0.1.1.tar.gz]
+[2024-04-14 12:51:57] INFO root fetch - main [MainThread]: End processing [tgate]: success
+[2024-04-14 12:51:57] INFO root fetch - main [MainThread]: Store serial: [22758266]
