@@ -12331,3 +12331,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:45:42] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.7.tar.gz]
 [2024-04-14 18:45:42] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-04-14 18:45:42] INFO root fetch - main [MainThread]: Store serial: [22760593]
+[2024-04-14 18:47:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760593]
+[2024-04-14 18:47:51] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emlabpkg
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gardener-cicd-base
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gardener-cicd-cli
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gardener-cicd-dso
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gardener-cicd-libs
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gardener-cicd-whd
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: issx
+[2024-04-14 18:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gardener-oci
+[2024-04-14 18:47:51] INFO root fetch - processPackages [emlabpkg]: New version: [4.9] Old Version: [4.8]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [issx]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2379.0] Old Version: [1.2378.0]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/52/84/fdb1e8cae2adf2f6cf197367140c6b20a8c8eda120c2bc0d0194ce818811/emlabpkg-4.8.tar.gz
+[2024-04-14 18:47:51] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2379.0] Old Version: [1.2378.0]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2379.0] Old Version: [1.2378.0]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2379.0] Old Version: [1.2378.0]
+[2024-04-14 18:47:51] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2379.0] Old Version: [1.2378.0]
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/0f/84/9aa04612bf942b5fbd233e287411f5092b2594299d2ff9952f2962fc9d08/gardener-cicd-cli-1.2378.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [issx]: Downloading https://files.pythonhosted.org/packages/f0/93/8e6fff09d748707937fc4ff92d5035117b51fe09e3cc7847f4e3cc765c14/issx-0.0.2.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/a5/5c/7b2101613235dde0b137fb467ab282b086e41c8bf81553a844a00b88ba64/emlabpkg-4.9.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/b4/d1/1379f1c6649f444a8d25e10d10956f374225bd47032db03e62734a0a3fe1/gardener-cicd-dso-1.2378.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/77/1c/fe062667ad95e7648d134c5c594e6d52ecc1e409dda9e55bff1a448b2019/gardener-cicd-whd-1.2378.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/60/76/54c8e8437b0aac07f998643f29c3d979666a4a2bfc8e9bca0ada5bf18634/gardener-cicd-base-1.2378.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/4b/fb/e8258b62aae06eddfdb16f80430209839a5aa3746651c51f028503118305/gardener-cicd-libs-1.2378.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2024-04-14 18:47:52] INFO root fetch - processPackages [emlabpkg]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [emlabpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlabpkg-4.8.tar.gz tmp/emlabpkg-4.9.tar.gz --markdown 20240414/e/emlabpkg/4.8-4.9/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/d1/73/b64bd867173377d9461fe5aa649bb287368479cb8f6682e0c73295ff8536/gardener_cicd_cli-1.2379.0-py3-none-any.whl
+[2024-04-14 18:47:52] INFO root fetch - processPackages [issx]: Downloading https://files.pythonhosted.org/packages/9c/18/d8258b67a4e69a9dd07b88809e4c3da8db18c880a690963d69b69902445d/issx-0.0.4.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-oci]: Downloading https://files.pythonhosted.org/packages/65/8d/87469d533eb661d280b5bb3eb778421053cbe6438908abdc1d79b2921522/gardener-oci-1.998.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-dso]: Downloading https://files.pythonhosted.org/packages/b1/a3/aedac3fec34237a7b0cf63869ff06acd54365e7f4e3acebf0aab557d376c/gardener_cicd_dso-1.2379.0-py3-none-any.whl
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-base]: Downloading https://files.pythonhosted.org/packages/bd/99/9d86711a2382c80cb43d565d30ec8d395d55c91383eb9bce007482dc0563/gardener_cicd_base-1.2379.0-py3-none-any.whl
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-whd]: Downloading https://files.pythonhosted.org/packages/58/25/beffd9c641c998ee37d2b39314c7dd920f7fb8d8e8f7c65a5237e28cd3b6/gardener_cicd_whd-1.2379.0-py3-none-any.whl
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-libs]: Downloading https://files.pythonhosted.org/packages/58/33/83fcd3f5e5c72f24e61f49d2934c1e332e488f724ba8cfa2612a9b6e0d4c/gardener_cicd_libs-1.2379.0-py3-none-any.whl
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2378.0.tar.gz tmp/gardener_cicd_cli-1.2379.0-py3-none-any.whl.zip --markdown 20240414/g/gardener-cicd-cli/1.2378.0-1.2379.0/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [issx]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [issx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/issx-0.0.2.tar.gz tmp/issx-0.0.4.tar.gz --markdown 20240414/i/issx/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2378.0.tar.gz tmp/gardener_cicd_base-1.2379.0-py3-none-any.whl.zip --markdown 20240414/g/gardener-cicd-base/1.2378.0-1.2379.0/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2378.0.tar.gz tmp/gardener_cicd_dso-1.2379.0-py3-none-any.whl.zip --markdown 20240414/g/gardener-cicd-dso/1.2378.0-1.2379.0/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2378.0.tar.gz tmp/gardener_cicd_whd-1.2379.0-py3-none-any.whl.zip --markdown 20240414/g/gardener-cicd-whd/1.2378.0-1.2379.0/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2378.0.tar.gz tmp/gardener_cicd_libs-1.2379.0-py3-none-any.whl.zip --markdown 20240414/g/gardener-cicd-libs/1.2378.0-1.2379.0/README.md --exclude *.pyd
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-oci]: Downloading https://files.pythonhosted.org/packages/f8/de/c6930b025944729e4655e337193e76592dfc15653c0cde84790cb8650df4/gardener-oci-1.999.0.tar.gz
+[2024-04-14 18:47:52] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.8.tar.gz]
+[2024-04-14 18:47:52] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.9.tar.gz]
+[2024-04-14 18:47:52] INFO root fetch - main [MainThread]: End processing [emlabpkg]: success
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2024-04-14 18:47:52] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20240414/g/gardener-oci/1.998.0-1.999.0/README.md --exclude *.pyd
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-cli]: Remove: archive file [/home/abi/fetcher/tmp/gardener-cicd-cli-1.2378.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-cli]: Remove: archive file [/home/abi/fetcher/tmp/gardener_cicd_cli-1.2379.0-py3-none-any.whl.zip]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [issx]: Remove: archive file [/home/abi/fetcher/tmp/issx-0.0.2.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [issx]: Remove: archive file [/home/abi/fetcher/tmp/issx-0.0.4.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [issx]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-whd]: Remove: archive file [/home/abi/fetcher/tmp/gardener-cicd-whd-1.2378.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-whd]: Remove: archive file [/home/abi/fetcher/tmp/gardener_cicd_whd-1.2379.0-py3-none-any.whl.zip]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-base]: Remove: archive file [/home/abi/fetcher/tmp/gardener-cicd-base-1.2378.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-base]: Remove: archive file [/home/abi/fetcher/tmp/gardener_cicd_base-1.2379.0-py3-none-any.whl.zip]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-dso]: Remove: archive file [/home/abi/fetcher/tmp/gardener-cicd-dso-1.2378.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-dso]: Remove: archive file [/home/abi/fetcher/tmp/gardener_cicd_dso-1.2379.0-py3-none-any.whl.zip]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-libs]: Remove: archive file [/home/abi/fetcher/tmp/gardener-cicd-libs-1.2378.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-cicd-libs]: Remove: archive file [/home/abi/fetcher/tmp/gardener_cicd_libs-1.2379.0-py3-none-any.whl.zip]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-oci]: Remove: archive file [/home/abi/fetcher/tmp/gardener-oci-1.998.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - processPackages [gardener-oci]: Remove: archive file [/home/abi/fetcher/tmp/gardener-oci-1.999.0.tar.gz]
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2024-04-14 18:47:53] INFO root fetch - main [MainThread]: Store serial: [22760610]
