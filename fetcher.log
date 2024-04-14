@@ -13863,3 +13863,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:55:01] INFO root fetch - processPackages [eigenpy]: Remove: archive file [/home/abi/fetcher/tmp/eigenpy-3.5.0-3-cp312-cp312-manylinux_2_28_aarch64.whl.zip]
 [2024-04-14 20:55:01] INFO root fetch - main [MainThread]: End processing [eigenpy]: success
 [2024-04-14 20:55:01] INFO root fetch - main [MainThread]: Store serial: [22761311]
+[2024-04-14 20:57:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761311]
+[2024-04-14 20:57:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 20:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scmopy
+[2024-04-14 20:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: etl-pipeline-ggn1-ase-g5
+[2024-04-14 20:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faster-translate
+[2024-04-14 20:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: upsonic
+[2024-04-14 20:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyslth
+[2024-04-14 20:57:09] INFO root fetch - processPackages [faster-translate]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 20:57:09] INFO root fetch - processPackages [pyslth]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 20:57:10] INFO root fetch - processPackages [scmopy]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 20:57:10] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/07/d8/b245ee7e467dea0fdba8469759f3433cb17f58abce40cb5997f45cf6008e/pyslth-0.0.2.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: New version: [4.0] Old Version: [3]
+[2024-04-14 20:57:10] INFO root fetch - processPackages [upsonic]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-14 20:57:10] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/bd/47/02525a745e339b728c08312e35fc006a49dcf13c3e2214510ca1df3dc4c7/scmopy-0.0.6.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/22/f2/86b56dd6490c884a28d44b7d6c04c042e9bff210354a18a7e3135166c454/faster_translate-0.1.4.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: Downloading https://files.pythonhosted.org/packages/3c/e7/86ecd32eade50843522c7970175ce80d5f0b3c831ad9dd90feadaaeccec7/etl_pipeline_ggn1_ase_g5-3.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/28/4f/e4de97c3853a38f0003dd35e31de9d8003b16d10fd76b190f4778626ce27/upsonic-0.8.4.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [faster-translate]: Downloading https://files.pythonhosted.org/packages/3c/43/5f3f8e395142bf97f9ada3cd357ef58417b161bc0d922a6cc465c7be3579/faster_translate-0.1.5.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/ac/2c/3b0c995906df01437683e2db12fd9543b1155095a6948b2a5ab7e3b2a476/scmopy-0.0.7.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/bb/d6/a2bed62dc761f01055ff735fe0f4872807fc3540faac808101e3d84aef1c/pyslth-0.0.3.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [faster-translate]: executing diffoscope
+[2024-04-14 20:57:10] INFO root fetch - processPackages [faster-translate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_translate-0.1.4.tar.gz tmp/faster_translate-0.1.5.tar.gz --markdown 20240414/f/faster-translate/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 20:57:10] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 20:57:10] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.6.tar.gz tmp/scmopy-0.0.7.tar.gz --markdown 20240414/s/scmopy/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 20:57:10] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-14 20:57:10] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.0.2.tar.gz tmp/pyslth-0.0.3.tar.gz --markdown 20240414/p/pyslth/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 20:57:10] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: Downloading https://files.pythonhosted.org/packages/ce/98/c203e5df69bd6300206986bfb3a7b8b36f68274c6eb5a6946fa42a52d592/etl_pipeline_ggn1_ase_g5-4.0.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [upsonic]: Downloading https://files.pythonhosted.org/packages/e2/c6/1f2c73c8b576a9a13477f4177f58dce58e65a860c35204e42f53a5db8144/upsonic-0.9.0.tar.gz
+[2024-04-14 20:57:10] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: executing diffoscope
+[2024-04-14 20:57:10] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etl_pipeline_ggn1_ase_g5-3.tar.gz tmp/etl_pipeline_ggn1_ase_g5-4.0.tar.gz --markdown 20240414/e/etl-pipeline-ggn1-ase-g5/3-4.0/README.md --exclude *.pyd
+[2024-04-14 20:57:10] INFO root fetch - processPackages [upsonic]: executing diffoscope
+[2024-04-14 20:57:10] INFO root fetch - processPackages [upsonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upsonic-0.8.4.tar.gz tmp/upsonic-0.9.0.tar.gz --markdown 20240414/u/upsonic/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-04-14 20:57:11] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.4.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - processPackages [faster-translate]: Remove: archive file [/home/abi/fetcher/tmp/faster_translate-0.1.5.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: End processing [faster-translate]: success
+[2024-04-14 20:57:11] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.0.2.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.0.3.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-14 20:57:11] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.6.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.7.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 20:57:11] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: Remove: archive file [/home/abi/fetcher/tmp/etl_pipeline_ggn1_ase_g5-3.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - processPackages [etl-pipeline-ggn1-ase-g5]: Remove: archive file [/home/abi/fetcher/tmp/etl_pipeline_ggn1_ase_g5-4.0.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: End processing [etl-pipeline-ggn1-ase-g5]: success
+[2024-04-14 20:57:11] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.8.4.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - processPackages [upsonic]: Remove: archive file [/home/abi/fetcher/tmp/upsonic-0.9.0.tar.gz]
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: End processing [upsonic]: success
+[2024-04-14 20:57:11] INFO root fetch - main [MainThread]: Store serial: [22761335]
