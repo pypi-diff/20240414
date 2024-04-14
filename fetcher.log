@@ -3509,3 +3509,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:50:10] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.2.1.dev2024041403.tar.gz]
 [2024-04-14 05:50:10] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-14 05:50:10] INFO root fetch - main [MainThread]: Store serial: [22756433]
+[2024-04-14 05:52:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756433]
+[2024-04-14 05:52:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 05:54:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756433]
+[2024-04-14 05:54:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 05:56:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756433]
+[2024-04-14 05:56:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 05:58:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756433]
+[2024-04-14 05:58:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 05:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nlp-nightly
+[2024-04-14 05:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viser
+[2024-04-14 05:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bbm25-haystack
+[2024-04-14 05:58:35] WARNING root fetch - processPackages [bbm25-haystack]: Skipping, unable to determine old version
+[2024-04-14 05:58:35] INFO root fetch - main [MainThread]: End processing [bbm25-haystack] error
+[2024-04-14 05:58:35] INFO root fetch - processPackages [viser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 05:58:35] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-04-14 05:58:35] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-04-14 05:58:35] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/43/1c/d574f1040f257213ab3e861ee33711d900666dbbaf4a2be7b1e32213f27b/viser-0.1.8.tar.gz
+[2024-04-14 05:58:35] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-04-14 05:58:35] INFO root fetch - processPackages [viser]: Downloading https://files.pythonhosted.org/packages/c6/11/037d11188de9d326de379226a46229a7f59bdf1b4f74bf70f34d7d278638/viser-0.1.9.tar.gz
+[2024-04-14 05:58:36] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-14 05:58:36] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240414/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-04-14 05:58:36] INFO root fetch - processPackages [viser]: executing diffoscope
+[2024-04-14 05:58:36] INFO root fetch - processPackages [viser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viser-0.1.8.tar.gz tmp/viser-0.1.9.tar.gz --markdown 20240414/v/viser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 05:58:37] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-04-14 05:58:37] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-04-14 05:58:37] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-14 05:58:37] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.8.tar.gz]
+[2024-04-14 05:58:37] INFO root fetch - processPackages [viser]: Remove: archive file [/home/abi/fetcher/tmp/viser-0.1.9.tar.gz]
+[2024-04-14 05:58:37] INFO root fetch - main [MainThread]: End processing [viser]: success
+[2024-04-14 05:58:37] INFO root fetch - main [MainThread]: Store serial: [22756439]
