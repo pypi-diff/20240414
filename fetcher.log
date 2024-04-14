@@ -16292,3 +16292,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:46:34] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.3.tar.gz]
 [2024-04-14 23:46:34] INFO root fetch - main [MainThread]: End processing [zrb]: success
 [2024-04-14 23:46:34] INFO root fetch - main [MainThread]: Store serial: [22762688]
+[2024-04-14 23:48:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762688]
+[2024-04-14 23:48:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 23:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watson-poetry
+[2024-04-14 23:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transformer-heads
+[2024-04-14 23:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: recommender-agent
+[2024-04-14 23:48:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hatchling
+[2024-04-14 23:48:43] INFO root fetch - processPackages [watson-poetry]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 23:48:43] INFO root fetch - processPackages [transformer-heads]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 23:48:43] INFO root fetch - processPackages [transformer-heads]: Downloading https://files.pythonhosted.org/packages/c1/98/3eb2cf8b9e227fb23f445b79c46da2c3254dc70c0abd7f605353e484935c/transformer_heads-0.0.8.tar.gz
+[2024-04-14 23:48:43] WARNING root fetch - processPackages [recommender-agent]: Skipping, unable to determine old version
+[2024-04-14 23:48:43] INFO root fetch - main [MainThread]: End processing [recommender-agent] error
+[2024-04-14 23:48:43] INFO root fetch - processPackages [hatchling]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-14 23:48:43] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/d7/6b/b3ac6acf329ad184f08e6a2bcf90171989fd175845b824749957473a0384/watson_poetry-0.1.3.tar.gz
+[2024-04-14 23:48:43] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+[2024-04-14 23:48:43] INFO root fetch - processPackages [transformer-heads]: Downloading https://files.pythonhosted.org/packages/d5/a8/2b2535a372521239690cc07d4307cf48e43e6e6655f100344f709660611e/transformer_heads-0.0.9.tar.gz
+[2024-04-14 23:48:43] INFO root fetch - processPackages [transformer-heads]: executing diffoscope
+[2024-04-14 23:48:43] INFO root fetch - processPackages [transformer-heads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformer_heads-0.0.8.tar.gz tmp/transformer_heads-0.0.9.tar.gz --markdown 20240414/t/transformer-heads/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 23:48:43] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/a3/26/ff73fcab53d7f3d84b13c0ee9459d026877e58e11ed1d68983d4e576afc5/watson_poetry-0.1.4.tar.gz
+[2024-04-14 23:48:43] INFO root fetch - processPackages [watson-poetry]: executing diffoscope
+[2024-04-14 23:48:43] INFO root fetch - processPackages [watson-poetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watson_poetry-0.1.3.tar.gz tmp/watson_poetry-0.1.4.tar.gz --markdown 20240414/w/watson-poetry/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 23:48:43] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/0e/7a/bc6679c4c8814b8f09957d255825e75a09220660c272f95719c512538811/hatchling-1.9.0.tar.gz
+[2024-04-14 23:48:44] INFO root fetch - processPackages [hatchling]: executing diffoscope
+[2024-04-14 23:48:44] INFO root fetch - processPackages [hatchling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatchling-1.8.1.tar.gz tmp/hatchling-1.9.0.tar.gz --markdown 20240414/h/hatchling/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-14 23:48:44] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.3.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.4.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - main [MainThread]: End processing [watson-poetry]: success
+[2024-04-14 23:48:44] INFO root fetch - processPackages [transformer-heads]: Remove: archive file [/home/abi/fetcher/tmp/transformer_heads-0.0.8.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - processPackages [transformer-heads]: Remove: archive file [/home/abi/fetcher/tmp/transformer_heads-0.0.9.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - main [MainThread]: End processing [transformer-heads]: success
+[2024-04-14 23:48:44] INFO root fetch - processPackages [hatchling]: Remove: archive file [/home/abi/fetcher/tmp/hatchling-1.8.1.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - processPackages [hatchling]: Remove: archive file [/home/abi/fetcher/tmp/hatchling-1.9.0.tar.gz]
+[2024-04-14 23:48:44] INFO root fetch - main [MainThread]: End processing [hatchling]: success
+[2024-04-14 23:48:44] INFO root fetch - main [MainThread]: Store serial: [22762702]
