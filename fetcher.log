@@ -11832,3 +11832,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:08:36] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.0.4-py3-none-any.whl.zip]
 [2024-04-14 18:08:36] INFO root fetch - main [MainThread]: End processing [glook]: success
 [2024-04-14 18:08:36] INFO root fetch - main [MainThread]: Store serial: [22760431]
+[2024-04-14 18:10:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760431]
+[2024-04-14 18:10:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 18:10:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seleniumbase
+[2024-04-14 18:10:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-04-14 18:10:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: argrelay
+[2024-04-14 18:10:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: selenium-base
+[2024-04-14 18:10:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-sbase
+[2024-04-14 18:10:44] INFO root fetch - processPackages [dune-rivals]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-14 18:10:44] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 18:10:44] INFO root fetch - processPackages [argrelay]: New version: [0.6.9] Old Version: [0.6.8.dev2]
+[2024-04-14 18:10:44] INFO root fetch - processPackages [seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-14 18:10:44] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-14 18:10:44] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-14 18:10:44] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/7b/93/c2981721fbb884ccc7481aaee7e7b1e4a95626c7a32bf6392d58d9e91023/argrelay-0.6.8.dev2.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/17/af/6fa611e0055d216a0d49ff3855505e7fb116b9c62b36734f49f5c83d616c/dune_rivals-0.4.0.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/91/87/a1223948d4bac31ab82915c4e7a930c22af874859aa805d6c3abd6b5bb3e/pytest-sbase-4.9.8.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/d5/06/b4c4aa69540cf3a9c497a53072da777eefd704403fc8f952a88c69208ad1/seleniumbase-4.9.8.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/49/eb/ad6c55d2af108681e38505aff036aef13544a2d1c09817221f499826a6f9/selenium-base-4.9.8.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 18:10:45] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.9.tar.gz tmp/dune_rivals-0.4.0.tar.gz --markdown 20240414/d/dune-rivals/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-14 18:10:45] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9f/b9/c98fecee4bc15a91526ef7afb17fbc6699846017179c9d846a2e0fa58f93/argrelay-0.6.9.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [pytest-sbase]: Downloading https://files.pythonhosted.org/packages/ea/6c/61da56c0f8d30ee6ecfbf486bd770ce073eba9a09e63981ae35863a37cb0/pytest-sbase-4.9.9.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [selenium-base]: Downloading https://files.pythonhosted.org/packages/0a/3b/8bdd54f85b1550af5050c8683212c3f88b854c0ef99e22fa6fe216094900/selenium-base-4.9.9.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [seleniumbase]: Downloading https://files.pythonhosted.org/packages/9d/0f/462449b9921267bb9f0f0db257c72435e50ec2fcd4219764bb131be70686/seleniumbase-4.9.9.tar.gz
+[2024-04-14 18:10:45] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2024-04-14 18:10:45] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20240414/p/pytest-sbase/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-14 18:10:45] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-04-14 18:10:45] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.6.8.dev2.tar.gz tmp/argrelay-0.6.9.tar.gz --markdown 20240414/a/argrelay/0.6.8.dev2-0.6.9/README.md --exclude *.pyd
+[2024-04-14 18:10:45] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2024-04-14 18:10:45] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20240414/s/selenium-base/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-14 18:10:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 18:10:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.4.0.tar.gz]
+[2024-04-14 18:10:45] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 18:10:45] INFO root fetch - processPackages [seleniumbase]: executing diffoscope
+[2024-04-14 18:10:45] INFO root fetch - processPackages [seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumbase-4.9.8.tar.gz tmp/seleniumbase-4.9.9.tar.gz --markdown 20240414/s/seleniumbase/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-14 18:10:46] INFO root fetch - processPackages [pytest-sbase]: Remove: archive file [/home/abi/fetcher/tmp/pytest-sbase-4.9.8.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - processPackages [pytest-sbase]: Remove: archive file [/home/abi/fetcher/tmp/pytest-sbase-4.9.9.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - main [MainThread]: End processing [pytest-sbase]: success
+[2024-04-14 18:10:46] INFO root fetch - processPackages [selenium-base]: Remove: archive file [/home/abi/fetcher/tmp/selenium-base-4.9.8.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - processPackages [selenium-base]: Remove: archive file [/home/abi/fetcher/tmp/selenium-base-4.9.9.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - main [MainThread]: End processing [selenium-base]: success
+[2024-04-14 18:10:46] INFO root fetch - processPackages [seleniumbase]: Remove: archive file [/home/abi/fetcher/tmp/seleniumbase-4.9.8.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - processPackages [seleniumbase]: Remove: archive file [/home/abi/fetcher/tmp/seleniumbase-4.9.9.tar.gz]
+[2024-04-14 18:10:46] INFO root fetch - main [MainThread]: End processing [seleniumbase]: success
+[2024-04-14 18:10:47] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.8.dev2.tar.gz]
+[2024-04-14 18:10:47] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
+[2024-04-14 18:10:47] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-04-14 18:10:47] INFO root fetch - main [MainThread]: Store serial: [22760446]
