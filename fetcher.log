@@ -7972,3 +7972,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:28:29] INFO root fetch - processPackages [pertpy]: Remove: archive file [/home/abi/fetcher/tmp/pertpy-0.7.0.tar.gz]
 [2024-04-14 13:28:29] INFO root fetch - main [MainThread]: End processing [pertpy]: success
 [2024-04-14 13:28:29] INFO root fetch - main [MainThread]: Store serial: [22758505]
+[2024-04-14 13:30:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758505]
+[2024-04-14 13:30:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-hilo
+[2024-04-14 13:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pelican-graphviz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icodes
+[2024-04-14 13:30:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: djangorestframework-deepserializer
+[2024-04-14 13:30:45] INFO root fetch - processPackages [icodes]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 13:30:45] INFO root fetch - processPackages [djangorestframework-deepserializer]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-14 13:30:45] INFO root fetch - processPackages [pelican-graphviz]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-14 13:30:45] INFO root fetch - processPackages [python-hilo]: New version: [2024.4.1] Old Version: [2024.3.1]
+[2024-04-14 13:30:45] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/fd/e2/390143bd8380a293eefcbf38c2399e90f9f8a51d8e25c598325e84e5bcf7/icodes-0.1.0.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [pelican-graphviz]: Downloading https://files.pythonhosted.org/packages/f2/57/e653ba91ff1375000dc7432b98505294a4ebf7a69609e3c81576bdf86681/pelican_graphviz-1.2.4.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [python-hilo]: Downloading https://files.pythonhosted.org/packages/ee/69/6b70673cad1972a2745263fb087e19bdbf56bae8a32d135315775cb4c91b/python_hilo-2024.3.1.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [djangorestframework-deepserializer]: Downloading https://files.pythonhosted.org/packages/cf/78/d9842420f2d4448dc23594ec16f79791f14e378cc89f1d2d6234c9286ce5/djangorestframework-deepserializer-0.1.7.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/65/47/bc56b939acd8548f8824086e1ad0a150dd54c7b7907342d312f3654c7e6b/icodes-0.1.1.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [pelican-graphviz]: Downloading https://files.pythonhosted.org/packages/89/57/34dd96f5b8929b9ae5d0491b3a11b3dfc5c875ff84275efe5dfef4fa9290/pelican_graphviz-1.2.5.tar.gz
+[2024-04-14 13:30:45] INFO root fetch - processPackages [icodes]: executing diffoscope
+[2024-04-14 13:30:45] INFO root fetch - processPackages [icodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icodes-0.1.0.tar.gz tmp/icodes-0.1.1.tar.gz --markdown 20240414/i/icodes/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 13:30:46] INFO root fetch - processPackages [pelican-graphviz]: executing diffoscope
+[2024-04-14 13:30:46] INFO root fetch - processPackages [pelican-graphviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_graphviz-1.2.4.tar.gz tmp/pelican_graphviz-1.2.5.tar.gz --markdown 20240414/p/pelican-graphviz/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: Downloading https://files.pythonhosted.org/packages/c2/c9/d426c3976c4889f9448b296a3a9acd755e639b65e70d4d98e3c00c53884f/python_hilo-2024.4.1.tar.gz
+[2024-04-14 13:30:46] INFO root fetch - processPackages [djangorestframework-deepserializer]: Downloading https://files.pythonhosted.org/packages/99/bc/40dfe2c0889dd8611388c0984ebcb4ab0335f1881e36fa0fd519ec1910b7/djangorestframework-deepserializer-0.1.9.tar.gz
+[2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: executing diffoscope
+[2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_hilo-2024.3.1.tar.gz tmp/python_hilo-2024.4.1.tar.gz --markdown 20240414/p/python-hilo/2024.3.1-2024.4.1/README.md --exclude *.pyd
+[2024-04-14 13:30:46] INFO root fetch - processPackages [djangorestframework-deepserializer]: executing diffoscope
+[2024-04-14 13:30:46] INFO root fetch - processPackages [djangorestframework-deepserializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework-deepserializer-0.1.7.tar.gz tmp/djangorestframework-deepserializer-0.1.9.tar.gz --markdown 20240414/d/djangorestframework-deepserializer/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-14 13:30:46] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.0.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.1.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - main [MainThread]: End processing [icodes]: success
+[2024-04-14 13:30:46] INFO root fetch - processPackages [pelican-graphviz]: Remove: archive file [/home/abi/fetcher/tmp/pelican_graphviz-1.2.4.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - processPackages [pelican-graphviz]: Remove: archive file [/home/abi/fetcher/tmp/pelican_graphviz-1.2.5.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - main [MainThread]: End processing [pelican-graphviz]: success
+[2024-04-14 13:30:46] INFO root fetch - processPackages [djangorestframework-deepserializer]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework-deepserializer-0.1.7.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - processPackages [djangorestframework-deepserializer]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework-deepserializer-0.1.9.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - main [MainThread]: End processing [djangorestframework-deepserializer]: success
+[2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: Remove: archive file [/home/abi/fetcher/tmp/python_hilo-2024.3.1.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: Remove: archive file [/home/abi/fetcher/tmp/python_hilo-2024.4.1.tar.gz]
+[2024-04-14 13:30:46] INFO root fetch - main [MainThread]: End processing [python-hilo]: success
+[2024-04-14 13:30:46] INFO root fetch - main [MainThread]: Store serial: [22758517]
