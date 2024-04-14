@@ -15161,3 +15161,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:23:22] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.6.3.tar.gz]
 [2024-04-14 22:23:22] INFO root fetch - main [MainThread]: End processing [hhd]: success
 [2024-04-14 22:23:22] INFO root fetch - main [MainThread]: Store serial: [22762169]
+[2024-04-14 22:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762169]
+[2024-04-14 22:25:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 22:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hhd
+[2024-04-14 22:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitter-api-client
+[2024-04-14 22:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mystring
+[2024-04-14 22:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: panthon
+[2024-04-14 22:25:31] INFO root fetch - processPackages [panthon]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-14 22:25:31] INFO root fetch - processPackages [hhd]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-04-14 22:25:31] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-14 22:25:31] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/f8/2a/101551eccc0624791625a321cf3765dca2c7b78151ae1da60067b3842ca5/panthon-0.1.9.tar.gz
+[2024-04-14 22:25:31] INFO root fetch - processPackages [twitter-api-client]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 22:25:31] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/83/19/5b14ba9ef0d820487f78ec30503fc3f1e650041dbff6683f840e050827fa/hhd-2.6.2.tar.gz
+[2024-04-14 22:25:31] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-14 22:25:32] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/6d/c9/1d547e8da64fdc6c40cf41bfcd04bab1dc66b8b77d10c444ff66c5a904dc/twitter-api-client-0.9.8.tar.gz
+[2024-04-14 22:25:32] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-14 22:25:32] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/53/5b/4df999ce6684baefb6fb91cbaa8edb8eb983c283afa39102f62d3b44ad0b/hhd-2.6.3.tar.gz
+[2024-04-14 22:25:32] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/30/1f/7c51d67e2f592b0c8edc4ad96597edeb637e385251ef10996fc529abfbd5/panthon-0.2.0.tar.gz
+[2024-04-14 22:25:32] INFO root fetch - processPackages [hhd]: executing diffoscope
+[2024-04-14 22:25:32] INFO root fetch - processPackages [hhd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hhd-2.6.2.tar.gz tmp/hhd-2.6.3.tar.gz --markdown 20240414/h/hhd/2.6.2-2.6.3/README.md --exclude *.pyd
+[2024-04-14 22:25:32] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-14 22:25:32] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240414/m/mystring/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-14 22:25:32] INFO root fetch - processPackages [panthon]: executing diffoscope
+[2024-04-14 22:25:32] INFO root fetch - processPackages [panthon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panthon-0.1.9.tar.gz tmp/panthon-0.2.0.tar.gz --markdown 20240414/p/panthon/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-14 22:25:32] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/01/72/7a27249d90e3f2e1c268ed5863305cd0c3a1970bb7a1b645b17053605afe/twitter-api-client-0.9.9.tar.gz
+[2024-04-14 22:25:32] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2024-04-14 22:25:32] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.9.8.tar.gz tmp/twitter-api-client-0.9.9.tar.gz --markdown 20240414/t/twitter-api-client/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 22:25:32] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.1.9.tar.gz]
+[2024-04-14 22:25:32] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.2.0.tar.gz]
+[2024-04-14 22:25:32] INFO root fetch - main [MainThread]: End processing [panthon]: success
+[2024-04-14 22:25:33] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-14 22:25:33] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-14 22:25:33] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-14 22:25:33] INFO root fetch - processPackages [twitter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/twitter-api-client-0.9.8.tar.gz]
+[2024-04-14 22:25:33] INFO root fetch - processPackages [twitter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/twitter-api-client-0.9.9.tar.gz]
+[2024-04-14 22:25:33] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2024-04-14 22:25:33] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.6.2.tar.gz]
+[2024-04-14 22:25:33] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.6.3.tar.gz]
+[2024-04-14 22:25:33] INFO root fetch - main [MainThread]: End processing [hhd]: success
+[2024-04-14 22:25:33] INFO root fetch - main [MainThread]: Store serial: [22762179]
