@@ -13199,3 +13199,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:02:37] INFO root fetch - processPackages [astro-delight]: Remove: archive file [/home/abi/fetcher/tmp/astro-delight-0.0.9.tar.gz]
 [2024-04-14 20:02:37] INFO root fetch - main [MainThread]: End processing [astro-delight]: success
 [2024-04-14 20:02:37] INFO root fetch - main [MainThread]: Store serial: [22760976]
+[2024-04-14 20:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760976]
+[2024-04-14 20:04:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muko
+[2024-04-14 20:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fusio-sdk
+[2024-04-14 20:04:46] INFO root fetch - processPackages [muko]: New version: [2.2] Old Version: [2.18]
+[2024-04-14 20:04:46] INFO root fetch - processPackages [fusio-sdk]: New version: [5.0.7] Old Version: [5.0.6]
+[2024-04-14 20:04:46] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/24/24/3241d3a776b48b842375daeda18dbb0a4e851733f316cfe7c39c0e7ee8bb/muko-2.18-py3-none-any.whl
+[2024-04-14 20:04:46] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/c3/1b/64df8c6cb3e3c374e39cae924c8d46c2052c2b2908c1710f7ad9908f5fc8/fusio-sdk-5.0.6.tar.gz
+[2024-04-14 20:04:47] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/af/ad/c8e0e9cec16547f9700f61592efb2ca693cce7f02d1b9d45b0ee2faafcd3/muko-2.2-py3-none-any.whl
+[2024-04-14 20:04:47] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-04-14 20:04:47] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.18-py3-none-any.whl.zip tmp/muko-2.2-py3-none-any.whl.zip --markdown 20240414/m/muko/2.18-2.2/README.md --exclude *.pyd
+[2024-04-14 20:04:47] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/90/31/9532685e9ee2441e3eb02442911c44b03460c7fd9633d833db2af27bc25b/fusio_sdk-5.0.7.tar.gz
+[2024-04-14 20:04:47] INFO root fetch - processPackages [fusio-sdk]: executing diffoscope
+[2024-04-14 20:04:47] INFO root fetch - processPackages [fusio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusio-sdk-5.0.6.tar.gz tmp/fusio_sdk-5.0.7.tar.gz --markdown 20240414/f/fusio-sdk/5.0.6-5.0.7/README.md --exclude *.pyd
+[2024-04-14 20:04:47] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.18-py3-none-any.whl.zip]
+[2024-04-14 20:04:47] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.2-py3-none-any.whl.zip]
+[2024-04-14 20:04:47] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-04-14 20:04:48] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.6.tar.gz]
+[2024-04-14 20:04:48] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.7.tar.gz]
+[2024-04-14 20:04:48] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
+[2024-04-14 20:04:48] INFO root fetch - main [MainThread]: Store serial: [22760983]
