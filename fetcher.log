@@ -7662,3 +7662,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:05:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.1.tar.gz]
 [2024-04-14 13:05:38] INFO root fetch - main [MainThread]: End processing [pybts]: success
 [2024-04-14 13:05:38] INFO root fetch - main [MainThread]: Store serial: [22758331]
+[2024-04-14 13:07:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758331]
+[2024-04-14 13:07:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shapepy
+[2024-04-14 13:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-04-14 13:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynurbs
+[2024-04-14 13:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datamana
+[2024-04-14 13:07:54] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240414.260] Old Version: [0.44.20240413.259]
+[2024-04-14 13:07:54] WARNING root fetch - processPackages [pynurbs]: Skipping, unable to determine old version
+[2024-04-14 13:07:54] INFO root fetch - main [MainThread]: End processing [pynurbs] error
+[2024-04-14 13:07:54] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5e/4d/c64ea906a3db022556fcbf1983f9b3c59cab16b64522a74cbe03ebfad819/pkscreener-0.44.20240413.259.tar.gz
+[2024-04-14 13:07:54] WARNING root fetch - processPackages [shapepy]: Skipping, unable to determine old version
+[2024-04-14 13:07:54] INFO root fetch - main [MainThread]: End processing [shapepy] error
+[2024-04-14 13:07:54] INFO root fetch - processPackages [datamana]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 13:07:54] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/e9/05/2b449d4e1dd242a5a6900b1ecd80618a600a5dbbb083cb1a766041ed9ff3/datamana-0.0.4.tar.gz
+[2024-04-14 13:07:54] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/86/6c/e75d598253d6e30c4802f52fa1d2de9dd800c88c7dc5816cc794f24eb1ac/pkscreener-0.44.20240414.260.tar.gz
+[2024-04-14 13:07:54] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/07/8f/5892fb71d433e9cb912abd2571f6516c09b114f68bba4353dfc25fc4f2c2/datamana-0.0.5.tar.gz
+[2024-04-14 13:07:54] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-14 13:07:54] INFO root fetch - processPackages [datamana]: executing diffoscope
+[2024-04-14 13:07:54] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240413.259.tar.gz tmp/pkscreener-0.44.20240414.260.tar.gz --markdown 20240414/p/pkscreener/0.44.20240413.259-0.44.20240414.260/README.md --exclude *.pyd
+[2024-04-14 13:07:54] INFO root fetch - processPackages [datamana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamana-0.0.4.tar.gz tmp/datamana-0.0.5.tar.gz --markdown 20240414/d/datamana/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 13:07:55] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.4.tar.gz]
+[2024-04-14 13:07:55] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.5.tar.gz]
+[2024-04-14 13:07:55] INFO root fetch - main [MainThread]: End processing [datamana]: success
+[2024-04-14 13:07:55] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.259.tar.gz]
+[2024-04-14 13:07:55] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240414.260.tar.gz]
+[2024-04-14 13:07:55] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-14 13:07:55] INFO root fetch - main [MainThread]: Store serial: [22758347]
