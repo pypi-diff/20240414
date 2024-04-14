@@ -7494,3 +7494,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:51:57] INFO root fetch - processPackages [tgate]: Remove: archive file [/home/abi/fetcher/tmp/tgate-0.1.1.tar.gz]
 [2024-04-14 12:51:57] INFO root fetch - main [MainThread]: End processing [tgate]: success
 [2024-04-14 12:51:57] INFO root fetch - main [MainThread]: Store serial: [22758266]
+[2024-04-14 12:54:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758266]
+[2024-04-14 12:54:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 12:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-config
+[2024-04-14 12:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtpy
+[2024-04-14 12:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyphetools
+[2024-04-14 12:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-playground
+[2024-04-14 12:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tendril-utils-core
+[2024-04-14 12:54:12] INFO root fetch - processPackages [my-playground]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 12:54:12] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 12:54:12] INFO root fetch - processPackages [pyphetools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 12:54:12] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/c8/50/40372cd1429cfe7e8d60aca4b0a55bb4335722137b90d970cfbbe49a0726/my_playground-0.1.5.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [tendril-config]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-14 12:54:12] INFO root fetch - processPackages [tendril-utils-core]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 12:54:12] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/eb/49/8a9e5cca779524924c1b7909aebe5e709f83336dfa338fc61229446262fd/pyphetools-0.9.8.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [tendril-config]: Downloading https://files.pythonhosted.org/packages/dd/fa/00547c39f2431be990d839edd4762a75e0652e21c8762a2e7eb17ba549ed/tendril-config-0.3.5.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [tendril-utils-core]: Downloading https://files.pythonhosted.org/packages/78/7a/c75db77bcc70ae8b82192eaca8f88dcf6294f9d905aa12e9128bab27ceba/tendril-utils-core-0.5.8.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/21/0f/082981f834d44e19354002ae37884bb9cf87bb330242ae69908f6f893dcf/pyphetools-0.9.9.tar.gz
+[2024-04-14 12:54:12] INFO root fetch - processPackages [my-playground]: Downloading https://files.pythonhosted.org/packages/4a/97/41b05a6a241bded29710188e4ffa14be00d3d81240b90b6cce96d2fa0850/my_playground-0.1.6.tar.gz
+[2024-04-14 12:54:13] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 12:54:13] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 12:54:13] INFO root fetch - processPackages [pyphetools]: executing diffoscope
+[2024-04-14 12:54:13] INFO root fetch - processPackages [pyphetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphetools-0.9.8.tar.gz tmp/pyphetools-0.9.9.tar.gz --markdown 20240414/p/pyphetools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 12:54:13] INFO root fetch - processPackages [my-playground]: executing diffoscope
+[2024-04-14 12:54:13] INFO root fetch - processPackages [my-playground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_playground-0.1.5.tar.gz tmp/my_playground-0.1.6.tar.gz --markdown 20240414/m/my-playground/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-config]: Downloading https://files.pythonhosted.org/packages/c0/81/92937d781b94af6173bf9cc054a134d79101a753a05af3f4ea2a13727478/tendril-config-0.3.6.tar.gz
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-utils-core]: Downloading https://files.pythonhosted.org/packages/b3/bb/7a5cfe87741b97a84cc6d7a28fe96d2bf24796a04e06e90ae6612da66612/tendril-utils-core-0.5.9.tar.gz
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-config]: executing diffoscope
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-config-0.3.5.tar.gz tmp/tendril-config-0.3.6.tar.gz --markdown 20240414/t/tendril-config/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-utils-core]: executing diffoscope
+[2024-04-14 12:54:13] INFO root fetch - processPackages [tendril-utils-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-utils-core-0.5.8.tar.gz tmp/tendril-utils-core-0.5.9.tar.gz --markdown 20240414/t/tendril-utils-core/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 12:54:13] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.5.tar.gz]
+[2024-04-14 12:54:13] INFO root fetch - processPackages [my-playground]: Remove: archive file [/home/abi/fetcher/tmp/my_playground-0.1.6.tar.gz]
+[2024-04-14 12:54:13] INFO root fetch - main [MainThread]: End processing [my-playground]: success
+[2024-04-14 12:54:13] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 12:54:13] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 12:54:13] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 12:54:14] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.8.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - processPackages [pyphetools]: Remove: archive file [/home/abi/fetcher/tmp/pyphetools-0.9.9.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
+[2024-04-14 12:54:14] INFO root fetch - processPackages [tendril-config]: Remove: archive file [/home/abi/fetcher/tmp/tendril-config-0.3.5.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - processPackages [tendril-config]: Remove: archive file [/home/abi/fetcher/tmp/tendril-config-0.3.6.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - main [MainThread]: End processing [tendril-config]: success
+[2024-04-14 12:54:14] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.8.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.9.tar.gz]
+[2024-04-14 12:54:14] INFO root fetch - main [MainThread]: End processing [tendril-utils-core]: success
+[2024-04-14 12:54:14] INFO root fetch - main [MainThread]: Store serial: [22758279]
