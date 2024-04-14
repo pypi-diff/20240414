@@ -9864,3 +9864,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:51:52] INFO root fetch - processPackages [akatsuki-pp-py]: Remove: archive file [/home/abi/fetcher/tmp/akatsuki_pp_py-1.0.1.tar.gz]
 [2024-04-14 15:51:52] INFO root fetch - main [MainThread]: End processing [akatsuki-pp-py]: success
 [2024-04-14 15:51:52] INFO root fetch - main [MainThread]: Store serial: [22759400]
+[2024-04-14 15:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759400]
+[2024-04-14 15:54:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtpy
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EdgeGPT-fork
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: archerdfu.bmp
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marzpy
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leap-model-parser
+[2024-04-14 15:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: demystify-digipres
+[2024-04-14 15:54:09] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 15:54:09] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [demystify-digipres]: New version: [2.0.0rc7] Old Version: [2.0.0rc6]
+[2024-04-14 15:54:09] WARNING root fetch - processPackages [archerdfu.bmp]: Skipping, unable to determine old version
+[2024-04-14 15:54:09] INFO root fetch - main [MainThread]: End processing [archerdfu.bmp] error
+[2024-04-14 15:54:09] INFO root fetch - processPackages [EdgeGPT-fork]: New version: [1.0.0] Old Version: [0.14.1]
+[2024-04-14 15:54:09] INFO root fetch - processPackages [marzpy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 15:54:09] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 15:54:09] INFO root fetch - processPackages [EdgeGPT-fork]: Downloading https://files.pythonhosted.org/packages/54/cf/7bb0e278b7596bca2685e56c3807b4039119126352a7da3e894609296f76/EdgeGPT-fork-0.14.1.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [demystify-digipres]: Downloading https://files.pythonhosted.org/packages/7a/97/4c3b2ec2807344536af16e73c0465163cfe3b79f3a6883d5e01ede5f06b4/demystify-digipres-2.0.0rc6.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [marzpy]: Downloading https://files.pythonhosted.org/packages/4b/1e/1e414dce5083f8844021b3cbaf1413d610c196aa30d28e5b8461e2a4a116/marzpy-0.0.3.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/9e/21/dca060e54af9d262ff3c7db5881970d454aabed10a4a09138f0f135d7271/leap_model_parser-0.1.98.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 15:54:09] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 15:54:09] INFO root fetch - processPackages [marzpy]: Downloading https://files.pythonhosted.org/packages/0d/c3/a3834ecda7f104cad978a1f783ff2d821fbce3640c4d70c1b9103daa4d61/marzpy-0.0.4.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [EdgeGPT-fork]: Downloading https://files.pythonhosted.org/packages/38/fc/a1110e770f4a1d51ddaeafa9372d319750318111ee17097b01bb74155ba5/edgegpt_fork-1.0.0.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [demystify-digipres]: Downloading https://files.pythonhosted.org/packages/de/40/2c409a0434d297955a13c64cb82d79ca7a289269b188bf508cb2ae04cacf/demystify_digipres-2.0.0rc7.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/de/85/627b6119883db46691990e41cb4a673afe0913625d499dc365b69c6fe6f6/leap_model_parser-0.1.99.tar.gz
+[2024-04-14 15:54:09] INFO root fetch - processPackages [marzpy]: executing diffoscope
+[2024-04-14 15:54:09] INFO root fetch - processPackages [marzpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marzpy-0.0.3.tar.gz tmp/marzpy-0.0.4.tar.gz --markdown 20240414/m/marzpy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 15:54:09] INFO root fetch - processPackages [EdgeGPT-fork]: executing diffoscope
+[2024-04-14 15:54:09] INFO root fetch - processPackages [EdgeGPT-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-fork-0.14.1.tar.gz tmp/edgegpt_fork-1.0.0.tar.gz --markdown 20240414/E/EdgeGPT-fork/0.14.1-1.0.0/README.md --exclude *.pyd
+[2024-04-14 15:54:10] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2024-04-14 15:54:10] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.98.tar.gz tmp/leap_model_parser-0.1.99.tar.gz --markdown 20240414/l/leap-model-parser/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 15:54:10] INFO root fetch - processPackages [demystify-digipres]: executing diffoscope
+[2024-04-14 15:54:10] INFO root fetch - processPackages [demystify-digipres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demystify-digipres-2.0.0rc6.tar.gz tmp/demystify_digipres-2.0.0rc7.tar.gz --markdown 20240414/d/demystify-digipres/2.0.0rc6-2.0.0rc7/README.md --exclude *.pyd
+[2024-04-14 15:54:10] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 15:54:10] INFO root fetch - processPackages [marzpy]: Remove: archive file [/home/abi/fetcher/tmp/marzpy-0.0.3.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - processPackages [marzpy]: Remove: archive file [/home/abi/fetcher/tmp/marzpy-0.0.4.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - main [MainThread]: End processing [marzpy]: success
+[2024-04-14 15:54:10] INFO root fetch - processPackages [EdgeGPT-fork]: Remove: archive file [/home/abi/fetcher/tmp/EdgeGPT-fork-0.14.1.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - processPackages [EdgeGPT-fork]: Remove: archive file [/home/abi/fetcher/tmp/edgegpt_fork-1.0.0.tar.gz]
+[2024-04-14 15:54:10] INFO root fetch - main [MainThread]: End processing [EdgeGPT-fork]: success
+[2024-04-14 15:54:11] INFO root fetch - processPackages [demystify-digipres]: Remove: archive file [/home/abi/fetcher/tmp/demystify-digipres-2.0.0rc6.tar.gz]
+[2024-04-14 15:54:11] INFO root fetch - processPackages [demystify-digipres]: Remove: archive file [/home/abi/fetcher/tmp/demystify_digipres-2.0.0rc7.tar.gz]
+[2024-04-14 15:54:11] INFO root fetch - main [MainThread]: End processing [demystify-digipres]: success
+[2024-04-14 15:54:27] INFO root fetch - processPackages [leap-model-parser]: Remove: archive file [/home/abi/fetcher/tmp/leap_model_parser-0.1.98.tar.gz]
+[2024-04-14 15:54:27] INFO root fetch - processPackages [leap-model-parser]: Remove: archive file [/home/abi/fetcher/tmp/leap_model_parser-0.1.99.tar.gz]
+[2024-04-14 15:54:27] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2024-04-14 15:54:27] INFO root fetch - main [MainThread]: Store serial: [22759432]
