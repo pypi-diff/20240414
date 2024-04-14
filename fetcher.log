@@ -3281,3 +3281,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:37:00] INFO root fetch - processPackages [roadmapper]: Remove: archive file [/home/abi/fetcher/tmp/roadmapper-1.5.0.tar.gz]
 [2024-04-14 05:37:00] INFO root fetch - main [MainThread]: End processing [roadmapper]: success
 [2024-04-14 05:37:00] INFO root fetch - main [MainThread]: Store serial: [22756359]
+[2024-04-14 05:39:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756359]
+[2024-04-14 05:39:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 05:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-block-local
+[2024-04-14 05:39:09] INFO root fetch - processPackages [text-block-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 05:39:09] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/70/2c/1e2d2d092952d9578a3bd66ea8d19829b2cdcb307254112a3b482d4403bd/text-block-local-0.0.8.tar.gz
+[2024-04-14 05:39:09] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/71/bc/24522c5007f2452a7e32a445163d898233d9b0cc266aed587c5f36dc2bc9/text-block-local-0.0.9.tar.gz
+[2024-04-14 05:39:09] INFO root fetch - processPackages [text-block-local]: executing diffoscope
+[2024-04-14 05:39:09] INFO root fetch - processPackages [text-block-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-block-local-0.0.8.tar.gz tmp/text-block-local-0.0.9.tar.gz --markdown 20240414/t/text-block-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 05:39:10] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.8.tar.gz]
+[2024-04-14 05:39:10] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
+[2024-04-14 05:39:10] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
+[2024-04-14 05:39:10] INFO root fetch - main [MainThread]: Store serial: [22756362]
