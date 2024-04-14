@@ -10362,3 +10362,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:28:48] INFO root fetch - processPackages [sphinx-revealjs]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_revealjs-3.0.1.tar.gz]
 [2024-04-14 16:28:48] INFO root fetch - main [MainThread]: End processing [sphinx-revealjs]: success
 [2024-04-14 16:28:48] INFO root fetch - main [MainThread]: Store serial: [22759609]
+[2024-04-14 16:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759609]
+[2024-04-14 16:31:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymobiledevice3
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ontolocy
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cax-helper
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certReport
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: etl-pipes
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ansys-helper
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MLXpress
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dune-rivals
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ontolocy]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-14 16:31:05] INFO root fetch - processPackages [pymobiledevice3]: New version: [3.4.2] Old Version: [3.4.1]
+[2024-04-14 16:31:05] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 16:31:05] WARNING root fetch - processPackages [cax-helper]: Skipping, unable to determine old version
+[2024-04-14 16:31:05] INFO root fetch - main [MainThread]: End processing [cax-helper] error
+[2024-04-14 16:31:05] WARNING root fetch - processPackages [certReport]: Skipping, unable to determine old version
+[2024-04-14 16:31:05] INFO root fetch - main [MainThread]: End processing [certReport] error
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/13/67/ac8b2d0a4cf15c7e5208e284bde1099e9f2dfb20d98a1b52b4e7a88b1201/ontolocy-0.7.6.tar.gz
+[2024-04-14 16:31:05] WARNING root fetch - processPackages [ansys-helper]: Skipping, unable to determine old version
+[2024-04-14 16:31:05] INFO root fetch - main [MainThread]: End processing [ansys-helper] error
+[2024-04-14 16:31:05] INFO root fetch - processPackages [MLXpress]: New version: [0.1.8.8] Old Version: [0.1.8.7]
+[2024-04-14 16:31:05] INFO root fetch - processPackages [etl-pipes]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-14 16:31:05] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 16:31:05] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/73/36/1ff8f59903e2a134d06309943f07bb35329ad86b2f73b8e23b00cf76e288/pymobiledevice3-3.4.1.tar.gz
+[2024-04-14 16:31:05] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31540678>=10485760
+[2024-04-14 16:31:05] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-04-14 16:31:05] INFO root fetch - processPackages [etl-pipes]: Downloading https://files.pythonhosted.org/packages/7f/70/56acf0f95b122f7aa78d56930e66c6426a517eea594c65c8a47fbc18902d/etl_pipes-0.8.8.tar.gz
+[2024-04-14 16:31:05] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/e4/e6/7a118bf17204e138c094816e68675a1ca79db70c57875894931ad4915472/MLXpress-0.1.8.7.tar.gz
+[2024-04-14 16:31:05] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ontolocy]: Downloading https://files.pythonhosted.org/packages/cf/af/6a803b7c2c7379cbc5e19712e0cee5cb375c9d9fca975a05545150ab0c1b/ontolocy-0.7.7.tar.gz
+[2024-04-14 16:31:05] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 16:31:05] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ontolocy]: executing diffoscope
+[2024-04-14 16:31:05] INFO root fetch - processPackages [ontolocy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontolocy-0.7.6.tar.gz tmp/ontolocy-0.7.7.tar.gz --markdown 20240414/o/ontolocy/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-14 16:31:05] INFO root fetch - processPackages [etl-pipes]: Downloading https://files.pythonhosted.org/packages/6a/11/60b969308059f9b6ab114613f96c1aa1152c75bb1929f4270d456b05d035/etl_pipes-0.8.9.tar.gz
+[2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/dc/3e/87555c738c481768b5dd02e4261cfe84c292968a5e47e9ba281c53a7d47c/MLXpress-0.1.8.8.tar.gz
+[2024-04-14 16:31:06] INFO root fetch - processPackages [etl-pipes]: executing diffoscope
+[2024-04-14 16:31:06] INFO root fetch - processPackages [etl-pipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etl_pipes-0.8.8.tar.gz tmp/etl_pipes-0.8.9.tar.gz --markdown 20240414/e/etl-pipes/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: executing diffoscope
+[2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLXpress-0.1.8.7.tar.gz tmp/MLXpress-0.1.8.8.tar.gz --markdown 20240414/M/MLXpress/0.1.8.7-0.1.8.8/README.md --exclude *.pyd
+[2024-04-14 16:31:06] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 16:31:06] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.6.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - processPackages [ontolocy]: Remove: archive file [/home/abi/fetcher/tmp/ontolocy-0.7.7.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - main [MainThread]: End processing [ontolocy]: success
+[2024-04-14 16:31:06] INFO root fetch - processPackages [etl-pipes]: Remove: archive file [/home/abi/fetcher/tmp/etl_pipes-0.8.8.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - processPackages [etl-pipes]: Remove: archive file [/home/abi/fetcher/tmp/etl_pipes-0.8.9.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - main [MainThread]: End processing [etl-pipes]: success
+[2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.8.7.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.8.8.tar.gz]
+[2024-04-14 16:31:06] INFO root fetch - main [MainThread]: End processing [MLXpress]: success
+[2024-04-14 16:31:06] INFO root fetch - main [MainThread]: Store serial: [22759646]
