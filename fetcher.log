@@ -4274,3 +4274,16 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:32:34] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240412-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-04-14 07:32:34] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-04-14 07:32:34] INFO root fetch - main [MainThread]: Store serial: [22756715]
+[2024-04-14 07:34:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756715]
+[2024-04-14 07:34:42] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756717]
+[2024-04-14 07:36:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 07:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymobiledevice3
+[2024-04-14 07:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prerun
+[2024-04-14 07:36:47] WARNING root fetch - processPackages [prerun]: Skipping, unable to determine old version
+[2024-04-14 07:36:47] INFO root fetch - main [MainThread]: End processing [prerun] error
+[2024-04-14 07:36:48] INFO root fetch - processPackages [pymobiledevice3]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-04-14 07:36:48] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/93/76/75ef5dfe92e43b10d3cb22635869df6738e2d9a306065ca5a6d1800ef79d/pymobiledevice3-3.4.0.tar.gz
+[2024-04-14 07:36:48] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31540532>=10485760
+[2024-04-14 07:36:48] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-04-14 07:36:48] INFO root fetch - main [MainThread]: Store serial: [22756726]
