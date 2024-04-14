@@ -10574,3 +10574,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:44:57] INFO root fetch - processPackages [nncore]: Remove: archive file [/home/abi/fetcher/tmp/nncore-0.4.1.tar.gz]
 [2024-04-14 16:44:57] INFO root fetch - main [MainThread]: End processing [nncore]: success
 [2024-04-14 16:44:57] INFO root fetch - main [MainThread]: Store serial: [22759884]
+[2024-04-14 16:47:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759884]
+[2024-04-14 16:47:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leafmap
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensordict-nightly
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ncmlistdownloader
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-flux
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysqream-blue
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lbank-connector-python
+[2024-04-14 16:47:14] INFO root fetch - processPackages [python-flux]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/dd/65/4452c9f9ca67db2ecc824ed8a06d2729b4fd18dd1cf27969940f99e6f8f0/python_flux-1.0.1.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ncmlistdownloader]: New version: [1.0.0.240414] Old Version: [1.0.0.240411a1]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [lbank-connector-python]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [pysqream-blue]: New version: [1.0.46] Old Version: [1.0.45]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [leafmap]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-14 16:47:14] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/c7/06/719b97b642d663f4528bd69b8bd0c22e66eb9d8cab0e459bbabc20094b8d/leafmap-0.9.5.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [lbank-connector-python]: Downloading https://files.pythonhosted.org/packages/5b/ee/9a3823c4410f8219a45e852b5de5459d542891ffd7c98cdb85da09e0fafa/lbank-connector-python-1.0.8.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/60/ef/68965da0fc80abbdcb41864ef0486670530ffb8325f8845c9a64ebc7b850/ncmlistdownloader-1.0.0.240411a1.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [pysqream-blue]: Downloading https://files.pythonhosted.org/packages/78/81/cbdd1666ee9d70a298845687fb6d26901fd804fd01b1ae015e64d0ff7642/pysqream-blue-1.0.45.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/cd/1c/8579b410faa082f73f4c5e15b9f2df9564f5500baeca12f401c71c95762b/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl
+[2024-04-14 16:47:14] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/6a/74/01df343206582636f1bbcedd083946dc845e5495562ddb9dd04bcc7ba864/python_flux-1.0.2.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [python-flux]: executing diffoscope
+[2024-04-14 16:47:14] INFO root fetch - processPackages [python-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_flux-1.0.1.tar.gz tmp/python_flux-1.0.2.tar.gz --markdown 20240414/p/python-flux/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 16:47:14] INFO root fetch - processPackages [leafmap]: Downloading https://files.pythonhosted.org/packages/74/59/375f8e1ca2eb029e521f2e04761219f715186963c29a089229743730a6cd/leafmap-0.9.6.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/b1/67/3f1c124b20eb144009d8487e5d78a8171f357127f7a59b4f77ab29b8a026/ncmlistdownloader-1.0.0.240414.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [pysqream-blue]: Downloading https://files.pythonhosted.org/packages/99/a2/c96cba8759f83f77b4e37935e7a1c331d198e706f9f95033dc1e5d05e60f/pysqream-blue-1.0.46.tar.gz
+[2024-04-14 16:47:14] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/07/82/e5cb687b1d6b19f6d3c57c14285a0e891743c0fd72b7d62c9298fc937736/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl
+[2024-04-14 16:47:15] INFO root fetch - processPackages [lbank-connector-python]: Downloading https://files.pythonhosted.org/packages/3d/59/a478b6563c42c3e3201e4a2b4a88f0e64cc96fa4a93d9d6f367f199cc46e/lbank-connector-python-1.0.9.tar.gz
+[2024-04-14 16:47:15] INFO root fetch - processPackages [ncmlistdownloader]: executing diffoscope
+[2024-04-14 16:47:15] INFO root fetch - processPackages [ncmlistdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncmlistdownloader-1.0.0.240411a1.tar.gz tmp/ncmlistdownloader-1.0.0.240414.tar.gz --markdown 20240414/n/ncmlistdownloader/1.0.0.240411a1-1.0.0.240414/README.md --exclude *.pyd
+[2024-04-14 16:47:15] INFO root fetch - processPackages [leafmap]: executing diffoscope
+[2024-04-14 16:47:15] INFO root fetch - processPackages [leafmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leafmap-0.9.5.tar.gz tmp/leafmap-0.9.6.tar.gz --markdown 20240414/l/leafmap/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-14 16:47:15] INFO root fetch - processPackages [pysqream-blue]: executing diffoscope
+[2024-04-14 16:47:15] INFO root fetch - processPackages [pysqream-blue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqream-blue-1.0.45.tar.gz tmp/pysqream-blue-1.0.46.tar.gz --markdown 20240414/p/pysqream-blue/1.0.45-1.0.46/README.md --exclude *.pyd
+[2024-04-14 16:47:15] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-14 16:47:15] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip --markdown 20240414/t/tensordict-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-14 16:47:15] INFO root fetch - processPackages [lbank-connector-python]: executing diffoscope
+[2024-04-14 16:47:15] INFO root fetch - processPackages [lbank-connector-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbank-connector-python-1.0.8.tar.gz tmp/lbank-connector-python-1.0.9.tar.gz --markdown 20240414/l/lbank-connector-python/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 16:47:15] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.1.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.2.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - main [MainThread]: End processing [python-flux]: success
+[2024-04-14 16:47:15] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.0.240411a1.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.0.240414.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
+[2024-04-14 16:47:15] INFO root fetch - processPackages [lbank-connector-python]: Remove: archive file [/home/abi/fetcher/tmp/lbank-connector-python-1.0.8.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - processPackages [lbank-connector-python]: Remove: archive file [/home/abi/fetcher/tmp/lbank-connector-python-1.0.9.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - main [MainThread]: End processing [lbank-connector-python]: success
+[2024-04-14 16:47:15] INFO root fetch - processPackages [pysqream-blue]: Remove: archive file [/home/abi/fetcher/tmp/pysqream-blue-1.0.45.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - processPackages [pysqream-blue]: Remove: archive file [/home/abi/fetcher/tmp/pysqream-blue-1.0.46.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - main [MainThread]: End processing [pysqream-blue]: success
+[2024-04-14 16:47:15] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.5.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - processPackages [leafmap]: Remove: archive file [/home/abi/fetcher/tmp/leafmap-0.9.6.tar.gz]
+[2024-04-14 16:47:15] INFO root fetch - main [MainThread]: End processing [leafmap]: success
+[2024-04-14 16:47:16] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 16:47:16] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 16:47:16] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-14 16:47:16] INFO root fetch - main [MainThread]: Store serial: [22759908]
