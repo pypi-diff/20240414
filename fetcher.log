@@ -13941,3 +13941,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:59:22] INFO root fetch - processPackages [LBGPT]: Remove: archive file [/home/abi/fetcher/tmp/lbgpt-0.3.0.tar.gz]
 [2024-04-14 20:59:22] INFO root fetch - main [MainThread]: End processing [LBGPT]: success
 [2024-04-14 20:59:22] INFO root fetch - main [MainThread]: Store serial: [22761356]
+[2024-04-14 21:01:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761356]
+[2024-04-14 21:01:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 21:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flashlight-text
+[2024-04-14 21:01:31] INFO root fetch - processPackages [flashlight-text]: New version: [0.0.7.dev305] Old Version: [0.0.7.dev304]
+[2024-04-14 21:01:31] INFO root fetch - processPackages [flashlight-text]: Downloading https://files.pythonhosted.org/packages/b7/45/faec3e183eda27ea8007e05b33ca8111e6b18e4a671bea9bfd7d9a81cfcd/flashlight-text-0.0.7.dev304.tar.gz
+[2024-04-14 21:01:32] INFO root fetch - processPackages [flashlight-text]: Downloading https://files.pythonhosted.org/packages/e0/18/054a70af294111184902a01b25e6c488b188359795a5bd8a2291b4de2e82/flashlight_text-0.0.7.dev305-cp312-cp312-win_amd64.whl
+[2024-04-14 21:01:33] INFO root fetch - processPackages [flashlight-text]: executing diffoscope
+[2024-04-14 21:01:33] INFO root fetch - processPackages [flashlight-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashlight-text-0.0.7.dev304.tar.gz tmp/flashlight_text-0.0.7.dev305-cp312-cp312-win_amd64.whl.zip --markdown 20240414/f/flashlight-text/0.0.7.dev304-0.0.7.dev305/README.md --exclude *.pyd
+[2024-04-14 21:01:34] INFO root fetch - processPackages [flashlight-text]: Remove: archive file [/home/abi/fetcher/tmp/flashlight-text-0.0.7.dev304.tar.gz]
+[2024-04-14 21:01:34] INFO root fetch - processPackages [flashlight-text]: Remove: archive file [/home/abi/fetcher/tmp/flashlight_text-0.0.7.dev305-cp312-cp312-win_amd64.whl.zip]
+[2024-04-14 21:01:34] INFO root fetch - main [MainThread]: End processing [flashlight-text]: success
+[2024-04-14 21:01:34] INFO root fetch - main [MainThread]: Store serial: [22761422]
