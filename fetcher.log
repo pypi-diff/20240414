@@ -16141,3 +16141,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:33:34] INFO root fetch - processPackages [polykin]: Remove: archive file [/home/abi/fetcher/tmp/polykin-0.5.1.tar.gz]
 [2024-04-14 23:33:34] INFO root fetch - main [MainThread]: End processing [polykin]: success
 [2024-04-14 23:33:34] INFO root fetch - main [MainThread]: Store serial: [22762608]
+[2024-04-14 23:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762608]
+[2024-04-14 23:35:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 23:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altscore
+[2024-04-14 23:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdfToAudio
+[2024-04-14 23:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swpclib
+[2024-04-14 23:35:43] INFO root fetch - processPackages [swpclib]: New version: [4.3.1] Old Version: [4.3.0]
+[2024-04-14 23:35:43] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/c6/6a/80268e19f5cad5324ef3bb0ec3a06d29dca1aad7f7c90ee6e1521339bfa3/swpclib-4.3.0.tar.gz
+[2024-04-14 23:35:43] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 23:35:43] WARNING root fetch - processPackages [pdfToAudio]: Skipping, unable to determine old version
+[2024-04-14 23:35:43] INFO root fetch - main [MainThread]: End processing [pdfToAudio] error
+[2024-04-14 23:35:43] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-14 23:35:43] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-14 23:35:43] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/f7/34/378f4c8421ee154019a42ae0063a0e8b88373b46206278d859fc607c12c9/swpclib-4.3.1.tar.gz
+[2024-04-14 23:35:43] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-14 23:35:43] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240414/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 23:35:43] INFO root fetch - processPackages [swpclib]: executing diffoscope
+[2024-04-14 23:35:43] INFO root fetch - processPackages [swpclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swpclib-4.3.0.tar.gz tmp/swpclib-4.3.1.tar.gz --markdown 20240414/s/swpclib/4.3.0-4.3.1/README.md --exclude *.pyd
+[2024-04-14 23:35:44] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.3.0.tar.gz]
+[2024-04-14 23:35:44] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.3.1.tar.gz]
+[2024-04-14 23:35:44] INFO root fetch - main [MainThread]: End processing [swpclib]: success
+[2024-04-14 23:35:44] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-14 23:35:44] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-14 23:35:44] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-14 23:35:44] INFO root fetch - main [MainThread]: Store serial: [22762621]
