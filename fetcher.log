@@ -4383,3 +4383,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:49:37] INFO root fetch - main [MainThread]: End processing [batchalign]: success
 [2024-04-14 07:49:37] INFO root fetch - main [MainThread]: End processing [batchalign]: success
 [2024-04-14 07:49:37] INFO root fetch - main [MainThread]: Store serial: [22756762]
+[2024-04-14 07:51:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756762]
+[2024-04-14 07:51:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 07:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atypical
+[2024-04-14 07:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whishow
+[2024-04-14 07:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rococo
+[2024-04-14 07:51:46] INFO root fetch - processPackages [rococo]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-14 07:51:46] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/98/94/450bbaab14045cb6b1066283ebcd10fb579efa3b505d832609865adf931a/rococo-1.0.7.tar.gz
+[2024-04-14 07:51:46] INFO root fetch - processPackages [whishow]: New version: [1.3.4] Old Version: [1.3.3]
+[2024-04-14 07:51:46] INFO root fetch - processPackages [atypical]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-14 07:51:46] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/d2/03/634e9e1d1c081f261a471881eca9f1c655613e3f13320e00cbef29321d8f/whishow-1.3.3-py2.py3-none-any.whl
+[2024-04-14 07:51:46] INFO root fetch - processPackages [rococo]: Downloading https://files.pythonhosted.org/packages/94/76/11b3b064f1fbeb81c9bd2837214abd8f6f61cd7c1c8937c31db41c06062d/rococo-1.0.8.tar.gz
+[2024-04-14 07:51:46] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/48/36/b4f2ed823ed70d0b53d4e7f2b7c21cef13362a505d6b531d0b4e39964e74/atypical-0.3.0.tar.gz
+[2024-04-14 07:51:46] INFO root fetch - processPackages [rococo]: executing diffoscope
+[2024-04-14 07:51:46] INFO root fetch - processPackages [rococo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rococo-1.0.7.tar.gz tmp/rococo-1.0.8.tar.gz --markdown 20240414/r/rococo/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-14 07:51:47] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/58/a4/ee1a23880fc87c539534f2e21c87fd957ff85de58f2ea959cb82912b00e4/atypical-0.3.1.tar.gz
+[2024-04-14 07:51:47] INFO root fetch - processPackages [atypical]: executing diffoscope
+[2024-04-14 07:51:47] INFO root fetch - processPackages [atypical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atypical-0.3.0.tar.gz tmp/atypical-0.3.1.tar.gz --markdown 20240414/a/atypical/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-14 07:51:47] INFO root fetch - processPackages [whishow]: Downloading https://files.pythonhosted.org/packages/40/9a/a4384ef193a052a56dba9ec7d28f6f713453d151b8ba900afacc065f5d79/whishow-1.3.4-py2.py3-none-any.whl
+[2024-04-14 07:51:47] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.7.tar.gz]
+[2024-04-14 07:51:47] INFO root fetch - processPackages [rococo]: Remove: archive file [/home/abi/fetcher/tmp/rococo-1.0.8.tar.gz]
+[2024-04-14 07:51:47] INFO root fetch - main [MainThread]: End processing [rococo]: success
+[2024-04-14 07:51:47] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.3.0.tar.gz]
+[2024-04-14 07:51:47] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.3.1.tar.gz]
+[2024-04-14 07:51:47] INFO root fetch - main [MainThread]: End processing [atypical]: success
+[2024-04-14 07:51:47] INFO root fetch - processPackages [whishow]: executing diffoscope
+[2024-04-14 07:51:47] INFO root fetch - processPackages [whishow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whishow-1.3.3-py2.py3-none-any.whl.zip tmp/whishow-1.3.4-py2.py3-none-any.whl.zip --markdown 20240414/w/whishow/1.3.3-1.3.4/README.md --exclude *.pyd
+[2024-04-14 07:51:48] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.3-py2.py3-none-any.whl.zip]
+[2024-04-14 07:51:48] INFO root fetch - processPackages [whishow]: Remove: archive file [/home/abi/fetcher/tmp/whishow-1.3.4-py2.py3-none-any.whl.zip]
+[2024-04-14 07:51:48] INFO root fetch - main [MainThread]: End processing [whishow]: success
+[2024-04-14 07:51:48] INFO root fetch - main [MainThread]: Store serial: [22756769]
