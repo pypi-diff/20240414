@@ -2934,3 +2934,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: Remove: archive file [/home/abi/fetcher/tmp/nacl_middleware-0.0.5.tar.gz]
 [2024-04-14 04:47:34] INFO root fetch - main [MainThread]: End processing [nacl-middleware]: success
 [2024-04-14 04:47:34] INFO root fetch - main [MainThread]: Store serial: [22756262]
+[2024-04-14 04:49:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756262]
+[2024-04-14 04:49:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 04:51:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756262]
+[2024-04-14 04:51:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 04:53:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756262]
+[2024-04-14 04:53:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-04-14 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vyper
+[2024-04-14 04:53:54] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-14 04:53:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-14 04:53:54] INFO root fetch - processPackages [vyper]: New version: [0.4.0rc2] Old Version: [0.4.0rc1]
+[2024-04-14 04:53:54] INFO root fetch - processPackages [vyper]: Downloading https://files.pythonhosted.org/packages/d4/55/2a5b5075f2f443a1f5205c5addeb7043765389df0bb9f8ac2ec197565fc7/vyper-0.4.0rc1.tar.gz
+[2024-04-14 04:53:55] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-14 04:53:55] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-14 04:53:55] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240414/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-04-14 04:53:55] INFO root fetch - processPackages [vyper]: Downloading https://files.pythonhosted.org/packages/a1/a0/e6b8290a5743ac83695cfc932b016ddce981b0fa48cba85c5779b1730598/vyper-0.4.0rc2.tar.gz
+[2024-04-14 04:53:55] INFO root fetch - processPackages [vyper]: executing diffoscope
+[2024-04-14 04:53:55] INFO root fetch - processPackages [vyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vyper-0.4.0rc1.tar.gz tmp/vyper-0.4.0rc2.tar.gz --markdown 20240414/v/vyper/0.4.0rc1-0.4.0rc2/README.md --exclude *.pyd
+[2024-04-14 04:53:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-14 04:53:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-14 04:53:56] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-14 04:53:57] INFO root fetch - processPackages [vyper]: Remove: archive file [/home/abi/fetcher/tmp/vyper-0.4.0rc1.tar.gz]
+[2024-04-14 04:53:57] INFO root fetch - processPackages [vyper]: Remove: archive file [/home/abi/fetcher/tmp/vyper-0.4.0rc2.tar.gz]
+[2024-04-14 04:53:57] INFO root fetch - main [MainThread]: End processing [vyper]: success
+[2024-04-14 04:53:57] INFO root fetch - main [MainThread]: Store serial: [22756268]
