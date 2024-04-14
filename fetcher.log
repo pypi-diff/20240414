@@ -7566,3 +7566,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:56:30] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
 [2024-04-14 12:56:30] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
 [2024-04-14 12:56:30] INFO root fetch - main [MainThread]: Store serial: [22758290]
+[2024-04-14 12:58:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758290]
+[2024-04-14 12:58:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 12:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipgogogo
+[2024-04-14 12:58:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docsig
+[2024-04-14 12:58:45] WARNING root fetch - processPackages [ipgogogo]: Skipping, unable to determine old version
+[2024-04-14 12:58:45] INFO root fetch - main [MainThread]: End processing [ipgogogo] error
+[2024-04-14 12:58:45] INFO root fetch - processPackages [docsig]: New version: [0.9.0] Old Version: [0.7.0]
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/b7/aa/3a58eed65c9cd6b8bd5a25e3fb75d0dab2ecdda4b36d07b1e482c485f72b/docsig-0.7.0.tar.gz
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/a5/8b/f9b2d72f71a3977e2edb7a543e8805b8f859ed021086b9eb63b07f9aa86d/docsig-0.9.0.tar.gz
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: executing diffoscope
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docsig-0.7.0.tar.gz tmp/docsig-0.9.0.tar.gz --markdown 20240414/d/docsig/0.7.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.7.0.tar.gz]
+[2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
+[2024-04-14 12:58:46] INFO root fetch - main [MainThread]: End processing [docsig]: success
+[2024-04-14 12:58:46] INFO root fetch - main [MainThread]: Store serial: [22758296]
