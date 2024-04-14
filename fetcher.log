@@ -1576,3 +1576,55 @@
 [2024-04-14 02:24:35] INFO root fetch - processPackages [Geode-Common]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Common-31.0.7rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-04-14 02:24:35] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2024-04-14 02:24:35] INFO root fetch - main [MainThread]: Store serial: [22755764]
+[2024-04-14 02:26:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755764]
+[2024-04-14 02:26:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-cr-constructs
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isom2600
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: canvasxpress
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anydoor
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-fly
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dropchain-sdk
+[2024-04-14 02:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipez
+[2024-04-14 02:26:46] INFO root fetch - processPackages [pytest-fly]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 02:26:46] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.85]
+[2024-04-14 02:26:46] INFO root fetch - processPackages [isom2600]: New version: [3.2] Old Version: [3.1]
+[2024-04-14 02:26:46] INFO root fetch - processPackages [pytest-fly]: Downloading https://files.pythonhosted.org/packages/e0/3b/b864409039e33ccd2654e5a63858f5a9e494192cd7a6788b6960bda32962/pytest_fly-0.0.8.tar.gz
+[2024-04-14 02:26:46] INFO root fetch - processPackages [dropchain-sdk]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-14 02:26:46] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/87/df/8ac706eb2fd78e9507be8dd2f844d0ef061e1f4c248b3461985fff7a53a0/isom2600-3.1.tar.gz
+[2024-04-14 02:26:46] WARNING root fetch - processPackages [anydoor]: Skipping, unable to determine old version
+[2024-04-14 02:26:46] INFO root fetch - main [MainThread]: End processing [anydoor] error
+[2024-04-14 02:26:46] INFO root fetch - processPackages [canvasxpress]: New version: [2024.4.7.2406] Old Version: [2024.4.14.2429]
+[2024-04-14 02:26:46] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.426] Old Version: [2.1.425]
+[2024-04-14 02:26:46] WARNING root fetch - processPackages [pytest-fly]: Skipping package: exceeds size limit 38867026>=10485760
+[2024-04-14 02:26:46] INFO root fetch - main [MainThread]: End processing [pytest-fly] error
+[2024-04-14 02:26:46] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/61/66/f9f20326f03532f92bfe3cb1bb986abd3c7a0e707702cb6e15c62f201bff/pipez-0.0.85.tar.gz
+[2024-04-14 02:26:46] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/fa/15/c7130d3e6b56b1fc50fe95d30b4497436e6fcdac4959e8d5584971b2fff7/isom2600-3.2.tar.gz
+[2024-04-14 02:26:46] INFO root fetch - processPackages [dropchain-sdk]: Downloading https://files.pythonhosted.org/packages/b7/6b/d29444c195871ae8001d0e9ebf5fb5134d3486b7898eb0514acf5bd13eb4/dropchain-sdk-0.7.0.tar.gz
+[2024-04-14 02:26:46] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/32/b4/62061790bc8c13c4c80618b77ae1c30cb22f985df25bdcbee65f5bf8ba18/canvasxpress-2024.4.14.2429.tar.gz
+[2024-04-14 02:26:46] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/d8/a1/0e393eb606e52970401feda2b5e3c1789657d3703cda755b52c8a207c7b4/cdk-cr-constructs-2.1.425.tar.gz
+[2024-04-14 02:26:46] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15102044>=10485760
+[2024-04-14 02:26:46] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-04-14 02:26:46] INFO root fetch - processPackages [isom2600]: executing diffoscope
+[2024-04-14 02:26:46] INFO root fetch - processPackages [isom2600]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isom2600-3.1.tar.gz tmp/isom2600-3.2.tar.gz --markdown 20240414/i/isom2600/3.1-3.2/README.md --exclude *.pyd
+[2024-04-14 02:26:46] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-14 02:26:47] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-14 02:26:47] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.85.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240414/p/pipez/0.0.85-0.0.9/README.md --exclude *.pyd
+[2024-04-14 02:26:47] INFO root fetch - processPackages [dropchain-sdk]: Downloading https://files.pythonhosted.org/packages/11/42/2f95b3cbcbd5a5a9404ebd6c374e5cc0bfbf7ae0b07606c20afe4830ae2a/dropchain-sdk-0.7.1.tar.gz
+[2024-04-14 02:26:47] INFO root fetch - processPackages [dropchain-sdk]: executing diffoscope
+[2024-04-14 02:26:47] INFO root fetch - processPackages [dropchain-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dropchain-sdk-0.7.0.tar.gz tmp/dropchain-sdk-0.7.1.tar.gz --markdown 20240414/d/dropchain-sdk/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-14 02:26:47] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/9a/a9/4718ff49db620984b31b1c5070c0c97d69f6a1fea76ac5e8ff4a3df6b7a7/canvasxpress-2024.4.7.2406.tar.gz
+[2024-04-14 02:26:47] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.1.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.2.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - main [MainThread]: End processing [isom2600]: success
+[2024-04-14 02:26:47] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2024-04-14 02:26:47] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2024.4.14.2429.tar.gz tmp/canvasxpress-2024.4.7.2406.tar.gz --markdown 20240414/c/canvasxpress/2024.4.14.2429-2024.4.7.2406/README.md --exclude *.pyd
+[2024-04-14 02:26:47] INFO root fetch - processPackages [dropchain-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dropchain-sdk-0.7.0.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - processPackages [dropchain-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dropchain-sdk-0.7.1.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - main [MainThread]: End processing [dropchain-sdk]: success
+[2024-04-14 02:26:47] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.85.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-14 02:26:47] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-14 02:27:45] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.14.2429.tar.gz]
+[2024-04-14 02:27:45] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
+[2024-04-14 02:27:45] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2024-04-14 02:27:45] INFO root fetch - main [MainThread]: Store serial: [22755790]
