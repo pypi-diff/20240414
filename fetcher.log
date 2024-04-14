@@ -7121,3 +7121,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:28:53] WARNING root fetch - processPackages [qrcode-plus]: Skipping, unable to determine old version
 [2024-04-14 12:28:53] INFO root fetch - main [MainThread]: End processing [qrcode-plus] error
 [2024-04-14 12:28:53] INFO root fetch - main [MainThread]: Store serial: [22758072]
+[2024-04-14 12:31:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758072]
+[2024-04-14 12:31:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asgebsmanager
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hundred-x
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtutils
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdf-compression
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2024-04-14 12:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jgtpy
+[2024-04-14 12:31:07] INFO root fetch - processPackages [asgebsmanager]: New version: [0.6] Old Version: [0.4]
+[2024-04-14 12:31:07] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 12:31:07] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 12:31:08] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/a1/93/7cf990bc4787f1271d0c7960269f3f8f4487d9279f488d47a4dfcb671f26/asgebsmanager-0.4.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [hundred-x]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 12:31:08] WARNING root fetch - processPackages [pdf-compression]: Skipping, unable to determine old version
+[2024-04-14 12:31:08] INFO root fetch - main [MainThread]: End processing [pdf-compression] error
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-14 12:31:08] INFO root fetch - processPackages [hundred-x]: Downloading https://files.pythonhosted.org/packages/fc/ce/f8878214f4a6980e2fa27e4927eb1543d44a17de4b94d37abe24632cce41/hundred_x-0.1.6.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/73/83/c8bfcaed9be616eb457101212afc29a7e800a9d90c25832dce45c5e7e5a4/asgebsmanager-0.6.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 12:31:08] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 12:31:08] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 12:31:08] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-0.4.tar.gz tmp/asgebsmanager-0.6.tar.gz --markdown 20240414/a/asgebsmanager/0.4-0.6/README.md --exclude *.pyd
+[2024-04-14 12:31:08] INFO root fetch - processPackages [hundred-x]: Downloading https://files.pythonhosted.org/packages/e8/11/f09ef3f65f79d17bd5509a9043988935a0c8b65314648fb59d68735a74bb/hundred_x-0.1.7.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [hundred-x]: executing diffoscope
+[2024-04-14 12:31:08] INFO root fetch - processPackages [hundred-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hundred_x-0.1.6.tar.gz tmp/hundred_x-0.1.7.tar.gz --markdown 20240414/h/hundred-x/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-14 12:31:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240414/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240414/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-14 12:31:09] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.4.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.6.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 12:31:09] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 12:31:09] INFO root fetch - processPackages [hundred-x]: Remove: archive file [/home/abi/fetcher/tmp/hundred_x-0.1.6.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - processPackages [hundred-x]: Remove: archive file [/home/abi/fetcher/tmp/hundred_x-0.1.7.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [hundred-x]: success
+[2024-04-14 12:31:09] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-14 12:31:09] INFO root fetch - main [MainThread]: Store serial: [22758092]
