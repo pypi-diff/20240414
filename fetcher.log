@@ -3251,3 +3251,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:34:50] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.4.6.tar.gz]
 [2024-04-14 05:34:50] INFO root fetch - main [MainThread]: End processing [pydecs]: success
 [2024-04-14 05:34:50] INFO root fetch - main [MainThread]: Store serial: [22756351]
+[2024-04-14 05:36:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756351]
+[2024-04-14 05:36:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 05:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networkinfotranslator
+[2024-04-14 05:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fmtutil
+[2024-04-14 05:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: roadmapper
+[2024-04-14 05:36:59] INFO root fetch - processPackages [fmtutil]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 05:36:59] INFO root fetch - processPackages [networkinfotranslator]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 05:36:59] INFO root fetch - processPackages [roadmapper]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-04-14 05:36:59] INFO root fetch - processPackages [fmtutil]: Downloading https://files.pythonhosted.org/packages/a5/84/344ebc88f00e9e8a26a47c03427df8dc8eae31a9dacbc257c4afc4629c69/fmtutil-1.0.1.tar.gz
+[2024-04-14 05:36:59] INFO root fetch - processPackages [roadmapper]: Downloading https://files.pythonhosted.org/packages/0d/c5/20b9e081b589c622a1be356a8ec49f57a32ef4991efd909deb42dcbeac67/roadmapper-1.4.0.tar.gz
+[2024-04-14 05:36:59] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f6/91/9b6e0195eddc39e21cd8cf349f1b0d53faf6cc5c2b8871a67a5597fea7bf/networkinfotranslator-0.0.7-py3-none-any.whl
+[2024-04-14 05:36:59] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f8/65/06bf6cb06c862e77b23a21bfa2bd4f27cf9d4396c92ecc222d30884a96fa/networkinfotranslator-0.0.8-py3-none-any.whl
+[2024-04-14 05:36:59] INFO root fetch - processPackages [roadmapper]: Downloading https://files.pythonhosted.org/packages/7f/35/5dc8f1be65bbd14b5a34c325f48577fa2814060ccd4d040c3521814261f8/roadmapper-1.5.0.tar.gz
+[2024-04-14 05:36:59] INFO root fetch - processPackages [fmtutil]: Downloading https://files.pythonhosted.org/packages/64/76/06bb99557f4849135be8ab5169d49227640096562f34c539cd65ff5dac6e/fmtutil-1.0.2.tar.gz
+[2024-04-14 05:36:59] INFO root fetch - processPackages [networkinfotranslator]: executing diffoscope
+[2024-04-14 05:36:59] INFO root fetch - processPackages [networkinfotranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip --markdown 20240414/n/networkinfotranslator/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 05:36:59] INFO root fetch - processPackages [fmtutil]: executing diffoscope
+[2024-04-14 05:36:59] INFO root fetch - processPackages [fmtutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmtutil-1.0.1.tar.gz tmp/fmtutil-1.0.2.tar.gz --markdown 20240414/f/fmtutil/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 05:37:00] INFO root fetch - processPackages [roadmapper]: executing diffoscope
+[2024-04-14 05:37:00] INFO root fetch - processPackages [roadmapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roadmapper-1.4.0.tar.gz tmp/roadmapper-1.5.0.tar.gz --markdown 20240414/r/roadmapper/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-04-14 05:37:00] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip]
+[2024-04-14 05:37:00] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip]
+[2024-04-14 05:37:00] INFO root fetch - main [MainThread]: End processing [networkinfotranslator]: success
+[2024-04-14 05:37:00] INFO root fetch - processPackages [fmtutil]: Remove: archive file [/home/abi/fetcher/tmp/fmtutil-1.0.1.tar.gz]
+[2024-04-14 05:37:00] INFO root fetch - processPackages [fmtutil]: Remove: archive file [/home/abi/fetcher/tmp/fmtutil-1.0.2.tar.gz]
+[2024-04-14 05:37:00] INFO root fetch - main [MainThread]: End processing [fmtutil]: success
+[2024-04-14 05:37:00] INFO root fetch - processPackages [roadmapper]: Remove: archive file [/home/abi/fetcher/tmp/roadmapper-1.4.0.tar.gz]
+[2024-04-14 05:37:00] INFO root fetch - processPackages [roadmapper]: Remove: archive file [/home/abi/fetcher/tmp/roadmapper-1.5.0.tar.gz]
+[2024-04-14 05:37:00] INFO root fetch - main [MainThread]: End processing [roadmapper]: success
+[2024-04-14 05:37:00] INFO root fetch - main [MainThread]: Store serial: [22756359]
