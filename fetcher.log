@@ -14348,3 +14348,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:23:44] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-14 21:23:44] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-14 21:23:45] INFO root fetch - main [MainThread]: Store serial: [22761750]
+[2024-04-14 21:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761750]
+[2024-04-14 21:25:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zaku
+[2024-04-14 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprinko
+[2024-04-14 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flashcam
+[2024-04-14 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gemini-ng
+[2024-04-14 21:25:53] INFO root fetch - processPackages [sprinko]: New version: [0.9.0b2] Old Version: [0.9.0b1]
+[2024-04-14 21:25:53] INFO root fetch - processPackages [flashcam]: New version: [1.9.1] Old Version: [1.8.9]
+[2024-04-14 21:25:53] INFO root fetch - processPackages [sprinko]: Downloading https://files.pythonhosted.org/packages/4e/79/3137eba6ddff85b471a7ef27dc5b44b8301ef4fbecaa8dfb7f13ae90fc91/sprinko-0.9.0b1.tar.gz
+[2024-04-14 21:25:53] WARNING root fetch - processPackages [zaku]: Skipping, unable to determine old version
+[2024-04-14 21:25:53] INFO root fetch - main [MainThread]: End processing [zaku] error
+[2024-04-14 21:25:53] WARNING root fetch - processPackages [gemini-ng]: Skipping, unable to determine old version
+[2024-04-14 21:25:53] INFO root fetch - main [MainThread]: End processing [gemini-ng] error
+[2024-04-14 21:25:53] INFO root fetch - processPackages [flashcam]: Downloading https://files.pythonhosted.org/packages/2f/aa/fb748418cf7ee4d2710346f9f9c8c185d2bf4c279d3fd0898f15eba4c501/flashcam-1.8.9.tar.gz
+[2024-04-14 21:25:53] INFO root fetch - processPackages [sprinko]: Downloading https://files.pythonhosted.org/packages/cd/e3/edaad3e95d8089cec507f05b80987a3bde67f17249413129dcae1919e515/sprinko-0.9.0b2.tar.gz
+[2024-04-14 21:25:53] INFO root fetch - processPackages [flashcam]: Downloading https://files.pythonhosted.org/packages/9b/9c/b589573e3f9f57745093ac4b91c94ad7bcebe3c2c291ae3a342fd084bc57/flashcam-1.9.1.tar.gz
+[2024-04-14 21:25:53] INFO root fetch - processPackages [sprinko]: executing diffoscope
+[2024-04-14 21:25:53] INFO root fetch - processPackages [sprinko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprinko-0.9.0b1.tar.gz tmp/sprinko-0.9.0b2.tar.gz --markdown 20240414/s/sprinko/0.9.0b1-0.9.0b2/README.md --exclude *.pyd
+[2024-04-14 21:25:54] INFO root fetch - processPackages [flashcam]: executing diffoscope
+[2024-04-14 21:25:54] INFO root fetch - processPackages [flashcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashcam-1.8.9.tar.gz tmp/flashcam-1.9.1.tar.gz --markdown 20240414/f/flashcam/1.8.9-1.9.1/README.md --exclude *.pyd
+[2024-04-14 21:25:54] INFO root fetch - processPackages [sprinko]: Remove: archive file [/home/abi/fetcher/tmp/sprinko-0.9.0b1.tar.gz]
+[2024-04-14 21:25:54] INFO root fetch - processPackages [sprinko]: Remove: archive file [/home/abi/fetcher/tmp/sprinko-0.9.0b2.tar.gz]
+[2024-04-14 21:25:54] INFO root fetch - main [MainThread]: End processing [sprinko]: success
+[2024-04-14 21:25:54] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.8.9.tar.gz]
+[2024-04-14 21:25:54] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.9.1.tar.gz]
+[2024-04-14 21:25:54] INFO root fetch - main [MainThread]: End processing [flashcam]: success
+[2024-04-14 21:25:54] INFO root fetch - main [MainThread]: Store serial: [22761765]
