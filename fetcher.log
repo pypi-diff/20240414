@@ -12055,3 +12055,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:23:49] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
 [2024-04-14 18:23:49] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
 [2024-04-14 18:23:49] INFO root fetch - main [MainThread]: Store serial: [22760505]
+[2024-04-14 18:25:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760505]
+[2024-04-14 18:25:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gs2
+[2024-04-14 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linktest
+[2024-04-14 18:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiconnectpy
+[2024-04-14 18:25:58] INFO root fetch - processPackages [audiconnectpy]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-14 18:25:58] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/3d/65/635fc57c4efb58e6e83630df47a90af907c948eb70175dd82fd6237d12d7/audiconnectpy-1.5.4.tar.gz
+[2024-04-14 18:25:58] INFO root fetch - processPackages [gs2]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-04-14 18:25:58] INFO root fetch - processPackages [linktest]: New version: [2.4.3] Old Version: [2.4.2]
+[2024-04-14 18:25:58] INFO root fetch - processPackages [gs2]: Downloading https://files.pythonhosted.org/packages/c5/4e/2410c578d132c3fea988dc408e73fddf9945a8ab84f7cfbaa7c82bd7a40b/gs2-1.1.98.tar.gz
+[2024-04-14 18:25:58] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/a9/21/2d509bd2dfe1f5dae5995f5f85d343179ff6ecd68ed4a196a58182c2ad7e/linktest-2.4.2.tar.gz
+[2024-04-14 18:25:58] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/c4/c9/3dd2e7630832bf02228dac300b729636038182f93a48ec10dd28aef1f902/audiconnectpy-1.5.5.tar.gz
+[2024-04-14 18:25:59] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-04-14 18:25:59] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.5.4.tar.gz tmp/audiconnectpy-1.5.5.tar.gz --markdown 20240414/a/audiconnectpy/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-14 18:25:59] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/97/2f/36618255fbe2aacee65f8f1f0c1a6e2136ef4441acd6e31f90bec43f24c0/linktest-2.4.3.tar.gz
+[2024-04-14 18:25:59] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-04-14 18:25:59] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.4.2.tar.gz tmp/linktest-2.4.3.tar.gz --markdown 20240414/l/linktest/2.4.2-2.4.3/README.md --exclude *.pyd
+[2024-04-14 18:25:59] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.4.tar.gz]
+[2024-04-14 18:25:59] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.5.tar.gz]
+[2024-04-14 18:25:59] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-04-14 18:25:59] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.4.2.tar.gz]
+[2024-04-14 18:25:59] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.4.3.tar.gz]
+[2024-04-14 18:25:59] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-04-14 18:25:59] INFO root fetch - processPackages [gs2]: Downloading https://files.pythonhosted.org/packages/81/a0/4021a82a0acbd1a2e84e6dce76f329b6654d5ebcf3ad4bfebcfcb3152d55/gs2-1.1.99.tar.gz
+[2024-04-14 18:26:00] INFO root fetch - processPackages [gs2]: executing diffoscope
+[2024-04-14 18:26:00] INFO root fetch - processPackages [gs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs2-1.1.98.tar.gz tmp/gs2-1.1.99.tar.gz --markdown 20240414/g/gs2/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-04-14 18:26:02] INFO root fetch - processPackages [gs2]: Remove: archive file [/home/abi/fetcher/tmp/gs2-1.1.98.tar.gz]
+[2024-04-14 18:26:02] INFO root fetch - processPackages [gs2]: Remove: archive file [/home/abi/fetcher/tmp/gs2-1.1.99.tar.gz]
+[2024-04-14 18:26:02] INFO root fetch - main [MainThread]: End processing [gs2]: success
+[2024-04-14 18:26:02] INFO root fetch - main [MainThread]: Store serial: [22760512]
