@@ -4105,3 +4105,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:56:11] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 06:56:11] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 06:56:11] INFO root fetch - main [MainThread]: Store serial: [22756651]
+[2024-04-14 06:58:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756651]
+[2024-04-14 06:58:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756651]
+[2024-04-14 07:00:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 07:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: owlspec
+[2024-04-14 07:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docprompt
+[2024-04-14 07:00:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leads
+[2024-04-14 07:00:25] INFO root fetch - processPackages [docprompt]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-14 07:00:25] WARNING root fetch - processPackages [owlspec]: Skipping, unable to determine old version
+[2024-04-14 07:00:25] INFO root fetch - main [MainThread]: End processing [owlspec] error
+[2024-04-14 07:00:25] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-14 07:00:25] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/8e/35/ba92acb7f407bd89003915a864649febf14a19e766d6da6f7a803b276a1d/docprompt-0.2.6.tar.gz
+[2024-04-14 07:00:25] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-04-14 07:00:25] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/f3/ab/75d57ef184c0987fb9f5e0a82abc5feccb25fc2af52342cf9932f688d6c7/docprompt-0.2.7.tar.gz
+[2024-04-14 07:00:25] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-04-14 07:00:25] INFO root fetch - processPackages [docprompt]: executing diffoscope
+[2024-04-14 07:00:25] INFO root fetch - processPackages [docprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docprompt-0.2.6.tar.gz tmp/docprompt-0.2.7.tar.gz --markdown 20240414/d/docprompt/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-14 07:00:25] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-04-14 07:00:25] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240414/l/leads/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-14 07:00:26] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-04-14 07:00:26] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-04-14 07:00:26] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-04-14 07:00:26] INFO root fetch - processPackages [docprompt]: Remove: archive file [/home/abi/fetcher/tmp/docprompt-0.2.6.tar.gz]
+[2024-04-14 07:00:26] INFO root fetch - processPackages [docprompt]: Remove: archive file [/home/abi/fetcher/tmp/docprompt-0.2.7.tar.gz]
+[2024-04-14 07:00:26] INFO root fetch - main [MainThread]: End processing [docprompt]: success
+[2024-04-14 07:00:26] INFO root fetch - main [MainThread]: Store serial: [22756662]
