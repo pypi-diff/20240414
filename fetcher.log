@@ -5598,3 +5598,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:24:48] INFO root fetch - processPackages [pymodbus]: Remove: archive file [/home/abi/fetcher/tmp/pymodbus-3.7.0.dev0.tar.gz]
 [2024-04-14 10:24:48] INFO root fetch - main [MainThread]: End processing [pymodbus]: success
 [2024-04-14 10:24:48] INFO root fetch - main [MainThread]: Store serial: [22757314]
+[2024-04-14 10:26:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757314]
+[2024-04-14 10:26:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: figaro
+[2024-04-14 10:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langfun
+[2024-04-14 10:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsugu
+[2024-04-14 10:26:58] INFO root fetch - processPackages [tsugu]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-14 10:26:58] INFO root fetch - processPackages [figaro]: New version: [1.6.0] Old Version: [1.5.5]
+[2024-04-14 10:26:58] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240414] Old Version: [0.0.2.dev20240413]
+[2024-04-14 10:26:58] INFO root fetch - processPackages [figaro]: Downloading https://files.pythonhosted.org/packages/9f/f9/b6cf53f1e42918465824ecb30623d5db6864c9ea113dfbe0d4c0b8bd5ff9/figaro-1.5.5.tar.gz
+[2024-04-14 10:26:58] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/57/e8/2f001012de71704c7b8cc1274946e5d64bc3475f6976e882007100ea4fee/tsugu-0.3.4.tar.gz
+[2024-04-14 10:26:58] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/59/70/c27c9febf1396107c45d24bd10090a8cf523e249750547fdd042ee88d46e/langfun-0.0.2.dev20240413.tar.gz
+[2024-04-14 10:26:59] INFO root fetch - processPackages [figaro]: Downloading https://files.pythonhosted.org/packages/10/bd/6d180b82c07625f302b878f4b77621f8dbe947e26eed05620ec5a62b211e/figaro-1.6.0.tar.gz
+[2024-04-14 10:26:59] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/13/38/74b38cb3bc172da9b99c254e1ebf55454365482b9e020b12950d77d2e440/tsugu-0.3.5.tar.gz
+[2024-04-14 10:26:59] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/c8/2e/2e6502a7d8fe952bddff63cea89acf75fe984c1a5d172a55c9b0b86f86d8/langfun-0.0.2.dev20240414.tar.gz
+[2024-04-14 10:26:59] INFO root fetch - processPackages [figaro]: executing diffoscope
+[2024-04-14 10:26:59] INFO root fetch - processPackages [figaro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/figaro-1.5.5.tar.gz tmp/figaro-1.6.0.tar.gz --markdown 20240414/f/figaro/1.5.5-1.6.0/README.md --exclude *.pyd
+[2024-04-14 10:26:59] INFO root fetch - processPackages [tsugu]: executing diffoscope
+[2024-04-14 10:26:59] INFO root fetch - processPackages [tsugu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-0.3.4.tar.gz tmp/tsugu-0.3.5.tar.gz --markdown 20240414/t/tsugu/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-14 10:26:59] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-14 10:26:59] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240413.tar.gz tmp/langfun-0.0.2.dev20240414.tar.gz --markdown 20240414/l/langfun/0.0.2.dev20240413-0.0.2.dev20240414/README.md --exclude *.pyd
+[2024-04-14 10:26:59] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.3.4.tar.gz]
+[2024-04-14 10:26:59] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.3.5.tar.gz]
+[2024-04-14 10:26:59] INFO root fetch - main [MainThread]: End processing [tsugu]: success
+[2024-04-14 10:27:00] INFO root fetch - processPackages [figaro]: Remove: archive file [/home/abi/fetcher/tmp/figaro-1.5.5.tar.gz]
+[2024-04-14 10:27:00] INFO root fetch - processPackages [figaro]: Remove: archive file [/home/abi/fetcher/tmp/figaro-1.6.0.tar.gz]
+[2024-04-14 10:27:00] INFO root fetch - main [MainThread]: End processing [figaro]: success
+[2024-04-14 10:27:00] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240413.tar.gz]
+[2024-04-14 10:27:00] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240414.tar.gz]
+[2024-04-14 10:27:00] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-14 10:27:00] INFO root fetch - main [MainThread]: Store serial: [22757323]
