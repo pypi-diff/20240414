@@ -10143,3 +10143,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:10:31] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
 [2024-04-14 16:10:31] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
 [2024-04-14 16:10:31] INFO root fetch - main [MainThread]: Store serial: [22759533]
+[2024-04-14 16:12:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759533]
+[2024-04-14 16:12:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 16:12:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-llm
+[2024-04-14 16:12:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htagui
+[2024-04-14 16:12:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SnakesInSpace
+[2024-04-14 16:12:47] INFO root fetch - processPackages [htagui]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-14 16:12:47] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/30/73/1354c9f97e9587dd9c83e08ecdcd73793bb4fd76f2a038bac1cfbca6c501/htagui-0.3.0.tar.gz
+[2024-04-14 16:12:47] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240414] Old Version: [2.5.0b20240413]
+[2024-04-14 16:12:48] INFO root fetch - processPackages [SnakesInSpace]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:12:48] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/cb/c7/f74fbc0e0892f3c9e8559a31535d1f4e79bba1154e575ff39fcb97440660/bigdl_llm-2.5.0b20240413-py3-none-win_amd64.whl
+[2024-04-14 16:12:48] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/f1/ad/e48b4724c67460c2b4c2be2e77960399739566a1914e64d4abc120021306/htagui-0.3.1.tar.gz
+[2024-04-14 16:12:48] INFO root fetch - processPackages [SnakesInSpace]: Downloading https://files.pythonhosted.org/packages/6b/5e/98b9f3a8f8f4c453ab879e00833ef75a6c043847efdfd888445a62ba5e74/SnakesInSpace-0.0.8.tar.gz
+[2024-04-14 16:12:48] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-14 16:12:48] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.3.0.tar.gz tmp/htagui-0.3.1.tar.gz --markdown 20240414/h/htagui/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-14 16:12:48] INFO root fetch - processPackages [SnakesInSpace]: Downloading https://files.pythonhosted.org/packages/1a/03/7dc24c18bfc3b63cff772834b0517b03a6c1559eed12bf28c61828ebab5b/SnakesInSpace-0.0.9.tar.gz
+[2024-04-14 16:12:48] INFO root fetch - processPackages [SnakesInSpace]: executing diffoscope
+[2024-04-14 16:12:48] INFO root fetch - processPackages [SnakesInSpace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SnakesInSpace-0.0.8.tar.gz tmp/SnakesInSpace-0.0.9.tar.gz --markdown 20240414/S/SnakesInSpace/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:12:48] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.3.0.tar.gz]
+[2024-04-14 16:12:48] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.3.1.tar.gz]
+[2024-04-14 16:12:48] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-14 16:12:49] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/58/ca/1a4a13c9eb837803ef45a0d4762f383a6eb32818c9a87c22e302769eb0c1/bigdl_llm-2.5.0b20240414-py3-none-win_amd64.whl
+[2024-04-14 16:12:49] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-04-14 16:12:49] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240413-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240414-py3-none-win_amd64.whl.zip --markdown 20240414/b/bigdl-llm/2.5.0b20240413-2.5.0b20240414/README.md --exclude *.pyd
+[2024-04-14 16:12:49] INFO root fetch - processPackages [SnakesInSpace]: Remove: archive file [/home/abi/fetcher/tmp/SnakesInSpace-0.0.8.tar.gz]
+[2024-04-14 16:12:49] INFO root fetch - processPackages [SnakesInSpace]: Remove: archive file [/home/abi/fetcher/tmp/SnakesInSpace-0.0.9.tar.gz]
+[2024-04-14 16:12:49] INFO root fetch - main [MainThread]: End processing [SnakesInSpace]: success
+[2024-04-14 16:12:50] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240413-py3-none-win_amd64.whl.zip]
+[2024-04-14 16:12:50] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240414-py3-none-win_amd64.whl.zip]
+[2024-04-14 16:12:50] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-04-14 16:12:50] INFO root fetch - main [MainThread]: Store serial: [22759544]
