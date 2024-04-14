@@ -15444,3 +15444,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:40:46] INFO root fetch - processPackages [local_tuya_ceiling_fan]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_ceiling_fan-1.5.1.tar.gz]
 [2024-04-14 22:40:46] INFO root fetch - main [MainThread]: End processing [local_tuya_ceiling_fan]: success
 [2024-04-14 22:40:46] INFO root fetch - main [MainThread]: Store serial: [22762333]
+[2024-04-14 22:42:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762333]
+[2024-04-14 22:42:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smart-parallelize
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsp-ifsc
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Terminalgemini
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anycorn
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastbots
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: format-print
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-hierarchical-models
+[2024-04-14 22:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ngclearn
+[2024-04-14 22:42:55] INFO root fetch - processPackages [smart-parallelize]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-14 22:42:55] INFO root fetch - processPackages [dsp-ifsc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 22:42:55] INFO root fetch - processPackages [Terminalgemini]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-14 22:42:55] INFO root fetch - processPackages [anycorn]: New version: [0.17.0] Old Version: [0.16.0]
+[2024-04-14 22:42:55] WARNING root fetch - processPackages [django-hierarchical-models]: Skipping, unable to determine old version
+[2024-04-14 22:42:55] INFO root fetch - main [MainThread]: End processing [django-hierarchical-models] error
+[2024-04-14 22:42:55] WARNING root fetch - processPackages [format-print]: Skipping, unable to determine old version
+[2024-04-14 22:42:55] INFO root fetch - main [MainThread]: End processing [format-print] error
+[2024-04-14 22:42:55] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/00/d8/30cde6688f805d7fd1943736d737b5d5887a226395a0d133426070e2d14e/smart_parallelize-2.0.5.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/67/da/a642329b41d34ed6c0663a2d80332eb55958090ff36159c3a78aabe1e112/dsp_ifsc-0.0.1.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [ngclearn]: New version: [1.0b3] Old Version: [1.0b2]
+[2024-04-14 22:42:55] INFO root fetch - processPackages [Terminalgemini]: Downloading https://files.pythonhosted.org/packages/8f/5e/3522fd13ed80ef8c86a09e3ca5fa2861c9b355f6c29e8d90a8b79b878cb3/terminalgemini-2.0.1.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [fastbots]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-14 22:42:55] INFO root fetch - processPackages [anycorn]: Downloading https://files.pythonhosted.org/packages/85/69/29b1a8b942db4c7ea931f882d72e755f69f5f546213dd6b5598eb625f6f6/anycorn-0.16.0.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/80/7c/a51fc50aed63941e45c90919a33347cd39ac4ee18cd386453de5e762f752/dsp_ifsc-0.0.2.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [fastbots]: Downloading https://files.pythonhosted.org/packages/9a/b6/45ee57af4dd155516d17431911667afe7c729ca166811c8cf53801ea0691/fastbots-0.2.6.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [ngclearn]: Downloading https://files.pythonhosted.org/packages/ee/85/eee20535c3e7ba67533a2779dd4478d92636e13e21a189275af7b596bcdb/ngclearn-1.0b2.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [Terminalgemini]: Downloading https://files.pythonhosted.org/packages/04/80/aea19a0e9a7ce801999bb9ec01e7e04f3b9bcb6da98a2ac53ba966e6fcb8/terminalgemini-2.0.2.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [dsp-ifsc]: executing diffoscope
+[2024-04-14 22:42:55] INFO root fetch - processPackages [dsp-ifsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsp_ifsc-0.0.1.tar.gz tmp/dsp_ifsc-0.0.2.tar.gz --markdown 20240414/d/dsp-ifsc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 22:42:55] INFO root fetch - processPackages [smart-parallelize]: Downloading https://files.pythonhosted.org/packages/ac/ad/00887ef63fefbf1e720bde042e22f486eb62655e1ae779afde62fc11f202/smart_parallelize-2.0.6.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [Terminalgemini]: executing diffoscope
+[2024-04-14 22:42:55] INFO root fetch - processPackages [Terminalgemini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalgemini-2.0.1.tar.gz tmp/terminalgemini-2.0.2.tar.gz --markdown 20240414/T/Terminalgemini/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-14 22:42:55] INFO root fetch - processPackages [smart-parallelize]: executing diffoscope
+[2024-04-14 22:42:55] INFO root fetch - processPackages [smart-parallelize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smart_parallelize-2.0.5.tar.gz tmp/smart_parallelize-2.0.6.tar.gz --markdown 20240414/s/smart-parallelize/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-04-14 22:42:55] INFO root fetch - processPackages [anycorn]: Downloading https://files.pythonhosted.org/packages/88/33/2946844bc70fd5c27bc7b4a5d99a09ddd83fd1053033b56ddddcbe53b399/anycorn-0.17.0.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [ngclearn]: Downloading https://files.pythonhosted.org/packages/9c/bb/e2e946988f475359a7d7843da68236e23d2cb5aef404361d755fc5bee997/ngclearn-1.0b3.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [fastbots]: Downloading https://files.pythonhosted.org/packages/58/91/a79f45bd36892803a7d06ac73e75f195a1ad012eedf742da13cf3a0f846d/fastbots-0.2.7.tar.gz
+[2024-04-14 22:42:55] INFO root fetch - processPackages [anycorn]: executing diffoscope
+[2024-04-14 22:42:55] INFO root fetch - processPackages [anycorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycorn-0.16.0.tar.gz tmp/anycorn-0.17.0.tar.gz --markdown 20240414/a/anycorn/0.16.0-0.17.0/README.md --exclude *.pyd
+[2024-04-14 22:42:56] INFO root fetch - processPackages [ngclearn]: executing diffoscope
+[2024-04-14 22:42:56] INFO root fetch - processPackages [ngclearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngclearn-1.0b2.tar.gz tmp/ngclearn-1.0b3.tar.gz --markdown 20240414/n/ngclearn/1.0b2-1.0b3/README.md --exclude *.pyd
+[2024-04-14 22:42:56] INFO root fetch - processPackages [fastbots]: executing diffoscope
+[2024-04-14 22:42:56] INFO root fetch - processPackages [fastbots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbots-0.2.6.tar.gz tmp/fastbots-0.2.7.tar.gz --markdown 20240414/f/fastbots/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-14 22:42:56] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.1.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.2.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [dsp-ifsc]: success
+[2024-04-14 22:42:56] INFO root fetch - processPackages [Terminalgemini]: Remove: archive file [/home/abi/fetcher/tmp/terminalgemini-2.0.1.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [Terminalgemini]: Remove: archive file [/home/abi/fetcher/tmp/terminalgemini-2.0.2.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [Terminalgemini]: success
+[2024-04-14 22:42:56] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.5.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [smart-parallelize]: Remove: archive file [/home/abi/fetcher/tmp/smart_parallelize-2.0.6.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [smart-parallelize]: success
+[2024-04-14 22:42:56] INFO root fetch - processPackages [anycorn]: Remove: archive file [/home/abi/fetcher/tmp/anycorn-0.16.0.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [anycorn]: Remove: archive file [/home/abi/fetcher/tmp/anycorn-0.17.0.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [anycorn]: success
+[2024-04-14 22:42:56] INFO root fetch - processPackages [fastbots]: Remove: archive file [/home/abi/fetcher/tmp/fastbots-0.2.6.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [fastbots]: Remove: archive file [/home/abi/fetcher/tmp/fastbots-0.2.7.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [fastbots]: success
+[2024-04-14 22:42:56] INFO root fetch - processPackages [ngclearn]: Remove: archive file [/home/abi/fetcher/tmp/ngclearn-1.0b2.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - processPackages [ngclearn]: Remove: archive file [/home/abi/fetcher/tmp/ngclearn-1.0b3.tar.gz]
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [ngclearn]: success
+[2024-04-14 22:42:56] INFO root fetch - main [MainThread]: Store serial: [22762361]
