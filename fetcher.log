@@ -6239,3 +6239,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:28:52] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-14 11:28:52] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-14 11:28:52] INFO root fetch - main [MainThread]: Store serial: [22757622]
+[2024-04-14 11:30:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757622]
+[2024-04-14 11:31:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 11:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prerun
+[2024-04-14 11:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: HawaData
+[2024-04-14 11:31:03] INFO root fetch - processPackages [prerun]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 11:31:03] INFO root fetch - processPackages [HawaData]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-14 11:31:03] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/74/07/f7c9d146559489f81d0c74e55053667ccfb2807cdcb48260c511099132ac/prerun-0.1.1.tar.gz
+[2024-04-14 11:31:03] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/54/62/07ba491a009c60ed1a2e13076e2b276380ab024ad1b0fe9239d79e73e30f/HawaData-0.9.2.tar.gz
+[2024-04-14 11:31:04] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/0c/bb/6a65f4f18c4a292638fb0563c7f2387b482f81443d254ca8f9b09539e8bb/prerun-0.1.2.tar.gz
+[2024-04-14 11:31:04] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/95/58/2cdac667a1836addfd4afed0a282ba9b734f08f76df287b35dcfa0d5e79e/HawaData-0.9.3.tar.gz
+[2024-04-14 11:31:04] INFO root fetch - processPackages [prerun]: executing diffoscope
+[2024-04-14 11:31:04] INFO root fetch - processPackages [prerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerun-0.1.1.tar.gz tmp/prerun-0.1.2.tar.gz --markdown 20240414/p/prerun/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 11:31:04] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2024-04-14 11:31:04] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.9.2.tar.gz tmp/HawaData-0.9.3.tar.gz --markdown 20240414/H/HawaData/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-14 11:31:04] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.1.tar.gz]
+[2024-04-14 11:31:04] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.2.tar.gz]
+[2024-04-14 11:31:04] INFO root fetch - main [MainThread]: End processing [prerun]: success
+[2024-04-14 11:31:04] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.2.tar.gz]
+[2024-04-14 11:31:04] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.3.tar.gz]
+[2024-04-14 11:31:04] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2024-04-14 11:31:04] INFO root fetch - main [MainThread]: Store serial: [22757628]
