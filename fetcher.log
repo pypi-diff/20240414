@@ -4469,3 +4469,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:00:23] INFO root fetch - processPackages [vtool-ibeis]: Remove: archive file [/home/abi/fetcher/tmp/vtool_ibeis-2.3.0.tar.gz]
 [2024-04-14 08:00:23] INFO root fetch - main [MainThread]: End processing [vtool-ibeis]: success
 [2024-04-14 08:00:23] INFO root fetch - main [MainThread]: Store serial: [22756788]
+[2024-04-14 08:02:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756788]
+[2024-04-14 08:02:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 08:04:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756789]
+[2024-04-14 08:04:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 08:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756789]
+[2024-04-14 08:06:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 08:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: YAPCP
+[2024-04-14 08:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: surrealist
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: Downloading https://files.pythonhosted.org/packages/c6/5b/22a8e5ea833c0abe2c8e572d90e4de5b0c87ad173e84b6e83bad9738f15b/YAPCP-0.0.0.3-py3-none-any.whl
+[2024-04-14 08:06:43] INFO root fetch - processPackages [surrealist]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: Downloading https://files.pythonhosted.org/packages/4d/e1/a7487ccee438e854ec3ab9f7ce3282d5abf78ac9d8a0f8dccc61064751b5/YAPCP-0.0.0.4-py3-none-any.whl
+[2024-04-14 08:06:43] INFO root fetch - processPackages [surrealist]: Downloading https://files.pythonhosted.org/packages/07/99/bab91e851e2c6d12886f58fee881a4aef079f2655c6fb9cfefd5b388a77e/surrealist-0.3.1.tar.gz
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: executing diffoscope
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YAPCP-0.0.0.3-py3-none-any.whl.zip tmp/YAPCP-0.0.0.4-py3-none-any.whl.zip --markdown 20240414/Y/YAPCP/0.0.0.3-0.0.0.4/README.md --exclude *.pyd
+[2024-04-14 08:06:43] INFO root fetch - processPackages [surrealist]: Downloading https://files.pythonhosted.org/packages/eb/49/9f2f05f98db5e1e00986f347549adfd5525ccf3b8f9f896ad3ffee46a720/surrealist-0.4.0.tar.gz
+[2024-04-14 08:06:43] INFO root fetch - processPackages [surrealist]: executing diffoscope
+[2024-04-14 08:06:43] INFO root fetch - processPackages [surrealist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surrealist-0.3.1.tar.gz tmp/surrealist-0.4.0.tar.gz --markdown 20240414/s/surrealist/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: Remove: archive file [/home/abi/fetcher/tmp/YAPCP-0.0.0.3-py3-none-any.whl.zip]
+[2024-04-14 08:06:43] INFO root fetch - processPackages [YAPCP]: Remove: archive file [/home/abi/fetcher/tmp/YAPCP-0.0.0.4-py3-none-any.whl.zip]
+[2024-04-14 08:06:43] INFO root fetch - main [MainThread]: End processing [YAPCP]: success
+[2024-04-14 08:06:44] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.3.1.tar.gz]
+[2024-04-14 08:06:44] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.4.0.tar.gz]
+[2024-04-14 08:06:44] INFO root fetch - main [MainThread]: End processing [surrealist]: success
+[2024-04-14 08:06:44] INFO root fetch - main [MainThread]: Store serial: [22756795]
