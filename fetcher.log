@@ -8977,3 +8977,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:44:48] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
 [2024-04-14 14:44:48] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
 [2024-04-14 14:44:48] INFO root fetch - main [MainThread]: Store serial: [22758946]
+[2024-04-14 14:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758946]
+[2024-04-14 14:47:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stigg-api-client-v2
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qlever
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pan-ztp-patcher
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alana
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: botasaurus2
+[2024-04-14 14:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: radicalpy
+[2024-04-14 14:47:04] INFO root fetch - processPackages [alana]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 14:47:04] INFO root fetch - processPackages [botasaurus2]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-14 14:47:04] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-14 14:47:04] INFO root fetch - processPackages [qlever]: New version: [0.5.0] Old Version: [0.4.4]
+[2024-04-14 14:47:04] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/d2/4a/60107dd12a2d5f4fce3fa4bbae2c2dda3ea321e310524ae42b7ba412123d/alana-0.0.2.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [radicalpy]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-14 14:47:04] WARNING root fetch - processPackages [pan-ztp-patcher]: Skipping, unable to determine old version
+[2024-04-14 14:47:04] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher] error
+[2024-04-14 14:47:04] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/3b/34/164446d567cbc6b33e209199f506da479f2ac1719e50f188fc35dc6de9a6/botasaurus2-1.2.1.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [qlever]: Downloading https://files.pythonhosted.org/packages/cf/64/3aba35fe10a0d23d503b667d6f49e3a190a749cc9a950b72b17984ba4271/qlever-0.4.4-py3-none-any.whl
+[2024-04-14 14:47:04] INFO root fetch - processPackages [radicalpy]: Downloading https://files.pythonhosted.org/packages/1c/12/bd1c10187177830c92042a300eec0fa167d999ed4a2614d4b799930f4464/radicalpy-0.6.5.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/1f/ba/7d4489448e96d2b338cb72cb869fc343f25b3fd76ff2c7d14d7a2e45f12b/botasaurus2-1.3.0.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/13/45/d08af142b1ced88bbe710afc4e8adf91e1373c23c692b55778a0440e441c/alana-0.0.3.tar.gz
+[2024-04-14 14:47:04] INFO root fetch - processPackages [botasaurus2]: executing diffoscope
+[2024-04-14 14:47:04] INFO root fetch - processPackages [botasaurus2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus2-1.2.1.tar.gz tmp/botasaurus2-1.3.0.tar.gz --markdown 20240414/b/botasaurus2/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-14 14:47:04] INFO root fetch - processPackages [alana]: executing diffoscope
+[2024-04-14 14:47:04] INFO root fetch - processPackages [alana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alana-0.0.2.tar.gz tmp/alana-0.0.3.tar.gz --markdown 20240414/a/alana/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 14:47:04] INFO root fetch - processPackages [qlever]: Downloading https://files.pythonhosted.org/packages/e4/7a/37b00a0bd824ca01ae9b4dc15aca300c8cf765bd1ff58cdeb60048e5cdd9/qlever-0.5.0-py3-none-any.whl
+[2024-04-14 14:47:04] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-04-14 14:47:04] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240414/s/stigg-api-client-v2/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-04-14 14:47:05] INFO root fetch - processPackages [radicalpy]: Downloading https://files.pythonhosted.org/packages/69/8d/85d3a82aa595ab034b43425f42f0b84418bd057eb8e584fd67dbd8dec071/radicalpy-0.7.0.tar.gz
+[2024-04-14 14:47:05] INFO root fetch - processPackages [qlever]: executing diffoscope
+[2024-04-14 14:47:05] INFO root fetch - processPackages [qlever]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlever-0.4.4-py3-none-any.whl.zip tmp/qlever-0.5.0-py3-none-any.whl.zip --markdown 20240414/q/qlever/0.4.4-0.5.0/README.md --exclude *.pyd
+[2024-04-14 14:47:05] INFO root fetch - processPackages [radicalpy]: executing diffoscope
+[2024-04-14 14:47:05] INFO root fetch - processPackages [radicalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radicalpy-0.6.5.tar.gz tmp/radicalpy-0.7.0.tar.gz --markdown 20240414/r/radicalpy/0.6.5-0.7.0/README.md --exclude *.pyd
+[2024-04-14 14:47:05] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.2.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.3.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - main [MainThread]: End processing [alana]: success
+[2024-04-14 14:47:05] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.2.1.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.3.0.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - main [MainThread]: End processing [botasaurus2]: success
+[2024-04-14 14:47:05] INFO root fetch - processPackages [radicalpy]: Remove: archive file [/home/abi/fetcher/tmp/radicalpy-0.6.5.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - processPackages [radicalpy]: Remove: archive file [/home/abi/fetcher/tmp/radicalpy-0.7.0.tar.gz]
+[2024-04-14 14:47:05] INFO root fetch - main [MainThread]: End processing [radicalpy]: success
+[2024-04-14 14:47:05] INFO root fetch - processPackages [qlever]: Remove: archive file [/home/abi/fetcher/tmp/qlever-0.4.4-py3-none-any.whl.zip]
+[2024-04-14 14:47:05] INFO root fetch - processPackages [qlever]: Remove: archive file [/home/abi/fetcher/tmp/qlever-0.5.0-py3-none-any.whl.zip]
+[2024-04-14 14:47:05] INFO root fetch - main [MainThread]: End processing [qlever]: success
+[2024-04-14 14:47:06] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-04-14 14:47:06] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-04-14 14:47:06] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-04-14 14:47:06] INFO root fetch - main [MainThread]: Store serial: [22758968]
