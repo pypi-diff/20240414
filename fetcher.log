@@ -12139,3 +12139,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:32:33] INFO root fetch - processPackages [transfa]: Remove: archive file [/home/abi/fetcher/tmp/transfa-0.2.5.tar.gz]
 [2024-04-14 18:32:33] INFO root fetch - main [MainThread]: End processing [transfa]: success
 [2024-04-14 18:32:33] INFO root fetch - main [MainThread]: Store serial: [22760532]
+[2024-04-14 18:34:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760532]
+[2024-04-14 18:34:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 18:34:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypeline-runner
+[2024-04-14 18:34:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynonymizer
+[2024-04-14 18:34:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: s360tools
+[2024-04-14 18:34:42] INFO root fetch - processPackages [s360tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 18:34:42] INFO root fetch - processPackages [s360tools]: Downloading https://files.pythonhosted.org/packages/0d/7c/8be870f97f0339b8f2e7ace8fe106cac54ed02414402cee2c0b6a6752439/s360tools-0.1.8.tar.gz
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pypeline-runner]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pynonymizer]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pypeline-runner]: Downloading https://files.pythonhosted.org/packages/31/fc/b2654f8481578f0b20a3c8f37d6dfc4bf13f7770b5d4e6e9735ed4bd9003/pypeline_runner-0.1.1.tar.gz
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pynonymizer]: Downloading https://files.pythonhosted.org/packages/d8/6c/61e9ce5ec1032edab67b443ae708b02a5e07eeb859795f3be1cefea2901a/pynonymizer-2.1.1.tar.gz
+[2024-04-14 18:34:42] INFO root fetch - processPackages [s360tools]: Downloading https://files.pythonhosted.org/packages/36/a7/b8ffea09fda00e3b858dd7c2d542c99922c6acee6cc2ab85d52ee832f477/s360tools-0.1.9.tar.gz
+[2024-04-14 18:34:42] INFO root fetch - processPackages [s360tools]: executing diffoscope
+[2024-04-14 18:34:42] INFO root fetch - processPackages [s360tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s360tools-0.1.8.tar.gz tmp/s360tools-0.1.9.tar.gz --markdown 20240414/s/s360tools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pypeline-runner]: Downloading https://files.pythonhosted.org/packages/c5/d7/f2268ed30b3e40a9111dfa152a024a7a072b476fd55bc75c89efa9385add/pypeline_runner-0.2.0.tar.gz
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pypeline-runner]: executing diffoscope
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pypeline-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypeline_runner-0.1.1.tar.gz tmp/pypeline_runner-0.2.0.tar.gz --markdown 20240414/p/pypeline-runner/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-14 18:34:42] INFO root fetch - processPackages [pynonymizer]: Downloading https://files.pythonhosted.org/packages/92/0b/2241817bd19d32d94abe9e9df245e017dc551a4a50558f0e456498ed8f18/pynonymizer-2.2.0.tar.gz
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pynonymizer]: executing diffoscope
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pynonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynonymizer-2.1.1.tar.gz tmp/pynonymizer-2.2.0.tar.gz --markdown 20240414/p/pynonymizer/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-04-14 18:34:43] INFO root fetch - processPackages [s360tools]: Remove: archive file [/home/abi/fetcher/tmp/s360tools-0.1.8.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - processPackages [s360tools]: Remove: archive file [/home/abi/fetcher/tmp/s360tools-0.1.9.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - main [MainThread]: End processing [s360tools]: success
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pypeline-runner]: Remove: archive file [/home/abi/fetcher/tmp/pypeline_runner-0.1.1.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pypeline-runner]: Remove: archive file [/home/abi/fetcher/tmp/pypeline_runner-0.2.0.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - main [MainThread]: End processing [pypeline-runner]: success
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pynonymizer]: Remove: archive file [/home/abi/fetcher/tmp/pynonymizer-2.1.1.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - processPackages [pynonymizer]: Remove: archive file [/home/abi/fetcher/tmp/pynonymizer-2.2.0.tar.gz]
+[2024-04-14 18:34:43] INFO root fetch - main [MainThread]: End processing [pynonymizer]: success
+[2024-04-14 18:34:43] INFO root fetch - main [MainThread]: Store serial: [22760541]
