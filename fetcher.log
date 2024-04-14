@@ -11165,3 +11165,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:20:02] INFO root fetch - processPackages [image-registration]: Remove: archive file [/home/abi/fetcher/tmp/image_registration-0.2.9.tar.gz]
 [2024-04-14 17:20:02] INFO root fetch - main [MainThread]: End processing [image-registration]: success
 [2024-04-14 17:20:02] INFO root fetch - main [MainThread]: Store serial: [22760098]
+[2024-04-14 17:22:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760098]
+[2024-04-14 17:22:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 17:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palworld-pal-editor
+[2024-04-14 17:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrathon-payments
+[2024-04-14 17:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-env-parser-light
+[2024-04-14 17:22:11] WARNING root fetch - processPackages [scrathon-payments]: Skipping, unable to determine old version
+[2024-04-14 17:22:11] INFO root fetch - main [MainThread]: End processing [scrathon-payments] error
+[2024-04-14 17:22:11] WARNING root fetch - processPackages [py-env-parser-light]: Skipping, unable to determine old version
+[2024-04-14 17:22:11] INFO root fetch - main [MainThread]: End processing [py-env-parser-light] error
+[2024-04-14 17:22:11] INFO root fetch - processPackages [palworld-pal-editor]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-14 17:22:11] INFO root fetch - processPackages [palworld-pal-editor]: Downloading https://files.pythonhosted.org/packages/65/1f/a933e53d7788380aca8b82e3b87e87f07467aee0ebdd414dec2d025c9408/palworld-pal-editor-0.6.0.tar.gz
+[2024-04-14 17:22:11] WARNING root fetch - processPackages [palworld-pal-editor]: Skipping package: exceeds size limit 20486358>=10485760
+[2024-04-14 17:22:11] INFO root fetch - main [MainThread]: End processing [palworld-pal-editor] error
+[2024-04-14 17:22:11] INFO root fetch - main [MainThread]: Store serial: [22760109]
