@@ -1489,3 +1489,90 @@
 [2024-04-14 02:22:07] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
 [2024-04-14 02:22:07] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
 [2024-04-14 02:22:07] INFO root fetch - main [MainThread]: Store serial: [22755733]
+[2024-04-14 02:24:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755733]
+[2024-04-14 02:24:16] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightning-thunder
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lightning
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchao-nightly
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Geode-Common
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onebag
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: acmebot
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdklabs.cdk-ethereum-node
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyiaacsync
+[2024-04-14 02:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-aurora-globaldatabase
+[2024-04-14 02:24:16] WARNING root fetch - processPackages [onebag]: Skipping, unable to determine old version
+[2024-04-14 02:24:16] INFO root fetch - main [MainThread]: End processing [onebag] error
+[2024-04-14 02:24:16] INFO root fetch - processPackages [acmebot]: New version: [2.9.0] Old Version: [2.8.7]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [pyiaacsync]: New version: [0.8] Old Version: [0.7]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [lightning-thunder]: New version: [0.2.0.dev20240414] Old Version: [0.2.0.dev20240407]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [Geode-Common]: New version: [31.0.7rc1] Old Version: [31.0.7]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [lightning]: New version: [2.3.0.dev20240414] Old Version: [2.3.0.dev20240407]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-14 02:24:16] INFO root fetch - processPackages [acmebot]: Downloading https://files.pythonhosted.org/packages/5b/6b/335782d332cb4c2453adf052ceb657d3fc6b064e2ff56c9e99cd8aed45af/acmebot-2.8.7.tar.gz
+[2024-04-14 02:24:16] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/e4/81/16eb2cf0745840dbd69dce50279c24b83df9db86f27889a8245654ea1c25/lightning-thunder-0.2.0.dev20240407.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/1e/6c/60ee47aa230f132d7981bbf0e15b12169cd9064308a765f3eb68b2c46b02/lightning-2.3.0.dev20240407.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/37/16/121ea86bcbf832b2b2cb9f88d831026063877580af5705d94f95c6ac2858/Geode_Common-31.0.7-cp39-cp39-win_amd64.whl
+[2024-04-14 02:24:17] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/5f/75/fa2f35d39cfd048a42fe784f2a57da5743e7983bb669c3e4d8eb5aa83710/torchao-nightly-2024.4.8.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [pyiaacsync]: Downloading https://files.pythonhosted.org/packages/6e/2d/c62480554d7d7ee8bbdafdc2aac10eda3848b5ec7aecc68d50695fe168b4/pyiaacsync-0.7.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [acmebot]: Downloading https://files.pythonhosted.org/packages/62/9b/13b8f524181b0d30360ed0ab86a60fbb653370035561475d4a982b9af1fb/acmebot-2.9.0.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240414/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240414/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [acmebot]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [acmebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acmebot-2.8.7.tar.gz tmp/acmebot-2.9.0.tar.gz --markdown 20240414/a/acmebot/2.8.7-2.9.0/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [pyiaacsync]: Downloading https://files.pythonhosted.org/packages/81/30/36452183c18eb6308a3ca6556364ef4af67475c8c0259925ef09cc91d3d7/pyiaacsync-0.8.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240414/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/4b/d5/e0ae6447ebc2fc27b71391c55653c89c441bbe6a6a8a7b37aa28dc13014e/torchao-nightly-2024.4.9.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning-thunder]: Downloading https://files.pythonhosted.org/packages/14/3f/26a4cbd4fca3b05062211d65f0f47fcb5950f680cf4983143c0510da27f0/lightning_thunder-0.2.0.dev20240414.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning]: Downloading https://files.pythonhosted.org/packages/7e/6b/9536c1d312e80f128d5707b1a4c3faf7f92b4de61a876661134f7d4e510e/lightning-2.3.0.dev20240414.tar.gz
+[2024-04-14 02:24:17] INFO root fetch - processPackages [pyiaacsync]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [pyiaacsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiaacsync-0.7.tar.gz tmp/pyiaacsync-0.8.tar.gz --markdown 20240414/p/pyiaacsync/0.7-0.8/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao-nightly-2024.4.8.tar.gz tmp/torchao-nightly-2024.4.9.tar.gz --markdown 20240414/t/torchao-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning-thunder]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning-thunder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-thunder-0.2.0.dev20240407.tar.gz tmp/lightning_thunder-0.2.0.dev20240414.tar.gz --markdown 20240414/l/lightning-thunder/0.2.0.dev20240407-0.2.0.dev20240414/README.md --exclude *.pyd
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2024-04-14 02:24:17] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2.3.0.dev20240407.tar.gz tmp/lightning-2.3.0.dev20240414.tar.gz --markdown 20240414/l/lightning/2.3.0.dev20240407-2.3.0.dev20240414/README.md --exclude *.pyd
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-04-14 02:24:18] INFO root fetch - processPackages [pyiaacsync]: Remove: archive file [/home/abi/fetcher/tmp/pyiaacsync-0.7.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [pyiaacsync]: Remove: archive file [/home/abi/fetcher/tmp/pyiaacsync-0.8.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [pyiaacsync]: success
+[2024-04-14 02:24:18] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.8.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.9.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-04-14 02:24:18] INFO root fetch - processPackages [acmebot]: Remove: archive file [/home/abi/fetcher/tmp/acmebot-2.8.7.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - processPackages [acmebot]: Remove: archive file [/home/abi/fetcher/tmp/acmebot-2.9.0.tar.gz]
+[2024-04-14 02:24:18] INFO root fetch - main [MainThread]: End processing [acmebot]: success
+[2024-04-14 02:24:19] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning-thunder-0.2.0.dev20240407.tar.gz]
+[2024-04-14 02:24:19] INFO root fetch - processPackages [lightning-thunder]: Remove: archive file [/home/abi/fetcher/tmp/lightning_thunder-0.2.0.dev20240414.tar.gz]
+[2024-04-14 02:24:19] INFO root fetch - main [MainThread]: End processing [lightning-thunder]: success
+[2024-04-14 02:24:20] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/5b/29/7816c87ef38f87fe2544d0ef6b04bb51e621f3929443f7773523253a9f0d/Geode_Common-31.0.7rc1-cp39-cp39-win_amd64.whl
+[2024-04-14 02:24:20] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2024-04-14 02:24:20] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-31.0.7-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-31.0.7rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240414/G/Geode-Common/31.0.7-31.0.7rc1/README.md --exclude *.pyd
+[2024-04-14 02:24:20] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240407.tar.gz]
+[2024-04-14 02:24:20] INFO root fetch - processPackages [lightning]: Remove: archive file [/home/abi/fetcher/tmp/lightning-2.3.0.dev20240414.tar.gz]
+[2024-04-14 02:24:20] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2024-04-14 02:24:35] INFO root fetch - processPackages [Geode-Common]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Common-31.0.7-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 02:24:35] INFO root fetch - processPackages [Geode-Common]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Common-31.0.7rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 02:24:35] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2024-04-14 02:24:35] INFO root fetch - main [MainThread]: Store serial: [22755764]
