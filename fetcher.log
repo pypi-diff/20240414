@@ -13313,3 +13313,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:13:31] INFO root fetch - processPackages [dash-bootstrap-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_bootstrap_components-1.6.0rc1.tar.gz]
 [2024-04-14 20:13:31] INFO root fetch - main [MainThread]: End processing [dash-bootstrap-components]: success
 [2024-04-14 20:13:31] INFO root fetch - main [MainThread]: Store serial: [22761060]
+[2024-04-14 20:15:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761060]
+[2024-04-14 20:15:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 20:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typed-stream
+[2024-04-14 20:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretix-plugin-extended-api
+[2024-04-14 20:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-pkg-logging
+[2024-04-14 20:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chamco-ragbot
+[2024-04-14 20:15:40] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 20:15:40] INFO root fetch - processPackages [pretix-plugin-extended-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 20:15:40] INFO root fetch - processPackages [py-pkg-logging]: New version: [0.0.1rc0] Old Version: [0.0.0]
+[2024-04-14 20:15:40] INFO root fetch - processPackages [typed-stream]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-14 20:15:40] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/5b/28/9774e0fcde5793b90bc622b4e075ed28aef15981c125b65d86c1649737b7/chamco_ragbot-0.1.0.tar.gz
+[2024-04-14 20:15:40] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/3e/e9/e84630b11ef5b63318cdad9489b7e9e552e96a24a74b33088578d78265b2/pretix-plugin-extended-api-0.1.8.tar.gz
+[2024-04-14 20:15:40] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/10/f3/9ca887bf05fe3aa24b638a70a59a310bd2e51bcc51db98fcce7555184246/typed_stream-0.8.1.tar.gz
+[2024-04-14 20:15:40] INFO root fetch - processPackages [py-pkg-logging]: Downloading https://files.pythonhosted.org/packages/81/1d/a28a4f68eec48958c66162478ed6c1d3fc13a87cae690ef0d0444a4621ae/py_pkg_logging-0.0.0.tar.gz
+[2024-04-14 20:15:41] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/e0/a4/6008bdf40cef12ba1c2aea1c07be566433e0305bd35e1096bf4d130cdf88/chamco_ragbot-0.1.1.tar.gz
+[2024-04-14 20:15:41] INFO root fetch - processPackages [py-pkg-logging]: Downloading https://files.pythonhosted.org/packages/c3/ba/ecc331d7926457dc6d1dceb6e12a1db9b4a991acd546e789fb967e94a601/py_pkg_logging-0.0.1rc0.tar.gz
+[2024-04-14 20:15:41] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/bb/24/f83cc57bb674412ca23bf059d7fda90ee02a53f9e08c6abc49d9a6b56408/typed_stream-0.8.2.tar.gz
+[2024-04-14 20:15:41] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/ee/8b/5705e30accefcdd2976224b50ee91ad1d664bed6f4ffc3a79c64f1ed2763/pretix-plugin-extended-api-0.1.9.tar.gz
+[2024-04-14 20:15:41] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-14 20:15:41] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.0.tar.gz tmp/chamco_ragbot-0.1.1.tar.gz --markdown 20240414/c/chamco-ragbot/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 20:15:41] INFO root fetch - processPackages [py-pkg-logging]: executing diffoscope
+[2024-04-14 20:15:41] INFO root fetch - processPackages [py-pkg-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_pkg_logging-0.0.0.tar.gz tmp/py_pkg_logging-0.0.1rc0.tar.gz --markdown 20240414/p/py-pkg-logging/0.0.0-0.0.1rc0/README.md --exclude *.pyd
+[2024-04-14 20:15:41] INFO root fetch - processPackages [typed-stream]: executing diffoscope
+[2024-04-14 20:15:41] INFO root fetch - processPackages [typed-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed_stream-0.8.1.tar.gz tmp/typed_stream-0.8.2.tar.gz --markdown 20240414/t/typed-stream/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-14 20:15:41] INFO root fetch - processPackages [pretix-plugin-extended-api]: executing diffoscope
+[2024-04-14 20:15:41] INFO root fetch - processPackages [pretix-plugin-extended-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-plugin-extended-api-0.1.8.tar.gz tmp/pretix-plugin-extended-api-0.1.9.tar.gz --markdown 20240414/p/pretix-plugin-extended-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 20:15:41] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.0.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.1.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-14 20:15:41] INFO root fetch - processPackages [py-pkg-logging]: Remove: archive file [/home/abi/fetcher/tmp/py_pkg_logging-0.0.0.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - processPackages [py-pkg-logging]: Remove: archive file [/home/abi/fetcher/tmp/py_pkg_logging-0.0.1rc0.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - main [MainThread]: End processing [py-pkg-logging]: success
+[2024-04-14 20:15:41] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.1.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.2.tar.gz]
+[2024-04-14 20:15:41] INFO root fetch - main [MainThread]: End processing [typed-stream]: success
+[2024-04-14 20:15:42] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.8.tar.gz]
+[2024-04-14 20:15:42] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.9.tar.gz]
+[2024-04-14 20:15:42] INFO root fetch - main [MainThread]: End processing [pretix-plugin-extended-api]: success
+[2024-04-14 20:15:42] INFO root fetch - main [MainThread]: Store serial: [22761071]
