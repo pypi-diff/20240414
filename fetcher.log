@@ -3129,3 +3129,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:17:34] INFO root fetch - processPackages [crunch-cli]: Remove: archive file [/home/abi/fetcher/tmp/crunch_cli-3.8.0.tar.gz]
 [2024-04-14 05:17:34] INFO root fetch - main [MainThread]: End processing [crunch-cli]: success
 [2024-04-14 05:17:34] INFO root fetch - main [MainThread]: Store serial: [22756322]
+[2024-04-14 05:19:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756322]
+[2024-04-14 05:19:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 05:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hmx-v2-python
+[2024-04-14 05:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: econdata
+[2024-04-14 05:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a2y-inst
+[2024-04-14 05:19:43] INFO root fetch - processPackages [hmx-v2-python]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 05:19:43] INFO root fetch - processPackages [a2y-inst]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-14 05:19:43] INFO root fetch - processPackages [econdata]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-04-14 05:19:43] INFO root fetch - processPackages [econdata]: Downloading https://files.pythonhosted.org/packages/4c/e4/aaebfd0bf16dd5b15201e40b4b49bf5031e7849fa7234c5a2fc46b46cbbe/econdata-1.0.7.tar.gz
+[2024-04-14 05:19:43] INFO root fetch - processPackages [hmx-v2-python]: Downloading https://files.pythonhosted.org/packages/01/9a/2ac0da948c204b584bd647ea25a2cc1ef5035533e79857ef7b83c81005d7/hmx-v2-python-1.0.1.tar.gz
+[2024-04-14 05:19:43] INFO root fetch - processPackages [a2y-inst]: Downloading https://files.pythonhosted.org/packages/3f/c0/06ab1cd75b2045d252f6b8ad2e4881a5f7a61f38bb268ce42a58f3c334e4/a2y_inst-1.3.0-py3-none-any.whl
+[2024-04-14 05:19:44] INFO root fetch - processPackages [hmx-v2-python]: Downloading https://files.pythonhosted.org/packages/49/02/9a01834883f16cce1617b21fec74ceec73ace1a3ab66c74f5e23fa151df2/hmx-v2-python-1.0.2.tar.gz
+[2024-04-14 05:19:44] INFO root fetch - processPackages [econdata]: Downloading https://files.pythonhosted.org/packages/45/3c/6a8f893c13b07d364939412873e538b2615262b09b0977605372298e3086/econdata-1.0.9.tar.gz
+[2024-04-14 05:19:44] INFO root fetch - processPackages [a2y-inst]: Downloading https://files.pythonhosted.org/packages/86/a4/829a640ba41be534f368bda022f23d594042b19d7d2747a93ee72a8c1399/a2y_inst-1.3.1-py3-none-any.whl
+[2024-04-14 05:19:44] INFO root fetch - processPackages [hmx-v2-python]: executing diffoscope
+[2024-04-14 05:19:44] INFO root fetch - processPackages [hmx-v2-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmx-v2-python-1.0.1.tar.gz tmp/hmx-v2-python-1.0.2.tar.gz --markdown 20240414/h/hmx-v2-python/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 05:19:44] INFO root fetch - processPackages [econdata]: executing diffoscope
+[2024-04-14 05:19:44] INFO root fetch - processPackages [econdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econdata-1.0.7.tar.gz tmp/econdata-1.0.9.tar.gz --markdown 20240414/e/econdata/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-04-14 05:19:44] INFO root fetch - processPackages [a2y-inst]: executing diffoscope
+[2024-04-14 05:19:44] INFO root fetch - processPackages [a2y-inst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a2y_inst-1.3.0-py3-none-any.whl.zip tmp/a2y_inst-1.3.1-py3-none-any.whl.zip --markdown 20240414/a/a2y-inst/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-14 05:19:44] INFO root fetch - processPackages [hmx-v2-python]: Remove: archive file [/home/abi/fetcher/tmp/hmx-v2-python-1.0.1.tar.gz]
+[2024-04-14 05:19:44] INFO root fetch - processPackages [hmx-v2-python]: Remove: archive file [/home/abi/fetcher/tmp/hmx-v2-python-1.0.2.tar.gz]
+[2024-04-14 05:19:44] INFO root fetch - main [MainThread]: End processing [hmx-v2-python]: success
+[2024-04-14 05:19:45] INFO root fetch - processPackages [a2y-inst]: Remove: archive file [/home/abi/fetcher/tmp/a2y_inst-1.3.0-py3-none-any.whl.zip]
+[2024-04-14 05:19:45] INFO root fetch - processPackages [a2y-inst]: Remove: archive file [/home/abi/fetcher/tmp/a2y_inst-1.3.1-py3-none-any.whl.zip]
+[2024-04-14 05:19:45] INFO root fetch - main [MainThread]: End processing [a2y-inst]: success
+[2024-04-14 05:19:45] INFO root fetch - processPackages [econdata]: Remove: archive file [/home/abi/fetcher/tmp/econdata-1.0.7.tar.gz]
+[2024-04-14 05:19:45] INFO root fetch - processPackages [econdata]: Remove: archive file [/home/abi/fetcher/tmp/econdata-1.0.9.tar.gz]
+[2024-04-14 05:19:45] INFO root fetch - main [MainThread]: End processing [econdata]: success
+[2024-04-14 05:19:45] INFO root fetch - main [MainThread]: Store serial: [22756329]
