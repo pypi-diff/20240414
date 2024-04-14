@@ -1420,3 +1420,60 @@
 [2024-04-14 02:17:48] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240413.tar.gz]
 [2024-04-14 02:17:48] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2024-04-14 02:17:48] INFO root fetch - main [MainThread]: Store serial: [22755711]
+[2024-04-14 02:19:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755711]
+[2024-04-14 02:19:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-flux
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-common
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eins
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-events-notify
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mesmerize-core
+[2024-04-14 02:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autopipeline
+[2024-04-14 02:19:56] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.97] Old Version: [2.2.96]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [mesmerize-core]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [python-flux]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [eins]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 02:19:56] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-14 02:19:56] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/00/ac/76f098b51f2ba24d10a233845787787293ff52b39dd95099cf3a0a3de14c/cdk-events-notify-2.2.96.tar.gz
+[2024-04-14 02:19:56] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/41/0c/a30d9fc0e8290358f3c35e92a3cc2b5169eee65f57566ec14975fab275a9/python_flux-0.9.0.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [eins]: Downloading https://files.pythonhosted.org/packages/09/39/05070c69ccbbdbadbdc0bc297bae2a43eb43da8e49914c13dbac6ca35bd3/eins-0.0.1.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [mesmerize-core]: Downloading https://files.pythonhosted.org/packages/6e/f5/485e798db85bd76909f1bfb3abe7d3390482adbb0778f74b3ab9774d70c1/mesmerize-core-0.3.0.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/1d/1f/64cd64b1d993b6532e232b33fc500b99a5ea8f77b68a4e6687b6c31d1907/cdk-events-notify-2.2.97.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/5d/b2/15655a2ad1cf680a32b80bbc5502c882ac98768b9d19ed31a768ed3f11b7/python_flux-1.0.0.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [eins]: Downloading https://files.pythonhosted.org/packages/37/31/66224681e8641e89b6b5a5eda76dc8fe0b3d31e4aab333cb77a0b13b95c9/eins-0.1.0.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [mesmerize-core]: Downloading https://files.pythonhosted.org/packages/96/33/137e66ee182fa72feab2da39776f89cd3ed37b00cfedac3359772093f4e3/mesmerize_core-0.4.0.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.96.tar.gz tmp/cdk-events-notify-2.2.97.tar.gz --markdown 20240414/c/cdk-events-notify/2.2.96-2.2.97/README.md --exclude *.pyd
+[2024-04-14 02:19:57] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 02:19:57] INFO root fetch - processPackages [python-flux]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [python-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_flux-0.9.0.tar.gz tmp/python_flux-1.0.0.tar.gz --markdown 20240414/p/python-flux/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-04-14 02:19:57] INFO root fetch - processPackages [mesmerize-core]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [mesmerize-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesmerize-core-0.3.0.tar.gz tmp/mesmerize_core-0.4.0.tar.gz --markdown 20240414/m/mesmerize-core/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-14 02:19:57] INFO root fetch - processPackages [eins]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [eins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eins-0.0.1.tar.gz tmp/eins-0.1.0.tar.gz --markdown 20240414/e/eins/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-14 02:19:57] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-14 02:19:57] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240414/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-14 02:19:58] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-0.9.0.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.0.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [python-flux]: success
+[2024-04-14 02:19:58] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.96.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.97.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-14 02:19:58] INFO root fetch - processPackages [mesmerize-core]: Remove: archive file [/home/abi/fetcher/tmp/mesmerize-core-0.3.0.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [mesmerize-core]: Remove: archive file [/home/abi/fetcher/tmp/mesmerize_core-0.4.0.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [mesmerize-core]: success
+[2024-04-14 02:19:58] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 02:19:58] INFO root fetch - processPackages [eins]: Remove: archive file [/home/abi/fetcher/tmp/eins-0.0.1.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [eins]: Remove: archive file [/home/abi/fetcher/tmp/eins-0.1.0.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [eins]: success
+[2024-04-14 02:19:58] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-14 02:19:58] INFO root fetch - main [MainThread]: Store serial: [22755730]
