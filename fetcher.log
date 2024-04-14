@@ -8344,3 +8344,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:56:46] INFO root fetch - processPackages [fireblocks-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fireblocks_sdk-2.8.0.tar.gz]
 [2024-04-14 13:56:46] INFO root fetch - main [MainThread]: End processing [fireblocks-sdk]: success
 [2024-04-14 13:56:46] INFO root fetch - main [MainThread]: Store serial: [22758729]
+[2024-04-14 13:58:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758729]
+[2024-04-14 13:59:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 13:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtutils
+[2024-04-14 13:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-interests
+[2024-04-14 13:59:02] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 13:59:02] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 13:59:02] INFO root fetch - processPackages [tendril-interests]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-14 13:59:02] INFO root fetch - processPackages [tendril-interests]: Downloading https://files.pythonhosted.org/packages/10/73/ef081d97eacdc30d34fb75d70945f0f566fe4310c346869762e9849149f4/tendril-interests-0.5.6.tar.gz
+[2024-04-14 13:59:02] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 13:59:02] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 13:59:02] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 13:59:02] INFO root fetch - processPackages [tendril-interests]: Downloading https://files.pythonhosted.org/packages/80/32/88dc62089677861bbf8b7602adb2189769a42f1f984c2d930048892e9d06/tendril_interests-0.5.7.tar.gz
+[2024-04-14 13:59:02] INFO root fetch - processPackages [tendril-interests]: executing diffoscope
+[2024-04-14 13:59:02] INFO root fetch - processPackages [tendril-interests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-interests-0.5.6.tar.gz tmp/tendril_interests-0.5.7.tar.gz --markdown 20240414/t/tendril-interests/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-14 13:59:03] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 13:59:03] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 13:59:03] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 13:59:03] INFO root fetch - processPackages [tendril-interests]: Remove: archive file [/home/abi/fetcher/tmp/tendril-interests-0.5.6.tar.gz]
+[2024-04-14 13:59:03] INFO root fetch - processPackages [tendril-interests]: Remove: archive file [/home/abi/fetcher/tmp/tendril_interests-0.5.7.tar.gz]
+[2024-04-14 13:59:03] INFO root fetch - main [MainThread]: End processing [tendril-interests]: success
+[2024-04-14 13:59:03] INFO root fetch - main [MainThread]: Store serial: [22758734]
