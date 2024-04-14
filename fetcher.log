@@ -7203,3 +7203,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:33:25] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
 [2024-04-14 12:33:25] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
 [2024-04-14 12:33:25] INFO root fetch - main [MainThread]: Store serial: [22758105]
+[2024-04-14 12:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758105]
+[2024-04-14 12:35:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 12:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-htmx-view
+[2024-04-14 12:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asgebsmanager
+[2024-04-14 12:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtutils
+[2024-04-14 12:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mpi4py
+[2024-04-14 12:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: backpipe
+[2024-04-14 12:35:40] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 12:35:40] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 12:35:40] INFO root fetch - processPackages [backpipe]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-14 12:35:40] INFO root fetch - processPackages [asgebsmanager]: New version: [0.7] Old Version: [0.6]
+[2024-04-14 12:35:40] INFO root fetch - processPackages [django-htmx-view]: New version: [0.1.1] Old Version: [0.0.3]
+[2024-04-14 12:35:40] INFO root fetch - processPackages [mpi4py]: New version: [3.1.6] Old Version: [3.1.5]
+[2024-04-14 12:35:40] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/73/83/c8bfcaed9be616eb457101212afc29a7e800a9d90c25832dce45c5e7e5a4/asgebsmanager-0.6.tar.gz
+[2024-04-14 12:35:40] INFO root fetch - processPackages [django-htmx-view]: Downloading https://files.pythonhosted.org/packages/01/02/ea1ef19c87a0aa929aea0b4da2298f69f56d2926c85823bcf833429b0f45/django_htmx_view-0.0.3.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/78/14/6900a7b1e10540b3d55edfed7c7ccefdf7020cc90a58ef75f2bcc1a1d2ff/backpipe-0.4.0.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [mpi4py]: Downloading https://files.pythonhosted.org/packages/2e/1a/1393e69df9cf7b04143a51776727dd048586781bca82543594ab439e2eb4/mpi4py-3.1.5.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 12:35:41] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 12:35:41] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/b1/36/ec3d84ca53c957f64803bfe158239e17b8da60a8d9306135e264f8ade15a/asgebsmanager-0.7.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [django-htmx-view]: Downloading https://files.pythonhosted.org/packages/c3/7e/d19c7e8efacc81195fea11abaf2e974eae534797e8379da736c0444916b3/django_htmx_view-0.1.1.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 12:35:41] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-0.6.tar.gz tmp/asgebsmanager-0.7.tar.gz --markdown 20240414/a/asgebsmanager/0.6-0.7/README.md --exclude *.pyd
+[2024-04-14 12:35:41] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/24/cb/f1dbe0e55349be063212d7a140a44c0a0fe5521b577a856414e28d55b4c3/backpipe-0.4.1.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [django-htmx-view]: executing diffoscope
+[2024-04-14 12:35:41] INFO root fetch - processPackages [django-htmx-view]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_htmx_view-0.0.3.tar.gz tmp/django_htmx_view-0.1.1.tar.gz --markdown 20240414/d/django-htmx-view/0.0.3-0.1.1/README.md --exclude *.pyd
+[2024-04-14 12:35:41] INFO root fetch - processPackages [mpi4py]: Downloading https://files.pythonhosted.org/packages/b3/17/1d146e0127b66f1945251f130afac430985d2f9d75a3c0330355f21d876a/mpi4py-3.1.6.tar.gz
+[2024-04-14 12:35:41] INFO root fetch - processPackages [backpipe]: executing diffoscope
+[2024-04-14 12:35:41] INFO root fetch - processPackages [backpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backpipe-0.4.0.tar.gz tmp/backpipe-0.4.1.tar.gz --markdown 20240414/b/backpipe/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-14 12:35:41] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 12:35:41] INFO root fetch - processPackages [mpi4py]: executing diffoscope
+[2024-04-14 12:35:41] INFO root fetch - processPackages [mpi4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpi4py-3.1.5.tar.gz tmp/mpi4py-3.1.6.tar.gz --markdown 20240414/m/mpi4py/3.1.5-3.1.6/README.md --exclude *.pyd
+[2024-04-14 12:35:41] INFO root fetch - processPackages [django-htmx-view]: Remove: archive file [/home/abi/fetcher/tmp/django_htmx_view-0.0.3.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - processPackages [django-htmx-view]: Remove: archive file [/home/abi/fetcher/tmp/django_htmx_view-0.1.1.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - main [MainThread]: End processing [django-htmx-view]: success
+[2024-04-14 12:35:41] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.6.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.7.tar.gz]
+[2024-04-14 12:35:41] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 12:35:42] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.4.0.tar.gz]
+[2024-04-14 12:35:42] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.4.1.tar.gz]
+[2024-04-14 12:35:42] INFO root fetch - main [MainThread]: End processing [backpipe]: success
+[2024-04-14 12:35:56] INFO root fetch - processPackages [mpi4py]: Remove: archive file [/home/abi/fetcher/tmp/mpi4py-3.1.5.tar.gz]
+[2024-04-14 12:35:56] INFO root fetch - processPackages [mpi4py]: Remove: archive file [/home/abi/fetcher/tmp/mpi4py-3.1.6.tar.gz]
+[2024-04-14 12:35:56] INFO root fetch - main [MainThread]: End processing [mpi4py]: success
+[2024-04-14 12:35:56] INFO root fetch - main [MainThread]: Store serial: [22758119]
