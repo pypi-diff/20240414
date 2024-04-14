@@ -9276,3 +9276,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:09:52] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
 [2024-04-14 15:09:52] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
 [2024-04-14 15:09:52] INFO root fetch - main [MainThread]: Store serial: [22759064]
+[2024-04-14 15:12:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759064]
+[2024-04-14 15:12:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geneticalgorithm2
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swibots
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazy-type-hint
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indipydriver
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jgtfx2console
+[2024-04-14 15:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jgtfxcon
+[2024-04-14 15:12:07] INFO root fetch - processPackages [lazy-type-hint]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [swibots]: New version: [1.4.9b0] Old Version: [1.4.9]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [geneticalgorithm2]: New version: [6.9.1] Old Version: [6.9.0]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [indipydriver]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-14 15:12:07] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/01/86/07fbe3c30176de3cef90d1ce172ad3aae6719009e19016cb738e347b7feb/lazy_type_hint-1.0.1.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/ab/ad/e9fb4e6104646710bdb7ad640c25bec37453f90d223979930a44f7c8f72e/swibots-1.4.9-py3-none-any.whl
+[2024-04-14 15:12:08] INFO root fetch - processPackages [geneticalgorithm2]: Downloading https://files.pythonhosted.org/packages/db/f4/1f37cc569b7f524931b2632afe79602189ec90a6d9d37b44e88a33908588/geneticalgorithm2-6.9.0.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/3e/7e/62930ed2617362ac0a64d812ca369022c6fd1fc934819f7bca33c50db12f/indipydriver-1.1.3.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/72/d5/85d2482c402c01fa38270b81f594fb6995018901411ffd115f6e75d2d70d/jgtfx2console-0.4.9.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [geneticalgorithm2]: Downloading https://files.pythonhosted.org/packages/30/31/e489fad29423884e0a10e57babfc5c6c0c81b59c22a415bbb9fa7fd7249b/geneticalgorithm2-6.9.1.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/1a/29/9d4e43dad7e195938372caf1ec2d82ce234bb157328ce98870071d36f923/swibots-1.4.9b0-py3-none-any.whl
+[2024-04-14 15:12:08] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/20/66/4b92adff72bc9358c520a450acfb8524002763e26fc2fcf74ec4b3407568/lazy_type_hint-2.0.0.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.8.tar.gz tmp/jgtfx2console-0.4.9.tar.gz --markdown 20240414/j/jgtfx2console/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 15:12:08] INFO root fetch - processPackages [geneticalgorithm2]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [geneticalgorithm2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geneticalgorithm2-6.9.0.tar.gz tmp/geneticalgorithm2-6.9.1.tar.gz --markdown 20240414/g/geneticalgorithm2/6.9.0-6.9.1/README.md --exclude *.pyd
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 15:12:08] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.4.9-py3-none-any.whl.zip tmp/swibots-1.4.9b0-py3-none-any.whl.zip --markdown 20240414/s/swibots/1.4.9-1.4.9b0/README.md --exclude *.pyd
+[2024-04-14 15:12:08] INFO root fetch - processPackages [lazy-type-hint]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [lazy-type-hint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazy_type_hint-1.0.1.tar.gz tmp/lazy_type_hint-2.0.0.tar.gz --markdown 20240414/l/lazy-type-hint/1.0.1-2.0.0/README.md --exclude *.pyd
+[2024-04-14 15:12:08] INFO root fetch - processPackages [indipydriver]: Downloading https://files.pythonhosted.org/packages/bf/c5/b06864156317f8d52861ecb149403ef06d4f15195f53fc7888b30a93cf30/indipydriver-1.1.4.tar.gz
+[2024-04-14 15:12:08] INFO root fetch - processPackages [indipydriver]: executing diffoscope
+[2024-04-14 15:12:08] INFO root fetch - processPackages [indipydriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipydriver-1.1.3.tar.gz tmp/indipydriver-1.1.4.tar.gz --markdown 20240414/i/indipydriver/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-14 15:12:09] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.9.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 15:12:09] INFO root fetch - processPackages [geneticalgorithm2]: Remove: archive file [/home/abi/fetcher/tmp/geneticalgorithm2-6.9.0.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [geneticalgorithm2]: Remove: archive file [/home/abi/fetcher/tmp/geneticalgorithm2-6.9.1.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [geneticalgorithm2]: success
+[2024-04-14 15:12:09] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 15:12:09] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-1.0.1.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-2.0.0.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [lazy-type-hint]: success
+[2024-04-14 15:12:09] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.1.3.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [indipydriver]: Remove: archive file [/home/abi/fetcher/tmp/indipydriver-1.1.4.tar.gz]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [indipydriver]: success
+[2024-04-14 15:12:09] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9-py3-none-any.whl.zip]
+[2024-04-14 15:12:09] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2024-04-14 15:12:09] INFO root fetch - main [MainThread]: Store serial: [22759081]
