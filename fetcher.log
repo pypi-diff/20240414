@@ -11464,3 +11464,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:42:19] INFO root fetch - processPackages [streamlink]: Remove: archive file [/home/abi/fetcher/tmp/streamlink-6.7.3.tar.gz]
 [2024-04-14 17:42:19] INFO root fetch - main [MainThread]: End processing [streamlink]: success
 [2024-04-14 17:42:19] INFO root fetch - main [MainThread]: Store serial: [22760303]
+[2024-04-14 17:44:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760303]
+[2024-04-14 17:44:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grnm
+[2024-04-14 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-14 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certbot-nginx-unit
+[2024-04-14 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsbCalc
+[2024-04-14 17:44:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Xdcheckin
+[2024-04-14 17:44:28] INFO root fetch - processPackages [certbot-nginx-unit]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-14 17:44:28] INFO root fetch - processPackages [jsbCalc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 17:44:28] INFO root fetch - processPackages [Xdcheckin]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 17:44:28] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.78.0]
+[2024-04-14 17:44:28] INFO root fetch - processPackages [certbot-nginx-unit]: Downloading https://files.pythonhosted.org/packages/06/92/6185798b2e7b51017b6df89df353cc6b8fb58162387da529c8d5ccc2cb7d/certbot-nginx-unit-1.0.6.tar.gz
+[2024-04-14 17:44:28] WARNING root fetch - processPackages [grnm]: Skipping, unable to determine old version
+[2024-04-14 17:44:28] INFO root fetch - main [MainThread]: End processing [grnm] error
+[2024-04-14 17:44:28] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/6a/8f/69fce9f3262612a169995177492a8ed0eb12c0568553e71eae019ce29643/Xdcheckin-2.0.4.tar.gz
+[2024-04-14 17:44:28] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/8a/9b/beb71ad8b0cbd51fcfe0fe8806178d8f5de1a9b125fae330db97b38b5f62/bellek-0.78.0.tar.gz
+[2024-04-14 17:44:28] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/25/80/f3b7d96e4183ed16b96af84470f1eae9b6d1dd210db02d07bd17d08b11d0/jsbCalc-0.0.2-py3-none-any.whl
+[2024-04-14 17:44:28] INFO root fetch - processPackages [certbot-nginx-unit]: Downloading https://files.pythonhosted.org/packages/e4/cc/f86cd0178ada8d1c89b332e7012505ab17904f5ea7c69f7979f1a1e94023/certbot_nginx_unit-1.0.7.tar.gz
+[2024-04-14 17:44:28] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/4d/fe/b83b3763a37b7c5cac9542cf9d35674a5fee821b0e409ed82557d09ec470/xdcheckin-2.0.5.tar.gz
+[2024-04-14 17:44:28] INFO root fetch - processPackages [certbot-nginx-unit]: executing diffoscope
+[2024-04-14 17:44:28] INFO root fetch - processPackages [certbot-nginx-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certbot-nginx-unit-1.0.6.tar.gz tmp/certbot_nginx_unit-1.0.7.tar.gz --markdown 20240414/c/certbot-nginx-unit/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-14 17:44:28] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-14 17:44:28] INFO root fetch - processPackages [Xdcheckin]: executing diffoscope
+[2024-04-14 17:44:28] INFO root fetch - processPackages [Xdcheckin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Xdcheckin-2.0.4.tar.gz tmp/xdcheckin-2.0.5.tar.gz --markdown 20240414/X/Xdcheckin/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 17:44:28] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/d0/66/baf5baaee0511c9610d89cce1b1a49316c58b9c4155b6e744270317c31f1/jsbCalc-0.0.3-py3-none-any.whl
+[2024-04-14 17:44:28] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-14 17:44:28] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.78.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240414/b/bellek/0.78.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 17:44:28] INFO root fetch - processPackages [jsbCalc]: executing diffoscope
+[2024-04-14 17:44:28] INFO root fetch - processPackages [jsbCalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsbCalc-0.0.2-py3-none-any.whl.zip tmp/jsbCalc-0.0.3-py3-none-any.whl.zip --markdown 20240414/j/jsbCalc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 17:44:29] INFO root fetch - processPackages [certbot-nginx-unit]: Remove: archive file [/home/abi/fetcher/tmp/certbot-nginx-unit-1.0.6.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - processPackages [certbot-nginx-unit]: Remove: archive file [/home/abi/fetcher/tmp/certbot_nginx_unit-1.0.7.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - main [MainThread]: End processing [certbot-nginx-unit]: success
+[2024-04-14 17:44:29] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.78.0.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-14 17:44:29] INFO root fetch - processPackages [jsbCalc]: Remove: archive file [/home/abi/fetcher/tmp/jsbCalc-0.0.2-py3-none-any.whl.zip]
+[2024-04-14 17:44:29] INFO root fetch - processPackages [jsbCalc]: Remove: archive file [/home/abi/fetcher/tmp/jsbCalc-0.0.3-py3-none-any.whl.zip]
+[2024-04-14 17:44:29] INFO root fetch - main [MainThread]: End processing [jsbCalc]: success
+[2024-04-14 17:44:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/Xdcheckin-2.0.4.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.5.tar.gz]
+[2024-04-14 17:44:29] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
+[2024-04-14 17:44:29] INFO root fetch - main [MainThread]: Store serial: [22760318]
