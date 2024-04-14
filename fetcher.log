@@ -11449,3 +11449,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:40:07] INFO root fetch - processPackages [stochvolmodels]: Remove: archive file [/home/abi/fetcher/tmp/stochvolmodels-1.0.9.tar.gz]
 [2024-04-14 17:40:07] INFO root fetch - main [MainThread]: End processing [stochvolmodels]: success
 [2024-04-14 17:40:07] INFO root fetch - main [MainThread]: Store serial: [22760296]
+[2024-04-14 17:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760296]
+[2024-04-14 17:42:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 17:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsbCalc
+[2024-04-14 17:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlink
+[2024-04-14 17:42:16] WARNING root fetch - processPackages [jsbCalc]: Skipping, unable to determine old version
+[2024-04-14 17:42:16] INFO root fetch - main [MainThread]: End processing [jsbCalc] error
+[2024-04-14 17:42:16] INFO root fetch - processPackages [streamlink]: New version: [6.7.3] Old Version: [6.7.2]
+[2024-04-14 17:42:16] INFO root fetch - processPackages [streamlink]: Downloading https://files.pythonhosted.org/packages/66/31/326decb04078c7ba4fe917f4dbc7dcbd9ac0aa7be1a5e8cac69fa3d76ade/streamlink-6.7.2.tar.gz
+[2024-04-14 17:42:16] INFO root fetch - processPackages [streamlink]: Downloading https://files.pythonhosted.org/packages/8d/a9/79ff1dcce96d2829125cc13b345daa52d74f7a7cf9ba7ec292d1d4434bd8/streamlink-6.7.3.tar.gz
+[2024-04-14 17:42:17] INFO root fetch - processPackages [streamlink]: executing diffoscope
+[2024-04-14 17:42:17] INFO root fetch - processPackages [streamlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlink-6.7.2.tar.gz tmp/streamlink-6.7.3.tar.gz --markdown 20240414/s/streamlink/6.7.2-6.7.3/README.md --exclude *.pyd
+[2024-04-14 17:42:19] INFO root fetch - processPackages [streamlink]: Remove: archive file [/home/abi/fetcher/tmp/streamlink-6.7.2.tar.gz]
+[2024-04-14 17:42:19] INFO root fetch - processPackages [streamlink]: Remove: archive file [/home/abi/fetcher/tmp/streamlink-6.7.3.tar.gz]
+[2024-04-14 17:42:19] INFO root fetch - main [MainThread]: End processing [streamlink]: success
+[2024-04-14 17:42:19] INFO root fetch - main [MainThread]: Store serial: [22760303]
