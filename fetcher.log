@@ -10503,3 +10503,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:38:02] WARNING root fetch - processPackages [sqlite-shift]: Skipping, unable to determine old version
 [2024-04-14 16:38:02] INFO root fetch - main [MainThread]: End processing [sqlite-shift] error
 [2024-04-14 16:38:02] INFO root fetch - main [MainThread]: Store serial: [22759842]
+[2024-04-14 16:40:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759842]
+[2024-04-14 16:40:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 16:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maxondevelop
+[2024-04-14 16:40:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnx2kerastl
+[2024-04-14 16:40:19] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 16:40:19] WARNING root fetch - processPackages [maxondevelop]: Skipping, unable to determine old version
+[2024-04-14 16:40:19] INFO root fetch - main [MainThread]: End processing [maxondevelop] error
+[2024-04-14 16:40:19] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/56/30/4fe6a62a391b7a1f4849721540cb3c2ac08682ab3718cd0bf95ad8649005/onnx2kerastl-0.0.98.tar.gz
+[2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/42/31/7e8fff9b0c93088de0c4c5543ffd14e079e872d9a350b1b6f99febee59e8/onnx2kerastl-0.0.99.tar.gz
+[2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.98.tar.gz tmp/onnx2kerastl-0.0.99.tar.gz --markdown 20240414/o/onnx2kerastl/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: Remove: archive file [/home/abi/fetcher/tmp/onnx2kerastl-0.0.98.tar.gz]
+[2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: Remove: archive file [/home/abi/fetcher/tmp/onnx2kerastl-0.0.99.tar.gz]
+[2024-04-14 16:40:20] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2024-04-14 16:40:20] INFO root fetch - main [MainThread]: Store serial: [22759852]
