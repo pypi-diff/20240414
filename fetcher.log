@@ -5309,3 +5309,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:56:29] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
 [2024-04-14 09:56:29] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-04-14 09:56:29] INFO root fetch - main [MainThread]: Store serial: [22757129]
+[2024-04-14 09:58:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757129]
+[2024-04-14 09:58:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 09:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinyfetch
+[2024-04-14 09:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tinyfetch]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240414] Old Version: [2.17.0.dev20240413]
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tinyfetch]: Downloading https://files.pythonhosted.org/packages/51/4b/80dcb98ec36fb5a907b48170628d6eaa1f4bf346e5c97c4fcf51974007cf/tinyfetch-0.0.3.tar.gz
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/a8/c2/857caa448303e5fe57f8d538508b5013c257338b1d26f26ab232a21b500c/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tinyfetch]: Downloading https://files.pythonhosted.org/packages/4f/57/4168568ebabec47a0ea846c76957af2f15f025d818abb905041ceb42a689/tinyfetch-0.0.4.tar.gz
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/f8/cb/95a7dbabf5d9c1e39110719309a747124673147057ece5eb020df9ae6233/tf_nightly-2.17.0.dev20240414-cp39-cp39-win_amd64.whl
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tinyfetch]: executing diffoscope
+[2024-04-14 09:58:38] INFO root fetch - processPackages [tinyfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyfetch-0.0.3.tar.gz tmp/tinyfetch-0.0.4.tar.gz --markdown 20240414/t/tinyfetch/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240414-cp39-cp39-win_amd64.whl.zip --markdown 20240414/t/tf-nightly/2.17.0.dev20240413-2.17.0.dev20240414/README.md --exclude *.pyd
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tinyfetch]: Remove: archive file [/home/abi/fetcher/tmp/tinyfetch-0.0.3.tar.gz]
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tinyfetch]: Remove: archive file [/home/abi/fetcher/tmp/tinyfetch-0.0.4.tar.gz]
+[2024-04-14 09:58:39] INFO root fetch - main [MainThread]: End processing [tinyfetch]: success
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 09:58:39] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240414-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 09:58:39] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-14 09:58:39] INFO root fetch - main [MainThread]: Store serial: [22757139]
