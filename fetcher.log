@@ -11061,3 +11061,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:13:27] INFO root fetch - processPackages [gasflux]: Remove: archive file [/home/abi/fetcher/tmp/gasflux-0.1.1.tar.gz]
 [2024-04-14 17:13:27] INFO root fetch - main [MainThread]: End processing [gasflux]: success
 [2024-04-14 17:13:27] INFO root fetch - main [MainThread]: Store serial: [22760056]
+[2024-04-14 17:15:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760056]
+[2024-04-14 17:15:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simplebox
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhrms
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: komodo-sdk
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NNSOM
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whatsfly
+[2024-04-14 17:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: testasteca
+[2024-04-14 17:15:36] INFO root fetch - processPackages [testasteca]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [NNSOM]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a193] Old Version: [0.0.1a192]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [whatsfly]: New version: [0.0.23] Old Version: [0.0.22]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [komodo-sdk]: New version: [0.0.95] Old Version: [0.0.94]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/79/77/450cac71765f10f4dae6fc7cebd1dace7d23ee7fcd4e6ff0746ac2eb057c/testasteca-0.5.5.tar.gz
+[2024-04-14 17:15:36] INFO root fetch - processPackages [pyhrms]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-14 17:15:36] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/69/46/e4c939701598dcfb605aa109851306088b2fc3b2073df83d7033ea734dd0/nnsom-1.6.1.tar.gz
+[2024-04-14 17:15:36] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/4c/1b/1995aa6f434ceed468cf249567473bbbff7f76f627d35ffa0279a00c55f0/simplebox-0.0.1a192-py3-none-any.whl
+[2024-04-14 17:15:36] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/0a/0c/e24d42d09950b970f7252e54bfa151446f0d3b68bf396141e742b04494b2/komodo_sdk-0.0.94.tar.gz
+[2024-04-14 17:15:36] INFO root fetch - processPackages [pyhrms]: Downloading https://files.pythonhosted.org/packages/b6/82/5679639e1668e9937a98d4e92c6eebfed81a0fe35616415cb073a7e2764e/pyhrms-0.8.8.zip
+[2024-04-14 17:15:36] INFO root fetch - processPackages [whatsfly]: Downloading https://files.pythonhosted.org/packages/b4/09/6d70ca07267f899ed2b0d7adf73deecc32268f952349e638a9ea1de524fc/whatsfly-0.0.22.tar.gz
+[2024-04-14 17:15:36] WARNING root fetch - processPackages [whatsfly]: Skipping package: exceeds size limit 36348144>=10485760
+[2024-04-14 17:15:36] INFO root fetch - main [MainThread]: End processing [whatsfly] error
+[2024-04-14 17:15:36] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/12/88/3d45b3948faa518b8668ff7058cb6d21ae383e1f2942e1343d77ad31ea6c/nnsom-1.6.2.tar.gz
+[2024-04-14 17:15:36] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/fb/5e/66a9ac38329384471afb008790cfe09bd3adcc9b8b070fd2c4725a4efff0/testasteca-0.5.6.tar.gz
+[2024-04-14 17:15:36] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-14 17:15:36] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.6.1.tar.gz tmp/nnsom-1.6.2.tar.gz --markdown 20240414/N/NNSOM/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-14 17:15:36] INFO root fetch - processPackages [testasteca]: executing diffoscope
+[2024-04-14 17:15:36] INFO root fetch - processPackages [testasteca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testasteca-0.5.5.tar.gz tmp/testasteca-0.5.6.tar.gz --markdown 20240414/t/testasteca/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-14 17:15:36] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/de/39/36e25d2437d92cfccddd52a3f1609f663c001fe69aa33f81173bb7094c4e/simplebox-0.0.1a193-py3-none-any.whl
+[2024-04-14 17:15:36] INFO root fetch - processPackages [pyhrms]: Downloading https://files.pythonhosted.org/packages/15/3a/cdecdb8dd58a0d26c917c2f1da6346c0a3024e4ae18744256acb564bd0d4/pyhrms-0.8.9.zip
+[2024-04-14 17:15:37] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-14 17:15:37] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a192-py3-none-any.whl.zip tmp/simplebox-0.0.1a193-py3-none-any.whl.zip --markdown 20240414/s/simplebox/0.0.1a192-0.0.1a193/README.md --exclude *.pyd
+[2024-04-14 17:15:37] INFO root fetch - processPackages [pyhrms]: executing diffoscope
+[2024-04-14 17:15:37] INFO root fetch - processPackages [pyhrms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrms-0.8.8.zip tmp/pyhrms-0.8.9.zip --markdown 20240414/p/pyhrms/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-14 17:15:37] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/b8/e6/a2e113ef7a21446b11d25074d50675a084bddca46d396dd6c9edd60a5865/komodo_sdk-0.0.95.tar.gz
+[2024-04-14 17:15:37] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.5.tar.gz]
+[2024-04-14 17:15:37] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.6.tar.gz]
+[2024-04-14 17:15:37] INFO root fetch - main [MainThread]: End processing [testasteca]: success
+[2024-04-14 17:15:37] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.6.1.tar.gz]
+[2024-04-14 17:15:37] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.6.2.tar.gz]
+[2024-04-14 17:15:37] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-14 17:15:37] INFO root fetch - processPackages [komodo-sdk]: executing diffoscope
+[2024-04-14 17:15:37] INFO root fetch - processPackages [komodo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/komodo_sdk-0.0.94.tar.gz tmp/komodo_sdk-0.0.95.tar.gz --markdown 20240414/k/komodo-sdk/0.0.94-0.0.95/README.md --exclude *.pyd
+[2024-04-14 17:15:37] INFO root fetch - processPackages [pyhrms]: Remove: archive file [/home/abi/fetcher/tmp/pyhrms-0.8.8.zip]
+[2024-04-14 17:15:37] INFO root fetch - processPackages [pyhrms]: Remove: archive file [/home/abi/fetcher/tmp/pyhrms-0.8.9.zip]
+[2024-04-14 17:15:37] INFO root fetch - main [MainThread]: End processing [pyhrms]: success
+[2024-04-14 17:15:38] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a192-py3-none-any.whl.zip]
+[2024-04-14 17:15:38] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a193-py3-none-any.whl.zip]
+[2024-04-14 17:15:38] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-14 17:15:39] INFO root fetch - processPackages [komodo-sdk]: Remove: archive file [/home/abi/fetcher/tmp/komodo_sdk-0.0.94.tar.gz]
+[2024-04-14 17:15:39] INFO root fetch - processPackages [komodo-sdk]: Remove: archive file [/home/abi/fetcher/tmp/komodo_sdk-0.0.95.tar.gz]
+[2024-04-14 17:15:39] INFO root fetch - main [MainThread]: End processing [komodo-sdk]: success
+[2024-04-14 17:15:39] INFO root fetch - main [MainThread]: Store serial: [22760072]
