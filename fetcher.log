@@ -9087,3 +9087,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:51:41] INFO root fetch - processPackages [swb]: Remove: archive file [/home/abi/fetcher/tmp/swb-5.0.1.tar.gz]
 [2024-04-14 14:51:41] INFO root fetch - main [MainThread]: End processing [swb]: success
 [2024-04-14 14:51:41] INFO root fetch - main [MainThread]: Store serial: [22758993]
+[2024-04-14 14:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758993]
+[2024-04-14 14:53:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fusionscript-stubs
+[2024-04-14 14:53:57] INFO root fetch - processPackages [fusionscript-stubs]: New version: [18.6.6] Old Version: [18.6.0]
+[2024-04-14 14:53:57] INFO root fetch - processPackages [fusionscript-stubs]: Downloading https://files.pythonhosted.org/packages/84/b0/f15cd6327f496c890cc7162d2aa50e38079b7f8c251cf9ee747d66ddf2d1/fusionscript-stubs-18.6.0.tar.gz
+[2024-04-14 14:53:57] INFO root fetch - processPackages [fusionscript-stubs]: Downloading https://files.pythonhosted.org/packages/25/7a/321bc6da213f04532c4fb0da80e2f5f628aa963e650f7072b62ae71beaad/fusionscript_stubs-18.6.6.tar.gz
+[2024-04-14 14:53:58] INFO root fetch - processPackages [fusionscript-stubs]: executing diffoscope
+[2024-04-14 14:53:58] INFO root fetch - processPackages [fusionscript-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusionscript-stubs-18.6.0.tar.gz tmp/fusionscript_stubs-18.6.6.tar.gz --markdown 20240414/f/fusionscript-stubs/18.6.0-18.6.6/README.md --exclude *.pyd
+[2024-04-14 14:53:58] INFO root fetch - processPackages [fusionscript-stubs]: Remove: archive file [/home/abi/fetcher/tmp/fusionscript-stubs-18.6.0.tar.gz]
+[2024-04-14 14:53:58] INFO root fetch - processPackages [fusionscript-stubs]: Remove: archive file [/home/abi/fetcher/tmp/fusionscript_stubs-18.6.6.tar.gz]
+[2024-04-14 14:53:58] INFO root fetch - main [MainThread]: End processing [fusionscript-stubs]: success
+[2024-04-14 14:53:58] INFO root fetch - main [MainThread]: Store serial: [22758996]
