@@ -4572,3 +4572,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:17:33] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-04-14 08:17:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-database-cleanup]: success
 [2024-04-14 08:17:33] INFO root fetch - main [MainThread]: Store serial: [22756813]
+[2024-04-14 08:19:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756813]
+[2024-04-14 08:19:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 08:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-smaz
+[2024-04-14 08:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YAPCP
+[2024-04-14 08:19:42] INFO root fetch - processPackages [YAPCP]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-04-14 08:19:42] INFO root fetch - processPackages [YAPCP]: Downloading https://files.pythonhosted.org/packages/4d/e1/a7487ccee438e854ec3ab9f7ce3282d5abf78ac9d8a0f8dccc61064751b5/YAPCP-0.0.0.4-py3-none-any.whl
+[2024-04-14 08:19:42] INFO root fetch - processPackages [python-smaz]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 08:19:42] INFO root fetch - processPackages [python-smaz]: Downloading https://files.pythonhosted.org/packages/62/9c/ca366161d77f39711cbca5a6c4faf010db95a34d17fb441d5e40f0ef3a41/python-smaz-0.1.1.tar.gz
+[2024-04-14 08:19:42] INFO root fetch - processPackages [YAPCP]: Downloading https://files.pythonhosted.org/packages/aa/a5/6e89dfaddfc113bd43fb5487ae72dc3e3d1d9dbb18899e559f4d40ffc182/YAPCP-0.0.0.5-py3-none-any.whl
+[2024-04-14 08:19:42] INFO root fetch - processPackages [YAPCP]: executing diffoscope
+[2024-04-14 08:19:42] INFO root fetch - processPackages [YAPCP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YAPCP-0.0.0.4-py3-none-any.whl.zip tmp/YAPCP-0.0.0.5-py3-none-any.whl.zip --markdown 20240414/Y/YAPCP/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-04-14 08:19:42] INFO root fetch - processPackages [python-smaz]: Downloading https://files.pythonhosted.org/packages/67/bc/96879a4caa6ccfd5b0e8a90b71bfa21e84a4b1bf2ea8ec435e33d27cf098/python_smaz-0.1.2-pp39-pypy39_pp73-win_amd64.whl
+[2024-04-14 08:19:43] INFO root fetch - processPackages [python-smaz]: executing diffoscope
+[2024-04-14 08:19:43] INFO root fetch - processPackages [python-smaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-smaz-0.1.1.tar.gz tmp/python_smaz-0.1.2-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20240414/p/python-smaz/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 08:19:43] INFO root fetch - processPackages [YAPCP]: Remove: archive file [/home/abi/fetcher/tmp/YAPCP-0.0.0.4-py3-none-any.whl.zip]
+[2024-04-14 08:19:43] INFO root fetch - processPackages [YAPCP]: Remove: archive file [/home/abi/fetcher/tmp/YAPCP-0.0.0.5-py3-none-any.whl.zip]
+[2024-04-14 08:19:43] INFO root fetch - main [MainThread]: End processing [YAPCP]: success
+[2024-04-14 08:19:44] INFO root fetch - processPackages [python-smaz]: Remove: archive file [/home/abi/fetcher/tmp/python-smaz-0.1.1.tar.gz]
+[2024-04-14 08:19:44] INFO root fetch - processPackages [python-smaz]: Remove: archive file [/home/abi/fetcher/tmp/python_smaz-0.1.2-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-04-14 08:19:44] INFO root fetch - main [MainThread]: End processing [python-smaz]: success
+[2024-04-14 08:19:44] INFO root fetch - main [MainThread]: Store serial: [22756848]
