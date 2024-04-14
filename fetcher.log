@@ -12921,3 +12921,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:36:32] INFO root fetch - processPackages [Sphinx-AutoMark]: Remove: archive file [/home/abi/fetcher/tmp/Sphinx-AutoMark-0.0.0.3.tar.gz]
 [2024-04-14 19:36:32] INFO root fetch - main [MainThread]: End processing [Sphinx-AutoMark]: success
 [2024-04-14 19:36:32] INFO root fetch - main [MainThread]: Store serial: [22760877]
+[2024-04-14 19:38:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760877]
+[2024-04-14 19:38:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reverse-engineered-apis.flatastic
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: limoon
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: relax-py
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdfly
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anicli-ru
+[2024-04-14 19:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: example-package-maxondevelop
+[2024-04-14 19:38:41] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: New version: [24.4.14rc173500] Old Version: [24.4.12rc221710]
+[2024-04-14 19:38:41] INFO root fetch - processPackages [limoon]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 19:38:41] WARNING root fetch - processPackages [example-package-maxondevelop]: Skipping, unable to determine old version
+[2024-04-14 19:38:41] INFO root fetch - main [MainThread]: End processing [example-package-maxondevelop] error
+[2024-04-14 19:38:41] INFO root fetch - processPackages [relax-py]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-14 19:38:41] INFO root fetch - processPackages [pdfly]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-14 19:38:41] INFO root fetch - processPackages [anicli-ru]: New version: [5.0.9] Old Version: [5.0.8]
+[2024-04-14 19:38:41] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Downloading https://files.pythonhosted.org/packages/75/83/145aa54515db91a01924f960d6d5db3ea1bb51d72d955746d5aa881795a1/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [limoon]: Downloading https://files.pythonhosted.org/packages/d6/56/376fc2903d3fb7c4d09db13752aff0f86fa0878b5ce7c30517f228dda151/limoon-0.0.4.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/21/ee/399242760e90b0328146cc5bcf97784d61f0f9a1f3b175cf64e7e0338507/relax_py-0.4.0.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [pdfly]: Downloading https://files.pythonhosted.org/packages/0d/5a/b20e044bd60615e1c3e68eb8dc56bd05a232c7844692752204538d00fd81/pdfly-0.3.1.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [anicli-ru]: Downloading https://files.pythonhosted.org/packages/ea/80/e0561bd376c195e22a8e5976b5e405db37e4ed3270ce1e2bddf45e64f782/anicli_ru-5.0.8.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Downloading https://files.pythonhosted.org/packages/06/dd/0237ee370a31a3a79661e274aa15156fdf3c25c1c593f24d6e10dbeee220/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [limoon]: Downloading https://files.pythonhosted.org/packages/27/55/59c297dcca5889e922fc85123e1558ab424f087d54d93150c4730d7091e1/limoon-0.0.5.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [relax-py]: Downloading https://files.pythonhosted.org/packages/8f/88/201c338ec89a05a2361b5eb367650aea624c993e288d227a7b23a7cfb296/relax_py-0.5.0.tar.gz
+[2024-04-14 19:38:41] INFO root fetch - processPackages [anicli-ru]: Downloading https://files.pythonhosted.org/packages/0c/d9/0828f7c058f161116437c802674db21811b395e8a4188b47b866ff59a188/anicli_ru-5.0.9.tar.gz
+[2024-04-14 19:38:42] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: executing diffoscope
+[2024-04-14 19:38:42] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz tmp/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz --markdown 20240414/r/reverse-engineered-apis.flatastic/24.4.12rc221710-24.4.14rc173500/README.md --exclude *.pyd
+[2024-04-14 19:38:42] INFO root fetch - processPackages [relax-py]: executing diffoscope
+[2024-04-14 19:38:42] INFO root fetch - processPackages [relax-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relax_py-0.4.0.tar.gz tmp/relax_py-0.5.0.tar.gz --markdown 20240414/r/relax-py/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-14 19:38:42] INFO root fetch - processPackages [limoon]: executing diffoscope
+[2024-04-14 19:38:42] INFO root fetch - processPackages [limoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limoon-0.0.4.tar.gz tmp/limoon-0.0.5.tar.gz --markdown 20240414/l/limoon/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 19:38:42] INFO root fetch - processPackages [anicli-ru]: executing diffoscope
+[2024-04-14 19:38:42] INFO root fetch - processPackages [anicli-ru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anicli_ru-5.0.8.tar.gz tmp/anicli_ru-5.0.9.tar.gz --markdown 20240414/a/anicli-ru/5.0.8-5.0.9/README.md --exclude *.pyd
+[2024-04-14 19:38:42] INFO root fetch - processPackages [pdfly]: Downloading https://files.pythonhosted.org/packages/54/fd/ae0c653d8b33e2affd6d67236b17d20e7456e538862443eb2070508534b5/pdfly-0.3.2.tar.gz
+[2024-04-14 19:38:42] INFO root fetch - processPackages [pdfly]: executing diffoscope
+[2024-04-14 19:38:42] INFO root fetch - processPackages [pdfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfly-0.3.1.tar.gz tmp/pdfly-0.3.2.tar.gz --markdown 20240414/p/pdfly/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-14 19:38:42] INFO root fetch - processPackages [limoon]: Remove: archive file [/home/abi/fetcher/tmp/limoon-0.0.4.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - processPackages [limoon]: Remove: archive file [/home/abi/fetcher/tmp/limoon-0.0.5.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - main [MainThread]: End processing [limoon]: success
+[2024-04-14 19:38:42] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.4.0.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - processPackages [relax-py]: Remove: archive file [/home/abi/fetcher/tmp/relax_py-0.5.0.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - main [MainThread]: End processing [relax-py]: success
+[2024-04-14 19:38:42] INFO root fetch - processPackages [anicli-ru]: Remove: archive file [/home/abi/fetcher/tmp/anicli_ru-5.0.8.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - processPackages [anicli-ru]: Remove: archive file [/home/abi/fetcher/tmp/anicli_ru-5.0.9.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - main [MainThread]: End processing [anicli-ru]: success
+[2024-04-14 19:38:42] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Remove: archive file [/home/abi/fetcher/tmp/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Remove: archive file [/home/abi/fetcher/tmp/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz]
+[2024-04-14 19:38:42] INFO root fetch - main [MainThread]: End processing [reverse-engineered-apis.flatastic]: success
+[2024-04-14 19:38:43] INFO root fetch - processPackages [pdfly]: Remove: archive file [/home/abi/fetcher/tmp/pdfly-0.3.1.tar.gz]
+[2024-04-14 19:38:43] INFO root fetch - processPackages [pdfly]: Remove: archive file [/home/abi/fetcher/tmp/pdfly-0.3.2.tar.gz]
+[2024-04-14 19:38:43] INFO root fetch - main [MainThread]: End processing [pdfly]: success
+[2024-04-14 19:38:43] INFO root fetch - main [MainThread]: Store serial: [22760897]
