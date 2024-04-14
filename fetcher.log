@@ -6715,3 +6715,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:06:18] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-04-14 12:06:18] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-04-14 12:06:18] INFO root fetch - main [MainThread]: Store serial: [22757867]
+[2024-04-14 12:08:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757867]
+[2024-04-14 12:08:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: THISDLChatBot
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prerun
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: factorial-aivn-vc
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: octomy-common
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asgebsmanager
+[2024-04-14 12:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: THISDLChatBot
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-14 12:08:30] INFO root fetch - processPackages [asgebsmanager]: New version: [0.3] Old Version: [0.2]
+[2024-04-14 12:08:30] INFO root fetch - processPackages [octomy-common]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-14 12:08:30] INFO root fetch - processPackages [prerun]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-14 12:08:30] WARNING root fetch - processPackages [factorial-aivn-vc]: Skipping, unable to determine old version
+[2024-04-14 12:08:30] INFO root fetch - main [MainThread]: End processing [factorial-aivn-vc] error
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/3e/e9/24f67ff61e8bf9463956a99f5775d287879626377331129c66b5532c7bb3/THISDLChatBot-2.0.2.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/d6/3b/3e9d49154afd5d963c8037f7ef688a616f578cf22cc5c56f847c01b77ad2/asgebsmanager-0.2.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/a7/88/9a68d60a42e75c64e5defab7fe15c0ecc93e4b2200e908fdcb306808ceee/octomy-common-2.0.5.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/3e/e9/24f67ff61e8bf9463956a99f5775d287879626377331129c66b5532c7bb3/THISDLChatBot-2.0.2.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/ca/f4/497224ce140f3d0bb585de2e093989720913af33aa696ed075ec3ba9b383/prerun-0.1.4.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/8d/27/92c4e207a99e041a0c0f445768d4bcec7fe9396f74811c8ac6535346628f/octomy-common-2.0.6.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/77/6a/c703b98331333066a5a2b7d3c8f7697f6502c30568ba305d6180753d1467/THISDLChatBot-2.0.3.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/77/6a/c703b98331333066a5a2b7d3c8f7697f6502c30568ba305d6180753d1467/THISDLChatBot-2.0.3.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/90/d6/7190f0f2b85fc0e3650051b89c616216ca9b695b5ad6c1470b90dd41ad16/prerun-0.1.5.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/3c/0e/123561172319bd88c56e09d88ecca2f91a06586533a8d0a59e0d9029dc9b/asgebsmanager-0.3.tar.gz
+[2024-04-14 12:08:30] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-14 12:08:30] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.5.tar.gz tmp/octomy-common-2.0.6.tar.gz --markdown 20240414/o/octomy-common/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: executing diffoscope
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/THISDLChatBot-2.0.2.tar.gz tmp/THISDLChatBot-2.0.3.tar.gz --markdown 20240414/T/THISDLChatBot/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: executing diffoscope
+[2024-04-14 12:08:30] INFO root fetch - processPackages [THISDLChatBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/THISDLChatBot-2.0.2.tar.gz tmp/THISDLChatBot-2.0.3.tar.gz --markdown 20240414/T/THISDLChatBot/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-04-14 12:08:30] INFO root fetch - processPackages [prerun]: executing diffoscope
+[2024-04-14 12:08:30] INFO root fetch - processPackages [prerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerun-0.1.4.tar.gz tmp/prerun-0.1.5.tar.gz --markdown 20240414/p/prerun/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 12:08:30] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 12:08:30] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-0.2.tar.gz tmp/asgebsmanager-0.3.tar.gz --markdown 20240414/a/asgebsmanager/0.2-0.3/README.md --exclude *.pyd
+[2024-04-14 12:08:31] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.2.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.3.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
+[2024-04-14 12:08:31] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.4.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.5.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [prerun]: success
+[2024-04-14 12:08:31] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.2.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.3.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
+[2024-04-14 12:08:31] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.5.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.6.tar.gz]
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-14 12:08:31] INFO root fetch - main [MainThread]: Store serial: [22757886]
