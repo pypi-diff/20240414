@@ -5133,3 +5133,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:43:22] INFO root fetch - processPackages [sleap-io]: Remove: archive file [/home/abi/fetcher/tmp/sleap_io-0.1.0.tar.gz]
 [2024-04-14 09:43:22] INFO root fetch - main [MainThread]: End processing [sleap-io]: success
 [2024-04-14 09:43:22] INFO root fetch - main [MainThread]: Store serial: [22757048]
+[2024-04-14 09:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757048]
+[2024-04-14 09:45:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 09:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Chainzpy
+[2024-04-14 09:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtutils
+[2024-04-14 09:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: calcy300
+[2024-04-14 09:45:31] WARNING root fetch - processPackages [calcy300]: Skipping, unable to determine old version
+[2024-04-14 09:45:31] INFO root fetch - main [MainThread]: End processing [calcy300] error
+[2024-04-14 09:45:31] WARNING root fetch - processPackages [Chainzpy]: Skipping, unable to determine old version
+[2024-04-14 09:45:31] INFO root fetch - main [MainThread]: End processing [Chainzpy] error
+[2024-04-14 09:45:31] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 09:45:31] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 09:45:32] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 09:45:32] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 09:45:32] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 09:45:33] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 09:45:33] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 09:45:33] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 09:45:33] INFO root fetch - main [MainThread]: Store serial: [22757060]
