@@ -14238,3 +14238,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:17:09] INFO root fetch - processPackages [itkwasm-compare-images-wasi]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_wasi-5.0.2.tar.gz]
 [2024-04-14 21:17:09] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images-wasi]: success
 [2024-04-14 21:17:09] INFO root fetch - main [MainThread]: Store serial: [22761695]
+[2024-04-14 21:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761695]
+[2024-04-14 21:19:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprinko
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: itkwasm-compare-images-emscripten
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esa-2scm
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grizzlys
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: steelpy
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SignalFilters
+[2024-04-14 21:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: itkwasm-compare-images
+[2024-04-14 21:19:19] INFO root fetch - processPackages [itkwasm-compare-images]: New version: [5.0.2] Old Version: [5.0.1]
+[2024-04-14 21:19:19] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: New version: [5.0.2] Old Version: [5.0.1]
+[2024-04-14 21:19:19] WARNING root fetch - processPackages [steelpy]: Skipping, unable to determine old version
+[2024-04-14 21:19:19] INFO root fetch - processPackages [esa-2scm]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-14 21:19:19] INFO root fetch - main [MainThread]: End processing [steelpy] error
+[2024-04-14 21:19:19] INFO root fetch - processPackages [sprinko]: New version: [0.9.0b2] Old Version: [0.9.0b1]
+[2024-04-14 21:19:19] INFO root fetch - processPackages [SignalFilters]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 21:19:19] WARNING root fetch - processPackages [grizzlys]: Skipping, unable to determine old version
+[2024-04-14 21:19:19] INFO root fetch - main [MainThread]: End processing [grizzlys] error
+[2024-04-14 21:19:19] INFO root fetch - processPackages [esa-2scm]: Downloading https://files.pythonhosted.org/packages/29/a2/7b51762c675d4a17b556334cc92af2c0cf24a6e6a8a94208a0c694632ad6/esa-2scm-0.2.4.tar.gz
+[2024-04-14 21:19:19] INFO root fetch - processPackages [sprinko]: Downloading https://files.pythonhosted.org/packages/4e/79/3137eba6ddff85b471a7ef27dc5b44b8301ef4fbecaa8dfb7f13ae90fc91/sprinko-0.9.0b1.tar.gz
+[2024-04-14 21:19:19] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Downloading https://files.pythonhosted.org/packages/25/3f/1919ebdc6f1f8510c7e0ba46a21eeac4532dbf9281a1a6153eb7f1e269d5/itkwasm_compare_images_emscripten-5.0.1.tar.gz
+[2024-04-14 21:19:19] INFO root fetch - processPackages [itkwasm-compare-images]: Downloading https://files.pythonhosted.org/packages/d9/44/09229205b60de13fd7a706adc0ea91f6c3b742c28be3f158170ce147c33b/itkwasm_compare_images-5.0.1.tar.gz
+[2024-04-14 21:19:19] INFO root fetch - processPackages [SignalFilters]: Downloading https://files.pythonhosted.org/packages/5c/89/1c4c515da4d419272b21cc4c4e53b68dc03cca7e0475f3420e99b96c48ba/signalfilters-0.0.7.tar.gz
+[2024-04-14 21:19:19] WARNING root fetch - processPackages [SignalFilters]: Skipping package: exceeds size limit 15757057>=10485760
+[2024-04-14 21:19:19] INFO root fetch - main [MainThread]: End processing [SignalFilters] error
+[2024-04-14 21:19:20] INFO root fetch - processPackages [sprinko]: Downloading https://files.pythonhosted.org/packages/cd/e3/edaad3e95d8089cec507f05b80987a3bde67f17249413129dcae1919e515/sprinko-0.9.0b2.tar.gz
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images]: Downloading https://files.pythonhosted.org/packages/08/61/26c5d2c6f599656ffe83b1539cfb50a5dfc2d295575763af68ffefae8377/itkwasm_compare_images-5.0.2.tar.gz
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Downloading https://files.pythonhosted.org/packages/fc/2a/e25710e0bc54c33aece92bd455e6cc65b1f27eb51ef0415d2b8aea75ac6d/itkwasm_compare_images_emscripten-5.0.2.tar.gz
+[2024-04-14 21:19:20] INFO root fetch - processPackages [esa-2scm]: Downloading https://files.pythonhosted.org/packages/33/26/9029d11976a4b8570f003251a72805d06369ddd85999adc54c425a3c630b/esa-2scm-0.2.5.tar.gz
+[2024-04-14 21:19:20] INFO root fetch - processPackages [sprinko]: executing diffoscope
+[2024-04-14 21:19:20] INFO root fetch - processPackages [sprinko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprinko-0.9.0b1.tar.gz tmp/sprinko-0.9.0b2.tar.gz --markdown 20240414/s/sprinko/0.9.0b1-0.9.0b2/README.md --exclude *.pyd
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: executing diffoscope
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compare_images_emscripten-5.0.1.tar.gz tmp/itkwasm_compare_images_emscripten-5.0.2.tar.gz --markdown 20240414/i/itkwasm-compare-images-emscripten/5.0.1-5.0.2/README.md --exclude *.pyd
+[2024-04-14 21:19:20] INFO root fetch - processPackages [esa-2scm]: executing diffoscope
+[2024-04-14 21:19:20] INFO root fetch - processPackages [esa-2scm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esa-2scm-0.2.4.tar.gz tmp/esa-2scm-0.2.5.tar.gz --markdown 20240414/e/esa-2scm/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images]: executing diffoscope
+[2024-04-14 21:19:20] INFO root fetch - processPackages [itkwasm-compare-images]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_compare_images-5.0.1.tar.gz tmp/itkwasm_compare_images-5.0.2.tar.gz --markdown 20240414/i/itkwasm-compare-images/5.0.1-5.0.2/README.md --exclude *.pyd
+[2024-04-14 21:19:21] INFO root fetch - processPackages [esa-2scm]: Remove: archive file [/home/abi/fetcher/tmp/esa-2scm-0.2.4.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - processPackages [esa-2scm]: Remove: archive file [/home/abi/fetcher/tmp/esa-2scm-0.2.5.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - main [MainThread]: End processing [esa-2scm]: success
+[2024-04-14 21:19:21] INFO root fetch - processPackages [sprinko]: Remove: archive file [/home/abi/fetcher/tmp/sprinko-0.9.0b1.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - processPackages [sprinko]: Remove: archive file [/home/abi/fetcher/tmp/sprinko-0.9.0b2.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - main [MainThread]: End processing [sprinko]: success
+[2024-04-14 21:19:21] INFO root fetch - processPackages [itkwasm-compare-images]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images-5.0.1.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - processPackages [itkwasm-compare-images]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images-5.0.2.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images]: success
+[2024-04-14 21:19:21] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_emscripten-5.0.1.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_emscripten-5.0.2.tar.gz]
+[2024-04-14 21:19:21] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images-emscripten]: success
+[2024-04-14 21:19:21] INFO root fetch - main [MainThread]: Store serial: [22761723]
