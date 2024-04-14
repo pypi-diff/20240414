@@ -6325,3 +6325,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:39:45] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
 [2024-04-14 11:39:45] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
 [2024-04-14 11:39:45] INFO root fetch - main [MainThread]: Store serial: [22757653]
+[2024-04-14 11:41:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757653]
+[2024-04-14 11:41:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 11:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dsfx
+[2024-04-14 11:41:58] INFO root fetch - processPackages [dsfx]: New version: [0.3] Old Version: [0.2.5]
+[2024-04-14 11:41:58] INFO root fetch - processPackages [dsfx]: Downloading https://files.pythonhosted.org/packages/00/24/ce7a90ff4520780ec6d9d4b0e0fe56fc13dd0caa710f02c77e56b2e7d85f/dsfx-0.2.5.tar.gz
+[2024-04-14 11:41:58] INFO root fetch - processPackages [dsfx]: Downloading https://files.pythonhosted.org/packages/eb/fc/63a0587aacc39dc6d0d6fb882f1f80fae8883626ae42d3197a3423bc1a74/dsfx-0.3.tar.gz
+[2024-04-14 11:41:58] INFO root fetch - processPackages [dsfx]: executing diffoscope
+[2024-04-14 11:41:58] INFO root fetch - processPackages [dsfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsfx-0.2.5.tar.gz tmp/dsfx-0.3.tar.gz --markdown 20240414/d/dsfx/0.2.5-0.3/README.md --exclude *.pyd
+[2024-04-14 11:41:59] INFO root fetch - processPackages [dsfx]: Remove: archive file [/home/abi/fetcher/tmp/dsfx-0.2.5.tar.gz]
+[2024-04-14 11:41:59] INFO root fetch - processPackages [dsfx]: Remove: archive file [/home/abi/fetcher/tmp/dsfx-0.3.tar.gz]
+[2024-04-14 11:41:59] INFO root fetch - main [MainThread]: End processing [dsfx]: success
+[2024-04-14 11:41:59] INFO root fetch - main [MainThread]: Store serial: [22757656]
