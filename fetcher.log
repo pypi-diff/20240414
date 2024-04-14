@@ -3893,3 +3893,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:34:26] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
 [2024-04-14 06:34:26] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-04-14 06:34:26] INFO root fetch - main [MainThread]: Store serial: [22756579]
+[2024-04-14 06:36:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756579]
+[2024-04-14 06:36:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: disinfo-domains
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-index-core
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-nai3
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gp2040ce-binary-tools
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geoglows
+[2024-04-14 06:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-nai3
+[2024-04-14 06:36:43] WARNING root fetch - processPackages [disinfo-domains]: Skipping, unable to determine old version
+[2024-04-14 06:36:43] INFO root fetch - main [MainThread]: End processing [disinfo-domains] error
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/2d/5e/03f15341fd591566b52865bda3355f5729ab13993df7b587a01ae2e6e726/nonebot_plugin_nai3-0.0.2.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/2d/5e/03f15341fd591566b52865bda3355f5729ab13993df7b587a01ae2e6e726/nonebot_plugin_nai3-0.0.2.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [gp2040ce-binary-tools]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-04-14 06:36:43] INFO root fetch - processPackages [geoglows]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-14 06:36:43] INFO root fetch - processPackages [llama-index-core]: New version: [0.9.56] Old Version: [0.9.55]
+[2024-04-14 06:36:43] INFO root fetch - processPackages [geoglows]: Downloading https://files.pythonhosted.org/packages/8c/e4/6fbef644b89c6651cd6080e0c7fe3c04f4716a564222e55211c75ad4b1df/geoglows-1.1.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [gp2040ce-binary-tools]: Downloading https://files.pythonhosted.org/packages/21/14/43ccefdfe26dd6b44ece2ffe4d92814c5aa25cbbf8fc51cfd0d29cb7c5c4/gp2040ce-binary-tools-0.7.0.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/cb/c2/9d70e1ea21c2760f049ed87f06333bc85bc3afb95daa8f1cc6f9bce744ed/llama_index_core-0.9.55.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/da/0b/95b3a6722b58e367c1ccc96dc766ae704316f2fb783cb3a770c84232ef37/nonebot_plugin_nai3-0.0.4.tar.gz
+[2024-04-14 06:36:43] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/da/0b/95b3a6722b58e367c1ccc96dc766ae704316f2fb783cb3a770c84232ef37/nonebot_plugin_nai3-0.0.4.tar.gz
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: executing diffoscope
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3-0.0.2.tar.gz tmp/nonebot_plugin_nai3-0.0.4.tar.gz --markdown 20240414/n/nonebot-plugin-nai3/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: executing diffoscope
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3-0.0.2.tar.gz tmp/nonebot_plugin_nai3-0.0.4.tar.gz --markdown 20240414/n/nonebot-plugin-nai3/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-14 06:36:44] INFO root fetch - processPackages [geoglows]: Downloading https://files.pythonhosted.org/packages/80/46/89b3cfd2a2763bd9edad7f3045562271f043f58e279f6428de1a731b8d44/geoglows-1.2.0.tar.gz
+[2024-04-14 06:36:44] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/91/1b/bae52b894555c97848977c73e4a3a778ca388b07a2435d3a33c1133bd678/llama_index_core-0.9.56.tar.gz
+[2024-04-14 06:36:44] INFO root fetch - processPackages [geoglows]: executing diffoscope
+[2024-04-14 06:36:44] INFO root fetch - processPackages [geoglows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoglows-1.1.tar.gz tmp/geoglows-1.2.0.tar.gz --markdown 20240414/g/geoglows/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-14 06:36:44] INFO root fetch - processPackages [gp2040ce-binary-tools]: Downloading https://files.pythonhosted.org/packages/59/a8/981827963dc600e133fd35a179ec7ea2ed8e1ccc22c25e4475e78f529ed7/gp2040ce_binary_tools-0.8.0.tar.gz
+[2024-04-14 06:36:44] INFO root fetch - processPackages [llama-index-core]: executing diffoscope
+[2024-04-14 06:36:44] INFO root fetch - processPackages [llama-index-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_core-0.9.55.tar.gz tmp/llama_index_core-0.9.56.tar.gz --markdown 20240414/l/llama-index-core/0.9.55-0.9.56/README.md --exclude *.pyd
+[2024-04-14 06:36:44] INFO root fetch - processPackages [gp2040ce-binary-tools]: executing diffoscope
+[2024-04-14 06:36:44] INFO root fetch - processPackages [gp2040ce-binary-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gp2040ce-binary-tools-0.7.0.tar.gz tmp/gp2040ce_binary_tools-0.8.0.tar.gz --markdown 20240414/g/gp2040ce-binary-tools/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.0.2.tar.gz]
+[2024-04-14 06:36:44] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.0.4.tar.gz]
+[2024-04-14 06:36:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3]: success
+[2024-04-14 06:36:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3]: success
+[2024-04-14 06:36:44] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-1.1.tar.gz]
+[2024-04-14 06:36:44] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-1.2.0.tar.gz]
+[2024-04-14 06:36:44] INFO root fetch - main [MainThread]: End processing [geoglows]: success
+[2024-04-14 06:36:45] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.55.tar.gz]
+[2024-04-14 06:36:45] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.56.tar.gz]
+[2024-04-14 06:36:45] INFO root fetch - main [MainThread]: End processing [llama-index-core]: success
+[2024-04-14 06:36:46] INFO root fetch - processPackages [gp2040ce-binary-tools]: Remove: archive file [/home/abi/fetcher/tmp/gp2040ce-binary-tools-0.7.0.tar.gz]
+[2024-04-14 06:36:46] INFO root fetch - processPackages [gp2040ce-binary-tools]: Remove: archive file [/home/abi/fetcher/tmp/gp2040ce_binary_tools-0.8.0.tar.gz]
+[2024-04-14 06:36:46] INFO root fetch - main [MainThread]: End processing [gp2040ce-binary-tools]: success
+[2024-04-14 06:36:46] INFO root fetch - main [MainThread]: Store serial: [22756599]
