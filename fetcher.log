@@ -2795,3 +2795,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-04-14 04:34:29] INFO root fetch - main [MainThread]: End processing [itk-webassemblyinterface] error
 [2024-04-14 04:34:29] INFO root fetch - main [MainThread]: Store serial: [22756219]
+[2024-04-14 04:36:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756219]
+[2024-04-14 04:36:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 04:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haliax
+[2024-04-14 04:36:38] INFO root fetch - processPackages [haliax]: New version: [1.4.dev289] Old Version: [1.4.dev288]
+[2024-04-14 04:36:38] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/b3/d2/52b67b62f11150ee9fcb70bc46d3ce13e3e0a09180a82a41599c72c8c31a/haliax-1.4.dev288.tar.gz
+[2024-04-14 04:36:38] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/98/dd/eba8511e049ba5a140df6e2c20dc5555c48267a0d17eb7c1e91f2b8e9e25/haliax-1.4.dev289.tar.gz
+[2024-04-14 04:36:39] INFO root fetch - processPackages [haliax]: executing diffoscope
+[2024-04-14 04:36:39] INFO root fetch - processPackages [haliax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haliax-1.4.dev288.tar.gz tmp/haliax-1.4.dev289.tar.gz --markdown 20240414/h/haliax/1.4.dev288-1.4.dev289/README.md --exclude *.pyd
+[2024-04-14 04:36:39] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev288.tar.gz]
+[2024-04-14 04:36:39] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev289.tar.gz]
+[2024-04-14 04:36:39] INFO root fetch - main [MainThread]: End processing [haliax]: success
+[2024-04-14 04:36:39] INFO root fetch - main [MainThread]: Store serial: [22756222]
