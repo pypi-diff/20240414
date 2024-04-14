@@ -7542,3 +7542,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:54:14] INFO root fetch - processPackages [tendril-utils-core]: Remove: archive file [/home/abi/fetcher/tmp/tendril-utils-core-0.5.9.tar.gz]
 [2024-04-14 12:54:14] INFO root fetch - main [MainThread]: End processing [tendril-utils-core]: success
 [2024-04-14 12:54:14] INFO root fetch - main [MainThread]: Store serial: [22758279]
+[2024-04-14 12:56:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758279]
+[2024-04-14 12:56:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 12:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbnlp
+[2024-04-14 12:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtpy
+[2024-04-14 12:56:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: claudetools
+[2024-04-14 12:56:29] INFO root fetch - processPackages [claudetools]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 12:56:29] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 12:56:29] INFO root fetch - processPackages [claudetools]: Downloading https://files.pythonhosted.org/packages/f9/92/2128073c00249814343537b3ab9f95b051d258167a4039149565567d2f18/claudetools-0.8.0.tar.gz
+[2024-04-14 12:56:29] WARNING root fetch - processPackages [nbnlp]: Skipping, unable to determine old version
+[2024-04-14 12:56:29] INFO root fetch - main [MainThread]: End processing [nbnlp] error
+[2024-04-14 12:56:29] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 12:56:29] INFO root fetch - processPackages [claudetools]: Downloading https://files.pythonhosted.org/packages/db/1e/90739829a859e6c18d74e1a3611a917a7527ba846755059c360330c63363/claudetools-0.9.0.tar.gz
+[2024-04-14 12:56:29] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 12:56:29] INFO root fetch - processPackages [claudetools]: executing diffoscope
+[2024-04-14 12:56:29] INFO root fetch - processPackages [claudetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claudetools-0.8.0.tar.gz tmp/claudetools-0.9.0.tar.gz --markdown 20240414/c/claudetools/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 12:56:29] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 12:56:29] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 12:56:30] INFO root fetch - processPackages [claudetools]: Remove: archive file [/home/abi/fetcher/tmp/claudetools-0.8.0.tar.gz]
+[2024-04-14 12:56:30] INFO root fetch - processPackages [claudetools]: Remove: archive file [/home/abi/fetcher/tmp/claudetools-0.9.0.tar.gz]
+[2024-04-14 12:56:30] INFO root fetch - main [MainThread]: End processing [claudetools]: success
+[2024-04-14 12:56:30] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 12:56:30] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 12:56:30] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 12:56:30] INFO root fetch - main [MainThread]: Store serial: [22758290]
