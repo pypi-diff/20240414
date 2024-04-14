@@ -10518,3 +10518,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:40:20] INFO root fetch - processPackages [onnx2kerastl]: Remove: archive file [/home/abi/fetcher/tmp/onnx2kerastl-0.0.99.tar.gz]
 [2024-04-14 16:40:20] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
 [2024-04-14 16:40:20] INFO root fetch - main [MainThread]: Store serial: [22759852]
+[2024-04-14 16:42:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759852]
+[2024-04-14 16:42:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geonum
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ansar-connect
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pandas-wizard
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flake8-no-else
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ciscoconfparse2
+[2024-04-14 16:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: drug-named-entity-recognition
+[2024-04-14 16:42:37] INFO root fetch - processPackages [geonum]: New version: [1.5.0.dev9] Old Version: [1.5.0.dev11]
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.153] Old Version: [0.1.152]
+[2024-04-14 16:42:37] INFO root fetch - processPackages [geonum]: Downloading https://files.pythonhosted.org/packages/3a/66/7002cca7977a97f5e49d8271c1fcb28e57d14a9e10080501da6691b99ab3/geonum-1.5.0.dev11.tar.gz
+[2024-04-14 16:42:37] WARNING root fetch - processPackages [pandas-wizard]: Skipping, unable to determine old version
+[2024-04-14 16:42:37] INFO root fetch - main [MainThread]: End processing [pandas-wizard] error
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/f7/40/a606bd2036eb500f9eae55c06a9583e92df42005207e52f80f51d07e6098/ansar_connect-0.1.152.tar.gz
+[2024-04-14 16:42:37] WARNING root fetch - processPackages [flake8-no-else]: Skipping, unable to determine old version
+[2024-04-14 16:42:37] INFO root fetch - main [MainThread]: End processing [flake8-no-else] error
+[2024-04-14 16:42:37] INFO root fetch - processPackages [drug-named-entity-recognition]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-04-14 16:42:37] INFO root fetch - processPackages [geonum]: Downloading https://files.pythonhosted.org/packages/03/34/306a0c35e22b183264445cdbca756743d5d77cfb62603ddec437e2e64b0f/geonum-1.5.0.dev9.tar.gz
+[2024-04-14 16:42:37] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-04-14 16:42:37] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-04-14 16:42:37] INFO root fetch - processPackages [drug-named-entity-recognition]: Downloading https://files.pythonhosted.org/packages/c9/ce/dff4dbdbf0d871b54e138cfd5cd95344286b47086113681c7906c8de30bb/drug-named-entity-recognition-1.0.2.tar.gz
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/ae/5d/7292b2c40cca917cffb8e1d7f5465b05ee21d9f926029bd1180193ef6bbd/ansar_connect-0.1.153.tar.gz
+[2024-04-14 16:42:37] INFO root fetch - processPackages [geonum]: executing diffoscope
+[2024-04-14 16:42:37] INFO root fetch - processPackages [geonum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geonum-1.5.0.dev11.tar.gz tmp/geonum-1.5.0.dev9.tar.gz --markdown 20240414/g/geonum/1.5.0.dev11-1.5.0.dev9/README.md --exclude *.pyd
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 16:42:37] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.152.tar.gz tmp/ansar_connect-0.1.153.tar.gz --markdown 20240414/a/ansar-connect/0.1.152-0.1.153/README.md --exclude *.pyd
+[2024-04-14 16:42:37] INFO root fetch - processPackages [drug-named-entity-recognition]: Downloading https://files.pythonhosted.org/packages/4f/b7/ceafdcb2786d33d2c6d6403e5c393a1b66148e2d9b0f269096a79655b5a1/drug_named_entity_recognition-1.0.3.tar.gz
+[2024-04-14 16:42:38] INFO root fetch - processPackages [geonum]: Remove: archive file [/home/abi/fetcher/tmp/geonum-1.5.0.dev11.tar.gz]
+[2024-04-14 16:42:38] INFO root fetch - processPackages [geonum]: Remove: archive file [/home/abi/fetcher/tmp/geonum-1.5.0.dev9.tar.gz]
+[2024-04-14 16:42:38] INFO root fetch - main [MainThread]: End processing [geonum]: success
+[2024-04-14 16:42:38] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.152.tar.gz]
+[2024-04-14 16:42:38] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.153.tar.gz]
+[2024-04-14 16:42:38] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 16:42:38] INFO root fetch - processPackages [drug-named-entity-recognition]: executing diffoscope
+[2024-04-14 16:42:38] INFO root fetch - processPackages [drug-named-entity-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drug-named-entity-recognition-1.0.2.tar.gz tmp/drug_named_entity_recognition-1.0.3.tar.gz --markdown 20240414/d/drug-named-entity-recognition/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-14 16:42:39] INFO root fetch - processPackages [drug-named-entity-recognition]: Remove: archive file [/home/abi/fetcher/tmp/drug-named-entity-recognition-1.0.2.tar.gz]
+[2024-04-14 16:42:39] INFO root fetch - processPackages [drug-named-entity-recognition]: Remove: archive file [/home/abi/fetcher/tmp/drug_named_entity_recognition-1.0.3.tar.gz]
+[2024-04-14 16:42:39] INFO root fetch - main [MainThread]: End processing [drug-named-entity-recognition]: success
+[2024-04-14 16:42:39] INFO root fetch - main [MainThread]: Store serial: [22759877]
