@@ -16385,3 +16385,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:55:18] INFO root fetch - processPackages [dash-bootstrap-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_bootstrap_components-1.6.0rc1.tar.gz]
 [2024-04-14 23:55:18] INFO root fetch - main [MainThread]: End processing [dash-bootstrap-components]: success
 [2024-04-14 23:55:18] INFO root fetch - main [MainThread]: Store serial: [22762735]
+[2024-04-14 23:57:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762735]
+[2024-04-14 23:57:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 23:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watson-poetry
+[2024-04-14 23:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygeneconverter
+[2024-04-14 23:57:26] INFO root fetch - processPackages [watson-poetry]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 23:57:26] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/a3/26/ff73fcab53d7f3d84b13c0ee9459d026877e58e11ed1d68983d4e576afc5/watson_poetry-0.1.4.tar.gz
+[2024-04-14 23:57:26] WARNING root fetch - processPackages [pygeneconverter]: Skipping, unable to determine old version
+[2024-04-14 23:57:26] INFO root fetch - main [MainThread]: End processing [pygeneconverter] error
+[2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: Downloading https://files.pythonhosted.org/packages/9d/fc/b0a7711fd88520e44caaedc92ec1cb542985d7ba6ce00c92dbf97d5871c5/watson_poetry-0.1.5.tar.gz
+[2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: executing diffoscope
+[2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watson_poetry-0.1.4.tar.gz tmp/watson_poetry-0.1.5.tar.gz --markdown 20240414/w/watson-poetry/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.4.tar.gz]
+[2024-04-14 23:57:27] INFO root fetch - processPackages [watson-poetry]: Remove: archive file [/home/abi/fetcher/tmp/watson_poetry-0.1.5.tar.gz]
+[2024-04-14 23:57:27] INFO root fetch - main [MainThread]: End processing [watson-poetry]: success
+[2024-04-14 23:57:27] INFO root fetch - main [MainThread]: Store serial: [22762742]
