@@ -8484,3 +8484,134 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:10:27] INFO root fetch - processPackages [pyflame]: Remove: archive file [/home/abi/fetcher/tmp/pyflame-0.3.2.tar.gz]
 [2024-04-14 14:10:27] INFO root fetch - main [MainThread]: End processing [pyflame]: success
 [2024-04-14 14:10:27] INFO root fetch - main [MainThread]: Store serial: [22758773]
+[2024-04-14 14:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758773]
+[2024-04-14 14:12:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyflame
+[2024-04-14 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: private-cw-rpa
+[2024-04-14 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-14 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jgtfxcon
+[2024-04-14 14:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: databarge
+[2024-04-14 14:12:43] INFO root fetch - processPackages [pyflame]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-14 14:12:43] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 14:12:43] INFO root fetch - processPackages [pyflame]: Downloading https://files.pythonhosted.org/packages/0f/78/04a296a7488dddf81476d997d0c24f4872943501a26d02cee418b9fc53e0/pyflame-0.3.1.tar.gz
+[2024-04-14 14:12:43] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 14:12:43] WARNING root fetch - processPackages [private-cw-rpa]: Skipping, unable to determine old version
+[2024-04-14 14:12:43] INFO root fetch - main [MainThread]: End processing [private-cw-rpa] error
+[2024-04-14 14:12:43] INFO root fetch - processPackages [databarge]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-14 14:12:43] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240414] Old Version: [2.5.0b20240413]
+[2024-04-14 14:12:44] INFO root fetch - processPackages [databarge]: Downloading https://files.pythonhosted.org/packages/9f/74/c778b141d8ba51d238513150e2606fe03c798f281ffbfd0c918b8d9edeac/databarge-2.0.3.tar.gz
+[2024-04-14 14:12:44] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/9d/84/2ed0d8fb387e8b5312fe40b37ad2a3c9d5ee58eb520deae655d986e1aad2/bigdl_core_xe_esimd_21-2.5.0b20240413-cp39-cp39-win_amd64.whl
+[2024-04-14 14:12:44] INFO root fetch - processPackages [pyflame]: Downloading https://files.pythonhosted.org/packages/74/9e/0e750a25b3166a0e4e4f6915c1cec971c774d3ea4f84827a64323700d5ae/pyflame-0.3.2.tar.gz
+[2024-04-14 14:12:44] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 14:12:44] INFO root fetch - processPackages [pyflame]: executing diffoscope
+[2024-04-14 14:12:44] INFO root fetch - processPackages [pyflame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflame-0.3.1.tar.gz tmp/pyflame-0.3.2.tar.gz --markdown 20240414/p/pyflame/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-14 14:12:44] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 14:12:44] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 14:12:44] INFO root fetch - processPackages [databarge]: Downloading https://files.pythonhosted.org/packages/35/6d/91d6abab65aa47e51fcc765933c48f0c3c2af0b1472e3ab1632bf5cac0f0/databarge-2.0.4.tar.gz
+[2024-04-14 14:12:44] INFO root fetch - processPackages [databarge]: executing diffoscope
+[2024-04-14 14:12:44] INFO root fetch - processPackages [databarge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databarge-2.0.3.tar.gz tmp/databarge-2.0.4.tar.gz --markdown 20240414/d/databarge/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-04-14 14:12:44] INFO root fetch - processPackages [pyflame]: Remove: archive file [/home/abi/fetcher/tmp/pyflame-0.3.1.tar.gz]
+[2024-04-14 14:12:44] INFO root fetch - processPackages [pyflame]: Remove: archive file [/home/abi/fetcher/tmp/pyflame-0.3.2.tar.gz]
+[2024-04-14 14:12:44] INFO root fetch - main [MainThread]: End processing [pyflame]: success
+[2024-04-14 14:12:45] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 14:12:45] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 14:12:45] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 14:12:45] INFO root fetch - processPackages [databarge]: Remove: archive file [/home/abi/fetcher/tmp/databarge-2.0.3.tar.gz]
+[2024-04-14 14:12:45] INFO root fetch - processPackages [databarge]: Remove: archive file [/home/abi/fetcher/tmp/databarge-2.0.4.tar.gz]
+[2024-04-14 14:12:45] INFO root fetch - main [MainThread]: End processing [databarge]: success
+[2024-04-14 14:12:45] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/0d/b9/13538ad65c417b215f1d3329544bf716c26eb7a7f06704602c9cd4425f29/bigdl_core_xe_esimd_21-2.5.0b20240414-cp310-cp310-win_amd64.whl
+[2024-04-14 14:12:45] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-04-14 14:12:45] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240413-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240414-cp310-cp310-win_amd64.whl.zip --markdown 20240414/b/bigdl-core-xe-esimd-21/2.5.0b20240413-2.5.0b20240414/README.md --exclude *.pyd
+[2024-04-14 14:12:45] ERROR root fetch - processPackages [bigdl-core-xe-esimd-21]: Diffoscope failed: time="2024-04-14T14:12:45+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140020967021968)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140021101239808)
+
+[2024-04-14 14:12:45] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-14 14:12:45] INFO root fetch - main [MainThread]: Store serial: [22758791]
