@@ -2008,3 +2008,17 @@
 [2024-04-14 02:53:58] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.1.tar.gz]
 [2024-04-14 02:53:58] INFO root fetch - main [MainThread]: End processing [lama2923]: success
 [2024-04-14 02:53:58] INFO root fetch - main [MainThread]: Store serial: [22755930]
+[2024-04-14 02:56:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755930]
+[2024-04-14 02:56:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 02:58:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755930]
+[2024-04-14 02:58:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 02:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vitriolic
+[2024-04-14 02:58:12] INFO root fetch - processPackages [vitriolic]: New version: [3.3.7] Old Version: [3.3.6]
+[2024-04-14 02:58:13] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/cf/6a/1c8a0eb59e7e9126908cbe25a8ab7decaafe0a2a6f5653085a1286040218/vitriolic-3.3.6.tar.gz
+[2024-04-14 02:58:13] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/88/82/1997c9482fc6ea0e3b9c4cc505c075c2b5036c464fcf2a1bce2fb4f80b34/vitriolic-3.3.7-py3-none-any.whl
+[2024-04-14 02:58:13] INFO root fetch - processPackages [vitriolic]: executing diffoscope
+[2024-04-14 02:58:13] INFO root fetch - processPackages [vitriolic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitriolic-3.3.6.tar.gz tmp/vitriolic-3.3.7-py3-none-any.whl.zip --markdown 20240414/v/vitriolic/3.3.6-3.3.7/README.md --exclude *.pyd
+[2024-04-14 02:58:14] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.3.6.tar.gz]
+[2024-04-14 02:58:14] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.3.7-py3-none-any.whl.zip]
+[2024-04-14 02:58:14] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
+[2024-04-14 02:58:14] INFO root fetch - main [MainThread]: Store serial: [22755938]
