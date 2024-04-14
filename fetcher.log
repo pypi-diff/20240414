@@ -1811,3 +1811,24 @@
 [2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.1.0.tar.gz]
 [2024-04-14 02:36:27] INFO root fetch - main [MainThread]: End processing [nokey]: success
 [2024-04-14 02:36:27] INFO root fetch - main [MainThread]: Store serial: [22755863]
+[2024-04-14 02:38:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755863]
+[2024-04-14 02:38:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 02:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utool
+[2024-04-14 02:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fudstop
+[2024-04-14 02:38:36] INFO root fetch - processPackages [fudstop]: New version: [2.5.0] Old Version: [2.4.8]
+[2024-04-14 02:38:36] INFO root fetch - processPackages [utool]: New version: [2.2.0] Old Version: [2.1.7]
+[2024-04-14 02:38:36] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/ba/5a/dc0876e761c55572c38f48009f9872efaf52563649708c04ef93ff49665f/fudstop-2.4.8.tar.gz
+[2024-04-14 02:38:36] INFO root fetch - processPackages [utool]: Downloading https://files.pythonhosted.org/packages/08/d2/d31a53d13f638686b2d92378e7f7d306a7ed3c118a2923a4b282a281b5cf/utool-2.1.7.tar.gz
+[2024-04-14 02:38:36] INFO root fetch - processPackages [fudstop]: Downloading https://files.pythonhosted.org/packages/83/24/c1a1421b2fe5e8c15f3f0e56e82df13938e8a0f8957ddbd5513fb6f97bac/fudstop-2.5.0.tar.gz
+[2024-04-14 02:38:37] INFO root fetch - processPackages [utool]: Downloading https://files.pythonhosted.org/packages/6e/f1/c787e6da236f18e423785371de2ecd724f52acc63ae6458a2406a61cd9ea/utool-2.2.0.tar.gz
+[2024-04-14 02:38:37] INFO root fetch - processPackages [fudstop]: executing diffoscope
+[2024-04-14 02:38:37] INFO root fetch - processPackages [fudstop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fudstop-2.4.8.tar.gz tmp/fudstop-2.5.0.tar.gz --markdown 20240414/f/fudstop/2.4.8-2.5.0/README.md --exclude *.pyd
+[2024-04-14 02:38:37] INFO root fetch - processPackages [utool]: executing diffoscope
+[2024-04-14 02:38:37] INFO root fetch - processPackages [utool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utool-2.1.7.tar.gz tmp/utool-2.2.0.tar.gz --markdown 20240414/u/utool/2.1.7-2.2.0/README.md --exclude *.pyd
+[2024-04-14 02:38:38] INFO root fetch - processPackages [utool]: Remove: archive file [/home/abi/fetcher/tmp/utool-2.1.7.tar.gz]
+[2024-04-14 02:38:38] INFO root fetch - processPackages [utool]: Remove: archive file [/home/abi/fetcher/tmp/utool-2.2.0.tar.gz]
+[2024-04-14 02:38:38] INFO root fetch - main [MainThread]: End processing [utool]: success
+[2024-04-14 02:38:38] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.4.8.tar.gz]
+[2024-04-14 02:38:38] INFO root fetch - processPackages [fudstop]: Remove: archive file [/home/abi/fetcher/tmp/fudstop-2.5.0.tar.gz]
+[2024-04-14 02:38:38] INFO root fetch - main [MainThread]: End processing [fudstop]: success
+[2024-04-14 02:38:38] INFO root fetch - main [MainThread]: Store serial: [22755869]
