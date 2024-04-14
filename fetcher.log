@@ -16364,3 +16364,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:53:05] INFO root fetch - processPackages [solutions-builder]: Remove: archive file [/home/abi/fetcher/tmp/solutions_builder-1.18.0.tar.gz]
 [2024-04-14 23:53:05] INFO root fetch - main [MainThread]: End processing [solutions-builder]: success
 [2024-04-14 23:53:05] INFO root fetch - main [MainThread]: Store serial: [22762720]
+[2024-04-14 23:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762720]
+[2024-04-14 23:55:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 23:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-bootstrap-components
+[2024-04-14 23:55:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genflowly-lambda-utils
+[2024-04-14 23:55:14] INFO root fetch - processPackages [genflowly-lambda-utils]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 23:55:14] INFO root fetch - processPackages [dash-bootstrap-components]: New version: [1.6.0rc1] Old Version: [1.6.0b1]
+[2024-04-14 23:55:15] INFO root fetch - processPackages [genflowly-lambda-utils]: Downloading https://files.pythonhosted.org/packages/19/f6/335fb8a857f250f156c9c860f7d647c8acd5354fa5a7cf742ff1e7565de3/genflowly_lambda_utils-0.0.5.tar.gz
+[2024-04-14 23:55:15] INFO root fetch - processPackages [dash-bootstrap-components]: Downloading https://files.pythonhosted.org/packages/e0/be/b44b6a5ac07b40d1e5ad8113d1ae9428f3896393c761da3e91e74f072859/dash-bootstrap-components-1.6.0b1.tar.gz
+[2024-04-14 23:55:15] INFO root fetch - processPackages [dash-bootstrap-components]: Downloading https://files.pythonhosted.org/packages/1f/8d/2f443a6bb91fcb0a671882da466e7f45a7f6d849e65e624caf777ce15521/dash_bootstrap_components-1.6.0rc1.tar.gz
+[2024-04-14 23:55:15] INFO root fetch - processPackages [genflowly-lambda-utils]: Downloading https://files.pythonhosted.org/packages/28/ef/258b5b2289c0c2b90fa82c50e5c835e8f106c39c16dd0367abd0048a8c46/genflowly_lambda_utils-0.0.6.tar.gz
+[2024-04-14 23:55:15] INFO root fetch - processPackages [dash-bootstrap-components]: executing diffoscope
+[2024-04-14 23:55:15] INFO root fetch - processPackages [dash-bootstrap-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-bootstrap-components-1.6.0b1.tar.gz tmp/dash_bootstrap_components-1.6.0rc1.tar.gz --markdown 20240414/d/dash-bootstrap-components/1.6.0b1-1.6.0rc1/README.md --exclude *.pyd
+[2024-04-14 23:55:15] INFO root fetch - processPackages [genflowly-lambda-utils]: executing diffoscope
+[2024-04-14 23:55:15] INFO root fetch - processPackages [genflowly-lambda-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genflowly_lambda_utils-0.0.5.tar.gz tmp/genflowly_lambda_utils-0.0.6.tar.gz --markdown 20240414/g/genflowly-lambda-utils/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 23:55:16] INFO root fetch - processPackages [genflowly-lambda-utils]: Remove: archive file [/home/abi/fetcher/tmp/genflowly_lambda_utils-0.0.5.tar.gz]
+[2024-04-14 23:55:16] INFO root fetch - processPackages [genflowly-lambda-utils]: Remove: archive file [/home/abi/fetcher/tmp/genflowly_lambda_utils-0.0.6.tar.gz]
+[2024-04-14 23:55:16] INFO root fetch - main [MainThread]: End processing [genflowly-lambda-utils]: success
+[2024-04-14 23:55:18] INFO root fetch - processPackages [dash-bootstrap-components]: Remove: archive file [/home/abi/fetcher/tmp/dash-bootstrap-components-1.6.0b1.tar.gz]
+[2024-04-14 23:55:18] INFO root fetch - processPackages [dash-bootstrap-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_bootstrap_components-1.6.0rc1.tar.gz]
+[2024-04-14 23:55:18] INFO root fetch - main [MainThread]: End processing [dash-bootstrap-components]: success
+[2024-04-14 23:55:18] INFO root fetch - main [MainThread]: Store serial: [22762735]
