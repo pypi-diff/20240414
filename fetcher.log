@@ -12481,3 +12481,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:00:51] WARNING root fetch - processPackages [pyontoenv]: Skipping, unable to determine old version
 [2024-04-14 19:00:51] INFO root fetch - main [MainThread]: End processing [pyontoenv] error
 [2024-04-14 19:00:51] INFO root fetch - main [MainThread]: Store serial: [22760645]
+[2024-04-14 19:02:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760645]
+[2024-04-14 19:03:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visionmetrics
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pt-br-verbs-lemmatizer
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: roktools
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grapes
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PathMePy
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: promplate-inspect
+[2024-04-14 19:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llmt
+[2024-04-14 19:03:01] INFO root fetch - processPackages [PathMePy]: New version: [0.5.1] Old Version: [0.5]
+[2024-04-14 19:03:01] WARNING root fetch - processPackages [promplate-inspect]: Skipping, unable to determine old version
+[2024-04-14 19:03:01] INFO root fetch - main [MainThread]: End processing [promplate-inspect] error
+[2024-04-14 19:03:01] INFO root fetch - processPackages [visionmetrics]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 19:03:01] INFO root fetch - processPackages [grapes]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-04-14 19:03:01] INFO root fetch - processPackages [roktools]: New version: [6.0.6] Old Version: [5.7.0]
+[2024-04-14 19:03:01] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 19:03:01] INFO root fetch - processPackages [llmt]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 19:03:01] INFO root fetch - processPackages [PathMePy]: Downloading https://files.pythonhosted.org/packages/70/3e/a3325722d31d0f39510986887a47fe08731c5dea091068438d681d7a0333/PathMePy-0.5.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [visionmetrics]: Downloading https://files.pythonhosted.org/packages/b1/36/effe327580b4f40413838542171169fd64c1b98dee1e0e2d3196a2e9fccf/visionmetrics-0.0.8.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [grapes]: Downloading https://files.pythonhosted.org/packages/a1/12/82026c2f452d7d1e3e8fbabd80c60ed13ccc285664652fa71078c2e47c13/grapes-0.7.1.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/dc/c2/7a45a28418308c83cba5c911436c725d72a51b7bb705a8d7d01271d4cb63/roktools-5.7.0-py2.py3-none-any.whl
+[2024-04-14 19:03:01] INFO root fetch - processPackages [pt-br-verbs-lemmatizer]: Downloading https://files.pythonhosted.org/packages/68/3a/b0fcf0cee000b14065de878a53bee84725478c0f793c6d3ceb98c50ceb41/pt_br_verbs_lemmatizer-0.1.6.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/af/b8/7093496eb8ac126b948b43cb7bf4466c2d34a14f55fde1e6cae195937a3f/llmt-0.0.3.tar.gz
+[2024-04-14 19:03:01] WARNING root fetch - processPackages [pt-br-verbs-lemmatizer]: Skipping package: exceeds size limit 11716368>=10485760
+[2024-04-14 19:03:01] INFO root fetch - main [MainThread]: End processing [pt-br-verbs-lemmatizer] error
+[2024-04-14 19:03:01] INFO root fetch - processPackages [visionmetrics]: Downloading https://files.pythonhosted.org/packages/b1/21/7c3bb5a4e10e3c6f066939d06cff0dab66352db8cec762fc802f418c6233/visionmetrics-0.0.9.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [PathMePy]: Downloading https://files.pythonhosted.org/packages/87/2b/93459eb6262352b27707f4e7cd8a1540f86d58882aec86a6e7b89c56bb0d/PathMePy-0.5.1.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [roktools]: Downloading https://files.pythonhosted.org/packages/40/9d/2aef30021aec3556c2ec7e9e93d60cb9e1318f333d7146ae49c0c4c7547d/roktools-6.0.6.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [grapes]: Downloading https://files.pythonhosted.org/packages/a9/ac/d4888714e04ebae395577f1efa9e8d9bf50a0bd7a1beefa8c00c07ba1cdc/grapes-0.8.0.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [visionmetrics]: executing diffoscope
+[2024-04-14 19:03:01] INFO root fetch - processPackages [visionmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visionmetrics-0.0.8.tar.gz tmp/visionmetrics-0.0.9.tar.gz --markdown 20240414/v/visionmetrics/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 19:03:01] INFO root fetch - processPackages [PathMePy]: executing diffoscope
+[2024-04-14 19:03:01] INFO root fetch - processPackages [PathMePy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PathMePy-0.5.tar.gz tmp/PathMePy-0.5.1.tar.gz --markdown 20240414/P/PathMePy/0.5-0.5.1/README.md --exclude *.pyd
+[2024-04-14 19:03:01] INFO root fetch - processPackages [roktools]: executing diffoscope
+[2024-04-14 19:03:01] INFO root fetch - processPackages [roktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roktools-5.7.0-py2.py3-none-any.whl.zip tmp/roktools-6.0.6.tar.gz --markdown 20240414/r/roktools/5.7.0-6.0.6/README.md --exclude *.pyd
+[2024-04-14 19:03:01] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/47/0c/12de66dc069507561030f0ca58185e09c1cea12f512656d00e39a41acdd5/llmt-0.0.4.tar.gz
+[2024-04-14 19:03:01] INFO root fetch - processPackages [grapes]: executing diffoscope
+[2024-04-14 19:03:01] INFO root fetch - processPackages [grapes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grapes-0.7.1.tar.gz tmp/grapes-0.8.0.tar.gz --markdown 20240414/g/grapes/0.7.1-0.8.0/README.md --exclude *.pyd
+[2024-04-14 19:03:02] INFO root fetch - processPackages [roktools]: Remove: archive file [/home/abi/fetcher/tmp/roktools-5.7.0-py2.py3-none-any.whl.zip]
+[2024-04-14 19:03:02] INFO root fetch - processPackages [roktools]: Remove: archive file [/home/abi/fetcher/tmp/roktools-6.0.6.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - main [MainThread]: End processing [roktools]: success
+[2024-04-14 19:03:02] INFO root fetch - processPackages [grapes]: Remove: archive file [/home/abi/fetcher/tmp/grapes-0.7.1.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - processPackages [grapes]: Remove: archive file [/home/abi/fetcher/tmp/grapes-0.8.0.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - main [MainThread]: End processing [grapes]: success
+[2024-04-14 19:03:02] INFO root fetch - processPackages [llmt]: executing diffoscope
+[2024-04-14 19:03:02] INFO root fetch - processPackages [llmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmt-0.0.3.tar.gz tmp/llmt-0.0.4.tar.gz --markdown 20240414/l/llmt/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 19:03:02] INFO root fetch - processPackages [PathMePy]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-0.5.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - processPackages [PathMePy]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-0.5.1.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - main [MainThread]: End processing [PathMePy]: success
+[2024-04-14 19:03:02] INFO root fetch - processPackages [visionmetrics]: Remove: archive file [/home/abi/fetcher/tmp/visionmetrics-0.0.8.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - processPackages [visionmetrics]: Remove: archive file [/home/abi/fetcher/tmp/visionmetrics-0.0.9.tar.gz]
+[2024-04-14 19:03:02] INFO root fetch - main [MainThread]: End processing [visionmetrics]: success
+[2024-04-14 19:03:03] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.3.tar.gz]
+[2024-04-14 19:03:03] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.4.tar.gz]
+[2024-04-14 19:03:03] INFO root fetch - main [MainThread]: End processing [llmt]: success
+[2024-04-14 19:03:03] INFO root fetch - main [MainThread]: Store serial: [22760662]
