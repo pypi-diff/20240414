@@ -2673,3 +2673,24 @@
 [2024-04-14 04:30:07] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 04:30:07] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 04:30:07] INFO root fetch - main [MainThread]: Store serial: [22756188]
+[2024-04-14 04:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756188]
+[2024-04-14 04:32:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psyke
+[2024-04-14 04:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aerospace-chatbot
+[2024-04-14 04:32:16] INFO root fetch - processPackages [aerospace-chatbot]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 04:32:16] INFO root fetch - processPackages [psyke]: New version: [0.8.2.dev8] Old Version: [0.8.2.dev4]
+[2024-04-14 04:32:16] INFO root fetch - processPackages [aerospace-chatbot]: Downloading https://files.pythonhosted.org/packages/68/28/b7679496333928754395052d6b8409be6140054f09d8d6aa69fe5926764d/aerospace_chatbot-0.0.3.tar.gz
+[2024-04-14 04:32:16] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/ce/8e/be863b3108617897f5651e4c3b993f430021754e55650b715168d4e7f5b1/psyke-0.8.2.dev4.tar.gz
+[2024-04-14 04:32:16] INFO root fetch - processPackages [aerospace-chatbot]: Downloading https://files.pythonhosted.org/packages/92/c3/b71d25cf6b3d2d0e09da984802726c71faf606c3e30cad3431058abc6143/aerospace_chatbot-0.0.4.tar.gz
+[2024-04-14 04:32:16] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/4c/87/d0daf125b499e7076b921acf89cc606746e5e1f3a77d1ade86f88680589c/psyke-0.8.2.dev8.tar.gz
+[2024-04-14 04:32:16] INFO root fetch - processPackages [aerospace-chatbot]: executing diffoscope
+[2024-04-14 04:32:16] INFO root fetch - processPackages [aerospace-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aerospace_chatbot-0.0.3.tar.gz tmp/aerospace_chatbot-0.0.4.tar.gz --markdown 20240414/a/aerospace-chatbot/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 04:32:16] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-04-14 04:32:16] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.2.dev4.tar.gz tmp/psyke-0.8.2.dev8.tar.gz --markdown 20240414/p/psyke/0.8.2.dev4-0.8.2.dev8/README.md --exclude *.pyd
+[2024-04-14 04:32:17] INFO root fetch - processPackages [aerospace-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/aerospace_chatbot-0.0.3.tar.gz]
+[2024-04-14 04:32:17] INFO root fetch - processPackages [aerospace-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/aerospace_chatbot-0.0.4.tar.gz]
+[2024-04-14 04:32:17] INFO root fetch - main [MainThread]: End processing [aerospace-chatbot]: success
+[2024-04-14 04:32:17] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev4.tar.gz]
+[2024-04-14 04:32:17] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.2.dev8.tar.gz]
+[2024-04-14 04:32:17] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-04-14 04:32:17] INFO root fetch - main [MainThread]: Store serial: [22756195]
