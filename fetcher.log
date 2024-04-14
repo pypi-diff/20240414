@@ -6492,3 +6492,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:52:58] INFO root fetch - processPackages [typeset-soren-n]: Remove: archive file [/home/abi/fetcher/tmp/typeset_soren_n-2.0.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
 [2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [typeset-soren-n]: success
 [2024-04-14 11:52:58] INFO root fetch - main [MainThread]: Store serial: [22757750]
+[2024-04-14 11:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757750]
+[2024-04-14 11:55:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emx
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ebsmanager
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: YahooProject
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipgogogo
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BiochemPy
+[2024-04-14 11:55:10] INFO root fetch - processPackages [emx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ipgogogo]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 11:55:10] INFO root fetch - processPackages [YahooProject]: New version: [0.3] Old Version: [0.2]
+[2024-04-14 11:55:10] WARNING root fetch - processPackages [ebsmanager]: Skipping, unable to determine old version
+[2024-04-14 11:55:10] INFO root fetch - main [MainThread]: End processing [ebsmanager] error
+[2024-04-14 11:55:10] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/d0/72/db8702f65dd00ea850e2634e3e65914805c7866440c3edb5728770fe9944/emx-1.0.8-py3-none-any.whl
+[2024-04-14 11:55:10] INFO root fetch - processPackages [YahooProject]: Downloading https://files.pythonhosted.org/packages/83/93/727397d807327790ae35f2c814f22b51649b07466d2253eeba8fd4b09b32/yahooproject-0.2.tar.gz
+[2024-04-14 11:55:10] INFO root fetch - processPackages [BiochemPy]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ipgogogo]: Downloading https://files.pythonhosted.org/packages/87/72/d7ac7cd36d41457abe7274fe230caa8608c4257b53ccce8b15274ef73531/ipgogogo-1.0.0.tar.gz
+[2024-04-14 11:55:10] INFO root fetch - processPackages [BiochemPy]: Downloading https://files.pythonhosted.org/packages/74/9b/2fbcf134aab9ba9e8e6d90ce16c9a0542ee788df565291b69db4c1be3868/BiochemPy-0.1.0.tar.gz
+[2024-04-14 11:55:10] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/24/55/887075545013adb2d53fed13cfe5e9cfa59decef2eee93b668eed757e378/emx-1.0.9-py3-none-any.whl
+[2024-04-14 11:55:10] INFO root fetch - processPackages [YahooProject]: Downloading https://files.pythonhosted.org/packages/07/45/6a4ad0449f3ba3d7df3866971e9531dd3be70bc8c935f3710f88e2d0cbe0/yahooproject-0.3.tar.gz
+[2024-04-14 11:55:10] INFO root fetch - processPackages [emx]: executing diffoscope
+[2024-04-14 11:55:10] INFO root fetch - processPackages [emx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emx-1.0.8-py3-none-any.whl.zip tmp/emx-1.0.9-py3-none-any.whl.zip --markdown 20240414/e/emx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ipgogogo]: Downloading https://files.pythonhosted.org/packages/3e/a2/f576bcd98814ff3870bddbd362579b529a537694b991355e63d7aede1d7b/ipgogogo-1.0.1.tar.gz
+[2024-04-14 11:55:10] INFO root fetch - processPackages [YahooProject]: executing diffoscope
+[2024-04-14 11:55:10] INFO root fetch - processPackages [YahooProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yahooproject-0.2.tar.gz tmp/yahooproject-0.3.tar.gz --markdown 20240414/Y/YahooProject/0.2-0.3/README.md --exclude *.pyd
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ipgogogo]: executing diffoscope
+[2024-04-14 11:55:10] INFO root fetch - processPackages [ipgogogo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipgogogo-1.0.0.tar.gz tmp/ipgogogo-1.0.1.tar.gz --markdown 20240414/i/ipgogogo/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 11:55:10] INFO root fetch - processPackages [BiochemPy]: Downloading https://files.pythonhosted.org/packages/3d/3a/ab3f710e3d4c205c256f48a772613a22605bf609ffdc65eaba4b21eb0191/BiochemPy-0.2.0.tar.gz
+[2024-04-14 11:55:11] INFO root fetch - processPackages [BiochemPy]: executing diffoscope
+[2024-04-14 11:55:11] INFO root fetch - processPackages [BiochemPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BiochemPy-0.1.0.tar.gz tmp/BiochemPy-0.2.0.tar.gz --markdown 20240414/B/BiochemPy/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-14 11:55:11] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.8-py3-none-any.whl.zip]
+[2024-04-14 11:55:11] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.9-py3-none-any.whl.zip]
+[2024-04-14 11:55:11] INFO root fetch - main [MainThread]: End processing [emx]: success
+[2024-04-14 11:55:11] INFO root fetch - processPackages [YahooProject]: Remove: archive file [/home/abi/fetcher/tmp/yahooproject-0.2.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - processPackages [YahooProject]: Remove: archive file [/home/abi/fetcher/tmp/yahooproject-0.3.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - main [MainThread]: End processing [YahooProject]: success
+[2024-04-14 11:55:11] INFO root fetch - processPackages [ipgogogo]: Remove: archive file [/home/abi/fetcher/tmp/ipgogogo-1.0.0.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - processPackages [ipgogogo]: Remove: archive file [/home/abi/fetcher/tmp/ipgogogo-1.0.1.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - main [MainThread]: End processing [ipgogogo]: success
+[2024-04-14 11:55:11] INFO root fetch - processPackages [BiochemPy]: Remove: archive file [/home/abi/fetcher/tmp/BiochemPy-0.1.0.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - processPackages [BiochemPy]: Remove: archive file [/home/abi/fetcher/tmp/BiochemPy-0.2.0.tar.gz]
+[2024-04-14 11:55:11] INFO root fetch - main [MainThread]: End processing [BiochemPy]: success
+[2024-04-14 11:55:11] INFO root fetch - main [MainThread]: Store serial: [22757802]
