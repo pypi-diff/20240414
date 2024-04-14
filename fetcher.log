@@ -6534,3 +6534,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:55:11] INFO root fetch - processPackages [BiochemPy]: Remove: archive file [/home/abi/fetcher/tmp/BiochemPy-0.2.0.tar.gz]
 [2024-04-14 11:55:11] INFO root fetch - main [MainThread]: End processing [BiochemPy]: success
 [2024-04-14 11:55:11] INFO root fetch - main [MainThread]: Store serial: [22757802]
+[2024-04-14 11:57:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757802]
+[2024-04-14 11:57:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 11:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: im2deep
+[2024-04-14 11:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: claudetools
+[2024-04-14 11:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asgebsmanager
+[2024-04-14 11:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gmalglib
+[2024-04-14 11:57:24] WARNING root fetch - processPackages [asgebsmanager]: Skipping, unable to determine old version
+[2024-04-14 11:57:24] INFO root fetch - main [MainThread]: End processing [asgebsmanager] error
+[2024-04-14 11:57:24] INFO root fetch - processPackages [claudetools]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 11:57:24] INFO root fetch - processPackages [im2deep]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 11:57:24] INFO root fetch - processPackages [gmalglib]: New version: [0.5.1] Old Version: [0.4.1]
+[2024-04-14 11:57:24] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/c5/ed/cb96d2f9834f9855b453dcbfe589a9b44cc73c015c5bac8048a6ae802377/gmalglib-0.4.1.tar.gz
+[2024-04-14 11:57:24] INFO root fetch - processPackages [claudetools]: Downloading https://files.pythonhosted.org/packages/f9/92/2128073c00249814343537b3ab9f95b051d258167a4039149565567d2f18/claudetools-0.8.0.tar.gz
+[2024-04-14 11:57:24] INFO root fetch - processPackages [im2deep]: Downloading https://files.pythonhosted.org/packages/6a/e0/7b65536b15757dd2300cd5174238a4ecde4575a585bcccf190f5c2bb7008/im2deep-0.1.4.tar.gz
+[2024-04-14 11:57:24] WARNING root fetch - processPackages [im2deep]: Skipping package: exceeds size limit 47178953>=10485760
+[2024-04-14 11:57:24] INFO root fetch - main [MainThread]: End processing [im2deep] error
+[2024-04-14 11:57:24] INFO root fetch - processPackages [claudetools]: Downloading https://files.pythonhosted.org/packages/db/1e/90739829a859e6c18d74e1a3611a917a7527ba846755059c360330c63363/claudetools-0.9.0.tar.gz
+[2024-04-14 11:57:24] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/d0/56/ab6d0b135c1f04e803a13b6e8a03823eb985f59e75af2e5a4ed3c5734486/gmalglib-0.5.1.tar.gz
+[2024-04-14 11:57:24] INFO root fetch - processPackages [claudetools]: executing diffoscope
+[2024-04-14 11:57:24] INFO root fetch - processPackages [claudetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claudetools-0.8.0.tar.gz tmp/claudetools-0.9.0.tar.gz --markdown 20240414/c/claudetools/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 11:57:24] INFO root fetch - processPackages [gmalglib]: executing diffoscope
+[2024-04-14 11:57:24] INFO root fetch - processPackages [gmalglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmalglib-0.4.1.tar.gz tmp/gmalglib-0.5.1.tar.gz --markdown 20240414/g/gmalglib/0.4.1-0.5.1/README.md --exclude *.pyd
+[2024-04-14 11:57:25] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.4.1.tar.gz]
+[2024-04-14 11:57:25] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.5.1.tar.gz]
+[2024-04-14 11:57:25] INFO root fetch - main [MainThread]: End processing [gmalglib]: success
+[2024-04-14 11:57:25] INFO root fetch - processPackages [claudetools]: Remove: archive file [/home/abi/fetcher/tmp/claudetools-0.8.0.tar.gz]
+[2024-04-14 11:57:25] INFO root fetch - processPackages [claudetools]: Remove: archive file [/home/abi/fetcher/tmp/claudetools-0.9.0.tar.gz]
+[2024-04-14 11:57:25] INFO root fetch - main [MainThread]: End processing [claudetools]: success
+[2024-04-14 11:57:25] INFO root fetch - main [MainThread]: Store serial: [22757813]
