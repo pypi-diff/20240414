@@ -3569,3 +3569,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:02:56] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
 [2024-04-14 06:02:56] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
 [2024-04-14 06:02:56] INFO root fetch - main [MainThread]: Store serial: [22756451]
+[2024-04-14 06:05:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756451]
+[2024-04-14 06:05:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 06:05:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybersailor
+[2024-04-14 06:05:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromedriver-binary
+[2024-04-14 06:05:05] INFO root fetch - processPackages [cybersailor]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-14 06:05:05] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-04-14 06:05:05] INFO root fetch - processPackages [cybersailor]: Downloading https://files.pythonhosted.org/packages/42/8c/81d243c7eb3b606d7c2c72bb510da055b620dcadee9ce2715d26056ae44f/cybersailor-0.1.0.tar.gz
+[2024-04-14 06:05:05] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-04-14 06:05:05] INFO root fetch - processPackages [cybersailor]: Downloading https://files.pythonhosted.org/packages/9f/21/9826d96d4507650ceac99c79200c297691a224fcd3deebaf64d5d2be91dd/cybersailor-0.1.2.tar.gz
+[2024-04-14 06:05:05] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-04-14 06:05:05] INFO root fetch - processPackages [cybersailor]: executing diffoscope
+[2024-04-14 06:05:05] INFO root fetch - processPackages [cybersailor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybersailor-0.1.0.tar.gz tmp/cybersailor-0.1.2.tar.gz --markdown 20240414/c/cybersailor/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-04-14 06:05:05] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-04-14 06:05:05] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240414/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-04-14 06:05:06] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-04-14 06:05:06] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-04-14 06:05:06] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-04-14 06:05:06] INFO root fetch - processPackages [cybersailor]: Remove: archive file [/home/abi/fetcher/tmp/cybersailor-0.1.0.tar.gz]
+[2024-04-14 06:05:06] INFO root fetch - processPackages [cybersailor]: Remove: archive file [/home/abi/fetcher/tmp/cybersailor-0.1.2.tar.gz]
+[2024-04-14 06:05:06] INFO root fetch - main [MainThread]: End processing [cybersailor]: success
+[2024-04-14 06:05:06] INFO root fetch - main [MainThread]: Store serial: [22756462]
