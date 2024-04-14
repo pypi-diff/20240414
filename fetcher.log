@@ -4637,3 +4637,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:26:10] INFO root fetch - processPackages [pyqt5-concurrent]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_concurrent-0.1.3.tar.gz]
 [2024-04-14 08:26:10] INFO root fetch - main [MainThread]: End processing [pyqt5-concurrent]: success
 [2024-04-14 08:26:10] INFO root fetch - main [MainThread]: Store serial: [22756861]
+[2024-04-14 08:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756861]
+[2024-04-14 08:28:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 08:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Tooldelta
+[2024-04-14 08:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheProtocols
+[2024-04-14 08:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tool-use
+[2024-04-14 08:28:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stepcount
+[2024-04-14 08:28:18] INFO root fetch - processPackages [Tooldelta]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-14 08:28:19] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/ef/cf/2c6ce5ddffc59276077d817f51886011579d1d15c17a3a5c67b2372c6137/tooldelta-0.5.0.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [stepcount]: New version: [3.4.0] Old Version: [3.3.1]
+[2024-04-14 08:28:19] WARNING root fetch - processPackages [TheProtocols]: Skipping, unable to determine old version
+[2024-04-14 08:28:19] INFO root fetch - main [MainThread]: End processing [TheProtocols] error
+[2024-04-14 08:28:19] INFO root fetch - processPackages [tool-use]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-14 08:28:19] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/42/19/15096a74a2514352f7db129d2f963735e00b9be35fd575efb2d31ec6f71d/tool_use-0.0.9.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [stepcount]: Downloading https://files.pythonhosted.org/packages/3c/20/a32a8e959eb27bdaf5cf0103bef16c3804fb2af94b06d48d5b5eae85aca1/stepcount-3.3.1.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/d8/03/204ad1a2ead4c8467da12089733d9dd458c57b5c38826399b709175a2bfd/tooldelta-0.5.1.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-04-14 08:28:19] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.5.0.tar.gz tmp/tooldelta-0.5.1.tar.gz --markdown 20240414/T/Tooldelta/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-14 08:28:19] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/80/c1/75a7a991b2dd3f6a82b129890be22b864639ccf6263d32ec978c4712e68f/tool_use-0.1.0.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [stepcount]: Downloading https://files.pythonhosted.org/packages/e5/df/c8d0fa83ab65b31b29d065dfba0e0561303a8e340f6f7aa5fd9a82ef3797/stepcount-3.4.0.tar.gz
+[2024-04-14 08:28:19] INFO root fetch - processPackages [tool-use]: executing diffoscope
+[2024-04-14 08:28:19] INFO root fetch - processPackages [tool-use]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tool_use-0.0.9.tar.gz tmp/tool_use-0.1.0.tar.gz --markdown 20240414/t/tool-use/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-14 08:28:19] INFO root fetch - processPackages [stepcount]: executing diffoscope
+[2024-04-14 08:28:19] INFO root fetch - processPackages [stepcount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stepcount-3.3.1.tar.gz tmp/stepcount-3.4.0.tar.gz --markdown 20240414/s/stepcount/3.3.1-3.4.0/README.md --exclude *.pyd
+[2024-04-14 08:28:20] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.0.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.1.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-04-14 08:28:20] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.0.9.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.1.0.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - main [MainThread]: End processing [tool-use]: success
+[2024-04-14 08:28:20] INFO root fetch - processPackages [stepcount]: Remove: archive file [/home/abi/fetcher/tmp/stepcount-3.3.1.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - processPackages [stepcount]: Remove: archive file [/home/abi/fetcher/tmp/stepcount-3.4.0.tar.gz]
+[2024-04-14 08:28:20] INFO root fetch - main [MainThread]: End processing [stepcount]: success
+[2024-04-14 08:28:20] INFO root fetch - main [MainThread]: Store serial: [22756877]
