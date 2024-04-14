@@ -1201,3 +1201,18 @@
 [2024-04-14 02:00:23] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.7.tar.gz]
 [2024-04-14 02:00:23] INFO root fetch - main [MainThread]: End processing [gena]: success
 [2024-04-14 02:00:23] INFO root fetch - main [MainThread]: Store serial: [22755619]
+[2024-04-14 02:02:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755619]
+[2024-04-14 02:02:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 02:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mesmerize-viz
+[2024-04-14 02:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SAMMEC2
+[2024-04-14 02:02:32] INFO root fetch - processPackages [SAMMEC2]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 02:02:32] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/f5/fa/a402803ad000ad23be17cffd60c4d78461296c58fc1150bc9d70da47c477/SAMMEC2-0.0.7.tar.gz
+[2024-04-14 02:02:32] WARNING root fetch - processPackages [mesmerize-viz]: Skipping, unable to determine old version
+[2024-04-14 02:02:32] INFO root fetch - main [MainThread]: End processing [mesmerize-viz] error
+[2024-04-14 02:02:32] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/a5/9a/f0d0bf9aa28cce67bae422856d6c8d528fcf9f5f8c6c140b88ae42d50cbd/SAMMEC2-0.0.8.tar.gz
+[2024-04-14 02:02:32] INFO root fetch - processPackages [SAMMEC2]: executing diffoscope
+[2024-04-14 02:02:32] INFO root fetch - processPackages [SAMMEC2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAMMEC2-0.0.7.tar.gz tmp/SAMMEC2-0.0.8.tar.gz --markdown 20240414/S/SAMMEC2/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 02:02:33] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.7.tar.gz]
+[2024-04-14 02:02:33] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.8.tar.gz]
+[2024-04-14 02:02:33] INFO root fetch - main [MainThread]: End processing [SAMMEC2]: success
+[2024-04-14 02:02:33] INFO root fetch - main [MainThread]: Store serial: [22755627]
