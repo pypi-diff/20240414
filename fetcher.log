@@ -3723,3 +3723,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:20:14] WARNING root fetch - processPackages [chamco-ragbot]: Skipping, unable to determine old version
 [2024-04-14 06:20:14] INFO root fetch - main [MainThread]: End processing [chamco-ragbot] error
 [2024-04-14 06:20:14] INFO root fetch - main [MainThread]: Store serial: [22756522]
+[2024-04-14 06:22:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756522]
+[2024-04-14 06:22:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 06:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Terminalgemini
+[2024-04-14 06:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproject-metadata
+[2024-04-14 06:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hashcat
+[2024-04-14 06:22:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyplotlib
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-14 06:22:23] WARNING root fetch - processPackages [Terminalgemini]: Skipping, unable to determine old version
+[2024-04-14 06:22:23] INFO root fetch - main [MainThread]: End processing [Terminalgemini] error
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyproject-metadata]: New version: [0.8.0rc1] Old Version: [0.7.1]
+[2024-04-14 06:22:23] INFO root fetch - processPackages [hashcat]: New version: [5.1.0.post3] Old Version: [5.1.0.post2]
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyproject-metadata]: Downloading https://files.pythonhosted.org/packages/38/af/b0e6a9eba989870fd26e10889446d1bec2e6d5be0a1bae2dc4dcda9ce199/pyproject-metadata-0.7.1.tar.gz
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-14 06:22:23] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/82/c6/2efc41e75bd81518d4a104fe1deb40a648e5d5bbe60276dfc1f360da5050/hashcat-5.1.0.post2.tar.gz
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240414/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyproject-metadata]: Downloading https://files.pythonhosted.org/packages/f8/de/e695267d2a6c8622d0814f151647483d23532edff5816fe37c101fd0de59/pyproject_metadata-0.8.0rc1.tar.gz
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyproject-metadata]: executing diffoscope
+[2024-04-14 06:22:23] INFO root fetch - processPackages [pyproject-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-metadata-0.7.1.tar.gz tmp/pyproject_metadata-0.8.0rc1.tar.gz --markdown 20240414/p/pyproject-metadata/0.7.1-0.8.0rc1/README.md --exclude *.pyd
+[2024-04-14 06:22:24] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-14 06:22:24] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-14 06:22:24] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-14 06:22:24] INFO root fetch - processPackages [pyproject-metadata]: Remove: archive file [/home/abi/fetcher/tmp/pyproject-metadata-0.7.1.tar.gz]
+[2024-04-14 06:22:24] INFO root fetch - processPackages [pyproject-metadata]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_metadata-0.8.0rc1.tar.gz]
+[2024-04-14 06:22:24] INFO root fetch - main [MainThread]: End processing [pyproject-metadata]: success
+[2024-04-14 06:22:25] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/90/2d/60c5bc06e31f9e88622ef933c70bc10df0c55d7bff96ae55c448dc5b79e2/hashcat-5.1.0.post3.tar.gz
+[2024-04-14 06:22:27] INFO root fetch - processPackages [hashcat]: executing diffoscope
+[2024-04-14 06:22:27] INFO root fetch - processPackages [hashcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashcat-5.1.0.post2.tar.gz tmp/hashcat-5.1.0.post3.tar.gz --markdown 20240414/h/hashcat/5.1.0.post2-5.1.0.post3/README.md --exclude *.pyd
+[2024-04-14 06:22:31] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post2.tar.gz]
+[2024-04-14 06:22:31] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
+[2024-04-14 06:22:31] INFO root fetch - main [MainThread]: End processing [hashcat]: success
+[2024-04-14 06:22:31] INFO root fetch - main [MainThread]: Store serial: [22756536]
