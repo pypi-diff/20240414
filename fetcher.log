@@ -9203,3 +9203,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:05:16] INFO root fetch - processPackages [equinox]: Remove: archive file [/home/abi/fetcher/tmp/equinox-0.9.2.tar.gz]
 [2024-04-14 15:05:16] INFO root fetch - main [MainThread]: End processing [equinox]: success
 [2024-04-14 15:05:16] INFO root fetch - main [MainThread]: Store serial: [22759033]
+[2024-04-14 15:07:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759033]
+[2024-04-14 15:07:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 15:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-mig
+[2024-04-14 15:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtfx2console
+[2024-04-14 15:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ynlibpackages
+[2024-04-14 15:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: getblocks
+[2024-04-14 15:07:32] INFO root fetch - processPackages [sbcli-mig]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 15:07:32] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 15:07:32] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 15:07:32] WARNING root fetch - processPackages [ynlibpackages]: Skipping, unable to determine old version
+[2024-04-14 15:07:32] INFO root fetch - main [MainThread]: End processing [ynlibpackages] error
+[2024-04-14 15:07:32] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/06/2f/2b2f1cfa7b91365cf5cd645c5967a8e8a8bd7f1c8e89f91d7e43e2aefc87/sbcli-mig-1.0.8.zip
+[2024-04-14 15:07:32] INFO root fetch - processPackages [getblocks]: New version: [2024.4.14] Old Version: [2024.4.1]
+[2024-04-14 15:07:32] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/72/d5/85d2482c402c01fa38270b81f594fb6995018901411ffd115f6e75d2d70d/jgtfx2console-0.4.9.tar.gz
+[2024-04-14 15:07:32] INFO root fetch - processPackages [sbcli-mig]: Downloading https://files.pythonhosted.org/packages/4b/15/9c1afe915f08547ce582aeae079f597b2a173df003109bcd1d0f0bbf037e/sbcli-mig-1.0.9.zip
+[2024-04-14 15:07:32] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/e2/4c/622d17d855f9e60f3a0892d4dddc1d47c7041d08d526fa7b77602e3b971e/getblocks-2024.4.1.tar.gz
+[2024-04-14 15:07:32] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 15:07:32] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.8.tar.gz tmp/jgtfx2console-0.4.9.tar.gz --markdown 20240414/j/jgtfx2console/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 15:07:32] INFO root fetch - processPackages [sbcli-mig]: executing diffoscope
+[2024-04-14 15:07:32] INFO root fetch - processPackages [sbcli-mig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-mig-1.0.8.zip tmp/sbcli-mig-1.0.9.zip --markdown 20240414/s/sbcli-mig/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 15:07:32] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/12/38/addfc60441d7cdd75a587c80f112be3a9d759521690f6ba77b5be6adadee/getblocks-2024.4.14.tar.gz
+[2024-04-14 15:07:33] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2024-04-14 15:07:33] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-2024.4.1.tar.gz tmp/getblocks-2024.4.14.tar.gz --markdown 20240414/g/getblocks/2024.4.1-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 15:07:33] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 15:07:33] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.9.tar.gz]
+[2024-04-14 15:07:33] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 15:07:33] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.8.zip]
+[2024-04-14 15:07:33] INFO root fetch - processPackages [sbcli-mig]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-mig-1.0.9.zip]
+[2024-04-14 15:07:33] INFO root fetch - main [MainThread]: End processing [sbcli-mig]: success
+[2024-04-14 15:07:33] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.4.1.tar.gz]
+[2024-04-14 15:07:33] INFO root fetch - processPackages [getblocks]: Remove: archive file [/home/abi/fetcher/tmp/getblocks-2024.4.14.tar.gz]
+[2024-04-14 15:07:33] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2024-04-14 15:07:33] INFO root fetch - main [MainThread]: Store serial: [22759047]
