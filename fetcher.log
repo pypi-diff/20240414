@@ -13047,3 +13047,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:45:15] INFO root fetch - processPackages [autocar]: Remove: archive file [/home/abi/fetcher/tmp/autocar-0.1.9.tar.gz]
 [2024-04-14 19:45:15] INFO root fetch - main [MainThread]: End processing [autocar]: success
 [2024-04-14 19:45:15] INFO root fetch - main [MainThread]: Store serial: [22760927]
+[2024-04-14 19:47:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760927]
+[2024-04-14 19:47:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 19:49:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760927]
+[2024-04-14 19:49:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 19:49:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypeline-runner
+[2024-04-14 19:49:30] INFO root fetch - processPackages [pypeline-runner]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-14 19:49:30] INFO root fetch - processPackages [pypeline-runner]: Downloading https://files.pythonhosted.org/packages/31/fc/b2654f8481578f0b20a3c8f37d6dfc4bf13f7770b5d4e6e9735ed4bd9003/pypeline_runner-0.1.1.tar.gz
+[2024-04-14 19:49:30] INFO root fetch - processPackages [pypeline-runner]: Downloading https://files.pythonhosted.org/packages/c5/d7/f2268ed30b3e40a9111dfa152a024a7a072b476fd55bc75c89efa9385add/pypeline_runner-0.2.0.tar.gz
+[2024-04-14 19:49:30] INFO root fetch - processPackages [pypeline-runner]: executing diffoscope
+[2024-04-14 19:49:30] INFO root fetch - processPackages [pypeline-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypeline_runner-0.1.1.tar.gz tmp/pypeline_runner-0.2.0.tar.gz --markdown 20240414/p/pypeline-runner/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-14 19:49:31] INFO root fetch - processPackages [pypeline-runner]: Remove: archive file [/home/abi/fetcher/tmp/pypeline_runner-0.1.1.tar.gz]
+[2024-04-14 19:49:31] INFO root fetch - processPackages [pypeline-runner]: Remove: archive file [/home/abi/fetcher/tmp/pypeline_runner-0.2.0.tar.gz]
+[2024-04-14 19:49:31] INFO root fetch - main [MainThread]: End processing [pypeline-runner]: success
+[2024-04-14 19:49:31] INFO root fetch - main [MainThread]: Store serial: [22760930]
