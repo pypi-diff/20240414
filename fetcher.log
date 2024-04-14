@@ -2418,3 +2418,47 @@
 [2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.5.tar.gz]
 [2024-04-14 03:49:21] INFO root fetch - main [MainThread]: End processing [mimic-replay]: success
 [2024-04-14 03:49:21] INFO root fetch - main [MainThread]: Store serial: [22756101]
+[2024-04-14 03:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756101]
+[2024-04-14 03:51:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 03:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shellcrafter
+[2024-04-14 03:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: teelebot
+[2024-04-14 03:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2024-04-14 03:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fusionsc
+[2024-04-14 03:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autopipeline
+[2024-04-14 03:51:30] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-04-14 03:51:30] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-04-14 03:51:30] INFO root fetch - processPackages [fusionsc]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-14 03:51:30] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 03:51:30] INFO root fetch - processPackages [teelebot]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-04-14 03:51:30] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 03:51:30] INFO root fetch - processPackages [fusionsc]: Downloading https://files.pythonhosted.org/packages/6b/4b/5708403096374ea86b1a65b7e3467aeb11a9f2219801f48aecf3a3c3905c/fusionsc-4.0.1.tar.gz
+[2024-04-14 03:51:30] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-04-14 03:51:30] INFO root fetch - processPackages [teelebot]: Downloading https://files.pythonhosted.org/packages/aa/f6/cfa0d85ec45945483319865576692383fee5316c11aced274b4ff4eb7578/teelebot-2.5.0-py3-none-any.whl
+[2024-04-14 03:51:30] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/b0/db/9a5e3f6b759d98a407c12bfa34d80fbfc8b9b37218b65ffe2d2412f51007/shellcrafter-1.0.8.tar.gz
+[2024-04-14 03:51:30] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 03:51:30] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-04-14 03:51:30] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240414/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-04-14 03:51:31] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/6b/31/49e9f901a30d3f05b6173037c8bbe2cb993b57950b45996a653f9c7a72b6/shellcrafter-1.0.9.tar.gz
+[2024-04-14 03:51:31] INFO root fetch - processPackages [teelebot]: Downloading https://files.pythonhosted.org/packages/3e/28/be35314eae72766be109fe409a86c2ea7b5e33b410fda9268e7815f2af83/teelebot-2.5.1-py3-none-any.whl
+[2024-04-14 03:51:31] WARNING root fetch - processPackages [fusionsc]: Skipping package: exceeds size limit 16405718>=10485760
+[2024-04-14 03:51:31] INFO root fetch - main [MainThread]: End processing [fusionsc] error
+[2024-04-14 03:51:31] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2024-04-14 03:51:31] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.8.tar.gz tmp/shellcrafter-1.0.9.tar.gz --markdown 20240414/s/shellcrafter/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 03:51:31] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 03:51:31] INFO root fetch - processPackages [teelebot]: executing diffoscope
+[2024-04-14 03:51:31] INFO root fetch - processPackages [teelebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teelebot-2.5.0-py3-none-any.whl.zip tmp/teelebot-2.5.1-py3-none-any.whl.zip --markdown 20240414/t/teelebot/2.5.0-2.5.1/README.md --exclude *.pyd
+[2024-04-14 03:51:31] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 03:51:31] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 03:51:31] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-04-14 03:51:31] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-04-14 03:51:31] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-04-14 03:51:31] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.0.8.tar.gz]
+[2024-04-14 03:51:31] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.0.9.tar.gz]
+[2024-04-14 03:51:31] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2024-04-14 03:51:31] INFO root fetch - processPackages [teelebot]: Remove: archive file [/home/abi/fetcher/tmp/teelebot-2.5.0-py3-none-any.whl.zip]
+[2024-04-14 03:51:31] INFO root fetch - processPackages [teelebot]: Remove: archive file [/home/abi/fetcher/tmp/teelebot-2.5.1-py3-none-any.whl.zip]
+[2024-04-14 03:51:31] INFO root fetch - main [MainThread]: End processing [teelebot]: success
+[2024-04-14 03:51:32] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 03:51:32] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 03:51:32] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 03:51:32] INFO root fetch - main [MainThread]: Store serial: [22756112]
