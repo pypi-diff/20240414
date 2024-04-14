@@ -15579,3 +15579,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:49:27] INFO root fetch - processPackages [causy]: Remove: archive file [/home/abi/fetcher/tmp/causy-0.0.9.tar.gz]
 [2024-04-14 22:49:27] INFO root fetch - main [MainThread]: End processing [causy]: success
 [2024-04-14 22:49:27] INFO root fetch - main [MainThread]: Store serial: [22762389]
+[2024-04-14 22:51:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762389]
+[2024-04-14 22:51:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 22:51:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtpy
+[2024-04-14 22:51:36] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 22:51:36] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 22:51:37] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 22:51:37] INFO root fetch - main [MainThread]: Store serial: [22762392]
