@@ -12796,3 +12796,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:30:00] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
 [2024-04-14 19:30:00] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
 [2024-04-14 19:30:00] INFO root fetch - main [MainThread]: Store serial: [22760828]
+[2024-04-14 19:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760828]
+[2024-04-14 19:32:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ox-secrets
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client-v2
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ondewo-t2s-client
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: termpandas
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqooler
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Sphinx-AutoMark
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fastapi-xroad-soap
+[2024-04-14 19:32:09] INFO root fetch - processPackages [Sphinx-AutoMark]: New version: [1.0.0] Old Version: [0.0.0.1]
+[2024-04-14 19:32:09] WARNING root fetch - processPackages [termpandas]: Skipping, unable to determine old version
+[2024-04-14 19:32:09] INFO root fetch - main [MainThread]: End processing [termpandas] error
+[2024-04-14 19:32:09] INFO root fetch - processPackages [fastapi-xroad-soap]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-14 19:32:09] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ondewo-t2s-client]: New version: [5.3.0] Old Version: [5.2.0]
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ox-secrets]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-14 19:32:09] INFO root fetch - processPackages [sqooler]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-14 19:32:09] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/6e/2c/5bb717dccee85f37c5867bf8790b4eb6b8d9e3cdd9a4499fcdcbc92cbcf2/fastapi_xroad_soap-0.2.0.tar.gz
+[2024-04-14 19:32:09] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-04-14 19:32:09] ERROR root fetch - processPackages [Sphinx-AutoMark]: Unable to fetch info: No such project/version 'Sphinx-AutoMark' 0.0.0.1
+[2024-04-14 19:32:09] INFO root fetch - main [MainThread]: End processing [Sphinx-AutoMark] error
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ondewo-t2s-client]: Downloading https://files.pythonhosted.org/packages/15/9a/73ee8c7f62739ffe373e2b75074414193fbb5fbae6a815f526e4ae022f41/ondewo-t2s-client-5.2.0.tar.gz
+[2024-04-14 19:32:09] INFO root fetch - processPackages [ox-secrets]: Downloading https://files.pythonhosted.org/packages/41/9d/1440211c4de35b697fbcac676f9d548050d5236fe20df5b0e280c0971eef/ox_secrets-0.5.6.tar.gz
+[2024-04-14 19:32:09] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/cf/7b/4d2ac0d9fb8c30219e39e986ed10f653031edafa89b0f314736e99291c34/sqooler-0.6.1.tar.gz
+[2024-04-14 19:32:09] INFO root fetch - processPackages [fastapi-xroad-soap]: Downloading https://files.pythonhosted.org/packages/92/77/ff09d1eb11780179e2ef02588f5dae15c9bed7e00591d1aa0e9e3e9e36a4/fastapi_xroad_soap-0.2.1.tar.gz
+[2024-04-14 19:32:09] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-04-14 19:32:10] INFO root fetch - processPackages [fastapi-xroad-soap]: executing diffoscope
+[2024-04-14 19:32:10] INFO root fetch - processPackages [fastapi-xroad-soap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_xroad_soap-0.2.0.tar.gz tmp/fastapi_xroad_soap-0.2.1.tar.gz --markdown 20240414/f/fastapi-xroad-soap/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ondewo-t2s-client]: Downloading https://files.pythonhosted.org/packages/4b/55/fa079dedf79358673445450aab35f5655cc277b38fc832654ef9d32dfc84/ondewo-t2s-client-5.3.0.tar.gz
+[2024-04-14 19:32:10] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-04-14 19:32:10] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240414/s/stigg-api-client-v2/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-04-14 19:32:10] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/8c/ae/ebab93a4f959d7f98021ae6e3da871102b3cf0ba5fd24364d42978c0f5a2/sqooler-0.6.2.tar.gz
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ondewo-t2s-client]: executing diffoscope
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ondewo-t2s-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-t2s-client-5.2.0.tar.gz tmp/ondewo-t2s-client-5.3.0.tar.gz --markdown 20240414/o/ondewo-t2s-client/5.2.0-5.3.0/README.md --exclude *.pyd
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ox-secrets]: Downloading https://files.pythonhosted.org/packages/d5/49/6eaea1379f771a9adbb0680dc66d24e0ea3b9daec0dda964c622367bc4dd/ox_secrets-0.5.7.tar.gz
+[2024-04-14 19:32:10] INFO root fetch - processPackages [sqooler]: executing diffoscope
+[2024-04-14 19:32:10] INFO root fetch - processPackages [sqooler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqooler-0.6.1.tar.gz tmp/sqooler-0.6.2.tar.gz --markdown 20240414/s/sqooler/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ox-secrets]: executing diffoscope
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ox-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ox_secrets-0.5.6.tar.gz tmp/ox_secrets-0.5.7.tar.gz --markdown 20240414/o/ox-secrets/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ondewo-t2s-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-t2s-client-5.2.0.tar.gz]
+[2024-04-14 19:32:10] INFO root fetch - processPackages [ondewo-t2s-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-t2s-client-5.3.0.tar.gz]
+[2024-04-14 19:32:10] INFO root fetch - main [MainThread]: End processing [ondewo-t2s-client]: success
+[2024-04-14 19:32:10] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.0.tar.gz]
+[2024-04-14 19:32:10] INFO root fetch - processPackages [fastapi-xroad-soap]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_xroad_soap-0.2.1.tar.gz]
+[2024-04-14 19:32:10] INFO root fetch - main [MainThread]: End processing [fastapi-xroad-soap]: success
+[2024-04-14 19:32:11] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.6.1.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.6.2.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - main [MainThread]: End processing [sqooler]: success
+[2024-04-14 19:32:11] INFO root fetch - processPackages [ox-secrets]: Remove: archive file [/home/abi/fetcher/tmp/ox_secrets-0.5.6.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - processPackages [ox-secrets]: Remove: archive file [/home/abi/fetcher/tmp/ox_secrets-0.5.7.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - main [MainThread]: End processing [ox-secrets]: success
+[2024-04-14 19:32:11] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-04-14 19:32:11] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-04-14 19:32:11] INFO root fetch - main [MainThread]: Store serial: [22760853]
