@@ -5920,3 +5920,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:57:45] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.9-py3-none-any.whl.zip]
 [2024-04-14 10:57:45] INFO root fetch - main [MainThread]: End processing [zhijiang]: success
 [2024-04-14 10:57:45] INFO root fetch - main [MainThread]: Store serial: [22757461]
+[2024-04-14 10:59:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757461]
+[2024-04-14 10:59:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Mopidy-SevenSegmentDisplay
+[2024-04-14 10:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: podonos
+[2024-04-14 10:59:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deeplcretrainer
+[2024-04-14 10:59:56] INFO root fetch - processPackages [deeplcretrainer]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 10:59:56] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-04-14 10:59:56] WARNING root fetch - processPackages [podonos]: Skipping, unable to determine old version
+[2024-04-14 10:59:56] INFO root fetch - main [MainThread]: End processing [podonos] error
+[2024-04-14 10:59:56] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/6d/fd/f92aa555dbb4eb101e9de1202a1421fc1fb372240b38edfc49c62005dd27/Mopidy-SevenSegmentDisplay-0.7.7.tar.gz
+[2024-04-14 10:59:56] INFO root fetch - processPackages [deeplcretrainer]: Downloading https://files.pythonhosted.org/packages/d2/31/8e456d0d18d57ea71ef15c1870701be5c7cc1cbc59ec640243fe856fc406/deeplcretrainer-0.2.8.tar.gz
+[2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/0c/68/b3c8a3e506a3178f07612ec90c89c08a2eb4bd88ed2a59a9ea30e5373fdb/mopidy_sevensegmentdisplay-0.7.8.tar.gz
+[2024-04-14 10:59:57] INFO root fetch - processPackages [deeplcretrainer]: Downloading https://files.pythonhosted.org/packages/87/63/55062122a13a5df9e37f1f623111bfea26c416912444ccd9829445b834e3/deeplcretrainer-0.2.9.tar.gz
+[2024-04-14 10:59:57] INFO root fetch - processPackages [deeplcretrainer]: executing diffoscope
+[2024-04-14 10:59:57] INFO root fetch - processPackages [deeplcretrainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deeplcretrainer-0.2.8.tar.gz tmp/deeplcretrainer-0.2.9.tar.gz --markdown 20240414/d/deeplcretrainer/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: executing diffoscope
+[2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-SevenSegmentDisplay-0.7.7.tar.gz tmp/mopidy_sevensegmentdisplay-0.7.8.tar.gz --markdown 20240414/M/Mopidy-SevenSegmentDisplay/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-04-14 10:59:57] INFO root fetch - processPackages [deeplcretrainer]: Remove: archive file [/home/abi/fetcher/tmp/deeplcretrainer-0.2.8.tar.gz]
+[2024-04-14 10:59:57] INFO root fetch - processPackages [deeplcretrainer]: Remove: archive file [/home/abi/fetcher/tmp/deeplcretrainer-0.2.9.tar.gz]
+[2024-04-14 10:59:57] INFO root fetch - main [MainThread]: End processing [deeplcretrainer]: success
+[2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.7.tar.gz]
+[2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_sevensegmentdisplay-0.7.8.tar.gz]
+[2024-04-14 10:59:57] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
+[2024-04-14 10:59:57] INFO root fetch - main [MainThread]: Store serial: [22757472]
