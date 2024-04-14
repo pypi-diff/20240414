@@ -4164,3 +4164,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:09:02] WARNING root fetch - processPackages [projectSocial]: Skipping, unable to determine old version
 [2024-04-14 07:09:02] INFO root fetch - main [MainThread]: End processing [projectSocial] error
 [2024-04-14 07:09:02] INFO root fetch - main [MainThread]: Store serial: [22756676]
+[2024-04-14 07:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756676]
+[2024-04-14 07:11:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756676]
+[2024-04-14 07:13:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756676]
+[2024-04-14 07:15:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:17:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756676]
+[2024-04-14 07:17:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 07:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projectSocial
+[2024-04-14 07:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepeval
+[2024-04-14 07:17:26] WARNING root fetch - processPackages [projectSocial]: Skipping, unable to determine old version
+[2024-04-14 07:17:26] INFO root fetch - main [MainThread]: End processing [projectSocial] error
+[2024-04-14 07:17:27] INFO root fetch - processPackages [deepeval]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 07:17:27] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/8b/4e/74892f0e4e740898d3d9bbcb8e3e22adc9d2ca430699cb8a78a8b5e2697b/deepeval-0.9.8.tar.gz
+[2024-04-14 07:17:27] INFO root fetch - processPackages [deepeval]: Downloading https://files.pythonhosted.org/packages/79/cd/f07ea4ba3fa8fae91bc1bdecc3a7fc8882146f65614215058425221ac2e8/deepeval-0.9.9.tar.gz
+[2024-04-14 07:17:27] INFO root fetch - processPackages [deepeval]: executing diffoscope
+[2024-04-14 07:17:27] INFO root fetch - processPackages [deepeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepeval-0.9.8.tar.gz tmp/deepeval-0.9.9.tar.gz --markdown 20240414/d/deepeval/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 07:17:28] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.8.tar.gz]
+[2024-04-14 07:17:28] INFO root fetch - processPackages [deepeval]: Remove: archive file [/home/abi/fetcher/tmp/deepeval-0.9.9.tar.gz]
+[2024-04-14 07:17:28] INFO root fetch - main [MainThread]: End processing [deepeval]: success
+[2024-04-14 07:17:28] INFO root fetch - main [MainThread]: Store serial: [22756682]
