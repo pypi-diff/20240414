@@ -6107,3 +6107,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:15:31] INFO root fetch - processPackages [furchain]: Remove: archive file [/home/abi/fetcher/tmp/furchain-0.1.4.tar.gz]
 [2024-04-14 11:15:31] INFO root fetch - main [MainThread]: End processing [furchain]: success
 [2024-04-14 11:15:31] INFO root fetch - main [MainThread]: Store serial: [22757559]
+[2024-04-14 11:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757559]
+[2024-04-14 11:17:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 11:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lottokit
+[2024-04-14 11:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chikvdf
+[2024-04-14 11:17:42] INFO root fetch - processPackages [lottokit]: New version: [0.7] Old Version: [0.6]
+[2024-04-14 11:17:42] INFO root fetch - processPackages [lottokit]: Downloading https://files.pythonhosted.org/packages/e7/9a/783a0da36c15ec13caf7d5a31abeb3b71946592aaa7c9f831ca2b540e38a/lottokit-0.6.tar.gz
+[2024-04-14 11:17:42] INFO root fetch - processPackages [chikvdf]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-14 11:17:42] INFO root fetch - processPackages [lottokit]: Downloading https://files.pythonhosted.org/packages/4c/93/072753014e1226ed169530292ec719eac2080b772be712419a8a43004d39/lottokit-0.7.tar.gz
+[2024-04-14 11:17:42] INFO root fetch - processPackages [chikvdf]: Downloading https://files.pythonhosted.org/packages/69/bf/8440c84684a85d0b9f98e4178219c3890bb8767af402578bc7cfc65c7fae/chikvdf-1.1.3.tar.gz
+[2024-04-14 11:17:42] INFO root fetch - processPackages [lottokit]: executing diffoscope
+[2024-04-14 11:17:42] INFO root fetch - processPackages [lottokit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lottokit-0.6.tar.gz tmp/lottokit-0.7.tar.gz --markdown 20240414/l/lottokit/0.6-0.7/README.md --exclude *.pyd
+[2024-04-14 11:17:42] INFO root fetch - processPackages [chikvdf]: Downloading https://files.pythonhosted.org/packages/5f/8d/b9c92922b2c4a0e039b43fd650d4f102eafd5520fc08a1b2be98fdf50777/chikvdf-1.1.4.tar.gz
+[2024-04-14 11:17:42] INFO root fetch - processPackages [chikvdf]: executing diffoscope
+[2024-04-14 11:17:42] INFO root fetch - processPackages [chikvdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chikvdf-1.1.3.tar.gz tmp/chikvdf-1.1.4.tar.gz --markdown 20240414/c/chikvdf/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-14 11:17:43] INFO root fetch - processPackages [lottokit]: Remove: archive file [/home/abi/fetcher/tmp/lottokit-0.6.tar.gz]
+[2024-04-14 11:17:43] INFO root fetch - processPackages [lottokit]: Remove: archive file [/home/abi/fetcher/tmp/lottokit-0.7.tar.gz]
+[2024-04-14 11:17:43] INFO root fetch - main [MainThread]: End processing [lottokit]: success
+[2024-04-14 11:17:43] INFO root fetch - processPackages [chikvdf]: Remove: archive file [/home/abi/fetcher/tmp/chikvdf-1.1.3.tar.gz]
+[2024-04-14 11:17:43] INFO root fetch - processPackages [chikvdf]: Remove: archive file [/home/abi/fetcher/tmp/chikvdf-1.1.4.tar.gz]
+[2024-04-14 11:17:43] INFO root fetch - main [MainThread]: End processing [chikvdf]: success
+[2024-04-14 11:17:43] INFO root fetch - main [MainThread]: Store serial: [22757584]
