@@ -7791,3 +7791,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:19:19] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-34.1.0.tar.gz]
 [2024-04-14 13:19:19] INFO root fetch - main [MainThread]: End processing [cpop]: success
 [2024-04-14 13:19:19] INFO root fetch - main [MainThread]: Store serial: [22758447]
+[2024-04-14 13:21:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758447]
+[2024-04-14 13:21:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MODApy
+[2024-04-14 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simple-Aula7
+[2024-04-14 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymemgpt-nightly
+[2024-04-14 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimpleAxel-Auth
+[2024-04-14 13:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SimpleAxel-Pay
+[2024-04-14 13:21:35] INFO root fetch - processPackages [Simple-Aula7]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Auth]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Pay]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 13:21:35] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/b0/fd/88297edd349e4cfd0b8bf25a0330cce541b0bbb94a6f3a63c710f19a819b/simple_aula7-0.0.3.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [MODApy]: New version: [0.8.0] Old Version: [0.7.8]
+[2024-04-14 13:21:35] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Auth]: Downloading https://files.pythonhosted.org/packages/d8/9d/0c5b8622a06c0e4a1e6adbd44f68d518117b85f5054c2e6d4bce1fd8b54c/simpleaxel_auth-0.0.1.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Pay]: Downloading https://files.pythonhosted.org/packages/cd/ad/509240e645a820356a2a8c0e906b71b8a5d8adabd42f2d7f6bcc6a975be9/simpleaxel_pay-0.0.1.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/8c/19/befa942842a3bff717c5b5e356f0bd503c416fcb1d90caa4a6acc90eb63b/MODApy-0.7.8.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Auth]: Downloading https://files.pythonhosted.org/packages/bb/ba/dd4af779a0bba02433d3aec5f41638da37b3f5745543a2e4d94789a03083/simpleaxel_auth-0.0.2.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [Simple-Aula7]: Downloading https://files.pythonhosted.org/packages/5c/ea/79fbbfcd5db098a9887b50bd3bd9b4f94a6891ec947857978ab339a35b6b/simple_aula7-0.0.4.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Pay]: Downloading https://files.pythonhosted.org/packages/6e/be/232569dab7608eb64459b50b7e01120b58641763b746bddf86466f715769/simpleaxel_pay-0.0.2.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Auth]: executing diffoscope
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleaxel_auth-0.0.1.tar.gz tmp/simpleaxel_auth-0.0.2.tar.gz --markdown 20240414/S/SimpleAxel-Auth/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 13:21:35] INFO root fetch - processPackages [Simple-Aula7]: executing diffoscope
+[2024-04-14 13:21:35] INFO root fetch - processPackages [Simple-Aula7]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_aula7-0.0.3.tar.gz tmp/simple_aula7-0.0.4.tar.gz --markdown 20240414/S/Simple-Aula7/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 13:21:35] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/33/37/cefda9a8307820931ad19fb614eb4e0b5fa3ef832c3a61d1ca4620c24b34/MODApy-0.8.0.tar.gz
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Pay]: executing diffoscope
+[2024-04-14 13:21:35] INFO root fetch - processPackages [SimpleAxel-Pay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleaxel_pay-0.0.1.tar.gz tmp/simpleaxel_pay-0.0.2.tar.gz --markdown 20240414/S/SimpleAxel-Pay/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 13:21:35] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-04-14 13:21:36] INFO root fetch - processPackages [MODApy]: executing diffoscope
+[2024-04-14 13:21:36] INFO root fetch - processPackages [MODApy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MODApy-0.7.8.tar.gz tmp/MODApy-0.8.0.tar.gz --markdown 20240414/M/MODApy/0.7.8-0.8.0/README.md --exclude *.pyd
+[2024-04-14 13:21:36] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-14 13:21:36] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240414/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-04-14 13:21:36] INFO root fetch - processPackages [SimpleAxel-Auth]: Remove: archive file [/home/abi/fetcher/tmp/simpleaxel_auth-0.0.1.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - processPackages [SimpleAxel-Auth]: Remove: archive file [/home/abi/fetcher/tmp/simpleaxel_auth-0.0.2.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Auth]: success
+[2024-04-14 13:21:36] INFO root fetch - processPackages [SimpleAxel-Pay]: Remove: archive file [/home/abi/fetcher/tmp/simpleaxel_pay-0.0.1.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - processPackages [SimpleAxel-Pay]: Remove: archive file [/home/abi/fetcher/tmp/simpleaxel_pay-0.0.2.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - main [MainThread]: End processing [SimpleAxel-Pay]: success
+[2024-04-14 13:21:36] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.3.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - processPackages [Simple-Aula7]: Remove: archive file [/home/abi/fetcher/tmp/simple_aula7-0.0.4.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - main [MainThread]: End processing [Simple-Aula7]: success
+[2024-04-14 13:21:36] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.7.8.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.0.tar.gz]
+[2024-04-14 13:21:36] INFO root fetch - main [MainThread]: End processing [MODApy]: success
+[2024-04-14 13:21:37] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-04-14 13:21:37] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-04-14 13:21:37] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-14 13:21:37] INFO root fetch - main [MainThread]: Store serial: [22758459]
