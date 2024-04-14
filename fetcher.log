@@ -5449,3 +5449,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:13:56] INFO root fetch - processPackages [dash-mantine-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_mantine_components-0.9.0.tar.gz]
 [2024-04-14 10:13:56] INFO root fetch - main [MainThread]: End processing [dash-mantine-components]: success
 [2024-04-14 10:13:56] INFO root fetch - main [MainThread]: Store serial: [22757259]
+[2024-04-14 10:16:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757259]
+[2024-04-14 10:16:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 10:16:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: movoid-threading
+[2024-04-14 10:16:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wiliot-tools
+[2024-04-14 10:16:05] INFO root fetch - processPackages [movoid-threading]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 10:16:05] INFO root fetch - processPackages [wiliot-tools]: New version: [4.5.4] Old Version: [4.4.4]
+[2024-04-14 10:16:05] INFO root fetch - processPackages [movoid-threading]: Downloading https://files.pythonhosted.org/packages/a0/f1/0ab4067f1690935adaa43bd85e78dcd9ff30947c366eb0ea84c4fc40b1a8/movoid_threading-1.0.1.tar.gz
+[2024-04-14 10:16:06] INFO root fetch - processPackages [wiliot-tools]: Downloading https://files.pythonhosted.org/packages/9b/95/b7a327392fa1d15a9ace32600acb040d4dea0f11849ab418d3713f0d8e10/wiliot-tools-4.4.4.tar.gz
+[2024-04-14 10:16:06] INFO root fetch - processPackages [movoid-threading]: Downloading https://files.pythonhosted.org/packages/cf/74/a00d352cc202890bc6bf0b0a4313dddae34c84ee4b1b39fd2f7f3709f04e/movoid_threading-1.0.2.tar.gz
+[2024-04-14 10:16:06] INFO root fetch - processPackages [wiliot-tools]: Downloading https://files.pythonhosted.org/packages/2c/7b/58aa9819885dfb058917c02876181c606b576af91cd497cad047f9e26e6d/wiliot-tools-4.5.4.tar.gz
+[2024-04-14 10:16:06] INFO root fetch - processPackages [movoid-threading]: executing diffoscope
+[2024-04-14 10:16:06] INFO root fetch - processPackages [movoid-threading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_threading-1.0.1.tar.gz tmp/movoid_threading-1.0.2.tar.gz --markdown 20240414/m/movoid-threading/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 10:16:06] INFO root fetch - processPackages [wiliot-tools]: executing diffoscope
+[2024-04-14 10:16:06] INFO root fetch - processPackages [wiliot-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiliot-tools-4.4.4.tar.gz tmp/wiliot-tools-4.5.4.tar.gz --markdown 20240414/w/wiliot-tools/4.4.4-4.5.4/README.md --exclude *.pyd
+[2024-04-14 10:16:06] INFO root fetch - processPackages [movoid-threading]: Remove: archive file [/home/abi/fetcher/tmp/movoid_threading-1.0.1.tar.gz]
+[2024-04-14 10:16:06] INFO root fetch - processPackages [movoid-threading]: Remove: archive file [/home/abi/fetcher/tmp/movoid_threading-1.0.2.tar.gz]
+[2024-04-14 10:16:06] INFO root fetch - main [MainThread]: End processing [movoid-threading]: success
+[2024-04-14 10:16:07] INFO root fetch - processPackages [wiliot-tools]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-tools-4.4.4.tar.gz]
+[2024-04-14 10:16:07] INFO root fetch - processPackages [wiliot-tools]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-tools-4.5.4.tar.gz]
+[2024-04-14 10:16:07] INFO root fetch - main [MainThread]: End processing [wiliot-tools]: success
+[2024-04-14 10:16:07] INFO root fetch - main [MainThread]: Store serial: [22757265]
