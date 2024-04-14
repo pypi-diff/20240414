@@ -1628,3 +1628,69 @@
 [2024-04-14 02:27:45] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
 [2024-04-14 02:27:45] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
 [2024-04-14 02:27:45] INFO root fetch - main [MainThread]: Store serial: [22755790]
+[2024-04-14 02:29:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755790]
+[2024-04-14 02:29:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMutSpec
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-api-core
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onebag
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-certbot-dns-route53
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sweetrpg-library-objects
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sweetrpg-web-core
+[2024-04-14 02:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-catalog-objects
+[2024-04-14 02:29:55] INFO root fetch - processPackages [onebag]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [PyMutSpec]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [onebag]: Downloading https://files.pythonhosted.org/packages/93/72/f19f0356069707b616684b76269378727c116f22e4e3c8d20735f56cee4d/onebag-0.1.0.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 02:29:55] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/02/76/d7c36773e78be82bbf8cb3df9311a292886e01af198f5689a676502341f3/PyMutSpec-0.0.7.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-14 02:29:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240414/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-04-14 02:29:55] INFO root fetch - processPackages [onebag]: Downloading https://files.pythonhosted.org/packages/2a/e5/fe32ef0cf866b24dcf1e05c977fb082bf21c7c67fdb8c094f5f71f03652c/onebag-0.1.1.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-04-14 02:29:55] INFO root fetch - processPackages [PyMutSpec]: Downloading https://files.pythonhosted.org/packages/2c/c7/8a57fb895f54b1b02dd8ca01a567a5f835aa383d85c1448a96f19d6d2d01/PyMutSpec-0.0.8.tar.gz
+[2024-04-14 02:29:56] INFO root fetch - processPackages [onebag]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [onebag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onebag-0.1.0.tar.gz tmp/onebag-0.1.1.tar.gz --markdown 20240414/o/onebag/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [PyMutSpec]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [PyMutSpec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMutSpec-0.0.7.tar.gz tmp/PyMutSpec-0.0.8.tar.gz --markdown 20240414/P/PyMutSpec/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240414/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 02:29:56] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-14 02:29:56] INFO root fetch - processPackages [onebag]: Remove: archive file [/home/abi/fetcher/tmp/onebag-0.1.0.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [onebag]: Remove: archive file [/home/abi/fetcher/tmp/onebag-0.1.1.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [onebag]: success
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-04-14 02:29:56] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.7.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [PyMutSpec]: Remove: archive file [/home/abi/fetcher/tmp/PyMutSpec-0.0.8.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [PyMutSpec]: success
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-04-14 02:29:56] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-04-14 02:29:57] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-14 02:29:57] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-14 02:29:57] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-14 02:29:57] INFO root fetch - main [MainThread]: Store serial: [22755812]
