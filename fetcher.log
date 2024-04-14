@@ -3942,3 +3942,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:36:46] INFO root fetch - processPackages [gp2040ce-binary-tools]: Remove: archive file [/home/abi/fetcher/tmp/gp2040ce_binary_tools-0.8.0.tar.gz]
 [2024-04-14 06:36:46] INFO root fetch - main [MainThread]: End processing [gp2040ce-binary-tools]: success
 [2024-04-14 06:36:46] INFO root fetch - main [MainThread]: Store serial: [22756599]
+[2024-04-14 06:38:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756599]
+[2024-04-14 06:38:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 06:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thuonguyenpackage
+[2024-04-14 06:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-flux
+[2024-04-14 06:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MyLLM
+[2024-04-14 06:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cortix
+[2024-04-14 06:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: headline-gen
+[2024-04-14 06:38:55] INFO root fetch - processPackages [python-flux]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 06:38:55] INFO root fetch - processPackages [headline-gen]: New version: [2.3] Old Version: [2.2]
+[2024-04-14 06:38:55] INFO root fetch - processPackages [MyLLM]: New version: [4.8.4] Old Version: [4.8.3]
+[2024-04-14 06:38:55] INFO root fetch - processPackages [cortix]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-14 06:38:55] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/5d/b2/15655a2ad1cf680a32b80bbc5502c882ac98768b9d19ed31a768ed3f11b7/python_flux-1.0.0.tar.gz
+[2024-04-14 06:38:55] WARNING root fetch - processPackages [thuonguyenpackage]: Skipping, unable to determine old version
+[2024-04-14 06:38:55] INFO root fetch - main [MainThread]: End processing [thuonguyenpackage] error
+[2024-04-14 06:38:55] INFO root fetch - processPackages [headline-gen]: Downloading https://files.pythonhosted.org/packages/d5/ca/d0b0e82b18552dbf297dd8334f2cdd92c2d7222b714338d75a49ec14ae8f/headline-gen-2.2.tar.gz
+[2024-04-14 06:38:55] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/37/0a/9081f12313305118ece4a1c77b7feb4a79e2596d6a4dcda1ab1fa21bdca3/cortix-1.1.8.tar.gz
+[2024-04-14 06:38:55] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/a1/b2/896c7c627398be05392f8f7db5661043a36cc09025d120030f77826d03df/myllm-4.8.3.tar.gz
+[2024-04-14 06:38:55] INFO root fetch - processPackages [headline-gen]: Downloading https://files.pythonhosted.org/packages/38/fd/254e31c1473f2fc27b968712dec36c657967ae0ae3720e2e783212b0e121/headline-gen-2.3.tar.gz
+[2024-04-14 06:38:56] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/dd/65/4452c9f9ca67db2ecc824ed8a06d2729b4fd18dd1cf27969940f99e6f8f0/python_flux-1.0.1.tar.gz
+[2024-04-14 06:38:56] INFO root fetch - processPackages [cortix]: Downloading https://files.pythonhosted.org/packages/8a/20/0dc7ff8b8ee40701bb4f342180d2f71ea4f0e79f48fdc930e9307c757bf5/cortix-1.1.9.tar.gz
+[2024-04-14 06:38:56] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/0f/c7/6998d8bcc679a738d7beae3684839bb0ff2dee4f969108a3c02168d72c5e/myllm-4.8.4.tar.gz
+[2024-04-14 06:38:56] INFO root fetch - processPackages [headline-gen]: executing diffoscope
+[2024-04-14 06:38:56] INFO root fetch - processPackages [headline-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headline-gen-2.2.tar.gz tmp/headline-gen-2.3.tar.gz --markdown 20240414/h/headline-gen/2.2-2.3/README.md --exclude *.pyd
+[2024-04-14 06:38:56] INFO root fetch - processPackages [python-flux]: executing diffoscope
+[2024-04-14 06:38:56] INFO root fetch - processPackages [python-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_flux-1.0.0.tar.gz tmp/python_flux-1.0.1.tar.gz --markdown 20240414/p/python-flux/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 06:38:56] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-04-14 06:38:56] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.3.tar.gz tmp/myllm-4.8.4.tar.gz --markdown 20240414/M/MyLLM/4.8.3-4.8.4/README.md --exclude *.pyd
+[2024-04-14 06:38:56] INFO root fetch - processPackages [cortix]: executing diffoscope
+[2024-04-14 06:38:56] INFO root fetch - processPackages [cortix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortix-1.1.8.tar.gz tmp/cortix-1.1.9.tar.gz --markdown 20240414/c/cortix/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-14 06:38:56] INFO root fetch - processPackages [headline-gen]: Remove: archive file [/home/abi/fetcher/tmp/headline-gen-2.2.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - processPackages [headline-gen]: Remove: archive file [/home/abi/fetcher/tmp/headline-gen-2.3.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - main [MainThread]: End processing [headline-gen]: success
+[2024-04-14 06:38:56] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.0.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.1.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - main [MainThread]: End processing [python-flux]: success
+[2024-04-14 06:38:56] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.3.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.4.tar.gz]
+[2024-04-14 06:38:56] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-04-14 06:38:57] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.8.tar.gz]
+[2024-04-14 06:38:57] INFO root fetch - processPackages [cortix]: Remove: archive file [/home/abi/fetcher/tmp/cortix-1.1.9.tar.gz]
+[2024-04-14 06:38:57] INFO root fetch - main [MainThread]: End processing [cortix]: success
+[2024-04-14 06:38:57] INFO root fetch - main [MainThread]: Store serial: [22756614]
