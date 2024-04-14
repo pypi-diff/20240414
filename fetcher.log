@@ -9122,3 +9122,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:58:22] INFO root fetch - processPackages [QuickStart-Rhy]: Remove: archive file [/home/abi/fetcher/tmp/quickstart_rhy-0.7.9.tar.gz]
 [2024-04-14 14:58:22] INFO root fetch - main [MainThread]: End processing [QuickStart-Rhy]: success
 [2024-04-14 14:58:22] INFO root fetch - main [MainThread]: Store serial: [22759006]
+[2024-04-14 15:00:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759006]
+[2024-04-14 15:00:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 15:00:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtutils
+[2024-04-14 15:00:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transformer-heads
+[2024-04-14 15:00:37] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 15:00:37] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 15:00:37] INFO root fetch - processPackages [transformer-heads]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 15:00:37] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 15:00:37] INFO root fetch - processPackages [transformer-heads]: Downloading https://files.pythonhosted.org/packages/c1/98/3eb2cf8b9e227fb23f445b79c46da2c3254dc70c0abd7f605353e484935c/transformer_heads-0.0.8.tar.gz
+[2024-04-14 15:00:38] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 15:00:38] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 15:00:38] INFO root fetch - processPackages [transformer-heads]: Downloading https://files.pythonhosted.org/packages/d5/a8/2b2535a372521239690cc07d4307cf48e43e6e6655f100344f709660611e/transformer_heads-0.0.9.tar.gz
+[2024-04-14 15:00:38] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 15:00:38] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 15:00:38] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 15:00:38] INFO root fetch - processPackages [transformer-heads]: executing diffoscope
+[2024-04-14 15:00:38] INFO root fetch - processPackages [transformer-heads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformer_heads-0.0.8.tar.gz tmp/transformer_heads-0.0.9.tar.gz --markdown 20240414/t/transformer-heads/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 15:00:39] INFO root fetch - processPackages [transformer-heads]: Remove: archive file [/home/abi/fetcher/tmp/transformer_heads-0.0.8.tar.gz]
+[2024-04-14 15:00:39] INFO root fetch - processPackages [transformer-heads]: Remove: archive file [/home/abi/fetcher/tmp/transformer_heads-0.0.9.tar.gz]
+[2024-04-14 15:00:39] INFO root fetch - main [MainThread]: End processing [transformer-heads]: success
+[2024-04-14 15:00:39] INFO root fetch - main [MainThread]: Store serial: [22759015]
