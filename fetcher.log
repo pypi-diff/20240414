@@ -5533,3 +5533,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:20:27] INFO root fetch - processPackages [pyrb]: Remove: archive file [/home/abi/fetcher/tmp/pyrb-0.9.7.tar.gz]
 [2024-04-14 10:20:27] INFO root fetch - main [MainThread]: End processing [pyrb]: success
 [2024-04-14 10:20:27] INFO root fetch - main [MainThread]: Store serial: [22757287]
+[2024-04-14 10:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757287]
+[2024-04-14 10:22:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 10:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-himark
+[2024-04-14 10:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keopscore
+[2024-04-14 10:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scwrypts
+[2024-04-14 10:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pykeops
+[2024-04-14 10:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlx
+[2024-04-14 10:22:36] INFO root fetch - processPackages [scwrypts]: New version: [4.2.4] Old Version: [4.2.0]
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pytest-himark]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-14 10:22:36] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/90/be/c5d761a8748bd3c5a406e23c054d3a7cfe0a80d236dd43052c81a84030a6/scwrypts-4.2.0.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [keopscore]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pykeops]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-14 10:22:36] INFO root fetch - processPackages [mlx]: New version: [0.9.1.dev20240407] Old Version: [0.9.1]
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pytest-himark]: Downloading https://files.pythonhosted.org/packages/70/d9/b7e75d8ae2f5d7fd5b5d31fa2769e97ab44d6d57e20634c277905c622078/pytest-himark-0.1.2.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [keopscore]: Downloading https://files.pythonhosted.org/packages/20/54/fc19169e69a16d1f3039ba2fe573ef61bf367f0e6dcb1cecf7355a33a661/keopscore-2.2.2.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pykeops]: Downloading https://files.pythonhosted.org/packages/4f/db/bc39837ce6b9bf58bc2669b0f168ca104d6438d32011389976a1bf371c73/pykeops-2.2.2.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [mlx]: Downloading https://files.pythonhosted.org/packages/1a/4d/db965d36f516eb50b63bc732589057aa7cb2fc14c6c30f6504688a2b307c/mlx-0.9.1-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-14 10:22:36] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/a8/ed/1d9068d26c8d40ab07e90b31a0c829fdb048816ae99d977e05d4f89dc431/scwrypts-4.2.4.tar.gz
+[2024-04-14 10:22:36] WARNING root fetch - processPackages [mlx]: Skipping package: exceeds size limit 31967351>=10485760
+[2024-04-14 10:22:36] INFO root fetch - main [MainThread]: End processing [mlx] error
+[2024-04-14 10:22:36] INFO root fetch - processPackages [scwrypts]: executing diffoscope
+[2024-04-14 10:22:36] INFO root fetch - processPackages [scwrypts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scwrypts-4.2.0.tar.gz tmp/scwrypts-4.2.4.tar.gz --markdown 20240414/s/scwrypts/4.2.0-4.2.4/README.md --exclude *.pyd
+[2024-04-14 10:22:36] INFO root fetch - processPackages [keopscore]: Downloading https://files.pythonhosted.org/packages/66/31/1da3877139d75e392f5fd0cbdc3b718ae726f5308ed792d385250c43167c/keopscore-2.2.3.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pytest-himark]: Downloading https://files.pythonhosted.org/packages/5a/d6/17f43bfde7fba66967effaa03dd8644cd4eb62dc357bb8ee8557e13c600f/pytest_himark-0.1.3.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pykeops]: Downloading https://files.pythonhosted.org/packages/f9/64/2c7b49954aeac6b10e1fd553e190aef8e4737d48506aae60aa6f2b035809/pykeops-2.2.3.tar.gz
+[2024-04-14 10:22:36] INFO root fetch - processPackages [keopscore]: executing diffoscope
+[2024-04-14 10:22:36] INFO root fetch - processPackages [keopscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keopscore-2.2.2.tar.gz tmp/keopscore-2.2.3.tar.gz --markdown 20240414/k/keopscore/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pytest-himark]: executing diffoscope
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pytest-himark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-himark-0.1.2.tar.gz tmp/pytest_himark-0.1.3.tar.gz --markdown 20240414/p/pytest-himark/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pykeops]: executing diffoscope
+[2024-04-14 10:22:36] INFO root fetch - processPackages [pykeops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykeops-2.2.2.tar.gz tmp/pykeops-2.2.3.tar.gz --markdown 20240414/p/pykeops/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-04-14 10:22:37] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.2.0.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.2.4.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - main [MainThread]: End processing [scwrypts]: success
+[2024-04-14 10:22:37] INFO root fetch - processPackages [pytest-himark]: Remove: archive file [/home/abi/fetcher/tmp/pytest-himark-0.1.2.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - processPackages [pytest-himark]: Remove: archive file [/home/abi/fetcher/tmp/pytest_himark-0.1.3.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - main [MainThread]: End processing [pytest-himark]: success
+[2024-04-14 10:22:37] INFO root fetch - processPackages [pykeops]: Remove: archive file [/home/abi/fetcher/tmp/pykeops-2.2.2.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - processPackages [pykeops]: Remove: archive file [/home/abi/fetcher/tmp/pykeops-2.2.3.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - main [MainThread]: End processing [pykeops]: success
+[2024-04-14 10:22:37] INFO root fetch - processPackages [keopscore]: Remove: archive file [/home/abi/fetcher/tmp/keopscore-2.2.2.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - processPackages [keopscore]: Remove: archive file [/home/abi/fetcher/tmp/keopscore-2.2.3.tar.gz]
+[2024-04-14 10:22:37] INFO root fetch - main [MainThread]: End processing [keopscore]: success
+[2024-04-14 10:22:37] INFO root fetch - main [MainThread]: Store serial: [22757299]
