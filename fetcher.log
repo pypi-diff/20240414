@@ -15342,3 +15342,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:32:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-14 22:32:05] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-14 22:32:05] INFO root fetch - main [MainThread]: Store serial: [22762223]
+[2024-04-14 22:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762223]
+[2024-04-14 22:34:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 22:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maturin-watchdog
+[2024-04-14 22:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panthon
+[2024-04-14 22:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evdspy
+[2024-04-14 22:34:13] INFO root fetch - processPackages [maturin-watchdog]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 22:34:13] INFO root fetch - processPackages [panthon]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-04-14 22:34:14] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/56/c6/3fba715be740f46a5b3c35a852256613d8b083b7e14887be2fa934f87b4e/panthon-0.2.1.tar.gz
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/06/69/9e50ef7d392535d66e59f4c716a14741ebe16dedfeef46f4e28f60a68342/maturin_watchdog-0.1.8.tar.gz
+[2024-04-14 22:34:14] INFO root fetch - processPackages [evdspy]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/c9/89/9d8fc5cca8de1da6023c5c61551c0f2b9908adaa788e915a2cb2a2952b51/maturin_watchdog-0.1.9.tar.gz
+[2024-04-14 22:34:14] INFO root fetch - processPackages [evdspy]: Downloading https://files.pythonhosted.org/packages/e6/b6/7c4651a9553e9cc8eae11f65d80983e032bd9ecea7184aa0e9eaf0aba1ef/evdspy-1.1.8-py2.py3-none-any.whl
+[2024-04-14 22:34:14] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/5b/be/637697a1a360b2abf15d82ef62ff6af3b5b70b45f082f7344cf49df07c61/panthon-0.2.3.tar.gz
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: executing diffoscope
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin_watchdog-0.1.8.tar.gz tmp/maturin_watchdog-0.1.9.tar.gz --markdown 20240414/m/maturin-watchdog/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 22:34:14] INFO root fetch - processPackages [panthon]: executing diffoscope
+[2024-04-14 22:34:14] INFO root fetch - processPackages [panthon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panthon-0.2.1.tar.gz tmp/panthon-0.2.3.tar.gz --markdown 20240414/p/panthon/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-04-14 22:34:14] INFO root fetch - processPackages [evdspy]: Downloading https://files.pythonhosted.org/packages/c8/6d/0ec527adcb04d357a57a3931a6722612d56e460648c4741719c3c34957fe/evdspy-1.1.9-py2.py3-none-any.whl
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.8.tar.gz]
+[2024-04-14 22:34:14] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.9.tar.gz]
+[2024-04-14 22:34:14] INFO root fetch - main [MainThread]: End processing [maturin-watchdog]: success
+[2024-04-14 22:34:14] INFO root fetch - processPackages [evdspy]: executing diffoscope
+[2024-04-14 22:34:14] INFO root fetch - processPackages [evdspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evdspy-1.1.8-py2.py3-none-any.whl.zip tmp/evdspy-1.1.9-py2.py3-none-any.whl.zip --markdown 20240414/e/evdspy/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-14 22:34:15] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.2.1.tar.gz]
+[2024-04-14 22:34:15] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.2.3.tar.gz]
+[2024-04-14 22:34:15] INFO root fetch - main [MainThread]: End processing [panthon]: success
+[2024-04-14 22:34:15] INFO root fetch - processPackages [evdspy]: Remove: archive file [/home/abi/fetcher/tmp/evdspy-1.1.8-py2.py3-none-any.whl.zip]
+[2024-04-14 22:34:15] INFO root fetch - processPackages [evdspy]: Remove: archive file [/home/abi/fetcher/tmp/evdspy-1.1.9-py2.py3-none-any.whl.zip]
+[2024-04-14 22:34:15] INFO root fetch - main [MainThread]: End processing [evdspy]: success
+[2024-04-14 22:34:15] INFO root fetch - main [MainThread]: Store serial: [22762234]
