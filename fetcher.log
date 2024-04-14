@@ -13406,3 +13406,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:20:02] INFO root fetch - processPackages [sum-dirac-dfcoef]: Remove: archive file [/home/abi/fetcher/tmp/sum_dirac_dfcoef-5.0.0-py3-none-any.whl.zip]
 [2024-04-14 20:20:02] INFO root fetch - main [MainThread]: End processing [sum-dirac-dfcoef]: success
 [2024-04-14 20:20:02] INFO root fetch - main [MainThread]: Store serial: [22761083]
+[2024-04-14 20:22:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761083]
+[2024-04-14 20:22:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sum-dirac-dfcoef
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ranshark
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scmopy
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-swidget
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pretix-plugin-extended-api
+[2024-04-14 20:22:12] INFO root fetch - processPackages [sum-dirac-dfcoef]: New version: [5.0.0] Old Version: [4.4.0]
+[2024-04-14 20:22:12] INFO root fetch - processPackages [pretix-plugin-extended-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 20:22:12] INFO root fetch - processPackages [sum-dirac-dfcoef]: Downloading https://files.pythonhosted.org/packages/ac/2f/b53da68a64e12acddbe62b0a0361a5d895f0f8c36aa13ee219bfc3f8f618/sum_dirac_dfcoef-4.4.0.tar.gz
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ranshark]: New version: [1.0.0.9] Old Version: [1.0.0.8]
+[2024-04-14 20:22:12] INFO root fetch - processPackages [python-swidget]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-14 20:22:12] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/3e/e9/e84630b11ef5b63318cdad9489b7e9e552e96a24a74b33088578d78265b2/pretix-plugin-extended-api-0.1.8.tar.gz
+[2024-04-14 20:22:12] INFO root fetch - processPackages [scmopy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 20:22:12] INFO root fetch - processPackages [ranshark]: Downloading https://files.pythonhosted.org/packages/62/ca/4d91bcb8a91c6cc4ba33a8efd687deae3da54c1b894e76239f3c5925977e/ranshark-1.0.0.8-py3-none-any.whl
+[2024-04-14 20:22:12] INFO root fetch - processPackages [python-swidget]: Downloading https://files.pythonhosted.org/packages/e4/21/078c6cd166589b22426b5a65cdf6a1affb644bc9ab830750dfca79567225/python_swidget-1.0.1.tar.gz
+[2024-04-14 20:22:12] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/f9/ec/b178392d96dd637470c241d74fdc8ebaed42ea72c836e04bfab2f4dedc18/scmopy-0.0.1.tar.gz
+[2024-04-14 20:22:12] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/ee/8b/5705e30accefcdd2976224b50ee91ad1d664bed6f4ffc3a79c64f1ed2763/pretix-plugin-extended-api-0.1.9.tar.gz
+[2024-04-14 20:22:12] INFO root fetch - processPackages [sum-dirac-dfcoef]: Downloading https://files.pythonhosted.org/packages/76/19/616b9f9e3a7c17d65128466dcf430b1fc7c3f38a62f31f7ef0c4d4b04916/sum_dirac_dfcoef-5.0.0-py3-none-any.whl
+[2024-04-14 20:22:13] INFO root fetch - processPackages [pretix-plugin-extended-api]: executing diffoscope
+[2024-04-14 20:22:13] INFO root fetch - processPackages [pretix-plugin-extended-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-plugin-extended-api-0.1.8.tar.gz tmp/pretix-plugin-extended-api-0.1.9.tar.gz --markdown 20240414/p/pretix-plugin-extended-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 20:22:13] INFO root fetch - processPackages [python-swidget]: Downloading https://files.pythonhosted.org/packages/49/6c/aadf9a65cbfd3f8ca6805367595c71209299b496345cf9b9b1d5bf97ef8c/python_swidget-1.0.2.tar.gz
+[2024-04-14 20:22:13] INFO root fetch - processPackages [ranshark]: Downloading https://files.pythonhosted.org/packages/a5/92/0e9a46ccaf5cd25d0e196687e2cfce54dd180ae00a8dae0b37ef3cad2248/ranshark-1.0.0.9-py3-none-any.whl
+[2024-04-14 20:22:13] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/13/9e/23d8508402d4fef548074639eed6ef0682323be8c386bb840dbf727edeff/scmopy-0.0.2.tar.gz
+[2024-04-14 20:22:13] INFO root fetch - processPackages [python-swidget]: executing diffoscope
+[2024-04-14 20:22:13] INFO root fetch - processPackages [python-swidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_swidget-1.0.1.tar.gz tmp/python_swidget-1.0.2.tar.gz --markdown 20240414/p/python-swidget/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-14 20:22:13] INFO root fetch - processPackages [ranshark]: executing diffoscope
+[2024-04-14 20:22:13] INFO root fetch - processPackages [ranshark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ranshark-1.0.0.8-py3-none-any.whl.zip tmp/ranshark-1.0.0.9-py3-none-any.whl.zip --markdown 20240414/r/ranshark/1.0.0.8-1.0.0.9/README.md --exclude *.pyd
+[2024-04-14 20:22:13] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 20:22:13] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.1.tar.gz tmp/scmopy-0.0.2.tar.gz --markdown 20240414/s/scmopy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 20:22:13] INFO root fetch - processPackages [sum-dirac-dfcoef]: executing diffoscope
+[2024-04-14 20:22:13] INFO root fetch - processPackages [sum-dirac-dfcoef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sum_dirac_dfcoef-4.4.0.tar.gz tmp/sum_dirac_dfcoef-5.0.0-py3-none-any.whl.zip --markdown 20240414/s/sum-dirac-dfcoef/4.4.0-5.0.0/README.md --exclude *.pyd
+[2024-04-14 20:22:13] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.8.tar.gz]
+[2024-04-14 20:22:13] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.9.tar.gz]
+[2024-04-14 20:22:13] INFO root fetch - main [MainThread]: End processing [pretix-plugin-extended-api]: success
+[2024-04-14 20:22:13] INFO root fetch - processPackages [sum-dirac-dfcoef]: Remove: archive file [/home/abi/fetcher/tmp/sum_dirac_dfcoef-4.4.0.tar.gz]
+[2024-04-14 20:22:13] INFO root fetch - processPackages [sum-dirac-dfcoef]: Remove: archive file [/home/abi/fetcher/tmp/sum_dirac_dfcoef-5.0.0-py3-none-any.whl.zip]
+[2024-04-14 20:22:13] INFO root fetch - main [MainThread]: End processing [sum-dirac-dfcoef]: success
+[2024-04-14 20:22:13] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.1.tar.gz]
+[2024-04-14 20:22:13] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.2.tar.gz]
+[2024-04-14 20:22:13] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 20:22:13] INFO root fetch - processPackages [ranshark]: Remove: archive file [/home/abi/fetcher/tmp/ranshark-1.0.0.8-py3-none-any.whl.zip]
+[2024-04-14 20:22:13] INFO root fetch - processPackages [ranshark]: Remove: archive file [/home/abi/fetcher/tmp/ranshark-1.0.0.9-py3-none-any.whl.zip]
+[2024-04-14 20:22:13] INFO root fetch - main [MainThread]: End processing [ranshark]: success
+[2024-04-14 20:22:14] INFO root fetch - processPackages [python-swidget]: Remove: archive file [/home/abi/fetcher/tmp/python_swidget-1.0.1.tar.gz]
+[2024-04-14 20:22:14] INFO root fetch - processPackages [python-swidget]: Remove: archive file [/home/abi/fetcher/tmp/python_swidget-1.0.2.tar.gz]
+[2024-04-14 20:22:14] INFO root fetch - main [MainThread]: End processing [python-swidget]: success
+[2024-04-14 20:22:14] INFO root fetch - main [MainThread]: Store serial: [22761098]
