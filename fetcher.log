@@ -13187,3 +13187,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:00:25] INFO root fetch - processPackages [martin-binance]: Remove: archive file [/home/abi/fetcher/tmp/martin_binance-3.0.4.tar.gz]
 [2024-04-14 20:00:25] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
 [2024-04-14 20:00:25] INFO root fetch - main [MainThread]: Store serial: [22760973]
+[2024-04-14 20:02:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760973]
+[2024-04-14 20:02:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 20:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astro-delight
+[2024-04-14 20:02:34] INFO root fetch - processPackages [astro-delight]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 20:02:34] INFO root fetch - processPackages [astro-delight]: Downloading https://files.pythonhosted.org/packages/5c/b9/b922d6e0a7411bc9d6fb196f6db05bceeb2c760d3ff1db0091ccd955908e/astro-delight-0.0.8.tar.gz
+[2024-04-14 20:02:36] INFO root fetch - processPackages [astro-delight]: Downloading https://files.pythonhosted.org/packages/d9/03/813b6cc98a39e9de97cc2eefd43f56f5cdecb054d3c90e451dfb5b842aa0/astro-delight-0.0.9.tar.gz
+[2024-04-14 20:02:36] INFO root fetch - processPackages [astro-delight]: executing diffoscope
+[2024-04-14 20:02:36] INFO root fetch - processPackages [astro-delight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro-delight-0.0.8.tar.gz tmp/astro-delight-0.0.9.tar.gz --markdown 20240414/a/astro-delight/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 20:02:37] INFO root fetch - processPackages [astro-delight]: Remove: archive file [/home/abi/fetcher/tmp/astro-delight-0.0.8.tar.gz]
+[2024-04-14 20:02:37] INFO root fetch - processPackages [astro-delight]: Remove: archive file [/home/abi/fetcher/tmp/astro-delight-0.0.9.tar.gz]
+[2024-04-14 20:02:37] INFO root fetch - main [MainThread]: End processing [astro-delight]: success
+[2024-04-14 20:02:37] INFO root fetch - main [MainThread]: Store serial: [22760976]
