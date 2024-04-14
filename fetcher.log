@@ -8873,3 +8873,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:35:41] INFO root fetch - processPackages [NuMPI]: Remove: archive file [/home/abi/fetcher/tmp/numpi-0.5.0.tar.gz]
 [2024-04-14 14:35:41] INFO root fetch - main [MainThread]: End processing [NuMPI]: success
 [2024-04-14 14:35:41] INFO root fetch - main [MainThread]: Store serial: [22758909]
+[2024-04-14 14:37:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758909]
+[2024-04-14 14:37:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 14:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtutils
+[2024-04-14 14:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sindapi
+[2024-04-14 14:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtfx2console
+[2024-04-14 14:37:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsk-monster
+[2024-04-14 14:37:56] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 14:37:56] INFO root fetch - processPackages [sindapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 14:37:56] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 14:37:56] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 14:37:56] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/a3/64/9be9eae342d536ab1b036d4a2f1c1e5f96a0572ca5355387627d208ab1d1/sindapi-0.0.8.tar.gz
+[2024-04-14 14:37:56] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 14:37:56] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 14:37:56] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/ed/60/75f25b7185bce0658536e144ae2cea978136adaf9ec81d3b66858a2fcd38/tsk_monster-0.0.6.tar.gz
+[2024-04-14 14:37:56] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 14:37:57] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/7d/a7/a389d78c747399fa425e39d89ba9fa6d384de97b624ca2e380160a06716f/sindapi-0.0.9.tar.gz
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/72/d5/85d2482c402c01fa38270b81f594fb6995018901411ffd115f6e75d2d70d/jgtfx2console-0.4.9.tar.gz
+[2024-04-14 14:37:57] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/db/6a/f2a0417c109d3a023094ae4ea78cba9d3a6cbab45948adbb24947ad741a1/tsk_monster-0.0.7.tar.gz
+[2024-04-14 14:37:57] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-04-14 14:37:57] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.8.tar.gz tmp/sindapi-0.0.9.tar.gz --markdown 20240414/s/sindapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.8.tar.gz tmp/jgtfx2console-0.4.9.tar.gz --markdown 20240414/j/jgtfx2console/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 14:37:57] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-14 14:37:57] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.6.tar.gz tmp/tsk_monster-0.0.7.tar.gz --markdown 20240414/t/tsk-monster/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 14:37:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.6.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.7.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-14 14:37:57] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.8.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.9.tar.gz]
+[2024-04-14 14:37:57] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-04-14 14:37:58] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 14:37:58] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.9.tar.gz]
+[2024-04-14 14:37:58] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 14:37:58] INFO root fetch - main [MainThread]: Store serial: [22758921]
