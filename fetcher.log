@@ -2537,3 +2537,19 @@
 [2024-04-14 04:04:24] INFO root fetch - processPackages [naming]: Remove: archive file [/home/abi/fetcher/tmp/naming-0.7.1.tar.gz]
 [2024-04-14 04:04:24] INFO root fetch - main [MainThread]: End processing [naming]: success
 [2024-04-14 04:04:24] INFO root fetch - main [MainThread]: Store serial: [22756136]
+[2024-04-14 04:06:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756136]
+[2024-04-14 04:06:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 04:08:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756136]
+[2024-04-14 04:08:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 04:10:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756136]
+[2024-04-14 04:10:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 04:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: isom2600
+[2024-04-14 04:10:43] INFO root fetch - processPackages [isom2600]: New version: [3.6] Old Version: [3.4]
+[2024-04-14 04:10:43] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/ea/df/d2d2873a3c37774e071144b188e14558e9386ccb163c45bbd0e3058ab31e/isom2600-3.4.tar.gz
+[2024-04-14 04:10:43] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/a4/b7/e8ae7584d8ec09805d0324f2cab1e7fab34b38ad7ee9267e285187a57525/isom2600-3.6.tar.gz
+[2024-04-14 04:10:44] INFO root fetch - processPackages [isom2600]: executing diffoscope
+[2024-04-14 04:10:44] INFO root fetch - processPackages [isom2600]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isom2600-3.4.tar.gz tmp/isom2600-3.6.tar.gz --markdown 20240414/i/isom2600/3.4-3.6/README.md --exclude *.pyd
+[2024-04-14 04:10:44] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.4.tar.gz]
+[2024-04-14 04:10:44] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.6.tar.gz]
+[2024-04-14 04:10:44] INFO root fetch - main [MainThread]: End processing [isom2600]: success
+[2024-04-14 04:10:44] INFO root fetch - main [MainThread]: Store serial: [22756139]
