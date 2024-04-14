@@ -3666,3 +3666,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: Remove: archive file [/home/abi/fetcher/tmp/zrb_extras-0.0.2.tar.gz]
 [2024-04-14 06:11:35] INFO root fetch - main [MainThread]: End processing [zrb-extras]: success
 [2024-04-14 06:11:35] INFO root fetch - main [MainThread]: Store serial: [22756500]
+[2024-04-14 06:13:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756500]
+[2024-04-14 06:13:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 06:13:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wildtorch
+[2024-04-14 06:13:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-json
+[2024-04-14 06:13:44] WARNING root fetch - processPackages [wildtorch]: Skipping, unable to determine old version
+[2024-04-14 06:13:44] INFO root fetch - main [MainThread]: End processing [wildtorch] error
+[2024-04-14 06:13:44] INFO root fetch - processPackages [gpt-json]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-14 06:13:44] INFO root fetch - processPackages [gpt-json]: Downloading https://files.pythonhosted.org/packages/3b/6f/ef581bc24ac817f762a1af5d79ec289101a2bc416e44d5bd749dead32da4/gpt_json-0.4.2.tar.gz
+[2024-04-14 06:13:44] INFO root fetch - processPackages [gpt-json]: Downloading https://files.pythonhosted.org/packages/2e/84/2b0a9ef25b0bddecb8ece6f8dc911a7b02afd3cd6a57ae852335030f52dc/gpt_json-0.5.0.tar.gz
+[2024-04-14 06:13:45] INFO root fetch - processPackages [gpt-json]: executing diffoscope
+[2024-04-14 06:13:45] INFO root fetch - processPackages [gpt-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_json-0.4.2.tar.gz tmp/gpt_json-0.5.0.tar.gz --markdown 20240414/g/gpt-json/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-14 06:13:45] INFO root fetch - processPackages [gpt-json]: Remove: archive file [/home/abi/fetcher/tmp/gpt_json-0.4.2.tar.gz]
+[2024-04-14 06:13:45] INFO root fetch - processPackages [gpt-json]: Remove: archive file [/home/abi/fetcher/tmp/gpt_json-0.5.0.tar.gz]
+[2024-04-14 06:13:45] INFO root fetch - main [MainThread]: End processing [gpt-json]: success
+[2024-04-14 06:13:45] INFO root fetch - main [MainThread]: Store serial: [22756506]
