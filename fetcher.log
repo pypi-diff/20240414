@@ -5743,3 +5743,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:42:14] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.1.tar.gz]
 [2024-04-14 10:42:14] INFO root fetch - main [MainThread]: End processing [chromastone]: success
 [2024-04-14 10:42:14] INFO root fetch - main [MainThread]: Store serial: [22757363]
+[2024-04-14 10:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757363]
+[2024-04-14 10:44:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 10:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python3-commons
+[2024-04-14 10:44:23] INFO root fetch - processPackages [python3-commons]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 10:44:23] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/50/93/cb5f75f181ba4d806f0ff684054b3015087ed5e72a73dc8a002422ba6c74/python3-commons-0.3.8.tar.gz
+[2024-04-14 10:44:23] INFO root fetch - processPackages [python3-commons]: Downloading https://files.pythonhosted.org/packages/f9/f2/e69a2e8245c376216d859d5e8612d5e3a5ba8628cf6c9a4c9636860f6e56/python3-commons-0.3.9.tar.gz
+[2024-04-14 10:44:24] INFO root fetch - processPackages [python3-commons]: executing diffoscope
+[2024-04-14 10:44:24] INFO root fetch - processPackages [python3-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python3-commons-0.3.8.tar.gz tmp/python3-commons-0.3.9.tar.gz --markdown 20240414/p/python3-commons/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 10:44:24] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3-commons-0.3.8.tar.gz]
+[2024-04-14 10:44:24] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3-commons-0.3.9.tar.gz]
+[2024-04-14 10:44:24] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
+[2024-04-14 10:44:24] INFO root fetch - main [MainThread]: Store serial: [22757366]
