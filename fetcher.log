@@ -9627,3 +9627,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:37:54] INFO root fetch - processPackages [dlunch]: Remove: archive file [/home/abi/fetcher/tmp/dlunch-3.1.0.tar.gz]
 [2024-04-14 15:37:54] INFO root fetch - main [MainThread]: End processing [dlunch]: success
 [2024-04-14 15:37:54] INFO root fetch - main [MainThread]: Store serial: [22759196]
+[2024-04-14 15:40:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759196]
+[2024-04-14 15:40:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 15:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proma
+[2024-04-14 15:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylayout
+[2024-04-14 15:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kaldi-native-fbank
+[2024-04-14 15:40:11] WARNING root fetch - processPackages [proma]: Skipping, unable to determine old version
+[2024-04-14 15:40:11] INFO root fetch - main [MainThread]: End processing [proma] error
+[2024-04-14 15:40:11] INFO root fetch - processPackages [pylayout]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-14 15:40:11] INFO root fetch - processPackages [kaldi-native-fbank]: New version: [1.9] Old Version: [1.19.2]
+[2024-04-14 15:40:11] INFO root fetch - processPackages [pylayout]: Downloading https://files.pythonhosted.org/packages/50/7a/cf5ae9320b2425bd7ffc238818546fc594bc21856a0e99e423c740ed8fce/pylayout-0.0.9.tar.gz
+[2024-04-14 15:40:11] INFO root fetch - processPackages [kaldi-native-fbank]: Downloading https://files.pythonhosted.org/packages/4a/2b/0c496c7edbd6c0114b2cec7a6b796e417654ea4d859fe449a52673ded0ad/kaldi_native_fbank-1.19.2-cp310-cp310-win_amd64.whl
+[2024-04-14 15:40:11] INFO root fetch - processPackages [pylayout]: Downloading https://files.pythonhosted.org/packages/af/d4/45a08354767d327d53145a7576f64c6a83f76a6c97f2fd87a72665882767/pylayout-0.1.0.tar.gz
+[2024-04-14 15:40:11] INFO root fetch - processPackages [pylayout]: executing diffoscope
+[2024-04-14 15:40:11] INFO root fetch - processPackages [pylayout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylayout-0.0.9.tar.gz tmp/pylayout-0.1.0.tar.gz --markdown 20240414/p/pylayout/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-14 15:40:11] INFO root fetch - processPackages [kaldi-native-fbank]: Downloading https://files.pythonhosted.org/packages/8a/18/17a4f7de43572faf999f9d3682d94e4f9145cd6bc1b4c90b4755ec830b3b/kaldi-native-fbank-1.9.tar.gz
+[2024-04-14 15:40:12] INFO root fetch - processPackages [kaldi-native-fbank]: executing diffoscope
+[2024-04-14 15:40:12] INFO root fetch - processPackages [kaldi-native-fbank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaldi_native_fbank-1.19.2-cp310-cp310-win_amd64.whl.zip tmp/kaldi-native-fbank-1.9.tar.gz --markdown 20240414/k/kaldi-native-fbank/1.19.2-1.9/README.md --exclude *.pyd
+[2024-04-14 15:40:12] INFO root fetch - processPackages [pylayout]: Remove: archive file [/home/abi/fetcher/tmp/pylayout-0.0.9.tar.gz]
+[2024-04-14 15:40:12] INFO root fetch - processPackages [pylayout]: Remove: archive file [/home/abi/fetcher/tmp/pylayout-0.1.0.tar.gz]
+[2024-04-14 15:40:12] INFO root fetch - main [MainThread]: End processing [pylayout]: success
+[2024-04-14 15:40:12] INFO root fetch - processPackages [kaldi-native-fbank]: Remove: archive file [/home/abi/fetcher/tmp/kaldi_native_fbank-1.19.2-cp310-cp310-win_amd64.whl.zip]
+[2024-04-14 15:40:12] INFO root fetch - processPackages [kaldi-native-fbank]: Remove: archive file [/home/abi/fetcher/tmp/kaldi-native-fbank-1.9.tar.gz]
+[2024-04-14 15:40:12] INFO root fetch - main [MainThread]: End processing [kaldi-native-fbank]: success
+[2024-04-14 15:40:12] INFO root fetch - main [MainThread]: Store serial: [22759210]
