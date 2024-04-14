@@ -10682,3 +10682,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:51:36] INFO root fetch - processPackages [ovos-skill-date-time]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_date_time-0.2.3a8-py3-none-any.whl.zip]
 [2024-04-14 16:51:36] INFO root fetch - main [MainThread]: End processing [ovos-skill-date-time]: success
 [2024-04-14 16:51:36] INFO root fetch - main [MainThread]: Store serial: [22759926]
+[2024-04-14 16:53:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759926]
+[2024-04-14 16:53:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 16:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazy-type-hint
+[2024-04-14 16:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-flux
+[2024-04-14 16:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tcrutils
+[2024-04-14 16:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dune-rivals
+[2024-04-14 16:53:45] INFO root fetch - processPackages [lazy-type-hint]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-14 16:53:45] INFO root fetch - processPackages [python-flux]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-14 16:53:45] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 16:53:45] INFO root fetch - processPackages [tcrutils]: New version: [12.0.149] Old Version: [12.0.148]
+[2024-04-14 16:53:45] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/20/ff/5bed0fe5adfefb1a2a5e36db66b27782df83bc84ffad59a7e4128cbd3c48/lazy_type_hint-2.0.1.tar.gz
+[2024-04-14 16:53:45] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 16:53:45] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/6a/74/01df343206582636f1bbcedd083946dc845e5495562ddb9dd04bcc7ba864/python_flux-1.0.2.tar.gz
+[2024-04-14 16:53:45] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/c6/66/87b1108bc7c6fcf1fd5f67aeb09c0515a1e306b1537ac920c600473d3660/tcrutils-12.0.148.tar.gz
+[2024-04-14 16:53:45] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 16:53:46] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/5c/e0/3822204b20f3ac172012d81ab944dad627b281bc30caaaea5e506c7d8dd5/python_flux-1.0.3.tar.gz
+[2024-04-14 16:53:46] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/dc/0f/81f7f6ce6478d46981981af13c01e8b6a4e203242f08a4e56db1797a4f77/lazy_type_hint-2.0.2.tar.gz
+[2024-04-14 16:53:46] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/61/29/12c8a32cd4281b75d64aafafa563e6e1b69645765289193e0ac16e10c850/tcrutils-12.0.149.tar.gz
+[2024-04-14 16:53:46] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 16:53:46] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 16:53:46] INFO root fetch - processPackages [python-flux]: executing diffoscope
+[2024-04-14 16:53:46] INFO root fetch - processPackages [python-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_flux-1.0.2.tar.gz tmp/python_flux-1.0.3.tar.gz --markdown 20240414/p/python-flux/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-14 16:53:46] INFO root fetch - processPackages [lazy-type-hint]: executing diffoscope
+[2024-04-14 16:53:46] INFO root fetch - processPackages [lazy-type-hint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazy_type_hint-2.0.1.tar.gz tmp/lazy_type_hint-2.0.2.tar.gz --markdown 20240414/l/lazy-type-hint/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-14 16:53:46] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-14 16:53:46] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.148.tar.gz tmp/tcrutils-12.0.149.tar.gz --markdown 20240414/t/tcrutils/12.0.148-12.0.149/README.md --exclude *.pyd
+[2024-04-14 16:53:46] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 16:53:46] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.2.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.3.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - main [MainThread]: End processing [python-flux]: success
+[2024-04-14 16:53:46] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-2.0.1.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-2.0.2.tar.gz]
+[2024-04-14 16:53:46] INFO root fetch - main [MainThread]: End processing [lazy-type-hint]: success
+[2024-04-14 16:53:47] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.148.tar.gz]
+[2024-04-14 16:53:47] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.149.tar.gz]
+[2024-04-14 16:53:47] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-14 16:53:47] INFO root fetch - main [MainThread]: Store serial: [22759938]
