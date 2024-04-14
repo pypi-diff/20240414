@@ -12463,3 +12463,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:56:32] INFO root fetch - processPackages [speech_user_interface]: Remove: archive file [/home/abi/fetcher/tmp/speech_user_interface-0.2.0.tar.gz]
 [2024-04-14 18:56:32] INFO root fetch - main [MainThread]: End processing [speech_user_interface]: success
 [2024-04-14 18:56:32] INFO root fetch - main [MainThread]: Store serial: [22760640]
+[2024-04-14 18:58:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760640]
+[2024-04-14 18:58:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 18:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyodeint
+[2024-04-14 18:58:41] INFO root fetch - processPackages [pyodeint]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-14 18:58:41] INFO root fetch - processPackages [pyodeint]: Downloading https://files.pythonhosted.org/packages/12/e8/121ff534610dfdb63a7eb99f46e74e169110ee95eecb7e47545d63603bb3/pyodeint-0.9.7.tar.gz
+[2024-04-14 18:58:41] INFO root fetch - processPackages [pyodeint]: Downloading https://files.pythonhosted.org/packages/4d/c9/25584088978acd0ceb45d3578c0069ad5d7da4750a394c58d7810a7ef27f/pyodeint-0.9.8.tar.gz
+[2024-04-14 18:58:42] INFO root fetch - processPackages [pyodeint]: executing diffoscope
+[2024-04-14 18:58:42] INFO root fetch - processPackages [pyodeint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyodeint-0.9.7.tar.gz tmp/pyodeint-0.9.8.tar.gz --markdown 20240414/p/pyodeint/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-14 18:58:42] INFO root fetch - processPackages [pyodeint]: Remove: archive file [/home/abi/fetcher/tmp/pyodeint-0.9.7.tar.gz]
+[2024-04-14 18:58:42] INFO root fetch - processPackages [pyodeint]: Remove: archive file [/home/abi/fetcher/tmp/pyodeint-0.9.8.tar.gz]
+[2024-04-14 18:58:42] INFO root fetch - main [MainThread]: End processing [pyodeint]: success
+[2024-04-14 18:58:42] INFO root fetch - main [MainThread]: Store serial: [22760642]
