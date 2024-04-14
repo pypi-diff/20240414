@@ -15507,3 +15507,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:42:56] INFO root fetch - processPackages [ngclearn]: Remove: archive file [/home/abi/fetcher/tmp/ngclearn-1.0b3.tar.gz]
 [2024-04-14 22:42:56] INFO root fetch - main [MainThread]: End processing [ngclearn]: success
 [2024-04-14 22:42:56] INFO root fetch - main [MainThread]: Store serial: [22762361]
+[2024-04-14 22:45:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762361]
+[2024-04-14 22:45:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 22:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-14 22:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python2verilog
+[2024-04-14 22:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyrapperTGStatAPI
+[2024-04-14 22:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pve-cli
+[2024-04-14 22:45:06] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-14 22:45:06] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 22:45:06] INFO root fetch - processPackages [pve-cli]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-14 22:45:06] WARNING root fetch - processPackages [PyrapperTGStatAPI]: Skipping, unable to determine old version
+[2024-04-14 22:45:06] INFO root fetch - main [MainThread]: End processing [PyrapperTGStatAPI] error
+[2024-04-14 22:45:06] INFO root fetch - processPackages [python2verilog]: New version: [0.5.0rc1] Old Version: [0.5.0]
+[2024-04-14 22:45:06] INFO root fetch - processPackages [python2verilog]: Downloading https://files.pythonhosted.org/packages/23/02/c05ac947a18b9a2f9126d7e7bef830b7a781e975bf13fc45471c1ecf4bda/python2verilog-0.5.0.tar.gz
+[2024-04-14 22:45:06] INFO root fetch - processPackages [pve-cli]: Downloading https://files.pythonhosted.org/packages/d0/0a/697ff8e55df148795d586a51cb5047006410d3c41e6dbdda5b4afaeddf07/pve_cli-0.4.1.tar.gz
+[2024-04-14 22:45:06] INFO root fetch - processPackages [pve-cli]: Downloading https://files.pythonhosted.org/packages/c6/31/0135ae6af50e0a08203a5eacff38f6100e67be706e98d4eaa526de5f9d84/pve_cli-0.5.0.tar.gz
+[2024-04-14 22:45:06] INFO root fetch - processPackages [python2verilog]: Downloading https://files.pythonhosted.org/packages/a5/71/71a75e41f46ae727814ca7289b90da9fef36c4f6d90d1bccf8147cf1d5d4/python2verilog-0.5.0rc1.tar.gz
+[2024-04-14 22:45:06] INFO root fetch - processPackages [python2verilog]: executing diffoscope
+[2024-04-14 22:45:06] INFO root fetch - processPackages [python2verilog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python2verilog-0.5.0.tar.gz tmp/python2verilog-0.5.0rc1.tar.gz --markdown 20240414/p/python2verilog/0.5.0-0.5.0rc1/README.md --exclude *.pyd
+[2024-04-14 22:45:06] INFO root fetch - processPackages [pve-cli]: executing diffoscope
+[2024-04-14 22:45:06] INFO root fetch - processPackages [pve-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pve_cli-0.4.1.tar.gz tmp/pve_cli-0.5.0.tar.gz --markdown 20240414/p/pve-cli/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-14 22:45:07] INFO root fetch - processPackages [pve-cli]: Remove: archive file [/home/abi/fetcher/tmp/pve_cli-0.4.1.tar.gz]
+[2024-04-14 22:45:07] INFO root fetch - processPackages [pve-cli]: Remove: archive file [/home/abi/fetcher/tmp/pve_cli-0.5.0.tar.gz]
+[2024-04-14 22:45:07] INFO root fetch - main [MainThread]: End processing [pve-cli]: success
+[2024-04-14 22:45:07] INFO root fetch - processPackages [python2verilog]: Remove: archive file [/home/abi/fetcher/tmp/python2verilog-0.5.0.tar.gz]
+[2024-04-14 22:45:07] INFO root fetch - processPackages [python2verilog]: Remove: archive file [/home/abi/fetcher/tmp/python2verilog-0.5.0rc1.tar.gz]
+[2024-04-14 22:45:07] INFO root fetch - main [MainThread]: End processing [python2verilog]: success
+[2024-04-14 22:45:07] INFO root fetch - main [MainThread]: Store serial: [22762373]
