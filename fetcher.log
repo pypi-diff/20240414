@@ -12881,3 +12881,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:34:21] INFO root fetch - processPackages [openmindat]: Remove: archive file [/home/abi/fetcher/tmp/openmindat-0.0.4.tar.gz]
 [2024-04-14 19:34:21] INFO root fetch - main [MainThread]: End processing [openmindat]: success
 [2024-04-14 19:34:21] INFO root fetch - main [MainThread]: Store serial: [22760864]
+[2024-04-14 19:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760864]
+[2024-04-14 19:36:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 19:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bunyukki2224
+[2024-04-14 19:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dropbase
+[2024-04-14 19:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: termpandas
+[2024-04-14 19:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Sphinx-AutoMark
+[2024-04-14 19:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bunyukki2224
+[2024-04-14 19:36:30] WARNING root fetch - processPackages [termpandas]: Skipping, unable to determine old version
+[2024-04-14 19:36:30] INFO root fetch - main [MainThread]: End processing [termpandas] error
+[2024-04-14 19:36:30] INFO root fetch - processPackages [Sphinx-AutoMark]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2024-04-14 19:36:30] INFO root fetch - processPackages [bunyukki2224]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 19:36:30] INFO root fetch - processPackages [bunyukki2224]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 19:36:30] INFO root fetch - processPackages [dropbase]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-14 19:36:30] INFO root fetch - processPackages [Sphinx-AutoMark]: Downloading https://files.pythonhosted.org/packages/d4/b6/454ec25e221257887e910f7be0dc857dd117f6699eac17e62bc4f7d80e73/Sphinx-AutoMark-0.0.0.2.tar.gz
+[2024-04-14 19:36:30] INFO root fetch - processPackages [bunyukki2224]: Downloading https://files.pythonhosted.org/packages/2d/d2/7c208b3661a5721aaf4a3366f7a70d9ce88522858a93a63c694ad43508dc/bunyukki2224-0.0.1-py3-none-any.whl
+[2024-04-14 19:36:30] INFO root fetch - processPackages [dropbase]: Downloading https://files.pythonhosted.org/packages/5a/31/20552c618fc0d3420984d962ed230286eeffa2d25b785762b3dc2546ae16/dropbase-0.3.2.tar.gz
+[2024-04-14 19:36:30] INFO root fetch - processPackages [bunyukki2224]: Downloading https://files.pythonhosted.org/packages/2d/d2/7c208b3661a5721aaf4a3366f7a70d9ce88522858a93a63c694ad43508dc/bunyukki2224-0.0.1-py3-none-any.whl
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: Downloading https://files.pythonhosted.org/packages/2a/e1/9663780ecfe400d410550bf817099f365a070882632a4e61939a7d34fe92/bunyukki2224-0.0.2-py3-none-any.whl
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: Downloading https://files.pythonhosted.org/packages/2a/e1/9663780ecfe400d410550bf817099f365a070882632a4e61939a7d34fe92/bunyukki2224-0.0.2-py3-none-any.whl
+[2024-04-14 19:36:31] INFO root fetch - processPackages [dropbase]: Downloading https://files.pythonhosted.org/packages/0a/05/9dfe60f600e3c7ddf3c010b76fd920e77f2b740d96acd90a175f29db4f9c/dropbase-0.3.3.tar.gz
+[2024-04-14 19:36:31] INFO root fetch - processPackages [Sphinx-AutoMark]: Downloading https://files.pythonhosted.org/packages/f0/a0/ad770f893ea0ced5b95b55b2c3d47fa03b123ffb85f388c3473954f4b620/Sphinx-AutoMark-0.0.0.3.tar.gz
+[2024-04-14 19:36:31] INFO root fetch - processPackages [dropbase]: executing diffoscope
+[2024-04-14 19:36:31] INFO root fetch - processPackages [dropbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dropbase-0.3.2.tar.gz tmp/dropbase-0.3.3.tar.gz --markdown 20240414/d/dropbase/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: executing diffoscope
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunyukki2224-0.0.1-py3-none-any.whl.zip tmp/bunyukki2224-0.0.2-py3-none-any.whl.zip --markdown 20240414/b/bunyukki2224/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: executing diffoscope
+[2024-04-14 19:36:31] INFO root fetch - processPackages [bunyukki2224]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunyukki2224-0.0.1-py3-none-any.whl.zip tmp/bunyukki2224-0.0.2-py3-none-any.whl.zip --markdown 20240414/b/bunyukki2224/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 19:36:31] INFO root fetch - processPackages [Sphinx-AutoMark]: executing diffoscope
+[2024-04-14 19:36:31] INFO root fetch - processPackages [Sphinx-AutoMark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Sphinx-AutoMark-0.0.0.2.tar.gz tmp/Sphinx-AutoMark-0.0.0.3.tar.gz --markdown 20240414/S/Sphinx-AutoMark/0.0.0.2-0.0.0.3/README.md --exclude *.pyd
+[2024-04-14 19:36:32] INFO root fetch - processPackages [bunyukki2224]: Remove: archive file [/home/abi/fetcher/tmp/bunyukki2224-0.0.1-py3-none-any.whl.zip]
+[2024-04-14 19:36:32] INFO root fetch - processPackages [bunyukki2224]: Remove: archive file [/home/abi/fetcher/tmp/bunyukki2224-0.0.2-py3-none-any.whl.zip]
+[2024-04-14 19:36:32] INFO root fetch - main [MainThread]: End processing [bunyukki2224]: success
+[2024-04-14 19:36:32] INFO root fetch - processPackages [dropbase]: Remove: archive file [/home/abi/fetcher/tmp/dropbase-0.3.2.tar.gz]
+[2024-04-14 19:36:32] INFO root fetch - processPackages [dropbase]: Remove: archive file [/home/abi/fetcher/tmp/dropbase-0.3.3.tar.gz]
+[2024-04-14 19:36:32] INFO root fetch - main [MainThread]: End processing [dropbase]: success
+[2024-04-14 19:36:32] INFO root fetch - main [MainThread]: End processing [bunyukki2224]: success
+[2024-04-14 19:36:32] INFO root fetch - processPackages [Sphinx-AutoMark]: Remove: archive file [/home/abi/fetcher/tmp/Sphinx-AutoMark-0.0.0.2.tar.gz]
+[2024-04-14 19:36:32] INFO root fetch - processPackages [Sphinx-AutoMark]: Remove: archive file [/home/abi/fetcher/tmp/Sphinx-AutoMark-0.0.0.3.tar.gz]
+[2024-04-14 19:36:32] INFO root fetch - main [MainThread]: End processing [Sphinx-AutoMark]: success
+[2024-04-14 19:36:32] INFO root fetch - main [MainThread]: Store serial: [22760877]
