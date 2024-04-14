@@ -15897,3 +15897,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:15:34] INFO root fetch - processPackages [genflowly-lambda-utils]: Remove: archive file [/home/abi/fetcher/tmp/genflowly_lambda_utils-0.0.5.tar.gz]
 [2024-04-14 23:15:34] INFO root fetch - main [MainThread]: End processing [genflowly-lambda-utils]: success
 [2024-04-14 23:15:34] INFO root fetch - main [MainThread]: Store serial: [22762508]
+[2024-04-14 23:17:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762508]
+[2024-04-14 23:17:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thepipe-api
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netznoe-smartmeter-portal-api
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dsp-ifsc
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swpclib
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: buffalo-gym
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sling-linux-amd64
+[2024-04-14 23:17:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NecessaryConditionAnalysis
+[2024-04-14 23:17:43] INFO root fetch - processPackages [dsp-ifsc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 23:17:43] INFO root fetch - processPackages [thepipe-api]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 23:17:43] WARNING root fetch - processPackages [buffalo-gym]: Skipping, unable to determine old version
+[2024-04-14 23:17:43] INFO root fetch - main [MainThread]: End processing [buffalo-gym] error
+[2024-04-14 23:17:43] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/80/7c/a51fc50aed63941e45c90919a33347cd39ac4ee18cd386453de5e762f752/dsp_ifsc-0.0.2.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/2a/fc/30550d057555b655ab681128a5ef1dbdaf3cc8878660faf6e209f16112d3/thepipe_api-0.1.4.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [sling-linux-amd64]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:17:43] WARNING root fetch - processPackages [NecessaryConditionAnalysis]: Skipping, unable to determine old version
+[2024-04-14 23:17:43] INFO root fetch - main [MainThread]: End processing [NecessaryConditionAnalysis] error
+[2024-04-14 23:17:43] INFO root fetch - processPackages [swpclib]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-04-14 23:17:43] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-14 23:17:43] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Downloading https://files.pythonhosted.org/packages/1e/3a/eaa6fa50dbdc4ebd42bb71503f01c0c1eda183ca0419428b5d606d4ab944/netznoe_smartmeter_portal_api-1.1.0.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/fb/5d/7ff52c6332955d4d730efed8f5da47683528fb1aa3f906e6ea76df2fcbd4/swpclib-4.2.0.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [sling-linux-amd64]: Downloading https://files.pythonhosted.org/packages/b0/bb/b62ff34fb186774b41a8e2c89e947b9cd53b9cf49bee60773f99b97c04f5/sling-linux-amd64-1.2.4.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/18/7c/f3d99a0074b5564c01d2e8f70b2e3456be15efaaf7e27d709a71d8c0d86b/thepipe_api-0.1.5.tar.gz
+[2024-04-14 23:17:43] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/70/7f/41b3bf8cba148f0df5ea77adbcc3b16f280311875a97c7f213c10e09d738/dsp_ifsc-0.0.3.tar.gz
+[2024-04-14 23:17:43] WARNING root fetch - processPackages [sling-linux-amd64]: Skipping package: exceeds size limit 49109674>=10485760
+[2024-04-14 23:17:43] INFO root fetch - main [MainThread]: End processing [sling-linux-amd64] error
+[2024-04-14 23:17:43] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-14 23:17:43] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.1.4.tar.gz tmp/thepipe_api-0.1.5.tar.gz --markdown 20240414/t/thepipe-api/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 23:17:43] INFO root fetch - processPackages [dsp-ifsc]: executing diffoscope
+[2024-04-14 23:17:43] INFO root fetch - processPackages [dsp-ifsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsp_ifsc-0.0.2.tar.gz tmp/dsp_ifsc-0.0.3.tar.gz --markdown 20240414/d/dsp-ifsc/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 23:17:44] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Downloading https://files.pythonhosted.org/packages/b3/1a/13086022cacc20843bfeb998057643f7f09d16c763c4a3b0060784be9114/netznoe_smartmeter_portal_api-1.2.0.tar.gz
+[2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/c6/6a/80268e19f5cad5324ef3bb0ec3a06d29dca1aad7f7c90ee6e1521339bfa3/swpclib-4.3.0.tar.gz
+[2024-04-14 23:17:44] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: executing diffoscope
+[2024-04-14 23:17:44] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netznoe_smartmeter_portal_api-1.1.0.tar.gz tmp/netznoe_smartmeter_portal_api-1.2.0.tar.gz --markdown 20240414/n/netznoe-smartmeter-portal-api/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: executing diffoscope
+[2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swpclib-4.2.0.tar.gz tmp/swpclib-4.3.0.tar.gz --markdown 20240414/s/swpclib/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-04-14 23:17:44] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.2.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.3.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [dsp-ifsc]: success
+[2024-04-14 23:17:44] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.4.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.5.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-14 23:17:44] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Remove: archive file [/home/abi/fetcher/tmp/netznoe_smartmeter_portal_api-1.1.0.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - processPackages [netznoe-smartmeter-portal-api]: Remove: archive file [/home/abi/fetcher/tmp/netznoe_smartmeter_portal_api-1.2.0.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [netznoe-smartmeter-portal-api]: success
+[2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.2.0.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.3.0.tar.gz]
+[2024-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [swpclib]: success
+[2024-04-14 23:17:44] INFO root fetch - main [MainThread]: Store serial: [22762533]
