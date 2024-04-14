@@ -9767,3 +9767,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: Remove: archive file [/home/abi/fetcher/tmp/keymouse-0.0.6.tar.gz]
 [2024-04-14 15:47:11] INFO root fetch - main [MainThread]: End processing [keymouse]: success
 [2024-04-14 15:47:11] INFO root fetch - main [MainThread]: Store serial: [22759300]
+[2024-04-14 15:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759300]
+[2024-04-14 15:49:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sybil-engine
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proma
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-proj-8e00a834c8
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-bk
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onnx2kerastl
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: demisto-sdk
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cuda-mock
+[2024-04-14 15:49:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sc-file
+[2024-04-14 15:49:28] INFO root fetch - processPackages [func-bk]: New version: [1.1] Old Version: [1.0]
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sc-file]: New version: [3.0.7] Old Version: [3.0.6]
+[2024-04-14 15:49:28] INFO root fetch - processPackages [proma]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 15:49:28] WARNING root fetch - processPackages [test-proj-8e00a834c8]: Skipping, unable to determine old version
+[2024-04-14 15:49:28] INFO root fetch - main [MainThread]: End processing [test-proj-8e00a834c8] error
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sc-file]: Downloading https://files.pythonhosted.org/packages/5f/18/1f21abbdc9e149d22fb81ead2ced7086836dc4fd340a74350589c2bf136f/sc_file-3.0.6.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [cuda-mock]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 15:49:28] INFO root fetch - processPackages [demisto-sdk]: New version: [1.9.0] Old Version: [1.8.3]
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sybil-engine]: New version: [6.7.0] Old Version: [6.6.2]
+[2024-04-14 15:49:28] ERROR root fetch - processPackages [func-bk]: Unable to fetch info: No such project/version 'func-bk' 1.0
+[2024-04-14 15:49:28] INFO root fetch - main [MainThread]: End processing [func-bk] error
+[2024-04-14 15:49:28] INFO root fetch - processPackages [onnx2kerastl]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 15:49:28] INFO root fetch - processPackages [proma]: Downloading https://files.pythonhosted.org/packages/f2/d2/48e62751f83a472c1b2211f7619214580d1b7d33e17c7368103c4e6c4871/proma-0.0.1.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/09/d8/b40156edfeb2c658f2e1fbd96230c4ad73caeb31f2c65c8c3c79aadd10ae/demisto_sdk-1.8.3.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sc-file]: Downloading https://files.pythonhosted.org/packages/73/f1/ae4e3a3a4b52a9e262715d2cb62bbcec43e65cd04c88436d084d07ae2c70/sc_file-3.0.7.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/56/30/4fe6a62a391b7a1f4849721540cb3c2ac08682ab3718cd0bf95ad8649005/onnx2kerastl-0.0.98.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/8b/fe/ecd434e6fc3360789bc05d4ed9cd2db983257f58876eec105447fb17cd34/sybil_engine-6.6.2.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [cuda-mock]: Downloading https://files.pythonhosted.org/packages/f6/78/9e631e91a22a9ec061508d197f54a2ce98feb8b04ca4f0a80ef4d74f7eb6/cuda-mock-0.1.5.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sc-file]: executing diffoscope
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sc-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc_file-3.0.6.tar.gz tmp/sc_file-3.0.7.tar.gz --markdown 20240414/s/sc-file/3.0.6-3.0.7/README.md --exclude *.pyd
+[2024-04-14 15:49:28] INFO root fetch - processPackages [proma]: Downloading https://files.pythonhosted.org/packages/dc/80/491d8bce11e0c9e7cfb84bb64355d2017a04f68cea1ab3fee39ddb1750a1/proma-0.0.2.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [onnx2kerastl]: Downloading https://files.pythonhosted.org/packages/42/31/7e8fff9b0c93088de0c4c5543ffd14e079e872d9a350b1b6f99febee59e8/onnx2kerastl-0.0.99.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [proma]: executing diffoscope
+[2024-04-14 15:49:28] INFO root fetch - processPackages [proma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proma-0.0.1.tar.gz tmp/proma-0.0.2.tar.gz --markdown 20240414/p/proma/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/a5/71/a16442fd532f337edcbf24b7e8a53f7bc761c19151bc518d91c0b8f4aeff/sybil_engine-6.7.0.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [cuda-mock]: Downloading https://files.pythonhosted.org/packages/4f/af/888d0b742d31f7b895d21bca672b0971b360d60839d690ce8982d2f68033/cuda-mock-0.1.6.tar.gz
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-14 15:49:28] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-6.6.2.tar.gz tmp/sybil_engine-6.7.0.tar.gz --markdown 20240414/s/sybil-engine/6.6.2-6.7.0/README.md --exclude *.pyd
+[2024-04-14 15:49:28] INFO root fetch - processPackages [onnx2kerastl]: executing diffoscope
+[2024-04-14 15:49:28] INFO root fetch - processPackages [onnx2kerastl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2kerastl-0.0.98.tar.gz tmp/onnx2kerastl-0.0.99.tar.gz --markdown 20240414/o/onnx2kerastl/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 15:49:29] INFO root fetch - processPackages [cuda-mock]: executing diffoscope
+[2024-04-14 15:49:29] INFO root fetch - processPackages [cuda-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuda-mock-0.1.5.tar.gz tmp/cuda-mock-0.1.6.tar.gz --markdown 20240414/c/cuda-mock/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 15:49:29] INFO root fetch - processPackages [sc-file]: Remove: archive file [/home/abi/fetcher/tmp/sc_file-3.0.6.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - processPackages [sc-file]: Remove: archive file [/home/abi/fetcher/tmp/sc_file-3.0.7.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - main [MainThread]: End processing [sc-file]: success
+[2024-04-14 15:49:29] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/64/f1/eb1afa74c8cd36ec00a08aa9c524502235aca66e33f399269e7f2b852df2/demisto_sdk-1.9.0.tar.gz
+[2024-04-14 15:49:29] INFO root fetch - processPackages [proma]: Remove: archive file [/home/abi/fetcher/tmp/proma-0.0.1.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - processPackages [proma]: Remove: archive file [/home/abi/fetcher/tmp/proma-0.0.2.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - main [MainThread]: End processing [proma]: success
+[2024-04-14 15:49:29] INFO root fetch - processPackages [onnx2kerastl]: Remove: archive file [/home/abi/fetcher/tmp/onnx2kerastl-0.0.98.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - processPackages [onnx2kerastl]: Remove: archive file [/home/abi/fetcher/tmp/onnx2kerastl-0.0.99.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - main [MainThread]: End processing [onnx2kerastl]: success
+[2024-04-14 15:49:29] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.6.2.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.7.0.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-14 15:49:29] INFO root fetch - processPackages [cuda-mock]: Remove: archive file [/home/abi/fetcher/tmp/cuda-mock-0.1.5.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - processPackages [cuda-mock]: Remove: archive file [/home/abi/fetcher/tmp/cuda-mock-0.1.6.tar.gz]
+[2024-04-14 15:49:29] INFO root fetch - main [MainThread]: End processing [cuda-mock]: success
+[2024-04-14 15:49:29] INFO root fetch - processPackages [demisto-sdk]: executing diffoscope
+[2024-04-14 15:49:29] INFO root fetch - processPackages [demisto-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demisto_sdk-1.8.3.tar.gz tmp/demisto_sdk-1.9.0.tar.gz --markdown 20240414/d/demisto-sdk/1.8.3-1.9.0/README.md --exclude *.pyd
+[2024-04-14 15:49:33] INFO root fetch - processPackages [demisto-sdk]: Remove: archive file [/home/abi/fetcher/tmp/demisto_sdk-1.8.3.tar.gz]
+[2024-04-14 15:49:33] INFO root fetch - processPackages [demisto-sdk]: Remove: archive file [/home/abi/fetcher/tmp/demisto_sdk-1.9.0.tar.gz]
+[2024-04-14 15:49:33] INFO root fetch - main [MainThread]: End processing [demisto-sdk]: success
+[2024-04-14 15:49:33] INFO root fetch - main [MainThread]: Store serial: [22759346]
