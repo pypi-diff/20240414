@@ -14317,3 +14317,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:21:33] INFO root fetch - processPackages [django-static-base]: Remove: archive file [/home/abi/fetcher/tmp/django_static_base-0.2.0.tar.gz]
 [2024-04-14 21:21:33] INFO root fetch - main [MainThread]: End processing [django-static-base]: success
 [2024-04-14 21:21:33] INFO root fetch - main [MainThread]: Store serial: [22761738]
+[2024-04-14 21:23:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761738]
+[2024-04-14 21:23:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TestY-rust
+[2024-04-14 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensols.nlp
+[2024-04-14 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-14 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-14 21:23:42] WARNING root fetch - processPackages [TestY-rust]: Skipping, unable to determine old version
+[2024-04-14 21:23:42] INFO root fetch - main [MainThread]: End processing [TestY-rust] error
+[2024-04-14 21:23:42] INFO root fetch - processPackages [zensols.nlp]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-14 21:23:43] INFO root fetch - processPackages [zensols.nlp]: Downloading https://files.pythonhosted.org/packages/62/93/c4cab4ec13599e26d2e5294f7741f8c364b6e6362a05da8c0394a8df46c8/zensols.nlp-1.9.1-py3-none-any.whl
+[2024-04-14 21:23:43] INFO root fetch - processPackages [zensols.nlp]: Downloading https://files.pythonhosted.org/packages/b3/74/b4ab72da8068e306ac2b5ece7d6f1efd379efa70442d44a5bd4f7f1cdb8b/zensols.nlp-1.9.2-py3-none-any.whl
+[2024-04-14 21:23:43] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-14 21:23:43] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-14 21:23:43] INFO root fetch - processPackages [zensols.nlp]: executing diffoscope
+[2024-04-14 21:23:43] INFO root fetch - processPackages [zensols.nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.nlp-1.9.1-py3-none-any.whl.zip tmp/zensols.nlp-1.9.2-py3-none-any.whl.zip --markdown 20240414/z/zensols.nlp/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-04-14 21:23:43] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-14 21:23:43] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240414/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240414/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-14 21:23:44] INFO root fetch - processPackages [zensols.nlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.nlp-1.9.1-py3-none-any.whl.zip]
+[2024-04-14 21:23:44] INFO root fetch - processPackages [zensols.nlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.nlp-1.9.2-py3-none-any.whl.zip]
+[2024-04-14 21:23:44] INFO root fetch - main [MainThread]: End processing [zensols.nlp]: success
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-14 21:23:44] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-14 21:23:44] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-14 21:23:44] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-14 21:23:45] INFO root fetch - main [MainThread]: Store serial: [22761750]
