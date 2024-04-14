@@ -12537,3 +12537,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:03:03] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.4.tar.gz]
 [2024-04-14 19:03:03] INFO root fetch - main [MainThread]: End processing [llmt]: success
 [2024-04-14 19:03:03] INFO root fetch - main [MainThread]: Store serial: [22760662]
+[2024-04-14 19:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760662]
+[2024-04-14 19:05:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 19:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmt
+[2024-04-14 19:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codegreen
+[2024-04-14 19:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphene-django-extended
+[2024-04-14 19:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nure
+[2024-04-14 19:05:13] INFO root fetch - processPackages [graphene-django-extended]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 19:05:13] INFO root fetch - processPackages [llmt]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 19:05:13] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/af/b8/7093496eb8ac126b948b43cb7bf4466c2d34a14f55fde1e6cae195937a3f/llmt-0.0.3.tar.gz
+[2024-04-14 19:05:13] INFO root fetch - processPackages [nure]: New version: [2024.4.15] Old Version: [2024.3.26]
+[2024-04-14 19:05:13] INFO root fetch - processPackages [codegreen]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 19:05:13] INFO root fetch - processPackages [graphene-django-extended]: Downloading https://files.pythonhosted.org/packages/2b/b3/b53c3c08294b96f93e9cbd54bf7169f738d8854a64b80abe62ccc2bb2cca/graphene_django_extended-1.0.0.tar.gz
+[2024-04-14 19:05:13] INFO root fetch - processPackages [nure]: Downloading https://files.pythonhosted.org/packages/c2/83/a86a9f1011af757ed727add2b48ca2e40bfaee8a0e023aa60273cc27650b/nure-2024.3.26.tar.gz
+[2024-04-14 19:05:13] INFO root fetch - processPackages [codegreen]: Downloading https://files.pythonhosted.org/packages/74/f0/ce221f8db01f9905df25c54330b0abfe6fc4e748bf403eee6e031f574e72/codegreen-0.1.8.tar.gz
+[2024-04-14 19:05:13] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/47/0c/12de66dc069507561030f0ca58185e09c1cea12f512656d00e39a41acdd5/llmt-0.0.4.tar.gz
+[2024-04-14 19:05:14] INFO root fetch - processPackages [llmt]: executing diffoscope
+[2024-04-14 19:05:14] INFO root fetch - processPackages [llmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmt-0.0.3.tar.gz tmp/llmt-0.0.4.tar.gz --markdown 20240414/l/llmt/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 19:05:14] INFO root fetch - processPackages [graphene-django-extended]: Downloading https://files.pythonhosted.org/packages/e9/6f/d3b405575cb41a186dd9c19ac6e74e6d54fa3080b7e37b9332e11288fc3e/graphene_django_extended-1.0.1.tar.gz
+[2024-04-14 19:05:14] INFO root fetch - processPackages [nure]: Downloading https://files.pythonhosted.org/packages/2d/f8/04a24b64b4365bb550ed7a20f342fd2809206550f68f2cbe65a84abafc0e/nure-2024.4.15.tar.gz
+[2024-04-14 19:05:14] INFO root fetch - processPackages [graphene-django-extended]: executing diffoscope
+[2024-04-14 19:05:14] INFO root fetch - processPackages [graphene-django-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphene_django_extended-1.0.0.tar.gz tmp/graphene_django_extended-1.0.1.tar.gz --markdown 20240414/g/graphene-django-extended/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 19:05:14] INFO root fetch - processPackages [codegreen]: Downloading https://files.pythonhosted.org/packages/3f/16/fac7ad6b6da8d5dbe3e9efb9f44d11ae35cc9f7204ef7f005b7ed76b2df8/codegreen-0.1.9.tar.gz
+[2024-04-14 19:05:14] INFO root fetch - processPackages [nure]: executing diffoscope
+[2024-04-14 19:05:14] INFO root fetch - processPackages [nure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nure-2024.3.26.tar.gz tmp/nure-2024.4.15.tar.gz --markdown 20240414/n/nure/2024.3.26-2024.4.15/README.md --exclude *.pyd
+[2024-04-14 19:05:14] INFO root fetch - processPackages [codegreen]: executing diffoscope
+[2024-04-14 19:05:14] INFO root fetch - processPackages [codegreen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codegreen-0.1.8.tar.gz tmp/codegreen-0.1.9.tar.gz --markdown 20240414/c/codegreen/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 19:05:14] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.3.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.4.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - main [MainThread]: End processing [llmt]: success
+[2024-04-14 19:05:14] INFO root fetch - processPackages [graphene-django-extended]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_extended-1.0.0.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - processPackages [graphene-django-extended]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_extended-1.0.1.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - main [MainThread]: End processing [graphene-django-extended]: success
+[2024-04-14 19:05:14] INFO root fetch - processPackages [nure]: Remove: archive file [/home/abi/fetcher/tmp/nure-2024.3.26.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - processPackages [nure]: Remove: archive file [/home/abi/fetcher/tmp/nure-2024.4.15.tar.gz]
+[2024-04-14 19:05:14] INFO root fetch - main [MainThread]: End processing [nure]: success
+[2024-04-14 19:05:15] INFO root fetch - processPackages [codegreen]: Remove: archive file [/home/abi/fetcher/tmp/codegreen-0.1.8.tar.gz]
+[2024-04-14 19:05:15] INFO root fetch - processPackages [codegreen]: Remove: archive file [/home/abi/fetcher/tmp/codegreen-0.1.9.tar.gz]
+[2024-04-14 19:05:15] INFO root fetch - main [MainThread]: End processing [codegreen]: success
+[2024-04-14 19:05:15] INFO root fetch - main [MainThread]: Store serial: [22760675]
