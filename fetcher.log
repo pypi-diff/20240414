@@ -16033,3 +16033,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:26:32] INFO root fetch - processPackages [static-frame]: Remove: archive file [/home/abi/fetcher/tmp/static-frame-2.6.0.tar.gz]
 [2024-04-14 23:26:32] INFO root fetch - main [MainThread]: End processing [static-frame]: success
 [2024-04-14 23:26:32] INFO root fetch - main [MainThread]: Store serial: [22762564]
+[2024-04-14 23:28:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762564]
+[2024-04-14 23:28:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: argcomplete
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hat-controller
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ahmedmahos
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: policyengine-us
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: windmill-api
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmill
+[2024-04-14 23:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wmill-pg
+[2024-04-14 23:28:41] INFO root fetch - processPackages [policyengine-us]: New version: [0.735.0] Old Version: [0.734.1]
+[2024-04-14 23:28:41] INFO root fetch - processPackages [argcomplete]: New version: [3.2.3] Old Version: [3.2.2]
+[2024-04-14 23:28:41] WARNING root fetch - processPackages [ahmedmahos]: Skipping, unable to determine old version
+[2024-04-14 23:28:41] INFO root fetch - main [MainThread]: End processing [ahmedmahos] error
+[2024-04-14 23:28:41] WARNING root fetch - processPackages [hat-controller]: Skipping, unable to determine old version
+[2024-04-14 23:28:41] INFO root fetch - main [MainThread]: End processing [hat-controller] error
+[2024-04-14 23:28:41] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/4e/0b/174fbb05c84a38730d194ab70254bdf2289b0e68d6e74b0dd4649d4c36bd/policyengine-us-0.734.1.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-14 23:28:41] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-14 23:28:41] INFO root fetch - processPackages [argcomplete]: Downloading https://files.pythonhosted.org/packages/f0/a2/ce706abe166457d5ef68fac3ffa6cf0f93580755b7d5f883c456e94fab7b/argcomplete-3.2.2.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/6d/91/6b6052c80b8d367e051cc2905d1d921bf9a11f63e27a0f802b5c1277aa20/wmill-1.98.0.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-14 23:28:41] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/bd/de/5d29ca258adee967295dbf926ab306c480527c234336f0725d4c2bc1d718/windmill_api-1.98.0.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [argcomplete]: Downloading https://files.pythonhosted.org/packages/3c/c0/031c507227ce3b715274c1cd1f3f9baf7a0f7cec075e22c7c8b5d4e468a9/argcomplete-3.2.3.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/d2/82/ca92a0a705cc22d003f0e096960a31825911bd9a312e1222cd7e8afc3f4d/policyengine-us-0.735.0.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f1/d1/eb5b4c7d25f969fc3603441c8e90a5a8e00688be43ce0631166287977a65/wmill-1.99.0.tar.gz
+[2024-04-14 23:28:41] INFO root fetch - processPackages [argcomplete]: executing diffoscope
+[2024-04-14 23:28:41] INFO root fetch - processPackages [argcomplete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argcomplete-3.2.2.tar.gz tmp/argcomplete-3.2.3.tar.gz --markdown 20240414/a/argcomplete/3.2.2-3.2.3/README.md --exclude *.pyd
+[2024-04-14 23:28:42] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/32/94/9431b41ce6b9c2670fbc125624f7ebc3d186482c80c271e3d7acde511319/windmill_api-1.99.0.tar.gz
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20240414/w/wmill/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-14 23:28:42] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-04-14 23:28:42] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.734.1.tar.gz tmp/policyengine-us-0.735.0.tar.gz --markdown 20240414/p/policyengine-us/0.734.1-0.735.0/README.md --exclude *.pyd
+[2024-04-14 23:28:42] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2024-04-14 23:28:42] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20240414/w/windmill-api/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240414/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.98.0.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.99.0.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2024-04-14 23:28:42] INFO root fetch - processPackages [argcomplete]: Remove: archive file [/home/abi/fetcher/tmp/argcomplete-3.2.2.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - processPackages [argcomplete]: Remove: archive file [/home/abi/fetcher/tmp/argcomplete-3.2.3.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - main [MainThread]: End processing [argcomplete]: success
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-04-14 23:28:42] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-04-14 23:28:46] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.98.0.tar.gz]
+[2024-04-14 23:28:46] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
+[2024-04-14 23:28:46] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2024-04-14 23:29:13] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.734.1.tar.gz]
+[2024-04-14 23:29:13] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.735.0.tar.gz]
+[2024-04-14 23:29:13] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-04-14 23:29:13] INFO root fetch - main [MainThread]: Store serial: [22762589]
