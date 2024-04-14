@@ -16021,3 +16021,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:24:20] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.2.97.tar.gz]
 [2024-04-14 23:24:20] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-14 23:24:20] INFO root fetch - main [MainThread]: Store serial: [22762558]
+[2024-04-14 23:26:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762558]
+[2024-04-14 23:26:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 23:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: static-frame
+[2024-04-14 23:26:30] INFO root fetch - processPackages [static-frame]: New version: [2.6.0] Old Version: [2.5.2]
+[2024-04-14 23:26:30] INFO root fetch - processPackages [static-frame]: Downloading https://files.pythonhosted.org/packages/8c/9a/04e82b80db192e234681bfb38e8e3420e8e5fb14186e1eb3477a0ce8dfe5/static-frame-2.5.2.tar.gz
+[2024-04-14 23:26:30] INFO root fetch - processPackages [static-frame]: Downloading https://files.pythonhosted.org/packages/4c/b9/648fc900ff40ea66ddb59f398625aac9482ab47af92d6f9050e3e368aac9/static-frame-2.6.0.tar.gz
+[2024-04-14 23:26:31] INFO root fetch - processPackages [static-frame]: executing diffoscope
+[2024-04-14 23:26:31] INFO root fetch - processPackages [static-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/static-frame-2.5.2.tar.gz tmp/static-frame-2.6.0.tar.gz --markdown 20240414/s/static-frame/2.5.2-2.6.0/README.md --exclude *.pyd
+[2024-04-14 23:26:32] INFO root fetch - processPackages [static-frame]: Remove: archive file [/home/abi/fetcher/tmp/static-frame-2.5.2.tar.gz]
+[2024-04-14 23:26:32] INFO root fetch - processPackages [static-frame]: Remove: archive file [/home/abi/fetcher/tmp/static-frame-2.6.0.tar.gz]
+[2024-04-14 23:26:32] INFO root fetch - main [MainThread]: End processing [static-frame]: success
+[2024-04-14 23:26:32] INFO root fetch - main [MainThread]: Store serial: [22762564]
