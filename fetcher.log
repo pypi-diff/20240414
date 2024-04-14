@@ -2553,3 +2553,17 @@
 [2024-04-14 04:10:44] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.6.tar.gz]
 [2024-04-14 04:10:44] INFO root fetch - main [MainThread]: End processing [isom2600]: success
 [2024-04-14 04:10:44] INFO root fetch - main [MainThread]: Store serial: [22756139]
+[2024-04-14 04:12:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756139]
+[2024-04-14 04:12:53] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 04:14:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756139]
+[2024-04-14 04:14:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 04:14:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyHana
+[2024-04-14 04:14:59] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 04:14:59] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-14 04:14:59] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-14 04:14:59] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-14 04:14:59] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240414/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 04:15:00] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-14 04:15:00] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-14 04:15:00] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-14 04:15:00] INFO root fetch - main [MainThread]: Store serial: [22756141]
