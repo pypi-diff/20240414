@@ -1928,3 +1928,29 @@
 [2024-04-14 02:47:27] INFO root fetch - processPackages [slack-export-viewer]: Remove: archive file [/home/abi/fetcher/tmp/slack_export_viewer-1.4.3.tar.gz]
 [2024-04-14 02:47:27] INFO root fetch - main [MainThread]: End processing [slack-export-viewer]: success
 [2024-04-14 02:47:27] INFO root fetch - main [MainThread]: Store serial: [22755899]
+[2024-04-14 02:49:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755899]
+[2024-04-14 02:49:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 02:49:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func_adl_servicex_xaodr22
+[2024-04-14 02:49:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autopipeline
+[2024-04-14 02:49:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nm-magic-wand-nightly
+[2024-04-14 02:49:35] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: New version: [2.0.0.22.2.107a9] Old Version: [2.0.0.22.2.107a1]
+[2024-04-14 02:49:35] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 02:49:35] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240414] Old Version: [0.2.2.20240413]
+[2024-04-14 02:49:35] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Downloading https://files.pythonhosted.org/packages/76/d5/273ac3d75656d07962e70c208359e849991e1e5a2e3221fbefb0511ffe3f/func_adl_servicex_xaodr22-2.0.0.22.2.107a1.tar.gz
+[2024-04-14 02:49:35] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 02:49:35] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/aa/7a/961a88d735f91263e8e878c7e74b0793e49076e7f05bf90ba6b549f9d5cb/nm_magic_wand_nightly-0.2.2.20240413-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-04-14 02:49:36] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 78349474>=10485760
+[2024-04-14 02:49:36] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-04-14 02:49:36] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 02:49:36] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Downloading https://files.pythonhosted.org/packages/61/51/00256dbc3be34ba3c1255aaa100ca89e8b3a416294c7b7b9fe3a84106f6a/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz
+[2024-04-14 02:49:36] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 02:49:36] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 02:49:36] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: executing diffoscope
+[2024-04-14 02:49:36] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a1.tar.gz tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz --markdown 20240414/f/func_adl_servicex_xaodr22/2.0.0.22.2.107a1-2.0.0.22.2.107a9/README.md --exclude *.pyd
+[2024-04-14 02:49:36] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 02:49:36] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 02:49:36] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 02:49:39] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a1.tar.gz]
+[2024-04-14 02:49:39] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz]
+[2024-04-14 02:49:39] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr22]: success
+[2024-04-14 02:49:39] INFO root fetch - main [MainThread]: Store serial: [22755908]
