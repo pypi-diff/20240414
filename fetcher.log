@@ -7179,3 +7179,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-14 12:31:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-14 12:31:09] INFO root fetch - main [MainThread]: Store serial: [22758092]
+[2024-04-14 12:33:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758092]
+[2024-04-14 12:33:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 12:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: raspidevkit
+[2024-04-14 12:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hundred-x
+[2024-04-14 12:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtpy
+[2024-04-14 12:33:24] INFO root fetch - processPackages [hundred-x]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 12:33:24] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 12:33:24] WARNING root fetch - processPackages [raspidevkit]: Skipping, unable to determine old version
+[2024-04-14 12:33:24] INFO root fetch - main [MainThread]: End processing [raspidevkit] error
+[2024-04-14 12:33:24] INFO root fetch - processPackages [hundred-x]: Downloading https://files.pythonhosted.org/packages/fc/ce/f8878214f4a6980e2fa27e4927eb1543d44a17de4b94d37abe24632cce41/hundred_x-0.1.6.tar.gz
+[2024-04-14 12:33:24] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 12:33:24] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 12:33:25] INFO root fetch - processPackages [hundred-x]: Downloading https://files.pythonhosted.org/packages/e8/11/f09ef3f65f79d17bd5509a9043988935a0c8b65314648fb59d68735a74bb/hundred_x-0.1.7.tar.gz
+[2024-04-14 12:33:25] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 12:33:25] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 12:33:25] INFO root fetch - processPackages [hundred-x]: executing diffoscope
+[2024-04-14 12:33:25] INFO root fetch - processPackages [hundred-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hundred_x-0.1.6.tar.gz tmp/hundred_x-0.1.7.tar.gz --markdown 20240414/h/hundred-x/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-14 12:33:25] INFO root fetch - processPackages [hundred-x]: Remove: archive file [/home/abi/fetcher/tmp/hundred_x-0.1.6.tar.gz]
+[2024-04-14 12:33:25] INFO root fetch - processPackages [hundred-x]: Remove: archive file [/home/abi/fetcher/tmp/hundred_x-0.1.7.tar.gz]
+[2024-04-14 12:33:25] INFO root fetch - main [MainThread]: End processing [hundred-x]: success
+[2024-04-14 12:33:25] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 12:33:25] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 12:33:25] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 12:33:25] INFO root fetch - main [MainThread]: Store serial: [22758105]
