@@ -5809,3 +5809,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:48:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
 [2024-04-14 10:48:59] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-04-14 10:48:59] INFO root fetch - main [MainThread]: Store serial: [22757382]
+[2024-04-14 10:51:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757382]
+[2024-04-14 10:51:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtutils
+[2024-04-14 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: htimeseries
+[2024-04-14 10:51:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pnu-portstreelint
+[2024-04-14 10:51:08] INFO root fetch - processPackages [pnu-portstreelint]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-14 10:51:08] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 10:51:08] INFO root fetch - processPackages [pnu-portstreelint]: Downloading https://files.pythonhosted.org/packages/08/ff/69422bda0fb0cd7329356d5dec2a64e0d153623f474a4d989913cb23eb24/pnu_portstreelint-1.4.0.tar.gz
+[2024-04-14 10:51:08] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 10:51:08] INFO root fetch - processPackages [htimeseries]: New version: [7.0.0] Old Version: [6.0.3]
+[2024-04-14 10:51:09] INFO root fetch - processPackages [htimeseries]: Downloading https://files.pythonhosted.org/packages/38/05/402984c934b2cb7891aba7ae15e4081cc3fe2d009b97e7328b1bb8073a93/htimeseries-6.0.3.tar.gz
+[2024-04-14 10:51:09] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 10:51:09] INFO root fetch - processPackages [pnu-portstreelint]: Downloading https://files.pythonhosted.org/packages/b1/0c/2415f47960e2441c23db40b64ea0107464231eae5e6deb505b71a75f78c5/pnu_portstreelint-1.4.1.tar.gz
+[2024-04-14 10:51:09] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 10:51:09] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 10:51:09] INFO root fetch - processPackages [pnu-portstreelint]: executing diffoscope
+[2024-04-14 10:51:09] INFO root fetch - processPackages [pnu-portstreelint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnu_portstreelint-1.4.0.tar.gz tmp/pnu_portstreelint-1.4.1.tar.gz --markdown 20240414/p/pnu-portstreelint/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-14 10:51:09] INFO root fetch - processPackages [htimeseries]: Downloading https://files.pythonhosted.org/packages/a3/a5/cac847d9a1493e00e25e3317e4e3db0f3e664c2037813fd9b10cc435c867/htimeseries-7.0.0.tar.gz
+[2024-04-14 10:51:09] INFO root fetch - processPackages [htimeseries]: executing diffoscope
+[2024-04-14 10:51:09] INFO root fetch - processPackages [htimeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htimeseries-6.0.3.tar.gz tmp/htimeseries-7.0.0.tar.gz --markdown 20240414/h/htimeseries/6.0.3-7.0.0/README.md --exclude *.pyd
+[2024-04-14 10:51:09] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 10:51:09] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 10:51:09] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 10:51:09] INFO root fetch - processPackages [pnu-portstreelint]: Remove: archive file [/home/abi/fetcher/tmp/pnu_portstreelint-1.4.0.tar.gz]
+[2024-04-14 10:51:09] INFO root fetch - processPackages [pnu-portstreelint]: Remove: archive file [/home/abi/fetcher/tmp/pnu_portstreelint-1.4.1.tar.gz]
+[2024-04-14 10:51:09] INFO root fetch - main [MainThread]: End processing [pnu-portstreelint]: success
+[2024-04-14 10:51:10] INFO root fetch - processPackages [htimeseries]: Remove: archive file [/home/abi/fetcher/tmp/htimeseries-6.0.3.tar.gz]
+[2024-04-14 10:51:10] INFO root fetch - processPackages [htimeseries]: Remove: archive file [/home/abi/fetcher/tmp/htimeseries-7.0.0.tar.gz]
+[2024-04-14 10:51:10] INFO root fetch - main [MainThread]: End processing [htimeseries]: success
+[2024-04-14 10:51:10] INFO root fetch - main [MainThread]: Store serial: [22757391]
