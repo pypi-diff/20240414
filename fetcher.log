@@ -13595,3 +13595,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:35:24] INFO root fetch - processPackages [langchain-decorators]: Remove: archive file [/home/abi/fetcher/tmp/langchain_decorators-0.5.6.tar.gz]
 [2024-04-14 20:35:24] INFO root fetch - main [MainThread]: End processing [langchain-decorators]: success
 [2024-04-14 20:35:24] INFO root fetch - main [MainThread]: Store serial: [22761142]
+[2024-04-14 20:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761142]
+[2024-04-14 20:37:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 20:39:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761142]
+[2024-04-14 20:39:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arbitragelab
+[2024-04-14 20:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scmopy
+[2024-04-14 20:39:38] INFO root fetch - processPackages [scmopy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 20:39:38] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/0f/5e/476daf9e1a8fa03c642dee511349a5ca2bbd54c5a8e213859f0a179b8b78/scmopy-0.0.3.tar.gz
+[2024-04-14 20:39:38] WARNING root fetch - processPackages [arbitragelab]: Skipping, unable to determine old version
+[2024-04-14 20:39:38] INFO root fetch - main [MainThread]: End processing [arbitragelab] error
+[2024-04-14 20:39:38] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/f0/8d/6665aec0481aa102609033653eeb4c3c3474a7b1f550f55f70335382a0f7/scmopy-0.0.4.tar.gz
+[2024-04-14 20:39:38] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 20:39:38] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.3.tar.gz tmp/scmopy-0.0.4.tar.gz --markdown 20240414/s/scmopy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 20:39:39] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.3.tar.gz]
+[2024-04-14 20:39:39] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.4.tar.gz]
+[2024-04-14 20:39:39] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 20:39:39] INFO root fetch - main [MainThread]: Store serial: [22761149]
