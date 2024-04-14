@@ -8790,3 +8790,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9-py3-none-any.whl.zip]
 [2024-04-14 14:28:49] INFO root fetch - main [MainThread]: End processing [hgraph]: success
 [2024-04-14 14:28:49] INFO root fetch - main [MainThread]: Store serial: [22758860]
+[2024-04-14 14:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758860]
+[2024-04-14 14:31:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hgraph
+[2024-04-14 14:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PathMePy
+[2024-04-14 14:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llmflex
+[2024-04-14 14:31:05] WARNING root fetch - processPackages [PathMePy]: Skipping, unable to determine old version
+[2024-04-14 14:31:05] INFO root fetch - main [MainThread]: End processing [PathMePy] error
+[2024-04-14 14:31:05] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 14:31:05] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-04-14 14:31:05] INFO root fetch - processPackages [llmflex]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 14:31:05] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/77/2a/9c649bae24350163e091af3cc935312fc217c5068f36df00350606d79c10/llmflex-0.1.3.tar.gz
+[2024-04-14 14:31:05] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/7f/9c/996a318a9587743acfaa46c065f33086180b42f61f85bab66117a506ec53/hgraph-0.2.9-py3-none-any.whl
+[2024-04-14 14:31:05] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-04-14 14:31:05] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9-py3-none-any.whl.zip --markdown 20240414/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 14:31:05] INFO root fetch - processPackages [llmflex]: Downloading https://files.pythonhosted.org/packages/41/9a/92e5f6941fa788954fce9991427e7eef999cad5ca22581d39ca52d2f7f23/llmflex-0.1.4.tar.gz
+[2024-04-14 14:31:05] INFO root fetch - processPackages [llmflex]: executing diffoscope
+[2024-04-14 14:31:05] INFO root fetch - processPackages [llmflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmflex-0.1.3.tar.gz tmp/llmflex-0.1.4.tar.gz --markdown 20240414/l/llmflex/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 14:31:06] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-04-14 14:31:06] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9-py3-none-any.whl.zip]
+[2024-04-14 14:31:06] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-04-14 14:31:06] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.3.tar.gz]
+[2024-04-14 14:31:06] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.4.tar.gz]
+[2024-04-14 14:31:06] INFO root fetch - main [MainThread]: End processing [llmflex]: success
+[2024-04-14 14:31:06] INFO root fetch - main [MainThread]: Store serial: [22758867]
