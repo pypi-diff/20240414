@@ -12475,3 +12475,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:58:42] INFO root fetch - processPackages [pyodeint]: Remove: archive file [/home/abi/fetcher/tmp/pyodeint-0.9.8.tar.gz]
 [2024-04-14 18:58:42] INFO root fetch - main [MainThread]: End processing [pyodeint]: success
 [2024-04-14 18:58:42] INFO root fetch - main [MainThread]: Store serial: [22760642]
+[2024-04-14 19:00:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760642]
+[2024-04-14 19:00:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 19:00:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyontoenv
+[2024-04-14 19:00:51] WARNING root fetch - processPackages [pyontoenv]: Skipping, unable to determine old version
+[2024-04-14 19:00:51] INFO root fetch - main [MainThread]: End processing [pyontoenv] error
+[2024-04-14 19:00:51] INFO root fetch - main [MainThread]: Store serial: [22760645]
