@@ -14531,3 +14531,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:36:47] INFO root fetch - processPackages [dkimpy]: Remove: archive file [/home/abi/fetcher/tmp/dkimpy-1.1.6.tar.gz]
 [2024-04-14 21:36:47] INFO root fetch - main [MainThread]: End processing [dkimpy]: success
 [2024-04-14 21:36:47] INFO root fetch - main [MainThread]: Store serial: [22761885]
+[2024-04-14 21:38:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761885]
+[2024-04-14 21:38:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: axia-pathfinder-client
+[2024-04-14 21:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensols.deepnlp
+[2024-04-14 21:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OptimalBragg
+[2024-04-14 21:38:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aedev-git-repo-manager
+[2024-04-14 21:38:55] WARNING root fetch - processPackages [OptimalBragg]: Skipping, unable to determine old version
+[2024-04-14 21:38:55] INFO root fetch - main [MainThread]: End processing [OptimalBragg] error
+[2024-04-14 21:38:55] INFO root fetch - processPackages [axia-pathfinder-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-14 21:38:55] INFO root fetch - processPackages [aedev-git-repo-manager]: New version: [0.3.75] Old Version: [0.3.72]
+[2024-04-14 21:38:55] INFO root fetch - processPackages [zensols.deepnlp]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-14 21:38:56] INFO root fetch - processPackages [zensols.deepnlp]: Downloading https://files.pythonhosted.org/packages/9c/21/10603475fcaf940813c167dd29516101971491a1ba9e103291465af693eb/zensols.deepnlp-1.9.0-py3-none-any.whl
+[2024-04-14 21:38:56] INFO root fetch - processPackages [aedev-git-repo-manager]: Downloading https://files.pythonhosted.org/packages/fa/23/4fc1ee13a4d8c575fc520f6ccfd14caad7a8d1f2488ebfd9dade33680e97/aedev_git_repo_manager-0.3.72.tar.gz
+[2024-04-14 21:38:56] INFO root fetch - processPackages [axia-pathfinder-client]: Downloading https://files.pythonhosted.org/packages/ed/b6/16993c9f94f56450f2d80ff40a6aa2c5a968a5805568cdb9217dd9d8bec2/axia_pathfinder_client-0.2.2.tar.gz
+[2024-04-14 21:38:56] INFO root fetch - processPackages [zensols.deepnlp]: Downloading https://files.pythonhosted.org/packages/7b/fe/0efb9441f1db7bd4e0b349e13fa4e0d887c3dc29811c54faa57d2d57e19d/zensols.deepnlp-1.9.1-py3-none-any.whl
+[2024-04-14 21:38:56] INFO root fetch - processPackages [aedev-git-repo-manager]: Downloading https://files.pythonhosted.org/packages/f8/84/30e236f6a9a8d1a278bd24e1ca84b56a5643906c8f547147cebf55d0b57c/aedev_git_repo_manager-0.3.75.tar.gz
+[2024-04-14 21:38:56] INFO root fetch - processPackages [zensols.deepnlp]: executing diffoscope
+[2024-04-14 21:38:56] INFO root fetch - processPackages [zensols.deepnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.deepnlp-1.9.0-py3-none-any.whl.zip tmp/zensols.deepnlp-1.9.1-py3-none-any.whl.zip --markdown 20240414/z/zensols.deepnlp/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-14 21:38:56] INFO root fetch - processPackages [axia-pathfinder-client]: Downloading https://files.pythonhosted.org/packages/f1/19/4a4dc80e155b89e8dd4892c2984e142a941adc5d665f7655e5b2e2fa46ad/axia_pathfinder_client-0.2.3.tar.gz
+[2024-04-14 21:38:56] INFO root fetch - processPackages [axia-pathfinder-client]: executing diffoscope
+[2024-04-14 21:38:56] INFO root fetch - processPackages [axia-pathfinder-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axia_pathfinder_client-0.2.2.tar.gz tmp/axia_pathfinder_client-0.2.3.tar.gz --markdown 20240414/a/axia-pathfinder-client/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-14 21:38:56] INFO root fetch - processPackages [aedev-git-repo-manager]: executing diffoscope
+[2024-04-14 21:38:56] INFO root fetch - processPackages [aedev-git-repo-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aedev_git_repo_manager-0.3.72.tar.gz tmp/aedev_git_repo_manager-0.3.75.tar.gz --markdown 20240414/a/aedev-git-repo-manager/0.3.72-0.3.75/README.md --exclude *.pyd
+[2024-04-14 21:38:57] INFO root fetch - processPackages [aedev-git-repo-manager]: Remove: archive file [/home/abi/fetcher/tmp/aedev_git_repo_manager-0.3.72.tar.gz]
+[2024-04-14 21:38:57] INFO root fetch - processPackages [aedev-git-repo-manager]: Remove: archive file [/home/abi/fetcher/tmp/aedev_git_repo_manager-0.3.75.tar.gz]
+[2024-04-14 21:38:57] INFO root fetch - main [MainThread]: End processing [aedev-git-repo-manager]: success
+[2024-04-14 21:38:57] INFO root fetch - processPackages [zensols.deepnlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deepnlp-1.9.0-py3-none-any.whl.zip]
+[2024-04-14 21:38:57] INFO root fetch - processPackages [zensols.deepnlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deepnlp-1.9.1-py3-none-any.whl.zip]
+[2024-04-14 21:38:57] INFO root fetch - main [MainThread]: End processing [zensols.deepnlp]: success
+[2024-04-14 21:38:57] INFO root fetch - processPackages [axia-pathfinder-client]: Remove: archive file [/home/abi/fetcher/tmp/axia_pathfinder_client-0.2.2.tar.gz]
+[2024-04-14 21:38:57] INFO root fetch - processPackages [axia-pathfinder-client]: Remove: archive file [/home/abi/fetcher/tmp/axia_pathfinder_client-0.2.3.tar.gz]
+[2024-04-14 21:38:57] INFO root fetch - main [MainThread]: End processing [axia-pathfinder-client]: success
+[2024-04-14 21:38:57] INFO root fetch - main [MainThread]: Store serial: [22761896]
