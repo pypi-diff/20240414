@@ -9746,3 +9746,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:44:54] INFO root fetch - processPackages [cool-open-client]: Remove: archive file [/home/abi/fetcher/tmp/cool-open-client-0.0.9.tar.gz]
 [2024-04-14 15:44:54] INFO root fetch - main [MainThread]: End processing [cool-open-client]: success
 [2024-04-14 15:44:54] INFO root fetch - main [MainThread]: Store serial: [22759276]
+[2024-04-14 15:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759276]
+[2024-04-14 15:47:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 15:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: encommon
+[2024-04-14 15:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keymouse
+[2024-04-14 15:47:10] INFO root fetch - processPackages [encommon]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-14 15:47:10] INFO root fetch - processPackages [encommon]: Downloading https://files.pythonhosted.org/packages/ff/25/8ecf7da68002f4bcfb762361ded8e68dcff38ca6bd4bc4fb2ccc3f5e7835/encommon-0.8.1.tar.gz
+[2024-04-14 15:47:10] INFO root fetch - processPackages [keymouse]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 15:47:10] INFO root fetch - processPackages [keymouse]: Downloading https://files.pythonhosted.org/packages/1f/a2/8f3310d6131aea9001fb2f8db2e5a43885ec9a9fcd082dce278228affa28/keymouse-0.0.5.tar.gz
+[2024-04-14 15:47:10] INFO root fetch - processPackages [encommon]: Downloading https://files.pythonhosted.org/packages/e8/6c/acc7d9ead0ad78f24694a92155a191f738a8f1a066dbd02aa818e1fbfef1/encommon-0.8.2.tar.gz
+[2024-04-14 15:47:11] INFO root fetch - processPackages [encommon]: executing diffoscope
+[2024-04-14 15:47:11] INFO root fetch - processPackages [encommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encommon-0.8.1.tar.gz tmp/encommon-0.8.2.tar.gz --markdown 20240414/e/encommon/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: Downloading https://files.pythonhosted.org/packages/e1/6c/d1757d13369d744224eea10f9bbb5e7d803d5f709a969d3385d99ea0d22b/keymouse-0.0.6.tar.gz
+[2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: executing diffoscope
+[2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keymouse-0.0.5.tar.gz tmp/keymouse-0.0.6.tar.gz --markdown 20240414/k/keymouse/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 15:47:11] INFO root fetch - processPackages [encommon]: Remove: archive file [/home/abi/fetcher/tmp/encommon-0.8.1.tar.gz]
+[2024-04-14 15:47:11] INFO root fetch - processPackages [encommon]: Remove: archive file [/home/abi/fetcher/tmp/encommon-0.8.2.tar.gz]
+[2024-04-14 15:47:11] INFO root fetch - main [MainThread]: End processing [encommon]: success
+[2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: Remove: archive file [/home/abi/fetcher/tmp/keymouse-0.0.5.tar.gz]
+[2024-04-14 15:47:11] INFO root fetch - processPackages [keymouse]: Remove: archive file [/home/abi/fetcher/tmp/keymouse-0.0.6.tar.gz]
+[2024-04-14 15:47:11] INFO root fetch - main [MainThread]: End processing [keymouse]: success
+[2024-04-14 15:47:11] INFO root fetch - main [MainThread]: Store serial: [22759300]
