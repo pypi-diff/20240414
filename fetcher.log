@@ -15239,3 +15239,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:27:43] INFO root fetch - processPackages [opensesame-plugin-audio-low-latency]: Remove: archive file [/home/abi/fetcher/tmp/opensesame-plugin-audio_low_latency-9.3.0.tar.gz]
 [2024-04-14 22:27:43] INFO root fetch - main [MainThread]: End processing [opensesame-plugin-audio-low-latency]: success
 [2024-04-14 22:27:43] INFO root fetch - main [MainThread]: Store serial: [22762190]
+[2024-04-14 22:29:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762190]
+[2024-04-14 22:29:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 22:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Terminalgemini
+[2024-04-14 22:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: librecell-lib
+[2024-04-14 22:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: issx
+[2024-04-14 22:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: librecell-layout
+[2024-04-14 22:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thepipe-api
+[2024-04-14 22:29:52] INFO root fetch - processPackages [librecell-layout]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:29:52] INFO root fetch - processPackages [issx]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-14 22:29:52] INFO root fetch - processPackages [Terminalgemini]: New version: [2.0.1] Old Version: [1.0.1]
+[2024-04-14 22:29:52] INFO root fetch - processPackages [librecell-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:29:52] INFO root fetch - processPackages [thepipe-api]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 22:29:52] INFO root fetch - processPackages [Terminalgemini]: Downloading https://files.pythonhosted.org/packages/58/e3/514fd40b7469bf620710ba8ce545dc447c6488f3947df1c25754f72d3378/terminalgemini-1.0.1.tar.gz
+[2024-04-14 22:29:52] INFO root fetch - processPackages [librecell-layout]: Downloading https://files.pythonhosted.org/packages/d5/92/e10f0098a1009aa854fd25a272d8e9d83d50bf1623b2e226f3f06d477d7c/librecell-layout-0.0.8.tar.gz
+[2024-04-14 22:29:52] INFO root fetch - processPackages [issx]: Downloading https://files.pythonhosted.org/packages/f0/93/8e6fff09d748707937fc4ff92d5035117b51fe09e3cc7847f4e3cc765c14/issx-0.0.2.tar.gz
+[2024-04-14 22:29:52] INFO root fetch - processPackages [librecell-lib]: Downloading https://files.pythonhosted.org/packages/31/c6/aff67e54ed077602281c0cb6a434425bbd4b6bad86bbd2636ffa4c7ee297/librecell-lib-0.0.8.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/7d/87/f98d8a173e6afdc36d0eca69b7e448f4c126bbc9c80ed2330ff88c6b92cc/thepipe_api-0.1.3.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-layout]: Downloading https://files.pythonhosted.org/packages/7b/a0/eadc736e5d9c5190f3e53f1891306a9b6ed1cfb6420eddc490d03c571766/librecell-layout-0.0.9.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [issx]: Downloading https://files.pythonhosted.org/packages/9c/18/d8258b67a4e69a9dd07b88809e4c3da8db18c880a690963d69b69902445d/issx-0.0.4.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [Terminalgemini]: Downloading https://files.pythonhosted.org/packages/8f/5e/3522fd13ed80ef8c86a09e3ca5fa2861c9b355f6c29e8d90a8b79b878cb3/terminalgemini-2.0.1.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-lib]: Downloading https://files.pythonhosted.org/packages/49/f6/0843607d79c259a4fa2c6cfc2636f4d1498b0722cbb7336d7b96af4d6f1c/librecell-lib-0.0.9.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [issx]: executing diffoscope
+[2024-04-14 22:29:53] INFO root fetch - processPackages [issx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/issx-0.0.2.tar.gz tmp/issx-0.0.4.tar.gz --markdown 20240414/i/issx/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-layout]: executing diffoscope
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-layout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-layout-0.0.8.tar.gz tmp/librecell-layout-0.0.9.tar.gz --markdown 20240414/l/librecell-layout/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:29:53] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/2a/fc/30550d057555b655ab681128a5ef1dbdaf3cc8878660faf6e209f16112d3/thepipe_api-0.1.4.tar.gz
+[2024-04-14 22:29:53] INFO root fetch - processPackages [Terminalgemini]: executing diffoscope
+[2024-04-14 22:29:53] INFO root fetch - processPackages [Terminalgemini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminalgemini-1.0.1.tar.gz tmp/terminalgemini-2.0.1.tar.gz --markdown 20240414/T/Terminalgemini/1.0.1-2.0.1/README.md --exclude *.pyd
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-lib]: executing diffoscope
+[2024-04-14 22:29:53] INFO root fetch - processPackages [librecell-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-lib-0.0.8.tar.gz tmp/librecell-lib-0.0.9.tar.gz --markdown 20240414/l/librecell-lib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:29:53] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-14 22:29:53] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.1.3.tar.gz tmp/thepipe_api-0.1.4.tar.gz --markdown 20240414/t/thepipe-api/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 22:29:54] INFO root fetch - processPackages [issx]: Remove: archive file [/home/abi/fetcher/tmp/issx-0.0.2.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - processPackages [issx]: Remove: archive file [/home/abi/fetcher/tmp/issx-0.0.4.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [issx]: success
+[2024-04-14 22:29:54] INFO root fetch - processPackages [librecell-layout]: Remove: archive file [/home/abi/fetcher/tmp/librecell-layout-0.0.8.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - processPackages [librecell-layout]: Remove: archive file [/home/abi/fetcher/tmp/librecell-layout-0.0.9.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [librecell-layout]: success
+[2024-04-14 22:29:54] INFO root fetch - processPackages [Terminalgemini]: Remove: archive file [/home/abi/fetcher/tmp/terminalgemini-1.0.1.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - processPackages [Terminalgemini]: Remove: archive file [/home/abi/fetcher/tmp/terminalgemini-2.0.1.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [Terminalgemini]: success
+[2024-04-14 22:29:54] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.3.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.1.4.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-14 22:29:54] INFO root fetch - processPackages [librecell-lib]: Remove: archive file [/home/abi/fetcher/tmp/librecell-lib-0.0.8.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - processPackages [librecell-lib]: Remove: archive file [/home/abi/fetcher/tmp/librecell-lib-0.0.9.tar.gz]
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: End processing [librecell-lib]: success
+[2024-04-14 22:29:54] INFO root fetch - main [MainThread]: Store serial: [22762203]
