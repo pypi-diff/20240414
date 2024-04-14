@@ -5039,3 +5039,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:30:31] INFO root fetch - processPackages [deepchem]: Remove: archive file [/home/abi/fetcher/tmp/deepchem-2.8.1.dev20240414072819.tar.gz]
 [2024-04-14 09:30:31] INFO root fetch - main [MainThread]: End processing [deepchem]: success
 [2024-04-14 09:30:31] INFO root fetch - main [MainThread]: Store serial: [22757015]
+[2024-04-14 09:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757015]
+[2024-04-14 09:32:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 09:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysma-plus
+[2024-04-14 09:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: studiosr
+[2024-04-14 09:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: folioclient
+[2024-04-14 09:32:39] INFO root fetch - processPackages [pysma-plus]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 09:32:39] INFO root fetch - processPackages [studiosr]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 09:32:39] INFO root fetch - processPackages [folioclient]: New version: [0.9] Old Version: [0.8]
+[2024-04-14 09:32:39] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/51/17/c1ecb7405ab831af06994bd340a004396e4e203a5bc6386589306e097e93/pysma-plus-0.1.4.tar.gz
+[2024-04-14 09:32:39] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/5c/9e/493ac973beb7b4e07c948e59994f8505f5ab9735b16f820d257f8643b852/studiosr-0.1.8-py3-none-any.whl
+[2024-04-14 09:32:39] INFO root fetch - processPackages [folioclient]: Downloading https://files.pythonhosted.org/packages/2a/68/41e785fbf4765b96038fdfb050eba48d06f8a12b9e09235aea8fe7536933/folioclient-0.8.tar.gz
+[2024-04-14 09:32:41] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/97/7d/43f41a7e728ae0555a7f027299675575d478ee188b7af941b6c8eb6e7dd3/pysma_plus-0.1.5.tar.gz
+[2024-04-14 09:32:41] INFO root fetch - processPackages [folioclient]: Downloading https://files.pythonhosted.org/packages/92/c5/da338f49117e5b64f4ec89667e37588e7fd20caf7bf0601a0bbc0d3e0641/folioclient-0.9.tar.gz
+[2024-04-14 09:32:41] INFO root fetch - processPackages [studiosr]: Downloading https://files.pythonhosted.org/packages/a5/cc/ada28bd6628d5729235cdfc3ed383d6726a10ad3925be5a161bfc892f5a3/studiosr-0.1.9-py3-none-any.whl
+[2024-04-14 09:32:41] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-04-14 09:32:41] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma-plus-0.1.4.tar.gz tmp/pysma_plus-0.1.5.tar.gz --markdown 20240414/p/pysma-plus/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 09:32:41] INFO root fetch - processPackages [folioclient]: executing diffoscope
+[2024-04-14 09:32:41] INFO root fetch - processPackages [folioclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folioclient-0.8.tar.gz tmp/folioclient-0.9.tar.gz --markdown 20240414/f/folioclient/0.8-0.9/README.md --exclude *.pyd
+[2024-04-14 09:32:41] INFO root fetch - processPackages [studiosr]: executing diffoscope
+[2024-04-14 09:32:41] INFO root fetch - processPackages [studiosr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/studiosr-0.1.8-py3-none-any.whl.zip tmp/studiosr-0.1.9-py3-none-any.whl.zip --markdown 20240414/s/studiosr/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 09:32:42] INFO root fetch - processPackages [folioclient]: Remove: archive file [/home/abi/fetcher/tmp/folioclient-0.8.tar.gz]
+[2024-04-14 09:32:42] INFO root fetch - processPackages [folioclient]: Remove: archive file [/home/abi/fetcher/tmp/folioclient-0.9.tar.gz]
+[2024-04-14 09:32:42] INFO root fetch - main [MainThread]: End processing [folioclient]: success
+[2024-04-14 09:32:42] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma-plus-0.1.4.tar.gz]
+[2024-04-14 09:32:42] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.1.5.tar.gz]
+[2024-04-14 09:32:42] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-04-14 09:32:42] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.8-py3-none-any.whl.zip]
+[2024-04-14 09:32:42] INFO root fetch - processPackages [studiosr]: Remove: archive file [/home/abi/fetcher/tmp/studiosr-0.1.9-py3-none-any.whl.zip]
+[2024-04-14 09:32:42] INFO root fetch - main [MainThread]: End processing [studiosr]: success
+[2024-04-14 09:32:42] INFO root fetch - main [MainThread]: Store serial: [22757023]
