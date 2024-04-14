@@ -2807,3 +2807,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 04:36:39] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev289.tar.gz]
 [2024-04-14 04:36:39] INFO root fetch - main [MainThread]: End processing [haliax]: success
 [2024-04-14 04:36:39] INFO root fetch - main [MainThread]: Store serial: [22756222]
+[2024-04-14 04:38:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756222]
+[2024-04-14 04:38:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 04:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-library-objects
+[2024-04-14 04:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monisha
+[2024-04-14 04:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyclophaser
+[2024-04-14 04:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-catalog-objects
+[2024-04-14 04:38:48] INFO root fetch - processPackages [cyclophaser]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-04-14 04:38:48] INFO root fetch - processPackages [monisha]: New version: [0.0.42] Old Version: [0.0.41]
+[2024-04-14 04:38:48] INFO root fetch - processPackages [cyclophaser]: Downloading https://files.pythonhosted.org/packages/9d/56/aa593c3e0e4be9778d0828d3e4482d0032e7e2bc14b838c264768f91e983/cyclophaser-1.7.0.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/1c/c4/8822cc65efd2a2697f8b6560536783e9d899f6d21a36257099ba17ed2f09/monisha-0.0.41.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [cyclophaser]: Downloading https://files.pythonhosted.org/packages/66/be/b02218cf16106a662dd66812848eaad32033a6bc254172f3214cbcadf6ae/cyclophaser-1.7.1.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-04-14 04:38:48] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240414/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-04-14 04:38:49] INFO root fetch - processPackages [cyclophaser]: executing diffoscope
+[2024-04-14 04:38:49] INFO root fetch - processPackages [cyclophaser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclophaser-1.7.0.tar.gz tmp/cyclophaser-1.7.1.tar.gz --markdown 20240414/c/cyclophaser/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/e7/b5/ca455cd58648a2d35019cdaabe3ac0fa885153723a3c9b0907ca2eef2739/monisha-0.0.42.tar.gz
+[2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.41.tar.gz tmp/monisha-0.0.42.tar.gz --markdown 20240414/m/monisha/0.0.41-0.0.42/README.md --exclude *.pyd
+[2024-04-14 04:38:49] INFO root fetch - processPackages [cyclophaser]: Remove: archive file [/home/abi/fetcher/tmp/cyclophaser-1.7.0.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - processPackages [cyclophaser]: Remove: archive file [/home/abi/fetcher/tmp/cyclophaser-1.7.1.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - main [MainThread]: End processing [cyclophaser]: success
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.41.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.42.tar.gz]
+[2024-04-14 04:38:49] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-14 04:38:49] INFO root fetch - main [MainThread]: Store serial: [22756231]
