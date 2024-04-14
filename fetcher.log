@@ -13526,3 +13526,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:26:42] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.89.9.tar.gz]
 [2024-04-14 20:26:42] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-04-14 20:26:42] INFO root fetch - main [MainThread]: Store serial: [22761123]
+[2024-04-14 20:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761123]
+[2024-04-14 20:28:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 20:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-py
+[2024-04-14 20:28:52] INFO root fetch - processPackages [schwab-py]: New version: [0.0.0a7] Old Version: [0.0.0a6]
+[2024-04-14 20:28:52] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/ce/12/0d3007e24f6e3d9b02b2c8b06637179cc9d361074987fa9b39abcba0481f/schwab-py-0.0.0a6.tar.gz
+[2024-04-14 20:28:52] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/04/fb/5fa81c31dfa7c8efd9e4a0305024d768c76624de40a9168c824f9ade0ea3/schwab-py-0.0.0a7.tar.gz
+[2024-04-14 20:28:52] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-04-14 20:28:52] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a6.tar.gz tmp/schwab-py-0.0.0a7.tar.gz --markdown 20240414/s/schwab-py/0.0.0a6-0.0.0a7/README.md --exclude *.pyd
+[2024-04-14 20:28:53] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a6.tar.gz]
+[2024-04-14 20:28:53] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a7.tar.gz]
+[2024-04-14 20:28:53] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-04-14 20:28:53] INFO root fetch - main [MainThread]: Store serial: [22761126]
