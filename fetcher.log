@@ -7581,3 +7581,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:58:46] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
 [2024-04-14 12:58:46] INFO root fetch - main [MainThread]: End processing [docsig]: success
 [2024-04-14 12:58:46] INFO root fetch - main [MainThread]: Store serial: [22758296]
+[2024-04-14 13:00:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758296]
+[2024-04-14 13:01:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipgogogo
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: get-bibtex
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tda-mapper
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ipgogogo]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-14 13:01:03] INFO root fetch - processPackages [tda-mapper]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-14 13:01:03] WARNING root fetch - processPackages [get-bibtex]: Skipping, unable to determine old version
+[2024-04-14 13:01:03] INFO root fetch - main [MainThread]: End processing [get-bibtex] error
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ipgogogo]: Downloading https://files.pythonhosted.org/packages/24/2c/cf08a7d336c3275050e104acba8eaed192cfdd17128f6a70082b4e593dea/ipgogogo-1.0.3.tar.gz
+[2024-04-14 13:01:03] INFO root fetch - processPackages [tda-mapper]: Downloading https://files.pythonhosted.org/packages/96/29/4ca3139cb2207bf5149c3b4f224c28088eacec3644450d41570eeeab56fb/tda-mapper-0.5.2.tar.gz
+[2024-04-14 13:01:03] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ipgogogo]: Downloading https://files.pythonhosted.org/packages/1f/81/51ebe05222493e56f75b7169adde7e06b5f108cd71d607b57b9842a4a9c6/ipgogogo-1.1.0.tar.gz
+[2024-04-14 13:01:03] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-14 13:01:03] INFO root fetch - processPackages [tda-mapper]: Downloading https://files.pythonhosted.org/packages/05/d6/89642f81134d48a198a201f94276731d2eed9aa971d3a16b85fd92361c4c/tda_mapper-0.6.0.tar.gz
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ipgogogo]: executing diffoscope
+[2024-04-14 13:01:03] INFO root fetch - processPackages [ipgogogo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipgogogo-1.0.3.tar.gz tmp/ipgogogo-1.1.0.tar.gz --markdown 20240414/i/ipgogogo/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-14 13:01:04] INFO root fetch - processPackages [tda-mapper]: executing diffoscope
+[2024-04-14 13:01:04] INFO root fetch - processPackages [tda-mapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tda-mapper-0.5.2.tar.gz tmp/tda_mapper-0.6.0.tar.gz --markdown 20240414/t/tda-mapper/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-04-14 13:01:04] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-14 13:01:04] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-14 13:01:04] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240414/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 13:01:04] INFO root fetch - processPackages [ipgogogo]: Remove: archive file [/home/abi/fetcher/tmp/ipgogogo-1.0.3.tar.gz]
+[2024-04-14 13:01:04] INFO root fetch - processPackages [ipgogogo]: Remove: archive file [/home/abi/fetcher/tmp/ipgogogo-1.1.0.tar.gz]
+[2024-04-14 13:01:04] INFO root fetch - main [MainThread]: End processing [ipgogogo]: success
+[2024-04-14 13:01:04] INFO root fetch - processPackages [tda-mapper]: Remove: archive file [/home/abi/fetcher/tmp/tda-mapper-0.5.2.tar.gz]
+[2024-04-14 13:01:04] INFO root fetch - processPackages [tda-mapper]: Remove: archive file [/home/abi/fetcher/tmp/tda_mapper-0.6.0.tar.gz]
+[2024-04-14 13:01:04] INFO root fetch - main [MainThread]: End processing [tda-mapper]: success
+[2024-04-14 13:01:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-14 13:01:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-14 13:01:05] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-14 13:01:05] INFO root fetch - main [MainThread]: Store serial: [22758310]
