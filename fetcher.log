@@ -2218,3 +2218,15 @@
 [2024-04-14 03:23:29] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/absql-0.6.1.tar.gz]
 [2024-04-14 03:23:29] INFO root fetch - main [MainThread]: End processing [ABSQL]: success
 [2024-04-14 03:23:29] INFO root fetch - main [MainThread]: Store serial: [22756025]
+[2024-04-14 03:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756025]
+[2024-04-14 03:25:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:25:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invest-guard
+[2024-04-14 03:25:37] INFO root fetch - processPackages [invest-guard]: New version: [0.1.13] Old Version: [0.1.12]
+[2024-04-14 03:25:37] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/e2/a0/48caa07f38ff0a2b4d4e605a385365da0c4f9106dbd02725438f4bb089c7/invest_guard-0.1.12.tar.gz
+[2024-04-14 03:25:38] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/f5/0c/2fea7110c0e1496960cb86183be9921cd0eade052ce68cb410166e2de76f/invest_guard-0.1.13.tar.gz
+[2024-04-14 03:25:38] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-14 03:25:38] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.12.tar.gz tmp/invest_guard-0.1.13.tar.gz --markdown 20240414/i/invest-guard/0.1.12-0.1.13/README.md --exclude *.pyd
+[2024-04-14 03:25:38] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.12.tar.gz]
+[2024-04-14 03:25:38] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.13.tar.gz]
+[2024-04-14 03:25:38] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-14 03:25:38] INFO root fetch - main [MainThread]: Store serial: [22756028]
