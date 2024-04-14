@@ -4052,3 +4052,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:47:33] INFO root fetch - processPackages [LbAPCommon]: Remove: archive file [/home/abi/fetcher/tmp/LbAPCommon-0.9.9.tar.gz]
 [2024-04-14 06:47:33] INFO root fetch - main [MainThread]: End processing [LbAPCommon]: success
 [2024-04-14 06:47:33] INFO root fetch - main [MainThread]: Store serial: [22756635]
+[2024-04-14 06:49:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756635]
+[2024-04-14 06:49:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 06:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chamco-ragbot
+[2024-04-14 06:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: headline-gen
+[2024-04-14 06:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yahoo-searcher
+[2024-04-14 06:49:42] INFO root fetch - processPackages [headline-gen]: New version: [2.5] Old Version: [2.4]
+[2024-04-14 06:49:42] WARNING root fetch - processPackages [chamco-ragbot]: Skipping, unable to determine old version
+[2024-04-14 06:49:42] INFO root fetch - main [MainThread]: End processing [chamco-ragbot] error
+[2024-04-14 06:49:42] INFO root fetch - processPackages [headline-gen]: Downloading https://files.pythonhosted.org/packages/14/ea/31aef2ed0a625c17745a421df799f82d6fa0b1f2271cfcea8db80f204b7c/headline-gen-2.4.tar.gz
+[2024-04-14 06:49:42] WARNING root fetch - processPackages [yahoo-searcher]: Skipping, unable to determine old version
+[2024-04-14 06:49:42] INFO root fetch - main [MainThread]: End processing [yahoo-searcher] error
+[2024-04-14 06:49:42] INFO root fetch - processPackages [headline-gen]: Downloading https://files.pythonhosted.org/packages/b1/56/f3e026c0032039fc35d99ce5fa1adcef29f391dd59cd499e782dc648a3f4/headline-gen-2.5.tar.gz
+[2024-04-14 06:49:42] INFO root fetch - processPackages [headline-gen]: executing diffoscope
+[2024-04-14 06:49:42] INFO root fetch - processPackages [headline-gen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headline-gen-2.4.tar.gz tmp/headline-gen-2.5.tar.gz --markdown 20240414/h/headline-gen/2.4-2.5/README.md --exclude *.pyd
+[2024-04-14 06:49:43] INFO root fetch - processPackages [headline-gen]: Remove: archive file [/home/abi/fetcher/tmp/headline-gen-2.4.tar.gz]
+[2024-04-14 06:49:43] INFO root fetch - processPackages [headline-gen]: Remove: archive file [/home/abi/fetcher/tmp/headline-gen-2.5.tar.gz]
+[2024-04-14 06:49:43] INFO root fetch - main [MainThread]: End processing [headline-gen]: success
+[2024-04-14 06:49:43] INFO root fetch - main [MainThread]: Store serial: [22756643]
