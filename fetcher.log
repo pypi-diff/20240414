@@ -12742,3 +12742,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:25:07] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-14 19:25:07] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-14 19:25:07] INFO root fetch - main [MainThread]: Store serial: [22760800]
+[2024-04-14 19:27:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760800]
+[2024-04-14 19:27:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htagui
+[2024-04-14 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: accesskit
+[2024-04-14 19:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: policyengine-us
+[2024-04-14 19:27:17] INFO root fetch - processPackages [htagui]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-14 19:27:17] INFO root fetch - processPackages [policyengine-us]: New version: [0.734.0] Old Version: [0.733.1]
+[2024-04-14 19:27:17] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/f1/ad/e48b4724c67460c2b4c2be2e77960399739566a1914e64d4abc120021306/htagui-0.3.1.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [accesskit]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-04-14 19:27:17] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/7a/4b/69b400eb36da8b0fc85c0cf89d02c9a34fd0c31fc29aa64272fb17cfdb60/policyengine-us-0.733.1.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/f6/d2/7839ef30c4001401f8e74e4ca76049bbe5d27df3bb6a497c4ca1083c4054/accesskit-0.1.8.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/6d/a4/9ba16650a8ab2998a85e663758b459045056a46d80b979f0d6445bda68be/htagui-0.3.2.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-14 19:27:17] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.3.1.tar.gz tmp/htagui-0.3.2.tar.gz --markdown 20240414/h/htagui/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-14 19:27:17] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/06/b5/897089a92e8199ed394b1c9e6307aac57ce40805689e00b1001a0b9d3131/accesskit-0.2.0.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/3f/95/37e3f83e440abb800f2e9e91f8b4ee38cdfc62742b1b08ba6dad39aab803/policyengine-us-0.734.0.tar.gz
+[2024-04-14 19:27:17] INFO root fetch - processPackages [accesskit]: executing diffoscope
+[2024-04-14 19:27:17] INFO root fetch - processPackages [accesskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accesskit-0.1.8.tar.gz tmp/accesskit-0.2.0.tar.gz --markdown 20240414/a/accesskit/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-04-14 19:27:17] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-04-14 19:27:17] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.733.1.tar.gz tmp/policyengine-us-0.734.0.tar.gz --markdown 20240414/p/policyengine-us/0.733.1-0.734.0/README.md --exclude *.pyd
+[2024-04-14 19:27:18] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.3.1.tar.gz]
+[2024-04-14 19:27:18] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.3.2.tar.gz]
+[2024-04-14 19:27:18] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-14 19:27:18] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.1.8.tar.gz]
+[2024-04-14 19:27:18] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.2.0.tar.gz]
+[2024-04-14 19:27:18] INFO root fetch - main [MainThread]: End processing [accesskit]: success
+[2024-04-14 19:27:49] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.733.1.tar.gz]
+[2024-04-14 19:27:49] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.734.0.tar.gz]
+[2024-04-14 19:27:49] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-04-14 19:27:49] INFO root fetch - main [MainThread]: Store serial: [22760816]
