@@ -10721,3 +10721,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:53:47] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.149.tar.gz]
 [2024-04-14 16:53:47] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
 [2024-04-14 16:53:47] INFO root fetch - main [MainThread]: Store serial: [22759938]
+[2024-04-14 16:55:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759938]
+[2024-04-14 16:55:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonapi-pydantic
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maxondevelop
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ado_wrapper
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ee-satellites
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ado_wrapper]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-14 16:55:56] WARNING root fetch - processPackages [maxondevelop]: Skipping, unable to determine old version
+[2024-04-14 16:55:56] INFO root fetch - main [MainThread]: End processing [maxondevelop] error
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/30/9c/4a5f0a8f9f2737aeeb00ea3a8ef8cd8f3794feeefe27c1c6fe3ce2127b2d/ado_wrapper-0.0.7.tar.gz
+[2024-04-14 16:55:56] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.4.14] Old Version: [2024.4.13]
+[2024-04-14 16:55:56] INFO root fetch - processPackages [jsonapi-pydantic]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ee-satellites]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:55:56] INFO root fetch - processPackages [jsonapi-pydantic]: Downloading https://files.pythonhosted.org/packages/50/31/ab4be7eca2aa16046e710522fc39d90bff917f0f45b1d7fff0de06e89b03/jsonapi_pydantic-0.2.3.tar.gz
+[2024-04-14 16:55:56] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/c0/62/7c78aa1c9c895761a5a7bffa727ad085f4ff30425747c2a287c687f4af1d/fbgemm_gpu_nightly-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-14 16:55:56] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 196330046>=10485760
+[2024-04-14 16:55:56] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ee-satellites]: Downloading https://files.pythonhosted.org/packages/27/c6/100a31556bc995df9fb6ef6910fe01d125d7be9b1833562738f0a5795188/ee_satellites-0.0.8.tar.gz
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/c7/05/501652973466ba2999f6a17b736d43a6451266d99768794c6c1de8fd0ce6/ado_wrapper-0.0.8.tar.gz
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-04-14 16:55:56] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-0.0.7.tar.gz tmp/ado_wrapper-0.0.8.tar.gz --markdown 20240414/a/ado_wrapper/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-14 16:55:56] INFO root fetch - processPackages [jsonapi-pydantic]: Downloading https://files.pythonhosted.org/packages/4e/de/35b8ce1eda26dd99bb1325952638976310fe239f5bd726bad86d5002b996/jsonapi_pydantic-0.2.4.tar.gz
+[2024-04-14 16:55:57] INFO root fetch - processPackages [jsonapi-pydantic]: executing diffoscope
+[2024-04-14 16:55:57] INFO root fetch - processPackages [jsonapi-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonapi_pydantic-0.2.3.tar.gz tmp/jsonapi_pydantic-0.2.4.tar.gz --markdown 20240414/j/jsonapi-pydantic/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-14 16:55:57] INFO root fetch - processPackages [ee-satellites]: Downloading https://files.pythonhosted.org/packages/1b/ab/d9409e9397f48c920b657a1ae060b2602f8c53f13550f1745c6b08301671/ee_satellites-0.0.9.tar.gz
+[2024-04-14 16:55:57] INFO root fetch - processPackages [ee-satellites]: executing diffoscope
+[2024-04-14 16:55:57] INFO root fetch - processPackages [ee-satellites]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ee_satellites-0.0.8.tar.gz tmp/ee_satellites-0.0.9.tar.gz --markdown 20240414/e/ee-satellites/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:55:57] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.7.tar.gz]
+[2024-04-14 16:55:57] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.8.tar.gz]
+[2024-04-14 16:55:57] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-04-14 16:55:57] INFO root fetch - processPackages [jsonapi-pydantic]: Remove: archive file [/home/abi/fetcher/tmp/jsonapi_pydantic-0.2.3.tar.gz]
+[2024-04-14 16:55:57] INFO root fetch - processPackages [jsonapi-pydantic]: Remove: archive file [/home/abi/fetcher/tmp/jsonapi_pydantic-0.2.4.tar.gz]
+[2024-04-14 16:55:57] INFO root fetch - main [MainThread]: End processing [jsonapi-pydantic]: success
+[2024-04-14 16:55:58] INFO root fetch - processPackages [ee-satellites]: Remove: archive file [/home/abi/fetcher/tmp/ee_satellites-0.0.8.tar.gz]
+[2024-04-14 16:55:58] INFO root fetch - processPackages [ee-satellites]: Remove: archive file [/home/abi/fetcher/tmp/ee_satellites-0.0.9.tar.gz]
+[2024-04-14 16:55:58] INFO root fetch - main [MainThread]: End processing [ee-satellites]: success
+[2024-04-14 16:55:58] INFO root fetch - main [MainThread]: Store serial: [22759952]
