@@ -5021,3 +5021,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:26:11] WARNING root fetch - processPackages [openperf]: Skipping, unable to determine old version
 [2024-04-14 09:26:11] INFO root fetch - main [MainThread]: End processing [openperf] error
 [2024-04-14 09:26:11] INFO root fetch - main [MainThread]: Store serial: [22757007]
+[2024-04-14 09:28:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757007]
+[2024-04-14 09:28:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 09:28:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcloud-client
+[2024-04-14 09:28:20] WARNING root fetch - processPackages [xcloud-client]: Skipping, unable to determine old version
+[2024-04-14 09:28:20] INFO root fetch - main [MainThread]: End processing [xcloud-client] error
+[2024-04-14 09:28:20] INFO root fetch - main [MainThread]: Store serial: [22757012]
