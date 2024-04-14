@@ -2349,3 +2349,27 @@
 [2024-04-14 03:36:28] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
 [2024-04-14 03:36:28] INFO root fetch - main [MainThread]: End processing [pipez]: success
 [2024-04-14 03:36:28] INFO root fetch - main [MainThread]: Store serial: [22756077]
+[2024-04-14 03:38:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756077]
+[2024-04-14 03:38:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 03:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mbodied-agents
+[2024-04-14 03:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mousepad
+[2024-04-14 03:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aerospace-chatbot
+[2024-04-14 03:38:36] WARNING root fetch - processPackages [mbodied-agents]: Skipping, unable to determine old version
+[2024-04-14 03:38:36] INFO root fetch - main [MainThread]: End processing [mbodied-agents] error
+[2024-04-14 03:38:36] INFO root fetch - processPackages [aerospace-chatbot]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 03:38:37] INFO root fetch - processPackages [mousepad]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 03:38:37] INFO root fetch - processPackages [mousepad]: Downloading https://files.pythonhosted.org/packages/3c/66/643a501391ba673a2190694da8fa62f4ffd7608d8223fa13e31c1f9d7778/mousepad-0.1.1.tar.gz
+[2024-04-14 03:38:37] INFO root fetch - processPackages [aerospace-chatbot]: Downloading https://files.pythonhosted.org/packages/68/28/b7679496333928754395052d6b8409be6140054f09d8d6aa69fe5926764d/aerospace_chatbot-0.0.3.tar.gz
+[2024-04-14 03:38:37] INFO root fetch - processPackages [aerospace-chatbot]: Downloading https://files.pythonhosted.org/packages/92/c3/b71d25cf6b3d2d0e09da984802726c71faf606c3e30cad3431058abc6143/aerospace_chatbot-0.0.4.tar.gz
+[2024-04-14 03:38:37] INFO root fetch - processPackages [aerospace-chatbot]: executing diffoscope
+[2024-04-14 03:38:37] INFO root fetch - processPackages [aerospace-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aerospace_chatbot-0.0.3.tar.gz tmp/aerospace_chatbot-0.0.4.tar.gz --markdown 20240414/a/aerospace-chatbot/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 03:38:37] INFO root fetch - processPackages [mousepad]: Downloading https://files.pythonhosted.org/packages/4e/78/c5a2f8d6316ba556c98723f52ff207fa2042463faa159a69ef9e698ebf2f/mousepad-0.1.2.tar.gz
+[2024-04-14 03:38:38] INFO root fetch - processPackages [aerospace-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/aerospace_chatbot-0.0.3.tar.gz]
+[2024-04-14 03:38:38] INFO root fetch - processPackages [aerospace-chatbot]: Remove: archive file [/home/abi/fetcher/tmp/aerospace_chatbot-0.0.4.tar.gz]
+[2024-04-14 03:38:38] INFO root fetch - main [MainThread]: End processing [aerospace-chatbot]: success
+[2024-04-14 03:38:38] INFO root fetch - processPackages [mousepad]: executing diffoscope
+[2024-04-14 03:38:38] INFO root fetch - processPackages [mousepad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mousepad-0.1.1.tar.gz tmp/mousepad-0.1.2.tar.gz --markdown 20240414/m/mousepad/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 03:38:40] INFO root fetch - processPackages [mousepad]: Remove: archive file [/home/abi/fetcher/tmp/mousepad-0.1.1.tar.gz]
+[2024-04-14 03:38:40] INFO root fetch - processPackages [mousepad]: Remove: archive file [/home/abi/fetcher/tmp/mousepad-0.1.2.tar.gz]
+[2024-04-14 03:38:40] INFO root fetch - main [MainThread]: End processing [mousepad]: success
+[2024-04-14 03:38:40] INFO root fetch - main [MainThread]: Store serial: [22756089]
