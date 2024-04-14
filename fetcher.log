@@ -14696,3 +14696,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:52:04] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.1.3.tar.gz]
 [2024-04-14 21:52:04] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
 [2024-04-14 21:52:04] INFO root fetch - main [MainThread]: Store serial: [22761941]
+[2024-04-14 21:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761941]
+[2024-04-14 21:54:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 21:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastipy
+[2024-04-14 21:54:13] INFO root fetch - processPackages [fastipy]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-14 21:54:13] INFO root fetch - processPackages [fastipy]: Downloading https://files.pythonhosted.org/packages/f3/c5/bb08888d3d07039eae113d5aad21c017c4d087d3c848dcdd83a1a77956c7/fastipy-1.5.0.tar.gz
+[2024-04-14 21:54:13] INFO root fetch - processPackages [fastipy]: Downloading https://files.pythonhosted.org/packages/ee/9b/78880fcf0602a22b67fc9f3fd582d1eeeb581b27d79ec539c98d8ce377c6/fastipy-1.5.1.tar.gz
+[2024-04-14 21:54:13] INFO root fetch - processPackages [fastipy]: executing diffoscope
+[2024-04-14 21:54:13] INFO root fetch - processPackages [fastipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastipy-1.5.0.tar.gz tmp/fastipy-1.5.1.tar.gz --markdown 20240414/f/fastipy/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-04-14 21:54:14] INFO root fetch - processPackages [fastipy]: Remove: archive file [/home/abi/fetcher/tmp/fastipy-1.5.0.tar.gz]
+[2024-04-14 21:54:14] INFO root fetch - processPackages [fastipy]: Remove: archive file [/home/abi/fetcher/tmp/fastipy-1.5.1.tar.gz]
+[2024-04-14 21:54:14] INFO root fetch - main [MainThread]: End processing [fastipy]: success
+[2024-04-14 21:54:14] INFO root fetch - main [MainThread]: Store serial: [22761944]
