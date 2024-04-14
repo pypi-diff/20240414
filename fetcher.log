@@ -3293,3 +3293,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:39:10] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
 [2024-04-14 05:39:10] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
 [2024-04-14 05:39:10] INFO root fetch - main [MainThread]: Store serial: [22756362]
+[2024-04-14 05:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756362]
+[2024-04-14 05:41:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 05:41:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LambdaUtil
+[2024-04-14 05:41:19] INFO root fetch - processPackages [LambdaUtil]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-04-14 05:41:19] INFO root fetch - processPackages [LambdaUtil]: Downloading https://files.pythonhosted.org/packages/31/6d/0e59c24bb5ecd0260e00b372fd69a177a7647718b805d9f00c722fb580cb/LambdaUtil-0.0.3.tar.gz
+[2024-04-14 05:41:19] INFO root fetch - processPackages [LambdaUtil]: Downloading https://files.pythonhosted.org/packages/d9/e8/a4baaa6a045058c9f1782998fed869ed4f786c688721b83d2e243238a611/LambdaUtil-0.1.0.tar.gz
+[2024-04-14 05:41:19] INFO root fetch - processPackages [LambdaUtil]: executing diffoscope
+[2024-04-14 05:41:19] INFO root fetch - processPackages [LambdaUtil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LambdaUtil-0.0.3.tar.gz tmp/LambdaUtil-0.1.0.tar.gz --markdown 20240414/L/LambdaUtil/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-04-14 05:41:20] INFO root fetch - processPackages [LambdaUtil]: Remove: archive file [/home/abi/fetcher/tmp/LambdaUtil-0.0.3.tar.gz]
+[2024-04-14 05:41:20] INFO root fetch - processPackages [LambdaUtil]: Remove: archive file [/home/abi/fetcher/tmp/LambdaUtil-0.1.0.tar.gz]
+[2024-04-14 05:41:20] INFO root fetch - main [MainThread]: End processing [LambdaUtil]: success
+[2024-04-14 05:41:20] INFO root fetch - main [MainThread]: Store serial: [22756365]
