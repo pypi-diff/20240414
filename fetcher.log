@@ -15774,3 +15774,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:04:44] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.0.tar.gz]
 [2024-04-14 23:04:44] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
 [2024-04-14 23:04:44] INFO root fetch - main [MainThread]: Store serial: [22762465]
+[2024-04-14 23:06:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762465]
+[2024-04-14 23:06:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 23:06:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marcel
+[2024-04-14 23:06:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanking
+[2024-04-14 23:06:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyprland
+[2024-04-14 23:06:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maturin-watchdog
+[2024-04-14 23:06:53] WARNING root fetch - processPackages [spanking]: Skipping, unable to determine old version
+[2024-04-14 23:06:53] INFO root fetch - main [MainThread]: End processing [spanking] error
+[2024-04-14 23:06:53] INFO root fetch - processPackages [maturin-watchdog]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 23:06:53] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 23:06:53] INFO root fetch - processPackages [pyprland]: New version: [2.2.6] Old Version: [2.2.5]
+[2024-04-14 23:06:53] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/06/69/9e50ef7d392535d66e59f4c716a14741ebe16dedfeef46f4e28f60a68342/maturin_watchdog-0.1.8.tar.gz
+[2024-04-14 23:06:53] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2024-04-14 23:06:53] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/da/ec/d9c91a4a49159b0278784f9d5a25822cf4f70a08581906d23fbb5b973d47/pyprland-2.2.5.tar.gz
+[2024-04-14 23:06:53] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/c9/89/9d8fc5cca8de1da6023c5c61551c0f2b9908adaa788e915a2cb2a2952b51/maturin_watchdog-0.1.9.tar.gz
+[2024-04-14 23:06:53] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2024-04-14 23:06:53] INFO root fetch - processPackages [maturin-watchdog]: executing diffoscope
+[2024-04-14 23:06:53] INFO root fetch - processPackages [maturin-watchdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin_watchdog-0.1.8.tar.gz tmp/maturin_watchdog-0.1.9.tar.gz --markdown 20240414/m/maturin-watchdog/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 23:06:53] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2024-04-14 23:06:53] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20240414/m/marcel/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 23:06:53] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/bc/ca/7a79e86dee030cf285a26b28155c68c728800d3ef0c0faf7bb8514ec31f1/pyprland-2.2.6.tar.gz
+[2024-04-14 23:06:54] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-04-14 23:06:54] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.5.tar.gz tmp/pyprland-2.2.6.tar.gz --markdown 20240414/p/pyprland/2.2.5-2.2.6/README.md --exclude *.pyd
+[2024-04-14 23:06:54] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.8.tar.gz]
+[2024-04-14 23:06:54] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.9.tar.gz]
+[2024-04-14 23:06:54] INFO root fetch - main [MainThread]: End processing [maturin-watchdog]: success
+[2024-04-14 23:06:54] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.8-py3-none-any.whl.zip]
+[2024-04-14 23:06:54] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
+[2024-04-14 23:06:54] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2024-04-14 23:06:54] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.5.tar.gz]
+[2024-04-14 23:06:54] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.6.tar.gz]
+[2024-04-14 23:06:54] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-04-14 23:06:54] INFO root fetch - main [MainThread]: Store serial: [22762476]
