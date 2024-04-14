@@ -4287,3 +4287,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:36:48] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31540532>=10485760
 [2024-04-14 07:36:48] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
 [2024-04-14 07:36:48] INFO root fetch - main [MainThread]: Store serial: [22756726]
+[2024-04-14 07:38:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756726]
+[2024-04-14 07:38:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 07:40:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756726]
+[2024-04-14 07:41:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 07:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: machineroom
+[2024-04-14 07:41:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YAPCP
+[2024-04-14 07:41:02] INFO root fetch - processPackages [machineroom]: New version: [0.45.2] Old Version: [0.45.1]
+[2024-04-14 07:41:02] WARNING root fetch - processPackages [YAPCP]: Skipping, unable to determine old version
+[2024-04-14 07:41:02] INFO root fetch - main [MainThread]: End processing [YAPCP] error
+[2024-04-14 07:41:02] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/85/9f/5305d33d53db22ba9adbf8ee2e94f5732b88806518387a586ce7797567c8/machineroom-0.45.1.tar.gz
+[2024-04-14 07:41:02] INFO root fetch - processPackages [machineroom]: Downloading https://files.pythonhosted.org/packages/21/35/e8867421e63ff775727b7aaaadaef996025387f39cf803e387224a12f4d8/machineroom-0.45.2.tar.gz
+[2024-04-14 07:41:02] INFO root fetch - processPackages [machineroom]: executing diffoscope
+[2024-04-14 07:41:02] INFO root fetch - processPackages [machineroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/machineroom-0.45.1.tar.gz tmp/machineroom-0.45.2.tar.gz --markdown 20240414/m/machineroom/0.45.1-0.45.2/README.md --exclude *.pyd
+[2024-04-14 07:41:03] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.1.tar.gz]
+[2024-04-14 07:41:03] INFO root fetch - processPackages [machineroom]: Remove: archive file [/home/abi/fetcher/tmp/machineroom-0.45.2.tar.gz]
+[2024-04-14 07:41:03] INFO root fetch - main [MainThread]: End processing [machineroom]: success
+[2024-04-14 07:41:03] INFO root fetch - main [MainThread]: Store serial: [22756732]
