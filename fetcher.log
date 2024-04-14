@@ -16099,3 +16099,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:31:24] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.9.tar.gz]
 [2024-04-14 23:31:24] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
 [2024-04-14 23:31:24] INFO root fetch - main [MainThread]: Store serial: [22762591]
+[2024-04-14 23:33:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762591]
+[2024-04-14 23:33:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polykin
+[2024-04-14 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telescope-sdk
+[2024-04-14 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscript-ltk
+[2024-04-14 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcnets
+[2024-04-14 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ttemtoolbox
+[2024-04-14 23:33:33] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 23:33:33] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/54/a7/775080f9207b9b2addc9ec2bad02d9935f1341c8f2a1e5872ce9322753cc/telescope_sdk-0.1.8.tar.gz
+[2024-04-14 23:33:33] WARNING root fetch - processPackages [ttemtoolbox]: Skipping, unable to determine old version
+[2024-04-14 23:33:33] INFO root fetch - main [MainThread]: End processing [ttemtoolbox] error
+[2024-04-14 23:33:33] INFO root fetch - processPackages [polykin]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-14 23:33:33] INFO root fetch - processPackages [pyscript-ltk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 23:33:33] INFO root fetch - processPackages [mcnets]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-04-14 23:33:33] INFO root fetch - processPackages [polykin]: Downloading https://files.pythonhosted.org/packages/f1/95/d00adf1fb322ac5e0e8bb9c280e88a86f2227a38eebae09bcc97ee2b3521/polykin-0.5.0.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/28/6e/96be52ee89b9a24fc42d6a4a18618ca41a2b1437aed89200641a3ad7cc13/pyscript-ltk-0.1.8.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/c5/af/da1baaf33a8d7b506480e59dd7c3f5ac818199422aa061a59f51c1686c94/mcnets-2.0.6.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [telescope-sdk]: Downloading https://files.pythonhosted.org/packages/0a/bb/38861a90d251e67f2517742bb238c8e3c1fcddda5f965901c92e3e9a1b3d/telescope_sdk-0.1.9.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2024-04-14 23:33:33] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20240414/t/telescope-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 23:33:33] INFO root fetch - processPackages [polykin]: Downloading https://files.pythonhosted.org/packages/98/5c/8fdff4d4f572f1f175ed2be5273dbeb0a44fe32fd59f2b6157d9a9885f46/polykin-0.5.1.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [mcnets]: Downloading https://files.pythonhosted.org/packages/1d/d5/19cca241ad2fdb148fa7785584d3885c5cb4919f2edf142721d235ddb7ec/mcnets-2.0.7.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/a3/ee/ecb05ed84434f45a5ad24d6b5fdb04a89d83f6efe69dd691866b7eaee6e9/pyscript-ltk-0.1.9.tar.gz
+[2024-04-14 23:33:33] INFO root fetch - processPackages [polykin]: executing diffoscope
+[2024-04-14 23:33:33] INFO root fetch - processPackages [polykin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polykin-0.5.0.tar.gz tmp/polykin-0.5.1.tar.gz --markdown 20240414/p/polykin/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-14 23:33:33] INFO root fetch - processPackages [mcnets]: executing diffoscope
+[2024-04-14 23:33:33] INFO root fetch - processPackages [mcnets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcnets-2.0.6.tar.gz tmp/mcnets-2.0.7.tar.gz --markdown 20240414/m/mcnets/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-04-14 23:33:33] INFO root fetch - processPackages [pyscript-ltk]: executing diffoscope
+[2024-04-14 23:33:33] INFO root fetch - processPackages [pyscript-ltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscript-ltk-0.1.8.tar.gz tmp/pyscript-ltk-0.1.9.tar.gz --markdown 20240414/p/pyscript-ltk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 23:33:34] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.8.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - processPackages [telescope-sdk]: Remove: archive file [/home/abi/fetcher/tmp/telescope_sdk-0.1.9.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - main [MainThread]: End processing [telescope-sdk]: success
+[2024-04-14 23:33:34] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.8.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
+[2024-04-14 23:33:34] INFO root fetch - processPackages [mcnets]: Remove: archive file [/home/abi/fetcher/tmp/mcnets-2.0.6.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - processPackages [mcnets]: Remove: archive file [/home/abi/fetcher/tmp/mcnets-2.0.7.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - main [MainThread]: End processing [mcnets]: success
+[2024-04-14 23:33:34] INFO root fetch - processPackages [polykin]: Remove: archive file [/home/abi/fetcher/tmp/polykin-0.5.0.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - processPackages [polykin]: Remove: archive file [/home/abi/fetcher/tmp/polykin-0.5.1.tar.gz]
+[2024-04-14 23:33:34] INFO root fetch - main [MainThread]: End processing [polykin]: success
+[2024-04-14 23:33:34] INFO root fetch - main [MainThread]: Store serial: [22762608]
