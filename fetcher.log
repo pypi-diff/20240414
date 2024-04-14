@@ -5396,3 +5396,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:07:19] INFO root fetch - processPackages [base95]: Remove: archive file [/home/abi/fetcher/tmp/base95-1.1-py2.py3-none-any.whl.zip]
 [2024-04-14 10:07:19] INFO root fetch - main [MainThread]: End processing [base95]: success
 [2024-04-14 10:07:19] INFO root fetch - main [MainThread]: Store serial: [22757169]
+[2024-04-14 10:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757169]
+[2024-04-14 10:09:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 10:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luma-ml
+[2024-04-14 10:09:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepchem
+[2024-04-14 10:09:29] INFO root fetch - processPackages [deepchem]: New version: [2.8.1.dev20240414072819] Old Version: [2.8.1.dev20240410191601]
+[2024-04-14 10:09:29] INFO root fetch - processPackages [luma-ml]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-04-14 10:09:29] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/38/a2/62bb90d506f8f25d0c013269977bdcc946982b82489a702aaa0db85ef204/deepchem-2.8.1.dev20240410191601.tar.gz
+[2024-04-14 10:09:29] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/74/0a/2eeaa8c21a5b2b87ba39d2db05540e0b30930ade01109fdb27b19e2a1ec0/luma-ml-0.6.5.tar.gz
+[2024-04-14 10:09:29] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/a3/34/db6a455409205812a0759c48f06f8fbc86f1ceacd5111aa72600142bd07c/deepchem-2.8.1.dev20240414072819.tar.gz
+[2024-04-14 10:09:29] INFO root fetch - processPackages [deepchem]: executing diffoscope
+[2024-04-14 10:09:29] INFO root fetch - processPackages [deepchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchem-2.8.1.dev20240410191601.tar.gz tmp/deepchem-2.8.1.dev20240414072819.tar.gz --markdown 20240414/d/deepchem/2.8.1.dev20240410191601-2.8.1.dev20240414072819/README.md --exclude *.pyd
+[2024-04-14 10:09:29] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/62/fc/071b165645177df9f5a4bcd1f2bc75a3449fde4ed72595ac4e210c09d1d5/luma-ml-0.6.6.tar.gz
+[2024-04-14 10:09:29] INFO root fetch - processPackages [luma-ml]: executing diffoscope
+[2024-04-14 10:09:29] INFO root fetch - processPackages [luma-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luma-ml-0.6.5.tar.gz tmp/luma-ml-0.6.6.tar.gz --markdown 20240414/l/luma-ml/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-04-14 10:09:30] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.6.5.tar.gz]
+[2024-04-14 10:09:30] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.6.6.tar.gz]
+[2024-04-14 10:09:30] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
+[2024-04-14 10:09:31] INFO root fetch - processPackages [deepchem]: Remove: archive file [/home/abi/fetcher/tmp/deepchem-2.8.1.dev20240410191601.tar.gz]
+[2024-04-14 10:09:31] INFO root fetch - processPackages [deepchem]: Remove: archive file [/home/abi/fetcher/tmp/deepchem-2.8.1.dev20240414072819.tar.gz]
+[2024-04-14 10:09:31] INFO root fetch - main [MainThread]: End processing [deepchem]: success
+[2024-04-14 10:09:31] INFO root fetch - main [MainThread]: Store serial: [22757177]
