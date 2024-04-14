@@ -3645,3 +3645,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:09:25] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
 [2024-04-14 06:09:25] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
 [2024-04-14 06:09:25] INFO root fetch - main [MainThread]: Store serial: [22756495]
+[2024-04-14 06:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756495]
+[2024-04-14 06:11:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 06:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zrb-extras
+[2024-04-14 06:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbrownell-DevTools
+[2024-04-14 06:11:34] INFO root fetch - processPackages [dbrownell-DevTools]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-14 06:11:34] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/e4/4d/0e19372b5607400e51d720966eaf41f18a1b6b007cc87ac6eb6d9f8becb6/dbrownell_DevTools-0.8.1-py3-none-any.whl
+[2024-04-14 06:11:34] INFO root fetch - processPackages [zrb-extras]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 06:11:34] INFO root fetch - processPackages [zrb-extras]: Downloading https://files.pythonhosted.org/packages/49/37/eb81e73d643c2cbd7ac157e622a56833e974c81ca538a6fa0b88821b63d7/zrb_extras-0.0.1.tar.gz
+[2024-04-14 06:11:34] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/6a/4c/d64b516137d9b57df6580e99ae3c7beb287715418efefbdf0c8260ba6e5d/dbrownell_DevTools-0.9.0-py3-none-any.whl
+[2024-04-14 06:11:35] INFO root fetch - processPackages [dbrownell-DevTools]: executing diffoscope
+[2024-04-14 06:11:35] INFO root fetch - processPackages [dbrownell-DevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip --markdown 20240414/d/dbrownell-DevTools/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: Downloading https://files.pythonhosted.org/packages/c6/94/c0bee65bc68868912c2039a41c62f0517b519621352385232cda2474dfc3/zrb_extras-0.0.2.tar.gz
+[2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: executing diffoscope
+[2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb_extras-0.0.1.tar.gz tmp/zrb_extras-0.0.2.tar.gz --markdown 20240414/z/zrb-extras/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 06:11:35] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip]
+[2024-04-14 06:11:35] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
+[2024-04-14 06:11:35] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
+[2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: Remove: archive file [/home/abi/fetcher/tmp/zrb_extras-0.0.1.tar.gz]
+[2024-04-14 06:11:35] INFO root fetch - processPackages [zrb-extras]: Remove: archive file [/home/abi/fetcher/tmp/zrb_extras-0.0.2.tar.gz]
+[2024-04-14 06:11:35] INFO root fetch - main [MainThread]: End processing [zrb-extras]: success
+[2024-04-14 06:11:35] INFO root fetch - main [MainThread]: Store serial: [22756500]
