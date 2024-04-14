@@ -5658,3 +5658,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:29:11] INFO root fetch - processPackages [markdown2dash]: Remove: archive file [/home/abi/fetcher/tmp/markdown2dash-0.1.0a3.tar.gz]
 [2024-04-14 10:29:11] INFO root fetch - main [MainThread]: End processing [markdown2dash]: success
 [2024-04-14 10:29:11] INFO root fetch - main [MainThread]: Store serial: [22757332]
+[2024-04-14 10:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757332]
+[2024-04-14 10:31:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 10:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-14 10:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bestdori-render
+[2024-04-14 10:31:19] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.149] Old Version: [0.1.148]
+[2024-04-14 10:31:19] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/4b/0c/0d745cc21a81ebfd6061626649b95e4c064b8022039b3554fef64948f68f/ansar_connect-0.1.148.tar.gz
+[2024-04-14 10:31:19] WARNING root fetch - processPackages [bestdori-render]: Skipping, unable to determine old version
+[2024-04-14 10:31:19] INFO root fetch - main [MainThread]: End processing [bestdori-render] error
+[2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/ab/c2/280dcff00a9c507abf8f3274a6b568dd5197b9ee2f0c669d040a7693e768/ansar_connect-0.1.149.tar.gz
+[2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.148.tar.gz tmp/ansar_connect-0.1.149.tar.gz --markdown 20240414/a/ansar-connect/0.1.148-0.1.149/README.md --exclude *.pyd
+[2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.148.tar.gz]
+[2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.149.tar.gz]
+[2024-04-14 10:31:20] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 10:31:20] INFO root fetch - main [MainThread]: Store serial: [22757340]
