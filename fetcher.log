@@ -2994,3 +2994,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:00:22] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 05:00:22] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 05:00:22] INFO root fetch - main [MainThread]: Store serial: [22756275]
+[2024-04-14 05:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756275]
+[2024-04-14 05:02:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 05:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retried
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: New version: [8.0.0] Old Version: [7.4.0]
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: Downloading https://files.pythonhosted.org/packages/16/03/f763292af6db3e7844ed0b4e5f79ac3defed0121de07ae3410ec6b7e5713/retried-7.4.0.tar.gz
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: Downloading https://files.pythonhosted.org/packages/d3/23/665f57223bad11abec1b41075b9edabb582ede90f7390fae195fdff48f07/retried-8.0.0.tar.gz
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: executing diffoscope
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retried-7.4.0.tar.gz tmp/retried-8.0.0.tar.gz --markdown 20240414/r/retried/7.4.0-8.0.0/README.md --exclude *.pyd
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: Remove: archive file [/home/abi/fetcher/tmp/retried-7.4.0.tar.gz]
+[2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: Remove: archive file [/home/abi/fetcher/tmp/retried-8.0.0.tar.gz]
+[2024-04-14 05:02:31] INFO root fetch - main [MainThread]: End processing [retried]: success
+[2024-04-14 05:02:31] INFO root fetch - main [MainThread]: Store serial: [22756283]
