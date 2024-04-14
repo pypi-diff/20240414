@@ -5673,3 +5673,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:31:20] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.149.tar.gz]
 [2024-04-14 10:31:20] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
 [2024-04-14 10:31:20] INFO root fetch - main [MainThread]: Store serial: [22757340]
+[2024-04-14 10:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757340]
+[2024-04-14 10:33:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 10:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HawaData
+[2024-04-14 10:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haliax
+[2024-04-14 10:33:29] INFO root fetch - processPackages [haliax]: New version: [1.4.dev289] Old Version: [1.4.dev288]
+[2024-04-14 10:33:29] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/b3/d2/52b67b62f11150ee9fcb70bc46d3ce13e3e0a09180a82a41599c72c8c31a/haliax-1.4.dev288.tar.gz
+[2024-04-14 10:33:29] INFO root fetch - processPackages [HawaData]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-14 10:33:29] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/54/62/07ba491a009c60ed1a2e13076e2b276380ab024ad1b0fe9239d79e73e30f/HawaData-0.9.2.tar.gz
+[2024-04-14 10:33:29] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/98/dd/eba8511e049ba5a140df6e2c20dc5555c48267a0d17eb7c1e91f2b8e9e25/haliax-1.4.dev289.tar.gz
+[2024-04-14 10:33:30] INFO root fetch - processPackages [haliax]: executing diffoscope
+[2024-04-14 10:33:30] INFO root fetch - processPackages [haliax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haliax-1.4.dev288.tar.gz tmp/haliax-1.4.dev289.tar.gz --markdown 20240414/h/haliax/1.4.dev288-1.4.dev289/README.md --exclude *.pyd
+[2024-04-14 10:33:30] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/95/58/2cdac667a1836addfd4afed0a282ba9b734f08f76df287b35dcfa0d5e79e/HawaData-0.9.3.tar.gz
+[2024-04-14 10:33:30] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2024-04-14 10:33:30] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.9.2.tar.gz tmp/HawaData-0.9.3.tar.gz --markdown 20240414/H/HawaData/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-14 10:33:30] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.2.tar.gz]
+[2024-04-14 10:33:30] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.3.tar.gz]
+[2024-04-14 10:33:30] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2024-04-14 10:33:30] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev288.tar.gz]
+[2024-04-14 10:33:30] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev289.tar.gz]
+[2024-04-14 10:33:30] INFO root fetch - main [MainThread]: End processing [haliax]: success
+[2024-04-14 10:33:30] INFO root fetch - main [MainThread]: Store serial: [22757346]
