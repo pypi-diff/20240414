@@ -14375,3 +14375,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:25:54] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.9.1.tar.gz]
 [2024-04-14 21:25:54] INFO root fetch - main [MainThread]: End processing [flashcam]: success
 [2024-04-14 21:25:54] INFO root fetch - main [MainThread]: Store serial: [22761765]
+[2024-04-14 21:27:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761765]
+[2024-04-14 21:28:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agenta
+[2024-04-14 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dyff-client
+[2024-04-14 21:28:03] INFO root fetch - processPackages [dyff-client]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-04-14 21:28:03] INFO root fetch - processPackages [agenta]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-14 21:28:03] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/38/b3/5e7a08cc9d6d96559cab91bf288c5d994d504da4b88efc58b282338e717b/dyff-client-0.2.2.tar.gz
+[2024-04-14 21:28:03] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/e1/b3/694bb4fe67f0b63ef67836f5924bdc436dfb590d7e7da0824cbbc4b71853/agenta-0.8.4.tar.gz
+[2024-04-14 21:28:03] INFO root fetch - processPackages [agenta]: Downloading https://files.pythonhosted.org/packages/f7/a1/73689fd1faf7fbbd3985f8ed9673e4784bae27b1789d6fe5f7e4f001ed89/agenta-0.9.0.tar.gz
+[2024-04-14 21:28:04] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/47/7f/1a3480e23996f48c983a312d9d62e55f21d9e4df9fd6879284af5f45bd54/dyff_client-0.3.0.tar.gz
+[2024-04-14 21:28:04] INFO root fetch - processPackages [agenta]: executing diffoscope
+[2024-04-14 21:28:04] INFO root fetch - processPackages [agenta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agenta-0.8.4.tar.gz tmp/agenta-0.9.0.tar.gz --markdown 20240414/a/agenta/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-04-14 21:28:04] INFO root fetch - processPackages [dyff-client]: executing diffoscope
+[2024-04-14 21:28:04] INFO root fetch - processPackages [dyff-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff-client-0.2.2.tar.gz tmp/dyff_client-0.3.0.tar.gz --markdown 20240414/d/dyff-client/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-04-14 21:28:04] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.8.4.tar.gz]
+[2024-04-14 21:28:04] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
+[2024-04-14 21:28:04] INFO root fetch - main [MainThread]: End processing [agenta]: success
+[2024-04-14 21:28:05] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff-client-0.2.2.tar.gz]
+[2024-04-14 21:28:05] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.3.0.tar.gz]
+[2024-04-14 21:28:05] INFO root fetch - main [MainThread]: End processing [dyff-client]: success
+[2024-04-14 21:28:05] INFO root fetch - main [MainThread]: Store serial: [22761772]
