@@ -12250,3 +12250,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:39:09] INFO root fetch - processPackages [llama-index]: Remove: archive file [/home/abi/fetcher/tmp/llama_index-0.9.9.tar.gz]
 [2024-04-14 18:39:09] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2024-04-14 18:39:09] INFO root fetch - main [MainThread]: Store serial: [22760569]
+[2024-04-14 18:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760569]
+[2024-04-14 18:41:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 18:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-iubenda
+[2024-04-14 18:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crypto-ws-api
+[2024-04-14 18:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnidep
+[2024-04-14 18:41:18] INFO root fetch - processPackages [omnidep]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-14 18:41:18] INFO root fetch - processPackages [omnidep]: Downloading https://files.pythonhosted.org/packages/1d/0e/c1b5a15b4c3149804a38956b4df7fa8de1bc795520e829b69fb3f96fd418/omnidep-0.3.6.tar.gz
+[2024-04-14 18:41:18] INFO root fetch - processPackages [django-iubenda]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-14 18:41:18] INFO root fetch - processPackages [crypto-ws-api]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-14 18:41:18] INFO root fetch - processPackages [omnidep]: Downloading https://files.pythonhosted.org/packages/ef/7e/bf1bf10b40352ac5a6532979bd70ad861093931358e7c5183d0c4a61aa10/omnidep-0.3.7.tar.gz
+[2024-04-14 18:41:18] INFO root fetch - processPackages [crypto-ws-api]: Downloading https://files.pythonhosted.org/packages/7c/e3/355949b35109b1d2f528b43810412a844c0d414ba641500b1119e434441a/crypto-ws-api-2.0.8.tar.gz
+[2024-04-14 18:41:19] INFO root fetch - processPackages [omnidep]: executing diffoscope
+[2024-04-14 18:41:19] INFO root fetch - processPackages [omnidep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnidep-0.3.6.tar.gz tmp/omnidep-0.3.7.tar.gz --markdown 20240414/o/omnidep/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-14 18:41:19] INFO root fetch - processPackages [django-iubenda]: Downloading https://files.pythonhosted.org/packages/9d/2e/daa28f2599c0b7c5e413e9ac14c5d3c38c1a0b94a7c8fe0572e7c853cce3/django-iubenda-1.5.0.tar.gz
+[2024-04-14 18:41:19] INFO root fetch - processPackages [crypto-ws-api]: Downloading https://files.pythonhosted.org/packages/34/f3/7a65952ad3cb49c4332e456e068edc5d0402cf8a83ba8162e5a3b7a5bc58/crypto-ws-api-2.0.9.tar.gz
+[2024-04-14 18:41:19] INFO root fetch - processPackages [django-iubenda]: Downloading https://files.pythonhosted.org/packages/a1/7b/832e22fd1ba2a036bf9212feb2a5a2cd77ae7400ed918fb219269ebf089c/django_iubenda-1.6.0.tar.gz
+[2024-04-14 18:41:19] INFO root fetch - processPackages [crypto-ws-api]: executing diffoscope
+[2024-04-14 18:41:19] INFO root fetch - processPackages [crypto-ws-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crypto-ws-api-2.0.8.tar.gz tmp/crypto-ws-api-2.0.9.tar.gz --markdown 20240414/c/crypto-ws-api/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-14 18:41:19] INFO root fetch - processPackages [django-iubenda]: executing diffoscope
+[2024-04-14 18:41:19] INFO root fetch - processPackages [django-iubenda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-iubenda-1.5.0.tar.gz tmp/django_iubenda-1.6.0.tar.gz --markdown 20240414/d/django-iubenda/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-14 18:41:19] INFO root fetch - processPackages [omnidep]: Remove: archive file [/home/abi/fetcher/tmp/omnidep-0.3.6.tar.gz]
+[2024-04-14 18:41:19] INFO root fetch - processPackages [omnidep]: Remove: archive file [/home/abi/fetcher/tmp/omnidep-0.3.7.tar.gz]
+[2024-04-14 18:41:19] INFO root fetch - main [MainThread]: End processing [omnidep]: success
+[2024-04-14 18:41:20] INFO root fetch - processPackages [crypto-ws-api]: Remove: archive file [/home/abi/fetcher/tmp/crypto-ws-api-2.0.8.tar.gz]
+[2024-04-14 18:41:20] INFO root fetch - processPackages [crypto-ws-api]: Remove: archive file [/home/abi/fetcher/tmp/crypto-ws-api-2.0.9.tar.gz]
+[2024-04-14 18:41:20] INFO root fetch - main [MainThread]: End processing [crypto-ws-api]: success
+[2024-04-14 18:41:20] INFO root fetch - processPackages [django-iubenda]: Remove: archive file [/home/abi/fetcher/tmp/django-iubenda-1.5.0.tar.gz]
+[2024-04-14 18:41:20] INFO root fetch - processPackages [django-iubenda]: Remove: archive file [/home/abi/fetcher/tmp/django_iubenda-1.6.0.tar.gz]
+[2024-04-14 18:41:20] INFO root fetch - main [MainThread]: End processing [django-iubenda]: success
+[2024-04-14 18:41:20] INFO root fetch - main [MainThread]: Store serial: [22760578]
