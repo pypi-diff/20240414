@@ -13612,3 +13612,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:39:39] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.4.tar.gz]
 [2024-04-14 20:39:39] INFO root fetch - main [MainThread]: End processing [scmopy]: success
 [2024-04-14 20:39:39] INFO root fetch - main [MainThread]: Store serial: [22761149]
+[2024-04-14 20:41:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761149]
+[2024-04-14 20:41:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timeseries-etl-utils
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mystring
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flashcam
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: svgen
+[2024-04-14 20:41:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kerfed.protos
+[2024-04-14 20:41:48] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240414.9.8.204994] Old Version: [20240414.11.46.365485]
+[2024-04-14 20:41:48] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-14 20:41:48] WARNING root fetch - processPackages [timeseries-etl-utils]: Skipping, unable to determine old version
+[2024-04-14 20:41:48] INFO root fetch - main [MainThread]: End processing [timeseries-etl-utils] error
+[2024-04-14 20:41:48] INFO root fetch - processPackages [svgen]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-04-14 20:41:48] INFO root fetch - processPackages [flashcam]: New version: [1.9.1] Old Version: [1.8.9]
+[2024-04-14 20:41:48] INFO root fetch - processPackages [kerfed.protos]: New version: [1.0.0rc0] Old Version: [0.2.9]
+[2024-04-14 20:41:48] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-14 20:41:48] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/3a/cb/7066410a966ce5c888e47b2cbb65a76693d4bcfad120bdaa123f8e4fab7b/certora-cli-alpha-master-20240414.11.46.365485.tar.gz
+[2024-04-14 20:41:48] INFO root fetch - processPackages [svgen]: Downloading https://files.pythonhosted.org/packages/c0/cd/2483607824891d71d067cc74ff2bb8c5de25225a6c4d84a940fb627486f3/svgen-0.6.5.tar.gz
+[2024-04-14 20:41:48] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14483291>=10485760
+[2024-04-14 20:41:48] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-14 20:41:48] INFO root fetch - processPackages [flashcam]: Downloading https://files.pythonhosted.org/packages/2f/aa/fb748418cf7ee4d2710346f9f9c8c185d2bf4c279d3fd0898f15eba4c501/flashcam-1.8.9.tar.gz
+[2024-04-14 20:41:48] INFO root fetch - processPackages [kerfed.protos]: Downloading https://files.pythonhosted.org/packages/91/21/08556f71c86ceee9ba1b1f8d10778b33f09e53429e3a1e89d590f54c4f6e/kerfed.protos-0.2.9-py3-none-any.whl
+[2024-04-14 20:41:48] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-14 20:41:48] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-14 20:41:48] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240414/m/mystring/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-14 20:41:48] INFO root fetch - processPackages [svgen]: Downloading https://files.pythonhosted.org/packages/56/96/d4700625634d8e41cde6a46b8247c3eb33c26f3d478e174a58fa26552c6d/svgen-0.6.6.tar.gz
+[2024-04-14 20:41:48] INFO root fetch - processPackages [flashcam]: Downloading https://files.pythonhosted.org/packages/9b/9c/b589573e3f9f57745093ac4b91c94ad7bcebe3c2c291ae3a342fd084bc57/flashcam-1.9.1.tar.gz
+[2024-04-14 20:41:48] INFO root fetch - processPackages [svgen]: executing diffoscope
+[2024-04-14 20:41:48] INFO root fetch - processPackages [svgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svgen-0.6.5.tar.gz tmp/svgen-0.6.6.tar.gz --markdown 20240414/s/svgen/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-04-14 20:41:48] INFO root fetch - processPackages [kerfed.protos]: Downloading https://files.pythonhosted.org/packages/00/4f/e3425c76e629e613e219e30488be737a81d4c02d34bb3917f7592a3167eb/kerfed.protos-1.0.0rc0-py3-none-any.whl
+[2024-04-14 20:41:48] INFO root fetch - processPackages [flashcam]: executing diffoscope
+[2024-04-14 20:41:48] INFO root fetch - processPackages [flashcam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flashcam-1.8.9.tar.gz tmp/flashcam-1.9.1.tar.gz --markdown 20240414/f/flashcam/1.8.9-1.9.1/README.md --exclude *.pyd
+[2024-04-14 20:41:49] INFO root fetch - processPackages [kerfed.protos]: executing diffoscope
+[2024-04-14 20:41:49] INFO root fetch - processPackages [kerfed.protos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kerfed.protos-0.2.9-py3-none-any.whl.zip tmp/kerfed.protos-1.0.0rc0-py3-none-any.whl.zip --markdown 20240414/k/kerfed.protos/0.2.9-1.0.0rc0/README.md --exclude *.pyd
+[2024-04-14 20:41:49] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-14 20:41:49] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-14 20:41:49] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-14 20:41:49] INFO root fetch - processPackages [svgen]: Remove: archive file [/home/abi/fetcher/tmp/svgen-0.6.5.tar.gz]
+[2024-04-14 20:41:49] INFO root fetch - processPackages [svgen]: Remove: archive file [/home/abi/fetcher/tmp/svgen-0.6.6.tar.gz]
+[2024-04-14 20:41:49] INFO root fetch - main [MainThread]: End processing [svgen]: success
+[2024-04-14 20:41:49] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.8.9.tar.gz]
+[2024-04-14 20:41:49] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.9.1.tar.gz]
+[2024-04-14 20:41:49] INFO root fetch - main [MainThread]: End processing [flashcam]: success
+[2024-04-14 20:41:49] INFO root fetch - processPackages [kerfed.protos]: Remove: archive file [/home/abi/fetcher/tmp/kerfed.protos-0.2.9-py3-none-any.whl.zip]
+[2024-04-14 20:41:49] INFO root fetch - processPackages [kerfed.protos]: Remove: archive file [/home/abi/fetcher/tmp/kerfed.protos-1.0.0rc0-py3-none-any.whl.zip]
+[2024-04-14 20:41:49] INFO root fetch - main [MainThread]: End processing [kerfed.protos]: success
+[2024-04-14 20:41:49] INFO root fetch - main [MainThread]: Store serial: [22761168]
