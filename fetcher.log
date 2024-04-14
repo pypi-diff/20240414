@@ -8303,3 +8303,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:52:13] INFO root fetch - processPackages [tendril-connector-grafana]: Remove: archive file [/home/abi/fetcher/tmp/tendril_connector_grafana-0.2.3.tar.gz]
 [2024-04-14 13:52:13] INFO root fetch - main [MainThread]: End processing [tendril-connector-grafana]: success
 [2024-04-14 13:52:13] INFO root fetch - main [MainThread]: Store serial: [22758647]
+[2024-04-14 13:54:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758647]
+[2024-04-14 13:54:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 13:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: networkx-graph
+[2024-04-14 13:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asgebsmanager
+[2024-04-14 13:54:28] INFO root fetch - processPackages [asgebsmanager]: New version: [1.2] Old Version: [1.1]
+[2024-04-14 13:54:28] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/84/2f/85f50b9e9b1cd2a34c6896a4aca53b20fd62bd87a0abacb39f282e82f4db/asgebsmanager-1.1.tar.gz
+[2024-04-14 13:54:28] INFO root fetch - processPackages [networkx-graph]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-14 13:54:29] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/13/da/e3597e04947118245a384e5153e39579f9a580ade1227403ee08e60813a1/networkx_graph-0.1.9.tar.gz
+[2024-04-14 13:54:29] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/4f/0c/de43ca3bb2a9cc1d3130f7b4547bd25f40d436ac99d476da56592b19d3f4/asgebsmanager-1.2.tar.gz
+[2024-04-14 13:54:29] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 13:54:29] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-1.1.tar.gz tmp/asgebsmanager-1.2.tar.gz --markdown 20240414/a/asgebsmanager/1.1-1.2/README.md --exclude *.pyd
+[2024-04-14 13:54:29] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/8e/41/d24289a2a055e01e1d748ddaa1a96ee712090b0427dc1f8ba83c76ed6ad6/networkx_graph-0.2.0.tar.gz
+[2024-04-14 13:54:29] INFO root fetch - processPackages [networkx-graph]: executing diffoscope
+[2024-04-14 13:54:29] INFO root fetch - processPackages [networkx-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_graph-0.1.9.tar.gz tmp/networkx_graph-0.2.0.tar.gz --markdown 20240414/n/networkx-graph/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-14 13:54:29] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.1.tar.gz]
+[2024-04-14 13:54:29] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.2.tar.gz]
+[2024-04-14 13:54:29] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 13:54:30] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.1.9.tar.gz]
+[2024-04-14 13:54:30] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.0.tar.gz]
+[2024-04-14 13:54:30] INFO root fetch - main [MainThread]: End processing [networkx-graph]: success
+[2024-04-14 13:54:30] INFO root fetch - main [MainThread]: Store serial: [22758709]
