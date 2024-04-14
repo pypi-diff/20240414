@@ -3195,3 +3195,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:26:14] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.6.tar.gz]
 [2024-04-14 05:26:14] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-04-14 05:26:14] INFO root fetch - main [MainThread]: Store serial: [22756337]
+[2024-04-14 05:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756337]
+[2024-04-14 05:28:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 05:30:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756338]
+[2024-04-14 05:30:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 05:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-flux
+[2024-04-14 05:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: finsim
+[2024-04-14 05:30:28] INFO root fetch - processPackages [python-flux]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-04-14 05:30:28] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/41/0c/a30d9fc0e8290358f3c35e92a3cc2b5169eee65f57566ec14975fab275a9/python_flux-0.9.0.tar.gz
+[2024-04-14 05:30:28] INFO root fetch - processPackages [finsim]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-14 05:30:29] INFO root fetch - processPackages [finsim]: Downloading https://files.pythonhosted.org/packages/47/ed/145b2464be72824ef01b2e8e09fca4c98382e0bde923889a313be98d306e/finsim-0.9.1.tar.gz
+[2024-04-14 05:30:29] INFO root fetch - processPackages [python-flux]: Downloading https://files.pythonhosted.org/packages/5d/b2/15655a2ad1cf680a32b80bbc5502c882ac98768b9d19ed31a768ed3f11b7/python_flux-1.0.0.tar.gz
+[2024-04-14 05:30:29] INFO root fetch - processPackages [python-flux]: executing diffoscope
+[2024-04-14 05:30:29] INFO root fetch - processPackages [python-flux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_flux-0.9.0.tar.gz tmp/python_flux-1.0.0.tar.gz --markdown 20240414/p/python-flux/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-04-14 05:30:29] INFO root fetch - processPackages [finsim]: Downloading https://files.pythonhosted.org/packages/fe/01/9f69a7c4f5d53a7b35331fcc4aa4217f382bf74e09c70ac83aa045c9732b/finsim-0.9.2.tar.gz
+[2024-04-14 05:30:29] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-0.9.0.tar.gz]
+[2024-04-14 05:30:29] INFO root fetch - processPackages [python-flux]: Remove: archive file [/home/abi/fetcher/tmp/python_flux-1.0.0.tar.gz]
+[2024-04-14 05:30:29] INFO root fetch - main [MainThread]: End processing [python-flux]: success
+[2024-04-14 05:30:30] INFO root fetch - processPackages [finsim]: executing diffoscope
+[2024-04-14 05:30:30] INFO root fetch - processPackages [finsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finsim-0.9.1.tar.gz tmp/finsim-0.9.2.tar.gz --markdown 20240414/f/finsim/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-14 05:30:30] INFO root fetch - processPackages [finsim]: Remove: archive file [/home/abi/fetcher/tmp/finsim-0.9.1.tar.gz]
+[2024-04-14 05:30:30] INFO root fetch - processPackages [finsim]: Remove: archive file [/home/abi/fetcher/tmp/finsim-0.9.2.tar.gz]
+[2024-04-14 05:30:30] INFO root fetch - main [MainThread]: End processing [finsim]: success
+[2024-04-14 05:30:30] INFO root fetch - main [MainThread]: Store serial: [22756343]
