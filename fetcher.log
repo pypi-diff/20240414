@@ -15372,3 +15372,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:34:15] INFO root fetch - processPackages [evdspy]: Remove: archive file [/home/abi/fetcher/tmp/evdspy-1.1.9-py2.py3-none-any.whl.zip]
 [2024-04-14 22:34:15] INFO root fetch - main [MainThread]: End processing [evdspy]: success
 [2024-04-14 22:34:15] INFO root fetch - main [MainThread]: Store serial: [22762234]
+[2024-04-14 22:36:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762234]
+[2024-04-14 22:36:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 22:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystaleds
+[2024-04-14 22:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maturin-watchdog
+[2024-04-14 22:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazysharepoint
+[2024-04-14 22:36:24] INFO root fetch - processPackages [maturin-watchdog]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 22:36:24] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/06/69/9e50ef7d392535d66e59f4c716a14741ebe16dedfeef46f4e28f60a68342/maturin_watchdog-0.1.8.tar.gz
+[2024-04-14 22:36:24] WARNING root fetch - processPackages [lazysharepoint]: Skipping, unable to determine old version
+[2024-04-14 22:36:24] INFO root fetch - main [MainThread]: End processing [lazysharepoint] error
+[2024-04-14 22:36:24] INFO root fetch - processPackages [pystaleds]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 22:36:25] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/c9/89/9d8fc5cca8de1da6023c5c61551c0f2b9908adaa788e915a2cb2a2952b51/maturin_watchdog-0.1.9.tar.gz
+[2024-04-14 22:36:25] INFO root fetch - processPackages [maturin-watchdog]: executing diffoscope
+[2024-04-14 22:36:25] INFO root fetch - processPackages [maturin-watchdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin_watchdog-0.1.8.tar.gz tmp/maturin_watchdog-0.1.9.tar.gz --markdown 20240414/m/maturin-watchdog/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 22:36:25] INFO root fetch - processPackages [pystaleds]: Downloading https://files.pythonhosted.org/packages/ef/ac/39f7ff574df6f70bfc24ac59a7909d2d7a31d084a8347aca36ea125d5f19/pystaleds-0.1.1.tar.gz
+[2024-04-14 22:36:25] INFO root fetch - processPackages [pystaleds]: Downloading https://files.pythonhosted.org/packages/ce/99/63d82d1dfb911c476b7c9182adaa95c3bec3328709f400612fe95718f883/pystaleds-0.1.2.tar.gz
+[2024-04-14 22:36:25] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.8.tar.gz]
+[2024-04-14 22:36:25] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.9.tar.gz]
+[2024-04-14 22:36:25] INFO root fetch - main [MainThread]: End processing [maturin-watchdog]: success
+[2024-04-14 22:36:25] INFO root fetch - processPackages [pystaleds]: executing diffoscope
+[2024-04-14 22:36:25] INFO root fetch - processPackages [pystaleds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystaleds-0.1.1.tar.gz tmp/pystaleds-0.1.2.tar.gz --markdown 20240414/p/pystaleds/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 22:36:26] INFO root fetch - processPackages [pystaleds]: Remove: archive file [/home/abi/fetcher/tmp/pystaleds-0.1.1.tar.gz]
+[2024-04-14 22:36:26] INFO root fetch - processPackages [pystaleds]: Remove: archive file [/home/abi/fetcher/tmp/pystaleds-0.1.2.tar.gz]
+[2024-04-14 22:36:26] INFO root fetch - main [MainThread]: End processing [pystaleds]: success
+[2024-04-14 22:36:26] INFO root fetch - main [MainThread]: Store serial: [22762304]
