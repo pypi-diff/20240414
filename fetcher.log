@@ -4806,3 +4806,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:56:10] INFO root fetch - processPackages [ffsim]: Remove: archive file [/home/abi/fetcher/tmp/ffsim-0.0.9.tar.gz]
 [2024-04-14 08:56:10] INFO root fetch - main [MainThread]: End processing [ffsim]: success
 [2024-04-14 08:56:10] INFO root fetch - main [MainThread]: Store serial: [22756945]
+[2024-04-14 08:58:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756945]
+[2024-04-14 08:58:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrb
+[2024-04-14 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyPublicDecompWT
+[2024-04-14 08:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geoquanta
+[2024-04-14 08:58:18] INFO root fetch - processPackages [pyrb]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-14 08:58:18] INFO root fetch - processPackages [geoquanta]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 08:58:18] INFO root fetch - processPackages [pyPublicDecompWT]: New version: [2.8.1.5] Old Version: [2.8.1.4]
+[2024-04-14 08:58:18] INFO root fetch - processPackages [geoquanta]: Downloading https://files.pythonhosted.org/packages/42/92/a27b5a765d14f154f15a24c96a7424dac2b5ab2f2ba651640bac77eb7b70/geoquanta-0.0.2.tar.gz
+[2024-04-14 08:58:18] INFO root fetch - processPackages [pyPublicDecompWT]: Downloading https://files.pythonhosted.org/packages/12/c9/1cd0e8ac38ea124e81a3b353bca85b9f696196133cdbeb2e6da3a6f08bc2/pyPublicDecompWT-2.8.1.4.tar.gz
+[2024-04-14 08:58:18] INFO root fetch - processPackages [pyrb]: Downloading https://files.pythonhosted.org/packages/2a/e5/f7c0b11f949332120f3e3aa104b47e3b4fb1609090490770b5d77f214fc3/pyrb-0.9.6.tar.gz
+[2024-04-14 08:58:19] INFO root fetch - processPackages [geoquanta]: Downloading https://files.pythonhosted.org/packages/5a/8c/74784606a0cc6a8c86f4f5bc6295a46807377c6679a261b0ba3f01de3012/geoquanta-0.0.3.tar.gz
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyrb]: Downloading https://files.pythonhosted.org/packages/61/e8/6b976cefb34af30346c98890b2565d376629a448875dff0373ef51f11660/pyrb-0.9.7.tar.gz
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyPublicDecompWT]: Downloading https://files.pythonhosted.org/packages/ab/4e/51de5d0e0042656aa254bf79f1de3adf880dac6e126b81a9aac57ebb26b7/pypublicdecompwt-2.8.1.5.tar.gz
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyrb]: executing diffoscope
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrb-0.9.6.tar.gz tmp/pyrb-0.9.7.tar.gz --markdown 20240414/p/pyrb/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyPublicDecompWT]: executing diffoscope
+[2024-04-14 08:58:19] INFO root fetch - processPackages [pyPublicDecompWT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPublicDecompWT-2.8.1.4.tar.gz tmp/pypublicdecompwt-2.8.1.5.tar.gz --markdown 20240414/p/pyPublicDecompWT/2.8.1.4-2.8.1.5/README.md --exclude *.pyd
+[2024-04-14 08:58:19] INFO root fetch - processPackages [geoquanta]: executing diffoscope
+[2024-04-14 08:58:19] INFO root fetch - processPackages [geoquanta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoquanta-0.0.2.tar.gz tmp/geoquanta-0.0.3.tar.gz --markdown 20240414/g/geoquanta/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 08:58:20] INFO root fetch - processPackages [geoquanta]: Remove: archive file [/home/abi/fetcher/tmp/geoquanta-0.0.2.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - processPackages [geoquanta]: Remove: archive file [/home/abi/fetcher/tmp/geoquanta-0.0.3.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - main [MainThread]: End processing [geoquanta]: success
+[2024-04-14 08:58:20] INFO root fetch - processPackages [pyrb]: Remove: archive file [/home/abi/fetcher/tmp/pyrb-0.9.6.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - processPackages [pyrb]: Remove: archive file [/home/abi/fetcher/tmp/pyrb-0.9.7.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - main [MainThread]: End processing [pyrb]: success
+[2024-04-14 08:58:20] INFO root fetch - processPackages [pyPublicDecompWT]: Remove: archive file [/home/abi/fetcher/tmp/pyPublicDecompWT-2.8.1.4.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - processPackages [pyPublicDecompWT]: Remove: archive file [/home/abi/fetcher/tmp/pypublicdecompwt-2.8.1.5.tar.gz]
+[2024-04-14 08:58:20] INFO root fetch - main [MainThread]: End processing [pyPublicDecompWT]: success
+[2024-04-14 08:58:20] INFO root fetch - main [MainThread]: Store serial: [22756953]
