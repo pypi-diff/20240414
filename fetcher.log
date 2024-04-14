@@ -11880,3 +11880,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:10:47] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.6.9.tar.gz]
 [2024-04-14 18:10:47] INFO root fetch - main [MainThread]: End processing [argrelay]: success
 [2024-04-14 18:10:47] INFO root fetch - main [MainThread]: Store serial: [22760446]
+[2024-04-14 18:12:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760446]
+[2024-04-14 18:12:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-seleniumbase
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbase
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Office365-REST-Python-Client
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seacrowd
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telegram-collector
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tikzification
+[2024-04-14 18:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tum_esm_utils
+[2024-04-14 18:12:55] INFO root fetch - processPackages [tum_esm_utils]: New version: [2.0.0] Old Version: [1.9.2]
+[2024-04-14 18:12:55] INFO root fetch - processPackages [telegram-collector]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-14 18:12:56] INFO root fetch - processPackages [tum_esm_utils]: Downloading https://files.pythonhosted.org/packages/cd/60/bffbcf05cdb7cf7e71f239b06fe0cb097a2dda3481ffaff24f2df8bb13c6/tum_esm_utils-1.9.2.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [seacrowd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 18:12:56] WARNING root fetch - processPackages [tikzification]: Skipping, unable to determine old version
+[2024-04-14 18:12:56] INFO root fetch - main [MainThread]: End processing [tikzification] error
+[2024-04-14 18:12:56] INFO root fetch - processPackages [Office365-REST-Python-Client]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-04-14 18:12:56] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-14 18:12:56] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/86/9c/a9b3e7e9c1ecd9706fc5ec445104f191287d403dab4c002825aa1cb9dd1e/telegram_collector-0.2.4.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2024-04-14 18:12:56] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/1f/ba/346de6683a7e18210cd836f5cfbcd169e5daa3d6a3cd013d360925353530/seacrowd-0.0.8.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [tum_esm_utils]: Downloading https://files.pythonhosted.org/packages/1f/fc/f99374effd94caac0c22a3b6ac0750f11aca652167ec91477c3678cc8449/tum_esm_utils-2.0.0.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/fc/00/01ba9d17ed3b109e03b55e4d4bf5ac7ecf9086718b42a2d8a81d6703495c/Office365-REST-Python-Client-2.5.7.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/40/bb/757cad3c5535e64c18cee852b145a86e4d539878bd9dce7c2934bcfb972d/pytest-seleniumbase-4.9.8.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/10/f9/904caa9ffcdc6c4e7625f527d7ff03e2ccbecc9c360a7557b298321e506d/sbase-4.9.8.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [telegram-collector]: Downloading https://files.pythonhosted.org/packages/3f/31/df0a84fc613d1db9c572264bd0d15f3479be0cdfe2c144ca003a96a049fc/telegram_collector-0.2.5.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [tum_esm_utils]: executing diffoscope
+[2024-04-14 18:12:56] INFO root fetch - processPackages [tum_esm_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tum_esm_utils-1.9.2.tar.gz tmp/tum_esm_utils-2.0.0.tar.gz --markdown 20240414/t/tum_esm_utils/1.9.2-2.0.0/README.md --exclude *.pyd
+[2024-04-14 18:12:56] INFO root fetch - processPackages [telegram-collector]: executing diffoscope
+[2024-04-14 18:12:56] INFO root fetch - processPackages [telegram-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_collector-0.2.4.tar.gz tmp/telegram_collector-0.2.5.tar.gz --markdown 20240414/t/telegram-collector/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-14 18:12:56] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/db/e5/e823c1dd15f44fad1df7f17a4bc789afab1d6f35bdcec84ae1dcd8010936/seacrowd-0.0.9.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [sbase]: Downloading https://files.pythonhosted.org/packages/d2/57/c23bf788f4a8fba6ef62c68be73c8fb443dc5aa71c69b03726c1254377f7/sbase-4.9.9.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [Office365-REST-Python-Client]: Downloading https://files.pythonhosted.org/packages/a1/2c/71c0bd2986e8844963a10f4e28ccada6f7b58857577c12cde4dd3ff6a273/Office365-REST-Python-Client-2.5.8.tar.gz
+[2024-04-14 18:12:56] INFO root fetch - processPackages [pytest-seleniumbase]: Downloading https://files.pythonhosted.org/packages/34/03/c67c6c24b8d7c3e49595b97d914034cf101d3d1d029f9e9453f497e0937a/pytest-seleniumbase-4.9.9.tar.gz
+[2024-04-14 18:12:57] INFO root fetch - processPackages [seacrowd]: executing diffoscope
+[2024-04-14 18:12:57] INFO root fetch - processPackages [seacrowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seacrowd-0.0.8.tar.gz tmp/seacrowd-0.0.9.tar.gz --markdown 20240414/s/seacrowd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 18:12:57] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2024-04-14 18:12:57] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20240414/p/pytest-seleniumbase/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-14 18:12:57] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2024-04-14 18:12:57] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20240414/s/sbase/4.9.8-4.9.9/README.md --exclude *.pyd
+[2024-04-14 18:12:57] INFO root fetch - processPackages [Office365-REST-Python-Client]: executing diffoscope
+[2024-04-14 18:12:57] INFO root fetch - processPackages [Office365-REST-Python-Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Office365-REST-Python-Client-2.5.7.tar.gz tmp/Office365-REST-Python-Client-2.5.8.tar.gz --markdown 20240414/O/Office365-REST-Python-Client/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-04-14 18:12:57] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.2.4.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - processPackages [telegram-collector]: Remove: archive file [/home/abi/fetcher/tmp/telegram_collector-0.2.5.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - main [MainThread]: End processing [telegram-collector]: success
+[2024-04-14 18:12:57] INFO root fetch - processPackages [tum_esm_utils]: Remove: archive file [/home/abi/fetcher/tmp/tum_esm_utils-1.9.2.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - processPackages [tum_esm_utils]: Remove: archive file [/home/abi/fetcher/tmp/tum_esm_utils-2.0.0.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - main [MainThread]: End processing [tum_esm_utils]: success
+[2024-04-14 18:12:57] INFO root fetch - processPackages [pytest-seleniumbase]: Remove: archive file [/home/abi/fetcher/tmp/pytest-seleniumbase-4.9.8.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - processPackages [pytest-seleniumbase]: Remove: archive file [/home/abi/fetcher/tmp/pytest-seleniumbase-4.9.9.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - main [MainThread]: End processing [pytest-seleniumbase]: success
+[2024-04-14 18:12:57] INFO root fetch - processPackages [sbase]: Remove: archive file [/home/abi/fetcher/tmp/sbase-4.9.8.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - processPackages [sbase]: Remove: archive file [/home/abi/fetcher/tmp/sbase-4.9.9.tar.gz]
+[2024-04-14 18:12:57] INFO root fetch - main [MainThread]: End processing [sbase]: success
+[2024-04-14 18:12:58] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.8.tar.gz]
+[2024-04-14 18:12:58] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
+[2024-04-14 18:12:58] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
+[2024-04-14 18:13:01] INFO root fetch - processPackages [Office365-REST-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/Office365-REST-Python-Client-2.5.7.tar.gz]
+[2024-04-14 18:13:01] INFO root fetch - processPackages [Office365-REST-Python-Client]: Remove: archive file [/home/abi/fetcher/tmp/Office365-REST-Python-Client-2.5.8.tar.gz]
+[2024-04-14 18:13:01] INFO root fetch - main [MainThread]: End processing [Office365-REST-Python-Client]: success
+[2024-04-14 18:13:01] INFO root fetch - main [MainThread]: Store serial: [22760469]
