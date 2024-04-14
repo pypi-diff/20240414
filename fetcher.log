@@ -9381,3 +9381,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:16:45] INFO root fetch - processPackages [sqlrepo]: Remove: archive file [/home/abi/fetcher/tmp/sqlrepo-0.2.0.tar.gz]
 [2024-04-14 15:16:45] INFO root fetch - main [MainThread]: End processing [sqlrepo]: success
 [2024-04-14 15:16:45] INFO root fetch - main [MainThread]: Store serial: [22759101]
+[2024-04-14 15:18:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759101]
+[2024-04-14 15:19:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 15:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Xdcheckin
+[2024-04-14 15:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtfx2console
+[2024-04-14 15:19:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swibots
+[2024-04-14 15:19:00] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 15:19:00] INFO root fetch - processPackages [swibots]: New version: [1.4.9b0] Old Version: [1.4.9]
+[2024-04-14 15:19:00] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 15:19:00] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/ab/ad/e9fb4e6104646710bdb7ad640c25bec37453f90d223979930a44f7c8f72e/swibots-1.4.9-py3-none-any.whl
+[2024-04-14 15:19:00] INFO root fetch - processPackages [Xdcheckin]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 15:19:01] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/6a/8f/69fce9f3262612a169995177492a8ed0eb12c0568553e71eae019ce29643/Xdcheckin-2.0.4.tar.gz
+[2024-04-14 15:19:01] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/72/d5/85d2482c402c01fa38270b81f594fb6995018901411ffd115f6e75d2d70d/jgtfx2console-0.4.9.tar.gz
+[2024-04-14 15:19:01] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/1a/29/9d4e43dad7e195938372caf1ec2d82ce234bb157328ce98870071d36f923/swibots-1.4.9b0-py3-none-any.whl
+[2024-04-14 15:19:01] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 15:19:01] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.8.tar.gz tmp/jgtfx2console-0.4.9.tar.gz --markdown 20240414/j/jgtfx2console/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 15:19:01] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2024-04-14 15:19:01] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.4.9-py3-none-any.whl.zip tmp/swibots-1.4.9b0-py3-none-any.whl.zip --markdown 20240414/s/swibots/1.4.9-1.4.9b0/README.md --exclude *.pyd
+[2024-04-14 15:19:01] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/4d/fe/b83b3763a37b7c5cac9542cf9d35674a5fee821b0e409ed82557d09ec470/xdcheckin-2.0.5.tar.gz
+[2024-04-14 15:19:01] INFO root fetch - processPackages [Xdcheckin]: executing diffoscope
+[2024-04-14 15:19:01] INFO root fetch - processPackages [Xdcheckin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Xdcheckin-2.0.4.tar.gz tmp/xdcheckin-2.0.5.tar.gz --markdown 20240414/X/Xdcheckin/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 15:19:01] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 15:19:01] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.9.tar.gz]
+[2024-04-14 15:19:01] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 15:19:02] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/Xdcheckin-2.0.4.tar.gz]
+[2024-04-14 15:19:02] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.5.tar.gz]
+[2024-04-14 15:19:02] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
+[2024-04-14 15:19:02] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9-py3-none-any.whl.zip]
+[2024-04-14 15:19:02] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
+[2024-04-14 15:19:02] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2024-04-14 15:19:02] INFO root fetch - main [MainThread]: Store serial: [22759113]
