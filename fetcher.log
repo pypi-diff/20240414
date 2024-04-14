@@ -7614,3 +7614,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:01:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-14 13:01:05] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-14 13:01:05] INFO root fetch - main [MainThread]: Store serial: [22758310]
+[2024-04-14 13:03:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758310]
+[2024-04-14 13:03:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 13:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apidays24pj
+[2024-04-14 13:03:20] INFO root fetch - processPackages [apidays24pj]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 13:03:20] INFO root fetch - processPackages [apidays24pj]: Downloading https://files.pythonhosted.org/packages/68/2a/70c54af1a57ab370b44dc878f4435b98e147979e48caa9a44dad4168fdf0/apidays24pj-0.0.8.tar.gz
+[2024-04-14 13:03:21] INFO root fetch - processPackages [apidays24pj]: Downloading https://files.pythonhosted.org/packages/f5/8c/68506da78210e2b547f2a896bfb8cbaf190e749d078bb82f74c211cda064/apidays24pj-0.0.9.tar.gz
+[2024-04-14 13:03:21] INFO root fetch - processPackages [apidays24pj]: executing diffoscope
+[2024-04-14 13:03:21] INFO root fetch - processPackages [apidays24pj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidays24pj-0.0.8.tar.gz tmp/apidays24pj-0.0.9.tar.gz --markdown 20240414/a/apidays24pj/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 13:03:22] INFO root fetch - processPackages [apidays24pj]: Remove: archive file [/home/abi/fetcher/tmp/apidays24pj-0.0.8.tar.gz]
+[2024-04-14 13:03:22] INFO root fetch - processPackages [apidays24pj]: Remove: archive file [/home/abi/fetcher/tmp/apidays24pj-0.0.9.tar.gz]
+[2024-04-14 13:03:22] INFO root fetch - main [MainThread]: End processing [apidays24pj]: success
+[2024-04-14 13:03:22] INFO root fetch - main [MainThread]: Store serial: [22758313]
