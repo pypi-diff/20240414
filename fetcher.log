@@ -13142,3 +13142,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:56:03] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Remove: archive file [/home/abi/fetcher/tmp/pretix_plugin_attendance_certificate-0.1.8.tar.gz]
 [2024-04-14 19:56:03] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
 [2024-04-14 19:56:03] INFO root fetch - main [MainThread]: Store serial: [22760955]
+[2024-04-14 19:58:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760955]
+[2024-04-14 19:58:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 19:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-14 19:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sympy-plot-backends
+[2024-04-14 19:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cspace
+[2024-04-14 19:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sshpyk
+[2024-04-14 19:58:12] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.80.0]
+[2024-04-14 19:58:12] WARNING root fetch - processPackages [cspace]: Skipping, unable to determine old version
+[2024-04-14 19:58:12] INFO root fetch - main [MainThread]: End processing [cspace] error
+[2024-04-14 19:58:12] INFO root fetch - processPackages [sshpyk]: New version: [0.9] Old Version: [0.13]
+[2024-04-14 19:58:12] INFO root fetch - processPackages [sympy-plot-backends]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-04-14 19:58:12] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/b8/55/0b12392fed8118f5df41f5e8c0ad06ff4f8a1159a1b6d02d0a0357505a38/bellek-0.80.0.tar.gz
+[2024-04-14 19:58:12] INFO root fetch - processPackages [sympy-plot-backends]: Downloading https://files.pythonhosted.org/packages/95/eb/dd66746eec1e5ab0bed442f9dd92debe270ba8c5464bc26e309dd7d939ab/sympy_plot_backends-3.2.0.tar.gz
+[2024-04-14 19:58:12] INFO root fetch - processPackages [sshpyk]: Downloading https://files.pythonhosted.org/packages/bc/cd/b28675ede55103c93576107b630ebe0274f4024a1572ced234a53ad23367/sshpyk-0.13.tar.gz
+[2024-04-14 19:58:12] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-14 19:58:13] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-14 19:58:13] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.80.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240414/b/bellek/0.80.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sympy-plot-backends]: Downloading https://files.pythonhosted.org/packages/4c/c8/a8d41c1c6a924d428e97fdb494444b8d841ce8cb64157f44e91b1c326e7d/sympy_plot_backends-3.3.0.tar.gz
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sshpyk]: Downloading https://files.pythonhosted.org/packages/42/da/83b7fea94119b014b80b9552224d22f24b5301b7f0334e3a46c51d86f0ea/sshpyk-0.9.tar.gz
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sympy-plot-backends]: executing diffoscope
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sympy-plot-backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympy_plot_backends-3.2.0.tar.gz tmp/sympy_plot_backends-3.3.0.tar.gz --markdown 20240414/s/sympy-plot-backends/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sshpyk]: executing diffoscope
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sshpyk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sshpyk-0.13.tar.gz tmp/sshpyk-0.9.tar.gz --markdown 20240414/s/sshpyk/0.13-0.9/README.md --exclude *.pyd
+[2024-04-14 19:58:13] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.80.0.tar.gz]
+[2024-04-14 19:58:13] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-14 19:58:13] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sshpyk]: Remove: archive file [/home/abi/fetcher/tmp/sshpyk-0.13.tar.gz]
+[2024-04-14 19:58:13] INFO root fetch - processPackages [sshpyk]: Remove: archive file [/home/abi/fetcher/tmp/sshpyk-0.9.tar.gz]
+[2024-04-14 19:58:13] INFO root fetch - main [MainThread]: End processing [sshpyk]: success
+[2024-04-14 19:58:15] INFO root fetch - processPackages [sympy-plot-backends]: Remove: archive file [/home/abi/fetcher/tmp/sympy_plot_backends-3.2.0.tar.gz]
+[2024-04-14 19:58:15] INFO root fetch - processPackages [sympy-plot-backends]: Remove: archive file [/home/abi/fetcher/tmp/sympy_plot_backends-3.3.0.tar.gz]
+[2024-04-14 19:58:15] INFO root fetch - main [MainThread]: End processing [sympy-plot-backends]: success
+[2024-04-14 19:58:15] INFO root fetch - main [MainThread]: Store serial: [22760970]
