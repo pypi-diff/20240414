@@ -5944,3 +5944,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:59:57] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_sevensegmentdisplay-0.7.8.tar.gz]
 [2024-04-14 10:59:57] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
 [2024-04-14 10:59:57] INFO root fetch - main [MainThread]: Store serial: [22757472]
+[2024-04-14 11:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757472]
+[2024-04-14 11:02:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 11:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: acdh-cidoc-pyutils
+[2024-04-14 11:02:08] INFO root fetch - processPackages [acdh-cidoc-pyutils]: New version: [0.9] Old Version: [0.8]
+[2024-04-14 11:02:08] INFO root fetch - processPackages [acdh-cidoc-pyutils]: Downloading https://files.pythonhosted.org/packages/7b/ce/01cccdab145959697f7c297228c813c837cdd42e1d759f0c1aef329608a5/acdh_cidoc_pyutils-0.8.tar.gz
+[2024-04-14 11:02:08] INFO root fetch - processPackages [acdh-cidoc-pyutils]: Downloading https://files.pythonhosted.org/packages/e8/d0/4c07d5625f56bad5625293c318b94595b488f790d6a2773d5e36e5c0296a/acdh_cidoc_pyutils-0.9.tar.gz
+[2024-04-14 11:02:08] INFO root fetch - processPackages [acdh-cidoc-pyutils]: executing diffoscope
+[2024-04-14 11:02:08] INFO root fetch - processPackages [acdh-cidoc-pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acdh_cidoc_pyutils-0.8.tar.gz tmp/acdh_cidoc_pyutils-0.9.tar.gz --markdown 20240414/a/acdh-cidoc-pyutils/0.8-0.9/README.md --exclude *.pyd
+[2024-04-14 11:02:09] INFO root fetch - processPackages [acdh-cidoc-pyutils]: Remove: archive file [/home/abi/fetcher/tmp/acdh_cidoc_pyutils-0.8.tar.gz]
+[2024-04-14 11:02:09] INFO root fetch - processPackages [acdh-cidoc-pyutils]: Remove: archive file [/home/abi/fetcher/tmp/acdh_cidoc_pyutils-0.9.tar.gz]
+[2024-04-14 11:02:09] INFO root fetch - main [MainThread]: End processing [acdh-cidoc-pyutils]: success
+[2024-04-14 11:02:09] INFO root fetch - main [MainThread]: Store serial: [22757476]
