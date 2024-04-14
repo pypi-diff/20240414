@@ -6438,3 +6438,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:50:45] INFO root fetch - processPackages [py-research]: Remove: archive file [/home/abi/fetcher/tmp/py_research-5.0.0.tar.gz]
 [2024-04-14 11:50:45] INFO root fetch - main [MainThread]: End processing [py-research]: success
 [2024-04-14 11:50:45] INFO root fetch - main [MainThread]: Store serial: [22757701]
+[2024-04-14 11:52:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757701]
+[2024-04-14 11:52:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-research
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: THISDLChatBot
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ebsmanager
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: typeset-soren-n
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipgogogo
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prerun
+[2024-04-14 11:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: emx
+[2024-04-14 11:52:56] INFO root fetch - processPackages [py-research]: New version: [5.0.0] Old Version: [4.8.0]
+[2024-04-14 11:52:56] INFO root fetch - processPackages [THISDLChatBot]: New version: [2.0.1] Old Version: [2.0]
+[2024-04-14 11:52:56] INFO root fetch - processPackages [prerun]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 11:52:56] WARNING root fetch - processPackages [ipgogogo]: Skipping, unable to determine old version
+[2024-04-14 11:52:56] INFO root fetch - main [MainThread]: End processing [ipgogogo] error
+[2024-04-14 11:52:56] INFO root fetch - processPackages [emx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 11:52:56] INFO root fetch - processPackages [py-research]: Downloading https://files.pythonhosted.org/packages/71/7d/e82af5493d3384219d89404f87fc1310318b4f9d6937a6dca630af50854d/py_research-4.8.0.tar.gz
+[2024-04-14 11:52:56] WARNING root fetch - processPackages [ebsmanager]: Skipping, unable to determine old version
+[2024-04-14 11:52:56] INFO root fetch - main [MainThread]: End processing [ebsmanager] error
+[2024-04-14 11:52:57] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/84/57/492e4ed47a272df11a2c915dbebb92af0b7b34f6365ae322572aff744693/THISDLChatBot-2.0.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/4e/bd/470f91e1c861a6a6712987e08c7924ce1e6a524e0d30a4cc00e5dc2be28d/prerun-0.1.3.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/d0/72/db8702f65dd00ea850e2634e3e65914805c7866440c3edb5728770fe9944/emx-1.0.8-py3-none-any.whl
+[2024-04-14 11:52:57] INFO root fetch - processPackages [typeset-soren-n]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-14 11:52:57] INFO root fetch - processPackages [py-research]: Downloading https://files.pythonhosted.org/packages/b7/39/7d01cfe4e8aac4915f5848542918f3c17e43d5f06d507817c1e67196fa5e/py_research-5.0.0.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/c9/89/b9febe6479cceebd9279697c74391d0d11f9c4881c0f706cf12d34526f1f/THISDLChatBot-2.0.1.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [typeset-soren-n]: Downloading https://files.pythonhosted.org/packages/12/cb/6fed3f4ade98f936d2539aaea685c4afb4bdc12b9496160050d9d7b6e84f/typeset_soren_n-2.0.5.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [py-research]: executing diffoscope
+[2024-04-14 11:52:57] INFO root fetch - processPackages [py-research]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_research-4.8.0.tar.gz tmp/py_research-5.0.0.tar.gz --markdown 20240414/p/py-research/4.8.0-5.0.0/README.md --exclude *.pyd
+[2024-04-14 11:52:57] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/ca/f4/497224ce140f3d0bb585de2e093989720913af33aa696ed075ec3ba9b383/prerun-0.1.4.tar.gz
+[2024-04-14 11:52:57] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/24/55/887075545013adb2d53fed13cfe5e9cfa59decef2eee93b668eed757e378/emx-1.0.9-py3-none-any.whl
+[2024-04-14 11:52:57] INFO root fetch - processPackages [THISDLChatBot]: executing diffoscope
+[2024-04-14 11:52:57] INFO root fetch - processPackages [THISDLChatBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/THISDLChatBot-2.0.tar.gz tmp/THISDLChatBot-2.0.1.tar.gz --markdown 20240414/T/THISDLChatBot/2.0-2.0.1/README.md --exclude *.pyd
+[2024-04-14 11:52:57] INFO root fetch - processPackages [prerun]: executing diffoscope
+[2024-04-14 11:52:57] INFO root fetch - processPackages [prerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerun-0.1.3.tar.gz tmp/prerun-0.1.4.tar.gz --markdown 20240414/p/prerun/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 11:52:57] INFO root fetch - processPackages [emx]: executing diffoscope
+[2024-04-14 11:52:57] INFO root fetch - processPackages [emx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emx-1.0.8-py3-none-any.whl.zip tmp/emx-1.0.9-py3-none-any.whl.zip --markdown 20240414/e/emx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 11:52:57] INFO root fetch - processPackages [typeset-soren-n]: Downloading https://files.pythonhosted.org/packages/c3/9a/4bfa6118221b9cebb1e4e2806b96747e23483a183a296c49fd1fbc5bb93d/typeset_soren_n-2.0.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-04-14 11:52:58] INFO root fetch - processPackages [typeset-soren-n]: executing diffoscope
+[2024-04-14 11:52:58] INFO root fetch - processPackages [typeset-soren-n]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typeset_soren_n-2.0.5.tar.gz tmp/typeset_soren_n-2.0.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20240414/t/typeset-soren-n/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-04-14 11:52:58] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.1.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
+[2024-04-14 11:52:58] INFO root fetch - processPackages [py-research]: Remove: archive file [/home/abi/fetcher/tmp/py_research-4.8.0.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - processPackages [py-research]: Remove: archive file [/home/abi/fetcher/tmp/py_research-5.0.0.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [py-research]: success
+[2024-04-14 11:52:58] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.8-py3-none-any.whl.zip]
+[2024-04-14 11:52:58] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.9-py3-none-any.whl.zip]
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [emx]: success
+[2024-04-14 11:52:58] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.3.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.4.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [prerun]: success
+[2024-04-14 11:52:58] INFO root fetch - processPackages [typeset-soren-n]: Remove: archive file [/home/abi/fetcher/tmp/typeset_soren_n-2.0.5.tar.gz]
+[2024-04-14 11:52:58] INFO root fetch - processPackages [typeset-soren-n]: Remove: archive file [/home/abi/fetcher/tmp/typeset_soren_n-2.0.6-pp39-pypy39_pp73-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: End processing [typeset-soren-n]: success
+[2024-04-14 11:52:58] INFO root fetch - main [MainThread]: Store serial: [22757750]
