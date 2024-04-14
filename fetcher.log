@@ -2328,3 +2328,24 @@
 [2024-04-14 03:34:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404140132.tar.gz]
 [2024-04-14 03:34:17] INFO root fetch - main [MainThread]: End processing [onediff]: success
 [2024-04-14 03:34:17] INFO root fetch - main [MainThread]: Store serial: [22756071]
+[2024-04-14 03:36:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756071]
+[2024-04-14 03:36:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 03:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipez
+[2024-04-14 03:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invest-guard
+[2024-04-14 03:36:26] INFO root fetch - processPackages [pipez]: New version: [0.0.9] Old Version: [0.0.86]
+[2024-04-14 03:36:26] INFO root fetch - processPackages [invest-guard]: New version: [0.1.15] Old Version: [0.1.14]
+[2024-04-14 03:36:26] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/78/74/ea9cd77613da246e703c7a95b4d95910bf2f9c394bf08c0f8ef80c7f906d/invest_guard-0.1.14.tar.gz
+[2024-04-14 03:36:26] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/14/02/bd0b981075e13e498af472ab2e48268e34b274d24d4d0aeff47a00e27c39/pipez-0.0.86.tar.gz
+[2024-04-14 03:36:27] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/02/45/bb0343d5941a6ffabdd90077762814af9902aa232f56ed377f55386479d4/invest_guard-0.1.15-py3-none-any.whl
+[2024-04-14 03:36:27] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-14 03:36:27] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.14.tar.gz tmp/invest_guard-0.1.15-py3-none-any.whl.zip --markdown 20240414/i/invest-guard/0.1.14-0.1.15/README.md --exclude *.pyd
+[2024-04-14 03:36:27] INFO root fetch - processPackages [pipez]: Downloading https://files.pythonhosted.org/packages/a3/7b/b75e90898c1b52cbcd0b17ad4595e5ed0f6d4554e94be045c641282bc131/pipez-0.0.9.tar.gz
+[2024-04-14 03:36:27] INFO root fetch - processPackages [pipez]: executing diffoscope
+[2024-04-14 03:36:27] INFO root fetch - processPackages [pipez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipez-0.0.86.tar.gz tmp/pipez-0.0.9.tar.gz --markdown 20240414/p/pipez/0.0.86-0.0.9/README.md --exclude *.pyd
+[2024-04-14 03:36:27] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.14.tar.gz]
+[2024-04-14 03:36:27] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.15-py3-none-any.whl.zip]
+[2024-04-14 03:36:27] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-14 03:36:28] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.86.tar.gz]
+[2024-04-14 03:36:28] INFO root fetch - processPackages [pipez]: Remove: archive file [/home/abi/fetcher/tmp/pipez-0.0.9.tar.gz]
+[2024-04-14 03:36:28] INFO root fetch - main [MainThread]: End processing [pipez]: success
+[2024-04-14 03:36:28] INFO root fetch - main [MainThread]: Store serial: [22756077]
