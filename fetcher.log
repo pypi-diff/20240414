@@ -3488,3 +3488,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:47:59] WARNING root fetch - processPackages [buffalo-gym]: Skipping, unable to determine old version
 [2024-04-14 05:47:59] INFO root fetch - main [MainThread]: End processing [buffalo-gym] error
 [2024-04-14 05:47:59] INFO root fetch - main [MainThread]: Store serial: [22756427]
+[2024-04-14 05:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756427]
+[2024-04-14 05:50:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 05:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydecs
+[2024-04-14 05:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-04-14 05:50:07] INFO root fetch - processPackages [pydecs]: New version: [2024.4.6] Old Version: [2024.4.14]
+[2024-04-14 05:50:07] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/34/7a/31ff34ccf9b5967c7dcc0ceeb4df412c45d20ad59d3f15c11b8f64a913df/pydecs-2024.4.14.tar.gz
+[2024-04-14 05:50:07] INFO root fetch - processPackages [keras-nightly]: New version: [3.2.1.dev2024041403] Old Version: [3.2.1.dev2024041303]
+[2024-04-14 05:50:07] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/18/bb/9dcfec88f01785bf52a628b1b1d41654949bfa0b842c6cef7afba55367b6/pydecs-2024.4.6.tar.gz
+[2024-04-14 05:50:08] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/64/58/406e3b7674daa6c5f8c0eb624f34e9832aa3ed03378218194aabd3d052da/keras-nightly-3.2.1.dev2024041303.tar.gz
+[2024-04-14 05:50:08] INFO root fetch - processPackages [pydecs]: executing diffoscope
+[2024-04-14 05:50:08] INFO root fetch - processPackages [pydecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydecs-2024.4.14.tar.gz tmp/pydecs-2024.4.6.tar.gz --markdown 20240414/p/pydecs/2024.4.14-2024.4.6/README.md --exclude *.pyd
+[2024-04-14 05:50:08] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/61/c9/22f0ef5977c94d0fcc2dd531fffaadc73dae9560d6cf47305d4fd04534d6/keras_nightly-3.2.1.dev2024041403.tar.gz
+[2024-04-14 05:50:08] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-14 05:50:08] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nightly-3.2.1.dev2024041303.tar.gz tmp/keras_nightly-3.2.1.dev2024041403.tar.gz --markdown 20240414/k/keras-nightly/3.2.1.dev2024041303-3.2.1.dev2024041403/README.md --exclude *.pyd
+[2024-04-14 05:50:08] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.4.14.tar.gz]
+[2024-04-14 05:50:08] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.4.6.tar.gz]
+[2024-04-14 05:50:08] INFO root fetch - main [MainThread]: End processing [pydecs]: success
+[2024-04-14 05:50:10] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nightly-3.2.1.dev2024041303.tar.gz]
+[2024-04-14 05:50:10] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.2.1.dev2024041403.tar.gz]
+[2024-04-14 05:50:10] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-14 05:50:10] INFO root fetch - main [MainThread]: Store serial: [22756433]
