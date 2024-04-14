@@ -13776,3 +13776,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:50:34] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.6-py3-none-any.whl.zip]
 [2024-04-14 20:50:34] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
 [2024-04-14 20:50:34] INFO root fetch - main [MainThread]: Store serial: [22761216]
+[2024-04-14 20:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761216]
+[2024-04-14 20:52:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslth
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: archerdfu.bmp
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reverse-engineered-apis.flatastic
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pastream
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lampsible
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Fringes
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scmopy
+[2024-04-14 20:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spit
+[2024-04-14 20:52:43] INFO root fetch - processPackages [pyslth]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [archerdfu.bmp]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [scmopy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: New version: [24.4.14rc173500] Old Version: [24.4.12rc221710]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Downloading https://files.pythonhosted.org/packages/75/83/145aa54515db91a01924f960d6d5db3ea1bb51d72d955746d5aa881795a1/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz
+[2024-04-14 20:52:43] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/cc/3b/b10743df6ea0b60df9a14b5d91b645e49e70a77109be614d98720e088019/scmopy-0.0.5.tar.gz
+[2024-04-14 20:52:43] INFO root fetch - processPackages [spit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [Fringes]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [lampsible]: New version: [0.12.0] Old Version: [0.11.0]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [pastream]: New version: [0.2.0.post1] Old Version: [0.2.0.post0]
+[2024-04-14 20:52:43] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/86/b8/619b3f916f9531f3e17064d2227c1761e8490d7e3c7420c653b5c7b600c5/pyslth-0.0.1.tar.gz
+[2024-04-14 20:52:43] INFO root fetch - processPackages [archerdfu.bmp]: Downloading https://files.pythonhosted.org/packages/ac/56/2bc59d9e95b2d9620b402d4db42291b38339f40d6d8c87e76c980dcf2cdd/archerdfu_bmp-1.0.0.tar.gz
+[2024-04-14 20:52:43] INFO root fetch - processPackages [lampsible]: Downloading https://files.pythonhosted.org/packages/a9/53/9a9319df12a8f1ff83089b594ae564a44c9a277b6e7d8cfe95f9721ff105/lampsible-0.11.0.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/b0/7d/95b428f5054ceaa7df9d2570781e0a517f600a27a4088a45806eaf3f7ccf/spit-0.1.8.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [Fringes]: Downloading https://files.pythonhosted.org/packages/45/23/2bbe7a873d26059d47c0406054fc6e143e82cfad4a1fcf189ad592bf20eb/fringes-1.1.0.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [pastream]: Downloading https://files.pythonhosted.org/packages/2b/78/cc698779a12d058d5bd3ff04dc21ff32c46a386fde7f052110145cc072c8/pastream-0.2.0.post0.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Downloading https://files.pythonhosted.org/packages/06/dd/0237ee370a31a3a79661e274aa15156fdf3c25c1c593f24d6e10dbeee220/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/bd/47/02525a745e339b728c08312e35fc006a49dcf13c3e2214510ca1df3dc4c7/scmopy-0.0.6.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [archerdfu.bmp]: Downloading https://files.pythonhosted.org/packages/47/98/0c1347341f3c1930bb2f067e508c119b97c2aacad8e61547e25ac2c87a47/archerdfu_bmp-1.0.1.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz tmp/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz --markdown 20240414/r/reverse-engineered-apis.flatastic/24.4.12rc221710-24.4.14rc173500/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/07/d8/b245ee7e467dea0fdba8469759f3433cb17f58abce40cb5997f45cf6008e/pyslth-0.0.2.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [lampsible]: Downloading https://files.pythonhosted.org/packages/0f/90/4cf34f9b0216a5a02d2912c742afe7b18a56699b99fe85ed0d07b318e354/lampsible-0.12.0.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.5.tar.gz tmp/scmopy-0.0.6.tar.gz --markdown 20240414/s/scmopy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [Fringes]: Downloading https://files.pythonhosted.org/packages/37/d6/95812beef402aa6bdce6f5e85277620ae5c0f266f7ed4cc37a7ac790e411/fringes-1.1.1.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [archerdfu.bmp]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [archerdfu.bmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archerdfu_bmp-1.0.0.tar.gz tmp/archerdfu_bmp-1.0.1.tar.gz --markdown 20240414/a/archerdfu.bmp/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/a3/41/95c2b32d3c225f7fa0cd1b957d8a4e11da5b22cececd0396c623963ac6eb/spit-0.1.9.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [pastream]: Downloading https://files.pythonhosted.org/packages/d3/0e/8077845f80ed0c488609398e1ad5087e2d7a6f9708f5cb6a36b65756cd03/pastream-0.2.0.post1.tar.gz
+[2024-04-14 20:52:44] INFO root fetch - processPackages [lampsible]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [lampsible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lampsible-0.11.0.tar.gz tmp/lampsible-0.12.0.tar.gz --markdown 20240414/l/lampsible/0.11.0-0.12.0/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.0.1.tar.gz tmp/pyslth-0.0.2.tar.gz --markdown 20240414/p/pyslth/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [Fringes]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [Fringes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fringes-1.1.0.tar.gz tmp/fringes-1.1.1.tar.gz --markdown 20240414/F/Fringes/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-14 20:52:44] INFO root fetch - processPackages [spit]: executing diffoscope
+[2024-04-14 20:52:44] INFO root fetch - processPackages [spit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spit-0.1.8.tar.gz tmp/spit-0.1.9.tar.gz --markdown 20240414/s/spit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 20:52:45] INFO root fetch - processPackages [archerdfu.bmp]: Remove: archive file [/home/abi/fetcher/tmp/archerdfu_bmp-1.0.0.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [archerdfu.bmp]: Remove: archive file [/home/abi/fetcher/tmp/archerdfu_bmp-1.0.1.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [archerdfu.bmp]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.5.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.6.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [lampsible]: Remove: archive file [/home/abi/fetcher/tmp/lampsible-0.11.0.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [lampsible]: Remove: archive file [/home/abi/fetcher/tmp/lampsible-0.12.0.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [lampsible]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Remove: archive file [/home/abi/fetcher/tmp/reverse_engineered_apis_flatastic-24.4.12rc221710.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [reverse-engineered-apis.flatastic]: Remove: archive file [/home/abi/fetcher/tmp/reverse_engineered_apis_flatastic-24.4.14rc173500.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [reverse-engineered-apis.flatastic]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [Fringes]: Remove: archive file [/home/abi/fetcher/tmp/fringes-1.1.0.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [Fringes]: Remove: archive file [/home/abi/fetcher/tmp/fringes-1.1.1.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [Fringes]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.0.1.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.0.2.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-14 20:52:45] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.8.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.9.tar.gz]
+[2024-04-14 20:52:45] INFO root fetch - main [MainThread]: End processing [spit]: success
+[2024-04-14 20:52:46] INFO root fetch - processPackages [pastream]: executing diffoscope
+[2024-04-14 20:52:46] INFO root fetch - processPackages [pastream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pastream-0.2.0.post0.tar.gz tmp/pastream-0.2.0.post1.tar.gz --markdown 20240414/p/pastream/0.2.0.post0-0.2.0.post1/README.md --exclude *.pyd
+[2024-04-14 20:52:47] INFO root fetch - processPackages [pastream]: Remove: archive file [/home/abi/fetcher/tmp/pastream-0.2.0.post0.tar.gz]
+[2024-04-14 20:52:47] INFO root fetch - processPackages [pastream]: Remove: archive file [/home/abi/fetcher/tmp/pastream-0.2.0.post1.tar.gz]
+[2024-04-14 20:52:47] INFO root fetch - main [MainThread]: End processing [pastream]: success
+[2024-04-14 20:52:47] INFO root fetch - main [MainThread]: Store serial: [22761302]
