@@ -1390,3 +1390,33 @@
 [2024-04-14 02:15:37] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404140013.tar.gz]
 [2024-04-14 02:15:37] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-04-14 02:15:37] INFO root fetch - main [MainThread]: Store serial: [22755702]
+[2024-04-14 02:17:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755702]
+[2024-04-14 02:17:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 02:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-events-notify
+[2024-04-14 02:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytorch-ignite
+[2024-04-14 02:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-gitlab-runner
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdktf-gitlab-runner]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 02:17:46] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240413] Old Version: [0.6.0.dev20240412]
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.96] Old Version: [2.2.95]
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/8a/6e/f1c520e407ce3adf90b51d2d1ca84d283a08c808fc00c9deeff4f4734d82/cdktf-gitlab-runner-0.0.98.tar.gz
+[2024-04-14 02:17:46] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/1b/1f/2df36833237b63d5a8051b567ca29c5f7e253ec69a2b1ea29ebcda6bc5f3/pytorch-ignite-0.6.0.dev20240412.tar.gz
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/cd/1d/f2abeaf14967f1dd554f8f77e4a43493fa4a25d80b06cc502ab328d6d35c/cdk-events-notify-2.2.95.tar.gz
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdktf-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/59/f2/0d7ab5ec05a2b43bd92c00fd237afddb1e2770c7edaf03b1f7ddef6c0793/cdktf-gitlab-runner-0.0.99.tar.gz
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/00/ac/76f098b51f2ba24d10a233845787787293ff52b39dd95099cf3a0a3de14c/cdk-events-notify-2.2.96.tar.gz
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdktf-gitlab-runner]: executing diffoscope
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdktf-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gitlab-runner-0.0.98.tar.gz tmp/cdktf-gitlab-runner-0.0.99.tar.gz --markdown 20240414/c/cdktf-gitlab-runner/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-14 02:17:46] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.95.tar.gz tmp/cdk-events-notify-2.2.96.tar.gz --markdown 20240414/c/cdk-events-notify/2.2.95-2.2.96/README.md --exclude *.pyd
+[2024-04-14 02:17:47] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/8c/ca/f54e25a0e40f096e6487d77eb2dbb88c29298bde83e79b9d0decffc34058/pytorch-ignite-0.6.0.dev20240413.tar.gz
+[2024-04-14 02:17:47] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-04-14 02:17:47] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.6.0.dev20240412.tar.gz tmp/pytorch-ignite-0.6.0.dev20240413.tar.gz --markdown 20240414/p/pytorch-ignite/0.6.0.dev20240412-0.6.0.dev20240413/README.md --exclude *.pyd
+[2024-04-14 02:17:47] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.95.tar.gz]
+[2024-04-14 02:17:47] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.96.tar.gz]
+[2024-04-14 02:17:47] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-14 02:17:47] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.98.tar.gz]
+[2024-04-14 02:17:47] INFO root fetch - processPackages [cdktf-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-gitlab-runner-0.0.99.tar.gz]
+[2024-04-14 02:17:47] INFO root fetch - main [MainThread]: End processing [cdktf-gitlab-runner]: success
+[2024-04-14 02:17:48] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240412.tar.gz]
+[2024-04-14 02:17:48] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240413.tar.gz]
+[2024-04-14 02:17:48] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-04-14 02:17:48] INFO root fetch - main [MainThread]: Store serial: [22755711]
