@@ -10494,3 +10494,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:35:45] INFO root fetch - main [MainThread]: End processing [bencode2]: success
 [2024-04-14 16:35:45] INFO root fetch - main [MainThread]: End processing [bencode2]: success
 [2024-04-14 16:35:45] INFO root fetch - main [MainThread]: Store serial: [22759774]
+[2024-04-14 16:37:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759774]
+[2024-04-14 16:38:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 16:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlite-shift
+[2024-04-14 16:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gasflux
+[2024-04-14 16:38:02] WARNING root fetch - processPackages [gasflux]: Skipping, unable to determine old version
+[2024-04-14 16:38:02] INFO root fetch - main [MainThread]: End processing [gasflux] error
+[2024-04-14 16:38:02] WARNING root fetch - processPackages [sqlite-shift]: Skipping, unable to determine old version
+[2024-04-14 16:38:02] INFO root fetch - main [MainThread]: End processing [sqlite-shift] error
+[2024-04-14 16:38:02] INFO root fetch - main [MainThread]: Store serial: [22759842]
