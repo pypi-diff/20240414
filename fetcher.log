@@ -11582,3 +11582,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:50:59] INFO root fetch - processPackages [omnidep]: Remove: archive file [/home/abi/fetcher/tmp/omnidep-0.3.7.tar.gz]
 [2024-04-14 17:50:59] INFO root fetch - main [MainThread]: End processing [omnidep]: success
 [2024-04-14 17:50:59] INFO root fetch - main [MainThread]: Store serial: [22760348]
+[2024-04-14 17:53:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760348]
+[2024-04-14 17:53:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 17:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OmniGenome
+[2024-04-14 17:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prompthub
+[2024-04-14 17:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-appkit
+[2024-04-14 17:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docsible
+[2024-04-14 17:53:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jammy
+[2024-04-14 17:53:09] INFO root fetch - processPackages [prompthub]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 17:53:09] INFO root fetch - processPackages [jammy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 17:53:09] INFO root fetch - processPackages [prompthub]: Downloading https://files.pythonhosted.org/packages/d4/cb/7864d2df46e1903b43f7e9d117c9fbe2b61fbdbbd8e52c3495d41f852e72/prompthub-0.1.8-py3-none-any.whl
+[2024-04-14 17:53:09] INFO root fetch - processPackages [docsible]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 17:53:09] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/c9/fb/465ed333f5925034516e3985a883ef46f2d54621cb6b9d7d88aaed34c95f/jammy-0.1.8.tar.gz
+[2024-04-14 17:53:09] WARNING root fetch - processPackages [OmniGenome]: Skipping, unable to determine old version
+[2024-04-14 17:53:09] INFO root fetch - main [MainThread]: End processing [OmniGenome] error
+[2024-04-14 17:53:09] INFO root fetch - processPackages [drf-appkit]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-04-14 17:53:09] INFO root fetch - processPackages [docsible]: Downloading https://files.pythonhosted.org/packages/08/6d/0dc144c3e186c11f9655b56d89ce7339cfe84d70b8168d48377fe1163e5d/docsible-0.5.8.tar.gz
+[2024-04-14 17:53:09] INFO root fetch - processPackages [drf-appkit]: Downloading https://files.pythonhosted.org/packages/1a/00/433700916134aa58d91b3485cf0eaafe8f2d1b3968f7856263ab1eea90d1/drf-appkit-1.4.4.tar.gz
+[2024-04-14 17:53:09] INFO root fetch - processPackages [prompthub]: Downloading https://files.pythonhosted.org/packages/28/13/2ba8a34d32a36b1fbec69791faf871a1a85ee1e3136fe206bdeb0a29c2d8/prompthub-0.1.9-py3-none-any.whl
+[2024-04-14 17:53:09] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/bf/79/2d8d15d3e065bb7a39a673d2bbefe9d0374e7fc703f009d31eece23c6c19/jammy-0.1.9.tar.gz
+[2024-04-14 17:53:09] INFO root fetch - processPackages [docsible]: Downloading https://files.pythonhosted.org/packages/ed/66/d4d671ec94f3bb6b26af6d68a95414fed95f0a13610ffa5915b99a830da7/docsible-0.5.9.tar.gz
+[2024-04-14 17:53:09] INFO root fetch - processPackages [prompthub]: executing diffoscope
+[2024-04-14 17:53:09] INFO root fetch - processPackages [prompthub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prompthub-0.1.8-py3-none-any.whl.zip tmp/prompthub-0.1.9-py3-none-any.whl.zip --markdown 20240414/p/prompthub/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 17:53:09] INFO root fetch - processPackages [docsible]: executing diffoscope
+[2024-04-14 17:53:09] INFO root fetch - processPackages [docsible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docsible-0.5.8.tar.gz tmp/docsible-0.5.9.tar.gz --markdown 20240414/d/docsible/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 17:53:09] INFO root fetch - processPackages [jammy]: executing diffoscope
+[2024-04-14 17:53:09] INFO root fetch - processPackages [jammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jammy-0.1.8.tar.gz tmp/jammy-0.1.9.tar.gz --markdown 20240414/j/jammy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 17:53:09] INFO root fetch - processPackages [drf-appkit]: Downloading https://files.pythonhosted.org/packages/47/0a/fd59c7a88bc1f4c6a3a3d00c9a791b81fa0bff9f362dc9cb2f68627a0d0d/drf_appkit-1.4.5.tar.gz
+[2024-04-14 17:53:10] INFO root fetch - processPackages [drf-appkit]: executing diffoscope
+[2024-04-14 17:53:10] INFO root fetch - processPackages [drf-appkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-appkit-1.4.4.tar.gz tmp/drf_appkit-1.4.5.tar.gz --markdown 20240414/d/drf-appkit/1.4.4-1.4.5/README.md --exclude *.pyd
+[2024-04-14 17:53:10] INFO root fetch - processPackages [prompthub]: Remove: archive file [/home/abi/fetcher/tmp/prompthub-0.1.8-py3-none-any.whl.zip]
+[2024-04-14 17:53:10] INFO root fetch - processPackages [prompthub]: Remove: archive file [/home/abi/fetcher/tmp/prompthub-0.1.9-py3-none-any.whl.zip]
+[2024-04-14 17:53:10] INFO root fetch - main [MainThread]: End processing [prompthub]: success
+[2024-04-14 17:53:10] INFO root fetch - processPackages [docsible]: Remove: archive file [/home/abi/fetcher/tmp/docsible-0.5.8.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - processPackages [docsible]: Remove: archive file [/home/abi/fetcher/tmp/docsible-0.5.9.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - main [MainThread]: End processing [docsible]: success
+[2024-04-14 17:53:10] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.8.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.9.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - main [MainThread]: End processing [jammy]: success
+[2024-04-14 17:53:10] INFO root fetch - processPackages [drf-appkit]: Remove: archive file [/home/abi/fetcher/tmp/drf-appkit-1.4.4.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - processPackages [drf-appkit]: Remove: archive file [/home/abi/fetcher/tmp/drf_appkit-1.4.5.tar.gz]
+[2024-04-14 17:53:10] INFO root fetch - main [MainThread]: End processing [drf-appkit]: success
+[2024-04-14 17:53:10] INFO root fetch - main [MainThread]: Store serial: [22760363]
