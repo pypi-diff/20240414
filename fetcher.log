@@ -7925,3 +7925,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:26:12] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.148.tar.gz]
 [2024-04-14 13:26:12] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
 [2024-04-14 13:26:12] INFO root fetch - main [MainThread]: Store serial: [22758488]
+[2024-04-14 13:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758488]
+[2024-04-14 13:28:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bestdori-render
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygame-gui
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pertpy
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grill-names
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altscore
+[2024-04-14 13:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anjani
+[2024-04-14 13:28:27] WARNING root fetch - processPackages [bestdori-render]: Skipping, unable to determine old version
+[2024-04-14 13:28:27] INFO root fetch - main [MainThread]: End processing [bestdori-render] error
+[2024-04-14 13:28:27] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 13:28:27] INFO root fetch - processPackages [pygame-gui]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-14 13:28:27] INFO root fetch - processPackages [pertpy]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-14 13:28:27] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-14 13:28:27] INFO root fetch - processPackages [grill-names]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-04-14 13:28:27] INFO root fetch - processPackages [anjani]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-04-14 13:28:27] INFO root fetch - processPackages [pygame-gui]: Downloading https://files.pythonhosted.org/packages/b9/25/68d0c83715db73a69185bed847e1a4b1afcb62dc1c45cc760b22ebe3122f/pygame_gui-0.6.8-py3-none-any.whl
+[2024-04-14 13:28:27] INFO root fetch - processPackages [pertpy]: Downloading https://files.pythonhosted.org/packages/0d/bc/0f4da814850d6b0109f8919c40d35ac57d0ec2e65e6796b0294ec295e2f3/pertpy-0.6.0.tar.gz
+[2024-04-14 13:28:27] INFO root fetch - processPackages [grill-names]: Downloading https://files.pythonhosted.org/packages/2c/2f/a7f3b770cd0bfe869b9b5c11e85e7026f7e7980e31a0d811a0da83c3d836/grill-names-2.6.0.tar.gz
+[2024-04-14 13:28:27] WARNING root fetch - processPackages [pygame-gui]: Skipping package: exceeds size limit 23569387>=10485760
+[2024-04-14 13:28:27] INFO root fetch - main [MainThread]: End processing [pygame-gui] error
+[2024-04-14 13:28:27] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-14 13:28:27] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/a0/4b/02833bc01203d0b9addbff43d3b48c7c40022e828cbd0b8fdb836018bcac/anjani-2.8.1.tar.gz
+[2024-04-14 13:28:27] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-14 13:28:27] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240414/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 13:28:28] INFO root fetch - processPackages [grill-names]: Downloading https://files.pythonhosted.org/packages/2b/99/e0cd309403e2f149d27b7dc844ac41c5d8c5778ff7e1e3ddcb26dbdaf688/grill_names-2.6.1.tar.gz
+[2024-04-14 13:28:28] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/f9/9d/09023cad363092c71cd40b8312939b2e4d4bfbd47cae721893d04ab5a6d9/anjani-2.9.0.tar.gz
+[2024-04-14 13:28:28] INFO root fetch - processPackages [grill-names]: executing diffoscope
+[2024-04-14 13:28:28] INFO root fetch - processPackages [grill-names]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grill-names-2.6.0.tar.gz tmp/grill_names-2.6.1.tar.gz --markdown 20240414/g/grill-names/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-04-14 13:28:28] INFO root fetch - processPackages [anjani]: executing diffoscope
+[2024-04-14 13:28:28] INFO root fetch - processPackages [anjani]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anjani-2.8.1.tar.gz tmp/anjani-2.9.0.tar.gz --markdown 20240414/a/anjani/2.8.1-2.9.0/README.md --exclude *.pyd
+[2024-04-14 13:28:28] INFO root fetch - processPackages [pertpy]: Downloading https://files.pythonhosted.org/packages/b3/f2/e7ea3156bb5e8f7d8d73a49be30028915c126c2bffdac062899cde009914/pertpy-0.7.0.tar.gz
+[2024-04-14 13:28:28] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-14 13:28:28] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-14 13:28:28] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-14 13:28:28] INFO root fetch - processPackages [pertpy]: executing diffoscope
+[2024-04-14 13:28:28] INFO root fetch - processPackages [pertpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pertpy-0.6.0.tar.gz tmp/pertpy-0.7.0.tar.gz --markdown 20240414/p/pertpy/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-14 13:28:28] INFO root fetch - processPackages [grill-names]: Remove: archive file [/home/abi/fetcher/tmp/grill-names-2.6.0.tar.gz]
+[2024-04-14 13:28:28] INFO root fetch - processPackages [grill-names]: Remove: archive file [/home/abi/fetcher/tmp/grill_names-2.6.1.tar.gz]
+[2024-04-14 13:28:28] INFO root fetch - main [MainThread]: End processing [grill-names]: success
+[2024-04-14 13:28:29] INFO root fetch - processPackages [anjani]: Remove: archive file [/home/abi/fetcher/tmp/anjani-2.8.1.tar.gz]
+[2024-04-14 13:28:29] INFO root fetch - processPackages [anjani]: Remove: archive file [/home/abi/fetcher/tmp/anjani-2.9.0.tar.gz]
+[2024-04-14 13:28:29] INFO root fetch - main [MainThread]: End processing [anjani]: success
+[2024-04-14 13:28:29] INFO root fetch - processPackages [pertpy]: Remove: archive file [/home/abi/fetcher/tmp/pertpy-0.6.0.tar.gz]
+[2024-04-14 13:28:29] INFO root fetch - processPackages [pertpy]: Remove: archive file [/home/abi/fetcher/tmp/pertpy-0.7.0.tar.gz]
+[2024-04-14 13:28:29] INFO root fetch - main [MainThread]: End processing [pertpy]: success
+[2024-04-14 13:28:29] INFO root fetch - main [MainThread]: Store serial: [22758505]
