@@ -11806,3 +11806,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:04:19] INFO root fetch - processPackages [django_forms_plus]: Remove: archive file [/home/abi/fetcher/tmp/django_forms_plus-0.9.0.tar.gz]
 [2024-04-14 18:04:19] INFO root fetch - main [MainThread]: End processing [django_forms_plus]: success
 [2024-04-14 18:04:19] INFO root fetch - main [MainThread]: Store serial: [22760422]
+[2024-04-14 18:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760422]
+[2024-04-14 18:06:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 18:08:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760423]
+[2024-04-14 18:08:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 18:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libreppc
+[2024-04-14 18:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glook
+[2024-04-14 18:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gtsystem
+[2024-04-14 18:08:34] INFO root fetch - processPackages [gtsystem]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 18:08:34] WARNING root fetch - processPackages [libreppc]: Skipping, unable to determine old version
+[2024-04-14 18:08:34] INFO root fetch - main [MainThread]: End processing [libreppc] error
+[2024-04-14 18:08:34] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/fb/e1/409fb13ad058c7162f87da4e9c1ae182eed9ff49b7129e631063ce4ca618/gtsystem-0.0.8.tar.gz
+[2024-04-14 18:08:34] INFO root fetch - processPackages [glook]: New version: [0.0.4] Old Version: [0.0.3a0]
+[2024-04-14 18:08:34] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/89/15/cee2f392f921ba22d8563ef8787b0a892da1437fd6afe988307e97c69d24/glook-0.0.3a0-py3-none-any.whl
+[2024-04-14 18:08:34] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/dc/40/2d784e593c53f5db21712d67543b7265443d17b70cf7b24a57047146719a/gtsystem-0.0.9.tar.gz
+[2024-04-14 18:08:34] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-14 18:08:34] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.0.8.tar.gz tmp/gtsystem-0.0.9.tar.gz --markdown 20240414/g/gtsystem/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 18:08:34] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/38/a6/baf1e30e2bc79f726a327fae20aa79be8e66c5583acf40cf42b46bb92af5/glook-0.0.4-py3-none-any.whl
+[2024-04-14 18:08:35] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.0.8.tar.gz]
+[2024-04-14 18:08:35] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.0.9.tar.gz]
+[2024-04-14 18:08:35] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-14 18:08:35] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-04-14 18:08:35] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-0.0.3a0-py3-none-any.whl.zip tmp/glook-0.0.4-py3-none-any.whl.zip --markdown 20240414/g/glook/0.0.3a0-0.0.4/README.md --exclude *.pyd
+[2024-04-14 18:08:36] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.0.3a0-py3-none-any.whl.zip]
+[2024-04-14 18:08:36] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.0.4-py3-none-any.whl.zip]
+[2024-04-14 18:08:36] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-04-14 18:08:36] INFO root fetch - main [MainThread]: Store serial: [22760431]
