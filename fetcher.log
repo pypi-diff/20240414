@@ -8814,3 +8814,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:31:06] INFO root fetch - processPackages [llmflex]: Remove: archive file [/home/abi/fetcher/tmp/llmflex-0.1.4.tar.gz]
 [2024-04-14 14:31:06] INFO root fetch - main [MainThread]: End processing [llmflex]: success
 [2024-04-14 14:31:06] INFO root fetch - main [MainThread]: Store serial: [22758867]
+[2024-04-14 14:33:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758867]
+[2024-04-14 14:33:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anstrip
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utjls
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyastroweatherio
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-xe
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchx-nightly
+[2024-04-14 14:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: step-kit
+[2024-04-14 14:33:22] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev2] Old Version: [0.43.1.dev1]
+[2024-04-14 14:33:22] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240414] Old Version: [2.5.0b20240413]
+[2024-04-14 14:33:22] WARNING root fetch - processPackages [anstrip]: Skipping, unable to determine old version
+[2024-04-14 14:33:22] INFO root fetch - main [MainThread]: End processing [anstrip] error
+[2024-04-14 14:33:22] WARNING root fetch - processPackages [step-kit]: Skipping, unable to determine old version
+[2024-04-14 14:33:22] INFO root fetch - main [MainThread]: End processing [step-kit] error
+[2024-04-14 14:33:22] WARNING root fetch - processPackages [utjls]: Skipping, unable to determine old version
+[2024-04-14 14:33:22] INFO root fetch - main [MainThread]: End processing [utjls] error
+[2024-04-14 14:33:22] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/98/d6/6f5ffdbed2251eeaea5d6b4baca1107420e4dd346c50288700625cb0c5b9/pyastroweatherio-0.43.1.dev1.tar.gz
+[2024-04-14 14:33:22] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.4.14] Old Version: [2024.4.13]
+[2024-04-14 14:33:22] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/78/a9/58a15278f7a53d8baf356296e8a31ffd3a22f2ac051c5aa851b5d02fd972/bigdl_core_xe-2.5.0b20240413-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-14 14:33:22] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/45/c9/3b29afbcda3a48ad1e28cc9f15f48dbc1b18a5a1f84696abea6e36585c17/pyastroweatherio-0.43.1.dev2.tar.gz
+[2024-04-14 14:33:22] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 95125456>=10485760
+[2024-04-14 14:33:22] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-14 14:33:22] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/56/d3/749c7c2d8c2f62dbd23ddeaaaf7fb7159233c337552ab42d02991ffdee8e/torchx_nightly-2024.4.13-py3-none-any.whl
+[2024-04-14 14:33:22] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-14 14:33:22] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev1.tar.gz tmp/pyastroweatherio-0.43.1.dev2.tar.gz --markdown 20240414/p/pyastroweatherio/0.43.1.dev1-0.43.1.dev2/README.md --exclude *.pyd
+[2024-04-14 14:33:23] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/6d/2d/85f538390edafa6a09c9fb503470e52853df144f2ffa5d05bcb6d55ad89c/torchx_nightly-2024.4.14-py3-none-any.whl
+[2024-04-14 14:33:23] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-04-14 14:33:23] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.4.13-py3-none-any.whl.zip tmp/torchx_nightly-2024.4.14-py3-none-any.whl.zip --markdown 20240414/t/torchx-nightly/2024.4.13-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 14:33:23] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev1.tar.gz]
+[2024-04-14 14:33:23] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev2.tar.gz]
+[2024-04-14 14:33:23] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-14 14:33:24] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.13-py3-none-any.whl.zip]
+[2024-04-14 14:33:24] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.14-py3-none-any.whl.zip]
+[2024-04-14 14:33:24] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-04-14 14:33:24] INFO root fetch - main [MainThread]: Store serial: [22758891]
