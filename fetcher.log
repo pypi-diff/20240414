@@ -8220,3 +8220,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:47:40] INFO root fetch - processPackages [dlt]: Remove: archive file [/home/abi/fetcher/tmp/dlt-0.4.9a0.tar.gz]
 [2024-04-14 13:47:40] INFO root fetch - main [MainThread]: End processing [dlt]: success
 [2024-04-14 13:47:40] INFO root fetch - main [MainThread]: Store serial: [22758614]
+[2024-04-14 13:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758614]
+[2024-04-14 13:49:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sciveo
+[2024-04-14 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bin-package-manager
+[2024-04-14 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: silicon-analyser
+[2024-04-14 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jgtutils
+[2024-04-14 13:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slcl1butils
+[2024-04-14 13:49:55] INFO root fetch - processPackages [sciveo]: New version: [0.0.47] Old Version: [0.0.46]
+[2024-04-14 13:49:55] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-14 13:49:55] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 13:49:55] INFO root fetch - processPackages [bin-package-manager]: New version: [2.2.6] Old Version: [2.2.5]
+[2024-04-14 13:49:55] INFO root fetch - processPackages [slcl1butils]: New version: [2024.4.14] Old Version: [2024.2.23.post2]
+[2024-04-14 13:49:55] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/c4/5b/f90ee04512e0963f123c80828dbfa5652bae2c9e65261bfa8b84cb58d0b2/sciveo-0.0.46.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/6f/98/6f77cfaae8211fa3fe5d200f7390727074d4290d11b2d569cd31cfd6f64d/silicon-analyser-1.0.3.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [bin-package-manager]: Downloading https://files.pythonhosted.org/packages/c7/4c/aff993389c4355fdb0c4c72cdbfee2e2b80962eb60321aa8400d131b9970/bin_package_manager-2.2.5.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [slcl1butils]: Downloading https://files.pythonhosted.org/packages/95/f8/1fbdae4e34950a1512548c246d7628be0fa8a2eda623d32cb9622c0a424d/slcl1butils-2024.2.23.post2.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/3a/b1/d2880a86fc5e3018ba34f4de8a0e341e62a53bece5a1cca61468acffd4d8/silicon_analyser-1.0.4.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/ed/ed/36ae63e1af1f9fa17679f60c4ff0c2a3ccd628c455feaaa37b1cda0316a8/sciveo-0.0.47.tar.gz
+[2024-04-14 13:49:55] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-14 13:49:55] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon-analyser-1.0.3.tar.gz tmp/silicon_analyser-1.0.4.tar.gz --markdown 20240414/s/silicon-analyser/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-14 13:49:55] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 13:49:55] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 13:49:56] INFO root fetch - processPackages [sciveo]: executing diffoscope
+[2024-04-14 13:49:56] INFO root fetch - processPackages [sciveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciveo-0.0.46.tar.gz tmp/sciveo-0.0.47.tar.gz --markdown 20240414/s/sciveo/0.0.46-0.0.47/README.md --exclude *.pyd
+[2024-04-14 13:49:56] INFO root fetch - processPackages [bin-package-manager]: Downloading https://files.pythonhosted.org/packages/00/91/d2c27827ac1ba06a674fb616f9ddeaff4facb2fcdead29b409fca4e075b4/bin_package_manager-2.2.6.tar.gz
+[2024-04-14 13:49:56] INFO root fetch - processPackages [slcl1butils]: Downloading https://files.pythonhosted.org/packages/52/3f/7c992b4fcd50458b058cfc138aaa4e45c2d09107afc8f95a971657bd4d35/slcl1butils-2024.4.14.tar.gz
+[2024-04-14 13:49:56] INFO root fetch - processPackages [bin-package-manager]: executing diffoscope
+[2024-04-14 13:49:56] INFO root fetch - processPackages [bin-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bin_package_manager-2.2.5.tar.gz tmp/bin_package_manager-2.2.6.tar.gz --markdown 20240414/b/bin-package-manager/2.2.5-2.2.6/README.md --exclude *.pyd
+[2024-04-14 13:49:56] INFO root fetch - processPackages [slcl1butils]: executing diffoscope
+[2024-04-14 13:49:56] INFO root fetch - processPackages [slcl1butils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slcl1butils-2024.2.23.post2.tar.gz tmp/slcl1butils-2024.4.14.tar.gz --markdown 20240414/s/slcl1butils/2024.2.23.post2-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 13:49:56] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 13:49:56] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.46.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.47.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - main [MainThread]: End processing [sciveo]: success
+[2024-04-14 13:49:56] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.3.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.4.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-14 13:49:56] INFO root fetch - processPackages [bin-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/bin_package_manager-2.2.5.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - processPackages [bin-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/bin_package_manager-2.2.6.tar.gz]
+[2024-04-14 13:49:56] INFO root fetch - main [MainThread]: End processing [bin-package-manager]: success
+[2024-04-14 13:49:57] INFO root fetch - processPackages [slcl1butils]: Remove: archive file [/home/abi/fetcher/tmp/slcl1butils-2024.2.23.post2.tar.gz]
+[2024-04-14 13:49:57] INFO root fetch - processPackages [slcl1butils]: Remove: archive file [/home/abi/fetcher/tmp/slcl1butils-2024.4.14.tar.gz]
+[2024-04-14 13:49:57] INFO root fetch - main [MainThread]: End processing [slcl1butils]: success
+[2024-04-14 13:49:57] INFO root fetch - main [MainThread]: Store serial: [22758627]
