@@ -9465,3 +9465,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:23:37] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
 [2024-04-14 15:23:37] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
 [2024-04-14 15:23:37] INFO root fetch - main [MainThread]: Store serial: [22759135]
+[2024-04-14 15:25:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759135]
+[2024-04-14 15:26:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 15:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sc-file
+[2024-04-14 15:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtfx2console
+[2024-04-14 15:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: matchmeta
+[2024-04-14 15:26:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: testasteca
+[2024-04-14 15:26:26] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 15:26:26] INFO root fetch - processPackages [sc-file]: New version: [3.0.7] Old Version: [3.0.6]
+[2024-04-14 15:26:26] INFO root fetch - processPackages [matchmeta]: New version: [2024.4.14] Old Version: [2023.5.30]
+[2024-04-14 15:26:26] WARNING root fetch - processPackages [testasteca]: Skipping, unable to determine old version
+[2024-04-14 15:26:26] INFO root fetch - main [MainThread]: End processing [testasteca] error
+[2024-04-14 15:26:26] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 15:26:26] INFO root fetch - processPackages [sc-file]: Downloading https://files.pythonhosted.org/packages/5f/18/1f21abbdc9e149d22fb81ead2ced7086836dc4fd340a74350589c2bf136f/sc_file-3.0.6.tar.gz
+[2024-04-14 15:26:26] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/6c/2b/10f137c7eb467ab4c66f52a15a6768c07409008e77ad2a880705c53561bd/matchmeta-2023.5.30.tar.gz
+[2024-04-14 15:26:26] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/72/d5/85d2482c402c01fa38270b81f594fb6995018901411ffd115f6e75d2d70d/jgtfx2console-0.4.9.tar.gz
+[2024-04-14 15:26:26] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 15:26:26] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.8.tar.gz tmp/jgtfx2console-0.4.9.tar.gz --markdown 20240414/j/jgtfx2console/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 15:26:27] INFO root fetch - processPackages [sc-file]: Downloading https://files.pythonhosted.org/packages/73/f1/ae4e3a3a4b52a9e262715d2cb62bbcec43e65cd04c88436d084d07ae2c70/sc_file-3.0.7.tar.gz
+[2024-04-14 15:26:27] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/bd/2e/dde90b6183ee85a4bb67f153ac3e71c1b30b26ee119fab73334aaea4ed38/matchmeta-2024.4.14.tar.gz
+[2024-04-14 15:26:27] INFO root fetch - processPackages [sc-file]: executing diffoscope
+[2024-04-14 15:26:27] INFO root fetch - processPackages [sc-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc_file-3.0.6.tar.gz tmp/sc_file-3.0.7.tar.gz --markdown 20240414/s/sc-file/3.0.6-3.0.7/README.md --exclude *.pyd
+[2024-04-14 15:26:27] INFO root fetch - processPackages [matchmeta]: executing diffoscope
+[2024-04-14 15:26:27] INFO root fetch - processPackages [matchmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmeta-2023.5.30.tar.gz tmp/matchmeta-2024.4.14.tar.gz --markdown 20240414/m/matchmeta/2023.5.30-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 15:26:27] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.9.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 15:26:27] INFO root fetch - processPackages [sc-file]: Remove: archive file [/home/abi/fetcher/tmp/sc_file-3.0.6.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - processPackages [sc-file]: Remove: archive file [/home/abi/fetcher/tmp/sc_file-3.0.7.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - main [MainThread]: End processing [sc-file]: success
+[2024-04-14 15:26:27] INFO root fetch - processPackages [matchmeta]: Remove: archive file [/home/abi/fetcher/tmp/matchmeta-2023.5.30.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - processPackages [matchmeta]: Remove: archive file [/home/abi/fetcher/tmp/matchmeta-2024.4.14.tar.gz]
+[2024-04-14 15:26:27] INFO root fetch - main [MainThread]: End processing [matchmeta]: success
+[2024-04-14 15:26:27] INFO root fetch - main [MainThread]: Store serial: [22759145]
