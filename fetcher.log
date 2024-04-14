@@ -6295,3 +6295,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:37:33] WARNING root fetch - processPackages [asgebsmanager]: Skipping, unable to determine old version
 [2024-04-14 11:37:33] INFO root fetch - main [MainThread]: End processing [asgebsmanager] error
 [2024-04-14 11:37:33] INFO root fetch - main [MainThread]: Store serial: [22757644]
+[2024-04-14 11:39:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757644]
+[2024-04-14 11:39:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 11:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prerun
+[2024-04-14 11:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leaf-BasedLabs
+[2024-04-14 11:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtpy
+[2024-04-14 11:39:44] INFO root fetch - processPackages [prerun]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-14 11:39:44] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/0c/bb/6a65f4f18c4a292638fb0563c7f2387b482f81443d254ca8f9b09539e8bb/prerun-0.1.2.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [leaf-BasedLabs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 11:39:44] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 11:39:44] INFO root fetch - processPackages [leaf-BasedLabs]: Downloading https://files.pythonhosted.org/packages/2e/9a/2a7383e56ad04508608b0c24f76c9a43d7e721a36fc0fe3e4e2907bb19ff/leaf_BasedLabs-0.0.8.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/4e/bd/470f91e1c861a6a6712987e08c7924ce1e6a524e0d30a4cc00e5dc2be28d/prerun-0.1.3.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [prerun]: executing diffoscope
+[2024-04-14 11:39:44] INFO root fetch - processPackages [prerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerun-0.1.2.tar.gz tmp/prerun-0.1.3.tar.gz --markdown 20240414/p/prerun/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-14 11:39:44] INFO root fetch - processPackages [leaf-BasedLabs]: Downloading https://files.pythonhosted.org/packages/7a/d8/6f869d5869c410dc4877cce71a373e1fcb0a37a2925355f07dcd607b322f/leaf_basedlabs-0.0.9.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 11:39:44] INFO root fetch - processPackages [leaf-BasedLabs]: executing diffoscope
+[2024-04-14 11:39:44] INFO root fetch - processPackages [leaf-BasedLabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leaf_BasedLabs-0.0.8.tar.gz tmp/leaf_basedlabs-0.0.9.tar.gz --markdown 20240414/l/leaf-BasedLabs/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 11:39:45] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 11:39:45] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 11:39:45] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.2.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.3.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - main [MainThread]: End processing [prerun]: success
+[2024-04-14 11:39:45] INFO root fetch - processPackages [leaf-BasedLabs]: Remove: archive file [/home/abi/fetcher/tmp/leaf_BasedLabs-0.0.8.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - processPackages [leaf-BasedLabs]: Remove: archive file [/home/abi/fetcher/tmp/leaf_basedlabs-0.0.9.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - main [MainThread]: End processing [leaf-BasedLabs]: success
+[2024-04-14 11:39:45] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 11:39:45] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 11:39:45] INFO root fetch - main [MainThread]: Store serial: [22757653]
