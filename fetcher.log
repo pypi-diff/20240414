@@ -13265,3 +13265,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Remove: archive file [/home/abi/fetcher/tmp/pretix_plugin_attendance_certificate-0.1.9.tar.gz]
 [2024-04-14 20:09:08] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
 [2024-04-14 20:09:08] INFO root fetch - main [MainThread]: Store serial: [22761039]
+[2024-04-14 20:11:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761039]
+[2024-04-14 20:11:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shell-shockers-utils
+[2024-04-14 20:11:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioautomower
+[2024-04-14 20:11:17] WARNING root fetch - processPackages [shell-shockers-utils]: Skipping, unable to determine old version
+[2024-04-14 20:11:17] INFO root fetch - main [MainThread]: End processing [shell-shockers-utils] error
+[2024-04-14 20:11:17] INFO root fetch - processPackages [aioautomower]: New version: [2024.4.1b2] Old Version: [2024.4.1b0]
+[2024-04-14 20:11:17] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/37/d9/1deadd8235b37a1c81bf042d9ae275809de4923f515b75755da83cd1fbcd/aioautomower-2024.4.1b0.tar.gz
+[2024-04-14 20:11:17] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/59/0e/4eebd76f196bf8bd4c8fd91cb7166b098d2e70cc8f9e3f29201baade1748/aioautomower-2024.4.1b2.tar.gz
+[2024-04-14 20:11:18] INFO root fetch - processPackages [aioautomower]: executing diffoscope
+[2024-04-14 20:11:18] INFO root fetch - processPackages [aioautomower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioautomower-2024.4.1b0.tar.gz tmp/aioautomower-2024.4.1b2.tar.gz --markdown 20240414/a/aioautomower/2024.4.1b0-2024.4.1b2/README.md --exclude *.pyd
+[2024-04-14 20:11:18] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b0.tar.gz]
+[2024-04-14 20:11:18] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b2.tar.gz]
+[2024-04-14 20:11:18] INFO root fetch - main [MainThread]: End processing [aioautomower]: success
+[2024-04-14 20:11:18] INFO root fetch - main [MainThread]: Store serial: [22761047]
