@@ -4968,3 +4968,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:09:13] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.0.6.tar.gz]
 [2024-04-14 09:09:13] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
 [2024-04-14 09:09:13] INFO root fetch - main [MainThread]: Store serial: [22756988]
+[2024-04-14 09:11:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756988]
+[2024-04-14 09:11:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 09:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756988]
+[2024-04-14 09:13:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 09:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynovnc
+[2024-04-14 09:13:26] INFO root fetch - processPackages [pynovnc]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-14 09:13:26] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/c1/38/2aa92f62d339bc09979bfd3cdfc2c27b19454b5aba48658f84f4082209e9/pynovnc-1.1.1.tar.gz
+[2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: Downloading https://files.pythonhosted.org/packages/cb/21/05ba50f194e04b7005851c53b66c6779ef99c2b505c1839d4aac0e455b85/pynovnc-1.1.2.tar.gz
+[2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: executing diffoscope
+[2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynovnc-1.1.1.tar.gz tmp/pynovnc-1.1.2.tar.gz --markdown 20240414/p/pynovnc/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.1.1.tar.gz]
+[2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.1.2.tar.gz]
+[2024-04-14 09:13:27] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
+[2024-04-14 09:13:27] INFO root fetch - main [MainThread]: Store serial: [22756991]
