@@ -2567,3 +2567,23 @@
 [2024-04-14 04:15:00] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
 [2024-04-14 04:15:00] INFO root fetch - main [MainThread]: End processing [pyHana]: success
 [2024-04-14 04:15:00] INFO root fetch - main [MainThread]: Store serial: [22756141]
+[2024-04-14 04:17:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756141]
+[2024-04-14 04:17:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autopipeline
+[2024-04-14 04:17:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scikit-image
+[2024-04-14 04:17:08] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 04:17:08] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 04:17:08] INFO root fetch - processPackages [scikit-image]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-14 04:17:08] WARNING root fetch - processPackages [scikit-image]: fallback to get urls: [0.9.2]
+[2024-04-14 04:17:09] WARNING root fetch - processPackages [scikit-image]: None
+[2024-04-14 04:17:09] WARNING root fetch - processPackages [scikit-image]: None
+[2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 04:17:09] WARNING root fetch - processPackages [scikit-image]: unable to get url for both version [0.9.2]
+[2024-04-14 04:17:09] WARNING root fetch - processPackages [scikit-image]: None
+[2024-04-14 04:17:09] INFO root fetch - main [MainThread]: End processing [scikit-image] error
+[2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 04:17:09] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 04:17:09] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 04:17:09] INFO root fetch - main [MainThread]: Store serial: [22756153]
