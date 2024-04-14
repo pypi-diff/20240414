@@ -2846,3 +2846,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 04:38:49] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.42.tar.gz]
 [2024-04-14 04:38:49] INFO root fetch - main [MainThread]: End processing [monisha]: success
 [2024-04-14 04:38:49] INFO root fetch - main [MainThread]: Store serial: [22756231]
+[2024-04-14 04:40:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756231]
+[2024-04-14 04:40:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 04:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-catalog-objects
+[2024-04-14 04:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-04-14 04:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nacl-middleware
+[2024-04-14 04:40:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-web-core
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 04:40:58] INFO root fetch - processPackages [nacl-middleware]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-14 04:40:58] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-14 04:40:58] INFO root fetch - processPackages [nacl-middleware]: Downloading https://files.pythonhosted.org/packages/5c/3d/eca986b0a3e00ca42a7acd47ecd3be845b2740a433ac88e85e9fb3197988/nacl_middleware-0.0.4.tar.gz
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240414/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 04:40:59] INFO root fetch - processPackages [nacl-middleware]: Downloading https://files.pythonhosted.org/packages/b6/cb/e54f1599e56a3982a549c9b9ef9bfedc42380b7fb92735a0c82eb60562b2/nacl_middleware-0.0.5.tar.gz
+[2024-04-14 04:40:59] INFO root fetch - processPackages [nacl-middleware]: executing diffoscope
+[2024-04-14 04:40:59] INFO root fetch - processPackages [nacl-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacl_middleware-0.0.4.tar.gz tmp/nacl_middleware-0.0.5.tar.gz --markdown 20240414/n/nacl-middleware/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-14 04:40:59] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-14 04:40:59] INFO root fetch - processPackages [nacl-middleware]: Remove: archive file [/home/abi/fetcher/tmp/nacl_middleware-0.0.4.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - processPackages [nacl-middleware]: Remove: archive file [/home/abi/fetcher/tmp/nacl_middleware-0.0.5.tar.gz]
+[2024-04-14 04:40:59] INFO root fetch - main [MainThread]: End processing [nacl-middleware]: success
+[2024-04-14 04:40:59] INFO root fetch - main [MainThread]: Store serial: [22756243]
