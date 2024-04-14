@@ -8615,3 +8615,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-04-14 14:12:45] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
 [2024-04-14 14:12:45] INFO root fetch - main [MainThread]: Store serial: [22758791]
+[2024-04-14 14:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758791]
+[2024-04-14 14:15:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dtrc
+[2024-04-14 14:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataos-cookiecutter
+[2024-04-14 14:15:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtfxcon
+[2024-04-14 14:15:02] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dataos-cookiecutter]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dtrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 14:15:02] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/84/76/09893e2bb8c9673a5a810aa33d1f3e2fad5691566cdc67af1e456f5df742/dtrc-0.0.8.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dataos-cookiecutter]: Downloading https://files.pythonhosted.org/packages/f5/38/01cce88ff304b4fa2949160ab796e130b62aff67eace9d4ecd0ec14eca5f/dataos-cookiecutter-0.0.3.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 14:15:02] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/1d/0d/b26e24492a2141328a018620f30bbb36c89a4a7b314ca1f628824a0748a2/dtrc-0.0.9.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dataos-cookiecutter]: Downloading https://files.pythonhosted.org/packages/81/f2/984f3d8f1e8bc2e1f58499ddb4a0deb9371419abc1d64bf379b2e9e06c25/dataos-cookiecutter-0.0.4.tar.gz
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dtrc]: executing diffoscope
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dtrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtrc-0.0.8.tar.gz tmp/dtrc-0.0.9.tar.gz --markdown 20240414/d/dtrc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dataos-cookiecutter]: executing diffoscope
+[2024-04-14 14:15:02] INFO root fetch - processPackages [dataos-cookiecutter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataos-cookiecutter-0.0.3.tar.gz tmp/dataos-cookiecutter-0.0.4.tar.gz --markdown 20240414/d/dataos-cookiecutter/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 14:15:03] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 14:15:03] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.8.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.9.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [dtrc]: success
+[2024-04-14 14:15:03] INFO root fetch - processPackages [dataos-cookiecutter]: Remove: archive file [/home/abi/fetcher/tmp/dataos-cookiecutter-0.0.3.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - processPackages [dataos-cookiecutter]: Remove: archive file [/home/abi/fetcher/tmp/dataos-cookiecutter-0.0.4.tar.gz]
+[2024-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [dataos-cookiecutter]: success
+[2024-04-14 14:15:03] INFO root fetch - main [MainThread]: Store serial: [22758800]
