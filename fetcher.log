@@ -2105,3 +2105,17 @@
 [2024-04-14 03:05:04] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-14 03:05:04] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-14 03:05:04] INFO root fetch - main [MainThread]: Store serial: [22755976]
+[2024-04-14 03:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755976]
+[2024-04-14 03:07:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 03:09:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755977]
+[2024-04-14 03:09:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calibrated-explanations
+[2024-04-14 03:09:18] INFO root fetch - processPackages [calibrated-explanations]: New version: [0.3.2] Old Version: [0.3.1a0]
+[2024-04-14 03:09:18] INFO root fetch - processPackages [calibrated-explanations]: Downloading https://files.pythonhosted.org/packages/d0/7d/38daf5e561aaad53e238f380761abb21e929c23d4df0c1a6186b8cc16dbd/calibrated_explanations-0.3.1a0.tar.gz
+[2024-04-14 03:09:18] INFO root fetch - processPackages [calibrated-explanations]: Downloading https://files.pythonhosted.org/packages/96/02/be45109bf9fcbe7b2494de504a7a041e284de5f902003c6a0250df472802/calibrated_explanations-0.3.2.tar.gz
+[2024-04-14 03:09:18] INFO root fetch - processPackages [calibrated-explanations]: executing diffoscope
+[2024-04-14 03:09:18] INFO root fetch - processPackages [calibrated-explanations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calibrated_explanations-0.3.1a0.tar.gz tmp/calibrated_explanations-0.3.2.tar.gz --markdown 20240414/c/calibrated-explanations/0.3.1a0-0.3.2/README.md --exclude *.pyd
+[2024-04-14 03:09:19] INFO root fetch - processPackages [calibrated-explanations]: Remove: archive file [/home/abi/fetcher/tmp/calibrated_explanations-0.3.1a0.tar.gz]
+[2024-04-14 03:09:19] INFO root fetch - processPackages [calibrated-explanations]: Remove: archive file [/home/abi/fetcher/tmp/calibrated_explanations-0.3.2.tar.gz]
+[2024-04-14 03:09:19] INFO root fetch - main [MainThread]: End processing [calibrated-explanations]: success
+[2024-04-14 03:09:19] INFO root fetch - main [MainThread]: Store serial: [22755980]
