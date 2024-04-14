@@ -15591,3 +15591,22 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:51:37] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
 [2024-04-14 22:51:37] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
 [2024-04-14 22:51:37] INFO root fetch - main [MainThread]: Store serial: [22762392]
+[2024-04-14 22:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762392]
+[2024-04-14 22:53:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 22:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-14 22:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libreppc
+[2024-04-14 22:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: krypper-tgstat
+[2024-04-14 22:53:46] INFO root fetch - processPackages [libreppc]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 22:53:46] INFO root fetch - processPackages [sampa]: New version: [1.0.0.28] Old Version: [1.0.0.27]
+[2024-04-14 22:53:46] WARNING root fetch - processPackages [krypper-tgstat]: Skipping, unable to determine old version
+[2024-04-14 22:53:46] INFO root fetch - main [MainThread]: End processing [krypper-tgstat] error
+[2024-04-14 22:53:46] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/4d/51/35c7402994b21a824e499f59ba0db27fe8dd8a8f1f74e33e2676d53e649a/libreppc-0.1.4.tar.gz
+[2024-04-14 22:53:46] ERROR root fetch - processPackages [sampa]: Unable to fetch info: No such project/version 'sampa' 1.0.0.27
+[2024-04-14 22:53:46] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 22:53:46] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/38/b7/ddb7d775ac5d0f96ba898782ca395479e4f8391cc12576a568a2f62d95ab/libreppc-0.1.5.tar.gz
+[2024-04-14 22:53:46] INFO root fetch - processPackages [libreppc]: executing diffoscope
+[2024-04-14 22:53:46] INFO root fetch - processPackages [libreppc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreppc-0.1.4.tar.gz tmp/libreppc-0.1.5.tar.gz --markdown 20240414/l/libreppc/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 22:53:47] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.4.tar.gz]
+[2024-04-14 22:53:47] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.5.tar.gz]
+[2024-04-14 22:53:47] INFO root fetch - main [MainThread]: End processing [libreppc]: success
+[2024-04-14 22:53:47] INFO root fetch - main [MainThread]: Store serial: [22762402]
