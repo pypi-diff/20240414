@@ -11530,3 +11530,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:46:39] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.4.tar.gz]
 [2024-04-14 17:46:39] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
 [2024-04-14 17:46:39] INFO root fetch - main [MainThread]: Store serial: [22760328]
+[2024-04-14 17:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760328]
+[2024-04-14 17:48:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 17:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsbCalc
+[2024-04-14 17:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stabilizer-timelime
+[2024-04-14 17:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mobilenn
+[2024-04-14 17:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsbCalc
+[2024-04-14 17:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dekdjtools
+[2024-04-14 17:48:47] INFO root fetch - processPackages [jsbCalc]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 17:48:47] INFO root fetch - processPackages [jsbCalc]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 17:48:47] WARNING root fetch - processPackages [mobilenn]: Skipping, unable to determine old version
+[2024-04-14 17:48:47] INFO root fetch - main [MainThread]: End processing [mobilenn] error
+[2024-04-14 17:48:47] INFO root fetch - processPackages [stabilizer-timelime]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 17:48:47] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/d0/66/baf5baaee0511c9610d89cce1b1a49316c58b9c4155b6e744270317c31f1/jsbCalc-0.0.3-py3-none-any.whl
+[2024-04-14 17:48:47] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/d0/66/baf5baaee0511c9610d89cce1b1a49316c58b9c4155b6e744270317c31f1/jsbCalc-0.0.3-py3-none-any.whl
+[2024-04-14 17:48:47] INFO root fetch - processPackages [dekdjtools]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 17:48:48] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/6d/94/971fb9e876a221eedf9572a3185e695a20dbed571724c5f33426d2897652/stabilizer_timelime-0.0.8.tar.gz
+[2024-04-14 17:48:48] INFO root fetch - processPackages [dekdjtools]: Downloading https://files.pythonhosted.org/packages/58/40/85f15d40cb5a6dad00cf7435dee12594796d127c22974738782a76a6d4b1/dekdjtools-0.1.6.tar.gz
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/cb/f1/ccf2e323195b55dae5a8a749913db02f42c47b27cf5cc48c5af8040103b5/jsbCalc-0.0.4-py3-none-any.whl
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: Downloading https://files.pythonhosted.org/packages/cb/f1/ccf2e323195b55dae5a8a749913db02f42c47b27cf5cc48c5af8040103b5/jsbCalc-0.0.4-py3-none-any.whl
+[2024-04-14 17:48:48] INFO root fetch - processPackages [stabilizer-timelime]: Downloading https://files.pythonhosted.org/packages/c9/7b/e445b3efdb6b0be5dabd98e2e70e19600740b752c55ec12340d5748cb9d4/stabilizer_timelime-0.0.9.tar.gz
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: executing diffoscope
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsbCalc-0.0.3-py3-none-any.whl.zip tmp/jsbCalc-0.0.4-py3-none-any.whl.zip --markdown 20240414/j/jsbCalc/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: executing diffoscope
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsbCalc-0.0.3-py3-none-any.whl.zip tmp/jsbCalc-0.0.4-py3-none-any.whl.zip --markdown 20240414/j/jsbCalc/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 17:48:48] INFO root fetch - processPackages [stabilizer-timelime]: executing diffoscope
+[2024-04-14 17:48:48] INFO root fetch - processPackages [stabilizer-timelime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stabilizer_timelime-0.0.8.tar.gz tmp/stabilizer_timelime-0.0.9.tar.gz --markdown 20240414/s/stabilizer-timelime/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 17:48:48] INFO root fetch - processPackages [dekdjtools]: Downloading https://files.pythonhosted.org/packages/46/d1/6c0514a3c55ce8c313d19b8d692c464834955a3cce9dca202eb42ac236d9/dekdjtools-0.1.7.tar.gz
+[2024-04-14 17:48:48] INFO root fetch - processPackages [dekdjtools]: executing diffoscope
+[2024-04-14 17:48:48] INFO root fetch - processPackages [dekdjtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekdjtools-0.1.6.tar.gz tmp/dekdjtools-0.1.7.tar.gz --markdown 20240414/d/dekdjtools/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: Remove: archive file [/home/abi/fetcher/tmp/jsbCalc-0.0.3-py3-none-any.whl.zip]
+[2024-04-14 17:48:48] INFO root fetch - processPackages [jsbCalc]: Remove: archive file [/home/abi/fetcher/tmp/jsbCalc-0.0.4-py3-none-any.whl.zip]
+[2024-04-14 17:48:48] INFO root fetch - main [MainThread]: End processing [jsbCalc]: success
+[2024-04-14 17:48:49] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.0.8.tar.gz]
+[2024-04-14 17:48:49] INFO root fetch - processPackages [stabilizer-timelime]: Remove: archive file [/home/abi/fetcher/tmp/stabilizer_timelime-0.0.9.tar.gz]
+[2024-04-14 17:48:49] INFO root fetch - main [MainThread]: End processing [stabilizer-timelime]: success
+[2024-04-14 17:48:49] INFO root fetch - main [MainThread]: End processing [jsbCalc]: success
+[2024-04-14 17:48:49] INFO root fetch - processPackages [dekdjtools]: Remove: archive file [/home/abi/fetcher/tmp/dekdjtools-0.1.6.tar.gz]
+[2024-04-14 17:48:49] INFO root fetch - processPackages [dekdjtools]: Remove: archive file [/home/abi/fetcher/tmp/dekdjtools-0.1.7.tar.gz]
+[2024-04-14 17:48:49] INFO root fetch - main [MainThread]: End processing [dekdjtools]: success
+[2024-04-14 17:48:49] INFO root fetch - main [MainThread]: Store serial: [22760343]
