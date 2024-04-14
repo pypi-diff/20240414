@@ -2608,3 +2608,15 @@
 [2024-04-14 04:19:20] INFO root fetch - processPackages [aiooss2]: Remove: archive file [/home/abi/fetcher/tmp/aiooss2-0.2.9.tar.gz]
 [2024-04-14 04:19:20] INFO root fetch - main [MainThread]: End processing [aiooss2]: success
 [2024-04-14 04:19:20] INFO root fetch - main [MainThread]: Store serial: [22756171]
+[2024-04-14 04:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756171]
+[2024-04-14 04:21:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 04:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gen3-tracker
+[2024-04-14 04:21:28] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.3rc6] Old Version: [0.0.3rc5]
+[2024-04-14 04:21:28] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/bb/b3/deba74c24b42dad1429b7ce823503a0c930dbf0bafaab235d9f5016dd29a/gen3_tracker-0.0.3rc5.tar.gz
+[2024-04-14 04:21:28] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/f6/b9/691550c4f9d183cae2d86674865816a7d4d7c49e6d0c985d3ed43f7920c0/gen3_tracker-0.0.3rc6.tar.gz
+[2024-04-14 04:21:29] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-04-14 04:21:29] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.3rc5.tar.gz tmp/gen3_tracker-0.0.3rc6.tar.gz --markdown 20240414/g/gen3-tracker/0.0.3rc5-0.0.3rc6/README.md --exclude *.pyd
+[2024-04-14 04:21:29] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc5.tar.gz]
+[2024-04-14 04:21:29] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc6.tar.gz]
+[2024-04-14 04:21:29] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-04-14 04:21:29] INFO root fetch - main [MainThread]: Store serial: [22756174]
