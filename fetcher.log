@@ -3099,3 +3099,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:15:23] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240414.tar.gz]
 [2024-04-14 05:15:23] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-04-14 05:15:23] INFO root fetch - main [MainThread]: Store serial: [22756313]
+[2024-04-14 05:17:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756313]
+[2024-04-14 05:17:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 05:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-reminder
+[2024-04-14 05:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crunch-cli
+[2024-04-14 05:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ok-script
+[2024-04-14 05:17:32] INFO root fetch - processPackages [nonebot-plugin-reminder]: New version: [0.4.0] Old Version: [0.3.1.post2]
+[2024-04-14 05:17:32] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/1b/97/04428b431f0fc92fb549e4fdba65bf7c16865a22df4e656bc517d19e2a19/nonebot_plugin_reminder-0.3.1.post2.tar.gz
+[2024-04-14 05:17:32] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 05:17:32] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/01/c4/12822970ccf9a79bb2be95ce0aa72cef7f4d03b4d6190ffff0c1c37caab8/nonebot_plugin_reminder-0.4.0.tar.gz
+[2024-04-14 05:17:32] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-04-14 05:17:32] INFO root fetch - processPackages [nonebot-plugin-reminder]: executing diffoscope
+[2024-04-14 05:17:32] INFO root fetch - processPackages [nonebot-plugin-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz tmp/nonebot_plugin_reminder-0.4.0.tar.gz --markdown 20240414/n/nonebot-plugin-reminder/0.3.1.post2-0.4.0/README.md --exclude *.pyd
+[2024-04-14 05:17:33] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-04-14 05:17:33] INFO root fetch - processPackages [crunch-cli]: New version: [3.8.0] Old Version: [3.7.0]
+[2024-04-14 05:17:33] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-04-14 05:17:33] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240414/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 05:17:33] INFO root fetch - processPackages [crunch-cli]: Downloading https://files.pythonhosted.org/packages/a6/68/3204b4018e0a4358a3583507f2c7b1d66bf0b87a1ba46a41f3672946c719/crunch-cli-3.7.0.tar.gz
+[2024-04-14 05:17:33] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz]
+[2024-04-14 05:17:33] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.4.0.tar.gz]
+[2024-04-14 05:17:33] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-reminder]: success
+[2024-04-14 05:17:33] INFO root fetch - processPackages [crunch-cli]: Downloading https://files.pythonhosted.org/packages/72/2f/81154458247baed7f0ff5092c6019eabf8284c5169f579ac71907421c339/crunch_cli-3.8.0.tar.gz
+[2024-04-14 05:17:34] INFO root fetch - processPackages [crunch-cli]: executing diffoscope
+[2024-04-14 05:17:34] INFO root fetch - processPackages [crunch-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crunch-cli-3.7.0.tar.gz tmp/crunch_cli-3.8.0.tar.gz --markdown 20240414/c/crunch-cli/3.7.0-3.8.0/README.md --exclude *.pyd
+[2024-04-14 05:17:34] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-04-14 05:17:34] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-04-14 05:17:34] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-04-14 05:17:34] INFO root fetch - processPackages [crunch-cli]: Remove: archive file [/home/abi/fetcher/tmp/crunch-cli-3.7.0.tar.gz]
+[2024-04-14 05:17:34] INFO root fetch - processPackages [crunch-cli]: Remove: archive file [/home/abi/fetcher/tmp/crunch_cli-3.8.0.tar.gz]
+[2024-04-14 05:17:34] INFO root fetch - main [MainThread]: End processing [crunch-cli]: success
+[2024-04-14 05:17:34] INFO root fetch - main [MainThread]: Store serial: [22756322]
