@@ -6349,3 +6349,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:44:11] INFO root fetch - processPackages [YahooProject]: Remove: archive file [/home/abi/fetcher/tmp/yahooproject-0.2.tar.gz]
 [2024-04-14 11:44:11] INFO root fetch - main [MainThread]: End processing [YahooProject]: success
 [2024-04-14 11:44:11] INFO root fetch - main [MainThread]: Store serial: [22757660]
+[2024-04-14 11:46:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757660]
+[2024-04-14 11:46:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 11:48:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757660]
+[2024-04-14 11:48:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silicon-analyser
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docker-autotag
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ansible-doctor
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prometheus-pve-sd
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansible-later
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ansible-doctor]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-14 11:48:29] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-14 11:48:29] INFO root fetch - processPackages [docker-autotag]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-14 11:48:29] INFO root fetch - processPackages [prometheus-pve-sd]: New version: [3.2.8] Old Version: [3.2.7]
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ansible-later]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-14 11:48:29] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/6f/98/6f77cfaae8211fa3fe5d200f7390727074d4290d11b2d569cd31cfd6f64d/silicon-analyser-1.0.3.tar.gz
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ansible-doctor]: Downloading https://files.pythonhosted.org/packages/46/29/3eb431338f64234cd86f13a45cecaafe32690dedea960130c4c667eb1826/ansible_doctor-4.0.3.tar.gz
+[2024-04-14 11:48:29] INFO root fetch - processPackages [prometheus-pve-sd]: Downloading https://files.pythonhosted.org/packages/e6/8f/bd19ae8c667f268dc1180a58726d80433a2b2c8bb345db52aff6e7333f92/prometheus_pve_sd-3.2.7.tar.gz
+[2024-04-14 11:48:29] INFO root fetch - processPackages [ansible-later]: Downloading https://files.pythonhosted.org/packages/d2/82/3922aa1072b80cb947449e6b3b72133db2a73db64425c562b798ab4d1430/ansible_later-4.0.2.tar.gz
+[2024-04-14 11:48:29] INFO root fetch - processPackages [docker-autotag]: Downloading https://files.pythonhosted.org/packages/0a/ac/5063f537f7ebd24fd60897976d2f5ca789d6f0d1188cee5795081f5612cb/docker_autotag-2.0.3.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/3a/b1/d2880a86fc5e3018ba34f4de8a0e341e62a53bece5a1cca61468acffd4d8/silicon_analyser-1.0.4.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-doctor]: Downloading https://files.pythonhosted.org/packages/7a/7a/e688ca2bed58fefbb2c14b65c88f4436e7917c82f6ecab28a8d45dde1579/ansible_doctor-4.0.4.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [prometheus-pve-sd]: Downloading https://files.pythonhosted.org/packages/1c/a2/76ab229ba55dd4584627135142fdc0c3ea5f745c492eeacb7942b339f4a9/prometheus_pve_sd-3.2.8.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-later]: Downloading https://files.pythonhosted.org/packages/bc/12/e78e35e4b446df3ccdf6e360b8b0ba6047f074a979759246fd2971e23fb5/ansible_later-4.0.3.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-14 11:48:30] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon-analyser-1.0.3.tar.gz tmp/silicon_analyser-1.0.4.tar.gz --markdown 20240414/s/silicon-analyser/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-14 11:48:30] INFO root fetch - processPackages [docker-autotag]: Downloading https://files.pythonhosted.org/packages/4a/00/7bfecf97a8d1ac574febc8523d8b76ebbbbcb2a65f6ca4f63d8c92c54682/docker_autotag-2.0.4.tar.gz
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-doctor]: executing diffoscope
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-doctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_doctor-4.0.3.tar.gz tmp/ansible_doctor-4.0.4.tar.gz --markdown 20240414/a/ansible-doctor/4.0.3-4.0.4/README.md --exclude *.pyd
+[2024-04-14 11:48:30] INFO root fetch - processPackages [prometheus-pve-sd]: executing diffoscope
+[2024-04-14 11:48:30] INFO root fetch - processPackages [prometheus-pve-sd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus_pve_sd-3.2.7.tar.gz tmp/prometheus_pve_sd-3.2.8.tar.gz --markdown 20240414/p/prometheus-pve-sd/3.2.7-3.2.8/README.md --exclude *.pyd
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-later]: executing diffoscope
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-later]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_later-4.0.2.tar.gz tmp/ansible_later-4.0.3.tar.gz --markdown 20240414/a/ansible-later/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-14 11:48:30] INFO root fetch - processPackages [docker-autotag]: executing diffoscope
+[2024-04-14 11:48:30] INFO root fetch - processPackages [docker-autotag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docker_autotag-2.0.3.tar.gz tmp/docker_autotag-2.0.4.tar.gz --markdown 20240414/d/docker-autotag/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-04-14 11:48:30] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon-analyser-1.0.3.tar.gz]
+[2024-04-14 11:48:30] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.4.tar.gz]
+[2024-04-14 11:48:30] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-doctor]: Remove: archive file [/home/abi/fetcher/tmp/ansible_doctor-4.0.3.tar.gz]
+[2024-04-14 11:48:30] INFO root fetch - processPackages [ansible-doctor]: Remove: archive file [/home/abi/fetcher/tmp/ansible_doctor-4.0.4.tar.gz]
+[2024-04-14 11:48:30] INFO root fetch - main [MainThread]: End processing [ansible-doctor]: success
+[2024-04-14 11:48:31] INFO root fetch - processPackages [docker-autotag]: Remove: archive file [/home/abi/fetcher/tmp/docker_autotag-2.0.3.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - processPackages [docker-autotag]: Remove: archive file [/home/abi/fetcher/tmp/docker_autotag-2.0.4.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - main [MainThread]: End processing [docker-autotag]: success
+[2024-04-14 11:48:31] INFO root fetch - processPackages [ansible-later]: Remove: archive file [/home/abi/fetcher/tmp/ansible_later-4.0.2.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - processPackages [ansible-later]: Remove: archive file [/home/abi/fetcher/tmp/ansible_later-4.0.3.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - main [MainThread]: End processing [ansible-later]: success
+[2024-04-14 11:48:31] INFO root fetch - processPackages [prometheus-pve-sd]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_sd-3.2.7.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - processPackages [prometheus-pve-sd]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_sd-3.2.8.tar.gz]
+[2024-04-14 11:48:31] INFO root fetch - main [MainThread]: End processing [prometheus-pve-sd]: success
+[2024-04-14 11:48:31] INFO root fetch - main [MainThread]: Store serial: [22757675]
