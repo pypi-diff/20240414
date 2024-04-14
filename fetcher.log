@@ -6685,3 +6685,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:04:05] INFO root fetch - processPackages [edir]: Remove: archive file [/home/abi/fetcher/tmp/edir-2.9.1.tar.gz]
 [2024-04-14 12:04:05] INFO root fetch - main [MainThread]: End processing [edir]: success
 [2024-04-14 12:04:05] INFO root fetch - main [MainThread]: Store serial: [22757858]
+[2024-04-14 12:06:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757858]
+[2024-04-14 12:06:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 12:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openapi-service-client
+[2024-04-14 12:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stigg-api-client
+[2024-04-14 12:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stigg-api-client-v2
+[2024-04-14 12:06:16] INFO root fetch - processPackages [stigg-api-client-v2]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-14 12:06:16] INFO root fetch - processPackages [stigg-api-client]: New version: [1.98.1] Old Version: [1.98.0]
+[2024-04-14 12:06:16] INFO root fetch - processPackages [openapi-service-client]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 12:06:16] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/9e/ad/1fefc56e33c405d4aa0b5a382414f77d27efc7861a1cedce255c72c8f7d7/stigg_api_client_v2-1.98.0.tar.gz
+[2024-04-14 12:06:16] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/98/38/1422eb2135687adff8e0844dc4afcdcdd3c44140b3b89335819f7a678037/stigg_api_client-1.98.0.tar.gz
+[2024-04-14 12:06:17] INFO root fetch - processPackages [openapi-service-client]: Downloading https://files.pythonhosted.org/packages/f3/f6/6bd73db5106c26ae37af21fd80a15071e0f3cd2acb70f9d65b2dc5bb975b/openapi_service_client-0.0.5.tar.gz
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/da/d2/6b7a0c4e4205896d09042773fe56913ad646e6493900cc11613eabb26e05/stigg_api_client-1.98.1.tar.gz
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client-v2]: Downloading https://files.pythonhosted.org/packages/e4/6e/6806296621be882a70042a1d47ba321aad0c99c69b0e1a5f16346a41b4b5/stigg_api_client_v2-1.98.1.tar.gz
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-1.98.0.tar.gz tmp/stigg_api_client-1.98.1.tar.gz --markdown 20240414/s/stigg-api-client/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client-v2]: executing diffoscope
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client_v2-1.98.0.tar.gz tmp/stigg_api_client_v2-1.98.1.tar.gz --markdown 20240414/s/stigg-api-client-v2/1.98.0-1.98.1/README.md --exclude *.pyd
+[2024-04-14 12:06:17] INFO root fetch - processPackages [openapi-service-client]: Downloading https://files.pythonhosted.org/packages/d5/35/ba81f32de40e915f7d79dcd02cdcf7174dc8b1f08d7fe04f1e7ab9448ad4/openapi_service_client-0.0.6.tar.gz
+[2024-04-14 12:06:17] INFO root fetch - processPackages [openapi-service-client]: executing diffoscope
+[2024-04-14 12:06:17] INFO root fetch - processPackages [openapi-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_service_client-0.0.5.tar.gz tmp/openapi_service_client-0.0.6.tar.gz --markdown 20240414/o/openapi-service-client/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.0.tar.gz]
+[2024-04-14 12:06:17] INFO root fetch - processPackages [stigg-api-client]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client-1.98.1.tar.gz]
+[2024-04-14 12:06:17] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2024-04-14 12:06:18] INFO root fetch - processPackages [openapi-service-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi_service_client-0.0.5.tar.gz]
+[2024-04-14 12:06:18] INFO root fetch - processPackages [openapi-service-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi_service_client-0.0.6.tar.gz]
+[2024-04-14 12:06:18] INFO root fetch - main [MainThread]: End processing [openapi-service-client]: success
+[2024-04-14 12:06:18] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.0.tar.gz]
+[2024-04-14 12:06:18] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
+[2024-04-14 12:06:18] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
+[2024-04-14 12:06:18] INFO root fetch - main [MainThread]: Store serial: [22757867]
