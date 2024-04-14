@@ -11624,3 +11624,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:53:10] INFO root fetch - processPackages [drf-appkit]: Remove: archive file [/home/abi/fetcher/tmp/drf_appkit-1.4.5.tar.gz]
 [2024-04-14 17:53:10] INFO root fetch - main [MainThread]: End processing [drf-appkit]: success
 [2024-04-14 17:53:10] INFO root fetch - main [MainThread]: Store serial: [22760363]
+[2024-04-14 17:55:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760363]
+[2024-04-14 17:55:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: document-ingestor
+[2024-04-14 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Cp2kData
+[2024-04-14 17:55:20] INFO root fetch - processPackages [document-ingestor]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-14 17:55:20] INFO root fetch - processPackages [Cp2kData]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-14 17:55:21] INFO root fetch - processPackages [document-ingestor]: Downloading https://files.pythonhosted.org/packages/30/57/13ed42529ad07bddc982eab351c90c307c6ed0dc67dfff2d0d0968ad82bb/document_ingestor-0.0.9.tar.gz
+[2024-04-14 17:55:21] INFO root fetch - processPackages [Cp2kData]: Downloading https://files.pythonhosted.org/packages/83/d4/2209d860a1be6862d6238d1893b4f1f995dbecac2316d82bc44d2b12389b/Cp2kData-0.6.8.tar.gz
+[2024-04-14 17:55:21] INFO root fetch - processPackages [Cp2kData]: Downloading https://files.pythonhosted.org/packages/e5/26/5f5a71b2f5c3cf9171f393cf57120b71c013aa6738372f5c5a9639ddcf30/cp2kdata-0.6.9.tar.gz
+[2024-04-14 17:55:21] INFO root fetch - processPackages [document-ingestor]: Downloading https://files.pythonhosted.org/packages/f7/df/f105b95e1bf0112cbc7a12b4ed5f9c0caa4791cd60c96c2fa03588ae8c0d/document_ingestor-0.1.0.tar.gz
+[2024-04-14 17:55:21] INFO root fetch - processPackages [document-ingestor]: executing diffoscope
+[2024-04-14 17:55:21] INFO root fetch - processPackages [document-ingestor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/document_ingestor-0.0.9.tar.gz tmp/document_ingestor-0.1.0.tar.gz --markdown 20240414/d/document-ingestor/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-14 17:55:21] INFO root fetch - processPackages [Cp2kData]: executing diffoscope
+[2024-04-14 17:55:21] INFO root fetch - processPackages [Cp2kData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Cp2kData-0.6.8.tar.gz tmp/cp2kdata-0.6.9.tar.gz --markdown 20240414/C/Cp2kData/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-14 17:55:22] INFO root fetch - processPackages [document-ingestor]: Remove: archive file [/home/abi/fetcher/tmp/document_ingestor-0.0.9.tar.gz]
+[2024-04-14 17:55:22] INFO root fetch - processPackages [document-ingestor]: Remove: archive file [/home/abi/fetcher/tmp/document_ingestor-0.1.0.tar.gz]
+[2024-04-14 17:55:22] INFO root fetch - main [MainThread]: End processing [document-ingestor]: success
+[2024-04-14 17:55:22] INFO root fetch - processPackages [Cp2kData]: Remove: archive file [/home/abi/fetcher/tmp/Cp2kData-0.6.8.tar.gz]
+[2024-04-14 17:55:22] INFO root fetch - processPackages [Cp2kData]: Remove: archive file [/home/abi/fetcher/tmp/cp2kdata-0.6.9.tar.gz]
+[2024-04-14 17:55:22] INFO root fetch - main [MainThread]: End processing [Cp2kData]: success
+[2024-04-14 17:55:22] INFO root fetch - main [MainThread]: Store serial: [22760369]
