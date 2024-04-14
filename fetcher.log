@@ -6803,3 +6803,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:10:46] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024041309.tar.gz]
 [2024-04-14 12:10:46] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-14 12:10:46] INFO root fetch - main [MainThread]: Store serial: [22757898]
+[2024-04-14 12:12:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757898]
+[2024-04-14 12:12:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-bmob
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gaea-paddleclas
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-batch
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gbnf
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python_dev_utils
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PySAGA-cmd
+[2024-04-14 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dukes
+[2024-04-14 12:12:58] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 12:12:58] INFO root fetch - processPackages [PySAGA-cmd]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-14 12:12:58] INFO root fetch - processPackages [python_dev_utils]: New version: [1.0.6] Old Version: [0.2.0]
+[2024-04-14 12:12:58] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/62/01/795f8b5398dcc0a02b5470f8fca74dca1803624173e3380ed00871f5cedf/octomy-batch-2.0.4.tar.gz
+[2024-04-14 12:12:58] INFO root fetch - processPackages [python-bmob]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-14 12:12:58] WARNING root fetch - processPackages [gbnf]: Skipping, unable to determine old version
+[2024-04-14 12:12:58] INFO root fetch - main [MainThread]: End processing [gbnf] error
+[2024-04-14 12:12:58] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/a4/41/441dbe1b1a49836726a407da9563542901ca7ffb679054d54b4fe7912edd/PySAGA-cmd-1.2.3.tar.gz
+[2024-04-14 12:12:58] INFO root fetch - processPackages [gaea-paddleclas]: New version: [2.5.0.2] Old Version: [2.5.0.1]
+[2024-04-14 12:12:58] INFO root fetch - processPackages [dukes]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-14 12:12:58] INFO root fetch - processPackages [python-bmob]: Downloading https://files.pythonhosted.org/packages/46/58/9ead8614a8c156d78e8de3d15e2c97f1d5f3cfbb1df70620761bcbc60586/python-bmob-1.5.0.tar.gz
+[2024-04-14 12:12:58] INFO root fetch - processPackages [gaea-paddleclas]: Downloading https://files.pythonhosted.org/packages/24/07/d31efa54d0a4b3fa69341e5d39e366cb415c6815f346c33a19684d17866a/gaea_paddleclas-2.5.0.1-py3-none-any.whl
+[2024-04-14 12:12:58] INFO root fetch - processPackages [python_dev_utils]: Downloading https://files.pythonhosted.org/packages/bd/f9/7251b476b47e5d664ab8c81740c6c9c41dbd4365d35f7d733f1cd19abca8/python_dev_utils-0.2.0.tar.gz
+[2024-04-14 12:12:58] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/21/64/5f9581f7bd80a73d6fb9a2d24f3ac960855def6b3d4c975f74c9a2b08484/octomy-batch-2.0.5.tar.gz
+[2024-04-14 12:12:58] INFO root fetch - processPackages [dukes]: Downloading https://files.pythonhosted.org/packages/c3/99/12be8e1306df9e06db35ebc008e28e3762eaa3a2ea82353635e6f62003c2/dukes-1.2.2.tar.gz
+[2024-04-14 12:12:59] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.4.tar.gz tmp/octomy-batch-2.0.5.tar.gz --markdown 20240414/o/octomy-batch/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/77/e0/2bee7fa5b498cd7bb16b9c8ae121786b9b0ea00ee7e2be500fe09420d94f/PySAGA-cmd-1.2.4.tar.gz
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python-bmob]: Downloading https://files.pythonhosted.org/packages/ce/85/2542ed97d2927ac3f995c6354e16a236b42fc78d1aae52cc7eb8867a0c5e/python-bmob-1.6.0.tar.gz
+[2024-04-14 12:12:59] INFO root fetch - processPackages [PySAGA-cmd]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [PySAGA-cmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySAGA-cmd-1.2.3.tar.gz tmp/PySAGA-cmd-1.2.4.tar.gz --markdown 20240414/P/PySAGA-cmd/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python_dev_utils]: Downloading https://files.pythonhosted.org/packages/cd/6b/06450198f1cc361e1462d4bfe6465c2299c4817fbab5bbc1fe3df10923fe/python_dev_utils-1.0.6.tar.gz
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python-bmob]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python-bmob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-bmob-1.5.0.tar.gz tmp/python-bmob-1.6.0.tar.gz --markdown 20240414/p/python-bmob/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [gaea-paddleclas]: Downloading https://files.pythonhosted.org/packages/98/40/546ee3c319f70958031fbbe01f7eb5d3397fcc1098b4ddb959dff7895eed/gaea_paddleclas-2.5.0.2-py3-none-any.whl
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python_dev_utils]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python_dev_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_dev_utils-0.2.0.tar.gz tmp/python_dev_utils-1.0.6.tar.gz --markdown 20240414/p/python_dev_utils/0.2.0-1.0.6/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [gaea-paddleclas]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [gaea-paddleclas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaea_paddleclas-2.5.0.1-py3-none-any.whl.zip tmp/gaea_paddleclas-2.5.0.2-py3-none-any.whl.zip --markdown 20240414/g/gaea-paddleclas/2.5.0.1-2.5.0.2/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [dukes]: Downloading https://files.pythonhosted.org/packages/2e/13/0db90fd24e61eea3e1967b9010203c0c704ea3f7973e34ba37e839c9dba6/dukes-1.3.0-py3-none-any.whl
+[2024-04-14 12:12:59] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.4.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.5.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-14 12:12:59] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.3.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.4.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - main [MainThread]: End processing [PySAGA-cmd]: success
+[2024-04-14 12:12:59] INFO root fetch - processPackages [dukes]: executing diffoscope
+[2024-04-14 12:12:59] INFO root fetch - processPackages [dukes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dukes-1.2.2.tar.gz tmp/dukes-1.3.0-py3-none-any.whl.zip --markdown 20240414/d/dukes/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python-bmob]: Remove: archive file [/home/abi/fetcher/tmp/python-bmob-1.5.0.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - processPackages [python-bmob]: Remove: archive file [/home/abi/fetcher/tmp/python-bmob-1.6.0.tar.gz]
+[2024-04-14 12:12:59] INFO root fetch - main [MainThread]: End processing [python-bmob]: success
+[2024-04-14 12:13:00] INFO root fetch - processPackages [python_dev_utils]: Remove: archive file [/home/abi/fetcher/tmp/python_dev_utils-0.2.0.tar.gz]
+[2024-04-14 12:13:00] INFO root fetch - processPackages [python_dev_utils]: Remove: archive file [/home/abi/fetcher/tmp/python_dev_utils-1.0.6.tar.gz]
+[2024-04-14 12:13:00] INFO root fetch - main [MainThread]: End processing [python_dev_utils]: success
+[2024-04-14 12:13:00] INFO root fetch - processPackages [gaea-paddleclas]: Remove: archive file [/home/abi/fetcher/tmp/gaea_paddleclas-2.5.0.1-py3-none-any.whl.zip]
+[2024-04-14 12:13:00] INFO root fetch - processPackages [gaea-paddleclas]: Remove: archive file [/home/abi/fetcher/tmp/gaea_paddleclas-2.5.0.2-py3-none-any.whl.zip]
+[2024-04-14 12:13:00] INFO root fetch - main [MainThread]: End processing [gaea-paddleclas]: success
+[2024-04-14 12:13:01] INFO root fetch - processPackages [dukes]: Remove: archive file [/home/abi/fetcher/tmp/dukes-1.2.2.tar.gz]
+[2024-04-14 12:13:01] INFO root fetch - processPackages [dukes]: Remove: archive file [/home/abi/fetcher/tmp/dukes-1.3.0-py3-none-any.whl.zip]
+[2024-04-14 12:13:01] INFO root fetch - main [MainThread]: End processing [dukes]: success
+[2024-04-14 12:13:01] INFO root fetch - main [MainThread]: Store serial: [22757915]
