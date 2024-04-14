@@ -15023,3 +15023,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:16:17] WARNING root fetch - processPackages [aiosolaredge]: Skipping, unable to determine old version
 [2024-04-14 22:16:17] INFO root fetch - main [MainThread]: End processing [aiosolaredge] error
 [2024-04-14 22:16:17] INFO root fetch - main [MainThread]: Store serial: [22762130]
+[2024-04-14 22:18:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762130]
+[2024-04-14 22:18:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: railguns
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensols.mednlp
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: policyengine-us
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dsp-ifsc
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sampa
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: panthon
+[2024-04-14 22:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: datapools
+[2024-04-14 22:18:26] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-14 22:18:26] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 22:18:26] INFO root fetch - processPackages [policyengine-us]: New version: [0.734.1] Old Version: [0.734.0]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [dsp-ifsc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [panthon]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [railguns]: New version: [0.89] Old Version: [0.88]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [zensols.mednlp]: New version: [1.7.0] Old Version: [1.6.0]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/3f/95/37e3f83e440abb800f2e9e91f8b4ee38cdfc62742b1b08ba6dad39aab803/policyengine-us-0.734.0.tar.gz
+[2024-04-14 22:18:26] INFO root fetch - processPackages [datapools]: New version: [1.0.41] Old Version: [0.1.9]
+[2024-04-14 22:18:26] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/67/da/a642329b41d34ed6c0663a2d80332eb55958090ff36159c3a78aabe1e112/dsp_ifsc-0.0.1.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/1d/cb/47f48ccba4f74c3927c8ed78d1f4347f38f5f2d44341b9e12b4f1089b3f4/panthon-0.1.8.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [zensols.mednlp]: Downloading https://files.pythonhosted.org/packages/47/90/d46bba5d4a04122c467e70f48f037851bd73358cbd315d21f2d833498be4/zensols.mednlp-1.6.0-py3-none-any.whl
+[2024-04-14 22:18:27] INFO root fetch - processPackages [railguns]: Downloading https://files.pythonhosted.org/packages/2a/02/b5102196436444368a0d41a84e9f8ee04ebef67f56eb11951e5f55c0899f/railguns-0.88.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/30/7e/dfd5322700483ff73670243a8add54c437ca32442f85e5d5f8c64a090feb/datapools-0.1.9.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/4e/0b/174fbb05c84a38730d194ab70254bdf2289b0e68d6e74b0dd4649d4c36bd/policyengine-us-0.734.1.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [dsp-ifsc]: Downloading https://files.pythonhosted.org/packages/80/7c/a51fc50aed63941e45c90919a33347cd39ac4ee18cd386453de5e762f752/dsp_ifsc-0.0.2.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [panthon]: Downloading https://files.pythonhosted.org/packages/f8/2a/101551eccc0624791625a321cf3765dca2c7b78151ae1da60067b3842ca5/panthon-0.1.9.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [railguns]: Downloading https://files.pythonhosted.org/packages/1c/30/3467d01f8c8184fda7c0974c51f46772e436ee816a091bbccf7824c13a39/railguns-0.89.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [zensols.mednlp]: Downloading https://files.pythonhosted.org/packages/d0/6d/c082ffcfd9e5a07a4c0d3635f5f72c343a10cd253784c351a88494cac0a0/zensols.mednlp-1.7.0-py3-none-any.whl
+[2024-04-14 22:18:27] INFO root fetch - processPackages [dsp-ifsc]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [dsp-ifsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsp_ifsc-0.0.1.tar.gz tmp/dsp_ifsc-0.0.2.tar.gz --markdown 20240414/d/dsp-ifsc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-14 22:18:27] INFO root fetch - processPackages [panthon]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [panthon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panthon-0.1.8.tar.gz tmp/panthon-0.1.9.tar.gz --markdown 20240414/p/panthon/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 22:18:27] INFO root fetch - processPackages [railguns]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [railguns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/railguns-0.88.tar.gz tmp/railguns-0.89.tar.gz --markdown 20240414/r/railguns/0.88-0.89/README.md --exclude *.pyd
+[2024-04-14 22:18:27] INFO root fetch - processPackages [zensols.mednlp]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [zensols.mednlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.mednlp-1.6.0-py3-none-any.whl.zip tmp/zensols.mednlp-1.7.0-py3-none-any.whl.zip --markdown 20240414/z/zensols.mednlp/1.6.0-1.7.0/README.md --exclude *.pyd
+[2024-04-14 22:18:27] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/3a/69/26e4984b07d860abb54d26ab67672c33caf7b926fff997a4beaa482447ee/datapools-1.0.41.tar.gz
+[2024-04-14 22:18:27] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.734.0.tar.gz tmp/policyengine-us-0.734.1.tar.gz --markdown 20240414/p/policyengine-us/0.734.0-0.734.1/README.md --exclude *.pyd
+[2024-04-14 22:18:27] INFO root fetch - processPackages [datapools]: executing diffoscope
+[2024-04-14 22:18:27] INFO root fetch - processPackages [datapools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datapools-0.1.9.tar.gz tmp/datapools-1.0.41.tar.gz --markdown 20240414/d/datapools/0.1.9-1.0.41/README.md --exclude *.pyd
+[2024-04-14 22:18:28] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.1.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - processPackages [dsp-ifsc]: Remove: archive file [/home/abi/fetcher/tmp/dsp_ifsc-0.0.2.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - main [MainThread]: End processing [dsp-ifsc]: success
+[2024-04-14 22:18:28] INFO root fetch - processPackages [railguns]: Remove: archive file [/home/abi/fetcher/tmp/railguns-0.88.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - processPackages [railguns]: Remove: archive file [/home/abi/fetcher/tmp/railguns-0.89.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - main [MainThread]: End processing [railguns]: success
+[2024-04-14 22:18:28] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.1.8.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - processPackages [panthon]: Remove: archive file [/home/abi/fetcher/tmp/panthon-0.1.9.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - main [MainThread]: End processing [panthon]: success
+[2024-04-14 22:18:28] INFO root fetch - processPackages [zensols.mednlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.mednlp-1.6.0-py3-none-any.whl.zip]
+[2024-04-14 22:18:28] INFO root fetch - processPackages [zensols.mednlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.mednlp-1.7.0-py3-none-any.whl.zip]
+[2024-04-14 22:18:28] INFO root fetch - main [MainThread]: End processing [zensols.mednlp]: success
+[2024-04-14 22:18:28] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-0.1.9.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.41.tar.gz]
+[2024-04-14 22:18:28] INFO root fetch - main [MainThread]: End processing [datapools]: success
+[2024-04-14 22:18:59] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.734.0.tar.gz]
+[2024-04-14 22:18:59] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.734.1.tar.gz]
+[2024-04-14 22:18:59] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-04-14 22:18:59] INFO root fetch - main [MainThread]: Store serial: [22762150]
