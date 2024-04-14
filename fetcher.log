@@ -5168,3 +5168,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:49:48] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.tar.gz]
 [2024-04-14 09:49:48] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
 [2024-04-14 09:49:48] INFO root fetch - main [MainThread]: Store serial: [22757068]
+[2024-04-14 09:51:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757068]
+[2024-04-14 09:51:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scs-analysis
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-option-deps
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtapy
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scs-core
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansar-connect
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jgtutils
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: outlier-detection-package
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.148] Old Version: [0.1.146]
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/5a/23/6cd5d42aa39a4ede143dad250fda31d25bd02fe9f0036fa4852d1fb130bc/ansar_connect-0.1.146.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtapy]: New version: [1.9.7] Old Version: [1.9.6]
+[2024-04-14 09:51:56] INFO root fetch - processPackages [scs-analysis]: New version: [3.8.2] Old Version: [3.8.1]
+[2024-04-14 09:51:56] WARNING root fetch - processPackages [test-option-deps]: Skipping, unable to determine old version
+[2024-04-14 09:51:56] INFO root fetch - main [MainThread]: End processing [test-option-deps] error
+[2024-04-14 09:51:56] WARNING root fetch - processPackages [outlier-detection-package]: Skipping, unable to determine old version
+[2024-04-14 09:51:56] INFO root fetch - main [MainThread]: End processing [outlier-detection-package] error
+[2024-04-14 09:51:56] INFO root fetch - processPackages [scs-core]: New version: [3.9.5] Old Version: [3.9.4]
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtapy]: Downloading https://files.pythonhosted.org/packages/b5/6d/b28f2c7c8c2ec8498b47f75cd71277681c7bcba52892a874603955098029/jgtapy-1.9.6.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [scs-analysis]: Downloading https://files.pythonhosted.org/packages/5b/ce/b8d019c9a9705f7ca17f5947b33cbc91966f582c0cdb016f5948be68b2a2/scs-analysis-3.8.1.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [scs-core]: Downloading https://files.pythonhosted.org/packages/16/0f/cfe27fc1c173550fcd053816dea81df44643bae2859d7c1edf0cce125741/scs-core-3.9.4.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/4b/0c/0d745cc21a81ebfd6061626649b95e4c064b8022039b3554fef64948f68f/ansar_connect-0.1.148.tar.gz
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 09:51:56] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 09:51:57] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 09:51:57] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.146.tar.gz tmp/ansar_connect-0.1.148.tar.gz --markdown 20240414/a/ansar-connect/0.1.146-0.1.148/README.md --exclude *.pyd
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-analysis]: Downloading https://files.pythonhosted.org/packages/2c/4e/dd474a2944b2a45ef57e77cb83e761e50877ab8b8aac582cc7e3d66b5302/scs_analysis-3.8.2.tar.gz
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-core]: Downloading https://files.pythonhosted.org/packages/57/af/3987873caff8cb82812e00ed94241928f47c7c6cb52e25c3163689be282c/scs-core-3.9.5.tar.gz
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-analysis]: executing diffoscope
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scs-analysis-3.8.1.tar.gz tmp/scs_analysis-3.8.2.tar.gz --markdown 20240414/s/scs-analysis/3.8.1-3.8.2/README.md --exclude *.pyd
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-core]: executing diffoscope
+[2024-04-14 09:51:57] INFO root fetch - processPackages [scs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scs-core-3.9.4.tar.gz tmp/scs-core-3.9.5.tar.gz --markdown 20240414/s/scs-core/3.9.4-3.9.5/README.md --exclude *.pyd
+[2024-04-14 09:51:57] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 09:51:57] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 09:51:57] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 09:51:57] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.146.tar.gz]
+[2024-04-14 09:51:57] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.148.tar.gz]
+[2024-04-14 09:51:57] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 09:51:57] INFO root fetch - processPackages [jgtapy]: Downloading https://files.pythonhosted.org/packages/e3/e2/2c99a216db4ff1eff5033fd09d1505814b9ed55395b8c17ff11c84aa4688/jgtapy-1.9.7.tar.gz
+[2024-04-14 09:51:58] INFO root fetch - processPackages [jgtapy]: executing diffoscope
+[2024-04-14 09:51:58] INFO root fetch - processPackages [jgtapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtapy-1.9.6.tar.gz tmp/jgtapy-1.9.7.tar.gz --markdown 20240414/j/jgtapy/1.9.6-1.9.7/README.md --exclude *.pyd
+[2024-04-14 09:51:58] INFO root fetch - processPackages [scs-analysis]: Remove: archive file [/home/abi/fetcher/tmp/scs-analysis-3.8.1.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - processPackages [scs-analysis]: Remove: archive file [/home/abi/fetcher/tmp/scs_analysis-3.8.2.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - main [MainThread]: End processing [scs-analysis]: success
+[2024-04-14 09:51:58] INFO root fetch - processPackages [jgtapy]: Remove: archive file [/home/abi/fetcher/tmp/jgtapy-1.9.6.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - processPackages [jgtapy]: Remove: archive file [/home/abi/fetcher/tmp/jgtapy-1.9.7.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - main [MainThread]: End processing [jgtapy]: success
+[2024-04-14 09:51:58] INFO root fetch - processPackages [scs-core]: Remove: archive file [/home/abi/fetcher/tmp/scs-core-3.9.4.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - processPackages [scs-core]: Remove: archive file [/home/abi/fetcher/tmp/scs-core-3.9.5.tar.gz]
+[2024-04-14 09:51:58] INFO root fetch - main [MainThread]: End processing [scs-core]: success
+[2024-04-14 09:51:58] INFO root fetch - main [MainThread]: Store serial: [22757092]
