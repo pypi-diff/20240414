@@ -2131,3 +2131,15 @@
 [2024-04-14 03:11:30] INFO root fetch - processPackages [apprise]: Remove: archive file [/home/abi/fetcher/tmp/apprise-1.7.6.tar.gz]
 [2024-04-14 03:11:30] INFO root fetch - main [MainThread]: End processing [apprise]: success
 [2024-04-14 03:11:30] INFO root fetch - main [MainThread]: Store serial: [22755983]
+[2024-04-14 03:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755983]
+[2024-04-14 03:13:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lama2923
+[2024-04-14 03:13:39] INFO root fetch - processPackages [lama2923]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-14 03:13:39] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/d3/d9/fa0f9ad93f9b8b343ba4ad41f77b2f8bba48ac5b840895acc97ada0099e1/lama2923-0.7.1.tar.gz
+[2024-04-14 03:13:39] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/68/3c/f735ffa05c2f3c2787e4b4484838979ce7b58185cc3d2d4f604f5c838254/lama2923-0.7.2.tar.gz
+[2024-04-14 03:13:40] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-04-14 03:13:40] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-0.7.1.tar.gz tmp/lama2923-0.7.2.tar.gz --markdown 20240414/l/lama2923/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-14 03:13:40] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.1.tar.gz]
+[2024-04-14 03:13:40] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-0.7.2.tar.gz]
+[2024-04-14 03:13:40] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-04-14 03:13:40] INFO root fetch - main [MainThread]: Store serial: [22755986]
