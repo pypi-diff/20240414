@@ -5222,3 +5222,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:51:58] INFO root fetch - processPackages [scs-core]: Remove: archive file [/home/abi/fetcher/tmp/scs-core-3.9.5.tar.gz]
 [2024-04-14 09:51:58] INFO root fetch - main [MainThread]: End processing [scs-core]: success
 [2024-04-14 09:51:58] INFO root fetch - main [MainThread]: Store serial: [22757092]
+[2024-04-14 09:54:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757092]
+[2024-04-14 09:54:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 09:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: x4c
+[2024-04-14 09:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySAGA-cmd
+[2024-04-14 09:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bencode2
+[2024-04-14 09:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretext
+[2024-04-14 09:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: x4c
+[2024-04-14 09:54:07] WARNING root fetch - processPackages [x4c]: Skipping, unable to determine old version
+[2024-04-14 09:54:07] INFO root fetch - main [MainThread]: End processing [x4c] error
+[2024-04-14 09:54:07] WARNING root fetch - processPackages [x4c]: Skipping, unable to determine old version
+[2024-04-14 09:54:07] INFO root fetch - main [MainThread]: End processing [x4c] error
+[2024-04-14 09:54:07] WARNING root fetch - processPackages [bencode2]: Skipping, unable to determine old version
+[2024-04-14 09:54:07] INFO root fetch - main [MainThread]: End processing [bencode2] error
+[2024-04-14 09:54:07] INFO root fetch - processPackages [PySAGA-cmd]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-14 09:54:07] INFO root fetch - processPackages [pretext]: New version: [2.3.9.dev20240302] Old Version: [2.3.9.dev20240229]
+[2024-04-14 09:54:07] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/e5/c3/7d0c63e9bd87820fe6b5967c6015ea57b2929e905d0bd1e2529cef3deca0/PySAGA-cmd-1.2.2.tar.gz
+[2024-04-14 09:54:07] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/ce/64/85bc57578fbf3322df1cb4958d7c6cf0dda4d8184eb5611f8245cb5d98eb/pretext-2.3.9.dev20240229.tar.gz
+[2024-04-14 09:54:08] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/a4/41/441dbe1b1a49836726a407da9563542901ca7ffb679054d54b4fe7912edd/PySAGA-cmd-1.2.3.tar.gz
+[2024-04-14 09:54:08] INFO root fetch - processPackages [PySAGA-cmd]: executing diffoscope
+[2024-04-14 09:54:08] INFO root fetch - processPackages [PySAGA-cmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySAGA-cmd-1.2.2.tar.gz tmp/PySAGA-cmd-1.2.3.tar.gz --markdown 20240414/P/PySAGA-cmd/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-14 09:54:08] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/3f/2d/22e687f1fb945aeb16176a4f9c25da1aab63664c88cd2966d7ad79f1b144/pretext-2.3.9.dev20240302.tar.gz
+[2024-04-14 09:54:08] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.2.tar.gz]
+[2024-04-14 09:54:08] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.3.tar.gz]
+[2024-04-14 09:54:08] INFO root fetch - main [MainThread]: End processing [PySAGA-cmd]: success
+[2024-04-14 09:54:09] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-04-14 09:54:09] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.3.9.dev20240229.tar.gz tmp/pretext-2.3.9.dev20240302.tar.gz --markdown 20240414/p/pretext/2.3.9.dev20240229-2.3.9.dev20240302/README.md --exclude *.pyd
+[2024-04-14 09:54:12] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240229.tar.gz]
+[2024-04-14 09:54:12] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240302.tar.gz]
+[2024-04-14 09:54:12] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-04-14 09:54:12] INFO root fetch - main [MainThread]: Store serial: [22757111]
