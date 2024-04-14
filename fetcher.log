@@ -5252,3 +5252,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:54:12] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240302.tar.gz]
 [2024-04-14 09:54:12] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2024-04-14 09:54:12] INFO root fetch - main [MainThread]: Store serial: [22757111]
+[2024-04-14 09:56:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757111]
+[2024-04-14 09:56:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyroblack
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prerun
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scs-analysis
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pdm-backend
+[2024-04-14 09:56:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PySAGA-cmd
+[2024-04-14 09:56:21] INFO root fetch - processPackages [prerun]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [PySAGA-cmd]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [pyroblack]: New version: [2.3.65] Old Version: [2.3.64]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [scs-analysis]: New version: [3.8.2] Old Version: [3.8.1]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [checkov]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [pdm-backend]: New version: [2.2.0] Old Version: [2.1.8]
+[2024-04-14 09:56:21] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/e5/c3/7d0c63e9bd87820fe6b5967c6015ea57b2929e905d0bd1e2529cef3deca0/PySAGA-cmd-1.2.2.tar.gz
+[2024-04-14 09:56:21] INFO root fetch - processPackages [scs-analysis]: Downloading https://files.pythonhosted.org/packages/5b/ce/b8d019c9a9705f7ca17f5947b33cbc91966f582c0cdb016f5948be68b2a2/scs-analysis-3.8.1.tar.gz
+[2024-04-14 09:56:21] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/4e/11/3be65cff660233c3041ab874c65e8274cd8266db341fb7a407b0eb8215cf/pyroblack-2.3.64.tar.gz
+[2024-04-14 09:56:21] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/81/1b/4f855a4d1a13e6b26f5d96fc3852aba506ade2133a008c917df0c07aa270/prerun-0.1.0.tar.gz
+[2024-04-14 09:56:21] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/88/07/1509be74cf47a29b012a6f7477139e57bee2a7d01634b6bd6a71d095ace8/checkov-3.2.8.tar.gz
+[2024-04-14 09:56:21] INFO root fetch - processPackages [pdm-backend]: Downloading https://files.pythonhosted.org/packages/8f/a5/8bf3212db8036d54bc735439445a9345f5d58169c91733dd9aec649cecc6/pdm_backend-2.1.8.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [scs-analysis]: Downloading https://files.pythonhosted.org/packages/2c/4e/dd474a2944b2a45ef57e77cb83e761e50877ab8b8aac582cc7e3d66b5302/scs_analysis-3.8.2.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [PySAGA-cmd]: Downloading https://files.pythonhosted.org/packages/a4/41/441dbe1b1a49836726a407da9563542901ca7ffb679054d54b4fe7912edd/PySAGA-cmd-1.2.3.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/5e/69/13546e4ab73c50a6ef467c6415f1a7954b26fb64eb006c8f8e90952af5df/pyroblack-2.3.65.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8b/2e/76e1600c8d7d81ec9b7cc207e032f23feed398a5b54e6698055f7c5e0f8f/checkov-3.2.9.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [prerun]: Downloading https://files.pythonhosted.org/packages/74/07/f7c9d146559489f81d0c74e55053667ccfb2807cdcb48260c511099132ac/prerun-0.1.1.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [scs-analysis]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [scs-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scs-analysis-3.8.1.tar.gz tmp/scs_analysis-3.8.2.tar.gz --markdown 20240414/s/scs-analysis/3.8.1-3.8.2/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [PySAGA-cmd]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [PySAGA-cmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySAGA-cmd-1.2.2.tar.gz tmp/PySAGA-cmd-1.2.3.tar.gz --markdown 20240414/P/PySAGA-cmd/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [prerun]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [prerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerun-0.1.0.tar.gz tmp/prerun-0.1.1.tar.gz --markdown 20240414/p/prerun/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.64.tar.gz tmp/pyroblack-2.3.65.tar.gz --markdown 20240414/p/pyroblack/2.3.64-2.3.65/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pdm-backend]: Downloading https://files.pythonhosted.org/packages/4b/1b/68dd9dc8ef4a1c5c614db5354fd4664d323f2c38a0938ffc7ae1312abc06/pdm_backend-2.2.0.tar.gz
+[2024-04-14 09:56:22] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.8.tar.gz tmp/checkov-3.2.9.tar.gz --markdown 20240414/c/checkov/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pdm-backend]: executing diffoscope
+[2024-04-14 09:56:22] INFO root fetch - processPackages [pdm-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_backend-2.1.8.tar.gz tmp/pdm_backend-2.2.0.tar.gz --markdown 20240414/p/pdm-backend/2.1.8-2.2.0/README.md --exclude *.pyd
+[2024-04-14 09:56:22] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.0.tar.gz]
+[2024-04-14 09:56:22] INFO root fetch - processPackages [prerun]: Remove: archive file [/home/abi/fetcher/tmp/prerun-0.1.1.tar.gz]
+[2024-04-14 09:56:22] INFO root fetch - main [MainThread]: End processing [prerun]: success
+[2024-04-14 09:56:23] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.2.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - processPackages [PySAGA-cmd]: Remove: archive file [/home/abi/fetcher/tmp/PySAGA-cmd-1.2.3.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - main [MainThread]: End processing [PySAGA-cmd]: success
+[2024-04-14 09:56:23] INFO root fetch - processPackages [scs-analysis]: Remove: archive file [/home/abi/fetcher/tmp/scs-analysis-3.8.1.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - processPackages [scs-analysis]: Remove: archive file [/home/abi/fetcher/tmp/scs_analysis-3.8.2.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - main [MainThread]: End processing [scs-analysis]: success
+[2024-04-14 09:56:23] INFO root fetch - processPackages [pdm-backend]: Remove: archive file [/home/abi/fetcher/tmp/pdm_backend-2.1.8.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - processPackages [pdm-backend]: Remove: archive file [/home/abi/fetcher/tmp/pdm_backend-2.2.0.tar.gz]
+[2024-04-14 09:56:23] INFO root fetch - main [MainThread]: End processing [pdm-backend]: success
+[2024-04-14 09:56:24] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.64.tar.gz]
+[2024-04-14 09:56:24] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.65.tar.gz]
+[2024-04-14 09:56:24] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-04-14 09:56:29] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.8.tar.gz]
+[2024-04-14 09:56:29] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
+[2024-04-14 09:56:29] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-04-14 09:56:29] INFO root fetch - main [MainThread]: Store serial: [22757129]
