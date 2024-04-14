@@ -1310,3 +1310,24 @@
 [2024-04-14 02:11:13] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240414.858.tar.gz]
 [2024-04-14 02:11:13] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-04-14 02:11:13] INFO root fetch - main [MainThread]: Store serial: [22755669]
+[2024-04-14 02:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755669]
+[2024-04-14 02:13:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 02:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dgenerate
+[2024-04-14 02:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: appsurifyci
+[2024-04-14 02:13:21] INFO root fetch - processPackages [dgenerate]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-04-14 02:13:21] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 02:13:21] INFO root fetch - processPackages [dgenerate]: Downloading https://files.pythonhosted.org/packages/2c/c2/c002f06b7fe88d69f0f7afabadec6fe23e4f91e0516e3a2cebec1b6e3410/dgenerate-3.4.0.tar.gz
+[2024-04-14 02:13:21] INFO root fetch - processPackages [appsurifyci]: Downloading https://files.pythonhosted.org/packages/be/78/e633e7cea242e900964a292a85e443de25712046c3092cb90e623f5df51f/appsurifyci-0.1.8.tar.gz
+[2024-04-14 02:13:21] INFO root fetch - processPackages [dgenerate]: Downloading https://files.pythonhosted.org/packages/63/e5/1404a4bbbda4269b6fb6f9b8efa447198ad19891e87d825eb168ab41c01e/dgenerate-3.4.1.tar.gz
+[2024-04-14 02:13:22] INFO root fetch - processPackages [dgenerate]: executing diffoscope
+[2024-04-14 02:13:22] INFO root fetch - processPackages [dgenerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dgenerate-3.4.0.tar.gz tmp/dgenerate-3.4.1.tar.gz --markdown 20240414/d/dgenerate/3.4.0-3.4.1/README.md --exclude *.pyd
+[2024-04-14 02:13:22] INFO root fetch - processPackages [appsurifyci]: Downloading https://files.pythonhosted.org/packages/d1/1a/83fd0a2a85db4bcfae5c7da196564233f55a65456f7d620ff4d1899e8f0c/appsurifyci-0.1.9.tar.gz
+[2024-04-14 02:13:22] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2024-04-14 02:13:22] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.8.tar.gz tmp/appsurifyci-0.1.9.tar.gz --markdown 20240414/a/appsurifyci/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 02:13:23] INFO root fetch - processPackages [appsurifyci]: Remove: archive file [/home/abi/fetcher/tmp/appsurifyci-0.1.8.tar.gz]
+[2024-04-14 02:13:23] INFO root fetch - processPackages [appsurifyci]: Remove: archive file [/home/abi/fetcher/tmp/appsurifyci-0.1.9.tar.gz]
+[2024-04-14 02:13:23] INFO root fetch - main [MainThread]: End processing [appsurifyci]: success
+[2024-04-14 02:13:23] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.0.tar.gz]
+[2024-04-14 02:13:23] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.1.tar.gz]
+[2024-04-14 02:13:23] INFO root fetch - main [MainThread]: End processing [dgenerate]: success
+[2024-04-14 02:13:23] INFO root fetch - main [MainThread]: Store serial: [22755674]
