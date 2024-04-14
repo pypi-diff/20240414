@@ -4773,3 +4773,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:51:50] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.9.tar.gz]
 [2024-04-14 08:51:50] INFO root fetch - main [MainThread]: End processing [jammy]: success
 [2024-04-14 08:51:50] INFO root fetch - main [MainThread]: Store serial: [22756936]
+[2024-04-14 08:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756936]
+[2024-04-14 08:53:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 08:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromastone
+[2024-04-14 08:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emx
+[2024-04-14 08:53:58] INFO root fetch - processPackages [chromastone]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 08:53:58] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/06/e8/6643ca5bca746c394c367ae26fbcdb48450c396965c6af9a53cfa35b354f/chromastone-0.1.7.tar.gz
+[2024-04-14 08:53:58] INFO root fetch - processPackages [emx]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-14 08:53:59] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/51/a1/5d4f7d5e2915e33392487cd98cfdc91a423716753a10624d65ddeed384ce/chromastone-0.1.8.tar.gz
+[2024-04-14 08:53:59] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/fe/36/4a030fe1ca94c9d1dc77519615e5e65381bc6408a98ee7497a64ce669d7d/emx-1.0.7-py3-none-any.whl
+[2024-04-14 08:53:59] INFO root fetch - processPackages [chromastone]: executing diffoscope
+[2024-04-14 08:53:59] INFO root fetch - processPackages [chromastone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromastone-0.1.7.tar.gz tmp/chromastone-0.1.8.tar.gz --markdown 20240414/c/chromastone/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 08:53:59] INFO root fetch - processPackages [emx]: Downloading https://files.pythonhosted.org/packages/d0/72/db8702f65dd00ea850e2634e3e65914805c7866440c3edb5728770fe9944/emx-1.0.8-py3-none-any.whl
+[2024-04-14 08:53:59] INFO root fetch - processPackages [emx]: executing diffoscope
+[2024-04-14 08:53:59] INFO root fetch - processPackages [emx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emx-1.0.7-py3-none-any.whl.zip tmp/emx-1.0.8-py3-none-any.whl.zip --markdown 20240414/e/emx/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-14 08:53:59] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.1.7.tar.gz]
+[2024-04-14 08:53:59] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.1.8.tar.gz]
+[2024-04-14 08:53:59] INFO root fetch - main [MainThread]: End processing [chromastone]: success
+[2024-04-14 08:54:00] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.7-py3-none-any.whl.zip]
+[2024-04-14 08:54:00] INFO root fetch - processPackages [emx]: Remove: archive file [/home/abi/fetcher/tmp/emx-1.0.8-py3-none-any.whl.zip]
+[2024-04-14 08:54:00] INFO root fetch - main [MainThread]: End processing [emx]: success
+[2024-04-14 08:54:00] INFO root fetch - main [MainThread]: Store serial: [22756941]
