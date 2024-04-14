@@ -8645,3 +8645,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:15:03] INFO root fetch - processPackages [dataos-cookiecutter]: Remove: archive file [/home/abi/fetcher/tmp/dataos-cookiecutter-0.0.4.tar.gz]
 [2024-04-14 14:15:03] INFO root fetch - main [MainThread]: End processing [dataos-cookiecutter]: success
 [2024-04-14 14:15:03] INFO root fetch - main [MainThread]: Store serial: [22758800]
+[2024-04-14 14:17:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758800]
+[2024-04-14 14:17:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 14:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtfx2console
+[2024-04-14 14:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protolint-bin
+[2024-04-14 14:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jgtfxcon
+[2024-04-14 14:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-xe-21
+[2024-04-14 14:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balatromobile
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/e6/5e/c0ed9bc1ab42e8940e6782f9b4e5460f8cd85f34df6e7c2b14024bc1dfd1/jgtfx2console-0.4.7.tar.gz
+[2024-04-14 14:17:20] INFO root fetch - processPackages [balatromobile]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-14 14:17:20] WARNING root fetch - processPackages [protolint-bin]: Skipping, unable to determine old version
+[2024-04-14 14:17:20] INFO root fetch - main [MainThread]: End processing [protolint-bin] error
+[2024-04-14 14:17:20] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240414] Old Version: [2.5.0b20240413]
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 14:17:20] INFO root fetch - processPackages [balatromobile]: Downloading https://files.pythonhosted.org/packages/b3/c6/3a64af46460f4544eb3eced29911b2aff81b633b3e5d7303a548e6dd89aa/balatromobile-0.0.1.tar.gz
+[2024-04-14 14:17:20] WARNING root fetch - processPackages [balatromobile]: Skipping package: exceeds size limit 17059678>=10485760
+[2024-04-14 14:17:20] INFO root fetch - main [MainThread]: End processing [balatromobile] error
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 14:17:20] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/4f/c8/a922e7bea43ff489c0c9aeb70b1a1513fdc6a3ec5012939d97512b43fcb8/bigdl_core_xe_21-2.5.0b20240413-cp39-cp39-win_amd64.whl
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/2e/de/45acedd38289664e69bffb283daa780970966e0fe60cc8376bda0c1be880/jgtfx2console-0.4.8.tar.gz
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 14:17:20] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 25479337>=10485760
+[2024-04-14 14:17:20] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 14:17:20] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.7.tar.gz tmp/jgtfx2console-0.4.8.tar.gz --markdown 20240414/j/jgtfx2console/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-04-14 14:17:21] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.7.tar.gz]
+[2024-04-14 14:17:21] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.8.tar.gz]
+[2024-04-14 14:17:21] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 14:17:21] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 14:17:21] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 14:17:21] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 14:17:21] INFO root fetch - main [MainThread]: Store serial: [22758822]
