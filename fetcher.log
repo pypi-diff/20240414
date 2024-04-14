@@ -10903,3 +10903,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:02:35] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
 [2024-04-14 17:02:35] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2024-04-14 17:02:35] INFO root fetch - main [MainThread]: Store serial: [22760008]
+[2024-04-14 17:04:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760008]
+[2024-04-14 17:04:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 17:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fplab
+[2024-04-14 17:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsbCalc
+[2024-04-14 17:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-14 17:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: turbobus
+[2024-04-14 17:04:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sos-pbs
+[2024-04-14 17:04:44] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 17:04:44] INFO root fetch - processPackages [turbobus]: New version: [1.0.0a6] Old Version: [1.0.0a5]
+[2024-04-14 17:04:44] WARNING root fetch - processPackages [jsbCalc]: Skipping, unable to determine old version
+[2024-04-14 17:04:44] INFO root fetch - main [MainThread]: End processing [jsbCalc] error
+[2024-04-14 17:04:44] INFO root fetch - processPackages [sos-pbs]: New version: [0.9.9.2] Old Version: [0.9.9.1]
+[2024-04-14 17:04:44] INFO root fetch - processPackages [turbobus]: Downloading https://files.pythonhosted.org/packages/24/1d/6baa5bf158b8bd6690485bf0a52ba0ee10d39c73e09d5cc543650d381387/turbobus-1.0.0a5.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [fplab]: New version: [0.0.2.3] Old Version: [0.0.2.2]
+[2024-04-14 17:04:44] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/88/84/41467c7ccbe8a8d310ae46ad7a501d6960ae5cb7a2e677c891bcaaa14a2a/fplab-0.0.2.2.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [turbobus]: Downloading https://files.pythonhosted.org/packages/65/0e/99ef34928de0b46f6f9d8807829d1d6edfe4caef2ce9a700831ae9ae527c/turbobus-1.0.0a6.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [sos-pbs]: Downloading https://files.pythonhosted.org/packages/90/49/b81bff1d3e5ee04a1d4f51bc2af56afded9311deca43c853b031edc66e5c/sos-pbs-0.9.9.1.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 17:04:44] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 17:04:44] INFO root fetch - processPackages [turbobus]: executing diffoscope
+[2024-04-14 17:04:44] INFO root fetch - processPackages [turbobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbobus-1.0.0a5.tar.gz tmp/turbobus-1.0.0a6.tar.gz --markdown 20240414/t/turbobus/1.0.0a5-1.0.0a6/README.md --exclude *.pyd
+[2024-04-14 17:04:44] INFO root fetch - processPackages [sos-pbs]: Downloading https://files.pythonhosted.org/packages/6c/e9/e11e015e94ee25df7f25b617af17ed2b6aa41d4cfd56466a8d599b3ccbc7/sos-pbs-0.9.9.2.tar.gz
+[2024-04-14 17:04:44] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/4d/e4/f946ed7c2e958e029360231a8abacc3e0c2b9d5702275f1e514f7e4f6afe/fplab-0.0.2.3.tar.gz
+[2024-04-14 17:04:45] INFO root fetch - processPackages [sos-pbs]: executing diffoscope
+[2024-04-14 17:04:45] INFO root fetch - processPackages [sos-pbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sos-pbs-0.9.9.1.tar.gz tmp/sos-pbs-0.9.9.2.tar.gz --markdown 20240414/s/sos-pbs/0.9.9.1-0.9.9.2/README.md --exclude *.pyd
+[2024-04-14 17:04:45] INFO root fetch - processPackages [fplab]: executing diffoscope
+[2024-04-14 17:04:45] INFO root fetch - processPackages [fplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fplab-0.0.2.2.tar.gz tmp/fplab-0.0.2.3.tar.gz --markdown 20240414/f/fplab/0.0.2.2-0.0.2.3/README.md --exclude *.pyd
+[2024-04-14 17:04:45] INFO root fetch - processPackages [turbobus]: Remove: archive file [/home/abi/fetcher/tmp/turbobus-1.0.0a5.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - processPackages [turbobus]: Remove: archive file [/home/abi/fetcher/tmp/turbobus-1.0.0a6.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - main [MainThread]: End processing [turbobus]: success
+[2024-04-14 17:04:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 17:04:45] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.2.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.3.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - main [MainThread]: End processing [fplab]: success
+[2024-04-14 17:04:45] INFO root fetch - processPackages [sos-pbs]: Remove: archive file [/home/abi/fetcher/tmp/sos-pbs-0.9.9.1.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - processPackages [sos-pbs]: Remove: archive file [/home/abi/fetcher/tmp/sos-pbs-0.9.9.2.tar.gz]
+[2024-04-14 17:04:45] INFO root fetch - main [MainThread]: End processing [sos-pbs]: success
+[2024-04-14 17:04:45] INFO root fetch - main [MainThread]: Store serial: [22760022]
