@@ -10451,3 +10451,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:33:25] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis-tools-2024.4.10.tar.gz]
 [2024-04-14 16:33:25] INFO root fetch - main [MainThread]: End processing [jarvis-tools]: success
 [2024-04-14 16:33:25] INFO root fetch - main [MainThread]: Store serial: [22759675]
+[2024-04-14 16:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759675]
+[2024-04-14 16:35:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alignn
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: archerdfu.bmp
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: felix-uri
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bencode2
+[2024-04-14 16:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bencode2
+[2024-04-14 16:35:42] WARNING root fetch - processPackages [archerdfu.bmp]: Skipping, unable to determine old version
+[2024-04-14 16:35:42] INFO root fetch - main [MainThread]: End processing [archerdfu.bmp] error
+[2024-04-14 16:35:42] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240414.261] Old Version: [0.44.20240414.260]
+[2024-04-14 16:35:42] WARNING root fetch - processPackages [felix-uri]: Skipping, unable to determine old version
+[2024-04-14 16:35:42] INFO root fetch - main [MainThread]: End processing [felix-uri] error
+[2024-04-14 16:35:42] INFO root fetch - processPackages [alignn]: New version: [2024.4.10] Old Version: [2024.3.4]
+[2024-04-14 16:35:42] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/86/6c/e75d598253d6e30c4802f52fa1d2de9dd800c88c7dc5816cc794f24eb1ac/pkscreener-0.44.20240414.260.tar.gz
+[2024-04-14 16:35:42] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:35:42] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:35:42] INFO root fetch - processPackages [alignn]: Downloading https://files.pythonhosted.org/packages/14/b6/75d30e8ffb5e38aef5c6c9e129225465be8711a79a19d2610e3fc9090c71/alignn-2024.3.4.tar.gz
+[2024-04-14 16:35:42] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/11/9d/3ba22a5bdd9053d38a6d031a4b73de890363020db474148e10085d659bd0/pkscreener-0.44.20240414.261.tar.gz
+[2024-04-14 16:35:43] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/42/39/23b2e9dc7528184e9d944cda1a0507fb455620be59c243c96a2f3d979932/bencode2-0.0.8-cp39-cp39-win_amd64.whl
+[2024-04-14 16:35:43] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/42/39/23b2e9dc7528184e9d944cda1a0507fb455620be59c243c96a2f3d979932/bencode2-0.0.8-cp39-cp39-win_amd64.whl
+[2024-04-14 16:35:43] INFO root fetch - processPackages [alignn]: Downloading https://files.pythonhosted.org/packages/74/1c/49ba49c2a110c044ca3dd879356c03a776ae7adbcd98e45f6c666d8f3199/alignn-2024.4.10.tar.gz
+[2024-04-14 16:35:43] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-14 16:35:43] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240414.260.tar.gz tmp/pkscreener-0.44.20240414.261.tar.gz --markdown 20240414/p/pkscreener/0.44.20240414.260-0.44.20240414.261/README.md --exclude *.pyd
+[2024-04-14 16:35:43] INFO root fetch - processPackages [alignn]: executing diffoscope
+[2024-04-14 16:35:43] INFO root fetch - processPackages [alignn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alignn-2024.3.4.tar.gz tmp/alignn-2024.4.10.tar.gz --markdown 20240414/a/alignn/2024.3.4-2024.4.10/README.md --exclude *.pyd
+[2024-04-14 16:35:43] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240414.260.tar.gz]
+[2024-04-14 16:35:43] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240414.261.tar.gz]
+[2024-04-14 16:35:43] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/b6/85/b453173dd9f36d0dfe1ebec2e15f2655f9c7a240c79423f9ee10522fc491/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/b6/85/b453173dd9f36d0dfe1ebec2e15f2655f9c7a240c79423f9ee10522fc491/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl
+[2024-04-14 16:35:44] INFO root fetch - processPackages [alignn]: Remove: archive file [/home/abi/fetcher/tmp/alignn-2024.3.4.tar.gz]
+[2024-04-14 16:35:44] INFO root fetch - processPackages [alignn]: Remove: archive file [/home/abi/fetcher/tmp/alignn-2024.4.10.tar.gz]
+[2024-04-14 16:35:44] INFO root fetch - main [MainThread]: End processing [alignn]: success
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8-cp39-cp39-win_amd64.whl.zip tmp/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl.zip --markdown 20240414/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-14 16:35:44] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8-cp39-cp39-win_amd64.whl.zip tmp/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl.zip --markdown 20240414/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:35:45] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 16:35:45] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl.zip]
+[2024-04-14 16:35:45] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-14 16:35:45] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-14 16:35:45] INFO root fetch - main [MainThread]: Store serial: [22759774]
