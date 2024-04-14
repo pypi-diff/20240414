@@ -14288,3 +14288,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:19:21] INFO root fetch - processPackages [itkwasm-compare-images-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_compare_images_emscripten-5.0.2.tar.gz]
 [2024-04-14 21:19:21] INFO root fetch - main [MainThread]: End processing [itkwasm-compare-images-emscripten]: success
 [2024-04-14 21:19:21] INFO root fetch - main [MainThread]: Store serial: [22761723]
+[2024-04-14 21:21:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761723]
+[2024-04-14 21:21:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-master
+[2024-04-14 21:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-static-base
+[2024-04-14 21:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: OptimalBragg
+[2024-04-14 21:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SecLoadSDK
+[2024-04-14 21:21:29] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240414.9.8.204994] Old Version: [20240414.18.40.693441]
+[2024-04-14 21:21:29] WARNING root fetch - processPackages [OptimalBragg]: Skipping, unable to determine old version
+[2024-04-14 21:21:29] INFO root fetch - main [MainThread]: End processing [OptimalBragg] error
+[2024-04-14 21:21:29] INFO root fetch - processPackages [django-static-base]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-04-14 21:21:29] INFO root fetch - processPackages [SecLoadSDK]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 21:21:29] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/84/b5/89f85a80facf1236e0f9166771a6637e59e8d1281d0743eb3a9f3526982e/certora-cli-alpha-master-20240414.18.40.693441.tar.gz
+[2024-04-14 21:21:30] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14483303>=10485760
+[2024-04-14 21:21:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-14 21:21:30] INFO root fetch - processPackages [django-static-base]: Downloading https://files.pythonhosted.org/packages/1d/1e/e6aa35e4a17c4f7b036839a1476abd42b043e761fb985bb915db22863472/django-static-base-0.1.6.tar.gz
+[2024-04-14 21:21:30] INFO root fetch - processPackages [SecLoadSDK]: Downloading https://files.pythonhosted.org/packages/92/23/33b9e81e66a5793c2f5df49c3f25668eefbaef8707c38331722d9b803d87/SecLoadSDK-0.0.2.tar.gz
+[2024-04-14 21:21:30] INFO root fetch - processPackages [SecLoadSDK]: Downloading https://files.pythonhosted.org/packages/b4/1f/7f3839273a1db3f1f5a201666bfe17dc5c5cb7deabb2384ea51a3837d91f/secloadsdk-0.0.3.tar.gz
+[2024-04-14 21:21:30] INFO root fetch - processPackages [django-static-base]: Downloading https://files.pythonhosted.org/packages/3d/62/1dbf2385dea31ed630e7bacf11e2aec6c0f016e651c0b9b87dafcbb462f3/django_static_base-0.2.0.tar.gz
+[2024-04-14 21:21:30] INFO root fetch - processPackages [django-static-base]: executing diffoscope
+[2024-04-14 21:21:30] INFO root fetch - processPackages [django-static-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-static-base-0.1.6.tar.gz tmp/django_static_base-0.2.0.tar.gz --markdown 20240414/d/django-static-base/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-04-14 21:21:31] INFO root fetch - processPackages [SecLoadSDK]: executing diffoscope
+[2024-04-14 21:21:31] INFO root fetch - processPackages [SecLoadSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SecLoadSDK-0.0.2.tar.gz tmp/secloadsdk-0.0.3.tar.gz --markdown 20240414/S/SecLoadSDK/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 21:21:31] INFO root fetch - processPackages [SecLoadSDK]: Remove: archive file [/home/abi/fetcher/tmp/SecLoadSDK-0.0.2.tar.gz]
+[2024-04-14 21:21:31] INFO root fetch - processPackages [SecLoadSDK]: Remove: archive file [/home/abi/fetcher/tmp/secloadsdk-0.0.3.tar.gz]
+[2024-04-14 21:21:31] INFO root fetch - main [MainThread]: End processing [SecLoadSDK]: success
+[2024-04-14 21:21:33] INFO root fetch - processPackages [django-static-base]: Remove: archive file [/home/abi/fetcher/tmp/django-static-base-0.1.6.tar.gz]
+[2024-04-14 21:21:33] INFO root fetch - processPackages [django-static-base]: Remove: archive file [/home/abi/fetcher/tmp/django_static_base-0.2.0.tar.gz]
+[2024-04-14 21:21:33] INFO root fetch - main [MainThread]: End processing [django-static-base]: success
+[2024-04-14 21:21:33] INFO root fetch - main [MainThread]: Store serial: [22761738]
