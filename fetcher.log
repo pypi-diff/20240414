@@ -11114,3 +11114,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:15:39] INFO root fetch - processPackages [komodo-sdk]: Remove: archive file [/home/abi/fetcher/tmp/komodo_sdk-0.0.95.tar.gz]
 [2024-04-14 17:15:39] INFO root fetch - main [MainThread]: End processing [komodo-sdk]: success
 [2024-04-14 17:15:39] INFO root fetch - main [MainThread]: Store serial: [22760072]
+[2024-04-14 17:17:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760072]
+[2024-04-14 17:17:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 17:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwak-core
+[2024-04-14 17:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyconn-monitor
+[2024-04-14 17:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imgw-data
+[2024-04-14 17:17:48] INFO root fetch - processPackages [imgw-data]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 17:17:48] WARNING root fetch - processPackages [pyconn-monitor]: Skipping, unable to determine old version
+[2024-04-14 17:17:48] INFO root fetch - main [MainThread]: End processing [pyconn-monitor] error
+[2024-04-14 17:17:48] INFO root fetch - processPackages [qwak-core]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-14 17:17:48] INFO root fetch - processPackages [imgw-data]: Downloading https://files.pythonhosted.org/packages/05/dc/8563117471f4d3765c6f534bd49c53a953964b32aae218a4b5f036d44234/imgw_data-0.1.1.tar.gz
+[2024-04-14 17:17:48] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/59/3f/bd28e625e13a379a9463795eed9d170cceaf191d98c6ea302e910c4788e1/qwak_core-0.3.98.tar.gz
+[2024-04-14 17:17:48] INFO root fetch - processPackages [imgw-data]: Downloading https://files.pythonhosted.org/packages/65/1e/e837e47f10426d7a6c96cad93f9eb2794113b010a2364c1603af83722de9/imgw_data-0.1.2.tar.gz
+[2024-04-14 17:17:49] INFO root fetch - processPackages [imgw-data]: executing diffoscope
+[2024-04-14 17:17:49] INFO root fetch - processPackages [imgw-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgw_data-0.1.1.tar.gz tmp/imgw_data-0.1.2.tar.gz --markdown 20240414/i/imgw-data/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 17:17:49] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/71/0e/e7c880c764df31bf9e71679c2a411ac1a48667bfd4caee997236b1cc61fb/qwak_core-0.3.99.tar.gz
+[2024-04-14 17:17:49] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2024-04-14 17:17:49] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.3.98.tar.gz tmp/qwak_core-0.3.99.tar.gz --markdown 20240414/q/qwak-core/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-14 17:17:49] INFO root fetch - processPackages [imgw-data]: Remove: archive file [/home/abi/fetcher/tmp/imgw_data-0.1.1.tar.gz]
+[2024-04-14 17:17:49] INFO root fetch - processPackages [imgw-data]: Remove: archive file [/home/abi/fetcher/tmp/imgw_data-0.1.2.tar.gz]
+[2024-04-14 17:17:49] INFO root fetch - main [MainThread]: End processing [imgw-data]: success
+[2024-04-14 17:17:51] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.98.tar.gz]
+[2024-04-14 17:17:51] INFO root fetch - processPackages [qwak-core]: Remove: archive file [/home/abi/fetcher/tmp/qwak_core-0.3.99.tar.gz]
+[2024-04-14 17:17:51] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2024-04-14 17:17:51] INFO root fetch - main [MainThread]: Store serial: [22760083]
