@@ -6926,3 +6926,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:17:32] WARNING root fetch - processPackages [gbnf]: Skipping, unable to determine old version
 [2024-04-14 12:17:32] INFO root fetch - main [MainThread]: End processing [gbnf] error
 [2024-04-14 12:17:32] INFO root fetch - main [MainThread]: Store serial: [22757936]
+[2024-04-14 12:19:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757936]
+[2024-04-14 12:19:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 12:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asgebsmanager
+[2024-04-14 12:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-nai3
+[2024-04-14 12:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: surquest-split-balancer
+[2024-04-14 12:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pkscreener
+[2024-04-14 12:19:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bencode2
+[2024-04-14 12:19:46] WARNING root fetch - processPackages [surquest-split-balancer]: Skipping, unable to determine old version
+[2024-04-14 12:19:46] INFO root fetch - main [MainThread]: End processing [surquest-split-balancer] error
+[2024-04-14 12:19:46] INFO root fetch - processPackages [nonebot-plugin-nai3]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 12:19:46] INFO root fetch - processPackages [asgebsmanager]: New version: [0.4] Old Version: [0.3]
+[2024-04-14 12:19:46] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240413.259] Old Version: [0.44.20240413.258]
+[2024-04-14 12:19:46] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/3c/0e/123561172319bd88c56e09d88ecca2f91a06586533a8d0a59e0d9029dc9b/asgebsmanager-0.3.tar.gz
+[2024-04-14 12:19:46] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e3/3e/cd1747fa3bcb06650b729fca172b04e2f032b2cb69715b56bdb4901cf2b1/pkscreener-0.44.20240413.258.tar.gz
+[2024-04-14 12:19:46] INFO root fetch - processPackages [bencode2]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 12:19:46] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/96/43/3bb3e05daa5ab96ec9bb44e21593bf5af3addeb6bb869f3d51b912ea41d2/nonebot_plugin_nai3-0.0.5.tar.gz
+[2024-04-14 12:19:47] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/a8/71/87dfa4f1f8f9dd3c7aa70cbfc4cf6690c5cf16a1a3a00bf655b0f66a4317/bencode2-0.0.5.tar.gz
+[2024-04-14 12:19:47] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/a1/93/7cf990bc4787f1271d0c7960269f3f8f4487d9279f488d47a4dfcb671f26/asgebsmanager-0.4.tar.gz
+[2024-04-14 12:19:47] INFO root fetch - processPackages [nonebot-plugin-nai3]: Downloading https://files.pythonhosted.org/packages/18/09/db2d0ed8c7fea59424a46bc9c67c91938036b815d3d6cac2b95f862532a3/nonebot_plugin_nai3-0.0.6.tar.gz
+[2024-04-14 12:19:47] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5e/4d/c64ea906a3db022556fcbf1983f9b3c59cab16b64522a74cbe03ebfad819/pkscreener-0.44.20240413.259.tar.gz
+[2024-04-14 12:19:47] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-14 12:19:47] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-0.3.tar.gz tmp/asgebsmanager-0.4.tar.gz --markdown 20240414/a/asgebsmanager/0.3-0.4/README.md --exclude *.pyd
+[2024-04-14 12:19:47] INFO root fetch - processPackages [nonebot-plugin-nai3]: executing diffoscope
+[2024-04-14 12:19:47] INFO root fetch - processPackages [nonebot-plugin-nai3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_nai3-0.0.5.tar.gz tmp/nonebot_plugin_nai3-0.0.6.tar.gz --markdown 20240414/n/nonebot-plugin-nai3/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 12:19:47] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-14 12:19:47] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240413.258.tar.gz tmp/pkscreener-0.44.20240413.259.tar.gz --markdown 20240414/p/pkscreener/0.44.20240413.258-0.44.20240413.259/README.md --exclude *.pyd
+[2024-04-14 12:19:47] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/f0/9b/925cfa1005cba63bc45f158df86b0c1b33c5069dcad85c1a6af90cca928f/bencode2-0.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-04-14 12:19:47] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.3.tar.gz]
+[2024-04-14 12:19:47] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-0.4.tar.gz]
+[2024-04-14 12:19:47] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-14 12:19:47] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.0.5.tar.gz]
+[2024-04-14 12:19:47] INFO root fetch - processPackages [nonebot-plugin-nai3]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_nai3-0.0.6.tar.gz]
+[2024-04-14 12:19:47] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3]: success
+[2024-04-14 12:19:48] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.258.tar.gz]
+[2024-04-14 12:19:48] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240413.259.tar.gz]
+[2024-04-14 12:19:48] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-14 12:19:48] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-14 12:19:48] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.5.tar.gz tmp/bencode2-0.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240414/b/bencode2/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 12:19:49] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.5.tar.gz]
+[2024-04-14 12:19:49] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-04-14 12:19:49] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-14 12:19:49] INFO root fetch - main [MainThread]: Store serial: [22757947]
