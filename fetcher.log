@@ -15965,3 +15965,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:19:54] WARNING root fetch - processPackages [sling-mac-arm64]: Skipping package: exceeds size limit 50507262>=10485760
 [2024-04-14 23:19:54] INFO root fetch - main [MainThread]: End processing [sling-mac-arm64] error
 [2024-04-14 23:19:54] INFO root fetch - main [MainThread]: Store serial: [22762539]
+[2024-04-14 23:21:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762539]
+[2024-04-14 23:22:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 23:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sling-windows-amd64
+[2024-04-14 23:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kubescaler
+[2024-04-14 23:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sling
+[2024-04-14 23:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swpclib
+[2024-04-14 23:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: naludaq
+[2024-04-14 23:22:03] INFO root fetch - processPackages [swpclib]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-04-14 23:22:03] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/fb/5d/7ff52c6332955d4d730efed8f5da47683528fb1aa3f906e6ea76df2fcbd4/swpclib-4.2.0.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling-windows-amd64]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:22:03] INFO root fetch - processPackages [kubescaler]: New version: [0.0.2] Old Version: [0.0.19]
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:22:03] INFO root fetch - processPackages [naludaq]: New version: [0.26.1] Old Version: [0.26.0]
+[2024-04-14 23:22:03] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/c6/6a/80268e19f5cad5324ef3bb0ec3a06d29dca1aad7f7c90ee6e1521339bfa3/swpclib-4.3.0.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [kubescaler]: Downloading https://files.pythonhosted.org/packages/a1/a3/ee6bf7886123fae5844a01f0315ae698f85a11526562f60e2e45b07838bf/kubescaler-0.0.19.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling-windows-amd64]: Downloading https://files.pythonhosted.org/packages/fc/6a/366349d094eb0396a216eb9e77974cd7ef12dca88f2734bc7a7691de65e7/sling-windows-amd64-1.2.4.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/4e/b8/2a9503fb34c050b77733496dc85f116c3528d34d21d704716cfdbb566566/sling-1.2.4.tar.gz
+[2024-04-14 23:22:03] WARNING root fetch - processPackages [sling-windows-amd64]: Skipping package: exceeds size limit 50033654>=10485760
+[2024-04-14 23:22:03] INFO root fetch - main [MainThread]: End processing [sling-windows-amd64] error
+[2024-04-14 23:22:03] INFO root fetch - processPackages [swpclib]: executing diffoscope
+[2024-04-14 23:22:03] INFO root fetch - processPackages [swpclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swpclib-4.2.0.tar.gz tmp/swpclib-4.3.0.tar.gz --markdown 20240414/s/swpclib/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-04-14 23:22:03] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/46/5a/605487b66b2201d431df68e65f95fd15f8ce63452a1002c42ff1a5026142/naludaq-0.26.0.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [kubescaler]: Downloading https://files.pythonhosted.org/packages/5d/39/71e80fad2ecfe2ac26d1b9f4f86483d094a0a6ba6711a66a3a9647c2afd2/kubescaler-0.0.2.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/1c/73/88af94174aba1011d58421300c8458e54b3477f99a3daac9cc40a4e554b6/sling-1.2.4.post1.tar.gz
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling]: executing diffoscope
+[2024-04-14 23:22:03] INFO root fetch - processPackages [sling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sling-1.2.4.tar.gz tmp/sling-1.2.4.post1.tar.gz --markdown 20240414/s/sling/1.2.4-1.2.4.post1/README.md --exclude *.pyd
+[2024-04-14 23:22:03] INFO root fetch - processPackages [kubescaler]: executing diffoscope
+[2024-04-14 23:22:03] INFO root fetch - processPackages [kubescaler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubescaler-0.0.19.tar.gz tmp/kubescaler-0.0.2.tar.gz --markdown 20240414/k/kubescaler/0.0.19-0.0.2/README.md --exclude *.pyd
+[2024-04-14 23:22:03] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/68/b5/7fb7335a09da494055fb75de94725013a31b62b0d39dc4dde08c1b4aa783/naludaq-0.26.1.tar.gz
+[2024-04-14 23:22:04] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.2.0.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.3.0.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - main [MainThread]: End processing [swpclib]: success
+[2024-04-14 23:22:04] INFO root fetch - processPackages [naludaq]: executing diffoscope
+[2024-04-14 23:22:04] INFO root fetch - processPackages [naludaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naludaq-0.26.0.tar.gz tmp/naludaq-0.26.1.tar.gz --markdown 20240414/n/naludaq/0.26.0-0.26.1/README.md --exclude *.pyd
+[2024-04-14 23:22:04] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.4.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.4.post1.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - main [MainThread]: End processing [sling]: success
+[2024-04-14 23:22:04] INFO root fetch - processPackages [kubescaler]: Remove: archive file [/home/abi/fetcher/tmp/kubescaler-0.0.19.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - processPackages [kubescaler]: Remove: archive file [/home/abi/fetcher/tmp/kubescaler-0.0.2.tar.gz]
+[2024-04-14 23:22:04] INFO root fetch - main [MainThread]: End processing [kubescaler]: success
+[2024-04-14 23:22:05] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.26.0.tar.gz]
+[2024-04-14 23:22:05] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.26.1.tar.gz]
+[2024-04-14 23:22:05] INFO root fetch - main [MainThread]: End processing [naludaq]: success
+[2024-04-14 23:22:05] INFO root fetch - main [MainThread]: Store serial: [22762555]
