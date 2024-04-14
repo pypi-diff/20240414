@@ -11506,3 +11506,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:44:29] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.5.tar.gz]
 [2024-04-14 17:44:29] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
 [2024-04-14 17:44:29] INFO root fetch - main [MainThread]: Store serial: [22760318]
+[2024-04-14 17:46:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760318]
+[2024-04-14 17:46:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccnuacm-datamocker
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiconnectpy
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freediscovery-stabilizer
+[2024-04-14 17:46:38] INFO root fetch - processPackages [audiconnectpy]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ccnuacm-datamocker]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 17:46:38] WARNING root fetch - processPackages [freediscovery-stabilizer]: Skipping, unable to determine old version
+[2024-04-14 17:46:38] INFO root fetch - main [MainThread]: End processing [freediscovery-stabilizer] error
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ccnuacm-datamocker]: Downloading https://files.pythonhosted.org/packages/d5/97/f28209cedd9fa9cde91d03efc77915d3963d71ceeda7a83743491512b9ca/ccnuacm_datamocker-0.0.4.tar.gz
+[2024-04-14 17:46:38] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/57/0a/79b61ec9591d66aefbbca1990ef8804ff01e7368d78ba0708fa51af83f6b/audiconnectpy-1.5.3.tar.gz
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ccnuacm-datamocker]: Downloading https://files.pythonhosted.org/packages/86/02/94038b1a31e754888f4ac87002480776961da9bd5ea4ec60a0f486ad5280/ccnuacm_datamocker-0.0.5.tar.gz
+[2024-04-14 17:46:38] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/3d/65/635fc57c4efb58e6e83630df47a90af907c948eb70175dd82fd6237d12d7/audiconnectpy-1.5.4.tar.gz
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ccnuacm-datamocker]: executing diffoscope
+[2024-04-14 17:46:38] INFO root fetch - processPackages [ccnuacm-datamocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccnuacm_datamocker-0.0.4.tar.gz tmp/ccnuacm_datamocker-0.0.5.tar.gz --markdown 20240414/c/ccnuacm-datamocker/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 17:46:38] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-04-14 17:46:38] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.5.3.tar.gz tmp/audiconnectpy-1.5.4.tar.gz --markdown 20240414/a/audiconnectpy/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-14 17:46:39] INFO root fetch - processPackages [ccnuacm-datamocker]: Remove: archive file [/home/abi/fetcher/tmp/ccnuacm_datamocker-0.0.4.tar.gz]
+[2024-04-14 17:46:39] INFO root fetch - processPackages [ccnuacm-datamocker]: Remove: archive file [/home/abi/fetcher/tmp/ccnuacm_datamocker-0.0.5.tar.gz]
+[2024-04-14 17:46:39] INFO root fetch - main [MainThread]: End processing [ccnuacm-datamocker]: success
+[2024-04-14 17:46:39] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.3.tar.gz]
+[2024-04-14 17:46:39] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-1.5.4.tar.gz]
+[2024-04-14 17:46:39] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-04-14 17:46:39] INFO root fetch - main [MainThread]: Store serial: [22760328]
