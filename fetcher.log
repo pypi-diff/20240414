@@ -14990,3 +14990,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:11:58] INFO root fetch - main [MainThread]: End processing [tutor-contrib-aspects]: success
 [2024-04-14 22:11:58] INFO root fetch - main [MainThread]: End processing [tutor-contrib-aspects]: success
 [2024-04-14 22:11:58] INFO root fetch - main [MainThread]: Store serial: [22762112]
+[2024-04-14 22:14:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762112]
+[2024-04-14 22:14:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 22:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyplotlib
+[2024-04-14 22:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazy-sharepoint
+[2024-04-14 22:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sampa
+[2024-04-14 22:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beepy-web
+[2024-04-14 22:14:07] INFO root fetch - processPackages [pyplotlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:14:07] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-14 22:14:07] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 22:14:07] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/28/bb/58ba19c8fed8024ef2c0efd0523dded73560d64857fcd7916d35aa6aa8af/pyplotlib-0.0.8.tar.gz
+[2024-04-14 22:14:07] WARNING root fetch - processPackages [lazy-sharepoint]: Skipping, unable to determine old version
+[2024-04-14 22:14:07] INFO root fetch - main [MainThread]: End processing [lazy-sharepoint] error
+[2024-04-14 22:14:07] INFO root fetch - processPackages [beepy-web]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-14 22:14:07] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/a2/52/5438444996acdb2257e2cd7c5bc0aa6eb4e43bb1dc475ac28d9505773be6/beepy_web-0.9.3.tar.gz
+[2024-04-14 22:14:07] INFO root fetch - processPackages [pyplotlib]: Downloading https://files.pythonhosted.org/packages/8b/f8/1cec6ba77c9aee645ad1564c6fe928db135b36bec387a9574c6422edd191/pyplotlib-0.0.9.tar.gz
+[2024-04-14 22:14:07] INFO root fetch - processPackages [pyplotlib]: executing diffoscope
+[2024-04-14 22:14:07] INFO root fetch - processPackages [pyplotlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplotlib-0.0.8.tar.gz tmp/pyplotlib-0.0.9.tar.gz --markdown 20240414/p/pyplotlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:14:08] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/1b/6b/61f36c3c582e71feb43d31b7ca5129481047bff7fb2e321534aef32d166c/beepy_web-0.9.4.tar.gz
+[2024-04-14 22:14:08] INFO root fetch - processPackages [beepy-web]: executing diffoscope
+[2024-04-14 22:14:08] INFO root fetch - processPackages [beepy-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beepy_web-0.9.3.tar.gz tmp/beepy_web-0.9.4.tar.gz --markdown 20240414/b/beepy-web/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-14 22:14:08] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.8.tar.gz]
+[2024-04-14 22:14:08] INFO root fetch - processPackages [pyplotlib]: Remove: archive file [/home/abi/fetcher/tmp/pyplotlib-0.0.9.tar.gz]
+[2024-04-14 22:14:08] INFO root fetch - main [MainThread]: End processing [pyplotlib]: success
+[2024-04-14 22:14:09] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.3.tar.gz]
+[2024-04-14 22:14:09] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.4.tar.gz]
+[2024-04-14 22:14:09] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
+[2024-04-14 22:14:09] INFO root fetch - main [MainThread]: Store serial: [22762125]
