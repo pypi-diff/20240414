@@ -5785,3 +5785,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:46:42] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
 [2024-04-14 10:46:42] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-04-14 10:46:42] INFO root fetch - main [MainThread]: Store serial: [22757373]
+[2024-04-14 10:48:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757373]
+[2024-04-14 10:48:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2024-04-14 10:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-04-14 10:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: helpers-ai
+[2024-04-14 10:48:51] WARNING root fetch - processPackages [helpers-ai]: Skipping, unable to determine old version
+[2024-04-14 10:48:51] INFO root fetch - main [MainThread]: End processing [helpers-ai] error
+[2024-04-14 10:48:51] INFO root fetch - processPackages [checkov]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-14 10:48:51] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240414] Old Version: [0.4.5.dev20240413]
+[2024-04-14 10:48:51] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/88/07/1509be74cf47a29b012a6f7477139e57bee2a7d01634b6bd6a71d095ace8/checkov-3.2.8.tar.gz
+[2024-04-14 10:48:51] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/11/9a/6b1ee73b23f220d587b8a0eca0f72d04e69c2c410d82c89ef6970b847a10/pyglove-0.4.5.dev20240413.tar.gz
+[2024-04-14 10:48:52] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8b/2e/76e1600c8d7d81ec9b7cc207e032f23feed398a5b54e6698055f7c5e0f8f/checkov-3.2.9.tar.gz
+[2024-04-14 10:48:52] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-04-14 10:48:52] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.8.tar.gz tmp/checkov-3.2.9.tar.gz --markdown 20240414/c/checkov/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-14 10:48:52] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/02/99/1b81a1261ae4c898b5a458356ec50d88f5e0ad05caf74b90f29fc12813f3/pyglove-0.4.5.dev20240414.tar.gz
+[2024-04-14 10:48:52] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-14 10:48:52] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240413.tar.gz tmp/pyglove-0.4.5.dev20240414.tar.gz --markdown 20240414/p/pyglove/0.4.5.dev20240413-0.4.5.dev20240414/README.md --exclude *.pyd
+[2024-04-14 10:48:53] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240413.tar.gz]
+[2024-04-14 10:48:53] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240414.tar.gz]
+[2024-04-14 10:48:53] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-14 10:48:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.8.tar.gz]
+[2024-04-14 10:48:59] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
+[2024-04-14 10:48:59] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-04-14 10:48:59] INFO root fetch - main [MainThread]: Store serial: [22757382]
