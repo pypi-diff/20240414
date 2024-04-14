@@ -1,231 +1,102 @@
-# Comparing `tmp/bencode2-0.0.8-cp39-cp39-win_amd64.whl.zip` & `tmp/bencode2-0.0.9-cp36-cp36m-musllinux_1_1_x86_64.whl.zip`
-
-## zipinfo {}
-
-```diff
-@@ -1,18 +1,21 @@
--Zip file size: 247586 bytes, number of entries: 16
---rw-rw-rw-  2.0 fat      592 b- defN 24-Apr-14 14:19 bencode2/__init__.py
---rw-rw-rw-  2.0 fat   470738 b- defN 24-Apr-14 14:21 bencode2/_decoder.c
---rw-rw-rw-  2.0 fat    75776 b- defN 24-Apr-14 14:22 bencode2/_decoder.cp39-win_amd64.pyd
---rw-rw-rw-  2.0 fat     2711 b- defN 24-Apr-14 14:19 bencode2/_decoder.pyx
---rw-rw-rw-  2.0 fat   375816 b- defN 24-Apr-14 14:22 bencode2/_encoder.c
---rw-rw-rw-  2.0 fat    54784 b- defN 24-Apr-14 14:22 bencode2/_encoder.cp39-win_amd64.pyd
---rw-rw-rw-  2.0 fat     2993 b- defN 24-Apr-14 14:19 bencode2/_encoder.pyx
---rw-rw-rw-  2.0 fat   190932 b- defN 24-Apr-14 14:21 bencode2/_exceptions.c
---rw-rw-rw-  2.0 fat    24064 b- defN 24-Apr-14 14:22 bencode2/_exceptions.cp39-win_amd64.pyd
---rw-rw-rw-  2.0 fat      176 b- defN 24-Apr-14 14:19 bencode2/_exceptions.pyx
---rw-rw-rw-  2.0 fat        0 b- defN 24-Apr-14 14:19 bencode2/py.typed
---rw-rw-rw-  2.0 fat     1106 b- defN 24-Apr-14 14:22 bencode2-0.0.8.dist-info/LICENSE
---rw-rw-rw-  2.0 fat      665 b- defN 24-Apr-14 14:22 bencode2-0.0.8.dist-info/METADATA
---rw-rw-rw-  2.0 fat      100 b- defN 24-Apr-14 14:22 bencode2-0.0.8.dist-info/WHEEL
---rw-rw-rw-  2.0 fat        9 b- defN 24-Apr-14 14:22 bencode2-0.0.8.dist-info/top_level.txt
---rw-rw-r--  2.0 fat     1295 b- defN 24-Apr-14 14:22 bencode2-0.0.8.dist-info/RECORD
--16 files, 1201757 bytes uncompressed, 245472 bytes compressed:  79.6%
-+Zip file size: 552139 bytes, number of entries: 19
-+drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-14 14:32 bencode2.libs/
-+drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-14 14:32 bencode2-0.0.9.dist-info/
-+drwxr-xr-x  2.0 unx        0 b- stor 24-Apr-14 14:32 bencode2/
-+-rw-r--r--  2.0 unx        9 b- defN 24-Apr-14 14:32 bencode2-0.0.9.dist-info/top_level.txt
-+-rw-r--r--  2.0 unx      674 b- defN 24-Apr-14 14:32 bencode2-0.0.9.dist-info/METADATA
-+-rw-r--r--  2.0 unx      112 b- defN 24-Apr-14 14:32 bencode2-0.0.9.dist-info/WHEEL
-+-rw-rw-r--  2.0 unx     1353 b- defN 24-Apr-14 14:32 bencode2-0.0.9.dist-info/RECORD
-+-rw-r--r--  2.0 unx     1085 b- defN 24-Apr-14 14:32 bencode2-0.0.9.dist-info/LICENSE
-+-rwxr-xr-x  2.0 unx   106208 b- defN 24-Apr-14 14:32 bencode2/_exceptions.cpython-36m-x86_64-linux-gnu.so
-+-rwxr-xr-x  2.0 unx   433240 b- defN 24-Apr-14 14:32 bencode2/_encoder.cpython-36m-x86_64-linux-gnu.so
-+-rwxr-xr-x  2.0 unx   641536 b- defN 24-Apr-14 14:32 bencode2/_decoder.cpython-36m-x86_64-linux-gnu.so
-+-rw-r--r--  2.0 unx      568 b- defN 24-Apr-14 14:32 bencode2/__init__.py
-+-rw-r--r--  2.0 unx   487607 b- defN 24-Apr-14 14:32 bencode2/_decoder.c
-+-rw-r--r--  2.0 unx   375778 b- defN 24-Apr-14 14:32 bencode2/_encoder.c
-+-rw-r--r--  2.0 unx        0 b- defN 24-Apr-14 14:32 bencode2/py.typed
-+-rw-r--r--  2.0 unx     2890 b- defN 24-Apr-14 14:32 bencode2/_encoder.pyx
-+-rw-r--r--  2.0 unx   190928 b- defN 24-Apr-14 14:32 bencode2/_exceptions.c
-+-rw-r--r--  2.0 unx      168 b- defN 24-Apr-14 14:32 bencode2/_exceptions.pyx
-+-rw-r--r--  2.0 unx     2934 b- defN 24-Apr-14 14:32 bencode2/_decoder.pyx
-+19 files, 2245090 bytes uncompressed, 549623 bytes compressed:  75.5%
-```
-
-## zipnote {}
-
-```diff
-@@ -1,49 +1,58 @@
--Filename: bencode2/__init__.py
-+Filename: bencode2.libs/
- Comment: 
- 
--Filename: bencode2/_decoder.c
-+Filename: bencode2-0.0.9.dist-info/
- Comment: 
- 
--Filename: bencode2/_decoder.cp39-win_amd64.pyd
-+Filename: bencode2/
- Comment: 
- 
--Filename: bencode2/_decoder.pyx
-+Filename: bencode2-0.0.9.dist-info/top_level.txt
- Comment: 
- 
--Filename: bencode2/_encoder.c
-+Filename: bencode2-0.0.9.dist-info/METADATA
- Comment: 
- 
--Filename: bencode2/_encoder.cp39-win_amd64.pyd
-+Filename: bencode2-0.0.9.dist-info/WHEEL
- Comment: 
- 
--Filename: bencode2/_encoder.pyx
-+Filename: bencode2-0.0.9.dist-info/RECORD
- Comment: 
- 
--Filename: bencode2/_exceptions.c
-+Filename: bencode2-0.0.9.dist-info/LICENSE
- Comment: 
- 
--Filename: bencode2/_exceptions.cp39-win_amd64.pyd
-+Filename: bencode2/_exceptions.cpython-36m-x86_64-linux-gnu.so
- Comment: 
- 
--Filename: bencode2/_exceptions.pyx
-+Filename: bencode2/_encoder.cpython-36m-x86_64-linux-gnu.so
- Comment: 
- 
--Filename: bencode2/py.typed
-+Filename: bencode2/_decoder.cpython-36m-x86_64-linux-gnu.so
-+Comment: 
-+
-+Filename: bencode2/__init__.py
- Comment: 
- 
--Filename: bencode2-0.0.8.dist-info/LICENSE
-+Filename: bencode2/_decoder.c
- Comment: 
- 
--Filename: bencode2-0.0.8.dist-info/METADATA
-+Filename: bencode2/_encoder.c
- Comment: 
- 
--Filename: bencode2-0.0.8.dist-info/WHEEL
-+Filename: bencode2/py.typed
- Comment: 
- 
--Filename: bencode2-0.0.8.dist-info/top_level.txt
-+Filename: bencode2/_encoder.pyx
- Comment: 
- 
--Filename: bencode2-0.0.8.dist-info/RECORD
-+Filename: bencode2/_exceptions.c
-+Comment: 
-+
-+Filename: bencode2/_exceptions.pyx
-+Comment: 
-+
-+Filename: bencode2/_decoder.pyx
- Comment: 
- 
- Zip file comment:
-```
+# Comparing `tmp/bencode2-0.0.8.tar.gz` & `tmp/bencode2-0.0.9.tar.gz`
 
 ## filetype from file(1)
 
 ```diff
 @@ -1 +1 @@
--Zip archive data, at least v2.0 to extract, compression method=deflate
-+Zip archive data, at least v2.0 to extract, compression method=store
+-gzip compressed data, was "bencode2-0.0.8.tar", last modified: Sun Apr 14 14:19:45 2024, max compression
++gzip compressed data, was "bencode2-0.0.9.tar", last modified: Sun Apr 14 14:26:11 2024, max compression
 ```
 
-## bencode2/__init__.py
+## Comparing `bencode2-0.0.8.tar` & `bencode2-0.0.9.tar`
 
- * *Ordering differences only*
+### file list
 
 ```diff
-@@ -1,24 +1,24 @@
--# cython: language_level=3
--
--from typing import Any
--
--from ._decoder import Decoder as _Decoder
--from ._encoder import encode as _encode
--from ._exceptions import BencodeDecodeError, BencodeEncodeError
--
--__all__ = (
--    "BencodeDecodeError",
--    "BencodeEncodeError",
--    "bencode",
--    "bdecode",
--)
--
--
--def bencode(value: Any) -> bytes:
--    """Encode value into the bencode format."""
--    return _encode(value)
--
--
--def bdecode(value: bytes, *, str_key: bool = False) -> Any:
--    """Decode bencode formatted bytes to python value."""
--    return _Decoder(str_key).decode(value)
-+# cython: language_level=3
-+
-+from typing import Any
-+
-+from ._decoder import Decoder as _Decoder
-+from ._encoder import encode as _encode
-+from ._exceptions import BencodeDecodeError, BencodeEncodeError
-+
-+__all__ = (
-+    "BencodeDecodeError",
-+    "BencodeEncodeError",
-+    "bencode",
-+    "bdecode",
-+)
-+
-+
-+def bencode(value: Any) -> bytes:
-+    """Encode value into the bencode format."""
-+    return _encode(value)
-+
-+
-+def bdecode(value: bytes, *, str_key: bool = False) -> Any:
-+    """Decode bencode formatted bytes to python value."""
-+    return _Decoder(str_key).decode(value)
+@@ -1,25 +1,25 @@
+-drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:19:45.766984 bencode2-0.0.8/
+--rw-r--r--   0 runner    (1001) docker     (127)     1085 2024-04-14 14:19:38.000000 bencode2-0.0.8/LICENSE
+--rw-r--r--   0 runner    (1001) docker     (127)       42 2024-04-14 14:19:38.000000 bencode2-0.0.8/MANIFEST.in
+--rw-r--r--   0 runner    (1001) docker     (127)      637 2024-04-14 14:19:45.766984 bencode2-0.0.8/PKG-INFO
+-drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:19:45.766984 bencode2-0.0.8/bencode2/
+--rw-r--r--   0 runner    (1001) docker     (127)      568 2024-04-14 14:19:38.000000 bencode2-0.0.8/bencode2/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (127)   470733 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2/_decoder.c
+--rw-r--r--   0 runner    (1001) docker     (127)     2625 2024-04-14 14:19:38.000000 bencode2-0.0.8/bencode2/_decoder.pyx
+--rw-r--r--   0 runner    (1001) docker     (127)   375778 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2/_encoder.c
+--rw-r--r--   0 runner    (1001) docker     (127)     2890 2024-04-14 14:19:38.000000 bencode2-0.0.8/bencode2/_encoder.pyx
+--rw-r--r--   0 runner    (1001) docker     (127)   190928 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2/_exceptions.c
+--rw-r--r--   0 runner    (1001) docker     (127)      168 2024-04-14 14:19:38.000000 bencode2-0.0.8/bencode2/_exceptions.pyx
+--rw-r--r--   0 runner    (1001) docker     (127)        0 2024-04-14 14:19:38.000000 bencode2-0.0.8/bencode2/py.typed
+-drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:19:45.766984 bencode2-0.0.8/bencode2.egg-info/
+--rw-r--r--   0 runner    (1001) docker     (127)      637 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2.egg-info/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (127)      406 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2.egg-info/SOURCES.txt
+--rw-r--r--   0 runner    (1001) docker     (127)        1 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2.egg-info/dependency_links.txt
+--rw-r--r--   0 runner    (1001) docker     (127)        9 2024-04-14 14:19:45.000000 bencode2-0.0.8/bencode2.egg-info/top_level.txt
+--rw-r--r--   0 runner    (1001) docker     (127)      121 2024-04-14 14:19:38.000000 bencode2-0.0.8/pyproject.toml
+--rw-r--r--   0 runner    (1001) docker     (127)       38 2024-04-14 14:19:45.766984 bencode2-0.0.8/setup.cfg
+--rw-r--r--   0 runner    (1001) docker     (127)     1092 2024-04-14 14:19:38.000000 bencode2-0.0.8/setup.py
+-drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:19:45.766984 bencode2-0.0.8/tests/
+--rw-r--r--   0 runner    (1001) docker     (127)     1550 2024-04-14 14:19:38.000000 bencode2-0.0.8/tests/test_decode.py
+--rw-r--r--   0 runner    (1001) docker     (127)     4237 2024-04-14 14:19:38.000000 bencode2-0.0.8/tests/test_encode.py
+--rw-r--r--   0 runner    (1001) docker     (127)      434 2024-04-14 14:19:38.000000 bencode2-0.0.8/tests/test_torrent.py
++drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:26:11.301989 bencode2-0.0.9/
++-rw-r--r--   0 runner    (1001) docker     (127)     1085 2024-04-14 14:26:06.000000 bencode2-0.0.9/LICENSE
++-rw-r--r--   0 runner    (1001) docker     (127)       42 2024-04-14 14:26:06.000000 bencode2-0.0.9/MANIFEST.in
++-rw-r--r--   0 runner    (1001) docker     (127)      637 2024-04-14 14:26:11.301989 bencode2-0.0.9/PKG-INFO
++drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:26:11.297989 bencode2-0.0.9/bencode2/
++-rw-r--r--   0 runner    (1001) docker     (127)      568 2024-04-14 14:26:06.000000 bencode2-0.0.9/bencode2/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (127)   487607 2024-04-14 14:26:10.000000 bencode2-0.0.9/bencode2/_decoder.c
++-rw-r--r--   0 runner    (1001) docker     (127)     2934 2024-04-14 14:26:06.000000 bencode2-0.0.9/bencode2/_decoder.pyx
++-rw-r--r--   0 runner    (1001) docker     (127)   375778 2024-04-14 14:26:10.000000 bencode2-0.0.9/bencode2/_encoder.c
++-rw-r--r--   0 runner    (1001) docker     (127)     2890 2024-04-14 14:26:06.000000 bencode2-0.0.9/bencode2/_encoder.pyx
++-rw-r--r--   0 runner    (1001) docker     (127)   190928 2024-04-14 14:26:10.000000 bencode2-0.0.9/bencode2/_exceptions.c
++-rw-r--r--   0 runner    (1001) docker     (127)      168 2024-04-14 14:26:06.000000 bencode2-0.0.9/bencode2/_exceptions.pyx
++-rw-r--r--   0 runner    (1001) docker     (127)        0 2024-04-14 14:26:06.000000 bencode2-0.0.9/bencode2/py.typed
++drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:26:11.301989 bencode2-0.0.9/bencode2.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (127)      637 2024-04-14 14:26:11.000000 bencode2-0.0.9/bencode2.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (127)      406 2024-04-14 14:26:11.000000 bencode2-0.0.9/bencode2.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (127)        1 2024-04-14 14:26:11.000000 bencode2-0.0.9/bencode2.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (127)        9 2024-04-14 14:26:11.000000 bencode2-0.0.9/bencode2.egg-info/top_level.txt
++-rw-r--r--   0 runner    (1001) docker     (127)      121 2024-04-14 14:26:06.000000 bencode2-0.0.9/pyproject.toml
++-rw-r--r--   0 runner    (1001) docker     (127)       38 2024-04-14 14:26:11.301989 bencode2-0.0.9/setup.cfg
++-rw-r--r--   0 runner    (1001) docker     (127)     1092 2024-04-14 14:26:06.000000 bencode2-0.0.9/setup.py
++drwxr-xr-x   0 runner    (1001) docker     (127)        0 2024-04-14 14:26:11.301989 bencode2-0.0.9/tests/
++-rw-r--r--   0 runner    (1001) docker     (127)     1715 2024-04-14 14:26:06.000000 bencode2-0.0.9/tests/test_decode.py
++-rw-r--r--   0 runner    (1001) docker     (127)     4237 2024-04-14 14:26:06.000000 bencode2-0.0.9/tests/test_encode.py
++-rw-r--r--   0 runner    (1001) docker     (127)      434 2024-04-14 14:26:06.000000 bencode2-0.0.9/tests/test_torrent.py
 ```
 
-## bencode2/_decoder.c
+### Comparing `bencode2-0.0.8/LICENSE` & `bencode2-0.0.9/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `bencode2-0.0.8/PKG-INFO` & `bencode2-0.0.9/PKG-INFO`
+
+ * *Files 3% similar despite different names*
 
 ```diff
-@@ -1,15 +1,15 @@
- /* Generated by Cython 3.0.10 */
- 
- /* BEGIN: Cython Metadata
- {
-     "distutils": {
-         "name": "bencode2._decoder",
-         "sources": [
--            "bencode2\\_decoder.pyx"
-+            "bencode2/_decoder.pyx"
-         ]
-     },
-     "module_name": "bencode2._decoder"
- }
- END: Cython Metadata */
- 
- #ifndef PY_SSIZE_T_CLEAN
-@@ -1475,15 +1475,15 @@
- static int __pyx_clineno = 0;
- static const char * __pyx_cfilenm = __FILE__;
- static const char *__pyx_filename;
- 
- /* #### Code section: filename_table ### */
- 
- static const char *__pyx_f[] = {
--  "bencode2\\\\_decoder.pyx",
-+  "bencode2/_decoder.pyx",
-   "<stringsource>",
- };
- /* #### Code section: utility_code_proto_before_types ### */
- /* ForceInitThreads.proto */
- #ifndef __PYX_FORCE_INIT_THREADS
-   #define __PYX_FORCE_INIT_THREADS 0
- #endif
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: bencode2
+-Version: 0.0.8
++Version: 0.0.9
+ Summary: bencode serialize/deserialize library
+ Home-page: https://github.com/trim21/py-bencode
+ Author: trim21
+ Author-email: trim21.me@gmail.com
+ Description-Content-Type: text/markdown
+ License-File: LICENSE
+```
+
+### Comparing `bencode2-0.0.8/bencode2/__init__.py` & `bencode2-0.0.9/bencode2/__init__.py`
+
+ * *Files identical despite different names*
+
+### Comparing `bencode2-0.0.8/bencode2/_decoder.c` & `bencode2-0.0.9/bencode2/_decoder.c`
+
+ * *Files 6% similar despite different names*
+
+```diff
 @@ -2333,15 +2333,15 @@
  static const char __pyx_k_data[] = "data";
  static const char __pyx_k_dict[] = "__dict__";
@@ -279,8 +150,7 @@
  static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
  static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
  static const char __pyx_k_pyx_unpickle_Decoder[] = "__pyx_unpickle_Decoder";
--static const char __pyx_k_bencode2__decoder_pyx[] = "bencode2\\_decoder.pyx";
-+static const char __pyx_k_bencode2__decoder_pyx[] = "bencode2/_decoder.pyx";
+ static const char __pyx_k_bencode2__decoder_pyx[] = "bencode2/_decoder.pyx";
  static const char __pyx_k_Decoder___reduce_cython[] = "Decoder.__reduce_cython__";
  static const char __pyx_k_Decoder___setstate_cython[] = "Decoder.__setstate_cython__";
  static const char __pyx_k_not_a_valid_bencode_bytes[] = "not a valid bencode bytes: ";
@@ -805,23 +675,23 @@
 -    __Pyx_GOTREF(__pyx_t_8);
 -    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_x, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
 +    __pyx_t_1 = PyNumber_Add(__pyx_v_index, __pyx_int_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
++    __Pyx_GOTREF(__pyx_t_1);
++    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_x, __pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 48, __pyx_L1_error)
++    __Pyx_GOTREF(__pyx_t_10);
++    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
++    __pyx_t_1 = __Pyx_PyInt_From_char('0'); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
      __Pyx_GOTREF(__pyx_t_1);
 -    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 -    __pyx_t_8 = __Pyx_PyInt_From_char('0'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
 -    __Pyx_GOTREF(__pyx_t_8);
 -    __pyx_t_7 = PyObject_RichCompare(__pyx_t_1, __pyx_t_8, Py_EQ); __Pyx_XGOTREF(__pyx_t_7); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 43, __pyx_L1_error)
-+    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_x, __pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 48, __pyx_L1_error)
-+    __Pyx_GOTREF(__pyx_t_10);
++    __pyx_t_12 = PyObject_RichCompare(__pyx_t_10, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
++    __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 -    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 -    __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely((__pyx_t_4 < 0))) __PYX_ERR(0, 43, __pyx_L1_error)
 -    __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 -    if (unlikely(__pyx_t_4)) {
-+    __pyx_t_1 = __Pyx_PyInt_From_char('0'); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
-+    __Pyx_GOTREF(__pyx_t_1);
-+    __pyx_t_12 = PyObject_RichCompare(__pyx_t_10, __pyx_t_1, Py_EQ); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
-+    __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 +    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_7 < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
 +    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 +    if (unlikely(__pyx_t_7)) {
@@ -888,6 +758,10 @@
 -        if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 44, __pyx_L1_error)
 -        __Pyx_GOTREF(__pyx_t_7);
 -        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+-      }
+-      __Pyx_Raise(__pyx_t_7, 0, 0, 0);
+-      __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+-      __PYX_ERR(0, 44, __pyx_L1_error)
 +        PyObject *__pyx_callargs[2] = {__pyx_t_10, __pyx_t_13};
 +        __pyx_t_12 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_11, 1+__pyx_t_11);
 +        __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -895,10 +769,7 @@
 +        if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
 +        __Pyx_GOTREF(__pyx_t_12);
 +        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-       }
--      __Pyx_Raise(__pyx_t_7, 0, 0, 0);
--      __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
--      __PYX_ERR(0, 44, __pyx_L1_error)
++      }
 +      __Pyx_Raise(__pyx_t_12, 0, 0, 0);
 +      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
 +      __PYX_ERR(0, 49, __pyx_L1_error)
@@ -1041,6 +912,10 @@
 -      if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 48, __pyx_L1_error)
 -      __Pyx_GOTREF(__pyx_t_8);
 -      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+-    }
+-    __Pyx_Raise(__pyx_t_8, 0, 0, 0);
+-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+-    __PYX_ERR(0, 48, __pyx_L1_error)
 +      PyObject *__pyx_callargs[2] = {__pyx_t_12, __pyx_t_10};
 +      __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_13, __pyx_callargs+1-__pyx_t_11, 1+__pyx_t_11);
 +      __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -1048,10 +923,7 @@
 +      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
 +      __Pyx_GOTREF(__pyx_t_1);
 +      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
-     }
--    __Pyx_Raise(__pyx_t_8, 0, 0, 0);
--    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
--    __PYX_ERR(0, 48, __pyx_L1_error)
++    }
 +    __Pyx_Raise(__pyx_t_1, 0, 0, 0);
 +    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 +    __PYX_ERR(0, 53, __pyx_L1_error)
@@ -2078,574 +1950,146 @@
  }
 ```
 
-## bencode2/_decoder.pyx
+### Comparing `bencode2-0.0.8/bencode2/_decoder.pyx` & `bencode2-0.0.9/bencode2/_decoder.pyx`
+
+ * *Files 13% similar despite different names*
 
 ```diff
-@@ -1,86 +1,94 @@
--# cython: language_level=3
--
--from typing import Any
--
--from ._exceptions import BencodeDecodeError
--
--cdef class Decoder:
--    str_key: bool
--
--    def __init__(self, str_key: bool):
--        self.str_key = str_key
--
--    def decode(self, value: bytes)-> Any:
--        try:
--            data, length = self.__decode(value, 0)
--        except (IndexError, KeyError, TypeError, ValueError) as e:
--            raise BencodeDecodeError(f"not a valid bencode bytes: {e}") from e
--
--        if length != len(value):
--            raise BencodeDecodeError("invalid bencode value (data after valid prefix)")
--
--        return data
--
--    cdef tuple[Any, int] __decode(self, x: bytes, index: int):
--        if x[index] == c'l':
--            return self.__decode_list(x, index)
--        if x[index] == c'i':
--            return self.__decode_int(x, index)
--        if x[index] == c'd':
--            return self.__decode_dict(x, index)
--        if c'0' < x[index] <= c'9':
--            return self.__decode_str(x, index)
--
--        raise BencodeDecodeError(
--            f"unexpected token {x[index:index + 1]} at index {index}")
--
--    cdef tuple[object, int] __decode_int(self, x: bytes, index: int):
--        index += 1
--        new_f = x.index(b"e", index)
+@@ -33,15 +33,20 @@
+ 
+         raise BencodeDecodeError(
+             f"unexpected token {x[index:index + 1]} at index {index}")
+ 
+     cdef tuple[object, int] __decode_int(self, x: bytes, index: int):
+         index += 1
+         new_f = x.index(b"e", index)
 -        n = int(x[index:new_f])
--
--        if x[index] == c'-':
--            if x[index + 1] == c"0":
--                raise BencodeDecodeError(
--                    f'-0 is not allowed in bencoding. index: {index}'
--                )
--        elif x[index] == c'0' and new_f != index + 1:
--            raise BencodeDecodeError(
--                f'integer with leading zero is not allowed. index: {index}'
--            )
--        return n, new_f + 1
--
--    cdef tuple[list, int] __decode_list(self, x: bytes, index: int):
--        r, index = [], index + 1
--
--        while x[index] != c'e':
--            v, index = self.__decode(x, index)
--            r.append(v)
--
--        return r, index + 1
--
--    cdef tuple[bytes, int] __decode_str(self, x: bytes, index: int):
--        if x[index] == c'0':
--            raise BencodeDecodeError(
--                f'malformed str/bytes length with leading 0. index {index}'
--            )
--
--        colon = x.index(b":", index)
--        n = int(x[index:colon])
--
--        colon += 1
--        s = x[colon: colon + n]
--
--        return s, colon + n
--
--    cdef tuple[dict, int] __decode_dict(self, x: bytes, index: int):
--        index += 1
--
--        r = {}
--        while x[index] != c'e':
--            k, index = self.__decode_str(x, index)
--            if self.str_key:
--                k = k.decode(encoding='utf-8', errors='strict')
--            r[k], index = self.__decode(x, index)
--
--        return r, index + 1
-+# cython: language_level=3
-+
-+from typing import Any
-+
-+from ._exceptions import BencodeDecodeError
-+
-+cdef class Decoder:
-+    str_key: bool
-+
-+    def __init__(self, str_key: bool):
-+        self.str_key = str_key
-+
-+    def decode(self, value: bytes)-> Any:
-+        try:
-+            data, length = self.__decode(value, 0)
-+        except (IndexError, KeyError, TypeError, ValueError) as e:
-+            raise BencodeDecodeError(f"not a valid bencode bytes: {e}") from e
-+
-+        if length != len(value):
-+            raise BencodeDecodeError("invalid bencode value (data after valid prefix)")
-+
-+        return data
-+
-+    cdef tuple[Any, int] __decode(self, x: bytes, index: int):
-+        if x[index] == c'l':
-+            return self.__decode_list(x, index)
-+        if x[index] == c'i':
-+            return self.__decode_int(x, index)
-+        if x[index] == c'd':
-+            return self.__decode_dict(x, index)
-+        if c'0' < x[index] <= c'9':
-+            return self.__decode_str(x, index)
-+
-+        raise BencodeDecodeError(
-+            f"unexpected token {x[index:index + 1]} at index {index}")
-+
-+    cdef tuple[object, int] __decode_int(self, x: bytes, index: int):
-+        index += 1
-+        new_f = x.index(b"e", index)
 +        try:
 +            n = int(x[index:new_f], 10)
 +        except ValueError:
 +            raise BencodeDecodeError(
 +                f'malformed int {x[index:new_f]}. index {index}'
 +            )
-+
-+        if x[index] == c'-':
-+            if x[index + 1] == c"0":
-+                raise BencodeDecodeError(
-+                    f'-0 is not allowed in bencoding. index: {index}'
-+                )
-+        elif x[index] == c'0' and new_f != index + 1:
-+            raise BencodeDecodeError(
-+                f'integer with leading zero is not allowed. index: {index}'
-+            )
-+        return n, new_f + 1
-+
-+    cdef tuple[list, int] __decode_list(self, x: bytes, index: int):
-+        r, index = [], index + 1
-+
-+        while x[index] != c'e':
-+            v, index = self.__decode(x, index)
-+            r.append(v)
-+
-+        return r, index + 1
-+
-+    cdef tuple[bytes, int] __decode_str(self, x: bytes, index: int):
-+        if x[index] == c'0':
-+            raise BencodeDecodeError(
-+                f'malformed str/bytes length with leading 0. index {index}'
-+            )
-+
-+        colon = x.index(b":", index)
+ 
+         if x[index] == c'-':
+             if x[index + 1] == c"0":
+                 raise BencodeDecodeError(
+                     f'-0 is not allowed in bencoding. index: {index}'
+                 )
+         elif x[index] == c'0' and new_f != index + 1:
+@@ -62,15 +67,18 @@
+     cdef tuple[bytes, int] __decode_str(self, x: bytes, index: int):
+         if x[index] == c'0':
+             raise BencodeDecodeError(
+                 f'malformed str/bytes length with leading 0. index {index}'
+             )
+ 
+         colon = x.index(b":", index)
+-        n = int(x[index:colon])
 +        try:
 +            n = int(x[index:colon])
 +        except ValueError:
 +            raise BencodeDecodeError(f'malformed str/bytes length {x[index:colon]}, index {index}')
-+
-+        colon += 1
-+        s = x[colon: colon + n]
-+
-+        return s, colon + n
-+
-+    cdef tuple[dict, int] __decode_dict(self, x: bytes, index: int):
-+        index += 1
-+
-+        r = {}
-+        while x[index] != c'e':
-+            k, index = self.__decode_str(x, index)
-+            if self.str_key:
-+                k = k.decode(encoding='utf-8', errors='strict')
-+            r[k], index = self.__decode(x, index)
-+
-+        return r, index + 1
+ 
+         colon += 1
+         s = x[colon: colon + n]
+ 
+         return s, colon + n
+ 
+     cdef tuple[dict, int] __decode_dict(self, x: bytes, index: int):
 ```
 
-## bencode2/_encoder.c
+### Comparing `bencode2-0.0.8/bencode2/_encoder.c` & `bencode2-0.0.9/bencode2/_encoder.c`
+
+ * *Files identical despite different names*
+
+### Comparing `bencode2-0.0.8/bencode2/_encoder.pyx` & `bencode2-0.0.9/bencode2/_encoder.pyx`
+
+ * *Files identical despite different names*
+
+### Comparing `bencode2-0.0.8/bencode2/_exceptions.c` & `bencode2-0.0.9/bencode2/_exceptions.c`
+
+ * *Files identical despite different names*
+
+### Comparing `bencode2-0.0.8/bencode2.egg-info/PKG-INFO` & `bencode2-0.0.9/bencode2.egg-info/PKG-INFO`
+
+ * *Files 3% similar despite different names*
 
 ```diff
-@@ -2,15 +2,15 @@
- 
- /* BEGIN: Cython Metadata
- {
-     "distutils": {
-         "depends": [],
-         "name": "bencode2._encoder",
-         "sources": [
--            "build\\lib.win-amd64-cpython-38\\bencode2\\_encoder.pyx"
-+            "bencode2/_encoder.pyx"
-         ]
-     },
-     "module_name": "bencode2._encoder"
- }
- END: Cython Metadata */
- 
- #ifndef PY_SSIZE_T_CLEAN
-@@ -1483,15 +1483,15 @@
- static int __pyx_clineno = 0;
- static const char * __pyx_cfilenm = __FILE__;
- static const char *__pyx_filename;
- 
- /* #### Code section: filename_table ### */
- 
- static const char *__pyx_f[] = {
--  "bencode2\\\\_encoder.pyx",
-+  "bencode2/_encoder.pyx",
-   "type.pxd",
-   "bool.pxd",
- };
- /* #### Code section: utility_code_proto_before_types ### */
- /* ForceInitThreads.proto */
- #ifndef __PYX_FORCE_INIT_THREADS
-   #define __PYX_FORCE_INIT_THREADS 0
-@@ -2334,15 +2334,15 @@
- static const char __pyx_k_not_supported[] = "' not supported";
- static const char __pyx_k_collections_abc[] = "collections.abc";
- static const char __pyx_k_bencode2__encoder[] = "bencode2._encoder";
- static const char __pyx_k_BencodeEncodeError[] = "BencodeEncodeError";
- static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
- static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
- static const char __pyx_k_find_duplicated_keys[] = "find duplicated keys ";
--static const char __pyx_k_bencode2__encoder_pyx[] = "bencode2\\_encoder.pyx";
-+static const char __pyx_k_bencode2__encoder_pyx[] = "bencode2/_encoder.pyx";
- static const char __pyx_k_encode_dict_locals_lambda[] = "__encode_dict.<locals>.<lambda>";
- static const char __pyx_k_expected_binary_or_text_found_s[] = "expected binary or text (found %s)";
- static const char __pyx_k_empty_bytes_is_not_allowed_in_be[] = "empty bytes is not allowed in bencoding";
- static const char __pyx_k_empty_string_is_not_allowed_in_b[] = "empty string is not allowed in bencoding";
- /* #### Code section: decls ### */
- static PyObject *__pyx_pf_8bencode2_8_encoder_encode(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_value); /* proto */
- static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_kv); /* proto */
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: bencode2
+-Version: 0.0.8
++Version: 0.0.9
+ Summary: bencode serialize/deserialize library
+ Home-page: https://github.com/trim21/py-bencode
+ Author: trim21
+ Author-email: trim21.me@gmail.com
+ Description-Content-Type: text/markdown
+ License-File: LICENSE
 ```
 
-## bencode2/_encoder.pyx
+### Comparing `bencode2-0.0.8/setup.py` & `bencode2-0.0.9/setup.py`
 
- * *Ordering differences only*
+ * *Files 1% similar despite different names*
 
 ```diff
-@@ -1,103 +1,103 @@
--# cython: language_level=3
--
--from collections.abc import Mapping
--from typing import Any
--
--from cpython.bytes cimport PyBytes_Check
--from cpython.int cimport PyInt_Check
--from cpython.list cimport PyList_Check, PyList_Append
--from cpython.tuple cimport PyTuple_Check
--from cpython.bool cimport PyBool_Check
--from cpython.dict cimport PyDict_Check
--from cpython.string cimport PyString_Check
--
--from ._exceptions import BencodeEncodeError
--
--cpdef bytes encode(value: Any):
--    r: list[bytes] = []  # makes more sense for something with lots of appends
--
--    __encode(value, r)
--
--    # Join parts
--    return b"".join(r)
--
--cdef __encode(value, r: list[bytes]):
--    if PyDict_Check(value):
--        __encode_dict(value, r)
--    elif PyString_Check(value):
--        __encode_str(value, r)
--    elif PyList_Check(value):
--        __encode_list(value, r)
--    elif PyTuple_Check(value):
--        __encode_list(value, r)
--    elif PyBytes_Check(value):
--        __encode_bytes(value, r)
--    elif PyBool_Check(value):
--        __encode_bool(value, r)
--    elif PyInt_Check(value):
--        __encode_int(value, r)
--    else:
--        raise BencodeEncodeError(f"type '{type(value)}' not supported")
--
--cdef __encode_int(x: int, r: list[bytes]):
--    r.extend((b"i", str(x).encode("utf-8"), b"e"))
--
--cdef __encode_bool(x: bool, r: list[bytes]):
--    if x:
--        __encode_int(1, r)
--    else:
--        __encode_int(0, r)
--
--cdef __encode_bytes(x: bytes, r: list[bytes]):
--    if not x:
--        raise BencodeEncodeError('empty bytes is not allowed in bencoding')
--    PyList_Append(r, str(len(x)).encode("utf-8"))
--    PyList_Append(r, b":")
--    PyList_Append(r, x)
--
--cdef __encode_str(x: str, r: list[bytes]):
--    if not x:
--        raise BencodeEncodeError('empty string is not allowed in bencoding')
--    __encode_bytes(x.encode("UTF-8"), r)
--
--cdef __encode_list(x: list | tuple, r: list[bytes]):
--    PyList_Append(r, b"l")
--
--    for i in x:
--        __encode(i, r)
--
--    PyList_Append(r, b"e")
--
--cdef __encode_dict(x: Mapping, r: list[bytes]):
--    PyList_Append(r, b"d")
--
--    # force all keys to bytes, because str and bytes are incomparable
--    i_list: list[tuple[bytes, Any]] = [(to_binary(k), v) for k, v in x.items()]
--    i_list.sort(key=lambda kv: kv[0])
--    __check_duplicated_keys(i_list)
--
--    for k, v in i_list:
--        __encode(k, r)
--        __encode(v, r)
--
--    PyList_Append(r, b"e")
--
--cdef __check_duplicated_keys(s: list[tuple[bytes, Any]]):
--    if len(s) == 0:
--        return
--    last_key: bytes = s[0][0]
--    for current, _ in s[1:]:
--        if last_key == current:
--            raise BencodeEncodeError(
--                f'find duplicated keys {last_key} and {current.decode()}'
--            )
--        last_key = current
--
--cdef to_binary(s: str | bytes):
--    if PyBytes_Check(s):
--        return s
--
--    if PyString_Check(s):
--        return s.encode("utf-8", "strict")
--
--    raise TypeError("expected binary or text (found %s)" % type(s))
-+# cython: language_level=3
-+
-+from collections.abc import Mapping
-+from typing import Any
-+
-+from cpython.bytes cimport PyBytes_Check
-+from cpython.int cimport PyInt_Check
-+from cpython.list cimport PyList_Check, PyList_Append
-+from cpython.tuple cimport PyTuple_Check
-+from cpython.bool cimport PyBool_Check
-+from cpython.dict cimport PyDict_Check
-+from cpython.string cimport PyString_Check
-+
-+from ._exceptions import BencodeEncodeError
-+
-+cpdef bytes encode(value: Any):
-+    r: list[bytes] = []  # makes more sense for something with lots of appends
-+
-+    __encode(value, r)
-+
-+    # Join parts
-+    return b"".join(r)
-+
-+cdef __encode(value, r: list[bytes]):
-+    if PyDict_Check(value):
-+        __encode_dict(value, r)
-+    elif PyString_Check(value):
-+        __encode_str(value, r)
-+    elif PyList_Check(value):
-+        __encode_list(value, r)
-+    elif PyTuple_Check(value):
-+        __encode_list(value, r)
-+    elif PyBytes_Check(value):
-+        __encode_bytes(value, r)
-+    elif PyBool_Check(value):
-+        __encode_bool(value, r)
-+    elif PyInt_Check(value):
-+        __encode_int(value, r)
-+    else:
-+        raise BencodeEncodeError(f"type '{type(value)}' not supported")
-+
-+cdef __encode_int(x: int, r: list[bytes]):
-+    r.extend((b"i", str(x).encode("utf-8"), b"e"))
-+
-+cdef __encode_bool(x: bool, r: list[bytes]):
-+    if x:
-+        __encode_int(1, r)
-+    else:
-+        __encode_int(0, r)
-+
-+cdef __encode_bytes(x: bytes, r: list[bytes]):
-+    if not x:
-+        raise BencodeEncodeError('empty bytes is not allowed in bencoding')
-+    PyList_Append(r, str(len(x)).encode("utf-8"))
-+    PyList_Append(r, b":")
-+    PyList_Append(r, x)
-+
-+cdef __encode_str(x: str, r: list[bytes]):
-+    if not x:
-+        raise BencodeEncodeError('empty string is not allowed in bencoding')
-+    __encode_bytes(x.encode("UTF-8"), r)
-+
-+cdef __encode_list(x: list | tuple, r: list[bytes]):
-+    PyList_Append(r, b"l")
-+
-+    for i in x:
-+        __encode(i, r)
-+
-+    PyList_Append(r, b"e")
-+
-+cdef __encode_dict(x: Mapping, r: list[bytes]):
-+    PyList_Append(r, b"d")
-+
-+    # force all keys to bytes, because str and bytes are incomparable
-+    i_list: list[tuple[bytes, Any]] = [(to_binary(k), v) for k, v in x.items()]
-+    i_list.sort(key=lambda kv: kv[0])
-+    __check_duplicated_keys(i_list)
-+
-+    for k, v in i_list:
-+        __encode(k, r)
-+        __encode(v, r)
-+
-+    PyList_Append(r, b"e")
-+
-+cdef __check_duplicated_keys(s: list[tuple[bytes, Any]]):
-+    if len(s) == 0:
-+        return
-+    last_key: bytes = s[0][0]
-+    for current, _ in s[1:]:
-+        if last_key == current:
-+            raise BencodeEncodeError(
-+                f'find duplicated keys {last_key} and {current.decode()}'
-+            )
-+        last_key = current
-+
-+cdef to_binary(s: str | bytes):
-+    if PyBytes_Check(s):
-+        return s
-+
-+    if PyString_Check(s):
-+        return s.encode("utf-8", "strict")
-+
-+    raise TypeError("expected binary or text (found %s)" % type(s))
+@@ -21,15 +21,15 @@
+ extensions = [
+     # Everything but primes.pyx is included here.
+     Extension("*", ["**/*.pyx"], define_macros=define_macros)
+ ]
+ 
+ setup(
+     name="bencode2",
+-    version="0.0.8",
++    version="0.0.9",
+     description="bencode serialize/deserialize library",
+     long_description=get_readme(),
+     long_description_content_type="text/markdown",
+     author="trim21",
+     author_email="trim21.me@gmail.com",
+     url="https://github.com/trim21/py-bencode",
+     package_dir={"bencode2": "bencode2"},
 ```
 
-## bencode2/_exceptions.c
+### Comparing `bencode2-0.0.8/tests/test_decode.py` & `bencode2-0.0.9/tests/test_decode.py`
+
+ * *Files 18% similar despite different names*
 
 ```diff
-@@ -1,15 +1,15 @@
- /* Generated by Cython 3.0.10 */
+@@ -9,21 +9,28 @@
+     with pytest.raises(BencodeDecodeError):
+         bdecode(b"i-0e")
  
- /* BEGIN: Cython Metadata
- {
-     "distutils": {
-         "name": "bencode2._exceptions",
-         "sources": [
--            "bencode2\\_exceptions.pyx"
-+            "bencode2/_exceptions.pyx"
-         ]
-     },
-     "module_name": "bencode2._exceptions"
- }
- END: Cython Metadata */
+     with pytest.raises(BencodeDecodeError):
+         bdecode(b"i01e")
  
- #ifndef PY_SSIZE_T_CLEAN
-@@ -1475,15 +1475,15 @@
- static int __pyx_clineno = 0;
- static const char * __pyx_cfilenm = __FILE__;
- static const char *__pyx_filename;
+     with pytest.raises(BencodeDecodeError):
++        bdecode(b"iabce")
++
++    with pytest.raises(BencodeDecodeError):
+         # empty str
+         print(bdecode(b"d0:4:spam3:fooi42ee"))
  
- /* #### Code section: filename_table ### */
+     with pytest.raises(BencodeDecodeError):
+         # empty str
+         bdecode(b"0:")
  
- static const char *__pyx_f[] = {
--  "bencode2\\\\_exceptions.pyx",
-+  "bencode2/_exceptions.pyx",
- };
- /* #### Code section: utility_code_proto_before_types ### */
- /* #### Code section: numeric_typedefs ### */
- /* #### Code section: complex_type_declarations ### */
- /* #### Code section: type_declarations ### */
++    with pytest.raises(BencodeDecodeError):
++        # empty str
++        bdecode(b"1a2:qwer")
++
  
- /*--- Type declarations ---*/
+ def test_decode1():
+     assert bdecode(b"d1:ad2:id20:abcdefghij0123456789e1:q4:ping1:t2:aa1:y1:qe") == {
+         b"a": {b"id": b"abcdefghij0123456789"},
+         b"q": b"ping",
+         b"t": b"aa",
+         b"y": b"q",
 ```
 
-## bencode2/_exceptions.pyx
+### Comparing `bencode2-0.0.8/tests/test_encode.py` & `bencode2-0.0.9/tests/test_encode.py`
 
- * *Ordering differences only*
-
-```diff
-@@ -1,8 +1,8 @@
--# cython: language_level=3
--
--class BencodeDecodeError(Exception):
--    """Bencode decode error."""
--
--
--class BencodeEncodeError(Exception):
--    """Bencode encode error."""
-+# cython: language_level=3
-+
-+class BencodeDecodeError(Exception):
-+    """Bencode decode error."""
-+
-+
-+class BencodeEncodeError(Exception):
-+    """Bencode encode error."""
-```
-
-## Comparing `bencode2-0.0.8.dist-info/LICENSE` & `bencode2-0.0.9.dist-info/LICENSE`
-
- * *Ordering differences only*
-
- * *Files 16% similar despite different names*
-
-```diff
-@@ -1,21 +1,21 @@
--MIT License
--
--Copyright (c) 2024 trim21 <trim21.me@gmail.com>
--
--Permission is hereby granted, free of charge, to any person obtaining a copy
--of this software and associated documentation files (the "Software"), to deal
--in the Software without restriction, including without limitation the rights
--to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
--copies of the Software, and to permit persons to whom the Software is
--furnished to do so, subject to the following conditions:
--
--The above copyright notice and this permission notice shall be included in all
--copies or substantial portions of the Software.
--
--THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
--IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
--FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
--AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
--LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
--OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
--SOFTWARE.
-+MIT License
-+
-+Copyright (c) 2024 trim21 <trim21.me@gmail.com>
-+
-+Permission is hereby granted, free of charge, to any person obtaining a copy
-+of this software and associated documentation files (the "Software"), to deal
-+in the Software without restriction, including without limitation the rights
-+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-+copies of the Software, and to permit persons to whom the Software is
-+furnished to do so, subject to the following conditions:
-+
-+The above copyright notice and this permission notice shall be included in all
-+copies or substantial portions of the Software.
-+
-+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-+SOFTWARE.
-```
+ * *Files identical despite different names*
 

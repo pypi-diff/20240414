@@ -11271,3 +11271,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:29:14] INFO root fetch - processPackages [pyreqwest-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/pyreqwest_impersonate-0.1.3-pp39-pypy39_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-14 17:29:14] INFO root fetch - main [MainThread]: End processing [pyreqwest-impersonate]: success
 [2024-04-14 17:29:14] INFO root fetch - main [MainThread]: Store serial: [22760164]
+[2024-04-14 17:31:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760164]
+[2024-04-14 17:31:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mdapy
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode2
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-initry
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kucoin-futures-lib
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lxns
+[2024-04-14 17:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: packaging-demo-hubzar
+[2024-04-14 17:31:22] INFO root fetch - processPackages [kucoin-futures-lib]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [pytest-initry]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/5d/eb/71e3dc106cc0416cabaf6da1adf160c29249cbdf7caed2c9e285d84f0100/kucoin_futures_lib-0.8.0.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [lxns]: New version: [0.0a3] Old Version: [0.0a2]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [mdapy]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [packaging-demo-hubzar]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [pytest-initry]: Downloading https://files.pythonhosted.org/packages/2c/0c/1dfae6b96610fb3156df190927fea56eb42eb944704e248f884691f502ef/pytest_initry-0.1.1.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/30/da/39c197571d39140c1df94449bbcf16b86a62ce85ed2899e3e0098e41e22b/mdapy-0.9.8.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/4a/b4/b024a06fa2177409013f4772c2c5e89aece2041a394861c64c2312756ebf/kucoin_futures_lib-0.9.0.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [lxns]: Downloading https://files.pythonhosted.org/packages/c7/dd/b5b1f8ee49b28f6ceb9c23c8bd6428ecaa658e8bae4b32d4c108d7a876f2/lxns-0.0a2.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [packaging-demo-hubzar]: Downloading https://files.pythonhosted.org/packages/1b/05/cb2a9d15d1367e45e4987579344d207d61fec737d09ba49d8b7117e15d46/packaging-demo-hubzar-1.0.2.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: executing diffoscope
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kucoin_futures_lib-0.8.0.tar.gz tmp/kucoin_futures_lib-0.9.0.tar.gz --markdown 20240414/k/kucoin-futures-lib/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 17:31:23] INFO root fetch - processPackages [pytest-initry]: Downloading https://files.pythonhosted.org/packages/76/46/5bcd31c677b98669feda28b21b864b392196d41ee3651a657262a97d6a2b/pytest_initry-0.2.0.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [pytest-initry]: executing diffoscope
+[2024-04-14 17:31:23] INFO root fetch - processPackages [pytest-initry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_initry-0.1.1.tar.gz tmp/pytest_initry-0.2.0.tar.gz --markdown 20240414/p/pytest-initry/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-14 17:31:23] INFO root fetch - processPackages [packaging-demo-hubzar]: Downloading https://files.pythonhosted.org/packages/9d/b2/a59a03e0900850d8c84590f3814b9da52899b7a0b86a918df10856ae33c9/packaging_demo_hubzar-1.1.0.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [lxns]: Downloading https://files.pythonhosted.org/packages/18/6d/1f08d6f5509b1583d7891f3818e2f42d4d2e54630283c9d501f77252206b/lxns-0.0a3.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-04-14 17:31:23] INFO root fetch - processPackages [packaging-demo-hubzar]: executing diffoscope
+[2024-04-14 17:31:23] INFO root fetch - processPackages [packaging-demo-hubzar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging-demo-hubzar-1.0.2.tar.gz tmp/packaging_demo_hubzar-1.1.0.tar.gz --markdown 20240414/p/packaging-demo-hubzar/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-04-14 17:31:23] INFO root fetch - processPackages [lxns]: executing diffoscope
+[2024-04-14 17:31:23] INFO root fetch - processPackages [lxns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lxns-0.0a2.tar.gz tmp/lxns-0.0a3.tar.gz --markdown 20240414/l/lxns/0.0a2-0.0a3/README.md --exclude *.pyd
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.8.0.tar.gz]
+[2024-04-14 17:31:23] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.9.0.tar.gz]
+[2024-04-14 17:31:23] INFO root fetch - main [MainThread]: End processing [kucoin-futures-lib]: success
+[2024-04-14 17:31:24] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-14 17:31:24] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240414/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 17:31:24] INFO root fetch - processPackages [pytest-initry]: Remove: archive file [/home/abi/fetcher/tmp/pytest_initry-0.1.1.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - processPackages [pytest-initry]: Remove: archive file [/home/abi/fetcher/tmp/pytest_initry-0.2.0.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - main [MainThread]: End processing [pytest-initry]: success
+[2024-04-14 17:31:24] INFO root fetch - processPackages [packaging-demo-hubzar]: Remove: archive file [/home/abi/fetcher/tmp/packaging-demo-hubzar-1.0.2.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - processPackages [packaging-demo-hubzar]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_hubzar-1.1.0.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - main [MainThread]: End processing [packaging-demo-hubzar]: success
+[2024-04-14 17:31:24] INFO root fetch - processPackages [lxns]: Remove: archive file [/home/abi/fetcher/tmp/lxns-0.0a2.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - processPackages [lxns]: Remove: archive file [/home/abi/fetcher/tmp/lxns-0.0a3.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - main [MainThread]: End processing [lxns]: success
+[2024-04-14 17:31:24] INFO root fetch - processPackages [mdapy]: Downloading https://files.pythonhosted.org/packages/0d/a6/03cb123e3f24cde08eaf401b4658862b10eb9fe8431d5f87d8b08257888a/mdapy-0.9.9.tar.gz
+[2024-04-14 17:31:24] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-04-14 17:31:24] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-14 17:31:25] INFO root fetch - processPackages [mdapy]: executing diffoscope
+[2024-04-14 17:31:25] INFO root fetch - processPackages [mdapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdapy-0.9.8.tar.gz tmp/mdapy-0.9.9.tar.gz --markdown 20240414/m/mdapy/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-14 17:31:27] INFO root fetch - processPackages [mdapy]: Remove: archive file [/home/abi/fetcher/tmp/mdapy-0.9.8.tar.gz]
+[2024-04-14 17:31:27] INFO root fetch - processPackages [mdapy]: Remove: archive file [/home/abi/fetcher/tmp/mdapy-0.9.9.tar.gz]
+[2024-04-14 17:31:27] INFO root fetch - main [MainThread]: End processing [mdapy]: success
+[2024-04-14 17:31:27] INFO root fetch - main [MainThread]: Store serial: [22760256]
