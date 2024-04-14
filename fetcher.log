@@ -10050,3 +10050,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:03:37] INFO root fetch - processPackages [fastopendata_client]: Remove: archive file [/home/abi/fetcher/tmp/fastopendata_client-0.0.9.tar.gz]
 [2024-04-14 16:03:37] INFO root fetch - main [MainThread]: End processing [fastopendata_client]: success
 [2024-04-14 16:03:37] INFO root fetch - main [MainThread]: Store serial: [22759499]
+[2024-04-14 16:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759499]
+[2024-04-14 16:05:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 16:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: testasteca
+[2024-04-14 16:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainlib-eth
+[2024-04-14 16:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etrc
+[2024-04-14 16:05:53] WARNING root fetch - processPackages [testasteca]: Skipping, unable to determine old version
+[2024-04-14 16:05:53] INFO root fetch - main [MainThread]: End processing [testasteca] error
+[2024-04-14 16:05:53] INFO root fetch - processPackages [etrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 16:05:53] INFO root fetch - processPackages [chainlib-eth]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-14 16:05:54] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/3e/d8/54c8d53559b3d73dca07a4bd165692b6a4c406e3affb0a94d2b6d18b2935/etrc-0.0.8.tar.gz
+[2024-04-14 16:05:54] INFO root fetch - processPackages [chainlib-eth]: Downloading https://files.pythonhosted.org/packages/f0/4a/e66f29cb6970afe55675fff9177c3c4378fd146ef1155d5ba296ed03d94b/chainlib-eth-0.6.1.tar.gz
+[2024-04-14 16:05:54] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/d5/83/0539ff753ac74be3b9dd276365fd4061b16211d7c5dbd77193f92b242d12/etrc-0.0.9.tar.gz
+[2024-04-14 16:05:54] INFO root fetch - processPackages [chainlib-eth]: Downloading https://files.pythonhosted.org/packages/56/61/5b762fca26741e4379aa02c8f73466f692fa7f463ee48a72164e7ad7905f/chainlib-eth-0.6.2.tar.gz
+[2024-04-14 16:05:54] INFO root fetch - processPackages [etrc]: executing diffoscope
+[2024-04-14 16:05:54] INFO root fetch - processPackages [etrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etrc-0.0.8.tar.gz tmp/etrc-0.0.9.tar.gz --markdown 20240414/e/etrc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 16:05:54] INFO root fetch - processPackages [chainlib-eth]: executing diffoscope
+[2024-04-14 16:05:54] INFO root fetch - processPackages [chainlib-eth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlib-eth-0.6.1.tar.gz tmp/chainlib-eth-0.6.2.tar.gz --markdown 20240414/c/chainlib-eth/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-14 16:05:55] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.8.tar.gz]
+[2024-04-14 16:05:55] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.9.tar.gz]
+[2024-04-14 16:05:55] INFO root fetch - main [MainThread]: End processing [etrc]: success
+[2024-04-14 16:05:55] INFO root fetch - processPackages [chainlib-eth]: Remove: archive file [/home/abi/fetcher/tmp/chainlib-eth-0.6.1.tar.gz]
+[2024-04-14 16:05:55] INFO root fetch - processPackages [chainlib-eth]: Remove: archive file [/home/abi/fetcher/tmp/chainlib-eth-0.6.2.tar.gz]
+[2024-04-14 16:05:55] INFO root fetch - main [MainThread]: End processing [chainlib-eth]: success
+[2024-04-14 16:05:55] INFO root fetch - main [MainThread]: Store serial: [22759509]
