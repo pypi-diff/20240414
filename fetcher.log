@@ -8443,3 +8443,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:08:10] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
 [2024-04-14 14:08:10] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
 [2024-04-14 14:08:10] INFO root fetch - main [MainThread]: Store serial: [22758761]
+[2024-04-14 14:10:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758761]
+[2024-04-14 14:10:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-cpp
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ragtime
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Shelve-Cache
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jgtfx2console
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyflame
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: private-cw-rpa
+[2024-04-14 14:10:25] INFO root fetch - processPackages [jgtfx2console]: New version: [0.4.7] Old Version: [0.4.5]
+[2024-04-14 14:10:25] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/43/97/b86c2c7aa7678e778c1174cff9e2951a4aaed252d28a4e6554a08eb5faf4/jgtfx2console-0.4.5.tar.gz
+[2024-04-14 14:10:25] ERROR root fetch - processPackages [private-cw-rpa]: Unable to get metadata: No such project 'private-cw-rpa'
+[2024-04-14 14:10:25] INFO root fetch - main [MainThread]: End processing [private-cw-rpa] error
+[2024-04-14 14:10:25] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240414] Old Version: [2.5.0b20240413]
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ragtime]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-04-14 14:10:25] WARNING root fetch - processPackages [Shelve-Cache]: Skipping, unable to determine old version
+[2024-04-14 14:10:25] INFO root fetch - main [MainThread]: End processing [Shelve-Cache] error
+[2024-04-14 14:10:25] INFO root fetch - processPackages [pyflame]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-14 14:10:25] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/e1/fb/fca99220cce6bfc3fe7cd8916c54128e22e6c94c8e6cf5e018be822100b7/bigdl_core_cpp-2.5.0b20240413-py3-none-win_amd64.whl
+[2024-04-14 14:10:25] INFO root fetch - processPackages [ragtime]: Downloading https://files.pythonhosted.org/packages/58/93/cd429a1d3f17186618b9ccf65c2bcaaf57a665590eacb8ab3463f1bd423e/ragtime-0.0.26.tar.gz
+[2024-04-14 14:10:25] INFO root fetch - processPackages [jgtfx2console]: Downloading https://files.pythonhosted.org/packages/e6/5e/c0ed9bc1ab42e8940e6782f9b4e5460f8cd85f34df6e7c2b14024bc1dfd1/jgtfx2console-0.4.7.tar.gz
+[2024-04-14 14:10:25] INFO root fetch - processPackages [pyflame]: Downloading https://files.pythonhosted.org/packages/0f/78/04a296a7488dddf81476d997d0c24f4872943501a26d02cee418b9fc53e0/pyflame-0.3.1.tar.gz
+[2024-04-14 14:10:25] INFO root fetch - processPackages [jgtfx2console]: executing diffoscope
+[2024-04-14 14:10:25] INFO root fetch - processPackages [jgtfx2console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfx2console-0.4.5.tar.gz tmp/jgtfx2console-0.4.7.tar.gz --markdown 20240414/j/jgtfx2console/0.4.5-0.4.7/README.md --exclude *.pyd
+[2024-04-14 14:10:25] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 54466893>=10485760
+[2024-04-14 14:10:25] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-14 14:10:26] INFO root fetch - processPackages [ragtime]: Downloading https://files.pythonhosted.org/packages/b3/d4/abd5c4fa75d1174126739413b35963fe9f60305af1038f2db0be7c4d0c1d/ragtime-0.0.27.tar.gz
+[2024-04-14 14:10:26] INFO root fetch - processPackages [pyflame]: Downloading https://files.pythonhosted.org/packages/74/9e/0e750a25b3166a0e4e4f6915c1cec971c774d3ea4f84827a64323700d5ae/pyflame-0.3.2.tar.gz
+[2024-04-14 14:10:26] INFO root fetch - processPackages [ragtime]: executing diffoscope
+[2024-04-14 14:10:26] INFO root fetch - processPackages [ragtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragtime-0.0.26.tar.gz tmp/ragtime-0.0.27.tar.gz --markdown 20240414/r/ragtime/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-04-14 14:10:26] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.5.tar.gz]
+[2024-04-14 14:10:26] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.7.tar.gz]
+[2024-04-14 14:10:26] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
+[2024-04-14 14:10:26] INFO root fetch - processPackages [pyflame]: executing diffoscope
+[2024-04-14 14:10:26] INFO root fetch - processPackages [pyflame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyflame-0.3.1.tar.gz tmp/pyflame-0.3.2.tar.gz --markdown 20240414/p/pyflame/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-14 14:10:26] INFO root fetch - processPackages [ragtime]: Remove: archive file [/home/abi/fetcher/tmp/ragtime-0.0.26.tar.gz]
+[2024-04-14 14:10:26] INFO root fetch - processPackages [ragtime]: Remove: archive file [/home/abi/fetcher/tmp/ragtime-0.0.27.tar.gz]
+[2024-04-14 14:10:26] INFO root fetch - main [MainThread]: End processing [ragtime]: success
+[2024-04-14 14:10:27] INFO root fetch - processPackages [pyflame]: Remove: archive file [/home/abi/fetcher/tmp/pyflame-0.3.1.tar.gz]
+[2024-04-14 14:10:27] INFO root fetch - processPackages [pyflame]: Remove: archive file [/home/abi/fetcher/tmp/pyflame-0.3.2.tar.gz]
+[2024-04-14 14:10:27] INFO root fetch - main [MainThread]: End processing [pyflame]: success
+[2024-04-14 14:10:27] INFO root fetch - main [MainThread]: Store serial: [22758773]
