@@ -15947,3 +15947,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:17:44] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.3.0.tar.gz]
 [2024-04-14 23:17:44] INFO root fetch - main [MainThread]: End processing [swpclib]: success
 [2024-04-14 23:17:44] INFO root fetch - main [MainThread]: Store serial: [22762533]
+[2024-04-14 23:19:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762533]
+[2024-04-14 23:19:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 23:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sling-linux-arm64
+[2024-04-14 23:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sling-mac-amd64
+[2024-04-14 23:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sling-mac-arm64
+[2024-04-14 23:19:53] INFO root fetch - processPackages [sling-mac-arm64]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:19:53] INFO root fetch - processPackages [sling-linux-arm64]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:19:53] INFO root fetch - processPackages [sling-mac-amd64]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-04-14 23:19:54] INFO root fetch - processPackages [sling-linux-arm64]: Downloading https://files.pythonhosted.org/packages/6b/04/580a23928c6ff035a851ae69ecb94b5b9d06ea4149eba11cfca24a15dc5b/sling-linux-arm64-1.2.4.tar.gz
+[2024-04-14 23:19:54] INFO root fetch - processPackages [sling-mac-amd64]: Downloading https://files.pythonhosted.org/packages/53/da/ca7f4159548d8b005a29f0fa3ec421e5a2ee445902ab96cc0b16702bc70c/sling-mac-amd64-1.2.4.tar.gz
+[2024-04-14 23:19:54] INFO root fetch - processPackages [sling-mac-arm64]: Downloading https://files.pythonhosted.org/packages/52/a1/7e03c112ea3b0f5f1ec1aa48fff85920dbdf061f2107c53157cb3acb07b7/sling-mac-arm64-1.2.4.tar.gz
+[2024-04-14 23:19:54] WARNING root fetch - processPackages [sling-linux-arm64]: Skipping package: exceeds size limit 45839379>=10485760
+[2024-04-14 23:19:54] INFO root fetch - main [MainThread]: End processing [sling-linux-arm64] error
+[2024-04-14 23:19:54] WARNING root fetch - processPackages [sling-mac-amd64]: Skipping package: exceeds size limit 54784683>=10485760
+[2024-04-14 23:19:54] INFO root fetch - main [MainThread]: End processing [sling-mac-amd64] error
+[2024-04-14 23:19:54] WARNING root fetch - processPackages [sling-mac-arm64]: Skipping package: exceeds size limit 50507262>=10485760
+[2024-04-14 23:19:54] INFO root fetch - main [MainThread]: End processing [sling-mac-arm64] error
+[2024-04-14 23:19:54] INFO root fetch - main [MainThread]: Store serial: [22762539]
