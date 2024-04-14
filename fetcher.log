@@ -12169,3 +12169,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:34:43] INFO root fetch - processPackages [pynonymizer]: Remove: archive file [/home/abi/fetcher/tmp/pynonymizer-2.2.0.tar.gz]
 [2024-04-14 18:34:43] INFO root fetch - main [MainThread]: End processing [pynonymizer]: success
 [2024-04-14 18:34:43] INFO root fetch - main [MainThread]: Store serial: [22760541]
+[2024-04-14 18:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760541]
+[2024-04-14 18:36:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schemafunc
+[2024-04-14 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shelve-cache
+[2024-04-14 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slinn
+[2024-04-14 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: locust
+[2024-04-14 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlite-shift
+[2024-04-14 18:36:53] INFO root fetch - processPackages [shelve-cache]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-14 18:36:53] INFO root fetch - processPackages [sqlite-shift]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 18:36:53] INFO root fetch - processPackages [shelve-cache]: Downloading https://files.pythonhosted.org/packages/04/af/0c303dbad841ffc2fe4238ada949e6e50c42ebad3a4727ca9ca9b6bae92a/shelve_cache-0.0.2.tar.gz
+[2024-04-14 18:36:53] INFO root fetch - processPackages [slinn]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-14 18:36:53] WARNING root fetch - processPackages [schemafunc]: Skipping, unable to determine old version
+[2024-04-14 18:36:53] INFO root fetch - main [MainThread]: End processing [schemafunc] error
+[2024-04-14 18:36:53] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-04-14 18:36:54] INFO root fetch - processPackages [sqlite-shift]: Downloading https://files.pythonhosted.org/packages/68/74/15ae7c935182890e1f9f2e3c14c5cffc3950143ced72ea8357118b3020cc/sqlite-shift-0.1.0.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/03/24/7ac5afa86d0f2a9e851aa5d808d8244025671703068f559f7105a46800e1/slinn-2.2.8.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [shelve-cache]: Downloading https://files.pythonhosted.org/packages/45/ce/09adb25473099333f5112aa1b946e7d394e9f64816f040f39f6c394ec3ec/shelve_cache-0.0.3.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [slinn]: Downloading https://files.pythonhosted.org/packages/19/6a/33791bad6b8c9cadcf19d9d4bb4139c6d8afa0a4cbdd75611c4d6ccb8d53/slinn-2.2.9.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [sqlite-shift]: Downloading https://files.pythonhosted.org/packages/87/3b/bd9cf0298052c2fc35be310135def09484869016e532085ab511a691c687/sqlite-shift-0.1.1.tar.gz
+[2024-04-14 18:36:54] INFO root fetch - processPackages [shelve-cache]: executing diffoscope
+[2024-04-14 18:36:54] INFO root fetch - processPackages [shelve-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelve_cache-0.0.2.tar.gz tmp/shelve_cache-0.0.3.tar.gz --markdown 20240414/s/shelve-cache/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-14 18:36:54] INFO root fetch - processPackages [sqlite-shift]: executing diffoscope
+[2024-04-14 18:36:54] INFO root fetch - processPackages [sqlite-shift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-shift-0.1.0.tar.gz tmp/sqlite-shift-0.1.1.tar.gz --markdown 20240414/s/sqlite-shift/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 18:36:54] INFO root fetch - processPackages [slinn]: executing diffoscope
+[2024-04-14 18:36:54] INFO root fetch - processPackages [slinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slinn-2.2.8.tar.gz tmp/slinn-2.2.9.tar.gz --markdown 20240414/s/slinn/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-14 18:36:54] INFO root fetch - processPackages [shelve-cache]: Remove: archive file [/home/abi/fetcher/tmp/shelve_cache-0.0.2.tar.gz]
+[2024-04-14 18:36:54] INFO root fetch - processPackages [shelve-cache]: Remove: archive file [/home/abi/fetcher/tmp/shelve_cache-0.0.3.tar.gz]
+[2024-04-14 18:36:54] INFO root fetch - main [MainThread]: End processing [shelve-cache]: success
+[2024-04-14 18:36:55] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.8.tar.gz]
+[2024-04-14 18:36:55] INFO root fetch - processPackages [slinn]: Remove: archive file [/home/abi/fetcher/tmp/slinn-2.2.9.tar.gz]
+[2024-04-14 18:36:55] INFO root fetch - main [MainThread]: End processing [slinn]: success
+[2024-04-14 18:36:55] INFO root fetch - processPackages [sqlite-shift]: Remove: archive file [/home/abi/fetcher/tmp/sqlite-shift-0.1.0.tar.gz]
+[2024-04-14 18:36:55] INFO root fetch - processPackages [sqlite-shift]: Remove: archive file [/home/abi/fetcher/tmp/sqlite-shift-0.1.1.tar.gz]
+[2024-04-14 18:36:55] INFO root fetch - main [MainThread]: End processing [sqlite-shift]: success
+[2024-04-14 18:36:55] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-04-14 18:36:55] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-04-14 18:36:55] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240414/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-04-14 18:36:56] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-04-14 18:36:56] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-04-14 18:36:56] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-04-14 18:36:56] INFO root fetch - main [MainThread]: Store serial: [22760558]
