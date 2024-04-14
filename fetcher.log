@@ -2281,3 +2281,50 @@
 [2024-04-14 03:32:07] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
 [2024-04-14 03:32:07] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
 [2024-04-14 03:32:07] INFO root fetch - main [MainThread]: Store serial: [22756050]
+[2024-04-14 03:34:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756050]
+[2024-04-14 03:34:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediff
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: invest-guard
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mbodied-ai
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbt-starrocks
+[2024-04-14 03:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Starfysh
+[2024-04-14 03:34:16] INFO root fetch - processPackages [invest-guard]: New version: [0.1.14] Old Version: [0.1.13]
+[2024-04-14 03:34:16] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/f5/0c/2fea7110c0e1496960cb86183be9921cd0eade052ce68cb410166e2de76f/invest_guard-0.1.13.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [dbt-starrocks]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-14 03:34:16] INFO root fetch - processPackages [Starfysh]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202404140132] Old Version: [0.13.0.dev202404130117]
+[2024-04-14 03:34:16] WARNING root fetch - processPackages [mbodied-ai]: Skipping, unable to determine old version
+[2024-04-14 03:34:16] INFO root fetch - main [MainThread]: End processing [mbodied-ai] error
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202404140132] Old Version: [0.9.0]
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/ef/35/e11ef77b4ecbfca20f6a6f4e859e3366285f109bbe200a8a82c62b8db14d/onediff-0.9.0-py3-none-any.whl
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/3e/ae/f1b5f9ff1e7abf86069b937296c80a2c944e5526a6da91839ff6d0a1812f/onediffx-0.13.0.dev202404130117.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [Starfysh]: Downloading https://files.pythonhosted.org/packages/8b/a0/67135705caeb332c3a6c849914984ec0bcaee4a4b610e9719d433636440f/Starfysh-1.1.1.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [dbt-starrocks]: Downloading https://files.pythonhosted.org/packages/a0/05/5f0a29f2ce6f90ddf7d86ed6c5b130364513112fb61266e1b9259e0b783f/dbt-starrocks-1.6.1.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [invest-guard]: Downloading https://files.pythonhosted.org/packages/78/74/ea9cd77613da246e703c7a95b4d95910bf2f9c394bf08c0f8ef80c7f906d/invest_guard-0.1.14.tar.gz
+[2024-04-14 03:34:16] WARNING root fetch - processPackages [Starfysh]: Skipping package: exceeds size limit 64776137>=10485760
+[2024-04-14 03:34:16] INFO root fetch - main [MainThread]: End processing [Starfysh] error
+[2024-04-14 03:34:16] INFO root fetch - processPackages [invest-guard]: executing diffoscope
+[2024-04-14 03:34:16] INFO root fetch - processPackages [invest-guard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invest_guard-0.1.13.tar.gz tmp/invest_guard-0.1.14.tar.gz --markdown 20240414/i/invest-guard/0.1.13-0.1.14/README.md --exclude *.pyd
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/b5/29/032ea71c78a531770b94839290ab7bdd09fe602e658711af92ddd90f6dc0/onediffx-1.0.0.dev202404140132.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [dbt-starrocks]: Downloading https://files.pythonhosted.org/packages/dc/15/9bde3c0fd540e49d581c9c22e6656742e3d2fb1a817698602673bc882f5b/dbt_starrocks-1.6.2.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-0.13.0.dev202404130117.tar.gz tmp/onediffx-1.0.0.dev202404140132.tar.gz --markdown 20240414/o/onediffx/0.13.0.dev202404130117-1.0.0.dev202404140132/README.md --exclude *.pyd
+[2024-04-14 03:34:16] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/41/23/9f9a3a285f252cd3a590f32497a0ea5f558cd5afcff509805655695a2e21/onediff-1.0.0.dev202404140132.tar.gz
+[2024-04-14 03:34:16] INFO root fetch - processPackages [dbt-starrocks]: executing diffoscope
+[2024-04-14 03:34:16] INFO root fetch - processPackages [dbt-starrocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-starrocks-1.6.1.tar.gz tmp/dbt_starrocks-1.6.2.tar.gz --markdown 20240414/d/dbt-starrocks/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-0.9.0-py3-none-any.whl.zip tmp/onediff-1.0.0.dev202404140132.tar.gz --markdown 20240414/o/onediff/0.9.0-1.0.0.dev202404140132/README.md --exclude *.pyd
+[2024-04-14 03:34:17] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.13.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - processPackages [invest-guard]: Remove: archive file [/home/abi/fetcher/tmp/invest_guard-0.1.14.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - main [MainThread]: End processing [invest-guard]: success
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404130117.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404140132.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-14 03:34:17] INFO root fetch - processPackages [dbt-starrocks]: Remove: archive file [/home/abi/fetcher/tmp/dbt-starrocks-1.6.1.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - processPackages [dbt-starrocks]: Remove: archive file [/home/abi/fetcher/tmp/dbt_starrocks-1.6.2.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - main [MainThread]: End processing [dbt-starrocks]: success
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-0.9.0-py3-none-any.whl.zip]
+[2024-04-14 03:34:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404140132.tar.gz]
+[2024-04-14 03:34:17] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-14 03:34:17] INFO root fetch - main [MainThread]: Store serial: [22756071]
