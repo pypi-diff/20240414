@@ -13538,3 +13538,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:28:53] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a7.tar.gz]
 [2024-04-14 20:28:53] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
 [2024-04-14 20:28:53] INFO root fetch - main [MainThread]: Store serial: [22761126]
+[2024-04-14 20:30:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761126]
+[2024-04-14 20:31:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 20:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vallox-websocket-api
+[2024-04-14 20:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oxtapus
+[2024-04-14 20:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pretix-plugin-extended-api
+[2024-04-14 20:31:02] INFO root fetch - processPackages [pretix-plugin-extended-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 20:31:02] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/3e/e9/e84630b11ef5b63318cdad9489b7e9e552e96a24a74b33088578d78265b2/pretix-plugin-extended-api-0.1.8.tar.gz
+[2024-04-14 20:31:02] INFO root fetch - processPackages [vallox-websocket-api]: New version: [5.2.0] Old Version: [5.1.1]
+[2024-04-14 20:31:02] INFO root fetch - processPackages [oxtapus]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-14 20:31:02] INFO root fetch - processPackages [oxtapus]: Downloading https://files.pythonhosted.org/packages/c0/2a/27010d6518f71f02c19015c864c7167c0154b506d65e2a2a65a5d8397856/oxtapus-0.3.0-py3-none-any.whl
+[2024-04-14 20:31:02] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/ee/8b/5705e30accefcdd2976224b50ee91ad1d664bed6f4ffc3a79c64f1ed2763/pretix-plugin-extended-api-0.1.9.tar.gz
+[2024-04-14 20:31:02] INFO root fetch - processPackages [vallox-websocket-api]: Downloading https://files.pythonhosted.org/packages/0e/ac/4eae9bdc641ebd99aabfedfd317da995054967cabf4dcff33e43979b2d54/vallox_websocket_api-5.1.1.tar.gz
+[2024-04-14 20:31:02] INFO root fetch - processPackages [pretix-plugin-extended-api]: executing diffoscope
+[2024-04-14 20:31:02] INFO root fetch - processPackages [pretix-plugin-extended-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-plugin-extended-api-0.1.8.tar.gz tmp/pretix-plugin-extended-api-0.1.9.tar.gz --markdown 20240414/p/pretix-plugin-extended-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 20:31:02] INFO root fetch - processPackages [vallox-websocket-api]: Downloading https://files.pythonhosted.org/packages/99/17/25749e4cddf05e675e16df6ed65ac4231670eda0b235854622c261921068/vallox_websocket_api-5.2.0.tar.gz
+[2024-04-14 20:31:02] INFO root fetch - processPackages [vallox-websocket-api]: executing diffoscope
+[2024-04-14 20:31:02] INFO root fetch - processPackages [vallox-websocket-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vallox_websocket_api-5.1.1.tar.gz tmp/vallox_websocket_api-5.2.0.tar.gz --markdown 20240414/v/vallox-websocket-api/5.1.1-5.2.0/README.md --exclude *.pyd
+[2024-04-14 20:31:03] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.8.tar.gz]
+[2024-04-14 20:31:03] INFO root fetch - processPackages [pretix-plugin-extended-api]: Remove: archive file [/home/abi/fetcher/tmp/pretix-plugin-extended-api-0.1.9.tar.gz]
+[2024-04-14 20:31:03] INFO root fetch - main [MainThread]: End processing [pretix-plugin-extended-api]: success
+[2024-04-14 20:31:03] INFO root fetch - processPackages [vallox-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/vallox_websocket_api-5.1.1.tar.gz]
+[2024-04-14 20:31:03] INFO root fetch - processPackages [vallox-websocket-api]: Remove: archive file [/home/abi/fetcher/tmp/vallox_websocket_api-5.2.0.tar.gz]
+[2024-04-14 20:31:03] INFO root fetch - main [MainThread]: End processing [vallox-websocket-api]: success
+[2024-04-14 20:31:03] INFO root fetch - processPackages [oxtapus]: Downloading https://files.pythonhosted.org/packages/58/b4/d6ae7a9ffd882c80fc93915004fec74e3269bbef571f4844a6a0bff61282/oxtapus-0.3.1-py3-none-any.whl
+[2024-04-14 20:31:04] INFO root fetch - processPackages [oxtapus]: executing diffoscope
+[2024-04-14 20:31:04] INFO root fetch - processPackages [oxtapus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oxtapus-0.3.0-py3-none-any.whl.zip tmp/oxtapus-0.3.1-py3-none-any.whl.zip --markdown 20240414/o/oxtapus/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-14 20:31:04] INFO root fetch - processPackages [oxtapus]: Remove: archive file [/home/abi/fetcher/tmp/oxtapus-0.3.0-py3-none-any.whl.zip]
+[2024-04-14 20:31:04] INFO root fetch - processPackages [oxtapus]: Remove: archive file [/home/abi/fetcher/tmp/oxtapus-0.3.1-py3-none-any.whl.zip]
+[2024-04-14 20:31:04] INFO root fetch - main [MainThread]: End processing [oxtapus]: success
+[2024-04-14 20:31:04] INFO root fetch - main [MainThread]: Store serial: [22761134]
