@@ -12851,3 +12851,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:32:11] INFO root fetch - processPackages [stigg-api-client-v2]: Remove: archive file [/home/abi/fetcher/tmp/stigg_api_client_v2-1.98.1.tar.gz]
 [2024-04-14 19:32:11] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2]: success
 [2024-04-14 19:32:11] INFO root fetch - main [MainThread]: Store serial: [22760853]
+[2024-04-14 19:34:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760853]
+[2024-04-14 19:34:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 19:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libreppc
+[2024-04-14 19:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectome-interpreter
+[2024-04-14 19:34:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openmindat
+[2024-04-14 19:34:20] INFO root fetch - processPackages [libreppc]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 19:34:20] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/24/5d/014ffde9deeb26ff4331637753508b59c7f913f3f61a40d8d5747db30530/libreppc-0.1.1.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-14 19:34:20] INFO root fetch - processPackages [openmindat]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 19:34:20] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/49/de/8d5fe1f18622f1a11d5ef381ae61b691c4b5efd50bb0194cbb880b2f02f7/connectome_interpreter-1.1.0.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [openmindat]: Downloading https://files.pythonhosted.org/packages/bd/29/0982244bdcba9f831abd101bca7e0b3cc218ec78cc59659feaaca1a367f5/openmindat-0.0.3.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/27/d4/f0feb909ad0344ca39cee6d51501d60b9b6fd0aa7b991e40d3c32b97f92d/libreppc-0.1.2.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [libreppc]: executing diffoscope
+[2024-04-14 19:34:20] INFO root fetch - processPackages [libreppc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreppc-0.1.1.tar.gz tmp/libreppc-0.1.2.tar.gz --markdown 20240414/l/libreppc/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 19:34:20] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/a8/e8/4b6d0845db21802710bc8be6ef39131b2018ca51e7fb798a1251458f03f1/connectome_interpreter-1.2.0.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [openmindat]: Downloading https://files.pythonhosted.org/packages/ed/26/6cba1a9d2e5a861c8c210ef62bb9c9b69a0bb29ddee558f457d4f5568e6c/openmindat-0.0.4.tar.gz
+[2024-04-14 19:34:20] INFO root fetch - processPackages [openmindat]: executing diffoscope
+[2024-04-14 19:34:20] INFO root fetch - processPackages [openmindat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmindat-0.0.3.tar.gz tmp/openmindat-0.0.4.tar.gz --markdown 20240414/o/openmindat/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 19:34:20] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-14 19:34:20] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.1.0.tar.gz tmp/connectome_interpreter-1.2.0.tar.gz --markdown 20240414/c/connectome-interpreter/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-14 19:34:21] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.1.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.2.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - main [MainThread]: End processing [libreppc]: success
+[2024-04-14 19:34:21] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.1.0.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.2.0.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-14 19:34:21] INFO root fetch - processPackages [openmindat]: Remove: archive file [/home/abi/fetcher/tmp/openmindat-0.0.3.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - processPackages [openmindat]: Remove: archive file [/home/abi/fetcher/tmp/openmindat-0.0.4.tar.gz]
+[2024-04-14 19:34:21] INFO root fetch - main [MainThread]: End processing [openmindat]: success
+[2024-04-14 19:34:21] INFO root fetch - main [MainThread]: Store serial: [22760864]
