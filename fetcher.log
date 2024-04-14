@@ -12633,3 +12633,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:16:22] INFO root fetch - processPackages [prodsys]: Remove: archive file [/home/abi/fetcher/tmp/prodsys-0.5.0.tar.gz]
 [2024-04-14 19:16:22] INFO root fetch - main [MainThread]: End processing [prodsys]: success
 [2024-04-14 19:16:22] INFO root fetch - main [MainThread]: Store serial: [22760704]
+[2024-04-14 19:18:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760704]
+[2024-04-14 19:18:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 19:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-tpu
+[2024-04-14 19:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OPIPP
+[2024-04-14 19:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: batchalign
+[2024-04-14 19:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Sphinx-AutoMark
+[2024-04-14 19:18:30] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240413] Old Version: [2.17.0.dev20240412]
+[2024-04-14 19:18:30] INFO root fetch - processPackages [batchalign]: New version: [0.7.1b0] Old Version: [0.7.0b3]
+[2024-04-14 19:18:30] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/d8/68/c3a0ad04448673dd9df427f64c4404bfc58e6b4773098e0f8a981e3e96fd/tf_nightly_tpu-2.17.0.dev20240412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-14 19:18:30] WARNING root fetch - processPackages [OPIPP]: Skipping, unable to determine old version
+[2024-04-14 19:18:30] INFO root fetch - main [MainThread]: End processing [OPIPP] error
+[2024-04-14 19:18:30] WARNING root fetch - processPackages [Sphinx-AutoMark]: Skipping, unable to determine old version
+[2024-04-14 19:18:30] INFO root fetch - main [MainThread]: End processing [Sphinx-AutoMark] error
+[2024-04-14 19:18:30] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/3c/a6/f806be793354e1410cc93ef931fe0e623ec158c2914db46a251cd2e0b4b2/batchalign-0.7.0b3.tar.gz
+[2024-04-14 19:18:30] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219416923>=10485760
+[2024-04-14 19:18:30] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-14 19:18:31] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/df/87/14a155c13077615d592ffe103c41c6db81b1ac633ce9b4a0b51770bf279f/batchalign-0.7.1b0.tar.gz
+[2024-04-14 19:18:31] INFO root fetch - processPackages [batchalign]: executing diffoscope
+[2024-04-14 19:18:31] INFO root fetch - processPackages [batchalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchalign-0.7.0b3.tar.gz tmp/batchalign-0.7.1b0.tar.gz --markdown 20240414/b/batchalign/0.7.0b3-0.7.1b0/README.md --exclude *.pyd
+[2024-04-14 19:18:32] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.0b3.tar.gz]
+[2024-04-14 19:18:32] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b0.tar.gz]
+[2024-04-14 19:18:32] INFO root fetch - main [MainThread]: End processing [batchalign]: success
+[2024-04-14 19:18:32] INFO root fetch - main [MainThread]: Store serial: [22760726]
