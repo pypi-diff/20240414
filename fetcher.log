@@ -12418,3 +12418,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 18:50:03] INFO root fetch - processPackages [ez-pyload]: Remove: archive file [/home/abi/fetcher/tmp/ez_pyload-1.0.2.tar.gz]
 [2024-04-14 18:50:03] INFO root fetch - main [MainThread]: End processing [ez-pyload]: success
 [2024-04-14 18:50:03] INFO root fetch - main [MainThread]: Store serial: [22760620]
+[2024-04-14 18:52:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760620]
+[2024-04-14 18:52:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 18:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rag-retrieval
+[2024-04-14 18:52:12] WARNING root fetch - processPackages [rag-retrieval]: Skipping, unable to determine old version
+[2024-04-14 18:52:12] INFO root fetch - main [MainThread]: End processing [rag-retrieval] error
+[2024-04-14 18:52:12] INFO root fetch - main [MainThread]: Store serial: [22760625]
