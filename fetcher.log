@@ -1292,3 +1292,21 @@
 [2024-04-14 02:09:01] WARNING root fetch - processPackages [pyextra]: Skipping, unable to determine old version
 [2024-04-14 02:09:01] INFO root fetch - main [MainThread]: End processing [pyextra] error
 [2024-04-14 02:09:01] INFO root fetch - main [MainThread]: Store serial: [22755651]
+[2024-04-14 02:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755651]
+[2024-04-14 02:11:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 02:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyextra
+[2024-04-14 02:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mct-nightly
+[2024-04-14 02:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: VindicateN
+[2024-04-14 02:11:10] WARNING root fetch - processPackages [pyextra]: Skipping, unable to determine old version
+[2024-04-14 02:11:10] INFO root fetch - main [MainThread]: End processing [pyextra] error
+[2024-04-14 02:11:10] WARNING root fetch - processPackages [VindicateN]: Skipping, unable to determine old version
+[2024-04-14 02:11:10] INFO root fetch - main [MainThread]: End processing [VindicateN] error
+[2024-04-14 02:11:10] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240414.858] Old Version: [2.0.0.20240413.406]
+[2024-04-14 02:11:10] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/d8/6f/ae46863b4647cf3b75adf5e1607dbed53890b63952da9f4cbf0c4afe5870/mct-nightly-2.0.0.20240413.406.tar.gz
+[2024-04-14 02:11:10] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/12/54/8eb58debaca9e150b336e9175b5e11a439bc9e92ac7e3f202b6749523620/mct-nightly-2.0.0.20240414.858.tar.gz
+[2024-04-14 02:11:11] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-14 02:11:11] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240413.406.tar.gz tmp/mct-nightly-2.0.0.20240414.858.tar.gz --markdown 20240414/m/mct-nightly/2.0.0.20240413.406-2.0.0.20240414.858/README.md --exclude *.pyd
+[2024-04-14 02:11:13] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240413.406.tar.gz]
+[2024-04-14 02:11:13] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240414.858.tar.gz]
+[2024-04-14 02:11:13] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-14 02:11:13] INFO root fetch - main [MainThread]: Store serial: [22755669]
