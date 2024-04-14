@@ -16260,3 +16260,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:44:19] WARNING root fetch - processPackages [watson-poetry]: Skipping, unable to determine old version
 [2024-04-14 23:44:19] INFO root fetch - main [MainThread]: End processing [watson-poetry] error
 [2024-04-14 23:44:19] INFO root fetch - main [MainThread]: Store serial: [22762668]
+[2024-04-14 23:46:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762668]
+[2024-04-14 23:46:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 23:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vtjson
+[2024-04-14 23:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsmfsb
+[2024-04-14 23:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zrb
+[2024-04-14 23:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: git-toprepo
+[2024-04-14 23:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycraf
+[2024-04-14 23:46:28] WARNING root fetch - processPackages [jsmfsb]: Skipping, unable to determine old version
+[2024-04-14 23:46:28] INFO root fetch - main [MainThread]: End processing [jsmfsb] error
+[2024-04-14 23:46:28] WARNING root fetch - processPackages [git-toprepo]: Skipping, unable to determine old version
+[2024-04-14 23:46:28] INFO root fetch - main [MainThread]: End processing [git-toprepo] error
+[2024-04-14 23:46:28] INFO root fetch - processPackages [vtjson]: New version: [1.7.3] Old Version: [1.7.2]
+[2024-04-14 23:46:28] INFO root fetch - processPackages [pycraf]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-14 23:46:28] INFO root fetch - processPackages [zrb]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-14 23:46:29] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/aa/53/24f60cd13b52e01c9875a55a8ef7dbdda1b34e7d5cb93826602168ea94a9/vtjson-1.7.2.tar.gz
+[2024-04-14 23:46:29] INFO root fetch - processPackages [pycraf]: Downloading https://files.pythonhosted.org/packages/fc/50/ef51fb8033700b13dbda1996a0d7a949b1f4baeecb090622f1a2ef2d48ba/pycraf-2.0.1.tar.gz
+[2024-04-14 23:46:29] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/32/39/a7e9fbbb7d0cb16c4ef2cdecfa0052b5b5059c4b0f8cd6cc390052054a0b/zrb-0.9.2.tar.gz
+[2024-04-14 23:46:29] WARNING root fetch - processPackages [pycraf]: Skipping package: exceeds size limit 18146754>=10485760
+[2024-04-14 23:46:29] INFO root fetch - main [MainThread]: End processing [pycraf] error
+[2024-04-14 23:46:29] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/58/cb/7a636635f2ac3779b9fb7cbf72a810c1c92bb3481ab207f492ea7d87902e/vtjson-1.7.3.tar.gz
+[2024-04-14 23:46:29] INFO root fetch - processPackages [vtjson]: executing diffoscope
+[2024-04-14 23:46:29] INFO root fetch - processPackages [vtjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtjson-1.7.2.tar.gz tmp/vtjson-1.7.3.tar.gz --markdown 20240414/v/vtjson/1.7.2-1.7.3/README.md --exclude *.pyd
+[2024-04-14 23:46:29] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/f6/b9/43574b23dd1c57d67788b82511937efe23fc957250685ba62b6025db3166/zrb-0.9.3.tar.gz
+[2024-04-14 23:46:29] INFO root fetch - processPackages [zrb]: executing diffoscope
+[2024-04-14 23:46:29] INFO root fetch - processPackages [zrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb-0.9.2.tar.gz tmp/zrb-0.9.3.tar.gz --markdown 20240414/z/zrb/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-14 23:46:30] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.2.tar.gz]
+[2024-04-14 23:46:30] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.3.tar.gz]
+[2024-04-14 23:46:30] INFO root fetch - main [MainThread]: End processing [vtjson]: success
+[2024-04-14 23:46:34] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.2.tar.gz]
+[2024-04-14 23:46:34] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.3.tar.gz]
+[2024-04-14 23:46:34] INFO root fetch - main [MainThread]: End processing [zrb]: success
+[2024-04-14 23:46:34] INFO root fetch - main [MainThread]: Store serial: [22762688]
