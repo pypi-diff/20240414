@@ -4982,3 +4982,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:13:27] INFO root fetch - processPackages [pynovnc]: Remove: archive file [/home/abi/fetcher/tmp/pynovnc-1.1.2.tar.gz]
 [2024-04-14 09:13:27] INFO root fetch - main [MainThread]: End processing [pynovnc]: success
 [2024-04-14 09:13:27] INFO root fetch - main [MainThread]: Store serial: [22756991]
+[2024-04-14 09:15:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756991]
+[2024-04-14 09:15:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 09:17:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756991]
+[2024-04-14 09:17:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 09:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-14 09:17:41] INFO root fetch - processPackages [pyweatherfr]: New version: [5.0.2] Old Version: [5.0.0]
+[2024-04-14 09:17:41] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/e3/29/c3f464432577d0f90def315a6fc30063fa336d20a37ecf95af90afb3f184/pyweatherfr-5.0.0.tar.gz
+[2024-04-14 09:17:41] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/e9/1a/f0f99450d835f3789ba54bef47a82c51a4d85e1df62c54cee7d71ee97d9f/pyweatherfr-5.0.2.tar.gz
+[2024-04-14 09:17:42] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-14 09:17:42] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.0.0.tar.gz tmp/pyweatherfr-5.0.2.tar.gz --markdown 20240414/p/pyweatherfr/5.0.0-5.0.2/README.md --exclude *.pyd
+[2024-04-14 09:17:42] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.0.0.tar.gz]
+[2024-04-14 09:17:42] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.0.2.tar.gz]
+[2024-04-14 09:17:42] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-14 09:17:42] INFO root fetch - main [MainThread]: Store serial: [22756994]
