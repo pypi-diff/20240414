@@ -6289,3 +6289,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:35:22] INFO root fetch - processPackages [cpg-utils]: Remove: archive file [/home/abi/fetcher/tmp/cpg-utils-5.0.0.tar.gz]
 [2024-04-14 11:35:22] INFO root fetch - main [MainThread]: End processing [cpg-utils]: success
 [2024-04-14 11:35:22] INFO root fetch - main [MainThread]: Store serial: [22757640]
+[2024-04-14 11:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757640]
+[2024-04-14 11:37:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 11:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asgebsmanager
+[2024-04-14 11:37:33] WARNING root fetch - processPackages [asgebsmanager]: Skipping, unable to determine old version
+[2024-04-14 11:37:33] INFO root fetch - main [MainThread]: End processing [asgebsmanager] error
+[2024-04-14 11:37:33] INFO root fetch - main [MainThread]: Store serial: [22757644]
