@@ -4518,3 +4518,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:11:04] INFO root fetch - processPackages [geneticalgorithm2]: Remove: archive file [/home/abi/fetcher/tmp/geneticalgorithm2-6.9.0.tar.gz]
 [2024-04-14 08:11:04] INFO root fetch - main [MainThread]: End processing [geneticalgorithm2]: success
 [2024-04-14 08:11:04] INFO root fetch - main [MainThread]: Store serial: [22756801]
+[2024-04-14 08:13:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756801]
+[2024-04-14 08:13:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 08:13:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-base-changeset
+[2024-04-14 08:13:12] INFO root fetch - processPackages [odoo12-addon-base-changeset]: New version: [12.0.1.1.2.99.dev4] Old Version: [12.0.1.1.2.99.dev2]
+[2024-04-14 08:13:12] INFO root fetch - processPackages [odoo12-addon-base-changeset]: Downloading https://files.pythonhosted.org/packages/3f/dc/e8e9d5ff501beb9d65ee6ebcda2c5aafdf5c04e01818411036c2bacafdfd/odoo12_addon_base_changeset-12.0.1.1.2.99.dev2-py3-none-any.whl
+[2024-04-14 08:13:13] INFO root fetch - processPackages [odoo12-addon-base-changeset]: Downloading https://files.pythonhosted.org/packages/57/33/53902cf06749fcf24805e283a701a189f2fff44c87b7b8eda87a35a98d33/odoo12_addon_base_changeset-12.0.1.1.2.99.dev4-py3-none-any.whl
+[2024-04-14 08:13:13] INFO root fetch - processPackages [odoo12-addon-base-changeset]: executing diffoscope
+[2024-04-14 08:13:13] INFO root fetch - processPackages [odoo12-addon-base-changeset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_base_changeset-12.0.1.1.2.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_base_changeset-12.0.1.1.2.99.dev4-py3-none-any.whl.zip --markdown 20240414/o/odoo12-addon-base-changeset/12.0.1.1.2.99.dev2-12.0.1.1.2.99.dev4/README.md --exclude *.pyd
+[2024-04-14 08:13:14] INFO root fetch - processPackages [odoo12-addon-base-changeset]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_base_changeset-12.0.1.1.2.99.dev2-py3-none-any.whl.zip]
+[2024-04-14 08:13:14] INFO root fetch - processPackages [odoo12-addon-base-changeset]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_base_changeset-12.0.1.1.2.99.dev4-py3-none-any.whl.zip]
+[2024-04-14 08:13:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-base-changeset]: success
+[2024-04-14 08:13:14] INFO root fetch - main [MainThread]: Store serial: [22756803]
