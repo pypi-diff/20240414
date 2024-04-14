@@ -13953,3 +13953,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:01:34] INFO root fetch - processPackages [flashlight-text]: Remove: archive file [/home/abi/fetcher/tmp/flashlight_text-0.0.7.dev305-cp312-cp312-win_amd64.whl.zip]
 [2024-04-14 21:01:34] INFO root fetch - main [MainThread]: End processing [flashlight-text]: success
 [2024-04-14 21:01:34] INFO root fetch - main [MainThread]: Store serial: [22761422]
+[2024-04-14 21:03:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761422]
+[2024-04-14 21:03:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 21:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nanodjango
+[2024-04-14 21:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spit
+[2024-04-14 21:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgartools
+[2024-04-14 21:03:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: caroa04
+[2024-04-14 21:03:44] WARNING root fetch - processPackages [caroa04]: Skipping, unable to determine old version
+[2024-04-14 21:03:44] INFO root fetch - main [MainThread]: End processing [caroa04] error
+[2024-04-14 21:03:44] INFO root fetch - processPackages [spit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 21:03:44] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/b0/7d/95b428f5054ceaa7df9d2570781e0a517f600a27a4088a45806eaf3f7ccf/spit-0.1.8.tar.gz
+[2024-04-14 21:03:44] WARNING root fetch - processPackages [nanodjango]: Skipping, unable to determine old version
+[2024-04-14 21:03:44] INFO root fetch - main [MainThread]: End processing [nanodjango] error
+[2024-04-14 21:03:44] INFO root fetch - processPackages [edgartools]: New version: [2.9.0] Old Version: [2.8.3]
+[2024-04-14 21:03:44] INFO root fetch - processPackages [spit]: Downloading https://files.pythonhosted.org/packages/a3/41/95c2b32d3c225f7fa0cd1b957d8a4e11da5b22cececd0396c623963ac6eb/spit-0.1.9.tar.gz
+[2024-04-14 21:03:44] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/d8/c6/400200c18dfea8996fed257a419285ffb6839fac1a467836c0d47f525bfa/edgartools-2.8.3.tar.gz
+[2024-04-14 21:03:44] INFO root fetch - processPackages [spit]: executing diffoscope
+[2024-04-14 21:03:44] INFO root fetch - processPackages [spit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spit-0.1.8.tar.gz tmp/spit-0.1.9.tar.gz --markdown 20240414/s/spit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 21:03:44] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/c6/e4/10d80214acd99a350add686b19eb2625613291c9bff643051d50b5aca766/edgartools-2.9.0.tar.gz
+[2024-04-14 21:03:45] INFO root fetch - processPackages [edgartools]: executing diffoscope
+[2024-04-14 21:03:45] INFO root fetch - processPackages [edgartools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgartools-2.8.3.tar.gz tmp/edgartools-2.9.0.tar.gz --markdown 20240414/e/edgartools/2.8.3-2.9.0/README.md --exclude *.pyd
+[2024-04-14 21:03:45] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.8.tar.gz]
+[2024-04-14 21:03:45] INFO root fetch - processPackages [spit]: Remove: archive file [/home/abi/fetcher/tmp/spit-0.1.9.tar.gz]
+[2024-04-14 21:03:45] INFO root fetch - main [MainThread]: End processing [spit]: success
+[2024-04-14 21:03:45] INFO root fetch - processPackages [edgartools]: Remove: archive file [/home/abi/fetcher/tmp/edgartools-2.8.3.tar.gz]
+[2024-04-14 21:03:45] INFO root fetch - processPackages [edgartools]: Remove: archive file [/home/abi/fetcher/tmp/edgartools-2.9.0.tar.gz]
+[2024-04-14 21:03:45] INFO root fetch - main [MainThread]: End processing [edgartools]: success
+[2024-04-14 21:03:45] INFO root fetch - main [MainThread]: Store serial: [22761492]
