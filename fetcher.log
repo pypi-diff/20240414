@@ -4448,3 +4448,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:58:13] INFO root fetch - processPackages [YAPCP]: Remove: archive file [/home/abi/fetcher/tmp/YAPCP-0.0.0.4-py3-none-any.whl.zip]
 [2024-04-14 07:58:13] INFO root fetch - main [MainThread]: End processing [YAPCP]: success
 [2024-04-14 07:58:13] INFO root fetch - main [MainThread]: Store serial: [22756781]
+[2024-04-14 08:00:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756781]
+[2024-04-14 08:00:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 08:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vtool-ibeis
+[2024-04-14 08:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: layeutils
+[2024-04-14 08:00:22] INFO root fetch - processPackages [vtool-ibeis]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-04-14 08:00:22] INFO root fetch - processPackages [layeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 08:00:22] INFO root fetch - processPackages [vtool-ibeis]: Downloading https://files.pythonhosted.org/packages/2e/16/edf7fce0ac189b682cf3adac25ac7044b3b82cb2bb19e20446446b3f980a/vtool_ibeis-2.2.1.tar.gz
+[2024-04-14 08:00:22] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/df/8a/5750fd27fb4c3487b4dbdfad44f376e0526542c6ee8cc4234e63d034eff8/layeutils-0.2.8.tar.gz
+[2024-04-14 08:00:22] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/49/3d/c713aa3374b8d3b84cd8820b2906eff00ed129c458180bc7ae7c4568a911/layeutils-0.2.9.tar.gz
+[2024-04-14 08:00:22] INFO root fetch - processPackages [vtool-ibeis]: Downloading https://files.pythonhosted.org/packages/35/7b/8226851ddf15bc35bbd7758b1cdb2b506bff78b6e7c437b7140422b8a57f/vtool_ibeis-2.3.0.tar.gz
+[2024-04-14 08:00:22] INFO root fetch - processPackages [vtool-ibeis]: executing diffoscope
+[2024-04-14 08:00:22] INFO root fetch - processPackages [vtool-ibeis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtool_ibeis-2.2.1.tar.gz tmp/vtool_ibeis-2.3.0.tar.gz --markdown 20240414/v/vtool-ibeis/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-04-14 08:00:22] INFO root fetch - processPackages [layeutils]: executing diffoscope
+[2024-04-14 08:00:22] INFO root fetch - processPackages [layeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layeutils-0.2.8.tar.gz tmp/layeutils-0.2.9.tar.gz --markdown 20240414/l/layeutils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 08:00:23] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.8.tar.gz]
+[2024-04-14 08:00:23] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
+[2024-04-14 08:00:23] INFO root fetch - main [MainThread]: End processing [layeutils]: success
+[2024-04-14 08:00:23] INFO root fetch - processPackages [vtool-ibeis]: Remove: archive file [/home/abi/fetcher/tmp/vtool_ibeis-2.2.1.tar.gz]
+[2024-04-14 08:00:23] INFO root fetch - processPackages [vtool-ibeis]: Remove: archive file [/home/abi/fetcher/tmp/vtool_ibeis-2.3.0.tar.gz]
+[2024-04-14 08:00:23] INFO root fetch - main [MainThread]: End processing [vtool-ibeis]: success
+[2024-04-14 08:00:23] INFO root fetch - main [MainThread]: Store serial: [22756788]
