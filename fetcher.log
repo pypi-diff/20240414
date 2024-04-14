@@ -7085,3 +7085,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:24:23] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.0b20240414.tar.gz]
 [2024-04-14 12:24:23] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-04-14 12:24:23] INFO root fetch - main [MainThread]: Store serial: [22758058]
+[2024-04-14 12:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758058]
+[2024-04-14 12:26:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 12:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyra-v2-client
+[2024-04-14 12:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sciveo
+[2024-04-14 12:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ecomplexity
+[2024-04-14 12:26:37] INFO root fetch - processPackages [lyra-v2-client]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-14 12:26:37] INFO root fetch - processPackages [sciveo]: New version: [0.0.46] Old Version: [0.0.45]
+[2024-04-14 12:26:37] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/4a/bc/bb93c571912e8f344314a5b98037d2d86fa2f33f5da43d4149055159c2ee/sciveo-0.0.45.tar.gz
+[2024-04-14 12:26:37] INFO root fetch - processPackages [lyra-v2-client]: Downloading https://files.pythonhosted.org/packages/f9/02/36ab0cdfb00a935f78ca8651389d73365b2b6a652e86173c14ce5cdfdbbf/lyra_v2_client-0.2.6.tar.gz
+[2024-04-14 12:26:37] INFO root fetch - processPackages [ecomplexity]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-14 12:26:37] INFO root fetch - processPackages [lyra-v2-client]: Downloading https://files.pythonhosted.org/packages/99/52/42abada67ad25643cfc13d5cfd8f6ac82c2399476afd68a9a245a15f512d/lyra_v2_client-0.2.7.tar.gz
+[2024-04-14 12:26:38] INFO root fetch - processPackages [ecomplexity]: Downloading https://files.pythonhosted.org/packages/ae/fb/8ed60b879456e4ccb3474a0d571f13d0e958b1416475eb20bb1c53ca1ada/ecomplexity-0.5.2.tar.gz
+[2024-04-14 12:26:38] INFO root fetch - processPackages [sciveo]: Downloading https://files.pythonhosted.org/packages/c4/5b/f90ee04512e0963f123c80828dbfa5652bae2c9e65261bfa8b84cb58d0b2/sciveo-0.0.46.tar.gz
+[2024-04-14 12:26:38] INFO root fetch - processPackages [lyra-v2-client]: executing diffoscope
+[2024-04-14 12:26:38] INFO root fetch - processPackages [lyra-v2-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyra_v2_client-0.2.6.tar.gz tmp/lyra_v2_client-0.2.7.tar.gz --markdown 20240414/l/lyra-v2-client/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-14 12:26:38] INFO root fetch - processPackages [sciveo]: executing diffoscope
+[2024-04-14 12:26:38] INFO root fetch - processPackages [sciveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciveo-0.0.45.tar.gz tmp/sciveo-0.0.46.tar.gz --markdown 20240414/s/sciveo/0.0.45-0.0.46/README.md --exclude *.pyd
+[2024-04-14 12:26:38] INFO root fetch - processPackages [ecomplexity]: Downloading https://files.pythonhosted.org/packages/5b/5e/5efc2dfef2c6fc0e993ad00c02951a11be9b01ab5f32aae0180bf1c38d28/ecomplexity-0.5.3.tar.gz
+[2024-04-14 12:26:38] INFO root fetch - processPackages [ecomplexity]: executing diffoscope
+[2024-04-14 12:26:38] INFO root fetch - processPackages [ecomplexity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecomplexity-0.5.2.tar.gz tmp/ecomplexity-0.5.3.tar.gz --markdown 20240414/e/ecomplexity/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-14 12:26:38] INFO root fetch - processPackages [lyra-v2-client]: Remove: archive file [/home/abi/fetcher/tmp/lyra_v2_client-0.2.6.tar.gz]
+[2024-04-14 12:26:38] INFO root fetch - processPackages [lyra-v2-client]: Remove: archive file [/home/abi/fetcher/tmp/lyra_v2_client-0.2.7.tar.gz]
+[2024-04-14 12:26:38] INFO root fetch - main [MainThread]: End processing [lyra-v2-client]: success
+[2024-04-14 12:26:38] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.45.tar.gz]
+[2024-04-14 12:26:38] INFO root fetch - processPackages [sciveo]: Remove: archive file [/home/abi/fetcher/tmp/sciveo-0.0.46.tar.gz]
+[2024-04-14 12:26:38] INFO root fetch - main [MainThread]: End processing [sciveo]: success
+[2024-04-14 12:26:39] INFO root fetch - processPackages [ecomplexity]: Remove: archive file [/home/abi/fetcher/tmp/ecomplexity-0.5.2.tar.gz]
+[2024-04-14 12:26:39] INFO root fetch - processPackages [ecomplexity]: Remove: archive file [/home/abi/fetcher/tmp/ecomplexity-0.5.3.tar.gz]
+[2024-04-14 12:26:39] INFO root fetch - main [MainThread]: End processing [ecomplexity]: success
+[2024-04-14 12:26:39] INFO root fetch - main [MainThread]: Store serial: [22758066]
