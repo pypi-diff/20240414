@@ -1331,3 +1331,62 @@
 [2024-04-14 02:13:23] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.4.1.tar.gz]
 [2024-04-14 02:13:23] INFO root fetch - main [MainThread]: End processing [dgenerate]: success
 [2024-04-14 02:13:23] INFO root fetch - main [MainThread]: Store serial: [22755674]
+[2024-04-14 02:15:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755674]
+[2024-04-14 02:15:33] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SAMMEC2
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-fly
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easydebugger
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openbb-nightly
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: git-logger
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: isom2600
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mct-quantizers-nightly
+[2024-04-14 02:15:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyplatter
+[2024-04-14 02:15:33] INFO root fetch - processPackages [pytest-fly]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 02:15:33] INFO root fetch - processPackages [SAMMEC2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 02:15:33] INFO root fetch - processPackages [pytest-fly]: Downloading https://files.pythonhosted.org/packages/e0/3b/b864409039e33ccd2654e5a63858f5a9e494192cd7a6788b6960bda32962/pytest_fly-0.0.8.tar.gz
+[2024-04-14 02:15:33] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/a5/9a/f0d0bf9aa28cce67bae422856d6c8d528fcf9f5f8c6c140b88ae42d50cbd/SAMMEC2-0.0.8.tar.gz
+[2024-04-14 02:15:33] WARNING root fetch - processPackages [git-logger]: Skipping, unable to determine old version
+[2024-04-14 02:15:33] INFO root fetch - main [MainThread]: End processing [git-logger] error
+[2024-04-14 02:15:33] INFO root fetch - processPackages [isom2600]: New version: [3.2] Old Version: [3.1]
+[2024-04-14 02:15:33] INFO root fetch - processPackages [easydebugger]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-14 02:15:33] WARNING root fetch - processPackages [pyplatter]: Skipping, unable to determine old version
+[2024-04-14 02:15:33] INFO root fetch - main [MainThread]: End processing [pyplatter] error
+[2024-04-14 02:15:33] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240414.post1433] Old Version: [1.5.0.20240413.post939]
+[2024-04-14 02:15:33] WARNING root fetch - processPackages [pytest-fly]: Skipping package: exceeds size limit 38867026>=10485760
+[2024-04-14 02:15:33] INFO root fetch - main [MainThread]: End processing [pytest-fly] error
+[2024-04-14 02:15:33] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.6.dev202404140013] Old Version: [4.1.6.dev202404130008]
+[2024-04-14 02:15:33] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/87/df/8ac706eb2fd78e9507be8dd2f844d0ef061e1f4c248b3461985fff7a53a0/isom2600-3.1.tar.gz
+[2024-04-14 02:15:33] INFO root fetch - processPackages [easydebugger]: Downloading https://files.pythonhosted.org/packages/f9/2f/6dab2c9937b4b8b78ab82b15b583cd784eb4d87c5f1c6415b6a1e2b4d4c8/easydebugger-1.2.0.tar.gz
+[2024-04-14 02:15:33] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/8a/4a/1ea7ce20c7437d9892459e08f58e77c539b226f5a6bfd36114cbfd1ebe25/mct-quantizers-nightly-1.5.0.20240413.post939.tar.gz
+[2024-04-14 02:15:33] INFO root fetch - processPackages [SAMMEC2]: Downloading https://files.pythonhosted.org/packages/9c/50/3f7da5afef8d237ab1c914d77e312024cde223ba2f51ebe619dc9a5a37bb/SAMMEC2-0.0.9.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/a2/56/7ced4a5986fa50f93d932f1620657e89c17ffa9fc290ce0b5fe4954d122d/openbb_nightly-4.1.6.dev202404130008.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [SAMMEC2]: executing diffoscope
+[2024-04-14 02:15:34] INFO root fetch - processPackages [SAMMEC2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SAMMEC2-0.0.8.tar.gz tmp/SAMMEC2-0.0.9.tar.gz --markdown 20240414/S/SAMMEC2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 02:15:34] INFO root fetch - processPackages [easydebugger]: Downloading https://files.pythonhosted.org/packages/26/b6/9520f65c584aadfea0b87c274f1e70bb4c17d455f0a1d8bb2ab56b324ce5/easydebugger-1.2.1.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [isom2600]: Downloading https://files.pythonhosted.org/packages/fa/15/c7130d3e6b56b1fc50fe95d30b4497436e6fcdac4959e8d5584971b2fff7/isom2600-3.2.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/45/6c/b66002742fc88057799733a509a47fe3bf1c34cd06648dd65ba1d2046cfc/mct-quantizers-nightly-1.5.0.20240414.post1433.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [isom2600]: executing diffoscope
+[2024-04-14 02:15:34] INFO root fetch - processPackages [isom2600]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isom2600-3.1.tar.gz tmp/isom2600-3.2.tar.gz --markdown 20240414/i/isom2600/3.1-3.2/README.md --exclude *.pyd
+[2024-04-14 02:15:34] INFO root fetch - processPackages [easydebugger]: executing diffoscope
+[2024-04-14 02:15:34] INFO root fetch - processPackages [easydebugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydebugger-1.2.0.tar.gz tmp/easydebugger-1.2.1.tar.gz --markdown 20240414/e/easydebugger/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-14 02:15:34] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-14 02:15:34] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240413.post939.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240414.post1433.tar.gz --markdown 20240414/m/mct-quantizers-nightly/1.5.0.20240413.post939-1.5.0.20240414.post1433/README.md --exclude *.pyd
+[2024-04-14 02:15:34] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/83/06/0202e4e8ba2118a2a4a617ad52caadc937f089e138c96eff76cd4281a793/openbb_nightly-4.1.6.dev202404140013.tar.gz
+[2024-04-14 02:15:34] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.8.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - processPackages [SAMMEC2]: Remove: archive file [/home/abi/fetcher/tmp/SAMMEC2-0.0.9.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - main [MainThread]: End processing [SAMMEC2]: success
+[2024-04-14 02:15:34] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.1.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - processPackages [isom2600]: Remove: archive file [/home/abi/fetcher/tmp/isom2600-3.2.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - main [MainThread]: End processing [isom2600]: success
+[2024-04-14 02:15:34] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-14 02:15:34] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.6.dev202404130008.tar.gz tmp/openbb_nightly-4.1.6.dev202404140013.tar.gz --markdown 20240414/o/openbb-nightly/4.1.6.dev202404130008-4.1.6.dev202404140013/README.md --exclude *.pyd
+[2024-04-14 02:15:34] INFO root fetch - processPackages [easydebugger]: Remove: archive file [/home/abi/fetcher/tmp/easydebugger-1.2.0.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - processPackages [easydebugger]: Remove: archive file [/home/abi/fetcher/tmp/easydebugger-1.2.1.tar.gz]
+[2024-04-14 02:15:34] INFO root fetch - main [MainThread]: End processing [easydebugger]: success
+[2024-04-14 02:15:35] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240413.post939.tar.gz]
+[2024-04-14 02:15:35] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240414.post1433.tar.gz]
+[2024-04-14 02:15:35] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-14 02:15:37] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404130008.tar.gz]
+[2024-04-14 02:15:37] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404140013.tar.gz]
+[2024-04-14 02:15:37] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-14 02:15:37] INFO root fetch - main [MainThread]: Store serial: [22755702]
