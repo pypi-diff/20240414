@@ -15534,3 +15534,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:45:07] INFO root fetch - processPackages [python2verilog]: Remove: archive file [/home/abi/fetcher/tmp/python2verilog-0.5.0rc1.tar.gz]
 [2024-04-14 22:45:07] INFO root fetch - main [MainThread]: End processing [python2verilog]: success
 [2024-04-14 22:45:07] INFO root fetch - main [MainThread]: Store serial: [22762373]
+[2024-04-14 22:47:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762373]
+[2024-04-14 22:47:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 22:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zensols.propbankdb
+[2024-04-14 22:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: turbobus
+[2024-04-14 22:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: renum
+[2024-04-14 22:47:16] INFO root fetch - processPackages [turbobus]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2024-04-14 22:47:16] INFO root fetch - processPackages [turbobus]: Downloading https://files.pythonhosted.org/packages/65/0e/99ef34928de0b46f6f9d8807829d1d6edfe4caef2ce9a700831ae9ae527c/turbobus-1.0.0a6.tar.gz
+[2024-04-14 22:47:16] INFO root fetch - processPackages [renum]: New version: [0.0.1b1] Old Version: [0.0.1b0]
+[2024-04-14 22:47:16] WARNING root fetch - processPackages [zensols.propbankdb]: Skipping, unable to determine old version
+[2024-04-14 22:47:16] INFO root fetch - main [MainThread]: End processing [zensols.propbankdb] error
+[2024-04-14 22:47:16] INFO root fetch - processPackages [renum]: Downloading https://files.pythonhosted.org/packages/9a/c5/48bea13fef48571c3c247a5476836067eaf18d52ddd12fde22d69f854c78/renum-0.0.1b0.tar.gz
+[2024-04-14 22:47:16] INFO root fetch - processPackages [turbobus]: Downloading https://files.pythonhosted.org/packages/21/56/01e274251dbbf5dfb0c3897126b24972e70913705df8268c3a777301326a/turbobus-1.0.0a7.tar.gz
+[2024-04-14 22:47:16] INFO root fetch - processPackages [turbobus]: executing diffoscope
+[2024-04-14 22:47:16] INFO root fetch - processPackages [turbobus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbobus-1.0.0a6.tar.gz tmp/turbobus-1.0.0a7.tar.gz --markdown 20240414/t/turbobus/1.0.0a6-1.0.0a7/README.md --exclude *.pyd
+[2024-04-14 22:47:16] INFO root fetch - processPackages [renum]: Downloading https://files.pythonhosted.org/packages/c0/af/6808c4b073bcef563169ab389a1641ef87f10672bacc0663793bd98e80af/renum-0.0.1b1.tar.gz
+[2024-04-14 22:47:17] INFO root fetch - processPackages [renum]: executing diffoscope
+[2024-04-14 22:47:17] INFO root fetch - processPackages [renum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renum-0.0.1b0.tar.gz tmp/renum-0.0.1b1.tar.gz --markdown 20240414/r/renum/0.0.1b0-0.0.1b1/README.md --exclude *.pyd
+[2024-04-14 22:47:17] INFO root fetch - processPackages [turbobus]: Remove: archive file [/home/abi/fetcher/tmp/turbobus-1.0.0a6.tar.gz]
+[2024-04-14 22:47:17] INFO root fetch - processPackages [turbobus]: Remove: archive file [/home/abi/fetcher/tmp/turbobus-1.0.0a7.tar.gz]
+[2024-04-14 22:47:17] INFO root fetch - main [MainThread]: End processing [turbobus]: success
+[2024-04-14 22:47:17] INFO root fetch - processPackages [renum]: Remove: archive file [/home/abi/fetcher/tmp/renum-0.0.1b0.tar.gz]
+[2024-04-14 22:47:17] INFO root fetch - processPackages [renum]: Remove: archive file [/home/abi/fetcher/tmp/renum-0.0.1b1.tar.gz]
+[2024-04-14 22:47:17] INFO root fetch - main [MainThread]: End processing [renum]: success
+[2024-04-14 22:47:17] INFO root fetch - main [MainThread]: Store serial: [22762380]
