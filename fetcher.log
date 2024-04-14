@@ -2392,3 +2392,17 @@
 [2024-04-14 03:42:56] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 03:42:56] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 03:42:56] INFO root fetch - main [MainThread]: Store serial: [22756094]
+[2024-04-14 03:44:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756094]
+[2024-04-14 03:45:04] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 03:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756095]
+[2024-04-14 03:47:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-semantic-release
+[2024-04-14 03:47:10] INFO root fetch - processPackages [python-semantic-release]: New version: [9.4.2] Old Version: [9.4.1]
+[2024-04-14 03:47:10] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/56/a1/22e5e01e8399e7f24dbc365d39ca5907862e257b4e92c30d5a618536de1c/python-semantic-release-9.4.1.tar.gz
+[2024-04-14 03:47:10] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/15/85/6b5c070e53ebc9b79a6e0c00211238ed5143afa6c3d508ec4a2c0751df94/python_semantic_release-9.4.2.tar.gz
+[2024-04-14 03:47:10] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2024-04-14 03:47:10] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-9.4.1.tar.gz tmp/python_semantic_release-9.4.2.tar.gz --markdown 20240414/p/python-semantic-release/9.4.1-9.4.2/README.md --exclude *.pyd
+[2024-04-14 03:47:11] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python-semantic-release-9.4.1.tar.gz]
+[2024-04-14 03:47:11] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python_semantic_release-9.4.2.tar.gz]
+[2024-04-14 03:47:11] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2024-04-14 03:47:11] INFO root fetch - main [MainThread]: Store serial: [22756098]
