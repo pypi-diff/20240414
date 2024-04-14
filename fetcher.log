@@ -13734,3 +13734,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:46:13] INFO root fetch - processPackages [flattableanalysis]: Remove: archive file [/home/abi/fetcher/tmp/flattableanalysis-0.0.2.tar.gz]
 [2024-04-14 20:46:13] INFO root fetch - main [MainThread]: End processing [flattableanalysis]: success
 [2024-04-14 20:46:13] INFO root fetch - main [MainThread]: Store serial: [22761205]
+[2024-04-14 20:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761205]
+[2024-04-14 20:48:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepchecks-llm-client
+[2024-04-14 20:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scmopy
+[2024-04-14 20:48:23] INFO root fetch - processPackages [scmopy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 20:48:23] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/f0/8d/6665aec0481aa102609033653eeb4c3c3474a7b1f550f55f70335382a0f7/scmopy-0.0.4.tar.gz
+[2024-04-14 20:48:23] INFO root fetch - processPackages [deepchecks-llm-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-14 20:48:23] INFO root fetch - processPackages [deepchecks-llm-client]: Downloading https://files.pythonhosted.org/packages/14/39/234c667758a9cb3c25191e38640800158e6d318817fee658b57844cdf7ef/deepchecks-llm-client-0.9.1.tar.gz
+[2024-04-14 20:48:23] INFO root fetch - processPackages [scmopy]: Downloading https://files.pythonhosted.org/packages/cc/3b/b10743df6ea0b60df9a14b5d91b645e49e70a77109be614d98720e088019/scmopy-0.0.5.tar.gz
+[2024-04-14 20:48:23] INFO root fetch - processPackages [scmopy]: executing diffoscope
+[2024-04-14 20:48:23] INFO root fetch - processPackages [scmopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scmopy-0.0.4.tar.gz tmp/scmopy-0.0.5.tar.gz --markdown 20240414/s/scmopy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: Downloading https://files.pythonhosted.org/packages/81/71/7e18c9bc6b679961021ce417620a7f4a4a14775917b1858db37d989bd2fa/deepchecks-llm-client-0.9.2.tar.gz
+[2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: executing diffoscope
+[2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchecks-llm-client-0.9.1.tar.gz tmp/deepchecks-llm-client-0.9.2.tar.gz --markdown 20240414/d/deepchecks-llm-client/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-14 20:48:24] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.4.tar.gz]
+[2024-04-14 20:48:24] INFO root fetch - processPackages [scmopy]: Remove: archive file [/home/abi/fetcher/tmp/scmopy-0.0.5.tar.gz]
+[2024-04-14 20:48:24] INFO root fetch - main [MainThread]: End processing [scmopy]: success
+[2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: Remove: archive file [/home/abi/fetcher/tmp/deepchecks-llm-client-0.9.1.tar.gz]
+[2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: Remove: archive file [/home/abi/fetcher/tmp/deepchecks-llm-client-0.9.2.tar.gz]
+[2024-04-14 20:48:24] INFO root fetch - main [MainThread]: End processing [deepchecks-llm-client]: success
+[2024-04-14 20:48:24] INFO root fetch - main [MainThread]: Store serial: [22761211]
