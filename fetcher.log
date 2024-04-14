@@ -10415,3 +10415,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:31:06] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.8.8.tar.gz]
 [2024-04-14 16:31:06] INFO root fetch - main [MainThread]: End processing [MLXpress]: success
 [2024-04-14 16:31:06] INFO root fetch - main [MainThread]: Store serial: [22759646]
+[2024-04-14 16:33:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759646]
+[2024-04-14 16:33:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 16:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dpt
+[2024-04-14 16:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jarvis-tools
+[2024-04-14 16:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: felixxxtools
+[2024-04-14 16:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-14 16:33:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certReport
+[2024-04-14 16:33:23] WARNING root fetch - processPackages [certReport]: Skipping, unable to determine old version
+[2024-04-14 16:33:23] INFO root fetch - main [MainThread]: End processing [certReport] error
+[2024-04-14 16:33:23] INFO root fetch - processPackages [dpt]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-14 16:33:23] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.14] Old Version: [2024.4.13]
+[2024-04-14 16:33:23] INFO root fetch - processPackages [jarvis-tools]: New version: [2024.4.10] Old Version: [2024.3.4]
+[2024-04-14 16:33:23] WARNING root fetch - processPackages [felixxxtools]: Skipping, unable to determine old version
+[2024-04-14 16:33:23] INFO root fetch - main [MainThread]: End processing [felixxxtools] error
+[2024-04-14 16:33:23] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/9b/0d/9a81c4d0544b415ffc574a4b92b2726fae6ffb3ea78425662046dd6fb80a/dpt-0.3.6.tar.gz
+[2024-04-14 16:33:23] INFO root fetch - processPackages [jarvis-tools]: Downloading https://files.pythonhosted.org/packages/0c/99/2759a9dfedb2dcf854b94f22486ad60a016e2083cd6b3e3eda0fab721ce1/jarvis-tools-2024.3.4.tar.gz
+[2024-04-14 16:33:23] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/91/8a/2355db3e3fcb766de3e51adb9b79deb1a51edb8af21460aa1b2a1f2bd5d1/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-14 16:33:24] INFO root fetch - processPackages [dpt]: Downloading https://files.pythonhosted.org/packages/9d/d3/c588e71834e2c1a4fcb97c3cd83c6bf9cdfc9b55b743d469d6f9e33eeda3/dpt-0.3.7.tar.gz
+[2024-04-14 16:33:24] INFO root fetch - processPackages [dpt]: executing diffoscope
+[2024-04-14 16:33:24] INFO root fetch - processPackages [dpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpt-0.3.6.tar.gz tmp/dpt-0.3.7.tar.gz --markdown 20240414/d/dpt/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-14 16:33:24] INFO root fetch - processPackages [jarvis-tools]: Downloading https://files.pythonhosted.org/packages/d3/37/21e989859f93806ff749c2a90e7e25acffb94567cc2056cb661006f472b9/jarvis-tools-2024.4.10.tar.gz
+[2024-04-14 16:33:24] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/46/20/80fc9205e17c1b783bf8b997bf1c530c7ee81422c9cbc4c6dded2ac94800/fbgemm_gpu_nightly_cpu-2024.4.14-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-14 16:33:24] INFO root fetch - processPackages [jarvis-tools]: executing diffoscope
+[2024-04-14 16:33:24] INFO root fetch - processPackages [jarvis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis-tools-2024.3.4.tar.gz tmp/jarvis-tools-2024.4.10.tar.gz --markdown 20240414/j/jarvis-tools/2024.3.4-2024.4.10/README.md --exclude *.pyd
+[2024-04-14 16:33:24] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-0.3.6.tar.gz]
+[2024-04-14 16:33:24] INFO root fetch - processPackages [dpt]: Remove: archive file [/home/abi/fetcher/tmp/dpt-0.3.7.tar.gz]
+[2024-04-14 16:33:24] INFO root fetch - main [MainThread]: End processing [dpt]: success
+[2024-04-14 16:33:25] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-14 16:33:25] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.14-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240414/f/fbgemm-gpu-nightly-cpu/2024.4.13-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 16:33:25] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.13-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-14 16:33:25] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.14-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-14 16:33:25] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-14 16:33:25] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis-tools-2024.3.4.tar.gz]
+[2024-04-14 16:33:25] INFO root fetch - processPackages [jarvis-tools]: Remove: archive file [/home/abi/fetcher/tmp/jarvis-tools-2024.4.10.tar.gz]
+[2024-04-14 16:33:25] INFO root fetch - main [MainThread]: End processing [jarvis-tools]: success
+[2024-04-14 16:33:25] INFO root fetch - main [MainThread]: Store serial: [22759675]
