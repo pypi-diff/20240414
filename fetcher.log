@@ -6637,3 +6637,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:01:51] INFO root fetch - processPackages [ramses_rf]: Remove: archive file [/home/abi/fetcher/tmp/ramses-rf-0.9.8.tar.gz]
 [2024-04-14 12:01:51] INFO root fetch - main [MainThread]: End processing [ramses_rf]: success
 [2024-04-14 12:01:51] INFO root fetch - main [MainThread]: Store serial: [22757843]
+[2024-04-14 12:03:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757843]
+[2024-04-14 12:04:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 12:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edir
+[2024-04-14 12:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mfoci
+[2024-04-14 12:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: THISDLChatBot
+[2024-04-14 12:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rclip
+[2024-04-14 12:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lyra-v2-client
+[2024-04-14 12:04:03] INFO root fetch - processPackages [THISDLChatBot]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-14 12:04:03] INFO root fetch - processPackages [rclip]: New version: [1.8.7a0] Old Version: [1.8.7]
+[2024-04-14 12:04:03] INFO root fetch - processPackages [mfoci]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 12:04:03] INFO root fetch - processPackages [lyra-v2-client]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-14 12:04:03] INFO root fetch - processPackages [edir]: New version: [2.9.1] Old Version: [2.9]
+[2024-04-14 12:04:03] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/c9/89/b9febe6479cceebd9279697c74391d0d11f9c4881c0f706cf12d34526f1f/THISDLChatBot-2.0.1.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/67/78/2ed414c519869262422066b334c80f59d534ec7802dc1006c18704aef551/rclip-1.8.7.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/0c/ca/fb804c34a9c14a1bcdf8714374e64347e3a8dd66cd0f248dd4f114124279/mfoci-0.1.4.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [lyra-v2-client]: Downloading https://files.pythonhosted.org/packages/f9/02/36ab0cdfb00a935f78ca8651389d73365b2b6a652e86173c14ce5cdfdbbf/lyra_v2_client-0.2.6.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [edir]: Downloading https://files.pythonhosted.org/packages/c3/c7/4bc9c5b81b8615ac27cafe90feab04ab1ac9e8f0ed217e5be999daa0d51e/edir-2.9.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [rclip]: Downloading https://files.pythonhosted.org/packages/6e/6e/e805a947a205337cd9e3489f6c6c798ff7634cb357b4a578a79cb4f738c2/rclip-1.8.7a0.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/3e/e9/24f67ff61e8bf9463956a99f5775d287879626377331129c66b5532c7bb3/THISDLChatBot-2.0.2.tar.gz
+[2024-04-14 12:04:03] INFO root fetch - processPackages [rclip]: executing diffoscope
+[2024-04-14 12:04:03] INFO root fetch - processPackages [rclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rclip-1.8.7.tar.gz tmp/rclip-1.8.7a0.tar.gz --markdown 20240414/r/rclip/1.8.7-1.8.7a0/README.md --exclude *.pyd
+[2024-04-14 12:04:04] INFO root fetch - processPackages [mfoci]: Downloading https://files.pythonhosted.org/packages/bd/23/707e555ac85e734c38653d12e7c2e1b1f4b3c3b525a891bdf5eebd9922a9/mfoci-0.1.5.tar.gz
+[2024-04-14 12:04:04] INFO root fetch - processPackages [THISDLChatBot]: executing diffoscope
+[2024-04-14 12:04:04] INFO root fetch - processPackages [THISDLChatBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/THISDLChatBot-2.0.1.tar.gz tmp/THISDLChatBot-2.0.2.tar.gz --markdown 20240414/T/THISDLChatBot/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-14 12:04:04] INFO root fetch - processPackages [lyra-v2-client]: Downloading https://files.pythonhosted.org/packages/99/52/42abada67ad25643cfc13d5cfd8f6ac82c2399476afd68a9a245a15f512d/lyra_v2_client-0.2.7.tar.gz
+[2024-04-14 12:04:04] INFO root fetch - processPackages [mfoci]: executing diffoscope
+[2024-04-14 12:04:04] INFO root fetch - processPackages [mfoci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfoci-0.1.4.tar.gz tmp/mfoci-0.1.5.tar.gz --markdown 20240414/m/mfoci/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 12:04:04] INFO root fetch - processPackages [lyra-v2-client]: executing diffoscope
+[2024-04-14 12:04:04] INFO root fetch - processPackages [lyra-v2-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyra_v2_client-0.2.6.tar.gz tmp/lyra_v2_client-0.2.7.tar.gz --markdown 20240414/l/lyra-v2-client/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-14 12:04:04] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.7.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - processPackages [rclip]: Remove: archive file [/home/abi/fetcher/tmp/rclip-1.8.7a0.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - main [MainThread]: End processing [rclip]: success
+[2024-04-14 12:04:04] INFO root fetch - processPackages [edir]: Downloading https://files.pythonhosted.org/packages/bf/fa/60c088f766d0e4e431a27ad0b4d302389c5774c309d1aaec3e1b74bf3b5d/edir-2.9.1.tar.gz
+[2024-04-14 12:04:04] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.1.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.2.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
+[2024-04-14 12:04:04] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.4.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - processPackages [mfoci]: Remove: archive file [/home/abi/fetcher/tmp/mfoci-0.1.5.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - main [MainThread]: End processing [mfoci]: success
+[2024-04-14 12:04:04] INFO root fetch - processPackages [lyra-v2-client]: Remove: archive file [/home/abi/fetcher/tmp/lyra_v2_client-0.2.6.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - processPackages [lyra-v2-client]: Remove: archive file [/home/abi/fetcher/tmp/lyra_v2_client-0.2.7.tar.gz]
+[2024-04-14 12:04:04] INFO root fetch - main [MainThread]: End processing [lyra-v2-client]: success
+[2024-04-14 12:04:04] INFO root fetch - processPackages [edir]: executing diffoscope
+[2024-04-14 12:04:04] INFO root fetch - processPackages [edir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edir-2.9.tar.gz tmp/edir-2.9.1.tar.gz --markdown 20240414/e/edir/2.9-2.9.1/README.md --exclude *.pyd
+[2024-04-14 12:04:05] INFO root fetch - processPackages [edir]: Remove: archive file [/home/abi/fetcher/tmp/edir-2.9.tar.gz]
+[2024-04-14 12:04:05] INFO root fetch - processPackages [edir]: Remove: archive file [/home/abi/fetcher/tmp/edir-2.9.1.tar.gz]
+[2024-04-14 12:04:05] INFO root fetch - main [MainThread]: End processing [edir]: success
+[2024-04-14 12:04:05] INFO root fetch - main [MainThread]: Store serial: [22757858]
