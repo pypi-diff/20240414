@@ -5336,3 +5336,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:00:48] WARNING root fetch - processPackages [balatromobile]: Skipping, unable to determine old version
 [2024-04-14 10:00:48] INFO root fetch - main [MainThread]: End processing [balatromobile] error
 [2024-04-14 10:00:48] INFO root fetch - main [MainThread]: Store serial: [22757144]
+[2024-04-14 10:02:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757144]
+[2024-04-14 10:02:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyroblack
+[2024-04-14 10:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OD-package
+[2024-04-14 10:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: timeit-compare
+[2024-04-14 10:02:57] INFO root fetch - processPackages [pyroblack]: New version: [2.3.66] Old Version: [2.3.65]
+[2024-04-14 10:02:57] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/5e/69/13546e4ab73c50a6ef467c6415f1a7954b26fb64eb006c8f8e90952af5df/pyroblack-2.3.65.tar.gz
+[2024-04-14 10:02:57] WARNING root fetch - processPackages [timeit-compare]: Skipping, unable to determine old version
+[2024-04-14 10:02:57] INFO root fetch - main [MainThread]: End processing [timeit-compare] error
+[2024-04-14 10:02:57] WARNING root fetch - processPackages [OD-package]: Skipping, unable to determine old version
+[2024-04-14 10:02:57] INFO root fetch - main [MainThread]: End processing [OD-package] error
+[2024-04-14 10:02:58] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/d7/f5/3ef1756ec66f67c6085cb2a0c2a34a7d027ec68f05e8fac5676656cfc401/pyroblack-2.3.66.tar.gz
+[2024-04-14 10:02:58] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-04-14 10:02:58] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.65.tar.gz tmp/pyroblack-2.3.66.tar.gz --markdown 20240414/p/pyroblack/2.3.65-2.3.66/README.md --exclude *.pyd
+[2024-04-14 10:03:00] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.65.tar.gz]
+[2024-04-14 10:03:00] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.66.tar.gz]
+[2024-04-14 10:03:00] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-04-14 10:03:00] INFO root fetch - main [MainThread]: Store serial: [22757156]
