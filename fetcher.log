@@ -3806,3 +3806,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:26:51] INFO root fetch - processPackages [types-lxml]: Remove: archive file [/home/abi/fetcher/tmp/types_lxml-2024.4.14.tar.gz]
 [2024-04-14 06:26:51] INFO root fetch - main [MainThread]: End processing [types-lxml]: success
 [2024-04-14 06:26:51] INFO root fetch - main [MainThread]: Store serial: [22756552]
+[2024-04-14 06:28:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756552]
+[2024-04-14 06:29:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 06:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: interpret
+[2024-04-14 06:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interpret-core
+[2024-04-14 06:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vlora
+[2024-04-14 06:29:00] WARNING root fetch - processPackages [vlora]: Skipping, unable to determine old version
+[2024-04-14 06:29:00] INFO root fetch - processPackages [interpret-core]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-14 06:29:00] INFO root fetch - main [MainThread]: End processing [vlora] error
+[2024-04-14 06:29:00] INFO root fetch - processPackages [interpret]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-14 06:29:00] INFO root fetch - processPackages [interpret-core]: Downloading https://files.pythonhosted.org/packages/dc/92/72a890e3dc10e775981f3a8979d6e4511c471d487067c61ceb8284bc55f8/interpret-core-0.6.0.tar.gz
+[2024-04-14 06:29:00] INFO root fetch - processPackages [interpret]: Downloading https://files.pythonhosted.org/packages/cd/bf/9c6692c927d3c16705494162aa22a59ea8ea9eac1071a3b0bf75fbed17e3/interpret-0.6.0.tar.gz
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret]: Downloading https://files.pythonhosted.org/packages/b4/51/7a0e123cec5f68476cf3aeaae6bfc7cf2a421522c0b3fd2537dbd48ea648/interpret-0.6.1.tar.gz
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret]: executing diffoscope
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interpret-0.6.0.tar.gz tmp/interpret-0.6.1.tar.gz --markdown 20240414/i/interpret/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret-core]: Downloading https://files.pythonhosted.org/packages/48/fd/d489cb4f383cdc2f9d5a18cc67dcf92576d8372a9714268517294fd49de6/interpret_core-0.6.1.tar.gz
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret-core]: executing diffoscope
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interpret-core-0.6.0.tar.gz tmp/interpret_core-0.6.1.tar.gz --markdown 20240414/i/interpret-core/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret]: Remove: archive file [/home/abi/fetcher/tmp/interpret-0.6.0.tar.gz]
+[2024-04-14 06:29:01] INFO root fetch - processPackages [interpret]: Remove: archive file [/home/abi/fetcher/tmp/interpret-0.6.1.tar.gz]
+[2024-04-14 06:29:01] INFO root fetch - main [MainThread]: End processing [interpret]: success
+[2024-04-14 06:29:42] INFO root fetch - processPackages [interpret-core]: Remove: archive file [/home/abi/fetcher/tmp/interpret-core-0.6.0.tar.gz]
+[2024-04-14 06:29:42] INFO root fetch - processPackages [interpret-core]: Remove: archive file [/home/abi/fetcher/tmp/interpret_core-0.6.1.tar.gz]
+[2024-04-14 06:29:42] INFO root fetch - main [MainThread]: End processing [interpret-core]: success
+[2024-04-14 06:29:42] INFO root fetch - main [MainThread]: Store serial: [22756564]
