@@ -8736,3 +8736,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:24:14] INFO root fetch - processPackages [geonum]: Remove: archive file [/home/abi/fetcher/tmp/geonum-1.5.0.dev9.tar.gz]
 [2024-04-14 14:24:14] INFO root fetch - main [MainThread]: End processing [geonum]: success
 [2024-04-14 14:24:14] INFO root fetch - main [MainThread]: Store serial: [22758844]
+[2024-04-14 14:26:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758844]
+[2024-04-14 14:26:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utrc
+[2024-04-14 14:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PathMePy
+[2024-04-14 14:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyastroweatherio
+[2024-04-14 14:26:30] INFO root fetch - processPackages [utrc]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 14:26:30] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/39/c1/dd0a427e993771ccaf0b3f0a3f09312393cf84bc0169502f8baf1054f86f/utrc-0.0.6.tar.gz
+[2024-04-14 14:26:31] WARNING root fetch - processPackages [PathMePy]: Skipping, unable to determine old version
+[2024-04-14 14:26:31] INFO root fetch - main [MainThread]: End processing [PathMePy] error
+[2024-04-14 14:26:31] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev2] Old Version: [0.43.1.dev1]
+[2024-04-14 14:26:31] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/b7/9e/17b9e59e3010666add94a2b11658862a0b18b0da79fc6aa8d0dbce3e0b68/utrc-0.0.7.tar.gz
+[2024-04-14 14:26:31] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/98/d6/6f5ffdbed2251eeaea5d6b4baca1107420e4dd346c50288700625cb0c5b9/pyastroweatherio-0.43.1.dev1.tar.gz
+[2024-04-14 14:26:31] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-14 14:26:31] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.6.tar.gz tmp/utrc-0.0.7.tar.gz --markdown 20240414/u/utrc/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 14:26:31] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/45/c9/3b29afbcda3a48ad1e28cc9f15f48dbc1b18a5a1f84696abea6e36585c17/pyastroweatherio-0.43.1.dev2.tar.gz
+[2024-04-14 14:26:31] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.6.tar.gz]
+[2024-04-14 14:26:31] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.7.tar.gz]
+[2024-04-14 14:26:31] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-14 14:26:32] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-14 14:26:32] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev1.tar.gz tmp/pyastroweatherio-0.43.1.dev2.tar.gz --markdown 20240414/p/pyastroweatherio/0.43.1.dev1-0.43.1.dev2/README.md --exclude *.pyd
+[2024-04-14 14:26:32] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev1.tar.gz]
+[2024-04-14 14:26:32] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev2.tar.gz]
+[2024-04-14 14:26:32] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-14 14:26:32] INFO root fetch - main [MainThread]: Store serial: [22758854]
