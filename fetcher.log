@@ -3756,3 +3756,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:22:31] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
 [2024-04-14 06:22:31] INFO root fetch - main [MainThread]: End processing [hashcat]: success
 [2024-04-14 06:22:31] INFO root fetch - main [MainThread]: Store serial: [22756536]
+[2024-04-14 06:24:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756536]
+[2024-04-14 06:24:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 06:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyontoenv
+[2024-04-14 06:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AKoDAuth
+[2024-04-14 06:24:40] WARNING root fetch - processPackages [pyontoenv]: Skipping, unable to determine old version
+[2024-04-14 06:24:40] INFO root fetch - main [MainThread]: End processing [pyontoenv] error
+[2024-04-14 06:24:40] INFO root fetch - processPackages [AKoDAuth]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-14 06:24:40] INFO root fetch - processPackages [AKoDAuth]: Downloading https://files.pythonhosted.org/packages/d5/bd/5a2cfe6047dfd357995388cc847ac0d3d99aaac1ff03bfddb4f287b8f0aa/AKoDAuth-1.1.1.tar.gz
+[2024-04-14 06:24:40] INFO root fetch - processPackages [AKoDAuth]: Downloading https://files.pythonhosted.org/packages/df/e7/f570b86a2d37ac48812cc66b661a96c55bedab9aec2417ce6a74a12d9e09/AKoDAuth-1.1.2.tar.gz
+[2024-04-14 06:24:41] INFO root fetch - processPackages [AKoDAuth]: executing diffoscope
+[2024-04-14 06:24:41] INFO root fetch - processPackages [AKoDAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AKoDAuth-1.1.1.tar.gz tmp/AKoDAuth-1.1.2.tar.gz --markdown 20240414/A/AKoDAuth/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-14 06:24:41] INFO root fetch - processPackages [AKoDAuth]: Remove: archive file [/home/abi/fetcher/tmp/AKoDAuth-1.1.1.tar.gz]
+[2024-04-14 06:24:41] INFO root fetch - processPackages [AKoDAuth]: Remove: archive file [/home/abi/fetcher/tmp/AKoDAuth-1.1.2.tar.gz]
+[2024-04-14 06:24:41] INFO root fetch - main [MainThread]: End processing [AKoDAuth]: success
+[2024-04-14 06:24:41] INFO root fetch - main [MainThread]: Store serial: [22756543]
