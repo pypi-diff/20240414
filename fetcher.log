@@ -1856,3 +1856,45 @@
 [2024-04-14 02:42:58] INFO root fetch - processPackages [sshared]: Remove: archive file [/home/abi/fetcher/tmp/sshared-0.3.0.tar.gz]
 [2024-04-14 02:42:58] INFO root fetch - main [MainThread]: End processing [sshared]: success
 [2024-04-14 02:42:58] INFO root fetch - main [MainThread]: Store serial: [22755875]
+[2024-04-14 02:45:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755875]
+[2024-04-14 02:45:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 02:45:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invest-guard
+[2024-04-14 02:45:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscreeps-arena
+[2024-04-14 02:45:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: runtime-generics
+[2024-04-14 02:45:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfds-nightly
+[2024-04-14 02:45:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chaturbate-poller
+[2024-04-14 02:45:07] INFO root fetch - processPackages [pyscreeps-arena]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 02:45:07] WARNING root fetch - processPackages [invest-guard]: Skipping, unable to determine old version
+[2024-04-14 02:45:07] INFO root fetch - main [MainThread]: End processing [invest-guard] error
+[2024-04-14 02:45:07] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/c5/b1/8292299cae71977950db03b9fd25232d4405091d7ed0590a568571f371fe/pyscreeps-arena-0.1.8.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [chaturbate-poller]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 02:45:07] INFO root fetch - processPackages [runtime-generics]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-04-14 02:45:07] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202404140044] Old Version: [4.9.4.dev202404130043]
+[2024-04-14 02:45:07] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/64/48/957a0df43412092e866e5e523b18cf75d4fa4b9d95a9a1f9a68879d3809e/chaturbate_poller-0.3.8.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/a6/bc/4b0c7fe8661b1ebbb0e49a3e5ebae845c764cd59b3059987a09145728e8e/runtime_generics-3.1.0.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/8d/64/60d19e221d5c72437543c5f504c88d32093797848354c0dd1c4da297ceca/pyscreeps-arena-0.1.9.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/25/f2/4322478f6c40bbfd5f000f802f088e85a4ece65149478f068a63b73fffd0/tfds-nightly-4.9.4.dev202404130043.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [pyscreeps-arena]: executing diffoscope
+[2024-04-14 02:45:07] INFO root fetch - processPackages [pyscreeps-arena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscreeps-arena-0.1.8.tar.gz tmp/pyscreeps-arena-0.1.9.tar.gz --markdown 20240414/p/pyscreeps-arena/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 02:45:07] INFO root fetch - processPackages [chaturbate-poller]: Downloading https://files.pythonhosted.org/packages/24/4c/4cbbefc73e5ac98d680f84b904f97d849a2d7561aed323b93c5501e0a78c/chaturbate_poller-0.3.9.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/9c/70/3e06af549a158c6a7cd07cb0c3804a6f5247b3248e82bf61666c38f2ec34/runtime_generics-3.2.0.tar.gz
+[2024-04-14 02:45:07] INFO root fetch - processPackages [chaturbate-poller]: executing diffoscope
+[2024-04-14 02:45:07] INFO root fetch - processPackages [chaturbate-poller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaturbate_poller-0.3.8.tar.gz tmp/chaturbate_poller-0.3.9.tar.gz --markdown 20240414/c/chaturbate-poller/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 02:45:08] INFO root fetch - processPackages [runtime-generics]: executing diffoscope
+[2024-04-14 02:45:08] INFO root fetch - processPackages [runtime-generics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtime_generics-3.1.0.tar.gz tmp/runtime_generics-3.2.0.tar.gz --markdown 20240414/r/runtime-generics/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-04-14 02:45:08] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/6b/ef/a8df3ee18cb34c4d7fd007503c7c4c736dac46cac6327446e753a3a74dbd/tfds-nightly-4.9.4.dev202404140044.tar.gz
+[2024-04-14 02:45:08] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.8.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.9.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - main [MainThread]: End processing [pyscreeps-arena]: success
+[2024-04-14 02:45:08] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-04-14 02:45:08] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202404130043.tar.gz tmp/tfds-nightly-4.9.4.dev202404140044.tar.gz --markdown 20240414/t/tfds-nightly/4.9.4.dev202404130043-4.9.4.dev202404140044/README.md --exclude *.pyd
+[2024-04-14 02:45:08] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.3.8.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - processPackages [chaturbate-poller]: Remove: archive file [/home/abi/fetcher/tmp/chaturbate_poller-0.3.9.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - main [MainThread]: End processing [chaturbate-poller]: success
+[2024-04-14 02:45:08] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.1.0.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.2.0.tar.gz]
+[2024-04-14 02:45:08] INFO root fetch - main [MainThread]: End processing [runtime-generics]: success
+[2024-04-14 02:45:17] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404130043.tar.gz]
+[2024-04-14 02:45:17] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404140044.tar.gz]
+[2024-04-14 02:45:17] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-04-14 02:45:17] INFO root fetch - main [MainThread]: Store serial: [22755890]
