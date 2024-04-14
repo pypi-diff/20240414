@@ -2462,3 +2462,29 @@
 [2024-04-14 03:51:32] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-14 03:51:32] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-14 03:51:32] INFO root fetch - main [MainThread]: Store serial: [22756112]
+[2024-04-14 03:53:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756112]
+[2024-04-14 03:53:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 03:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shellcrafter
+[2024-04-14 03:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rp
+[2024-04-14 03:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimic-replay
+[2024-04-14 03:53:40] INFO root fetch - processPackages [mimic-replay]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-14 03:53:40] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 03:53:40] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/b0/db/9a5e3f6b759d98a407c12bfa34d80fbfc8b9b37218b65ffe2d2412f51007/shellcrafter-1.0.8.tar.gz
+[2024-04-14 03:53:40] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/f3/2f/e8f776c9fc049785a386bd707b6b588d7e4b95629d99be045fbb7b45e5d9/mimic_replay-1.1.4.tar.gz
+[2024-04-14 03:53:40] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-14 03:53:40] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/6b/31/49e9f901a30d3f05b6173037c8bbe2cb993b57950b45996a653f9c7a72b6/shellcrafter-1.0.9.tar.gz
+[2024-04-14 03:53:40] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-14 03:53:40] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-14 03:53:40] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-14 03:53:40] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2024-04-14 03:53:40] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.8.tar.gz tmp/shellcrafter-1.0.9.tar.gz --markdown 20240414/s/shellcrafter/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 03:53:40] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/99/65/b49df24fbffec6b7d90c89ee571f41a66bdd4ac4f15a26b5f93c9985b66a/mimic_replay-1.1.5.tar.gz
+[2024-04-14 03:53:40] INFO root fetch - processPackages [mimic-replay]: executing diffoscope
+[2024-04-14 03:53:40] INFO root fetch - processPackages [mimic-replay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimic_replay-1.1.4.tar.gz tmp/mimic_replay-1.1.5.tar.gz --markdown 20240414/m/mimic-replay/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-14 03:53:41] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.4.tar.gz]
+[2024-04-14 03:53:41] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.5.tar.gz]
+[2024-04-14 03:53:41] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.0.8.tar.gz]
+[2024-04-14 03:53:41] INFO root fetch - main [MainThread]: End processing [mimic-replay]: success
+[2024-04-14 03:53:41] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.0.9.tar.gz]
+[2024-04-14 03:53:41] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2024-04-14 03:53:41] INFO root fetch - main [MainThread]: Store serial: [22756121]
