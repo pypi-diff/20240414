@@ -7728,3 +7728,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:10:13] INFO root fetch - processPackages [sigr]: Remove: archive file [/home/abi/fetcher/tmp/sigr-0.0.9.tar.gz]
 [2024-04-14 13:10:13] INFO root fetch - main [MainThread]: End processing [sigr]: success
 [2024-04-14 13:10:13] INFO root fetch - main [MainThread]: Store serial: [22758423]
+[2024-04-14 13:12:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758423]
+[2024-04-14 13:12:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 13:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seqprocessor
+[2024-04-14 13:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdf-compression
+[2024-04-14 13:12:29] WARNING root fetch - processPackages [pdf-compression]: Skipping, unable to determine old version
+[2024-04-14 13:12:29] INFO root fetch - main [MainThread]: End processing [pdf-compression] error
+[2024-04-14 13:12:29] WARNING root fetch - processPackages [seqprocessor]: Skipping, unable to determine old version
+[2024-04-14 13:12:29] INFO root fetch - main [MainThread]: End processing [seqprocessor] error
+[2024-04-14 13:12:29] INFO root fetch - main [MainThread]: Store serial: [22758433]
