@@ -4191,3 +4191,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:19:36] WARNING root fetch - processPackages [bencode2]: Skipping, unable to determine old version
 [2024-04-14 07:19:36] INFO root fetch - main [MainThread]: End processing [bencode2] error
 [2024-04-14 07:19:36] INFO root fetch - main [MainThread]: Store serial: [22756686]
+[2024-04-14 07:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756686]
+[2024-04-14 07:21:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 07:21:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: authx
+[2024-04-14 07:21:45] INFO root fetch - processPackages [authx]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-14 07:21:45] INFO root fetch - processPackages [authx]: Downloading https://files.pythonhosted.org/packages/2b/b0/cc2efb129028c733b8c2598c92bd0f91cde1d55addab7afc232b055913a7/authx-1.1.0.tar.gz
+[2024-04-14 07:21:45] INFO root fetch - processPackages [authx]: Downloading https://files.pythonhosted.org/packages/1b/1f/05547c5679a232929f43a6e27d7f573e70e9d267e2e47833c43941929962/authx-1.1.1.tar.gz
+[2024-04-14 07:21:45] INFO root fetch - processPackages [authx]: executing diffoscope
+[2024-04-14 07:21:45] INFO root fetch - processPackages [authx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authx-1.1.0.tar.gz tmp/authx-1.1.1.tar.gz --markdown 20240414/a/authx/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-14 07:21:46] INFO root fetch - processPackages [authx]: Remove: archive file [/home/abi/fetcher/tmp/authx-1.1.0.tar.gz]
+[2024-04-14 07:21:46] INFO root fetch - processPackages [authx]: Remove: archive file [/home/abi/fetcher/tmp/authx-1.1.1.tar.gz]
+[2024-04-14 07:21:46] INFO root fetch - main [MainThread]: End processing [authx]: success
+[2024-04-14 07:21:46] INFO root fetch - main [MainThread]: Store serial: [22756689]
