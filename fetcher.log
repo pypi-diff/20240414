@@ -14663,3 +14663,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:47:43] INFO root fetch - processPackages [cynetdiff]: Remove: archive file [/home/abi/fetcher/tmp/cynetdiff-0.1.9.tar.gz]
 [2024-04-14 21:47:43] INFO root fetch - main [MainThread]: End processing [cynetdiff]: success
 [2024-04-14 21:47:43] INFO root fetch - main [MainThread]: Store serial: [22761932]
+[2024-04-14 21:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761932]
+[2024-04-14 21:49:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 21:49:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soco
+[2024-04-14 21:49:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libreppc
+[2024-04-14 21:49:52] INFO root fetch - processPackages [libreppc]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-14 21:49:52] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/27/d4/f0feb909ad0344ca39cee6d51501d60b9b6fd0aa7b991e40d3c32b97f92d/libreppc-0.1.2.tar.gz
+[2024-04-14 21:49:52] INFO root fetch - processPackages [soco]: New version: [0.9] Old Version: [0.8]
+[2024-04-14 21:49:53] INFO root fetch - processPackages [soco]: Downloading https://files.pythonhosted.org/packages/2c/13/ed3573fb32a08d8e19eab8a186b48bbf62ffd3fcbac1d70d652c9b170dce/soco-0.8.tar.gz
+[2024-04-14 21:49:53] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/74/a6/368b2fa19394c552190d9877c4b1ec62833f67a5bc3fa945368286d0eb56/libreppc-0.1.3.tar.gz
+[2024-04-14 21:49:53] INFO root fetch - processPackages [libreppc]: executing diffoscope
+[2024-04-14 21:49:53] INFO root fetch - processPackages [libreppc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreppc-0.1.2.tar.gz tmp/libreppc-0.1.3.tar.gz --markdown 20240414/l/libreppc/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-14 21:49:53] INFO root fetch - processPackages [soco]: Downloading https://files.pythonhosted.org/packages/19/cb/73ea986be47c981870950baff7d1b8a94eac81ec9affe02ac9fa3228b720/soco-0.9.tar.gz
+[2024-04-14 21:49:53] INFO root fetch - processPackages [soco]: executing diffoscope
+[2024-04-14 21:49:53] INFO root fetch - processPackages [soco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soco-0.8.tar.gz tmp/soco-0.9.tar.gz --markdown 20240414/s/soco/0.8-0.9/README.md --exclude *.pyd
+[2024-04-14 21:49:53] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.2.tar.gz]
+[2024-04-14 21:49:53] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.3.tar.gz]
+[2024-04-14 21:49:53] INFO root fetch - main [MainThread]: End processing [libreppc]: success
+[2024-04-14 21:49:54] INFO root fetch - processPackages [soco]: Remove: archive file [/home/abi/fetcher/tmp/soco-0.8.tar.gz]
+[2024-04-14 21:49:54] INFO root fetch - processPackages [soco]: Remove: archive file [/home/abi/fetcher/tmp/soco-0.9.tar.gz]
+[2024-04-14 21:49:54] INFO root fetch - main [MainThread]: End processing [soco]: success
+[2024-04-14 21:49:54] INFO root fetch - main [MainThread]: Store serial: [22761938]
