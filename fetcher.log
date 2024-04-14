@@ -13755,3 +13755,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:48:24] INFO root fetch - processPackages [deepchecks-llm-client]: Remove: archive file [/home/abi/fetcher/tmp/deepchecks-llm-client-0.9.2.tar.gz]
 [2024-04-14 20:48:24] INFO root fetch - main [MainThread]: End processing [deepchecks-llm-client]: success
 [2024-04-14 20:48:24] INFO root fetch - main [MainThread]: Store serial: [22761211]
+[2024-04-14 20:50:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761211]
+[2024-04-14 20:50:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-py
+[2024-04-14 20:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: provisioner-runtime
+[2024-04-14 20:50:33] INFO root fetch - processPackages [provisioner-runtime]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-14 20:50:33] INFO root fetch - processPackages [schwab-py]: New version: [0.0.0a8] Old Version: [0.0.0a7]
+[2024-04-14 20:50:33] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/04/fb/5fa81c31dfa7c8efd9e4a0305024d768c76624de40a9168c824f9ade0ea3/schwab-py-0.0.0a7.tar.gz
+[2024-04-14 20:50:33] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/85/c9/2d6be16316e18132132ae9972fe6c174f20853f8f2475f5e2a86d38a2dbe/provisioner_runtime-0.1.5-py3-none-any.whl
+[2024-04-14 20:50:33] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/4a/97/d78b9c894adc5546c1464a6150bd183cffc758049f5f599b96df24c97f56/schwab-py-0.0.0a8.tar.gz
+[2024-04-14 20:50:33] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/16/41/7d826be9094b14aec95a608e1c00d22b8a2bc540fc6a7d403e5ef5db5415/provisioner_runtime-0.1.6-py3-none-any.whl
+[2024-04-14 20:50:33] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-04-14 20:50:33] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a7.tar.gz tmp/schwab-py-0.0.0a8.tar.gz --markdown 20240414/s/schwab-py/0.0.0a7-0.0.0a8/README.md --exclude *.pyd
+[2024-04-14 20:50:33] INFO root fetch - processPackages [provisioner-runtime]: executing diffoscope
+[2024-04-14 20:50:33] INFO root fetch - processPackages [provisioner-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_runtime-0.1.5-py3-none-any.whl.zip tmp/provisioner_runtime-0.1.6-py3-none-any.whl.zip --markdown 20240414/p/provisioner-runtime/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-14 20:50:34] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a7.tar.gz]
+[2024-04-14 20:50:34] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a8.tar.gz]
+[2024-04-14 20:50:34] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-04-14 20:50:34] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.5-py3-none-any.whl.zip]
+[2024-04-14 20:50:34] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.6-py3-none-any.whl.zip]
+[2024-04-14 20:50:34] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
+[2024-04-14 20:50:34] INFO root fetch - main [MainThread]: Store serial: [22761216]
