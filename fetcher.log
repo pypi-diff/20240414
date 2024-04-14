@@ -2055,3 +2055,15 @@
 [2024-04-14 03:00:25] INFO root fetch - processPackages [ofscraper]: Remove: archive file [/home/abi/fetcher/tmp/ofscraper-3.9.0.dev9.tar.gz]
 [2024-04-14 03:00:25] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
 [2024-04-14 03:00:25] INFO root fetch - main [MainThread]: Store serial: [22755952]
+[2024-04-14 03:02:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755952]
+[2024-04-14 03:02:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:02:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: huzzy-rabbit
+[2024-04-14 03:02:34] INFO root fetch - processPackages [huzzy-rabbit]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 03:02:34] INFO root fetch - processPackages [huzzy-rabbit]: Downloading https://files.pythonhosted.org/packages/c1/29/32d935a0b31b119873c766614c4b654b60209a6c85ddf4a56b9728a53488/huzzy_rabbit-0.1.1.tar.gz
+[2024-04-14 03:02:34] INFO root fetch - processPackages [huzzy-rabbit]: Downloading https://files.pythonhosted.org/packages/ac/75/1d61639c9b05472a59eac32e5cf5bc6910308ab67283519a1840a31e6c1a/huzzy_rabbit-0.1.2.tar.gz
+[2024-04-14 03:02:34] INFO root fetch - processPackages [huzzy-rabbit]: executing diffoscope
+[2024-04-14 03:02:34] INFO root fetch - processPackages [huzzy-rabbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huzzy_rabbit-0.1.1.tar.gz tmp/huzzy_rabbit-0.1.2.tar.gz --markdown 20240414/h/huzzy-rabbit/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 03:02:35] INFO root fetch - processPackages [huzzy-rabbit]: Remove: archive file [/home/abi/fetcher/tmp/huzzy_rabbit-0.1.1.tar.gz]
+[2024-04-14 03:02:35] INFO root fetch - processPackages [huzzy-rabbit]: Remove: archive file [/home/abi/fetcher/tmp/huzzy_rabbit-0.1.2.tar.gz]
+[2024-04-14 03:02:35] INFO root fetch - main [MainThread]: End processing [huzzy-rabbit]: success
+[2024-04-14 03:02:35] INFO root fetch - main [MainThread]: Store serial: [22755958]
