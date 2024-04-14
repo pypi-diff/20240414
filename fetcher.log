@@ -3218,3 +3218,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:30:30] INFO root fetch - processPackages [finsim]: Remove: archive file [/home/abi/fetcher/tmp/finsim-0.9.2.tar.gz]
 [2024-04-14 05:30:30] INFO root fetch - main [MainThread]: End processing [finsim]: success
 [2024-04-14 05:30:30] INFO root fetch - main [MainThread]: Store serial: [22756343]
+[2024-04-14 05:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756343]
+[2024-04-14 05:32:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 05:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fsai-proto-specs
+[2024-04-14 05:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbrownell-DevTools
+[2024-04-14 05:32:39] INFO root fetch - processPackages [dbrownell-DevTools]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-14 05:32:39] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/e4/4d/0e19372b5607400e51d720966eaf41f18a1b6b007cc87ac6eb6d9f8becb6/dbrownell_DevTools-0.8.1-py3-none-any.whl
+[2024-04-14 05:32:39] INFO root fetch - processPackages [fsai-proto-specs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 05:32:39] INFO root fetch - processPackages [fsai-proto-specs]: Downloading https://files.pythonhosted.org/packages/a8/b6/49625f530eca45107bf663a4062d465bb9db41b44f70e8d4b14bc34a4895/fsai_proto_specs-0.0.8.tar.gz
+[2024-04-14 05:32:39] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/6a/4c/d64b516137d9b57df6580e99ae3c7beb287715418efefbdf0c8260ba6e5d/dbrownell_DevTools-0.9.0-py3-none-any.whl
+[2024-04-14 05:32:39] INFO root fetch - processPackages [dbrownell-DevTools]: executing diffoscope
+[2024-04-14 05:32:39] INFO root fetch - processPackages [dbrownell-DevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip --markdown 20240414/d/dbrownell-DevTools/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-14 05:32:39] INFO root fetch - processPackages [fsai-proto-specs]: Downloading https://files.pythonhosted.org/packages/33/2e/b46b3e9393d57945830f04ec30139d77b98d4f75dc733fbaa00732e3e621/fsai_proto_specs-0.0.9.tar.gz
+[2024-04-14 05:32:40] INFO root fetch - processPackages [fsai-proto-specs]: executing diffoscope
+[2024-04-14 05:32:40] INFO root fetch - processPackages [fsai-proto-specs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fsai_proto_specs-0.0.8.tar.gz tmp/fsai_proto_specs-0.0.9.tar.gz --markdown 20240414/f/fsai-proto-specs/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 05:32:40] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip]
+[2024-04-14 05:32:40] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
+[2024-04-14 05:32:40] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
+[2024-04-14 05:32:40] INFO root fetch - processPackages [fsai-proto-specs]: Remove: archive file [/home/abi/fetcher/tmp/fsai_proto_specs-0.0.8.tar.gz]
+[2024-04-14 05:32:40] INFO root fetch - processPackages [fsai-proto-specs]: Remove: archive file [/home/abi/fetcher/tmp/fsai_proto_specs-0.0.9.tar.gz]
+[2024-04-14 05:32:40] INFO root fetch - main [MainThread]: End processing [fsai-proto-specs]: success
+[2024-04-14 05:32:40] INFO root fetch - main [MainThread]: Store serial: [22756348]
