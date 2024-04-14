@@ -1286,3 +1286,9 @@
 [2024-04-14 02:06:52] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-04-14 02:06:52] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-04-14 02:06:52] INFO root fetch - main [MainThread]: Store serial: [22755649]
+[2024-04-14 02:08:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755649]
+[2024-04-14 02:09:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 02:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyextra
+[2024-04-14 02:09:01] WARNING root fetch - processPackages [pyextra]: Skipping, unable to determine old version
+[2024-04-14 02:09:01] INFO root fetch - main [MainThread]: End processing [pyextra] error
+[2024-04-14 02:09:01] INFO root fetch - main [MainThread]: Store serial: [22755651]
