@@ -1189,3 +1189,15 @@
 [2024-04-14 01:58:13] INFO root fetch - processPackages [adls-acl]: Remove: archive file [/home/abi/fetcher/tmp/adls_acl-0.0.5.tar.gz]
 [2024-04-14 01:58:13] INFO root fetch - main [MainThread]: End processing [adls-acl]: success
 [2024-04-14 01:58:13] INFO root fetch - main [MainThread]: Store serial: [22755614]
+[2024-04-14 02:00:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755614]
+[2024-04-14 02:00:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 02:00:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gena
+[2024-04-14 02:00:22] INFO root fetch - processPackages [gena]: New version: [1.6.7] Old Version: [1.6.6]
+[2024-04-14 02:00:22] INFO root fetch - processPackages [gena]: Downloading https://files.pythonhosted.org/packages/ea/c1/180414b3b92e8c2eb54eb7284798961cf19267f3e095287cfdae9c71210d/gena-1.6.6.tar.gz
+[2024-04-14 02:00:22] INFO root fetch - processPackages [gena]: Downloading https://files.pythonhosted.org/packages/d1/18/ad34db0d6d9d91039ea5447a4ba6591acb5d74ac3e33d632d3e8322dc195/gena-1.6.7.tar.gz
+[2024-04-14 02:00:22] INFO root fetch - processPackages [gena]: executing diffoscope
+[2024-04-14 02:00:22] INFO root fetch - processPackages [gena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gena-1.6.6.tar.gz tmp/gena-1.6.7.tar.gz --markdown 20240414/g/gena/1.6.6-1.6.7/README.md --exclude *.pyd
+[2024-04-14 02:00:23] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.6.tar.gz]
+[2024-04-14 02:00:23] INFO root fetch - processPackages [gena]: Remove: archive file [/home/abi/fetcher/tmp/gena-1.6.7.tar.gz]
+[2024-04-14 02:00:23] INFO root fetch - main [MainThread]: End processing [gena]: success
+[2024-04-14 02:00:23] INFO root fetch - main [MainThread]: Store serial: [22755619]
