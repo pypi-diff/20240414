@@ -3771,3 +3771,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 06:24:41] INFO root fetch - processPackages [AKoDAuth]: Remove: archive file [/home/abi/fetcher/tmp/AKoDAuth-1.1.2.tar.gz]
 [2024-04-14 06:24:41] INFO root fetch - main [MainThread]: End processing [AKoDAuth]: success
 [2024-04-14 06:24:41] INFO root fetch - main [MainThread]: Store serial: [22756543]
+[2024-04-14 06:26:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756543]
+[2024-04-14 06:26:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 06:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendp
+[2024-04-14 06:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AKoDAuth
+[2024-04-14 06:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-lxml
+[2024-04-14 06:26:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autopipeline
+[2024-04-14 06:26:50] INFO root fetch - processPackages [AKoDAuth]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-14 06:26:50] INFO root fetch - processPackages [AKoDAuth]: Downloading https://files.pythonhosted.org/packages/d5/bd/5a2cfe6047dfd357995388cc847ac0d3d99aaac1ff03bfddb4f287b8f0aa/AKoDAuth-1.1.1.tar.gz
+[2024-04-14 06:26:50] INFO root fetch - processPackages [types-lxml]: New version: [2024.4.14] Old Version: [2024.3.27]
+[2024-04-14 06:26:50] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240413001]
+[2024-04-14 06:26:50] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 06:26:50] INFO root fetch - processPackages [types-lxml]: Downloading https://files.pythonhosted.org/packages/5b/92/21e9ff0c2161f0d86c90cf4c46a7230b3abd3d699dab947e757b7129ddf9/types-lxml-2024.3.27.tar.gz
+[2024-04-14 06:26:50] INFO root fetch - processPackages [AKoDAuth]: Downloading https://files.pythonhosted.org/packages/df/e7/f570b86a2d37ac48812cc66b661a96c55bedab9aec2417ce6a74a12d9e09/AKoDAuth-1.1.2.tar.gz
+[2024-04-14 06:26:50] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/68/e0/b349301105e72cb6bdaa65161fddff7e9a77e74d0e34ab5e073f34b71710/opendp-0.9.2a20240413001-py3-none-any.whl
+[2024-04-14 06:26:50] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 06:26:50] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36092739>=10485760
+[2024-04-14 06:26:50] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-04-14 06:26:50] INFO root fetch - processPackages [AKoDAuth]: executing diffoscope
+[2024-04-14 06:26:50] INFO root fetch - processPackages [AKoDAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AKoDAuth-1.1.1.tar.gz tmp/AKoDAuth-1.1.2.tar.gz --markdown 20240414/A/AKoDAuth/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-14 06:26:50] INFO root fetch - processPackages [types-lxml]: Downloading https://files.pythonhosted.org/packages/3e/9f/598ba40c0107eb4debe55ab52a7007996690e24c77ff779dee14054f6e27/types_lxml-2024.4.14.tar.gz
+[2024-04-14 06:26:50] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 06:26:50] INFO root fetch - processPackages [types-lxml]: executing diffoscope
+[2024-04-14 06:26:50] INFO root fetch - processPackages [types-lxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-lxml-2024.3.27.tar.gz tmp/types_lxml-2024.4.14.tar.gz --markdown 20240414/t/types-lxml/2024.3.27-2024.4.14/README.md --exclude *.pyd
+[2024-04-14 06:26:50] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 06:26:50] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 06:26:51] INFO root fetch - processPackages [AKoDAuth]: Remove: archive file [/home/abi/fetcher/tmp/AKoDAuth-1.1.1.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - processPackages [AKoDAuth]: Remove: archive file [/home/abi/fetcher/tmp/AKoDAuth-1.1.2.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - main [MainThread]: End processing [AKoDAuth]: success
+[2024-04-14 06:26:51] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 06:26:51] INFO root fetch - processPackages [types-lxml]: Remove: archive file [/home/abi/fetcher/tmp/types-lxml-2024.3.27.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - processPackages [types-lxml]: Remove: archive file [/home/abi/fetcher/tmp/types_lxml-2024.4.14.tar.gz]
+[2024-04-14 06:26:51] INFO root fetch - main [MainThread]: End processing [types-lxml]: success
+[2024-04-14 06:26:51] INFO root fetch - main [MainThread]: Store serial: [22756552]
