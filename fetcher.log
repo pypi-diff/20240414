@@ -8068,3 +8068,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:38:28] INFO root fetch - processPackages [tcmb]: Remove: archive file [/home/abi/fetcher/tmp/tcmb-0.4.0.tar.gz]
 [2024-04-14 13:38:28] INFO root fetch - main [MainThread]: End processing [tcmb]: success
 [2024-04-14 13:38:28] INFO root fetch - main [MainThread]: Store serial: [22758536]
+[2024-04-14 13:40:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758536]
+[2024-04-14 13:40:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frozendict
+[2024-04-14 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wttch-train-helper
+[2024-04-14 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swibots
+[2024-04-14 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sigr
+[2024-04-14 13:40:43] INFO root fetch - processPackages [sigr]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 13:40:43] INFO root fetch - processPackages [sigr]: Downloading https://files.pythonhosted.org/packages/23/e6/5eb092cbfcced7c1256dbc9377d82b554a98b5691f350a21fe733d836ee5/sigr-0.0.8.tar.gz
+[2024-04-14 13:40:43] INFO root fetch - processPackages [wttch-train-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 13:40:43] INFO root fetch - processPackages [frozendict]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-04-14 13:40:43] INFO root fetch - processPackages [swibots]: New version: [1.4.9b0] Old Version: [1.4.9]
+[2024-04-14 13:40:43] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/3b/39/20b37adf77ac5d3a1c29fac307c5b35603437a19b4e9ccfdf3da730c7734/wttch-train-helper-0.0.8.tar.gz
+[2024-04-14 13:40:43] INFO root fetch - processPackages [sigr]: Downloading https://files.pythonhosted.org/packages/f9/5b/a1a4b78eaa48f163b5fa84222db2f441853d1c5866d314567517c0aeb8d5/sigr-0.0.9.tar.gz
+[2024-04-14 13:40:44] INFO root fetch - processPackages [frozendict]: Downloading https://files.pythonhosted.org/packages/ab/bf/7c17e926b7b0f509c3b90abb73e151042b35737caa81af3f404556b0fca1/frozendict-2.4.1.tar.gz
+[2024-04-14 13:40:44] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/ab/ad/e9fb4e6104646710bdb7ad640c25bec37453f90d223979930a44f7c8f72e/swibots-1.4.9-py3-none-any.whl
+[2024-04-14 13:40:44] INFO root fetch - processPackages [sigr]: executing diffoscope
+[2024-04-14 13:40:44] INFO root fetch - processPackages [sigr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigr-0.0.8.tar.gz tmp/sigr-0.0.9.tar.gz --markdown 20240414/s/sigr/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 13:40:44] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/06/f1/4c3862ff8dfa72e0261e6a5f5e8fb8722a335c9adec2134db760cf92c16a/wttch-train-helper-0.0.9.tar.gz
+[2024-04-14 13:40:44] INFO root fetch - processPackages [swibots]: Downloading https://files.pythonhosted.org/packages/1a/29/9d4e43dad7e195938372caf1ec2d82ce234bb157328ce98870071d36f923/swibots-1.4.9b0-py3-none-any.whl
+[2024-04-14 13:40:44] INFO root fetch - processPackages [wttch-train-helper]: executing diffoscope
+[2024-04-14 13:40:44] INFO root fetch - processPackages [wttch-train-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wttch-train-helper-0.0.8.tar.gz tmp/wttch-train-helper-0.0.9.tar.gz --markdown 20240414/w/wttch-train-helper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 13:40:44] INFO root fetch - processPackages [frozendict]: Downloading https://files.pythonhosted.org/packages/c7/e4/e2a3d029f923b0b8796b57cf0def34f7ed9071557dbfde15bd4331bc3e08/frozendict-2.4.2.tar.gz
+[2024-04-14 13:40:44] INFO root fetch - processPackages [swibots]: executing diffoscope
+[2024-04-14 13:40:44] INFO root fetch - processPackages [swibots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swibots-1.4.9-py3-none-any.whl.zip tmp/swibots-1.4.9b0-py3-none-any.whl.zip --markdown 20240414/s/swibots/1.4.9-1.4.9b0/README.md --exclude *.pyd
+[2024-04-14 13:40:44] INFO root fetch - processPackages [frozendict]: executing diffoscope
+[2024-04-14 13:40:44] INFO root fetch - processPackages [frozendict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frozendict-2.4.1.tar.gz tmp/frozendict-2.4.2.tar.gz --markdown 20240414/f/frozendict/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-04-14 13:40:44] INFO root fetch - processPackages [sigr]: Remove: archive file [/home/abi/fetcher/tmp/sigr-0.0.8.tar.gz]
+[2024-04-14 13:40:44] INFO root fetch - processPackages [sigr]: Remove: archive file [/home/abi/fetcher/tmp/sigr-0.0.9.tar.gz]
+[2024-04-14 13:40:44] INFO root fetch - main [MainThread]: End processing [sigr]: success
+[2024-04-14 13:40:44] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.8.tar.gz]
+[2024-04-14 13:40:44] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.9.tar.gz]
+[2024-04-14 13:40:44] INFO root fetch - main [MainThread]: End processing [wttch-train-helper]: success
+[2024-04-14 13:40:45] INFO root fetch - processPackages [frozendict]: Remove: archive file [/home/abi/fetcher/tmp/frozendict-2.4.1.tar.gz]
+[2024-04-14 13:40:45] INFO root fetch - processPackages [frozendict]: Remove: archive file [/home/abi/fetcher/tmp/frozendict-2.4.2.tar.gz]
+[2024-04-14 13:40:45] INFO root fetch - main [MainThread]: End processing [frozendict]: success
+[2024-04-14 13:40:45] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9-py3-none-any.whl.zip]
+[2024-04-14 13:40:45] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
+[2024-04-14 13:40:45] INFO root fetch - main [MainThread]: End processing [swibots]: success
+[2024-04-14 13:40:45] INFO root fetch - main [MainThread]: Store serial: [22758581]
