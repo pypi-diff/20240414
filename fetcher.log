@@ -10218,3 +10218,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:15:08] INFO root fetch - processPackages [curvey]: Remove: archive file [/home/abi/fetcher/tmp/curvey-0.0.4.tar.gz]
 [2024-04-14 16:15:08] INFO root fetch - main [MainThread]: End processing [curvey]: success
 [2024-04-14 16:15:08] INFO root fetch - main [MainThread]: Store serial: [22759564]
+[2024-04-14 16:17:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759564]
+[2024-04-14 16:17:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 16:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscreeps-arena
+[2024-04-14 16:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MMLToolbox
+[2024-04-14 16:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a2y-hidcom
+[2024-04-14 16:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscreeps-arena
+[2024-04-14 16:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hspatial
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 16:17:25] INFO root fetch - processPackages [hspatial]: New version: [4.0.0] Old Version: [3.0.0]
+[2024-04-14 16:17:25] INFO root fetch - processPackages [a2y-hidcom]: New version: [1.1.2] Old Version: [1.1.0]
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/c5/b1/8292299cae71977950db03b9fd25232d4405091d7ed0590a568571f371fe/pyscreeps-arena-0.1.8.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [MMLToolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/c5/b1/8292299cae71977950db03b9fd25232d4405091d7ed0590a568571f371fe/pyscreeps-arena-0.1.8.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [a2y-hidcom]: Downloading https://files.pythonhosted.org/packages/7f/4c/0e63a76358df50f630597591dbf57eba16664df114067ead9d40e1e9e6b4/a2y_hidcom-1.1.0-cp38-cp38-win_amd64.whl
+[2024-04-14 16:17:25] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/94/85/881a660b93b2f50e5b566bdf895dd30567714ad54eb5a80e043649bf60b2/MMLToolbox-1.0.8.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [hspatial]: Downloading https://files.pythonhosted.org/packages/ba/89/35a9be6bdb4148eb2149df44950e8a7448634ba778594114a98acecc944b/hspatial-3.0.0.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/8d/64/60d19e221d5c72437543c5f504c88d32093797848354c0dd1c4da297ceca/pyscreeps-arena-0.1.9.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/8d/64/60d19e221d5c72437543c5f504c88d32093797848354c0dd1c4da297ceca/pyscreeps-arena-0.1.9.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: executing diffoscope
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscreeps-arena-0.1.8.tar.gz tmp/pyscreeps-arena-0.1.9.tar.gz --markdown 20240414/p/pyscreeps-arena/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: executing diffoscope
+[2024-04-14 16:17:25] INFO root fetch - processPackages [pyscreeps-arena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscreeps-arena-0.1.8.tar.gz tmp/pyscreeps-arena-0.1.9.tar.gz --markdown 20240414/p/pyscreeps-arena/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 16:17:25] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/1b/00/7cb4fee68a08bd17314276e652b07aa6363a35b2e2ea5c4ec1abd02e92fc/MMLToolbox-1.0.9.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [a2y-hidcom]: Downloading https://files.pythonhosted.org/packages/90/8b/f21ca2caf18b845c67b8a5ffc2bef30313606374aadc293b74bb6374cc94/a2y_hidcom-1.1.2-cp38-cp38-win_amd64.whl
+[2024-04-14 16:17:25] INFO root fetch - processPackages [hspatial]: Downloading https://files.pythonhosted.org/packages/43/24/227410f21a381c4ae2218fe55239c15914da100c6cd6e1211478d975e182/hspatial-4.0.0.tar.gz
+[2024-04-14 16:17:25] INFO root fetch - processPackages [MMLToolbox]: executing diffoscope
+[2024-04-14 16:17:25] INFO root fetch - processPackages [MMLToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MMLToolbox-1.0.8.tar.gz tmp/MMLToolbox-1.0.9.tar.gz --markdown 20240414/M/MMLToolbox/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-14 16:17:25] INFO root fetch - processPackages [a2y-hidcom]: executing diffoscope
+[2024-04-14 16:17:25] INFO root fetch - processPackages [a2y-hidcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a2y_hidcom-1.1.0-cp38-cp38-win_amd64.whl.zip tmp/a2y_hidcom-1.1.2-cp38-cp38-win_amd64.whl.zip --markdown 20240414/a/a2y-hidcom/1.1.0-1.1.2/README.md --exclude *.pyd
+[2024-04-14 16:17:25] INFO root fetch - processPackages [hspatial]: executing diffoscope
+[2024-04-14 16:17:25] INFO root fetch - processPackages [hspatial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hspatial-3.0.0.tar.gz tmp/hspatial-4.0.0.tar.gz --markdown 20240414/h/hspatial/3.0.0-4.0.0/README.md --exclude *.pyd
+[2024-04-14 16:17:26] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.8.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.9.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [pyscreeps-arena]: success
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [pyscreeps-arena]: success
+[2024-04-14 16:17:26] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.0.8.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.0.9.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [MMLToolbox]: success
+[2024-04-14 16:17:26] INFO root fetch - processPackages [a2y-hidcom]: Remove: archive file [/home/abi/fetcher/tmp/a2y_hidcom-1.1.0-cp38-cp38-win_amd64.whl.zip]
+[2024-04-14 16:17:26] INFO root fetch - processPackages [a2y-hidcom]: Remove: archive file [/home/abi/fetcher/tmp/a2y_hidcom-1.1.2-cp38-cp38-win_amd64.whl.zip]
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [a2y-hidcom]: success
+[2024-04-14 16:17:26] INFO root fetch - processPackages [hspatial]: Remove: archive file [/home/abi/fetcher/tmp/hspatial-3.0.0.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - processPackages [hspatial]: Remove: archive file [/home/abi/fetcher/tmp/hspatial-4.0.0.tar.gz]
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: End processing [hspatial]: success
+[2024-04-14 16:17:26] INFO root fetch - main [MainThread]: Store serial: [22759577]
