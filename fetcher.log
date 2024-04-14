@@ -15819,3 +15819,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:09:04] INFO root fetch - processPackages [tradingview-indicators]: Remove: archive file [/home/abi/fetcher/tmp/tradingview_indicators-0.3.7.1.tar.gz]
 [2024-04-14 23:09:04] INFO root fetch - main [MainThread]: End processing [tradingview-indicators]: success
 [2024-04-14 23:09:04] INFO root fetch - main [MainThread]: Store serial: [22762479]
+[2024-04-14 23:11:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762479]
+[2024-04-14 23:11:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 23:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-components
+[2024-04-14 23:11:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maturin-watchdog
+[2024-04-14 23:11:13] INFO root fetch - processPackages [maturin-watchdog]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-14 23:11:13] INFO root fetch - processPackages [django-components]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-14 23:11:13] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/c9/89/9d8fc5cca8de1da6023c5c61551c0f2b9908adaa788e915a2cb2a2952b51/maturin_watchdog-0.1.9.tar.gz
+[2024-04-14 23:11:13] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/d9/a9/0e17dfb6bc2c9ffafac974b36a0078d0df2730d82373e45392b15ca26fe1/django_components-0.9.1.tar.gz
+[2024-04-14 23:11:13] INFO root fetch - processPackages [maturin-watchdog]: Downloading https://files.pythonhosted.org/packages/9b/d8/1912ab70c7c37a2a4455e105ab8023665ab9b413c640ea0bd08b9992a644/maturin_watchdog-0.2.0.tar.gz
+[2024-04-14 23:11:14] INFO root fetch - processPackages [maturin-watchdog]: executing diffoscope
+[2024-04-14 23:11:14] INFO root fetch - processPackages [maturin-watchdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin_watchdog-0.1.9.tar.gz tmp/maturin_watchdog-0.2.0.tar.gz --markdown 20240414/m/maturin-watchdog/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-14 23:11:14] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/01/b6/7465ad9480fe781bc5c56d355a7b96cc21758c50d747830e87dcac29a4db/django_components-0.9.2.tar.gz
+[2024-04-14 23:11:14] INFO root fetch - processPackages [django-components]: executing diffoscope
+[2024-04-14 23:11:14] INFO root fetch - processPackages [django-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_components-0.9.1.tar.gz tmp/django_components-0.9.2.tar.gz --markdown 20240414/d/django-components/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-14 23:11:14] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.1.9.tar.gz]
+[2024-04-14 23:11:14] INFO root fetch - processPackages [maturin-watchdog]: Remove: archive file [/home/abi/fetcher/tmp/maturin_watchdog-0.2.0.tar.gz]
+[2024-04-14 23:11:14] INFO root fetch - main [MainThread]: End processing [maturin-watchdog]: success
+[2024-04-14 23:11:14] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.1.tar.gz]
+[2024-04-14 23:11:14] INFO root fetch - processPackages [django-components]: Remove: archive file [/home/abi/fetcher/tmp/django_components-0.9.2.tar.gz]
+[2024-04-14 23:11:14] INFO root fetch - main [MainThread]: End processing [django-components]: success
+[2024-04-14 23:11:14] INFO root fetch - main [MainThread]: Store serial: [22762485]
