@@ -4920,3 +4920,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 09:07:02] INFO root fetch - processPackages [gce-ipx800]: Remove: archive file [/home/abi/fetcher/tmp/gce_ipx800-0.6.dev0.tar.gz]
 [2024-04-14 09:07:02] INFO root fetch - main [MainThread]: End processing [gce-ipx800]: success
 [2024-04-14 09:07:02] INFO root fetch - main [MainThread]: Store serial: [22756974]
+[2024-04-14 09:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756974]
+[2024-04-14 09:09:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 09:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromastone
+[2024-04-14 09:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: runtimepy
+[2024-04-14 09:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-hub-nightly
+[2024-04-14 09:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-functions-beatzaplenty
+[2024-04-14 09:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Flask-Docs
+[2024-04-14 09:09:11] INFO root fetch - processPackages [chromastone]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-14 09:09:11] INFO root fetch - processPackages [runtimepy]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-14 09:09:11] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-14 09:09:11] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/28/df/f50bcc512093f9cea8d6ea4838f90dce1b7fd0c13114f43d365194f5b0f9/chromastone-0.1.9.tar.gz
+[2024-04-14 09:09:11] INFO root fetch - processPackages [my-functions-beatzaplenty]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-14 09:09:11] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/21/8a/dabc0caa3ddea17ddebd7037212c334b979217eab7975ac7c434f736a1cf/runtimepy-4.0.5.tar.gz
+[2024-04-14 09:09:11] INFO root fetch - processPackages [Flask-Docs]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-14 09:09:11] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-14 09:09:11] INFO root fetch - processPackages [Flask-Docs]: Downloading https://files.pythonhosted.org/packages/3a/4b/f7855d784b17390d569750f6a8c1d44f5cf3be455e447cd3ca3a06f91224/Flask-Docs-0.7.5.tar.gz
+[2024-04-14 09:09:11] INFO root fetch - processPackages [my-functions-beatzaplenty]: Downloading https://files.pythonhosted.org/packages/57/ad/41e823de391d94c3c044238e50c5a0cdba79b92202ac3db61462307a5788/my_functions_beatzaplenty-1.0.5.tar.gz
+[2024-04-14 09:09:11] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-14 09:09:11] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/ba/63/6841cd1747810073593f63e8977490036a16b03c133223f7b5e8ab4df396/runtimepy-4.0.6.tar.gz
+[2024-04-14 09:09:12] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/17/f0/94661ca0dbccb17ba5fa1f0eb9467853bff1f915d9c825252a613894070c/chromastone-0.2.0.tar.gz
+[2024-04-14 09:09:12] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2024-04-14 09:09:12] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-4.0.5.tar.gz tmp/runtimepy-4.0.6.tar.gz --markdown 20240414/r/runtimepy/4.0.5-4.0.6/README.md --exclude *.pyd
+[2024-04-14 09:09:12] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-14 09:09:12] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240414/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-14 09:09:12] INFO root fetch - processPackages [chromastone]: executing diffoscope
+[2024-04-14 09:09:12] INFO root fetch - processPackages [chromastone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromastone-0.1.9.tar.gz tmp/chromastone-0.2.0.tar.gz --markdown 20240414/c/chromastone/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-14 09:09:12] INFO root fetch - processPackages [my-functions-beatzaplenty]: Downloading https://files.pythonhosted.org/packages/c4/a0/b2d548214e5b92985e8a6097e8cf2bda6b135a751c62b011029b5dead833/my_functions_beatzaplenty-1.0.6.tar.gz
+[2024-04-14 09:09:12] INFO root fetch - processPackages [Flask-Docs]: Downloading https://files.pythonhosted.org/packages/b3/04/1595d57e735fad536aa3d04f23b0830a6b75fe7f50de5cd731924a2d647d/flask_docs-0.7.6.tar.gz
+[2024-04-14 09:09:12] INFO root fetch - processPackages [my-functions-beatzaplenty]: executing diffoscope
+[2024-04-14 09:09:12] INFO root fetch - processPackages [my-functions-beatzaplenty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_functions_beatzaplenty-1.0.5.tar.gz tmp/my_functions_beatzaplenty-1.0.6.tar.gz --markdown 20240414/m/my-functions-beatzaplenty/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-14 09:09:12] INFO root fetch - processPackages [Flask-Docs]: executing diffoscope
+[2024-04-14 09:09:12] INFO root fetch - processPackages [Flask-Docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Docs-0.7.5.tar.gz tmp/flask_docs-0.7.6.tar.gz --markdown 20240414/F/Flask-Docs/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-04-14 09:09:12] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.1.9.tar.gz]
+[2024-04-14 09:09:12] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.0.tar.gz]
+[2024-04-14 09:09:12] INFO root fetch - main [MainThread]: End processing [chromastone]: success
+[2024-04-14 09:09:12] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-14 09:09:12] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-14 09:09:12] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-14 09:09:12] INFO root fetch - processPackages [my-functions-beatzaplenty]: Remove: archive file [/home/abi/fetcher/tmp/my_functions_beatzaplenty-1.0.5.tar.gz]
+[2024-04-14 09:09:12] INFO root fetch - processPackages [my-functions-beatzaplenty]: Remove: archive file [/home/abi/fetcher/tmp/my_functions_beatzaplenty-1.0.6.tar.gz]
+[2024-04-14 09:09:12] INFO root fetch - main [MainThread]: End processing [my-functions-beatzaplenty]: success
+[2024-04-14 09:09:13] INFO root fetch - processPackages [Flask-Docs]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Docs-0.7.5.tar.gz]
+[2024-04-14 09:09:13] INFO root fetch - processPackages [Flask-Docs]: Remove: archive file [/home/abi/fetcher/tmp/flask_docs-0.7.6.tar.gz]
+[2024-04-14 09:09:13] INFO root fetch - main [MainThread]: End processing [Flask-Docs]: success
+[2024-04-14 09:09:13] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.0.5.tar.gz]
+[2024-04-14 09:09:13] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.0.6.tar.gz]
+[2024-04-14 09:09:13] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
+[2024-04-14 09:09:13] INFO root fetch - main [MainThread]: Store serial: [22756988]
