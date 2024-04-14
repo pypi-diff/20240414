@@ -1224,3 +1224,65 @@
 [2024-04-14 02:04:42] WARNING root fetch - processPackages [frykit]: Skipping package: exceeds size limit 13746028>=10485760
 [2024-04-14 02:04:42] INFO root fetch - main [MainThread]: End processing [frykit] error
 [2024-04-14 02:04:42] INFO root fetch - main [MainThread]: Store serial: [22755629]
+[2024-04-14 02:06:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755629]
+[2024-04-14 02:06:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxkern-nightly
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AITracker
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ibis-framework
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-hmac-authentication
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxutils-nightly
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: web-sand
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autopipeline
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240413] Old Version: [0.0.8.dev20240412]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [AITracker]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [web-sand]: New version: [4.1.0] Old Version: [4.0.2]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [autopipeline]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/d7/0c/8b72654fbe5b6ac4e9c9a2e2b1b36ca92a8d53beac8861bf5f36790b34af/jaxutils-nightly-0.0.8.dev20240412.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/97/c3/9b5f29010f514e7e135c5a594b8f6ee927e473652a8b35250dfa69c7ba8a/web_sand-4.0.2.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [django-hmac-authentication]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev619]
+[2024-04-14 02:06:50] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/0f/9eaf209b6d540115afdc9ae31de828df0234756277bceae49a4d1a0ea8b3/autopipeline-0.1.98.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [AITracker]: Downloading https://files.pythonhosted.org/packages/8d/ed/1ef2a3778ee249919ebbc08863a466f320dd42fd94cb5d9bd84be66ee4d5/aitracker-0.9.8.tar.gz
+[2024-04-14 02:06:50] WARNING root fetch - processPackages [AITracker]: Skipping package: exceeds size limit 26179619>=10485760
+[2024-04-14 02:06:50] INFO root fetch - main [MainThread]: End processing [AITracker] error
+[2024-04-14 02:06:50] INFO root fetch - processPackages [django-hmac-authentication]: Downloading https://files.pythonhosted.org/packages/43/f0/732bc7d840482e51045ec7120520005d3233cad521722eabf1f6c491d4c4/django_hmac_authentication-3.0.1.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/6b/81/15934c9746604ec14617a1bfbd2ff8841623c28c7c7010fa6deff625dfc8/ibis_framework-9.0.0.dev619.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [autopipeline]: Downloading https://files.pythonhosted.org/packages/5f/4a/f3df97d414e0a5e9120459fd5c7ab663092d540df59f7deacc45810deb41/autopipeline-0.1.99.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240414/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-04-14 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/22/fb/10b6bafdd0270c982f1f036615ac8c6ab9f1b7f2cb14cde48f38f699ffb9/jaxutils-nightly-0.0.8.dev20240413.tar.gz
+[2024-04-14 02:06:50] INFO root fetch - processPackages [autopipeline]: executing diffoscope
+[2024-04-14 02:06:50] INFO root fetch - processPackages [autopipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autopipeline-0.1.98.tar.gz tmp/autopipeline-0.1.99.tar.gz --markdown 20240414/a/autopipeline/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240412.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240413.tar.gz --markdown 20240414/j/jaxutils-nightly/0.0.8.dev20240412-0.0.8.dev20240413/README.md --exclude *.pyd
+[2024-04-14 02:06:51] INFO root fetch - processPackages [web-sand]: Downloading https://files.pythonhosted.org/packages/c7/d3/0cdba9346fc2ddf1379341f318df531bcf70fb93aa4d989321795d91bef7/web_sand-4.1.0.tar.gz
+[2024-04-14 02:06:51] INFO root fetch - processPackages [django-hmac-authentication]: Downloading https://files.pythonhosted.org/packages/6d/e4/c1d725c8ece0ef8e1424cb48ba46c375385ac4f889770578b926c5a34abb/django_hmac_authentication-3.1.0.tar.gz
+[2024-04-14 02:06:51] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-04-14 02:06:51] INFO root fetch - processPackages [web-sand]: executing diffoscope
+[2024-04-14 02:06:51] INFO root fetch - processPackages [web-sand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web_sand-4.0.2.tar.gz tmp/web_sand-4.1.0.tar.gz --markdown 20240414/w/web-sand/4.0.2-4.1.0/README.md --exclude *.pyd
+[2024-04-14 02:06:51] INFO root fetch - processPackages [django-hmac-authentication]: executing diffoscope
+[2024-04-14 02:06:51] INFO root fetch - processPackages [django-hmac-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_hmac_authentication-3.0.1.tar.gz tmp/django_hmac_authentication-3.1.0.tar.gz --markdown 20240414/d/django-hmac-authentication/3.0.1-3.1.0/README.md --exclude *.pyd
+[2024-04-14 02:06:51] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-04-14 02:06:51] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev619.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240414/i/ibis-framework/9.0.0.dev619-v0.6.0/README.md --exclude *.pyd
+[2024-04-14 02:06:51] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.98.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240412.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240413.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-04-14 02:06:51] INFO root fetch - processPackages [django-hmac-authentication]: Remove: archive file [/home/abi/fetcher/tmp/django_hmac_authentication-3.0.1.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - processPackages [django-hmac-authentication]: Remove: archive file [/home/abi/fetcher/tmp/django_hmac_authentication-3.1.0.tar.gz]
+[2024-04-14 02:06:51] INFO root fetch - main [MainThread]: End processing [django-hmac-authentication]: success
+[2024-04-14 02:06:52] INFO root fetch - processPackages [web-sand]: Remove: archive file [/home/abi/fetcher/tmp/web_sand-4.0.2.tar.gz]
+[2024-04-14 02:06:52] INFO root fetch - processPackages [web-sand]: Remove: archive file [/home/abi/fetcher/tmp/web_sand-4.1.0.tar.gz]
+[2024-04-14 02:06:52] INFO root fetch - main [MainThread]: End processing [web-sand]: success
+[2024-04-14 02:06:52] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev619.tar.gz]
+[2024-04-14 02:06:52] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-04-14 02:06:52] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-04-14 02:06:52] INFO root fetch - main [MainThread]: Store serial: [22755649]
