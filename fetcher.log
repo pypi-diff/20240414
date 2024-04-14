@@ -13220,3 +13220,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:04:48] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio_sdk-5.0.7.tar.gz]
 [2024-04-14 20:04:48] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
 [2024-04-14 20:04:48] INFO root fetch - main [MainThread]: Store serial: [22760983]
+[2024-04-14 20:06:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760983]
+[2024-04-14 20:06:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 20:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-modelrunner
+[2024-04-14 20:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: h3
+[2024-04-14 20:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transfa
+[2024-04-14 20:06:57] INFO root fetch - processPackages [transfa]: New version: [0.2.6] Old Version: [0.2.3]
+[2024-04-14 20:06:57] INFO root fetch - processPackages [py-modelrunner]: New version: [0.9.1] Old Version: [0.8]
+[2024-04-14 20:06:57] INFO root fetch - processPackages [h3]: New version: [4.0.0b4] Old Version: [4.0.0b3]
+[2024-04-14 20:06:57] INFO root fetch - processPackages [transfa]: Downloading https://files.pythonhosted.org/packages/3c/b0/7c62f7edb74ecd1c3af416a73213a285104e484dd4371458ab28c60a100c/transfa-0.2.3.tar.gz
+[2024-04-14 20:06:57] INFO root fetch - processPackages [py-modelrunner]: Downloading https://files.pythonhosted.org/packages/7e/a8/b487bf9b309f16b7ef2729c52814a17d4b86831651de63184862ff5cae7f/py-modelrunner-0.8.tar.gz
+[2024-04-14 20:06:57] INFO root fetch - processPackages [h3]: Downloading https://files.pythonhosted.org/packages/de/a2/a6d1231d6f715091220cde9119e8cd8593fe7b7442f4c5085bd0ef4683b6/h3-4.0.0b3.tar.gz
+[2024-04-14 20:06:58] INFO root fetch - processPackages [transfa]: Downloading https://files.pythonhosted.org/packages/af/56/51c6ce06f80b23542583a67c8c88bb476a4d63fab5939e3145138c8af479/transfa-0.2.6.tar.gz
+[2024-04-14 20:06:58] INFO root fetch - processPackages [py-modelrunner]: Downloading https://files.pythonhosted.org/packages/f9/f9/00daa9ae5507a3d3cedcd5ed2867fea755eda4eae52df31c3c5d2950fb80/py-modelrunner-0.9.1.tar.gz
+[2024-04-14 20:06:58] INFO root fetch - processPackages [transfa]: executing diffoscope
+[2024-04-14 20:06:58] INFO root fetch - processPackages [transfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transfa-0.2.3.tar.gz tmp/transfa-0.2.6.tar.gz --markdown 20240414/t/transfa/0.2.3-0.2.6/README.md --exclude *.pyd
+[2024-04-14 20:06:58] INFO root fetch - processPackages [py-modelrunner]: executing diffoscope
+[2024-04-14 20:06:58] INFO root fetch - processPackages [py-modelrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-modelrunner-0.8.tar.gz tmp/py-modelrunner-0.9.1.tar.gz --markdown 20240414/p/py-modelrunner/0.8-0.9.1/README.md --exclude *.pyd
+[2024-04-14 20:06:58] INFO root fetch - processPackages [h3]: Downloading https://files.pythonhosted.org/packages/f4/97/a0ce599581805e17f42f2d3cf20011f0b7ab9c995e47eb08e374a305770d/h3-4.0.0b4.tar.gz
+[2024-04-14 20:06:58] INFO root fetch - processPackages [h3]: executing diffoscope
+[2024-04-14 20:06:58] INFO root fetch - processPackages [h3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/h3-4.0.0b3.tar.gz tmp/h3-4.0.0b4.tar.gz --markdown 20240414/h/h3/4.0.0b3-4.0.0b4/README.md --exclude *.pyd
+[2024-04-14 20:06:58] INFO root fetch - processPackages [transfa]: Remove: archive file [/home/abi/fetcher/tmp/transfa-0.2.3.tar.gz]
+[2024-04-14 20:06:58] INFO root fetch - processPackages [transfa]: Remove: archive file [/home/abi/fetcher/tmp/transfa-0.2.6.tar.gz]
+[2024-04-14 20:06:58] INFO root fetch - main [MainThread]: End processing [transfa]: success
+[2024-04-14 20:06:58] INFO root fetch - processPackages [py-modelrunner]: Remove: archive file [/home/abi/fetcher/tmp/py-modelrunner-0.8.tar.gz]
+[2024-04-14 20:06:58] INFO root fetch - processPackages [py-modelrunner]: Remove: archive file [/home/abi/fetcher/tmp/py-modelrunner-0.9.1.tar.gz]
+[2024-04-14 20:06:58] INFO root fetch - main [MainThread]: End processing [py-modelrunner]: success
+[2024-04-14 20:06:59] INFO root fetch - processPackages [h3]: Remove: archive file [/home/abi/fetcher/tmp/h3-4.0.0b3.tar.gz]
+[2024-04-14 20:06:59] INFO root fetch - processPackages [h3]: Remove: archive file [/home/abi/fetcher/tmp/h3-4.0.0b4.tar.gz]
+[2024-04-14 20:06:59] INFO root fetch - main [MainThread]: End processing [h3]: success
+[2024-04-14 20:06:59] INFO root fetch - main [MainThread]: Store serial: [22761030]
