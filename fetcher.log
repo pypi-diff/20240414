@@ -5977,3 +5977,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:04:27] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev34.tar.gz]
 [2024-04-14 11:04:27] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-04-14 11:04:27] INFO root fetch - main [MainThread]: Store serial: [22757509]
+[2024-04-14 11:06:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757509]
+[2024-04-14 11:06:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 11:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: refind-btrfs
+[2024-04-14 11:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lottokit
+[2024-04-14 11:06:38] INFO root fetch - processPackages [refind-btrfs]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-14 11:06:38] INFO root fetch - processPackages [refind-btrfs]: Downloading https://files.pythonhosted.org/packages/09/36/d2bae505ab7e22d0b83acb7c3759117618e19d7766cda7f60a5316560712/refind-btrfs-0.6.1.tar.gz
+[2024-04-14 11:06:38] INFO root fetch - processPackages [lottokit]: New version: [0.7] Old Version: [0.6]
+[2024-04-14 11:06:38] INFO root fetch - processPackages [refind-btrfs]: Downloading https://files.pythonhosted.org/packages/ae/10/7767f0b7e94904634676ffe91dcc21fbfd55d1d3c35690d3d89fc98b9412/refind_btrfs-0.6.2-py3-none-any.whl
+[2024-04-14 11:06:38] INFO root fetch - processPackages [lottokit]: Downloading https://files.pythonhosted.org/packages/e7/9a/783a0da36c15ec13caf7d5a31abeb3b71946592aaa7c9f831ca2b540e38a/lottokit-0.6.tar.gz
+[2024-04-14 11:06:38] INFO root fetch - processPackages [refind-btrfs]: executing diffoscope
+[2024-04-14 11:06:38] INFO root fetch - processPackages [refind-btrfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refind-btrfs-0.6.1.tar.gz tmp/refind_btrfs-0.6.2-py3-none-any.whl.zip --markdown 20240414/r/refind-btrfs/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-14 11:06:39] INFO root fetch - processPackages [lottokit]: Downloading https://files.pythonhosted.org/packages/4c/93/072753014e1226ed169530292ec719eac2080b772be712419a8a43004d39/lottokit-0.7.tar.gz
+[2024-04-14 11:06:39] INFO root fetch - processPackages [lottokit]: executing diffoscope
+[2024-04-14 11:06:39] INFO root fetch - processPackages [lottokit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lottokit-0.6.tar.gz tmp/lottokit-0.7.tar.gz --markdown 20240414/l/lottokit/0.6-0.7/README.md --exclude *.pyd
+[2024-04-14 11:06:39] INFO root fetch - processPackages [refind-btrfs]: Remove: archive file [/home/abi/fetcher/tmp/refind-btrfs-0.6.1.tar.gz]
+[2024-04-14 11:06:39] INFO root fetch - processPackages [refind-btrfs]: Remove: archive file [/home/abi/fetcher/tmp/refind_btrfs-0.6.2-py3-none-any.whl.zip]
+[2024-04-14 11:06:39] INFO root fetch - main [MainThread]: End processing [refind-btrfs]: success
+[2024-04-14 11:06:39] INFO root fetch - processPackages [lottokit]: Remove: archive file [/home/abi/fetcher/tmp/lottokit-0.6.tar.gz]
+[2024-04-14 11:06:39] INFO root fetch - processPackages [lottokit]: Remove: archive file [/home/abi/fetcher/tmp/lottokit-0.7.tar.gz]
+[2024-04-14 11:06:39] INFO root fetch - main [MainThread]: End processing [lottokit]: success
+[2024-04-14 11:06:39] INFO root fetch - main [MainThread]: Store serial: [22757516]
