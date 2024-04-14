@@ -8146,3 +8146,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:43:05] INFO root fetch - processPackages [jsonrpyc]: Remove: archive file [/home/abi/fetcher/tmp/jsonrpyc-1.2.2.tar.gz]
 [2024-04-14 13:43:05] INFO root fetch - main [MainThread]: End processing [jsonrpyc]: success
 [2024-04-14 13:43:05] INFO root fetch - main [MainThread]: Store serial: [22758591]
+[2024-04-14 13:45:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758591]
+[2024-04-14 13:45:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: verbit-streaming-sdk
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ortfodb
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyweatherfr
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: icodes
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ortfodb]: New version: [1.0.0] Old Version: [0.3.2]
+[2024-04-14 13:45:20] INFO root fetch - processPackages [pyweatherfr]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-04-14 13:45:20] INFO root fetch - processPackages [icodes]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 13:45:20] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/0b/af/36d0927222ab80f49cd0c32bf60c43a2fc1e98a57fea8991217dbc12bde6/ortfodb-0.3.2.tar.gz
+[2024-04-14 13:45:20] INFO root fetch - processPackages [verbit-streaming-sdk]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-14 13:45:20] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/ee/2a/5d2f15b378ca5d7123e9177cc3bb74ced293db6651168c4038c5b15b18dd/pyweatherfr-5.1.1.tar.gz
+[2024-04-14 13:45:20] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/65/47/bc56b939acd8548f8824086e1ad0a150dd54c7b7907342d312f3654c7e6b/icodes-0.1.1.tar.gz
+[2024-04-14 13:45:20] INFO root fetch - processPackages [verbit-streaming-sdk]: Downloading https://files.pythonhosted.org/packages/7c/77/61d8ff6d3dfac36060c01529aad9cf27043479e28f121a7ae535ecee9306/verbit-streaming-sdk-0.8.1.tar.gz
+[2024-04-14 13:45:21] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/4f/3d/0547567ab5712d585a72d08ff243c5efe044ef35d76ae48909ea6e62e10a/pyweatherfr-5.1.2.tar.gz
+[2024-04-14 13:45:21] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/42/92/96c1d8e31b571bff1374309b6ac27599efa8931f85b7b0f9bd9715fc9792/ortfodb-1.0.0.tar.gz
+[2024-04-14 13:45:21] INFO root fetch - processPackages [icodes]: Downloading https://files.pythonhosted.org/packages/a9/0b/f91b371bd174b7ec904916ca17dfeeecfa9a6efcf336463fa52f7ac93425/icodes-0.1.2.tar.gz
+[2024-04-14 13:45:21] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-14 13:45:21] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.1.1.tar.gz tmp/pyweatherfr-5.1.2.tar.gz --markdown 20240414/p/pyweatherfr/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-04-14 13:45:21] INFO root fetch - processPackages [ortfodb]: executing diffoscope
+[2024-04-14 13:45:21] INFO root fetch - processPackages [ortfodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ortfodb-0.3.2.tar.gz tmp/ortfodb-1.0.0.tar.gz --markdown 20240414/o/ortfodb/0.3.2-1.0.0/README.md --exclude *.pyd
+[2024-04-14 13:45:21] INFO root fetch - processPackages [icodes]: executing diffoscope
+[2024-04-14 13:45:21] INFO root fetch - processPackages [icodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icodes-0.1.1.tar.gz tmp/icodes-0.1.2.tar.gz --markdown 20240414/i/icodes/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 13:45:21] INFO root fetch - processPackages [verbit-streaming-sdk]: Downloading https://files.pythonhosted.org/packages/8b/dc/e4893d02841087c8f4089dfcdffc62b0ef0f8423f4c2b740ce0dbcd05789/verbit-streaming-sdk-0.9.0.tar.gz
+[2024-04-14 13:45:21] INFO root fetch - processPackages [verbit-streaming-sdk]: executing diffoscope
+[2024-04-14 13:45:21] INFO root fetch - processPackages [verbit-streaming-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/verbit-streaming-sdk-0.8.1.tar.gz tmp/verbit-streaming-sdk-0.9.0.tar.gz --markdown 20240414/v/verbit-streaming-sdk/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-14 13:45:21] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-0.3.2.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-1.0.0.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - main [MainThread]: End processing [ortfodb]: success
+[2024-04-14 13:45:21] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.1.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - processPackages [icodes]: Remove: archive file [/home/abi/fetcher/tmp/icodes-0.1.2.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - main [MainThread]: End processing [icodes]: success
+[2024-04-14 13:45:21] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.1.1.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.1.2.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-14 13:45:21] INFO root fetch - processPackages [verbit-streaming-sdk]: Remove: archive file [/home/abi/fetcher/tmp/verbit-streaming-sdk-0.8.1.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - processPackages [verbit-streaming-sdk]: Remove: archive file [/home/abi/fetcher/tmp/verbit-streaming-sdk-0.9.0.tar.gz]
+[2024-04-14 13:45:21] INFO root fetch - main [MainThread]: End processing [verbit-streaming-sdk]: success
+[2024-04-14 13:45:21] INFO root fetch - main [MainThread]: Store serial: [22758600]
