@@ -4530,3 +4530,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:13:14] INFO root fetch - processPackages [odoo12-addon-base-changeset]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_base_changeset-12.0.1.1.2.99.dev4-py3-none-any.whl.zip]
 [2024-04-14 08:13:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-base-changeset]: success
 [2024-04-14 08:13:14] INFO root fetch - main [MainThread]: Store serial: [22756803]
+[2024-04-14 08:15:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756803]
+[2024-04-14 08:15:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-autovacuum-message-attachment
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-database-cleanup
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ts-soup
+[2024-04-14 08:15:22] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: New version: [12.0.1.2.3] Old Version: [12.0.1.2.2]
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ts-soup]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 08:15:22] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: New version: [12.0.1.1.1.99.dev8] Old Version: [12.0.1.1.1.99.dev6]
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/26/f0/8717be3d809894e0e8f6e497b22907d4d0e7314540b67ef5d994cce037e0/ts_soup-0.1.6.tar.gz
+[2024-04-14 08:15:22] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/d6/9c/f33a715dfddb32cfd84dd45eb02fa37655551c52764899f758dc7fb445a4/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl
+[2024-04-14 08:15:22] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: Downloading https://files.pythonhosted.org/packages/a7/95/fae5e3c8c2dd28c1b6d3779a4efe5b89a78c3a98200c09b6f6b57bb3d749/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev6-py3-none-any.whl
+[2024-04-14 08:15:22] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/de/a9/c508ea561b13b04e26caaf57a5a2fdced043c5c144e2e45fb31f53e722f9/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl
+[2024-04-14 08:15:22] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/5e/1e/17833875c2c0e027e66adfc4ff29d94e1b4a9ac11f34800945adfdd324c5/ts_soup-0.1.7.tar.gz
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: executing diffoscope
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl.zip tmp/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl.zip --markdown 20240414/o/odoo12-addon-database-cleanup/12.0.1.2.2-12.0.1.2.3/README.md --exclude *.pyd
+[2024-04-14 08:15:23] INFO root fetch - processPackages [ts-soup]: executing diffoscope
+[2024-04-14 08:15:23] INFO root fetch - processPackages [ts-soup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts_soup-0.1.6.tar.gz tmp/ts_soup-0.1.7.tar.gz --markdown 20240414/t/ts-soup/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: Downloading https://files.pythonhosted.org/packages/57/af/1d2de1d0847293ef36872dffba7a9c5fcf14e5145f9252835a4578e8ed05/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev8-py3-none-any.whl
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: executing diffoscope
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev8-py3-none-any.whl.zip --markdown 20240414/o/odoo12-addon-autovacuum-message-attachment/12.0.1.1.1.99.dev6-12.0.1.1.1.99.dev8/README.md --exclude *.pyd
+[2024-04-14 08:15:23] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts_soup-0.1.6.tar.gz]
+[2024-04-14 08:15:23] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts_soup-0.1.7.tar.gz]
+[2024-04-14 08:15:23] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_database_cleanup-12.0.1.2.2-py3-none-any.whl.zip]
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_database_cleanup-12.0.1.2.3-py3-none-any.whl.zip]
+[2024-04-14 08:15:23] INFO root fetch - main [MainThread]: End processing [odoo12-addon-database-cleanup]: success
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev6-py3-none-any.whl.zip]
+[2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev8-py3-none-any.whl.zip]
+[2024-04-14 08:15:23] INFO root fetch - main [MainThread]: End processing [odoo12-addon-autovacuum-message-attachment]: success
+[2024-04-14 08:15:23] INFO root fetch - main [MainThread]: Store serial: [22756811]
