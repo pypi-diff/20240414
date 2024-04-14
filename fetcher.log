@@ -16325,3 +16325,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:48:44] INFO root fetch - processPackages [hatchling]: Remove: archive file [/home/abi/fetcher/tmp/hatchling-1.9.0.tar.gz]
 [2024-04-14 23:48:44] INFO root fetch - main [MainThread]: End processing [hatchling]: success
 [2024-04-14 23:48:44] INFO root fetch - main [MainThread]: Store serial: [22762702]
+[2024-04-14 23:50:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762702]
+[2024-04-14 23:50:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 23:50:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daffodil
+[2024-04-14 23:50:53] INFO root fetch - processPackages [daffodil]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-04-14 23:50:53] INFO root fetch - processPackages [daffodil]: Downloading https://files.pythonhosted.org/packages/20/c7/78a2251d1d2503b16f8fc273807ac78cb30e45233db8f60fc5db265523d7/daffodil-0.2.2.tar.gz
+[2024-04-14 23:50:54] INFO root fetch - processPackages [daffodil]: Downloading https://files.pythonhosted.org/packages/64/00/807ff56e4c9b96d3fe3b339eca8eeb11b87cf7f4222ab317fce7de5bfe7b/daffodil-0.3.0.tar.gz
+[2024-04-14 23:50:54] INFO root fetch - processPackages [daffodil]: executing diffoscope
+[2024-04-14 23:50:54] INFO root fetch - processPackages [daffodil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daffodil-0.2.2.tar.gz tmp/daffodil-0.3.0.tar.gz --markdown 20240414/d/daffodil/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-04-14 23:50:55] INFO root fetch - processPackages [daffodil]: Remove: archive file [/home/abi/fetcher/tmp/daffodil-0.2.2.tar.gz]
+[2024-04-14 23:50:55] INFO root fetch - processPackages [daffodil]: Remove: archive file [/home/abi/fetcher/tmp/daffodil-0.3.0.tar.gz]
+[2024-04-14 23:50:55] INFO root fetch - main [MainThread]: End processing [daffodil]: success
+[2024-04-14 23:50:55] INFO root fetch - main [MainThread]: Store serial: [22762707]
