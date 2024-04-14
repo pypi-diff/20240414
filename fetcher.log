@@ -8422,3 +8422,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:05:53] INFO root fetch - processPackages [jgtfx2console]: Remove: archive file [/home/abi/fetcher/tmp/jgtfx2console-0.4.7.tar.gz]
 [2024-04-14 14:05:53] INFO root fetch - main [MainThread]: End processing [jgtfx2console]: success
 [2024-04-14 14:05:53] INFO root fetch - main [MainThread]: Store serial: [22758755]
+[2024-04-14 14:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758755]
+[2024-04-14 14:08:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 14:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RealTimeSTT
+[2024-04-14 14:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtfxcon
+[2024-04-14 14:08:09] INFO root fetch - processPackages [RealTimeSTT]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 14:08:09] INFO root fetch - processPackages [jgtfxcon]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-14 14:08:09] INFO root fetch - processPackages [RealTimeSTT]: Downloading https://files.pythonhosted.org/packages/86/7f/e9b09e818815b3cf24a9389f12c43d46f7b197d44cd3c8cea0688c582477/RealTimeSTT-0.1.8.tar.gz
+[2024-04-14 14:08:09] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/ac/92/cd6f320c3e40a0eee004ca53fb5cbd2339757031856845a41bea25ce9338/jgtfxcon-0.5.8.tar.gz
+[2024-04-14 14:08:09] INFO root fetch - processPackages [RealTimeSTT]: Downloading https://files.pythonhosted.org/packages/c4/95/dfcf994fe29346a0616d6eff388fd23f13d773e39fd24426cf856ee20584/RealTimeSTT-0.1.9.tar.gz
+[2024-04-14 14:08:09] INFO root fetch - processPackages [jgtfxcon]: Downloading https://files.pythonhosted.org/packages/75/8a/d4eddae1a7da0e4d81a6946a84719e58a661ef2298ce771e5f65fa309251/jgtfxcon-0.5.9.tar.gz
+[2024-04-14 14:08:09] INFO root fetch - processPackages [RealTimeSTT]: executing diffoscope
+[2024-04-14 14:08:09] INFO root fetch - processPackages [RealTimeSTT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RealTimeSTT-0.1.8.tar.gz tmp/RealTimeSTT-0.1.9.tar.gz --markdown 20240414/R/RealTimeSTT/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 14:08:09] INFO root fetch - processPackages [jgtfxcon]: executing diffoscope
+[2024-04-14 14:08:09] INFO root fetch - processPackages [jgtfxcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtfxcon-0.5.8.tar.gz tmp/jgtfxcon-0.5.9.tar.gz --markdown 20240414/j/jgtfxcon/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-14 14:08:10] INFO root fetch - processPackages [RealTimeSTT]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeSTT-0.1.8.tar.gz]
+[2024-04-14 14:08:10] INFO root fetch - processPackages [RealTimeSTT]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeSTT-0.1.9.tar.gz]
+[2024-04-14 14:08:10] INFO root fetch - main [MainThread]: End processing [RealTimeSTT]: success
+[2024-04-14 14:08:10] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.8.tar.gz]
+[2024-04-14 14:08:10] INFO root fetch - processPackages [jgtfxcon]: Remove: archive file [/home/abi/fetcher/tmp/jgtfxcon-0.5.9.tar.gz]
+[2024-04-14 14:08:10] INFO root fetch - main [MainThread]: End processing [jgtfxcon]: success
+[2024-04-14 14:08:10] INFO root fetch - main [MainThread]: Store serial: [22758761]
