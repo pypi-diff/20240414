@@ -11726,3 +11726,83 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:59:53] INFO root fetch - processPackages [django_forms_plus]: Remove: archive file [/home/abi/fetcher/tmp/django_forms_plus-0.9.0.tar.gz]
 [2024-04-14 17:59:53] INFO root fetch - main [MainThread]: End processing [django_forms_plus]: success
 [2024-04-14 17:59:53] INFO root fetch - main [MainThread]: Store serial: [22760394]
+[2024-04-14 18:01:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760394]
+[2024-04-14 18:02:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 18:04:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760394]
+[2024-04-14 18:04:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-14 18:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jammy
+[2024-04-14 18:04:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zshgpt
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: intermat
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rich-click
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django_forms_plus
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-adapter-discord
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: data-downloader
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: libreppc
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ansar-connect
+[2024-04-14 18:04:08] INFO root fetch - processPackages [jammy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [django_forms_plus]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [rich-click]: New version: [1.8.0.dev5] Old Version: [1.8.0.dev4]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.159] Old Version: [0.1.156]
+[2024-04-14 18:04:08] WARNING root fetch - processPackages [libreppc]: Skipping, unable to determine old version
+[2024-04-14 18:04:08] INFO root fetch - main [MainThread]: End processing [libreppc] error
+[2024-04-14 18:04:08] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/c9/fb/465ed333f5925034516e3985a883ef46f2d54621cb6b9d7d88aaed34c95f/jammy-0.1.8.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [nonebot-adapter-discord]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [django_forms_plus]: Downloading https://files.pythonhosted.org/packages/17/0e/f79e56cbbdc79f927f3c0a84be419ffe6da4dae45bde17f62e4a9620af0f/django_forms_plus-0.8.0.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [data-downloader]: New version: [1.1] Old Version: [1.0]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [zshgpt]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/26/0b/5b3c23d699cceea5c158bb8a2ac43e14d1bfb4e0c8097838be440b6511cc/ansar_connect-0.1.156.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [rich-click]: Downloading https://files.pythonhosted.org/packages/8e/fa/e8cae22d7debdc1332b32ee7529364ee0a6f2361d21587e51ab53d21338f/rich-click-1.8.0.dev4.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [intermat]: New version: [2024.3.24] Old Version: [2023.8.1]
+[2024-04-14 18:04:08] INFO root fetch - processPackages [nonebot-adapter-discord]: Downloading https://files.pythonhosted.org/packages/9c/9a/7695f3406836091d1fdd99e0e4b556e479130bd3c468e25ad38b38576db5/nonebot_adapter_discord-0.1.6.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [zshgpt]: Downloading https://files.pythonhosted.org/packages/62/7b/a9195975ec73a56a89a60e4092f4a076371115ed96fc8ae2ee92e51ddbed/zshgpt-1.2.0.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [data-downloader]: Downloading https://files.pythonhosted.org/packages/a9/f7/7751589b118c200dc2bbbbb22d32a7c56a08267dd18e2f9c68fad19b53cf/data_downloader-1.0.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [intermat]: Downloading https://files.pythonhosted.org/packages/da/25/94acc2ce2f8c40434042dd70032c4c6652515a9814ceca9b5d95364133d5/intermat-2023.8.1.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [jammy]: Downloading https://files.pythonhosted.org/packages/bf/79/2d8d15d3e065bb7a39a673d2bbefe9d0374e7fc703f009d31eece23c6c19/jammy-0.1.9.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [django_forms_plus]: Downloading https://files.pythonhosted.org/packages/54/f3/c85ac8ce94145bb3872c12320f60f50e48053a66266349c0d4cbf452a9dd/django_forms_plus-0.9.0.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [rich-click]: Downloading https://files.pythonhosted.org/packages/e9/6f/7b82d6b9555f2ca3158c308a19dade1fee21c81fad6d5fe8e88677e1663a/rich_click-1.8.0.dev5.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [jammy]: executing diffoscope
+[2024-04-14 18:04:08] INFO root fetch - processPackages [jammy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jammy-0.1.8.tar.gz tmp/jammy-0.1.9.tar.gz --markdown 20240414/j/jammy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 18:04:08] INFO root fetch - processPackages [rich-click]: executing diffoscope
+[2024-04-14 18:04:08] INFO root fetch - processPackages [rich-click]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rich-click-1.8.0.dev4.tar.gz tmp/rich_click-1.8.0.dev5.tar.gz --markdown 20240414/r/rich-click/1.8.0.dev4-1.8.0.dev5/README.md --exclude *.pyd
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/ac/23/2c356ff2064ca724ec8e71fd4da765a96fb09a4b6bb9b7a2cdc6a2c9a1b3/ansar_connect-0.1.159.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [django_forms_plus]: executing diffoscope
+[2024-04-14 18:04:08] INFO root fetch - processPackages [django_forms_plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_forms_plus-0.8.0.tar.gz tmp/django_forms_plus-0.9.0.tar.gz --markdown 20240414/d/django_forms_plus/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 18:04:08] INFO root fetch - processPackages [nonebot-adapter-discord]: Downloading https://files.pythonhosted.org/packages/76/6c/0b80a7d2cb3c614d098fc3e2eadac6c93d4d1a0e4f6cdad34b30d48ee643/nonebot_adapter_discord-0.1.7.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [data-downloader]: Downloading https://files.pythonhosted.org/packages/17/e2/7f9da0dd4f22195b137aa7a4e8838c00a76cb67ed5eb11bc43b8217c6da1/data_downloader-1.1.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [zshgpt]: Downloading https://files.pythonhosted.org/packages/f6/d5/f2030e839f4587f3b55e5d1cd9600a1dddcb03d0f4cc02149de4f193a0e8/zshgpt-1.3.0.tar.gz
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 18:04:08] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.156.tar.gz tmp/ansar_connect-0.1.159.tar.gz --markdown 20240414/a/ansar-connect/0.1.156-0.1.159/README.md --exclude *.pyd
+[2024-04-14 18:04:09] INFO root fetch - processPackages [data-downloader]: executing diffoscope
+[2024-04-14 18:04:09] INFO root fetch - processPackages [data-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_downloader-1.0.tar.gz tmp/data_downloader-1.1.tar.gz --markdown 20240414/d/data-downloader/1.0-1.1/README.md --exclude *.pyd
+[2024-04-14 18:04:09] INFO root fetch - processPackages [nonebot-adapter-discord]: executing diffoscope
+[2024-04-14 18:04:09] INFO root fetch - processPackages [nonebot-adapter-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_discord-0.1.6.tar.gz tmp/nonebot_adapter_discord-0.1.7.tar.gz --markdown 20240414/n/nonebot-adapter-discord/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-14 18:04:09] INFO root fetch - processPackages [intermat]: Downloading https://files.pythonhosted.org/packages/2b/ee/2bc77f1857a379ad17f0d5fd5a07c07639c2c3bb771e6677939bfe826063/intermat-2024.3.24.tar.gz
+[2024-04-14 18:04:09] INFO root fetch - processPackages [zshgpt]: executing diffoscope
+[2024-04-14 18:04:09] INFO root fetch - processPackages [zshgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zshgpt-1.2.0.tar.gz tmp/zshgpt-1.3.0.tar.gz --markdown 20240414/z/zshgpt/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-04-14 18:04:09] INFO root fetch - processPackages [intermat]: executing diffoscope
+[2024-04-14 18:04:09] INFO root fetch - processPackages [intermat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intermat-2023.8.1.tar.gz tmp/intermat-2024.3.24.tar.gz --markdown 20240414/i/intermat/2023.8.1-2024.3.24/README.md --exclude *.pyd
+[2024-04-14 18:04:09] INFO root fetch - processPackages [rich-click]: Remove: archive file [/home/abi/fetcher/tmp/rich-click-1.8.0.dev4.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - processPackages [rich-click]: Remove: archive file [/home/abi/fetcher/tmp/rich_click-1.8.0.dev5.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - main [MainThread]: End processing [rich-click]: success
+[2024-04-14 18:04:09] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.156.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.159.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 18:04:09] INFO root fetch - processPackages [nonebot-adapter-discord]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_discord-0.1.6.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - processPackages [nonebot-adapter-discord]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_discord-0.1.7.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-discord]: success
+[2024-04-14 18:04:09] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.8.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - processPackages [jammy]: Remove: archive file [/home/abi/fetcher/tmp/jammy-0.1.9.tar.gz]
+[2024-04-14 18:04:09] INFO root fetch - main [MainThread]: End processing [jammy]: success
+[2024-04-14 18:04:10] INFO root fetch - processPackages [data-downloader]: Remove: archive file [/home/abi/fetcher/tmp/data_downloader-1.0.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - processPackages [data-downloader]: Remove: archive file [/home/abi/fetcher/tmp/data_downloader-1.1.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - main [MainThread]: End processing [data-downloader]: success
+[2024-04-14 18:04:10] INFO root fetch - processPackages [intermat]: Remove: archive file [/home/abi/fetcher/tmp/intermat-2023.8.1.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - processPackages [intermat]: Remove: archive file [/home/abi/fetcher/tmp/intermat-2024.3.24.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - main [MainThread]: End processing [intermat]: success
+[2024-04-14 18:04:10] INFO root fetch - processPackages [zshgpt]: Remove: archive file [/home/abi/fetcher/tmp/zshgpt-1.2.0.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - processPackages [zshgpt]: Remove: archive file [/home/abi/fetcher/tmp/zshgpt-1.3.0.tar.gz]
+[2024-04-14 18:04:10] INFO root fetch - main [MainThread]: End processing [zshgpt]: success
+[2024-04-14 18:04:19] INFO root fetch - processPackages [django_forms_plus]: Remove: archive file [/home/abi/fetcher/tmp/django_forms_plus-0.8.0.tar.gz]
+[2024-04-14 18:04:19] INFO root fetch - processPackages [django_forms_plus]: Remove: archive file [/home/abi/fetcher/tmp/django_forms_plus-0.9.0.tar.gz]
+[2024-04-14 18:04:19] INFO root fetch - main [MainThread]: End processing [django_forms_plus]: success
+[2024-04-14 18:04:19] INFO root fetch - main [MainThread]: Store serial: [22760422]
