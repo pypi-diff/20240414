@@ -5354,3 +5354,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:03:00] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.66.tar.gz]
 [2024-04-14 10:03:00] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
 [2024-04-14 10:03:00] INFO root fetch - main [MainThread]: Store serial: [22757156]
+[2024-04-14 10:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757156]
+[2024-04-14 10:05:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2024-04-14 10:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: base95
+[2024-04-14 10:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: movoid-function
+[2024-04-14 10:05:09] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-14 10:05:09] INFO root fetch - processPackages [movoid-function]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-04-14 10:05:09] INFO root fetch - processPackages [base95]: New version: [1.1] Old Version: [1.0]
+[2024-04-14 10:05:09] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/10/ba/dce7980ff0b7c11c6b0d4933f275f376eb8a4c997f0527cc483ac2310c8b/bridgecrew-3.2.8.tar.gz
+[2024-04-14 10:05:09] INFO root fetch - processPackages [movoid-function]: Downloading https://files.pythonhosted.org/packages/26/7b/78a4459962c9efe1b16a4b5c1e4e77f4133302b16597dc322e9e28593274/movoid_function-1.4.1.tar.gz
+[2024-04-14 10:05:09] INFO root fetch - processPackages [base95]: Downloading https://files.pythonhosted.org/packages/e6/0c/88871ca928654a39366a97b53406357a3e92b425f3e1ed0418f648baca41/base95-1.0.tar.gz
+[2024-04-14 10:05:09] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/f5/cd/d4c4caa7926c87e041723a31e232e562f13e2fa83f05b7451436564fe03f/bridgecrew-3.2.9.tar.gz
+[2024-04-14 10:05:09] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-04-14 10:05:09] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.8.tar.gz tmp/bridgecrew-3.2.9.tar.gz --markdown 20240414/b/bridgecrew/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-14 10:05:09] INFO root fetch - processPackages [base95]: Downloading https://files.pythonhosted.org/packages/d3/7d/c6834cac160274bba786c8c5ffc13004a8041ef7de5728947788e9aac2c6/base95-1.1-py2.py3-none-any.whl
+[2024-04-14 10:05:09] INFO root fetch - processPackages [movoid-function]: Downloading https://files.pythonhosted.org/packages/12/ce/d51c76166f4f103f3da1f164017a23a04c19b81af3d01c269a8a2b4d8628/movoid_function-1.5.0.tar.gz
+[2024-04-14 10:05:09] INFO root fetch - processPackages [base95]: executing diffoscope
+[2024-04-14 10:05:09] INFO root fetch - processPackages [base95]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base95-1.0.tar.gz tmp/base95-1.1-py2.py3-none-any.whl.zip --markdown 20240414/b/base95/1.0-1.1/README.md --exclude *.pyd
+[2024-04-14 10:05:09] INFO root fetch - processPackages [movoid-function]: executing diffoscope
+[2024-04-14 10:05:09] INFO root fetch - processPackages [movoid-function]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_function-1.4.1.tar.gz tmp/movoid_function-1.5.0.tar.gz --markdown 20240414/m/movoid-function/1.4.1-1.5.0/README.md --exclude *.pyd
+[2024-04-14 10:05:10] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.8.tar.gz]
+[2024-04-14 10:05:10] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.9.tar.gz]
+[2024-04-14 10:05:10] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-04-14 10:05:10] INFO root fetch - processPackages [base95]: Remove: archive file [/home/abi/fetcher/tmp/base95-1.0.tar.gz]
+[2024-04-14 10:05:10] INFO root fetch - processPackages [base95]: Remove: archive file [/home/abi/fetcher/tmp/base95-1.1-py2.py3-none-any.whl.zip]
+[2024-04-14 10:05:10] INFO root fetch - main [MainThread]: End processing [base95]: success
+[2024-04-14 10:05:10] INFO root fetch - processPackages [movoid-function]: Remove: archive file [/home/abi/fetcher/tmp/movoid_function-1.4.1.tar.gz]
+[2024-04-14 10:05:10] INFO root fetch - processPackages [movoid-function]: Remove: archive file [/home/abi/fetcher/tmp/movoid_function-1.5.0.tar.gz]
+[2024-04-14 10:05:10] INFO root fetch - main [MainThread]: End processing [movoid-function]: success
+[2024-04-14 10:05:10] INFO root fetch - main [MainThread]: Store serial: [22757164]
