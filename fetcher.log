@@ -2502,3 +2502,24 @@
 [2024-04-14 03:57:57] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.0.6.tar.gz]
 [2024-04-14 03:57:57] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
 [2024-04-14 03:57:57] INFO root fetch - main [MainThread]: Store serial: [22756126]
+[2024-04-14 04:00:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756126]
+[2024-04-14 04:00:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mousepad
+[2024-04-14 04:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cardex
+[2024-04-14 04:00:06] INFO root fetch - processPackages [mousepad]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 04:00:06] INFO root fetch - processPackages [mousepad]: Downloading https://files.pythonhosted.org/packages/3c/66/643a501391ba673a2190694da8fa62f4ffd7608d8223fa13e31c1f9d7778/mousepad-0.1.1.tar.gz
+[2024-04-14 04:00:06] INFO root fetch - processPackages [cardex]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-04-14 04:00:06] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/96/6e/6c4d87215e2446a0ac9bc903860b173f9fc347eb73dc8e4a21a298670a00/cardex-0.2.0.dev8.tar.gz
+[2024-04-14 04:00:07] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/a5/f1/936319cd5a1e0862bc33edbce29c37659ee57c4782e76613d4ce0b406196/cardex-0.2.0.dev9.tar.gz
+[2024-04-14 04:00:07] INFO root fetch - processPackages [mousepad]: Downloading https://files.pythonhosted.org/packages/4e/78/c5a2f8d6316ba556c98723f52ff207fa2042463faa159a69ef9e698ebf2f/mousepad-0.1.2.tar.gz
+[2024-04-14 04:00:07] INFO root fetch - processPackages [cardex]: executing diffoscope
+[2024-04-14 04:00:07] INFO root fetch - processPackages [cardex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardex-0.2.0.dev8.tar.gz tmp/cardex-0.2.0.dev9.tar.gz --markdown 20240414/c/cardex/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-04-14 04:00:07] INFO root fetch - processPackages [mousepad]: executing diffoscope
+[2024-04-14 04:00:07] INFO root fetch - processPackages [mousepad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mousepad-0.1.1.tar.gz tmp/mousepad-0.1.2.tar.gz --markdown 20240414/m/mousepad/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 04:00:07] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev8.tar.gz]
+[2024-04-14 04:00:07] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev9.tar.gz]
+[2024-04-14 04:00:07] INFO root fetch - main [MainThread]: End processing [cardex]: success
+[2024-04-14 04:00:09] INFO root fetch - processPackages [mousepad]: Remove: archive file [/home/abi/fetcher/tmp/mousepad-0.1.1.tar.gz]
+[2024-04-14 04:00:09] INFO root fetch - processPackages [mousepad]: Remove: archive file [/home/abi/fetcher/tmp/mousepad-0.1.2.tar.gz]
+[2024-04-14 04:00:09] INFO root fetch - main [MainThread]: End processing [mousepad]: success
+[2024-04-14 04:00:09] INFO root fetch - main [MainThread]: Store serial: [22756132]
