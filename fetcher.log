@@ -4670,3 +4670,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:28:20] INFO root fetch - processPackages [stepcount]: Remove: archive file [/home/abi/fetcher/tmp/stepcount-3.4.0.tar.gz]
 [2024-04-14 08:28:20] INFO root fetch - main [MainThread]: End processing [stepcount]: success
 [2024-04-14 08:28:20] INFO root fetch - main [MainThread]: Store serial: [22756877]
+[2024-04-14 08:30:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756877]
+[2024-04-14 08:30:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 08:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lyyinit
+[2024-04-14 08:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checkov
+[2024-04-14 08:30:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lyyinit
+[2024-04-14 08:30:28] INFO root fetch - processPackages [lyyinit]: New version: [1.2] Old Version: [1.1]
+[2024-04-14 08:30:28] INFO root fetch - processPackages [lyyinit]: New version: [1.2] Old Version: [1.1]
+[2024-04-14 08:30:29] INFO root fetch - processPackages [checkov]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: Downloading https://files.pythonhosted.org/packages/19/57/6e0bac3ea93bd4181836107e6bc69771c2ccf0c5b8579dcdbc9b374f8c13/lyyinit-1.1.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: Downloading https://files.pythonhosted.org/packages/19/57/6e0bac3ea93bd4181836107e6bc69771c2ccf0c5b8579dcdbc9b374f8c13/lyyinit-1.1.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/88/07/1509be74cf47a29b012a6f7477139e57bee2a7d01634b6bd6a71d095ace8/checkov-3.2.8.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: Downloading https://files.pythonhosted.org/packages/c1/42/7d2adebc60d221621badba6df9df259e18e82db6ff52c2d246beb1a87b01/lyyinit-1.2.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: Downloading https://files.pythonhosted.org/packages/c1/42/7d2adebc60d221621badba6df9df259e18e82db6ff52c2d246beb1a87b01/lyyinit-1.2.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: executing diffoscope
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: executing diffoscope
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyyinit-1.1.tar.gz tmp/lyyinit-1.2.tar.gz --markdown 20240414/l/lyyinit/1.1-1.2/README.md --exclude *.pyd
+[2024-04-14 08:30:29] INFO root fetch - processPackages [lyyinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyyinit-1.1.tar.gz tmp/lyyinit-1.2.tar.gz --markdown 20240414/l/lyyinit/1.1-1.2/README.md --exclude *.pyd
+[2024-04-14 08:30:29] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8b/2e/76e1600c8d7d81ec9b7cc207e032f23feed398a5b54e6698055f7c5e0f8f/checkov-3.2.9.tar.gz
+[2024-04-14 08:30:29] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-04-14 08:30:29] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.8.tar.gz tmp/checkov-3.2.9.tar.gz --markdown 20240414/c/checkov/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-14 08:30:30] INFO root fetch - processPackages [lyyinit]: Remove: archive file [/home/abi/fetcher/tmp/lyyinit-1.1.tar.gz]
+[2024-04-14 08:30:30] INFO root fetch - processPackages [lyyinit]: Remove: archive file [/home/abi/fetcher/tmp/lyyinit-1.2.tar.gz]
+[2024-04-14 08:30:30] INFO root fetch - main [MainThread]: End processing [lyyinit]: success
+[2024-04-14 08:30:30] INFO root fetch - main [MainThread]: End processing [lyyinit]: success
+[2024-04-14 08:30:37] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.8.tar.gz]
+[2024-04-14 08:30:37] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
+[2024-04-14 08:30:37] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-04-14 08:30:37] INFO root fetch - main [MainThread]: Store serial: [22756886]
