@@ -2919,3 +2919,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 04:45:25] INFO root fetch - processPackages [py-ptsl]: Remove: archive file [/home/abi/fetcher/tmp/py_ptsl-301.0.0.tar.gz]
 [2024-04-14 04:45:25] INFO root fetch - main [MainThread]: End processing [py-ptsl]: success
 [2024-04-14 04:45:25] INFO root fetch - main [MainThread]: Store serial: [22756254]
+[2024-04-14 04:47:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756254]
+[2024-04-14 04:47:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 04:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nacl-middleware
+[2024-04-14 04:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bulletroulette
+[2024-04-14 04:47:33] INFO root fetch - processPackages [nacl-middleware]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-14 04:47:33] WARNING root fetch - processPackages [bulletroulette]: Skipping, unable to determine old version
+[2024-04-14 04:47:33] INFO root fetch - main [MainThread]: End processing [bulletroulette] error
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: Downloading https://files.pythonhosted.org/packages/5c/3d/eca986b0a3e00ca42a7acd47ecd3be845b2740a433ac88e85e9fb3197988/nacl_middleware-0.0.4.tar.gz
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: Downloading https://files.pythonhosted.org/packages/b6/cb/e54f1599e56a3982a549c9b9ef9bfedc42380b7fb92735a0c82eb60562b2/nacl_middleware-0.0.5.tar.gz
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: executing diffoscope
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nacl_middleware-0.0.4.tar.gz tmp/nacl_middleware-0.0.5.tar.gz --markdown 20240414/n/nacl-middleware/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: Remove: archive file [/home/abi/fetcher/tmp/nacl_middleware-0.0.4.tar.gz]
+[2024-04-14 04:47:34] INFO root fetch - processPackages [nacl-middleware]: Remove: archive file [/home/abi/fetcher/tmp/nacl_middleware-0.0.5.tar.gz]
+[2024-04-14 04:47:34] INFO root fetch - main [MainThread]: End processing [nacl-middleware]: success
+[2024-04-14 04:47:34] INFO root fetch - main [MainThread]: Store serial: [22756262]
