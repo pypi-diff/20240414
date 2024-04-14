@@ -10945,3 +10945,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:04:45] INFO root fetch - processPackages [sos-pbs]: Remove: archive file [/home/abi/fetcher/tmp/sos-pbs-0.9.9.2.tar.gz]
 [2024-04-14 17:04:45] INFO root fetch - main [MainThread]: End processing [sos-pbs]: success
 [2024-04-14 17:04:45] INFO root fetch - main [MainThread]: Store serial: [22760022]
+[2024-04-14 17:06:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760022]
+[2024-04-14 17:06:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enhydris-api-client
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xiaogpt
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bibiflags
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: testasteca
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.154] Old Version: [0.1.153]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [testasteca]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/ae/5d/7292b2c40cca917cffb8e1d7f5465b05ee21d9f926029bd1180193ef6bbd/ansar_connect-0.1.153.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [enhydris-api-client]: New version: [3.0.1] Old Version: [3.0.0a1]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [bibiflags]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [xiaogpt]: New version: [2.41] Old Version: [2.40]
+[2024-04-14 17:06:54] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/13/69/1488c7a0b53ab90a7c940513373aba80ea2cb6dc7e05b0e76a1b2bbcd8a6/testasteca-0.5.4.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [bibiflags]: Downloading https://files.pythonhosted.org/packages/72/9a/e359ac8f67c116dcf293ba474cd71fe5fb0d3a918833b5328b39856f781d/bibiflags-0.1.4.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [enhydris-api-client]: Downloading https://files.pythonhosted.org/packages/4e/ff/d5555d60f0baf44c666bbb7c659b80e74848625e1d54c0857d65a22cc395/enhydris-api-client-3.0.0a1.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/be/8d/698566424d7911f5c6ee47a3ace97cb1d46b709a028dce5259a423fcd9dd/xiaogpt-2.40.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/8f/60/f3275696f55d8959a9875c784e11cdebdab27de2c3865849a18de9b90d74/ansar_connect-0.1.154.tar.gz
+[2024-04-14 17:06:54] INFO root fetch - processPackages [testasteca]: Downloading https://files.pythonhosted.org/packages/79/77/450cac71765f10f4dae6fc7cebd1dace7d23ee7fcd4e6ff0746ac2eb057c/testasteca-0.5.5.tar.gz
+[2024-04-14 17:06:55] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.153.tar.gz tmp/ansar_connect-0.1.154.tar.gz --markdown 20240414/a/ansar-connect/0.1.153-0.1.154/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [testasteca]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [testasteca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testasteca-0.5.4.tar.gz tmp/testasteca-0.5.5.tar.gz --markdown 20240414/t/testasteca/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/04/8e/b5d525a724c917f912dc3d9cd58dc8375cb8ea2baed81fa8d9fa71b4f30d/xiaogpt-2.41.tar.gz
+[2024-04-14 17:06:55] INFO root fetch - processPackages [bibiflags]: Downloading https://files.pythonhosted.org/packages/66/b4/2a1c8c9c05544d4d272d0de25ace6affecbfb42039e52a800fd319296c03/bibiflags-0.1.5.tar.gz
+[2024-04-14 17:06:55] INFO root fetch - processPackages [enhydris-api-client]: Downloading https://files.pythonhosted.org/packages/6e/b6/c068cf42fbce39bd6108daf84009c31bbd374f2defd35cee47d86e05230f/enhydris-api-client-3.0.1.tar.gz
+[2024-04-14 17:06:55] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.40.tar.gz tmp/xiaogpt-2.41.tar.gz --markdown 20240414/x/xiaogpt/2.40-2.41/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [bibiflags]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [bibiflags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibiflags-0.1.4.tar.gz tmp/bibiflags-0.1.5.tar.gz --markdown 20240414/b/bibiflags/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [enhydris-api-client]: executing diffoscope
+[2024-04-14 17:06:55] INFO root fetch - processPackages [enhydris-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhydris-api-client-3.0.0a1.tar.gz tmp/enhydris-api-client-3.0.1.tar.gz --markdown 20240414/e/enhydris-api-client/3.0.0a1-3.0.1/README.md --exclude *.pyd
+[2024-04-14 17:06:55] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 17:06:55] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.153.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.154.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 17:06:55] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.4.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.5.tar.gz]
+[2024-04-14 17:06:55] INFO root fetch - main [MainThread]: End processing [testasteca]: success
+[2024-04-14 17:06:56] INFO root fetch - processPackages [enhydris-api-client]: Remove: archive file [/home/abi/fetcher/tmp/enhydris-api-client-3.0.0a1.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - processPackages [enhydris-api-client]: Remove: archive file [/home/abi/fetcher/tmp/enhydris-api-client-3.0.1.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - main [MainThread]: End processing [enhydris-api-client]: success
+[2024-04-14 17:06:56] INFO root fetch - processPackages [bibiflags]: Remove: archive file [/home/abi/fetcher/tmp/bibiflags-0.1.4.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - processPackages [bibiflags]: Remove: archive file [/home/abi/fetcher/tmp/bibiflags-0.1.5.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - main [MainThread]: End processing [bibiflags]: success
+[2024-04-14 17:06:56] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.40.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.41.tar.gz]
+[2024-04-14 17:06:56] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-04-14 17:06:56] INFO root fetch - main [MainThread]: Store serial: [22760040]
