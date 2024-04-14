@@ -5755,3 +5755,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:44:24] INFO root fetch - processPackages [python3-commons]: Remove: archive file [/home/abi/fetcher/tmp/python3-commons-0.3.9.tar.gz]
 [2024-04-14 10:44:24] INFO root fetch - main [MainThread]: End processing [python3-commons]: success
 [2024-04-14 10:44:24] INFO root fetch - main [MainThread]: Store serial: [22757366]
+[2024-04-14 10:46:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757366]
+[2024-04-14 10:46:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 10:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-14 10:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-cpu
+[2024-04-14 10:46:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-14 10:46:34] INFO root fetch - processPackages [checkov]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240414] Old Version: [2.17.0.dev20240413]
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-14 10:46:34] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/88/07/1509be74cf47a29b012a6f7477139e57bee2a7d01634b6bd6a71d095ace8/checkov-3.2.8.tar.gz
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4c/dd/050c7e149cb2f7f839fbc2eeffce73b5893d6c90b3ff268134072988f939/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl
+[2024-04-14 10:46:34] INFO root fetch - processPackages [checkov]: Downloading https://files.pythonhosted.org/packages/8b/2e/76e1600c8d7d81ec9b7cc207e032f23feed398a5b54e6698055f7c5e0f8f/checkov-3.2.9.tar.gz
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/11/7b/4d87ddd27b602718138a0a9a39ecab1f8ac76c670541f54e6eaa0ca3fe15/tf_nightly_cpu-2.17.0.dev20240414-cp39-cp39-win_amd64.whl
+[2024-04-14 10:46:34] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2024-04-14 10:46:34] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-3.2.8.tar.gz tmp/checkov-3.2.9.tar.gz --markdown 20240414/c/checkov/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240414/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-14 10:46:34] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240414-cp39-cp39-win_amd64.whl.zip --markdown 20240414/t/tf-nightly-cpu/2.17.0.dev20240413-2.17.0.dev20240414/README.md --exclude *.pyd
+[2024-04-14 10:46:35] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240413-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 10:46:35] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240414-cp39-cp39-win_amd64.whl.zip]
+[2024-04-14 10:46:35] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-14 10:46:37] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-14 10:46:37] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-14 10:46:37] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-14 10:46:42] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.8.tar.gz]
+[2024-04-14 10:46:42] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
+[2024-04-14 10:46:42] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2024-04-14 10:46:42] INFO root fetch - main [MainThread]: Store serial: [22757373]
