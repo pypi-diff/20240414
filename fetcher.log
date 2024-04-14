@@ -4137,3 +4137,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 07:02:35] WARNING root fetch - processPackages [Myexperiment]: Skipping, unable to determine old version
 [2024-04-14 07:02:35] INFO root fetch - main [MainThread]: End processing [Myexperiment] error
 [2024-04-14 07:02:35] INFO root fetch - main [MainThread]: Store serial: [22756665]
+[2024-04-14 07:04:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756665]
+[2024-04-14 07:04:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 07:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yahoo-searcher
+[2024-04-14 07:04:43] WARNING root fetch - processPackages [yahoo-searcher]: Skipping, unable to determine old version
+[2024-04-14 07:04:43] INFO root fetch - main [MainThread]: End processing [yahoo-searcher] error
+[2024-04-14 07:04:43] INFO root fetch - main [MainThread]: Store serial: [22756667]
