@@ -1787,3 +1787,27 @@
 [2024-04-14 02:34:17] INFO root fetch - processPackages [tensorkrowch]: Remove: archive file [/home/abi/fetcher/tmp/tensorkrowch-1.1.0.tar.gz]
 [2024-04-14 02:34:17] INFO root fetch - main [MainThread]: End processing [tensorkrowch]: success
 [2024-04-14 02:34:17] INFO root fetch - main [MainThread]: Store serial: [22755852]
+[2024-04-14 02:36:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755852]
+[2024-04-14 02:36:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 02:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backframe
+[2024-04-14 02:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smart-arrays
+[2024-04-14 02:36:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nokey
+[2024-04-14 02:36:26] INFO root fetch - processPackages [backframe]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-14 02:36:26] WARNING root fetch - processPackages [smart-arrays]: Skipping, unable to determine old version
+[2024-04-14 02:36:26] INFO root fetch - main [MainThread]: End processing [smart-arrays] error
+[2024-04-14 02:36:26] INFO root fetch - processPackages [nokey]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-14 02:36:26] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/14/af/dc4a27947202362fb7041599cedbc4651472af5c01856ef4ef6b25fc4186/nokey-0.0.1.tar.gz
+[2024-04-14 02:36:26] INFO root fetch - processPackages [backframe]: Downloading https://files.pythonhosted.org/packages/2a/42/0de5a4e29c5cf0aa948af416e8dffdacdb8ad3e307dd18490467faef8ca2/backframe-0.1.1.tar.gz
+[2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/4a/70/ce542c8930d16206fe4669a0baab2fbfa782188e31a2aafb1f0c2b3b44d6/nokey-0.1.0.tar.gz
+[2024-04-14 02:36:27] INFO root fetch - processPackages [backframe]: Downloading https://files.pythonhosted.org/packages/a4/f7/d1cc8298742cb8e858be2525f78e4334bcb16e040016b5af8cc499648de2/backframe-0.1.2.tar.gz
+[2024-04-14 02:36:27] INFO root fetch - processPackages [backframe]: executing diffoscope
+[2024-04-14 02:36:27] INFO root fetch - processPackages [backframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backframe-0.1.1.tar.gz tmp/backframe-0.1.2.tar.gz --markdown 20240414/b/backframe/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.0.1.tar.gz tmp/nokey-0.1.0.tar.gz --markdown 20240414/n/nokey/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-14 02:36:27] INFO root fetch - processPackages [backframe]: Remove: archive file [/home/abi/fetcher/tmp/backframe-0.1.1.tar.gz]
+[2024-04-14 02:36:27] INFO root fetch - processPackages [backframe]: Remove: archive file [/home/abi/fetcher/tmp/backframe-0.1.2.tar.gz]
+[2024-04-14 02:36:27] INFO root fetch - main [MainThread]: End processing [backframe]: success
+[2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.0.1.tar.gz]
+[2024-04-14 02:36:27] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.1.0.tar.gz]
+[2024-04-14 02:36:27] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-14 02:36:27] INFO root fetch - main [MainThread]: Store serial: [22755863]
