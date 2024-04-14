@@ -8377,3 +8377,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:01:19] INFO root fetch - processPackages [gllogger]: Remove: archive file [/home/abi/fetcher/tmp/gllogger-0.0.4.tar.gz]
 [2024-04-14 14:01:19] INFO root fetch - main [MainThread]: End processing [gllogger]: success
 [2024-04-14 14:01:19] INFO root fetch - main [MainThread]: Store serial: [22758737]
+[2024-04-14 14:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758737]
+[2024-04-14 14:03:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 14:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lite-sandbox
+[2024-04-14 14:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phytorchx
+[2024-04-14 14:03:35] ERROR root fetch - processPackages [lite-sandbox]: Unable to get metadata: No such project 'lite-sandbox'
+[2024-04-14 14:03:35] INFO root fetch - main [MainThread]: End processing [lite-sandbox] error
+[2024-04-14 14:03:35] INFO root fetch - processPackages [phytorchx]: New version: [0.3] Old Version: [0.2]
+[2024-04-14 14:03:35] INFO root fetch - processPackages [phytorchx]: Downloading https://files.pythonhosted.org/packages/d0/ca/a0eae92a02add8bca83a81cff51411161c8b3c0eda6218131dc881b8cc6f/phytorchx-0.2.tar.gz
+[2024-04-14 14:03:35] INFO root fetch - processPackages [phytorchx]: Downloading https://files.pythonhosted.org/packages/f5/2b/22d22f2fa2b0dd01d2b4b1b3d3620c33aa6397ca2548220ce25b633ee9e2/phytorchx-0.3.tar.gz
+[2024-04-14 14:03:36] INFO root fetch - processPackages [phytorchx]: executing diffoscope
+[2024-04-14 14:03:36] INFO root fetch - processPackages [phytorchx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phytorchx-0.2.tar.gz tmp/phytorchx-0.3.tar.gz --markdown 20240414/p/phytorchx/0.2-0.3/README.md --exclude *.pyd
+[2024-04-14 14:03:36] INFO root fetch - processPackages [phytorchx]: Remove: archive file [/home/abi/fetcher/tmp/phytorchx-0.2.tar.gz]
+[2024-04-14 14:03:36] INFO root fetch - processPackages [phytorchx]: Remove: archive file [/home/abi/fetcher/tmp/phytorchx-0.3.tar.gz]
+[2024-04-14 14:03:36] INFO root fetch - main [MainThread]: End processing [phytorchx]: success
+[2024-04-14 14:03:36] INFO root fetch - main [MainThread]: Store serial: [22758747]
