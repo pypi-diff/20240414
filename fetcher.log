@@ -2406,3 +2406,15 @@
 [2024-04-14 03:47:11] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python_semantic_release-9.4.2.tar.gz]
 [2024-04-14 03:47:11] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
 [2024-04-14 03:47:11] INFO root fetch - main [MainThread]: Store serial: [22756098]
+[2024-04-14 03:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756098]
+[2024-04-14 03:49:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimic-replay
+[2024-04-14 03:49:20] INFO root fetch - processPackages [mimic-replay]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-14 03:49:20] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/f3/2f/e8f776c9fc049785a386bd707b6b588d7e4b95629d99be045fbb7b45e5d9/mimic_replay-1.1.4.tar.gz
+[2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: Downloading https://files.pythonhosted.org/packages/99/65/b49df24fbffec6b7d90c89ee571f41a66bdd4ac4f15a26b5f93c9985b66a/mimic_replay-1.1.5.tar.gz
+[2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: executing diffoscope
+[2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimic_replay-1.1.4.tar.gz tmp/mimic_replay-1.1.5.tar.gz --markdown 20240414/m/mimic-replay/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.4.tar.gz]
+[2024-04-14 03:49:21] INFO root fetch - processPackages [mimic-replay]: Remove: archive file [/home/abi/fetcher/tmp/mimic_replay-1.1.5.tar.gz]
+[2024-04-14 03:49:21] INFO root fetch - main [MainThread]: End processing [mimic-replay]: success
+[2024-04-14 03:49:21] INFO root fetch - main [MainThread]: Store serial: [22756101]
