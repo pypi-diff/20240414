@@ -5956,3 +5956,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:02:09] INFO root fetch - processPackages [acdh-cidoc-pyutils]: Remove: archive file [/home/abi/fetcher/tmp/acdh_cidoc_pyutils-0.9.tar.gz]
 [2024-04-14 11:02:09] INFO root fetch - main [MainThread]: End processing [acdh-cidoc-pyutils]: success
 [2024-04-14 11:02:09] INFO root fetch - main [MainThread]: Store serial: [22757476]
+[2024-04-14 11:04:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757476]
+[2024-04-14 11:04:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 11:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuzu
+[2024-04-14 11:04:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: refind-btrfs
+[2024-04-14 11:04:20] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev34] Old Version: [0.3.3.dev33]
+[2024-04-14 11:04:20] INFO root fetch - processPackages [refind-btrfs]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-14 11:04:20] INFO root fetch - processPackages [refind-btrfs]: Downloading https://files.pythonhosted.org/packages/09/36/d2bae505ab7e22d0b83acb7c3759117618e19d7766cda7f60a5316560712/refind-btrfs-0.6.1.tar.gz
+[2024-04-14 11:04:20] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/d2/2e/1cd772a8a4bba521a3fb04c40f35f8fa91982e1e0f9aaa07af317f09bde2/kuzu-0.3.3.dev33.tar.gz
+[2024-04-14 11:04:20] INFO root fetch - processPackages [refind-btrfs]: Downloading https://files.pythonhosted.org/packages/ae/10/7767f0b7e94904634676ffe91dcc21fbfd55d1d3c35690d3d89fc98b9412/refind_btrfs-0.6.2-py3-none-any.whl
+[2024-04-14 11:04:21] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/98/dc/0aa29722d435507f139ee353e1dd17a4f7f5aa6937fbd93b2255c7d6871d/kuzu-0.3.3.dev34.tar.gz
+[2024-04-14 11:04:21] INFO root fetch - processPackages [refind-btrfs]: executing diffoscope
+[2024-04-14 11:04:21] INFO root fetch - processPackages [refind-btrfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refind-btrfs-0.6.1.tar.gz tmp/refind_btrfs-0.6.2-py3-none-any.whl.zip --markdown 20240414/r/refind-btrfs/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-14 11:04:22] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-04-14 11:04:22] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.3.3.dev33.tar.gz tmp/kuzu-0.3.3.dev34.tar.gz --markdown 20240414/k/kuzu/0.3.3.dev33-0.3.3.dev34/README.md --exclude *.pyd
+[2024-04-14 11:04:22] INFO root fetch - processPackages [refind-btrfs]: Remove: archive file [/home/abi/fetcher/tmp/refind-btrfs-0.6.1.tar.gz]
+[2024-04-14 11:04:22] INFO root fetch - processPackages [refind-btrfs]: Remove: archive file [/home/abi/fetcher/tmp/refind_btrfs-0.6.2-py3-none-any.whl.zip]
+[2024-04-14 11:04:22] INFO root fetch - main [MainThread]: End processing [refind-btrfs]: success
+[2024-04-14 11:04:27] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev33.tar.gz]
+[2024-04-14 11:04:27] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev34.tar.gz]
+[2024-04-14 11:04:27] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-04-14 11:04:27] INFO root fetch - main [MainThread]: Store serial: [22757509]
