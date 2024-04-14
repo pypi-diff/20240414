@@ -8011,3 +8011,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:30:46] INFO root fetch - processPackages [python-hilo]: Remove: archive file [/home/abi/fetcher/tmp/python_hilo-2024.4.1.tar.gz]
 [2024-04-14 13:30:46] INFO root fetch - main [MainThread]: End processing [python-hilo]: success
 [2024-04-14 13:30:46] INFO root fetch - main [MainThread]: Store serial: [22758517]
+[2024-04-14 13:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758517]
+[2024-04-14 13:33:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-14 13:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pelican-markdown-include
+[2024-04-14 13:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PYield
+[2024-04-14 13:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chromastone
+[2024-04-14 13:33:02] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.76.0]
+[2024-04-14 13:33:02] INFO root fetch - processPackages [chromastone]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-14 13:33:02] INFO root fetch - processPackages [PYield]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-14 13:33:02] INFO root fetch - processPackages [pelican-markdown-include]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-14 13:33:02] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/bf/46/2861cbbb28b8c3f4b859d959c0da02836cdec5574263cdef5b0cc6677999/chromastone-0.2.2.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/ec/21/f02fb65137c0d0447f9235338bee99700147c9c8eb0f97b105f86f484c9c/pyield-0.5.1.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/83/e5/b8bc556a472f5c0f558c54d6a95e70993e3795caefad0a554c187de2a0d4/bellek-0.76.0.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [pelican-markdown-include]: Downloading https://files.pythonhosted.org/packages/cb/be/392ef8333eadebe5e0b7264a4ce0bb8ac7a88a9e6ed8d83dac8eb8a3a307/pelican_markdown_include-1.0.3.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/5f/ae/9f1a89e6bd42d4cef7f55f2beb1cc4a43c2f0132195375f641b77ff9e4ac/pyield-0.6.0.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-14 13:33:02] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.5.1.tar.gz tmp/pyield-0.6.0.tar.gz --markdown 20240414/P/PYield/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-14 13:33:02] INFO root fetch - processPackages [chromastone]: Downloading https://files.pythonhosted.org/packages/a2/33/21bbdd4b62a9575e9bea791344deca1061e4e6a27fc3715d06d5a1684a35/chromastone-0.2.3.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [pelican-markdown-include]: Downloading https://files.pythonhosted.org/packages/43/f1/ae1387a7089654ca0a2843c00e486aeadd1b3cc3e3e60f6c9530daf5548b/pelican_markdown_include-1.0.4.tar.gz
+[2024-04-14 13:33:02] INFO root fetch - processPackages [chromastone]: executing diffoscope
+[2024-04-14 13:33:02] INFO root fetch - processPackages [chromastone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromastone-0.2.2.tar.gz tmp/chromastone-0.2.3.tar.gz --markdown 20240414/c/chromastone/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-14 13:33:02] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-14 13:33:02] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.76.0.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240414/b/bellek/0.76.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 13:33:02] INFO root fetch - processPackages [pelican-markdown-include]: executing diffoscope
+[2024-04-14 13:33:02] INFO root fetch - processPackages [pelican-markdown-include]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_markdown_include-1.0.3.tar.gz tmp/pelican_markdown_include-1.0.4.tar.gz --markdown 20240414/p/pelican-markdown-include/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-14 13:33:03] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.5.1.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.6.0.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-14 13:33:03] INFO root fetch - processPackages [pelican-markdown-include]: Remove: archive file [/home/abi/fetcher/tmp/pelican_markdown_include-1.0.3.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - processPackages [pelican-markdown-include]: Remove: archive file [/home/abi/fetcher/tmp/pelican_markdown_include-1.0.4.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - main [MainThread]: End processing [pelican-markdown-include]: success
+[2024-04-14 13:33:03] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.2.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - processPackages [chromastone]: Remove: archive file [/home/abi/fetcher/tmp/chromastone-0.2.3.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - main [MainThread]: End processing [chromastone]: success
+[2024-04-14 13:33:03] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.76.0.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-14 13:33:03] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-14 13:33:03] INFO root fetch - main [MainThread]: Store serial: [22758529]
