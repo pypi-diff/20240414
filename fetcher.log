@@ -3006,3 +3006,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:02:31] INFO root fetch - processPackages [retried]: Remove: archive file [/home/abi/fetcher/tmp/retried-8.0.0.tar.gz]
 [2024-04-14 05:02:31] INFO root fetch - main [MainThread]: End processing [retried]: success
 [2024-04-14 05:02:31] INFO root fetch - main [MainThread]: Store serial: [22756283]
+[2024-04-14 05:04:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756283]
+[2024-04-14 05:04:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-reminder
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monisha
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xtquant
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.146] Old Version: [0.1.145]
+[2024-04-14 05:04:40] INFO root fetch - processPackages [monisha]: New version: [0.0.42] Old Version: [0.0.41]
+[2024-04-14 05:04:40] INFO root fetch - processPackages [nonebot-plugin-reminder]: New version: [0.4.0] Old Version: [0.3.1.post2]
+[2024-04-14 05:04:40] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/5f/fd/223116fed464e0dd67b11703baeac749ab11e530a09574534b9c18eff303/ansar_connect-0.1.145.tar.gz
+[2024-04-14 05:04:40] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/1c/c4/8822cc65efd2a2697f8b6560536783e9d899f6d21a36257099ba17ed2f09/monisha-0.0.41.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [xtquant]: New version: [240329.1.1] Old Version: [240119.3]
+[2024-04-14 05:04:41] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/1b/97/04428b431f0fc92fb549e4fdba65bf7c16865a22df4e656bc517d19e2a19/nonebot_plugin_reminder-0.3.1.post2.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/e7/b5/ca455cd58648a2d35019cdaabe3ac0fa885153723a3c9b0907ca2eef2739/monisha-0.0.42.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [xtquant]: Downloading https://files.pythonhosted.org/packages/7a/97/2e4808fceba28028a9f8583b791fffa8785c864a1d369649daed07de74e6/xtquant-240119.3.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/5a/23/6cd5d42aa39a4ede143dad250fda31d25bd02fe9f0036fa4852d1fb130bc/ansar_connect-0.1.146.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-14 05:04:41] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.41.tar.gz tmp/monisha-0.0.42.tar.gz --markdown 20240414/m/monisha/0.0.41-0.0.42/README.md --exclude *.pyd
+[2024-04-14 05:04:41] WARNING root fetch - processPackages [xtquant]: Skipping package: exceeds size limit 39822761>=10485760
+[2024-04-14 05:04:41] INFO root fetch - main [MainThread]: End processing [xtquant] error
+[2024-04-14 05:04:41] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-14 05:04:41] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.145.tar.gz tmp/ansar_connect-0.1.146.tar.gz --markdown 20240414/a/ansar-connect/0.1.145-0.1.146/README.md --exclude *.pyd
+[2024-04-14 05:04:41] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/01/c4/12822970ccf9a79bb2be95ce0aa72cef7f4d03b4d6190ffff0c1c37caab8/nonebot_plugin_reminder-0.4.0.tar.gz
+[2024-04-14 05:04:41] INFO root fetch - processPackages [nonebot-plugin-reminder]: executing diffoscope
+[2024-04-14 05:04:41] INFO root fetch - processPackages [nonebot-plugin-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz tmp/nonebot_plugin_reminder-0.4.0.tar.gz --markdown 20240414/n/nonebot-plugin-reminder/0.3.1.post2-0.4.0/README.md --exclude *.pyd
+[2024-04-14 05:04:41] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.41.tar.gz]
+[2024-04-14 05:04:41] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.42.tar.gz]
+[2024-04-14 05:04:41] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-14 05:04:42] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.145.tar.gz]
+[2024-04-14 05:04:42] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.146.tar.gz]
+[2024-04-14 05:04:42] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-14 05:04:42] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz]
+[2024-04-14 05:04:42] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.4.0.tar.gz]
+[2024-04-14 05:04:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-reminder]: success
+[2024-04-14 05:04:42] INFO root fetch - main [MainThread]: Store serial: [22756294]
