@@ -13250,3 +13250,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:06:59] INFO root fetch - processPackages [h3]: Remove: archive file [/home/abi/fetcher/tmp/h3-4.0.0b4.tar.gz]
 [2024-04-14 20:06:59] INFO root fetch - main [MainThread]: End processing [h3]: success
 [2024-04-14 20:06:59] INFO root fetch - main [MainThread]: Store serial: [22761030]
+[2024-04-14 20:09:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761030]
+[2024-04-14 20:09:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 20:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: struuuctify
+[2024-04-14 20:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretix-plugin-attendance-certificate
+[2024-04-14 20:09:07] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 20:09:07] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/83/85/6da855c63d5b5ee6e293b4460ac70e81cf8a442de4e2bf3e9713780ca14e/pretix_plugin_attendance_certificate-0.1.8.tar.gz
+[2024-04-14 20:09:08] WARNING root fetch - processPackages [struuuctify]: Skipping, unable to determine old version
+[2024-04-14 20:09:08] INFO root fetch - main [MainThread]: End processing [struuuctify] error
+[2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/38/94/454425dade12418ff2b0e28dedb80c7b8467dc0a07ab7b7c013f8ed854c2/pretix_plugin_attendance_certificate-0.1.9.tar.gz
+[2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: executing diffoscope
+[2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix_plugin_attendance_certificate-0.1.8.tar.gz tmp/pretix_plugin_attendance_certificate-0.1.9.tar.gz --markdown 20240414/p/pretix-plugin-attendance-certificate/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Remove: archive file [/home/abi/fetcher/tmp/pretix_plugin_attendance_certificate-0.1.8.tar.gz]
+[2024-04-14 20:09:08] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Remove: archive file [/home/abi/fetcher/tmp/pretix_plugin_attendance_certificate-0.1.9.tar.gz]
+[2024-04-14 20:09:08] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
+[2024-04-14 20:09:08] INFO root fetch - main [MainThread]: Store serial: [22761039]
