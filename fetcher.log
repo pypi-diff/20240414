@@ -4560,3 +4560,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 08:15:23] INFO root fetch - processPackages [odoo12-addon-autovacuum-message-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_autovacuum_message_attachment-12.0.1.1.1.99.dev8-py3-none-any.whl.zip]
 [2024-04-14 08:15:23] INFO root fetch - main [MainThread]: End processing [odoo12-addon-autovacuum-message-attachment]: success
 [2024-04-14 08:15:23] INFO root fetch - main [MainThread]: Store serial: [22756811]
+[2024-04-14 08:17:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756811]
+[2024-04-14 08:17:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 08:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-database-cleanup
+[2024-04-14 08:17:32] INFO root fetch - processPackages [odoo-addon-database-cleanup]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-04-14 08:17:32] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/39/9b/f51448a6e5f70895cf29d4cbfb897f60fb82eca5fb3c4c0593f890a68319/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-14 08:17:32] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Downloading https://files.pythonhosted.org/packages/ab/2c/0c58d54b1107c8b72c37faf27f82cccfdbd5f8024537d0709f5886045156/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl
+[2024-04-14 08:17:33] INFO root fetch - processPackages [odoo-addon-database-cleanup]: executing diffoscope
+[2024-04-14 08:17:33] INFO root fetch - processPackages [odoo-addon-database-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240414/o/odoo-addon-database-cleanup/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-14 08:17:33] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-14 08:17:33] INFO root fetch - processPackages [odoo-addon-database-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_database_cleanup-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-14 08:17:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-database-cleanup]: success
+[2024-04-14 08:17:33] INFO root fetch - main [MainThread]: Store serial: [22756813]
