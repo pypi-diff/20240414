@@ -13659,3 +13659,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 20:41:49] INFO root fetch - processPackages [kerfed.protos]: Remove: archive file [/home/abi/fetcher/tmp/kerfed.protos-1.0.0rc0-py3-none-any.whl.zip]
 [2024-04-14 20:41:49] INFO root fetch - main [MainThread]: End processing [kerfed.protos]: success
 [2024-04-14 20:41:49] INFO root fetch - main [MainThread]: Store serial: [22761168]
+[2024-04-14 20:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761168]
+[2024-04-14 20:43:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ahmedPy
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: caroa04
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colcon-meson
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: provisioner-runtime
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: maxondevelop-package
+[2024-04-14 20:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fhempy
+[2024-04-14 20:43:59] INFO root fetch - processPackages [provisioner-runtime]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-14 20:43:59] INFO root fetch - processPackages [colcon-meson]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-04-14 20:43:59] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/09/6d/62e37ec17838d5015af1a5bff598ad775766940db86c109a8342ff96ccf7/provisioner_runtime-0.1.4-py3-none-any.whl
+[2024-04-14 20:43:59] WARNING root fetch - processPackages [caroa04]: Skipping, unable to determine old version
+[2024-04-14 20:43:59] WARNING root fetch - processPackages [ahmedPy]: Skipping, unable to determine old version
+[2024-04-14 20:43:59] INFO root fetch - main [MainThread]: End processing [caroa04] error
+[2024-04-14 20:43:59] WARNING root fetch - processPackages [maxondevelop-package]: Skipping, unable to determine old version
+[2024-04-14 20:43:59] INFO root fetch - main [MainThread]: End processing [ahmedPy] error
+[2024-04-14 20:43:59] INFO root fetch - main [MainThread]: End processing [maxondevelop-package] error
+[2024-04-14 20:44:00] INFO root fetch - processPackages [colcon-meson]: Downloading https://files.pythonhosted.org/packages/ec/49/4d54cafd18b5dbd7eacbbfd4cd7aa75dd6c17274e3b1ba91a484d02d6ae5/colcon-meson-0.4.4.tar.gz
+[2024-04-14 20:44:00] INFO root fetch - processPackages [provisioner-runtime]: Downloading https://files.pythonhosted.org/packages/85/c9/2d6be16316e18132132ae9972fe6c174f20853f8f2475f5e2a86d38a2dbe/provisioner_runtime-0.1.5-py3-none-any.whl
+[2024-04-14 20:44:00] INFO root fetch - processPackages [provisioner-runtime]: executing diffoscope
+[2024-04-14 20:44:00] INFO root fetch - processPackages [provisioner-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/provisioner_runtime-0.1.4-py3-none-any.whl.zip tmp/provisioner_runtime-0.1.5-py3-none-any.whl.zip --markdown 20240414/p/provisioner-runtime/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-14 20:44:00] INFO root fetch - processPackages [colcon-meson]: Downloading https://files.pythonhosted.org/packages/99/b5/ca96766c437eb9b6448a89ced45ae9f559e68d94d57f4ff0641285acd833/colcon-meson-0.4.5.tar.gz
+[2024-04-14 20:44:00] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-14 20:44:00] INFO root fetch - processPackages [colcon-meson]: executing diffoscope
+[2024-04-14 20:44:00] INFO root fetch - processPackages [colcon-meson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colcon-meson-0.4.4.tar.gz tmp/colcon-meson-0.4.5.tar.gz --markdown 20240414/c/colcon-meson/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-04-14 20:44:00] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-14 20:44:01] INFO root fetch - processPackages [colcon-meson]: Remove: archive file [/home/abi/fetcher/tmp/colcon-meson-0.4.4.tar.gz]
+[2024-04-14 20:44:01] INFO root fetch - processPackages [colcon-meson]: Remove: archive file [/home/abi/fetcher/tmp/colcon-meson-0.4.5.tar.gz]
+[2024-04-14 20:44:01] INFO root fetch - main [MainThread]: End processing [colcon-meson]: success
+[2024-04-14 20:44:01] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.4-py3-none-any.whl.zip]
+[2024-04-14 20:44:01] INFO root fetch - processPackages [provisioner-runtime]: Remove: archive file [/home/abi/fetcher/tmp/provisioner_runtime-0.1.5-py3-none-any.whl.zip]
+[2024-04-14 20:44:01] INFO root fetch - main [MainThread]: End processing [provisioner-runtime]: success
+[2024-04-14 20:44:02] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-14 20:44:02] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-14 20:44:02] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240414/f/fhempy/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-14 20:44:03] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-14 20:44:03] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-14 20:44:03] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-14 20:44:03] INFO root fetch - main [MainThread]: Store serial: [22761189]
