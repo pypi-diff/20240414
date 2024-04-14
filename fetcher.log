@@ -11361,3 +11361,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 17:35:47] INFO root fetch - processPackages [Sentinel-2-band-downloader]: Remove: archive file [/home/abi/fetcher/tmp/sentinel_2_band_downloader-0.3.2.tar.gz]
 [2024-04-14 17:35:47] INFO root fetch - main [MainThread]: End processing [Sentinel-2-band-downloader]: success
 [2024-04-14 17:35:47] INFO root fetch - main [MainThread]: Store serial: [22760265]
+[2024-04-14 17:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760265]
+[2024-04-14 17:37:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 17:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyconn-monitor
+[2024-04-14 17:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nerfw
+[2024-04-14 17:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: outfit418-backup-ratting
+[2024-04-14 17:37:56] INFO root fetch - processPackages [nerfw]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 17:37:56] INFO root fetch - processPackages [pyconn-monitor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 17:37:56] INFO root fetch - processPackages [nerfw]: Downloading https://files.pythonhosted.org/packages/3e/3c/78ff78736a31426ac853d63990c7fb5580028af85513d5f7329c9ed6d69f/nerfw-0.1.3.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [outfit418-backup-ratting]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-14 17:37:56] INFO root fetch - processPackages [pyconn-monitor]: Downloading https://files.pythonhosted.org/packages/4d/0a/b2f7540220918305ef4ea3f085c544f25cbb0f41a94e4700a45f1a8ba57a/pyconn-monitor-0.1.0.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [outfit418-backup-ratting]: Downloading https://files.pythonhosted.org/packages/b7/a5/ea8c518e19da0e25d35b51af80700b429bdbe4162200aae639747fe59121/outfit418_backup_ratting-0.3.0.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [pyconn-monitor]: Downloading https://files.pythonhosted.org/packages/d3/b8/4efd250332cbf30dd3467a7318dd2866d4aa8778704e77bff00916b2f81a/pyconn-monitor-0.1.1.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [nerfw]: Downloading https://files.pythonhosted.org/packages/37/92/4d7a60b96f9e73ce0b5ef4afa6898cfed1b44d6fe911470e611037771eb2/nerfw-0.1.4.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [pyconn-monitor]: executing diffoscope
+[2024-04-14 17:37:56] INFO root fetch - processPackages [pyconn-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyconn-monitor-0.1.0.tar.gz tmp/pyconn-monitor-0.1.1.tar.gz --markdown 20240414/p/pyconn-monitor/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 17:37:56] INFO root fetch - processPackages [outfit418-backup-ratting]: Downloading https://files.pythonhosted.org/packages/5e/68/9e54de79e0df00d8bc889d35b3669ffb521f3cc753bec74e1cb0c5d5e1b0/outfit418_backup_ratting-0.4.0.tar.gz
+[2024-04-14 17:37:56] INFO root fetch - processPackages [nerfw]: executing diffoscope
+[2024-04-14 17:37:56] INFO root fetch - processPackages [nerfw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nerfw-0.1.3.tar.gz tmp/nerfw-0.1.4.tar.gz --markdown 20240414/n/nerfw/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 17:37:56] INFO root fetch - processPackages [outfit418-backup-ratting]: executing diffoscope
+[2024-04-14 17:37:56] INFO root fetch - processPackages [outfit418-backup-ratting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outfit418_backup_ratting-0.3.0.tar.gz tmp/outfit418_backup_ratting-0.4.0.tar.gz --markdown 20240414/o/outfit418-backup-ratting/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-14 17:37:57] INFO root fetch - processPackages [pyconn-monitor]: Remove: archive file [/home/abi/fetcher/tmp/pyconn-monitor-0.1.0.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - processPackages [pyconn-monitor]: Remove: archive file [/home/abi/fetcher/tmp/pyconn-monitor-0.1.1.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - main [MainThread]: End processing [pyconn-monitor]: success
+[2024-04-14 17:37:57] INFO root fetch - processPackages [outfit418-backup-ratting]: Remove: archive file [/home/abi/fetcher/tmp/outfit418_backup_ratting-0.3.0.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - processPackages [outfit418-backup-ratting]: Remove: archive file [/home/abi/fetcher/tmp/outfit418_backup_ratting-0.4.0.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - main [MainThread]: End processing [outfit418-backup-ratting]: success
+[2024-04-14 17:37:57] INFO root fetch - processPackages [nerfw]: Remove: archive file [/home/abi/fetcher/tmp/nerfw-0.1.3.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - processPackages [nerfw]: Remove: archive file [/home/abi/fetcher/tmp/nerfw-0.1.4.tar.gz]
+[2024-04-14 17:37:57] INFO root fetch - main [MainThread]: End processing [nerfw]: success
+[2024-04-14 17:37:57] INFO root fetch - main [MainThread]: Store serial: [22760274]
