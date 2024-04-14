@@ -3159,3 +3159,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 05:19:45] INFO root fetch - processPackages [econdata]: Remove: archive file [/home/abi/fetcher/tmp/econdata-1.0.9.tar.gz]
 [2024-04-14 05:19:45] INFO root fetch - main [MainThread]: End processing [econdata]: success
 [2024-04-14 05:19:45] INFO root fetch - main [MainThread]: Store serial: [22756329]
+[2024-04-14 05:21:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756329]
+[2024-04-14 05:21:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 05:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gixpy
+[2024-04-14 05:21:53] INFO root fetch - processPackages [gixpy]: New version: [1.6] Old Version: [1.5]
+[2024-04-14 05:21:53] INFO root fetch - processPackages [gixpy]: Downloading https://files.pythonhosted.org/packages/61/dd/6fcba8fc5db41af8bbbe18315994d1bb6bdc0d29e47fa4e40e21e5d1e1b8/gixpy-1.5.tar.gz
+[2024-04-14 05:21:54] INFO root fetch - processPackages [gixpy]: Downloading https://files.pythonhosted.org/packages/37/4f/173e1f4ed4ee7f2ac64779fcd62f4e4d4126de4974616147561d4a85ae7f/gixpy-1.6.tar.gz
+[2024-04-14 05:21:54] INFO root fetch - processPackages [gixpy]: executing diffoscope
+[2024-04-14 05:21:54] INFO root fetch - processPackages [gixpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gixpy-1.5.tar.gz tmp/gixpy-1.6.tar.gz --markdown 20240414/g/gixpy/1.5-1.6/README.md --exclude *.pyd
+[2024-04-14 05:21:54] INFO root fetch - processPackages [gixpy]: Remove: archive file [/home/abi/fetcher/tmp/gixpy-1.5.tar.gz]
+[2024-04-14 05:21:54] INFO root fetch - processPackages [gixpy]: Remove: archive file [/home/abi/fetcher/tmp/gixpy-1.6.tar.gz]
+[2024-04-14 05:21:54] INFO root fetch - main [MainThread]: End processing [gixpy]: success
+[2024-04-14 05:21:54] INFO root fetch - main [MainThread]: Store serial: [22756332]
