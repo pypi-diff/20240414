@@ -6128,3 +6128,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:17:43] INFO root fetch - processPackages [chikvdf]: Remove: archive file [/home/abi/fetcher/tmp/chikvdf-1.1.4.tar.gz]
 [2024-04-14 11:17:43] INFO root fetch - main [MainThread]: End processing [chikvdf]: success
 [2024-04-14 11:17:43] INFO root fetch - main [MainThread]: Store serial: [22757584]
+[2024-04-14 11:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757584]
+[2024-04-14 11:19:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 11:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-bilichat
+[2024-04-14 11:19:55] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [5.5.0] Old Version: [5.4.2]
+[2024-04-14 11:19:55] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/a3/2f/ae805999b6bf4c3a27797273c8003b07ca10b74f71332e98e82c774fa08e/nonebot_plugin_bilichat-5.4.2.tar.gz
+[2024-04-14 11:19:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/8d/d0/48655e6b86a314038c74579349b12ab02d49331496141b5415b139cdd3fd/nonebot_plugin_bilichat-5.5.0.tar.gz
+[2024-04-14 11:19:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2024-04-14 11:19:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-5.4.2.tar.gz tmp/nonebot_plugin_bilichat-5.5.0.tar.gz --markdown 20240414/n/nonebot-plugin-bilichat/5.4.2-5.5.0/README.md --exclude *.pyd
+[2024-04-14 11:19:57] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.4.2.tar.gz]
+[2024-04-14 11:19:57] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.5.0.tar.gz]
+[2024-04-14 11:19:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2024-04-14 11:19:57] INFO root fetch - main [MainThread]: Store serial: [22757587]
