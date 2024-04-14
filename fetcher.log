@@ -10643,3 +10643,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:49:25] INFO root fetch - processPackages [testasteca]: Remove: archive file [/home/abi/fetcher/tmp/testasteca-0.5.3.tar.gz]
 [2024-04-14 16:49:25] INFO root fetch - main [MainThread]: End processing [testasteca]: success
 [2024-04-14 16:49:25] INFO root fetch - main [MainThread]: Store serial: [22759915]
+[2024-04-14 16:51:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759915]
+[2024-04-14 16:51:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-skill-date-time
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kucoin-futures-lib
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dune-rivals
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: noble-tls
+[2024-04-14 16:51:34] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 16:51:34] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ovos-skill-date-time]: New version: [0.2.3a8] Old Version: [0.2.3a7]
+[2024-04-14 16:51:34] INFO root fetch - processPackages [kucoin-futures-lib]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-14 16:51:34] INFO root fetch - processPackages [noble-tls]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ovos-skill-date-time]: Downloading https://files.pythonhosted.org/packages/2a/e9/cf38162836f9ba822f1716afcd10b2a48f9af516cd898333e0de96a076ea/ovos_skill_date_time-0.2.3a7-py3-none-any.whl
+[2024-04-14 16:51:34] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 16:51:34] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/5d/eb/71e3dc106cc0416cabaf6da1adf160c29249cbdf7caed2c9e285d84f0100/kucoin_futures_lib-0.8.0.tar.gz
+[2024-04-14 16:51:34] INFO root fetch - processPackages [noble-tls]: Downloading https://files.pythonhosted.org/packages/64/58/c2b323975170c6ed5eb623dbb1b20e5ce0aa990ae9c39289177114729505/noble_tls-0.0.98.tar.gz
+[2024-04-14 16:51:34] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 16:51:34] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 16:51:34] INFO root fetch - processPackages [ovos-skill-date-time]: Downloading https://files.pythonhosted.org/packages/e9/f5/d427d2ae29124cb05fb42293def237c9034b97c01e588da8b27265955029/ovos_skill_date_time-0.2.3a8-py3-none-any.whl
+[2024-04-14 16:51:34] INFO root fetch - processPackages [kucoin-futures-lib]: Downloading https://files.pythonhosted.org/packages/4a/b4/b024a06fa2177409013f4772c2c5e89aece2041a394861c64c2312756ebf/kucoin_futures_lib-0.9.0.tar.gz
+[2024-04-14 16:51:35] INFO root fetch - processPackages [noble-tls]: Downloading https://files.pythonhosted.org/packages/cc/c6/c832765fe542ea91a0174c603c868775016cff6e8a5bf86720685a0ea859/noble_tls-0.0.99.tar.gz
+[2024-04-14 16:51:35] INFO root fetch - processPackages [ovos-skill-date-time]: executing diffoscope
+[2024-04-14 16:51:35] INFO root fetch - processPackages [ovos-skill-date-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_date_time-0.2.3a7-py3-none-any.whl.zip tmp/ovos_skill_date_time-0.2.3a8-py3-none-any.whl.zip --markdown 20240414/o/ovos-skill-date-time/0.2.3a7-0.2.3a8/README.md --exclude *.pyd
+[2024-04-14 16:51:35] INFO root fetch - processPackages [kucoin-futures-lib]: executing diffoscope
+[2024-04-14 16:51:35] INFO root fetch - processPackages [kucoin-futures-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kucoin_futures_lib-0.8.0.tar.gz tmp/kucoin_futures_lib-0.9.0.tar.gz --markdown 20240414/k/kucoin-futures-lib/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-14 16:51:35] INFO root fetch - processPackages [noble-tls]: executing diffoscope
+[2024-04-14 16:51:35] INFO root fetch - processPackages [noble-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noble_tls-0.0.98.tar.gz tmp/noble_tls-0.0.99.tar.gz --markdown 20240414/n/noble-tls/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-14 16:51:35] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 16:51:35] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.8.0.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - processPackages [kucoin-futures-lib]: Remove: archive file [/home/abi/fetcher/tmp/kucoin_futures_lib-0.9.0.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - main [MainThread]: End processing [kucoin-futures-lib]: success
+[2024-04-14 16:51:35] INFO root fetch - processPackages [noble-tls]: Remove: archive file [/home/abi/fetcher/tmp/noble_tls-0.0.98.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - processPackages [noble-tls]: Remove: archive file [/home/abi/fetcher/tmp/noble_tls-0.0.99.tar.gz]
+[2024-04-14 16:51:35] INFO root fetch - main [MainThread]: End processing [noble-tls]: success
+[2024-04-14 16:51:36] INFO root fetch - processPackages [ovos-skill-date-time]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_date_time-0.2.3a7-py3-none-any.whl.zip]
+[2024-04-14 16:51:36] INFO root fetch - processPackages [ovos-skill-date-time]: Remove: archive file [/home/abi/fetcher/tmp/ovos_skill_date_time-0.2.3a8-py3-none-any.whl.zip]
+[2024-04-14 16:51:36] INFO root fetch - main [MainThread]: End processing [ovos-skill-date-time]: success
+[2024-04-14 16:51:36] INFO root fetch - main [MainThread]: Store serial: [22759926]
