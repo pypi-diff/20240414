@@ -14642,3 +14642,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 21:45:31] WARNING root fetch - processPackages [zaku]: Skipping, unable to determine old version
 [2024-04-14 21:45:31] INFO root fetch - main [MainThread]: End processing [zaku] error
 [2024-04-14 21:45:31] INFO root fetch - main [MainThread]: Store serial: [22761926]
+[2024-04-14 21:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22761926]
+[2024-04-14 21:47:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 21:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cynetdiff
+[2024-04-14 21:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GP8XXX-IIC
+[2024-04-14 21:47:40] INFO root fetch - processPackages [GP8XXX-IIC]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-14 21:47:40] INFO root fetch - processPackages [cynetdiff]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 21:47:40] INFO root fetch - processPackages [GP8XXX-IIC]: Downloading https://files.pythonhosted.org/packages/fe/26/cfdfbf210fe534c9a24ee694c165aec3ae096b71f33694602476a5ee9a60/GP8XXX_IIC-0.0.3.tar.gz
+[2024-04-14 21:47:40] INFO root fetch - processPackages [cynetdiff]: Downloading https://files.pythonhosted.org/packages/99/58/9587d98e22f845c3d3bf3021a5f276af34ed00486be48947751c66768de1/cynetdiff-0.1.8.tar.gz
+[2024-04-14 21:47:40] INFO root fetch - processPackages [GP8XXX-IIC]: Downloading https://files.pythonhosted.org/packages/5d/c2/69c4376f70e8523a54fc2f6d6588fd23587a24b3f6eba7ec00332731c22e/GP8XXX_IIC-0.0.4.tar.gz
+[2024-04-14 21:47:41] INFO root fetch - processPackages [cynetdiff]: Downloading https://files.pythonhosted.org/packages/e7/ce/ab41ce041dbbf4ecd0e9bcb4ad282ffb19b8cdb3aa9ef0d124d08ddfd70f/cynetdiff-0.1.9.tar.gz
+[2024-04-14 21:47:41] INFO root fetch - processPackages [GP8XXX-IIC]: executing diffoscope
+[2024-04-14 21:47:41] INFO root fetch - processPackages [GP8XXX-IIC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GP8XXX_IIC-0.0.3.tar.gz tmp/GP8XXX_IIC-0.0.4.tar.gz --markdown 20240414/G/GP8XXX-IIC/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-14 21:47:41] INFO root fetch - processPackages [cynetdiff]: executing diffoscope
+[2024-04-14 21:47:41] INFO root fetch - processPackages [cynetdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cynetdiff-0.1.8.tar.gz tmp/cynetdiff-0.1.9.tar.gz --markdown 20240414/c/cynetdiff/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 21:47:41] INFO root fetch - processPackages [GP8XXX-IIC]: Remove: archive file [/home/abi/fetcher/tmp/GP8XXX_IIC-0.0.3.tar.gz]
+[2024-04-14 21:47:41] INFO root fetch - processPackages [GP8XXX-IIC]: Remove: archive file [/home/abi/fetcher/tmp/GP8XXX_IIC-0.0.4.tar.gz]
+[2024-04-14 21:47:41] INFO root fetch - main [MainThread]: End processing [GP8XXX-IIC]: success
+[2024-04-14 21:47:43] INFO root fetch - processPackages [cynetdiff]: Remove: archive file [/home/abi/fetcher/tmp/cynetdiff-0.1.8.tar.gz]
+[2024-04-14 21:47:43] INFO root fetch - processPackages [cynetdiff]: Remove: archive file [/home/abi/fetcher/tmp/cynetdiff-0.1.9.tar.gz]
+[2024-04-14 21:47:43] INFO root fetch - main [MainThread]: End processing [cynetdiff]: success
+[2024-04-14 21:47:43] INFO root fetch - main [MainThread]: Store serial: [22761932]
