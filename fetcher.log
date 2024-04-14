@@ -8760,3 +8760,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 14:26:32] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev2.tar.gz]
 [2024-04-14 14:26:32] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
 [2024-04-14 14:26:32] INFO root fetch - main [MainThread]: Store serial: [22758854]
+[2024-04-14 14:28:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758854]
+[2024-04-14 14:28:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 14:28:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyastroweatherio
+[2024-04-14 14:28:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtrc
+[2024-04-14 14:28:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hgraph
+[2024-04-14 14:28:48] INFO root fetch - processPackages [dtrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 14:28:48] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev2] Old Version: [0.43.1.dev1]
+[2024-04-14 14:28:48] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/84/76/09893e2bb8c9673a5a810aa33d1f3e2fad5691566cdc67af1e456f5df742/dtrc-0.0.8.tar.gz
+[2024-04-14 14:28:48] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/98/d6/6f5ffdbed2251eeaea5d6b4baca1107420e4dd346c50288700625cb0c5b9/pyastroweatherio-0.43.1.dev1.tar.gz
+[2024-04-14 14:28:48] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-14 14:28:48] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/1d/0d/b26e24492a2141328a018620f30bbb36c89a4a7b314ca1f628824a0748a2/dtrc-0.0.9.tar.gz
+[2024-04-14 14:28:48] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/45/c9/3b29afbcda3a48ad1e28cc9f15f48dbc1b18a5a1f84696abea6e36585c17/pyastroweatherio-0.43.1.dev2.tar.gz
+[2024-04-14 14:28:48] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-04-14 14:28:48] INFO root fetch - processPackages [dtrc]: executing diffoscope
+[2024-04-14 14:28:48] INFO root fetch - processPackages [dtrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtrc-0.0.8.tar.gz tmp/dtrc-0.0.9.tar.gz --markdown 20240414/d/dtrc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 14:28:48] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-14 14:28:48] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev1.tar.gz tmp/pyastroweatherio-0.43.1.dev2.tar.gz --markdown 20240414/p/pyastroweatherio/0.43.1.dev1-0.43.1.dev2/README.md --exclude *.pyd
+[2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/7f/9c/996a318a9587743acfaa46c065f33086180b42f61f85bab66117a506ec53/hgraph-0.2.9-py3-none-any.whl
+[2024-04-14 14:28:49] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev1.tar.gz]
+[2024-04-14 14:28:49] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev2.tar.gz]
+[2024-04-14 14:28:49] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9-py3-none-any.whl.zip --markdown 20240414/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-14 14:28:49] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.8.tar.gz]
+[2024-04-14 14:28:49] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.9.tar.gz]
+[2024-04-14 14:28:49] INFO root fetch - main [MainThread]: End processing [dtrc]: success
+[2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-04-14 14:28:49] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9-py3-none-any.whl.zip]
+[2024-04-14 14:28:49] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-04-14 14:28:49] INFO root fetch - main [MainThread]: Store serial: [22758860]
