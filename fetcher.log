@@ -9450,3 +9450,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:21:20] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.9.tar.gz]
 [2024-04-14 15:21:20] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2024-04-14 15:21:20] INFO root fetch - main [MainThread]: Store serial: [22759129]
+[2024-04-14 15:23:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759129]
+[2024-04-14 15:23:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 15:23:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func-bk
+[2024-04-14 15:23:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jgtutils
+[2024-04-14 15:23:36] INFO root fetch - processPackages [jgtutils]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-14 15:23:36] ERROR root fetch - processPackages [func-bk]: Unable to get metadata: No such project 'func-bk'
+[2024-04-14 15:23:36] INFO root fetch - main [MainThread]: End processing [func-bk] error
+[2024-04-14 15:23:36] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/ee/d4/1cb29a66e4aa00eb41fd8957e8d9aa5b76a4e4692cc4451435fec35c6f89/jgtutils-0.1.7.tar.gz
+[2024-04-14 15:23:36] INFO root fetch - processPackages [jgtutils]: Downloading https://files.pythonhosted.org/packages/be/6b/adc1d3f4202ad63ed3fc48053d7178e22a77fdd1ae417e2a2dd4cd2b9f38/jgtutils-0.1.8.tar.gz
+[2024-04-14 15:23:36] INFO root fetch - processPackages [jgtutils]: executing diffoscope
+[2024-04-14 15:23:36] INFO root fetch - processPackages [jgtutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtutils-0.1.7.tar.gz tmp/jgtutils-0.1.8.tar.gz --markdown 20240414/j/jgtutils/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-14 15:23:37] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.7.tar.gz]
+[2024-04-14 15:23:37] INFO root fetch - processPackages [jgtutils]: Remove: archive file [/home/abi/fetcher/tmp/jgtutils-0.1.8.tar.gz]
+[2024-04-14 15:23:37] INFO root fetch - main [MainThread]: End processing [jgtutils]: success
+[2024-04-14 15:23:37] INFO root fetch - main [MainThread]: Store serial: [22759135]
