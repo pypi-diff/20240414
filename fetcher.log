@@ -12576,3 +12576,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 19:05:15] INFO root fetch - processPackages [codegreen]: Remove: archive file [/home/abi/fetcher/tmp/codegreen-0.1.9.tar.gz]
 [2024-04-14 19:05:15] INFO root fetch - main [MainThread]: End processing [codegreen]: success
 [2024-04-14 19:05:15] INFO root fetch - main [MainThread]: Store serial: [22760675]
+[2024-04-14 19:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760675]
+[2024-04-14 19:07:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 19:09:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760675]
+[2024-04-14 19:09:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-14 19:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22760675]
+[2024-04-14 19:11:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-14 19:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2024-04-14 19:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exchanges-wrapper
+[2024-04-14 19:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycvodes
+[2024-04-14 19:11:34] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.33.1.dev20240412] Old Version: [1.33.1.dev20240409]
+[2024-04-14 19:11:34] INFO root fetch - processPackages [pycvodes]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-14 19:11:34] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/7f/aa/1d480a6018bf5f024cc578209f490300653d29a164218e3560141cf86408/streamlit-nightly-1.33.1.dev20240409.tar.gz
+[2024-04-14 19:11:34] INFO root fetch - processPackages [exchanges-wrapper]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-14 19:11:34] INFO root fetch - processPackages [pycvodes]: Downloading https://files.pythonhosted.org/packages/2a/af/13c58199f7ea1a887ebf539dc0e4231afbb4372a6c898562bca6daddcb3b/pycvodes-0.9.1.tar.gz
+[2024-04-14 19:11:34] INFO root fetch - processPackages [exchanges-wrapper]: Downloading https://files.pythonhosted.org/packages/46/33/e6d19730f59ca833c5721e7a4c1695c97cb5c1a1de95ddd50bcf1df8e18a/exchanges_wrapper-2.1.8.tar.gz
+[2024-04-14 19:11:35] INFO root fetch - processPackages [pycvodes]: Downloading https://files.pythonhosted.org/packages/cf/1a/ec724799411a106e2f612db1c20cd9ccedf642549d5877a26caad7cc67e9/pycvodes-0.9.2.tar.gz
+[2024-04-14 19:11:35] INFO root fetch - processPackages [exchanges-wrapper]: Downloading https://files.pythonhosted.org/packages/ff/a0/f4da17fd280747e485a819a01ca94b415d48601964b2dc7c2577ffcf11ca/exchanges_wrapper-2.1.9.tar.gz
+[2024-04-14 19:11:35] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/d4/2d/5fe5e545e8c8fb3df79fc7ca5bd573c721464b32c237d1427e5047ef2644/streamlit-nightly-1.33.1.dev20240412.tar.gz
+[2024-04-14 19:11:35] INFO root fetch - processPackages [exchanges-wrapper]: executing diffoscope
+[2024-04-14 19:11:35] INFO root fetch - processPackages [exchanges-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exchanges_wrapper-2.1.8.tar.gz tmp/exchanges_wrapper-2.1.9.tar.gz --markdown 20240414/e/exchanges-wrapper/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-14 19:11:35] INFO root fetch - processPackages [pycvodes]: executing diffoscope
+[2024-04-14 19:11:35] INFO root fetch - processPackages [pycvodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycvodes-0.9.1.tar.gz tmp/pycvodes-0.9.2.tar.gz --markdown 20240414/p/pycvodes/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-14 19:11:35] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-04-14 19:11:35] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.33.1.dev20240409.tar.gz tmp/streamlit-nightly-1.33.1.dev20240412.tar.gz --markdown 20240414/s/streamlit-nightly/1.33.1.dev20240409-1.33.1.dev20240412/README.md --exclude *.pyd
+[2024-04-14 19:11:36] INFO root fetch - processPackages [exchanges-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/exchanges_wrapper-2.1.8.tar.gz]
+[2024-04-14 19:11:36] INFO root fetch - processPackages [exchanges-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/exchanges_wrapper-2.1.9.tar.gz]
+[2024-04-14 19:11:36] INFO root fetch - main [MainThread]: End processing [exchanges-wrapper]: success
+[2024-04-14 19:11:36] INFO root fetch - processPackages [pycvodes]: Remove: archive file [/home/abi/fetcher/tmp/pycvodes-0.9.1.tar.gz]
+[2024-04-14 19:11:36] INFO root fetch - processPackages [pycvodes]: Remove: archive file [/home/abi/fetcher/tmp/pycvodes-0.9.2.tar.gz]
+[2024-04-14 19:11:36] INFO root fetch - main [MainThread]: End processing [pycvodes]: success
+[2024-04-14 19:12:04] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240409.tar.gz]
+[2024-04-14 19:12:04] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240412.tar.gz]
+[2024-04-14 19:12:04] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-04-14 19:12:04] INFO root fetch - main [MainThread]: Store serial: [22760683]
