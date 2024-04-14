@@ -10294,3 +10294,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:19:44] INFO root fetch - processPackages [a2y-mew]: Remove: archive file [/home/abi/fetcher/tmp/a2y_mew-0.9.5-cp38-cp38-win_amd64.whl.zip]
 [2024-04-14 16:19:44] INFO root fetch - main [MainThread]: End processing [a2y-mew]: success
 [2024-04-14 16:19:44] INFO root fetch - main [MainThread]: Store serial: [22759585]
+[2024-04-14 16:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759585]
+[2024-04-14 16:22:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 16:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dune-rivals
+[2024-04-14 16:22:00] INFO root fetch - processPackages [dune-rivals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 16:22:00] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/b9/8a/19063585af4874dc35e1942bef683a14946401aeef928eeac21c9a447eb8/dune_rivals-0.3.8.tar.gz
+[2024-04-14 16:22:00] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/49/3e/2f69ffc74d1dc71eda7b59dc0b444c75abb71577c59cc908d4ab4b769ef1/dune_rivals-0.3.9.tar.gz
+[2024-04-14 16:22:01] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-04-14 16:22:01] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.3.8.tar.gz tmp/dune_rivals-0.3.9.tar.gz --markdown 20240414/d/dune-rivals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 16:22:01] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.8.tar.gz]
+[2024-04-14 16:22:01] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.3.9.tar.gz]
+[2024-04-14 16:22:01] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-04-14 16:22:01] INFO root fetch - main [MainThread]: Store serial: [22759590]
