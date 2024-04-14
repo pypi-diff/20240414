@@ -2194,3 +2194,15 @@
 [2024-04-14 03:19:07] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-04-14 03:19:07] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-04-14 03:19:07] INFO root fetch - main [MainThread]: Store serial: [22756019]
+[2024-04-14 03:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756019]
+[2024-04-14 03:21:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiogram-newsletter
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: Downloading https://files.pythonhosted.org/packages/27/79/4fb670c1974e5ab892d1dd4bae30cd55d66bb5828c50e0405ee094dd574f/aiogram-newsletter-0.0.8.tar.gz
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: Downloading https://files.pythonhosted.org/packages/c9/8d/464305a86b6076ab74dbb6473e547a548dd6e86119346d7055dbd671cfe0/aiogram-newsletter-0.0.9.tar.gz
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: executing diffoscope
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-newsletter-0.0.8.tar.gz tmp/aiogram-newsletter-0.0.9.tar.gz --markdown 20240414/a/aiogram-newsletter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-newsletter-0.0.8.tar.gz]
+[2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-newsletter-0.0.9.tar.gz]
+[2024-04-14 03:21:18] INFO root fetch - main [MainThread]: End processing [aiogram-newsletter]: success
+[2024-04-14 03:21:18] INFO root fetch - main [MainThread]: Store serial: [22756022]
