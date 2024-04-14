@@ -10329,3 +10329,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 16:26:24] INFO root fetch - processPackages [seastate]: Remove: archive file [/home/abi/fetcher/tmp/seastate-0.2.1.tar.gz]
 [2024-04-14 16:26:24] INFO root fetch - main [MainThread]: End processing [seastate]: success
 [2024-04-14 16:26:24] INFO root fetch - main [MainThread]: Store serial: [22759596]
+[2024-04-14 16:28:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759596]
+[2024-04-14 16:28:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-revealjs
+[2024-04-14 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: r3xa
+[2024-04-14 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tum_esm_utils
+[2024-04-14 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-ghtiles
+[2024-04-14 16:28:40] INFO root fetch - processPackages [sphinx-revealjs]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-14 16:28:40] WARNING root fetch - processPackages [r3xa]: Skipping, unable to determine old version
+[2024-04-14 16:28:40] INFO root fetch - main [MainThread]: End processing [r3xa] error
+[2024-04-14 16:28:40] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 16:28:40] INFO root fetch - processPackages [tum_esm_utils]: New version: [2.0.0] Old Version: [1.9.2]
+[2024-04-14 16:28:40] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Downloading https://files.pythonhosted.org/packages/73/83/65a6a27f9ffb94245e6d046b1118d0260b60afd2aeb44235591f1612fd49/nonebot_plugin_ghtiles-0.1.3.tar.gz
+[2024-04-14 16:28:40] INFO root fetch - processPackages [sphinx-revealjs]: Downloading https://files.pythonhosted.org/packages/e3/57/558f80ca45d114a03caa4d430261828eff90b6d8f78ef06557f7c1ebe520/sphinx_revealjs-3.0.0.tar.gz
+[2024-04-14 16:28:40] INFO root fetch - processPackages [tum_esm_utils]: Downloading https://files.pythonhosted.org/packages/cd/60/bffbcf05cdb7cf7e71f239b06fe0cb097a2dda3481ffaff24f2df8bb13c6/tum_esm_utils-1.9.2.tar.gz
+[2024-04-14 16:28:41] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Downloading https://files.pythonhosted.org/packages/bb/2c/1df54a0335ec31ace235ba117b3742d9bf40008252b2821de25b0ba35d5f/nonebot_plugin_ghtiles-0.1.4.tar.gz
+[2024-04-14 16:28:41] INFO root fetch - processPackages [tum_esm_utils]: Downloading https://files.pythonhosted.org/packages/1f/fc/f99374effd94caac0c22a3b6ac0750f11aca652167ec91477c3678cc8449/tum_esm_utils-2.0.0.tar.gz
+[2024-04-14 16:28:41] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: executing diffoscope
+[2024-04-14 16:28:41] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ghtiles-0.1.3.tar.gz tmp/nonebot_plugin_ghtiles-0.1.4.tar.gz --markdown 20240414/n/nonebot-plugin-ghtiles/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 16:28:41] INFO root fetch - processPackages [sphinx-revealjs]: Downloading https://files.pythonhosted.org/packages/38/6f/7df602490e9b31b66ae800812dcc7263997b538fe899be04178036d9ca3b/sphinx_revealjs-3.0.1.tar.gz
+[2024-04-14 16:28:41] INFO root fetch - processPackages [tum_esm_utils]: executing diffoscope
+[2024-04-14 16:28:41] INFO root fetch - processPackages [tum_esm_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tum_esm_utils-1.9.2.tar.gz tmp/tum_esm_utils-2.0.0.tar.gz --markdown 20240414/t/tum_esm_utils/1.9.2-2.0.0/README.md --exclude *.pyd
+[2024-04-14 16:28:41] INFO root fetch - processPackages [sphinx-revealjs]: executing diffoscope
+[2024-04-14 16:28:41] INFO root fetch - processPackages [sphinx-revealjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_revealjs-3.0.0.tar.gz tmp/sphinx_revealjs-3.0.1.tar.gz --markdown 20240414/s/sphinx-revealjs/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-14 16:28:41] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ghtiles-0.1.3.tar.gz]
+[2024-04-14 16:28:41] INFO root fetch - processPackages [nonebot-plugin-ghtiles]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ghtiles-0.1.4.tar.gz]
+[2024-04-14 16:28:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ghtiles]: success
+[2024-04-14 16:28:42] INFO root fetch - processPackages [tum_esm_utils]: Remove: archive file [/home/abi/fetcher/tmp/tum_esm_utils-1.9.2.tar.gz]
+[2024-04-14 16:28:42] INFO root fetch - processPackages [tum_esm_utils]: Remove: archive file [/home/abi/fetcher/tmp/tum_esm_utils-2.0.0.tar.gz]
+[2024-04-14 16:28:42] INFO root fetch - main [MainThread]: End processing [tum_esm_utils]: success
+[2024-04-14 16:28:48] INFO root fetch - processPackages [sphinx-revealjs]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_revealjs-3.0.0.tar.gz]
+[2024-04-14 16:28:48] INFO root fetch - processPackages [sphinx-revealjs]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_revealjs-3.0.1.tar.gz]
+[2024-04-14 16:28:48] INFO root fetch - main [MainThread]: End processing [sphinx-revealjs]: success
+[2024-04-14 16:28:48] INFO root fetch - main [MainThread]: Store serial: [22759609]
