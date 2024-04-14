@@ -14795,3 +14795,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:00:48] INFO root fetch - processPackages [usearch]: Remove: archive file [/home/abi/fetcher/tmp/usearch-2.9.2-cp39-cp39-win_amd64.whl.zip]
 [2024-04-14 22:00:48] INFO root fetch - main [MainThread]: End processing [usearch]: success
 [2024-04-14 22:00:48] INFO root fetch - main [MainThread]: Store serial: [22762015]
+[2024-04-14 22:02:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762015]
+[2024-04-14 22:02:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: librecell-common
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: WuttJamaican
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: librecell-layout
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: librecell-lib
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: librecell
+[2024-04-14 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: piwiPre
+[2024-04-14 22:02:56] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-14 22:02:56] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-14 22:02:56] INFO root fetch - processPackages [piwiPre]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-14 22:02:56] INFO root fetch - processPackages [WuttJamaican]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-14 22:02:56] INFO root fetch - processPackages [librecell-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:02:56] INFO root fetch - processPackages [librecell-common]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:02:56] INFO root fetch - processPackages [librecell]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:02:56] INFO root fetch - processPackages [librecell-layout]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:02:57] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/ad/fc/9cf4c3c37cd2895067bd93495f09c783b2a9d4650f43ea0506b7b50e1f67/piwiPre-0.8.4.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-lib]: Downloading https://files.pythonhosted.org/packages/31/c6/aff67e54ed077602281c0cb6a434425bbd4b6bad86bbd2636ffa4c7ee297/librecell-lib-0.0.8.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-layout]: Downloading https://files.pythonhosted.org/packages/d5/92/e10f0098a1009aa854fd25a272d8e9d83d50bf1623b2e226f3f06d477d7c/librecell-layout-0.0.8.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [WuttJamaican]: Downloading https://files.pythonhosted.org/packages/6e/fb/9eb9da2d1e88a17f17bdfbb3ee8e54e10b86bc6b409af31e541862660a9c/WuttJamaican-0.1.8.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-common]: Downloading https://files.pythonhosted.org/packages/60/7e/bffbac14548fff8b5b9e1bf411d0ae05ea51728384cd099f4f24fc034012/librecell-common-0.0.8.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell]: Downloading https://files.pythonhosted.org/packages/ea/4b/605f3437905259b90574ed85aa76e49f15d852ff62c85a632910bc78a88a/librecell-0.0.8.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [piwiPre]: Downloading https://files.pythonhosted.org/packages/e7/59/c5cfd3133f61e11e92c5834c1ac8dde4bd134a5d7fb13d632d1efa6ef294/piwiPre-0.8.5.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-lib]: Downloading https://files.pythonhosted.org/packages/49/f6/0843607d79c259a4fa2c6cfc2636f4d1498b0722cbb7336d7b96af4d6f1c/librecell-lib-0.0.9.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-layout]: Downloading https://files.pythonhosted.org/packages/7b/a0/eadc736e5d9c5190f3e53f1891306a9b6ed1cfb6420eddc490d03c571766/librecell-layout-0.0.9.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [piwiPre]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [piwiPre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piwiPre-0.8.4.tar.gz tmp/piwiPre-0.8.5.tar.gz --markdown 20240414/p/piwiPre/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell]: Downloading https://files.pythonhosted.org/packages/8a/58/eb4ff3f473687ed975d21b37259f5137701bf74a7a6e096e2cfeedd8e783/librecell-0.0.9.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [WuttJamaican]: Downloading https://files.pythonhosted.org/packages/1f/09/8a0924891f1784a5eaafb6e7e2323d21dbbbf6c06652be301fc77750ea77/WuttJamaican-0.1.9.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-common]: Downloading https://files.pythonhosted.org/packages/62/08/f1024c3fcef865b7786b9ad1f17a9bc96f10dbee9168880d749d6128680f/librecell-common-0.0.9.tar.gz
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-lib]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-lib-0.0.8.tar.gz tmp/librecell-lib-0.0.9.tar.gz --markdown 20240414/l/librecell-lib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-layout]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-layout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-layout-0.0.8.tar.gz tmp/librecell-layout-0.0.9.tar.gz --markdown 20240414/l/librecell-layout/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:02:57] INFO root fetch - processPackages [WuttJamaican]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [WuttJamaican]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WuttJamaican-0.1.8.tar.gz tmp/WuttJamaican-0.1.9.tar.gz --markdown 20240414/W/WuttJamaican/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-0.0.8.tar.gz tmp/librecell-0.0.9.tar.gz --markdown 20240414/l/librecell/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-common]: executing diffoscope
+[2024-04-14 22:02:57] INFO root fetch - processPackages [librecell-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librecell-common-0.0.8.tar.gz tmp/librecell-common-0.0.9.tar.gz --markdown 20240414/l/librecell-common/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:02:58] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.4.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [piwiPre]: Remove: archive file [/home/abi/fetcher/tmp/piwiPre-0.8.5.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [piwiPre]: success
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-common]: Remove: archive file [/home/abi/fetcher/tmp/librecell-common-0.0.8.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-common]: Remove: archive file [/home/abi/fetcher/tmp/librecell-common-0.0.9.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [librecell-common]: success
+[2024-04-14 22:02:58] INFO root fetch - processPackages [WuttJamaican]: Remove: archive file [/home/abi/fetcher/tmp/WuttJamaican-0.1.8.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [WuttJamaican]: Remove: archive file [/home/abi/fetcher/tmp/WuttJamaican-0.1.9.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [WuttJamaican]: success
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-lib]: Remove: archive file [/home/abi/fetcher/tmp/librecell-lib-0.0.8.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-lib]: Remove: archive file [/home/abi/fetcher/tmp/librecell-lib-0.0.9.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [librecell-lib]: success
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell]: Remove: archive file [/home/abi/fetcher/tmp/librecell-0.0.8.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell]: Remove: archive file [/home/abi/fetcher/tmp/librecell-0.0.9.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [librecell]: success
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-layout]: Remove: archive file [/home/abi/fetcher/tmp/librecell-layout-0.0.8.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - processPackages [librecell-layout]: Remove: archive file [/home/abi/fetcher/tmp/librecell-layout-0.0.9.tar.gz]
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: End processing [librecell-layout]: success
+[2024-04-14 22:02:58] INFO root fetch - main [MainThread]: Store serial: [22762047]
