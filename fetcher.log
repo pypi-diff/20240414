@@ -8056,3 +8056,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:35:18] WARNING root fetch - processPackages [fingerprintMatcher]: Skipping, unable to determine old version
 [2024-04-14 13:35:18] INFO root fetch - main [MainThread]: End processing [fingerprintMatcher] error
 [2024-04-14 13:35:18] INFO root fetch - main [MainThread]: Store serial: [22758533]
+[2024-04-14 13:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758533]
+[2024-04-14 13:37:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcmb
+[2024-04-14 13:37:35] INFO root fetch - processPackages [tcmb]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-14 13:37:35] INFO root fetch - processPackages [tcmb]: Downloading https://files.pythonhosted.org/packages/e3/af/87a405b167589b962cb304f9f6bda43d0e22c94e6ae34708387f12c192fd/tcmb-0.3.0.tar.gz
+[2024-04-14 13:37:35] INFO root fetch - processPackages [tcmb]: Downloading https://files.pythonhosted.org/packages/83/a3/7006ab486805d034691c71ec973346564a1188fb4da674855e7bc5a649f7/tcmb-0.4.0.tar.gz
+[2024-04-14 13:37:35] INFO root fetch - processPackages [tcmb]: executing diffoscope
+[2024-04-14 13:37:35] INFO root fetch - processPackages [tcmb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcmb-0.3.0.tar.gz tmp/tcmb-0.4.0.tar.gz --markdown 20240414/t/tcmb/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-14 13:38:28] INFO root fetch - processPackages [tcmb]: Remove: archive file [/home/abi/fetcher/tmp/tcmb-0.3.0.tar.gz]
+[2024-04-14 13:38:28] INFO root fetch - processPackages [tcmb]: Remove: archive file [/home/abi/fetcher/tmp/tcmb-0.4.0.tar.gz]
+[2024-04-14 13:38:28] INFO root fetch - main [MainThread]: End processing [tcmb]: success
+[2024-04-14 13:38:28] INFO root fetch - main [MainThread]: Store serial: [22758536]
