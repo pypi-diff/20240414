@@ -7689,3 +7689,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:07:55] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240414.260.tar.gz]
 [2024-04-14 13:07:55] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-04-14 13:07:55] INFO root fetch - main [MainThread]: Store serial: [22758347]
+[2024-04-14 13:10:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758347]
+[2024-04-14 13:10:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jgtpy
+[2024-04-14 13:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode2
+[2024-04-14 13:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sigr
+[2024-04-14 13:10:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: THISDLChatBot
+[2024-04-14 13:10:12] INFO root fetch - processPackages [THISDLChatBot]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-14 13:10:12] INFO root fetch - processPackages [jgtpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-14 13:10:12] INFO root fetch - processPackages [bencode2]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-14 13:10:12] INFO root fetch - processPackages [sigr]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 13:10:12] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/60/b5/888f160495ee80ba1657e52a606a803f54fbfa062fe5a4d1d58fd9dc9141/jgtpy-0.4.8.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/a8/71/87dfa4f1f8f9dd3c7aa70cbfc4cf6690c5cf16a1a3a00bf655b0f66a4317/bencode2-0.0.5.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/18/7c/b5eb7482c9a74cedecd3da9467a345b85715ee9f5eebdeedbba56b87bca8/THISDLChatBot-2.0.4.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [sigr]: Downloading https://files.pythonhosted.org/packages/23/e6/5eb092cbfcced7c1256dbc9377d82b554a98b5691f350a21fe733d836ee5/sigr-0.0.8.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [jgtpy]: Downloading https://files.pythonhosted.org/packages/c1/94/79cdcc286ed1c9578cc3d3b4b47d9da3326a5fdfa94ebc3ad80acf17eafa/jgtpy-0.4.9.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/25/1c/abab79113ec6a55820163d31ed61e2a6028f4d467df2e7ddb191a4756ca7/bencode2-0.0.6.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [jgtpy]: executing diffoscope
+[2024-04-14 13:10:12] INFO root fetch - processPackages [jgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jgtpy-0.4.8.tar.gz tmp/jgtpy-0.4.9.tar.gz --markdown 20240414/j/jgtpy/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-14 13:10:12] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-14 13:10:12] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.5.tar.gz tmp/bencode2-0.0.6.tar.gz --markdown 20240414/b/bencode2/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-14 13:10:12] INFO root fetch - processPackages [THISDLChatBot]: Downloading https://files.pythonhosted.org/packages/6b/3b/3b9e417f91393b6d3d545fd4efac582ff9da33d80489be85afc75ca74cbd/THISDLChatBot-2.0.5.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [sigr]: Downloading https://files.pythonhosted.org/packages/f9/5b/a1a4b78eaa48f163b5fa84222db2f441853d1c5866d314567517c0aeb8d5/sigr-0.0.9.tar.gz
+[2024-04-14 13:10:12] INFO root fetch - processPackages [THISDLChatBot]: executing diffoscope
+[2024-04-14 13:10:12] INFO root fetch - processPackages [THISDLChatBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/THISDLChatBot-2.0.4.tar.gz tmp/THISDLChatBot-2.0.5.tar.gz --markdown 20240414/T/THISDLChatBot/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-14 13:10:13] INFO root fetch - processPackages [sigr]: executing diffoscope
+[2024-04-14 13:10:13] INFO root fetch - processPackages [sigr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigr-0.0.8.tar.gz tmp/sigr-0.0.9.tar.gz --markdown 20240414/s/sigr/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 13:10:13] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.4.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - processPackages [THISDLChatBot]: Remove: archive file [/home/abi/fetcher/tmp/THISDLChatBot-2.0.5.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - main [MainThread]: End processing [THISDLChatBot]: success
+[2024-04-14 13:10:13] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.8.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - processPackages [jgtpy]: Remove: archive file [/home/abi/fetcher/tmp/jgtpy-0.4.9.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - main [MainThread]: End processing [jgtpy]: success
+[2024-04-14 13:10:13] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.5.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.6.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-14 13:10:13] INFO root fetch - processPackages [sigr]: Remove: archive file [/home/abi/fetcher/tmp/sigr-0.0.8.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - processPackages [sigr]: Remove: archive file [/home/abi/fetcher/tmp/sigr-0.0.9.tar.gz]
+[2024-04-14 13:10:13] INFO root fetch - main [MainThread]: End processing [sigr]: success
+[2024-04-14 13:10:13] INFO root fetch - main [MainThread]: Store serial: [22758423]
