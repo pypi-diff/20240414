@@ -16212,3 +16212,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 23:40:00] INFO root fetch - processPackages [smallneuron]: Remove: archive file [/home/abi/fetcher/tmp/smallneuron-1.0.0.tar.gz]
 [2024-04-14 23:40:00] INFO root fetch - main [MainThread]: End processing [smallneuron]: success
 [2024-04-14 23:40:00] INFO root fetch - main [MainThread]: Store serial: [22762646]
+[2024-04-14 23:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762646]
+[2024-04-14 23:42:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 23:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watson-poetry
+[2024-04-14 23:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git-machete
+[2024-04-14 23:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyneevo
+[2024-04-14 23:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SecLoadSDK
+[2024-04-14 23:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apstools
+[2024-04-14 23:42:09] INFO root fetch - processPackages [SecLoadSDK]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-14 23:42:09] INFO root fetch - processPackages [apstools]: New version: [1.6.9rc1] Old Version: [1.6.9]
+[2024-04-14 23:42:09] INFO root fetch - processPackages [SecLoadSDK]: Downloading https://files.pythonhosted.org/packages/92/23/33b9e81e66a5793c2f5df49c3f25668eefbaef8707c38331722d9b803d87/SecLoadSDK-0.0.2.tar.gz
+[2024-04-14 23:42:09] WARNING root fetch - processPackages [watson-poetry]: Skipping, unable to determine old version
+[2024-04-14 23:42:09] INFO root fetch - main [MainThread]: End processing [watson-poetry] error
+[2024-04-14 23:42:09] INFO root fetch - processPackages [pyneevo]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-14 23:42:09] INFO root fetch - processPackages [apstools]: Downloading https://files.pythonhosted.org/packages/bb/e8/af2920d3a7fedda68a11081779a3935b639643858f29f2c5af211c0c8f6f/apstools-1.6.9.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [git-machete]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-04-14 23:42:09] INFO root fetch - processPackages [pyneevo]: Downloading https://files.pythonhosted.org/packages/6d/8e/cdc4e3ba4e415ff144aab321fe2e5eb232266dd1400a6dcc8b7b86a2f61a/pyneevo-1.0.4.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [SecLoadSDK]: Downloading https://files.pythonhosted.org/packages/0e/72/02ac09e7f6eee1036ec34b45aa5f84eac3b62bb5586c6013ccc5d807ce3c/secloadsdk-0.0.4.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/00/41/ea9df2709ca5d1f69fef14e74d8c77f7c8575eeb2ba426a3d3ff4691095c/git-machete-3.9.0.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [apstools]: Downloading https://files.pythonhosted.org/packages/d4/ce/7740563ebafc7c2c86fb4241495a359ea6bc1dfda4e7084e39092b35f8ce/apstools-1.6.9rc1.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [SecLoadSDK]: executing diffoscope
+[2024-04-14 23:42:09] INFO root fetch - processPackages [SecLoadSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SecLoadSDK-0.0.2.tar.gz tmp/secloadsdk-0.0.4.tar.gz --markdown 20240414/S/SecLoadSDK/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-14 23:42:09] INFO root fetch - processPackages [apstools]: executing diffoscope
+[2024-04-14 23:42:09] INFO root fetch - processPackages [apstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apstools-1.6.9.tar.gz tmp/apstools-1.6.9rc1.tar.gz --markdown 20240414/a/apstools/1.6.9-1.6.9rc1/README.md --exclude *.pyd
+[2024-04-14 23:42:09] INFO root fetch - processPackages [pyneevo]: Downloading https://files.pythonhosted.org/packages/91/1a/52830875a251a74f5d9fbcabd9224825c2586bba63a7d101deb17f05f38e/pyneevo-1.0.5.tar.gz
+[2024-04-14 23:42:09] INFO root fetch - processPackages [pyneevo]: executing diffoscope
+[2024-04-14 23:42:09] INFO root fetch - processPackages [pyneevo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyneevo-1.0.4.tar.gz tmp/pyneevo-1.0.5.tar.gz --markdown 20240414/p/pyneevo/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-14 23:42:10] INFO root fetch - processPackages [SecLoadSDK]: Remove: archive file [/home/abi/fetcher/tmp/SecLoadSDK-0.0.2.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - processPackages [SecLoadSDK]: Remove: archive file [/home/abi/fetcher/tmp/secloadsdk-0.0.4.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - main [MainThread]: End processing [SecLoadSDK]: success
+[2024-04-14 23:42:10] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/c7/58/a2beb1e31a481442ac88f436b83c2277a5a58484492ca445e76b0c229e1f/git-machete-3.9.1.tar.gz
+[2024-04-14 23:42:10] INFO root fetch - processPackages [git-machete]: executing diffoscope
+[2024-04-14 23:42:10] INFO root fetch - processPackages [git-machete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-machete-3.9.0.tar.gz tmp/git-machete-3.9.1.tar.gz --markdown 20240414/g/git-machete/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-04-14 23:42:10] INFO root fetch - processPackages [pyneevo]: Remove: archive file [/home/abi/fetcher/tmp/pyneevo-1.0.4.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - processPackages [pyneevo]: Remove: archive file [/home/abi/fetcher/tmp/pyneevo-1.0.5.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - main [MainThread]: End processing [pyneevo]: success
+[2024-04-14 23:42:10] INFO root fetch - processPackages [apstools]: Remove: archive file [/home/abi/fetcher/tmp/apstools-1.6.9.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - processPackages [apstools]: Remove: archive file [/home/abi/fetcher/tmp/apstools-1.6.9rc1.tar.gz]
+[2024-04-14 23:42:10] INFO root fetch - main [MainThread]: End processing [apstools]: success
+[2024-04-14 23:42:11] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.0.tar.gz]
+[2024-04-14 23:42:11] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.1.tar.gz]
+[2024-04-14 23:42:11] INFO root fetch - main [MainThread]: End processing [git-machete]: success
+[2024-04-14 23:42:11] INFO root fetch - main [MainThread]: Store serial: [22762664]
