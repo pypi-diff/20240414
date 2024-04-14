@@ -15432,3 +15432,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:38:36] INFO root fetch - processPackages [airton_ac]: Remove: archive file [/home/abi/fetcher/tmp/airton_ac-2.2.1.tar.gz]
 [2024-04-14 22:38:36] INFO root fetch - main [MainThread]: End processing [airton_ac]: success
 [2024-04-14 22:38:36] INFO root fetch - main [MainThread]: Store serial: [22762330]
+[2024-04-14 22:40:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762330]
+[2024-04-14 22:40:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 22:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: local_tuya_ceiling_fan
+[2024-04-14 22:40:45] INFO root fetch - processPackages [local_tuya_ceiling_fan]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-14 22:40:45] INFO root fetch - processPackages [local_tuya_ceiling_fan]: Downloading https://files.pythonhosted.org/packages/27/7d/0f5d6ce01571cf5df0948951ba13da1772e4de4900c008612041cd87297d/local_tuya_ceiling_fan-1.5.0.tar.gz
+[2024-04-14 22:40:45] INFO root fetch - processPackages [local_tuya_ceiling_fan]: Downloading https://files.pythonhosted.org/packages/94/7c/3614ae8adee277ceb78347e41ab4ca35982ef8a57578ee893752ce6307a3/local_tuya_ceiling_fan-1.5.1.tar.gz
+[2024-04-14 22:40:45] INFO root fetch - processPackages [local_tuya_ceiling_fan]: executing diffoscope
+[2024-04-14 22:40:45] INFO root fetch - processPackages [local_tuya_ceiling_fan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_tuya_ceiling_fan-1.5.0.tar.gz tmp/local_tuya_ceiling_fan-1.5.1.tar.gz --markdown 20240414/l/local_tuya_ceiling_fan/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-04-14 22:40:46] INFO root fetch - processPackages [local_tuya_ceiling_fan]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_ceiling_fan-1.5.0.tar.gz]
+[2024-04-14 22:40:46] INFO root fetch - processPackages [local_tuya_ceiling_fan]: Remove: archive file [/home/abi/fetcher/tmp/local_tuya_ceiling_fan-1.5.1.tar.gz]
+[2024-04-14 22:40:46] INFO root fetch - main [MainThread]: End processing [local_tuya_ceiling_fan]: success
+[2024-04-14 22:40:46] INFO root fetch - main [MainThread]: Store serial: [22762333]
