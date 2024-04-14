@@ -2206,3 +2206,15 @@
 [2024-04-14 03:21:18] INFO root fetch - processPackages [aiogram-newsletter]: Remove: archive file [/home/abi/fetcher/tmp/aiogram-newsletter-0.0.9.tar.gz]
 [2024-04-14 03:21:18] INFO root fetch - main [MainThread]: End processing [aiogram-newsletter]: success
 [2024-04-14 03:21:18] INFO root fetch - main [MainThread]: Store serial: [22756022]
+[2024-04-14 03:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22756022]
+[2024-04-14 03:23:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 03:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ABSQL
+[2024-04-14 03:23:27] INFO root fetch - processPackages [ABSQL]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-14 03:23:27] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/de/e9/0aa3b025e1b311d130cd698abee20b03079c97792bc4e8c074db2ad9471f/ABSQL-0.6.0.tar.gz
+[2024-04-14 03:23:28] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/e3/8c/babb695bd7e268d05271fd39a088d3976c83e90353acf2e092b765ffcc60/absql-0.6.1.tar.gz
+[2024-04-14 03:23:28] INFO root fetch - processPackages [ABSQL]: executing diffoscope
+[2024-04-14 03:23:28] INFO root fetch - processPackages [ABSQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ABSQL-0.6.0.tar.gz tmp/absql-0.6.1.tar.gz --markdown 20240414/A/ABSQL/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-14 03:23:29] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/ABSQL-0.6.0.tar.gz]
+[2024-04-14 03:23:29] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/absql-0.6.1.tar.gz]
+[2024-04-14 03:23:29] INFO root fetch - main [MainThread]: End processing [ABSQL]: success
+[2024-04-14 03:23:29] INFO root fetch - main [MainThread]: Store serial: [22756025]
