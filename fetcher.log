@@ -6563,3 +6563,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 11:57:25] INFO root fetch - processPackages [claudetools]: Remove: archive file [/home/abi/fetcher/tmp/claudetools-0.9.0.tar.gz]
 [2024-04-14 11:57:25] INFO root fetch - main [MainThread]: End processing [claudetools]: success
 [2024-04-14 11:57:25] INFO root fetch - main [MainThread]: Store serial: [22757813]
+[2024-04-14 11:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757813]
+[2024-04-14 11:59:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-14 11:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mad-whatsapp
+[2024-04-14 11:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybts
+[2024-04-14 11:59:37] INFO root fetch - processPackages [mad-whatsapp]: New version: [0.6] Old Version: [0.5]
+[2024-04-14 11:59:37] INFO root fetch - processPackages [pybts]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-14 11:59:37] INFO root fetch - processPackages [mad-whatsapp]: Downloading https://files.pythonhosted.org/packages/26/a3/02d1d57a4cfff2da57b03c0d9d205d0d16215edfbf44170435d98f9cd8c9/mad_whatsapp-0.5.tar.gz
+[2024-04-14 11:59:37] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/f2/7b/b49537c67a33ae073a1917e4a79163be3bde25d1e9526ab1eea00a17b712/pybts-1.6.0.tar.gz
+[2024-04-14 11:59:37] INFO root fetch - processPackages [mad-whatsapp]: Downloading https://files.pythonhosted.org/packages/26/99/b86dd572387a351d104e77e8138af9049e1bda67701ea51925fe76cbddb4/mad_whatsapp-0.6.tar.gz
+[2024-04-14 11:59:37] INFO root fetch - processPackages [mad-whatsapp]: executing diffoscope
+[2024-04-14 11:59:37] INFO root fetch - processPackages [mad-whatsapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mad_whatsapp-0.5.tar.gz tmp/mad_whatsapp-0.6.tar.gz --markdown 20240414/m/mad-whatsapp/0.5-0.6/README.md --exclude *.pyd
+[2024-04-14 11:59:37] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/95/2c/621bc7fafb64d44aac5c71a9615a8ff50a854c875fd071775f2e735de23a/pybts-1.6.1.tar.gz
+[2024-04-14 11:59:38] INFO root fetch - processPackages [pybts]: executing diffoscope
+[2024-04-14 11:59:38] INFO root fetch - processPackages [pybts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybts-1.6.0.tar.gz tmp/pybts-1.6.1.tar.gz --markdown 20240414/p/pybts/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-14 11:59:38] INFO root fetch - processPackages [mad-whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/mad_whatsapp-0.5.tar.gz]
+[2024-04-14 11:59:38] INFO root fetch - processPackages [mad-whatsapp]: Remove: archive file [/home/abi/fetcher/tmp/mad_whatsapp-0.6.tar.gz]
+[2024-04-14 11:59:38] INFO root fetch - main [MainThread]: End processing [mad-whatsapp]: success
+[2024-04-14 11:59:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.0.tar.gz]
+[2024-04-14 11:59:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.1.tar.gz]
+[2024-04-14 11:59:38] INFO root fetch - main [MainThread]: End processing [pybts]: success
+[2024-04-14 11:59:38] INFO root fetch - main [MainThread]: Store serial: [22757824]
