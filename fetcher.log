@@ -6764,3 +6764,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 12:08:31] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.6.tar.gz]
 [2024-04-14 12:08:31] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-14 12:08:31] INFO root fetch - main [MainThread]: Store serial: [22757886]
+[2024-04-14 12:10:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757886]
+[2024-04-14 12:10:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 12:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlrun
+[2024-04-14 12:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YahooProject
+[2024-04-14 12:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tulona
+[2024-04-14 12:10:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-keras-nightly
+[2024-04-14 12:10:43] INFO root fetch - processPackages [tulona]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-14 12:10:43] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024041309] Old Version: [2.17.0.dev2024041209]
+[2024-04-14 12:10:43] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/9a/a7/c7f8b435b4c11461854c0289b7207906366bb9c46851c5b661c11bbe61b3/tulona-0.5.1.tar.gz
+[2024-04-14 12:10:43] INFO root fetch - processPackages [YahooProject]: New version: [1.1] Old Version: [1.0]
+[2024-04-14 12:10:43] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/41/26/f04234d1531bd28f0b376a16b52892aac1c03d780a10f3d06a8eb434c3eb/tf_keras-nightly-2.17.0.dev2024041209.tar.gz
+[2024-04-14 12:10:43] INFO root fetch - processPackages [mlrun]: New version: [1.7.0rc9] Old Version: [1.7.0rc8]
+[2024-04-14 12:10:43] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/3e/de/bbc90293e3757cb8179dc320aa3df99845445ecfbc16972510c5e80415c3/mlrun-1.7.0rc8-py3-none-any.whl
+[2024-04-14 12:10:43] INFO root fetch - processPackages [YahooProject]: Downloading https://files.pythonhosted.org/packages/a0/01/1382e49b7d4afea5d0e4e6308609017af210ab23e67ef3cf221283faae60/yahooproject-1.0.tar.gz
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/7d/65/2176fc13838bececaaf004eb2ce56a053391f0affab40afaf2f6b5d956f8/tulona-0.5.2.tar.gz
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/b9/ae/c36be742fd21555f110b57d41e9dacab02693da8bb7ae7d8a0f372b9df94/tf_keras-nightly-2.17.0.dev2024041309.tar.gz
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.5.1.tar.gz tmp/tulona-0.5.2.tar.gz --markdown 20240414/t/tulona/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-14 12:10:44] INFO root fetch - processPackages [YahooProject]: Downloading https://files.pythonhosted.org/packages/95/d5/29c2913b30e4cb908dfd38cf92d5d6cec3de94fbd1d77167347e09edc51a/yahooproject-1.1.tar.gz
+[2024-04-14 12:10:44] INFO root fetch - processPackages [YahooProject]: executing diffoscope
+[2024-04-14 12:10:44] INFO root fetch - processPackages [YahooProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yahooproject-1.0.tar.gz tmp/yahooproject-1.1.tar.gz --markdown 20240414/Y/YahooProject/1.0-1.1/README.md --exclude *.pyd
+[2024-04-14 12:10:44] INFO root fetch - processPackages [mlrun]: Downloading https://files.pythonhosted.org/packages/05/f2/d80ba0edb70be9434bf5fb1badcfad0aef24823e8363d78fc935429023ad/mlrun-1.7.0rc9-py3-none-any.whl
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-14 12:10:44] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras-nightly-2.17.0.dev2024041209.tar.gz tmp/tf_keras-nightly-2.17.0.dev2024041309.tar.gz --markdown 20240414/t/tf-keras-nightly/2.17.0.dev2024041209-2.17.0.dev2024041309/README.md --exclude *.pyd
+[2024-04-14 12:10:44] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2024-04-14 12:10:44] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip --markdown 20240414/m/mlrun/1.7.0rc8-1.7.0rc9/README.md --exclude *.pyd
+[2024-04-14 12:10:44] INFO root fetch - processPackages [YahooProject]: Remove: archive file [/home/abi/fetcher/tmp/yahooproject-1.0.tar.gz]
+[2024-04-14 12:10:44] INFO root fetch - processPackages [YahooProject]: Remove: archive file [/home/abi/fetcher/tmp/yahooproject-1.1.tar.gz]
+[2024-04-14 12:10:44] INFO root fetch - main [MainThread]: End processing [YahooProject]: success
+[2024-04-14 12:10:45] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.1.tar.gz]
+[2024-04-14 12:10:45] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.5.2.tar.gz]
+[2024-04-14 12:10:45] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-14 12:10:46] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc8-py3-none-any.whl.zip]
+[2024-04-14 12:10:46] INFO root fetch - processPackages [mlrun]: Remove: archive file [/home/abi/fetcher/tmp/mlrun-1.7.0rc9-py3-none-any.whl.zip]
+[2024-04-14 12:10:46] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2024-04-14 12:10:46] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024041209.tar.gz]
+[2024-04-14 12:10:46] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024041309.tar.gz]
+[2024-04-14 12:10:46] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-14 12:10:46] INFO root fetch - main [MainThread]: Store serial: [22757898]
