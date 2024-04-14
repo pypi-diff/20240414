@@ -14867,3 +14867,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 22:05:08] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/mopidy_sevensegmentdisplay-0.7.8.tar.gz]
 [2024-04-14 22:05:08] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
 [2024-04-14 22:05:08] INFO root fetch - main [MainThread]: Store serial: [22762064]
+[2024-04-14 22:07:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22762064]
+[2024-04-14 22:07:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 22:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycid-dev
+[2024-04-14 22:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libreppc
+[2024-04-14 22:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jklib
+[2024-04-14 22:07:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eirStru
+[2024-04-14 22:07:16] INFO root fetch - processPackages [pycid-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-14 22:07:16] INFO root fetch - processPackages [libreppc]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-14 22:07:16] INFO root fetch - processPackages [jklib]: New version: [5.1.0] Old Version: [5.0.2]
+[2024-04-14 22:07:16] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/d5/22/b7c070a92733e6018be94918e4720ff227ed8218e3b17eac3ef1666cc3c6/pycid-dev-0.0.8.tar.gz
+[2024-04-14 22:07:16] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/74/a6/368b2fa19394c552190d9877c4b1ec62833f67a5bc3fa945368286d0eb56/libreppc-0.1.3.tar.gz
+[2024-04-14 22:07:16] INFO root fetch - processPackages [eirStru]: New version: [0.2.91] Old Version: [0.2.90]
+[2024-04-14 22:07:17] INFO root fetch - processPackages [jklib]: Downloading https://files.pythonhosted.org/packages/cd/23/6f93aa3743a0994f7c099ba7ece48777feec7961865fa12e9f37b848ae02/jklib-5.0.2.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/30/56/4fb156aed85eb11a3ee720a2844b34b174787e7e490858dee46e301b19b4/pycid-dev-0.0.9.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/89/3e/4ac49a3fee790c4ae2a0f2d8d474c7674a11413a288d515abf806ecb0612/eirStru-0.2.90.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [pycid-dev]: executing diffoscope
+[2024-04-14 22:07:17] INFO root fetch - processPackages [pycid-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycid-dev-0.0.8.tar.gz tmp/pycid-dev-0.0.9.tar.gz --markdown 20240414/p/pycid-dev/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-14 22:07:17] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/4d/51/35c7402994b21a824e499f59ba0db27fe8dd8a8f1f74e33e2676d53e649a/libreppc-0.1.4.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [jklib]: Downloading https://files.pythonhosted.org/packages/d4/58/1e95f7e7fe90e75ba3640a66beb87b23477e11be3d4f2d39d65ee2c0b072/jklib-5.1.0.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [jklib]: executing diffoscope
+[2024-04-14 22:07:17] INFO root fetch - processPackages [jklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jklib-5.0.2.tar.gz tmp/jklib-5.1.0.tar.gz --markdown 20240414/j/jklib/5.0.2-5.1.0/README.md --exclude *.pyd
+[2024-04-14 22:07:17] INFO root fetch - processPackages [libreppc]: executing diffoscope
+[2024-04-14 22:07:17] INFO root fetch - processPackages [libreppc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreppc-0.1.3.tar.gz tmp/libreppc-0.1.4.tar.gz --markdown 20240414/l/libreppc/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-14 22:07:17] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/86/db/ddb5c7fd2e0bb8edb17a7b2cc3dcdfe8e5cc10ca2d9d068122c1acd3c74f/eirStru-0.2.91.tar.gz
+[2024-04-14 22:07:17] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-14 22:07:17] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.2.90.tar.gz tmp/eirStru-0.2.91.tar.gz --markdown 20240414/e/eirStru/0.2.90-0.2.91/README.md --exclude *.pyd
+[2024-04-14 22:07:17] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.8.tar.gz]
+[2024-04-14 22:07:17] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.9.tar.gz]
+[2024-04-14 22:07:17] INFO root fetch - main [MainThread]: End processing [pycid-dev]: success
+[2024-04-14 22:07:18] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.3.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.1.4.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - main [MainThread]: End processing [libreppc]: success
+[2024-04-14 22:07:18] INFO root fetch - processPackages [jklib]: Remove: archive file [/home/abi/fetcher/tmp/jklib-5.0.2.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - processPackages [jklib]: Remove: archive file [/home/abi/fetcher/tmp/jklib-5.1.0.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - main [MainThread]: End processing [jklib]: success
+[2024-04-14 22:07:18] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.2.90.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.2.91.tar.gz]
+[2024-04-14 22:07:18] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-14 22:07:18] INFO root fetch - main [MainThread]: Store serial: [22762076]
