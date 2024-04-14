@@ -8268,3 +8268,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:49:57] INFO root fetch - processPackages [slcl1butils]: Remove: archive file [/home/abi/fetcher/tmp/slcl1butils-2024.4.14.tar.gz]
 [2024-04-14 13:49:57] INFO root fetch - main [MainThread]: End processing [slcl1butils]: success
 [2024-04-14 13:49:57] INFO root fetch - main [MainThread]: Store serial: [22758627]
+[2024-04-14 13:52:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758627]
+[2024-04-14 13:52:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 13:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Errome
+[2024-04-14 13:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmalglib
+[2024-04-14 13:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deeplc
+[2024-04-14 13:52:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tendril-connector-grafana
+[2024-04-14 13:52:12] INFO root fetch - processPackages [deeplc]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-14 13:52:12] INFO root fetch - processPackages [tendril-connector-grafana]: New version: [0.2.3] Old Version: [0.1.1]
+[2024-04-14 13:52:12] INFO root fetch - processPackages [Errome]: New version: [0.3] Old Version: [0.2.2]
+[2024-04-14 13:52:12] INFO root fetch - processPackages [gmalglib]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-14 13:52:12] INFO root fetch - processPackages [deeplc]: Downloading https://files.pythonhosted.org/packages/c2/f5/fb0c474a3b8c0d08aadd17c054603a1ec5c56914331740631e9621f11d77/deeplc-2.2.8.tar.gz
+[2024-04-14 13:52:12] WARNING root fetch - processPackages [deeplc]: Skipping package: exceeds size limit 32146856>=10485760
+[2024-04-14 13:52:12] INFO root fetch - main [MainThread]: End processing [deeplc] error
+[2024-04-14 13:52:12] INFO root fetch - processPackages [Errome]: Downloading https://files.pythonhosted.org/packages/65/f5/dab0c4d251e698d8ba45217156a5879c945d6ea804470a583999061bc84b/Errome-0.2.2.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [tendril-connector-grafana]: Downloading https://files.pythonhosted.org/packages/25/73/dba01f0d521c525da34ab10e618771280ca17b6bd945ea9eb6c6c5876737/tendril-connector-grafana-0.1.1.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/d0/56/ab6d0b135c1f04e803a13b6e8a03823eb985f59e75af2e5a4ed3c5734486/gmalglib-0.5.1.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [Errome]: Downloading https://files.pythonhosted.org/packages/25/0b/5843444ccf3b6cf151cad6f30e32c8706574e3e1abec55e20cca4cb91706/Errome-0.3.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [tendril-connector-grafana]: Downloading https://files.pythonhosted.org/packages/a0/3c/c0bdb773822482fc2f8dcc3b0e4234a64a772e63eaca57df659fde9bacdd/tendril_connector_grafana-0.2.3.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [gmalglib]: Downloading https://files.pythonhosted.org/packages/d1/ef/1d05aa2ab1509a269abf8ef905293076666fd19509931cb21d6137adaa59/gmalglib-0.5.2.tar.gz
+[2024-04-14 13:52:12] INFO root fetch - processPackages [Errome]: executing diffoscope
+[2024-04-14 13:52:12] INFO root fetch - processPackages [Errome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Errome-0.2.2.tar.gz tmp/Errome-0.3.tar.gz --markdown 20240414/E/Errome/0.2.2-0.3/README.md --exclude *.pyd
+[2024-04-14 13:52:12] INFO root fetch - processPackages [gmalglib]: executing diffoscope
+[2024-04-14 13:52:12] INFO root fetch - processPackages [gmalglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmalglib-0.5.1.tar.gz tmp/gmalglib-0.5.2.tar.gz --markdown 20240414/g/gmalglib/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-14 13:52:12] INFO root fetch - processPackages [tendril-connector-grafana]: executing diffoscope
+[2024-04-14 13:52:12] INFO root fetch - processPackages [tendril-connector-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-connector-grafana-0.1.1.tar.gz tmp/tendril_connector_grafana-0.2.3.tar.gz --markdown 20240414/t/tendril-connector-grafana/0.1.1-0.2.3/README.md --exclude *.pyd
+[2024-04-14 13:52:13] INFO root fetch - processPackages [Errome]: Remove: archive file [/home/abi/fetcher/tmp/Errome-0.2.2.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - processPackages [Errome]: Remove: archive file [/home/abi/fetcher/tmp/Errome-0.3.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - main [MainThread]: End processing [Errome]: success
+[2024-04-14 13:52:13] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.5.1.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - processPackages [gmalglib]: Remove: archive file [/home/abi/fetcher/tmp/gmalglib-0.5.2.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - main [MainThread]: End processing [gmalglib]: success
+[2024-04-14 13:52:13] INFO root fetch - processPackages [tendril-connector-grafana]: Remove: archive file [/home/abi/fetcher/tmp/tendril-connector-grafana-0.1.1.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - processPackages [tendril-connector-grafana]: Remove: archive file [/home/abi/fetcher/tmp/tendril_connector_grafana-0.2.3.tar.gz]
+[2024-04-14 13:52:13] INFO root fetch - main [MainThread]: End processing [tendril-connector-grafana]: success
+[2024-04-14 13:52:13] INFO root fetch - main [MainThread]: Store serial: [22758647]
