@@ -1742,3 +1742,48 @@
 [2024-04-14 02:32:07] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
 [2024-04-14 02:32:07] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
 [2024-04-14 02:32:07] INFO root fetch - main [MainThread]: Store serial: [22755833]
+[2024-04-14 02:34:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22755833]
+[2024-04-14 02:34:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Anydoor
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensorkrowch
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-chikari-economy
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: invest-guard
+[2024-04-14 02:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: supabase
+[2024-04-14 02:34:16] WARNING root fetch - processPackages [Anydoor]: Skipping, unable to determine old version
+[2024-04-14 02:34:16] INFO root fetch - main [MainThread]: End processing [Anydoor] error
+[2024-04-14 02:34:16] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 02:34:16] INFO root fetch - processPackages [tensorkrowch]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-14 02:34:16] INFO root fetch - processPackages [supabase]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-04-14 02:34:16] WARNING root fetch - processPackages [invest-guard]: Skipping, unable to determine old version
+[2024-04-14 02:34:16] INFO root fetch - main [MainThread]: End processing [invest-guard] error
+[2024-04-14 02:34:16] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240414] Old Version: [0.1.5.dev20240413]
+[2024-04-14 02:34:16] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/a1/23/48c8f222688479ff169ac4682695b02d4675abd186649efa8d817b222818/nonebot_plugin_chikari_economy-0.0.6.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [supabase]: Downloading https://files.pythonhosted.org/packages/c4/87/e540771c72869a16e69233ce9a0471aaa4a066da8a80652869cedfbbe601/supabase-2.4.1.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [tensorkrowch]: Downloading https://files.pythonhosted.org/packages/b6/5e/b16d4cbb8c7d8f3e38731b9d2820cc8894f01a8cb6752ae25a7881acce1b/tensorkrowch-1.0.1.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/71/0f/6619a997eaa99adf72c0a353649ba6df72ab4e7fbf470f8cdf12e3ebd4ad/aeppl-nightly-0.1.5.dev20240413.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/9e/18/bda29cbbb23bfce72be00b83bd5157fbe2fb3f39f2eadd208de4e5661361/nonebot_plugin_chikari_economy-0.0.7.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [supabase]: Downloading https://files.pythonhosted.org/packages/1e/1b/91800273ea68ad17880d838c58bd8251dcb38fd1d82b6b07dae1a3f1cb35/supabase-2.4.2.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/b9/31/49034ab64400410124fa078013bb8f140bb3971d1206b7562b372b872631/aeppl_nightly-0.1.5.dev20240414.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [tensorkrowch]: Downloading https://files.pythonhosted.org/packages/16/2c/e6adc8a0a43637f1ab09aa9d7947939b62cfa01436ff7627f4beb2bc4bc6/tensorkrowch-1.1.0.tar.gz
+[2024-04-14 02:34:16] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: executing diffoscope
+[2024-04-14 02:34:16] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chikari_economy-0.0.6.tar.gz tmp/nonebot_plugin_chikari_economy-0.0.7.tar.gz --markdown 20240414/n/nonebot-plugin-chikari-economy/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 02:34:16] INFO root fetch - processPackages [supabase]: executing diffoscope
+[2024-04-14 02:34:16] INFO root fetch - processPackages [supabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supabase-2.4.1.tar.gz tmp/supabase-2.4.2.tar.gz --markdown 20240414/s/supabase/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-04-14 02:34:16] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-14 02:34:16] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.5.dev20240413.tar.gz tmp/aeppl_nightly-0.1.5.dev20240414.tar.gz --markdown 20240414/a/aeppl-nightly/0.1.5.dev20240413-0.1.5.dev20240414/README.md --exclude *.pyd
+[2024-04-14 02:34:16] INFO root fetch - processPackages [tensorkrowch]: executing diffoscope
+[2024-04-14 02:34:16] INFO root fetch - processPackages [tensorkrowch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorkrowch-1.0.1.tar.gz tmp/tensorkrowch-1.1.0.tar.gz --markdown 20240414/t/tensorkrowch/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-14 02:34:17] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.6.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.7.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chikari-economy]: success
+[2024-04-14 02:34:17] INFO root fetch - processPackages [supabase]: Remove: archive file [/home/abi/fetcher/tmp/supabase-2.4.1.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - processPackages [supabase]: Remove: archive file [/home/abi/fetcher/tmp/supabase-2.4.2.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - main [MainThread]: End processing [supabase]: success
+[2024-04-14 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl-nightly-0.1.5.dev20240413.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240414.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-14 02:34:17] INFO root fetch - processPackages [tensorkrowch]: Remove: archive file [/home/abi/fetcher/tmp/tensorkrowch-1.0.1.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - processPackages [tensorkrowch]: Remove: archive file [/home/abi/fetcher/tmp/tensorkrowch-1.1.0.tar.gz]
+[2024-04-14 02:34:17] INFO root fetch - main [MainThread]: End processing [tensorkrowch]: success
+[2024-04-14 02:34:17] INFO root fetch - main [MainThread]: Store serial: [22755852]
