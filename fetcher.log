@@ -9333,3 +9333,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 15:12:09] INFO root fetch - processPackages [swibots]: Remove: archive file [/home/abi/fetcher/tmp/swibots-1.4.9b0-py3-none-any.whl.zip]
 [2024-04-14 15:12:09] INFO root fetch - main [MainThread]: End processing [swibots]: success
 [2024-04-14 15:12:09] INFO root fetch - main [MainThread]: Store serial: [22759081]
+[2024-04-14 15:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22759081]
+[2024-04-14 15:14:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-14 15:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcrutils
+[2024-04-14 15:14:25] INFO root fetch - processPackages [tcrutils]: New version: [12.0.148] Old Version: [12.0.147]
+[2024-04-14 15:14:25] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/40/19/32faf2b8e642bdd1369f4bab5fbf5237a6cda24e74488368b2776b1c78a2/tcrutils-12.0.147.tar.gz
+[2024-04-14 15:14:25] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/c6/66/87b1108bc7c6fcf1fd5f67aeb09c0515a1e306b1537ac920c600473d3660/tcrutils-12.0.148.tar.gz
+[2024-04-14 15:14:26] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-14 15:14:26] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.147.tar.gz tmp/tcrutils-12.0.148.tar.gz --markdown 20240414/t/tcrutils/12.0.147-12.0.148/README.md --exclude *.pyd
+[2024-04-14 15:14:26] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.147.tar.gz]
+[2024-04-14 15:14:26] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.148.tar.gz]
+[2024-04-14 15:14:26] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-14 15:14:26] INFO root fetch - main [MainThread]: Store serial: [22759085]
