@@ -7626,3 +7626,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 13:03:22] INFO root fetch - processPackages [apidays24pj]: Remove: archive file [/home/abi/fetcher/tmp/apidays24pj-0.0.9.tar.gz]
 [2024-04-14 13:03:22] INFO root fetch - main [MainThread]: End processing [apidays24pj]: success
 [2024-04-14 13:03:22] INFO root fetch - main [MainThread]: Store serial: [22758313]
+[2024-04-14 13:05:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22758313]
+[2024-04-14 13:05:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IbbUploader
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databaseautomationf
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ds20kdb-avt
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ado_wrapper
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybts
+[2024-04-14 13:05:37] INFO root fetch - processPackages [pybts]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ado_wrapper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ds20kdb-avt]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-14 13:05:37] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/f2/7b/b49537c67a33ae073a1917e4a79163be3bde25d1e9526ab1eea00a17b712/pybts-1.6.0.tar.gz
+[2024-04-14 13:05:37] WARNING root fetch - processPackages [databaseautomationf]: Skipping, unable to determine old version
+[2024-04-14 13:05:37] INFO root fetch - main [MainThread]: End processing [databaseautomationf] error
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/6b/47/9fe8b9be976f587520adfbaa4f51c035f7d48f6d1fecb6c92d8a1695fe21/ds20kdb_avt-1.0.7.tar.gz
+[2024-04-14 13:05:37] WARNING root fetch - processPackages [IbbUploader]: Skipping, unable to determine old version
+[2024-04-14 13:05:37] INFO root fetch - main [MainThread]: End processing [IbbUploader] error
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/bf/e2/ecf82704d30c46486a1dd55e1da519b1a1debcd04ed7a5ad19509df6e0e9/ado_wrapper-0.0.6.tar.gz
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ado_wrapper]: Downloading https://files.pythonhosted.org/packages/30/9c/4a5f0a8f9f2737aeeb00ea3a8ef8cd8f3794feeefe27c1c6fe3ce2127b2d/ado_wrapper-0.0.7.tar.gz
+[2024-04-14 13:05:37] INFO root fetch - processPackages [pybts]: Downloading https://files.pythonhosted.org/packages/95/2c/621bc7fafb64d44aac5c71a9615a8ff50a854c875fd071775f2e735de23a/pybts-1.6.1.tar.gz
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ado_wrapper]: executing diffoscope
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ado_wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ado_wrapper-0.0.6.tar.gz tmp/ado_wrapper-0.0.7.tar.gz --markdown 20240414/a/ado_wrapper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ds20kdb-avt]: Downloading https://files.pythonhosted.org/packages/54/fc/d6eb13c3159fe18627b8d7e0c76dfc177e657a384ee411738c5950b0ff8f/ds20kdb_avt-1.0.8.tar.gz
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ds20kdb-avt]: executing diffoscope
+[2024-04-14 13:05:37] INFO root fetch - processPackages [ds20kdb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds20kdb_avt-1.0.7.tar.gz tmp/ds20kdb_avt-1.0.8.tar.gz --markdown 20240414/d/ds20kdb-avt/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-14 13:05:37] INFO root fetch - processPackages [pybts]: executing diffoscope
+[2024-04-14 13:05:37] INFO root fetch - processPackages [pybts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybts-1.6.0.tar.gz tmp/pybts-1.6.1.tar.gz --markdown 20240414/p/pybts/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-14 13:05:38] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.6.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - processPackages [ado_wrapper]: Remove: archive file [/home/abi/fetcher/tmp/ado_wrapper-0.0.7.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - main [MainThread]: End processing [ado_wrapper]: success
+[2024-04-14 13:05:38] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.7.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - processPackages [ds20kdb-avt]: Remove: archive file [/home/abi/fetcher/tmp/ds20kdb_avt-1.0.8.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - main [MainThread]: End processing [ds20kdb-avt]: success
+[2024-04-14 13:05:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.0.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - processPackages [pybts]: Remove: archive file [/home/abi/fetcher/tmp/pybts-1.6.1.tar.gz]
+[2024-04-14 13:05:38] INFO root fetch - main [MainThread]: End processing [pybts]: success
+[2024-04-14 13:05:38] INFO root fetch - main [MainThread]: Store serial: [22758331]
