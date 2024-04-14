@@ -5470,3 +5470,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-14 10:16:07] INFO root fetch - processPackages [wiliot-tools]: Remove: archive file [/home/abi/fetcher/tmp/wiliot-tools-4.5.4.tar.gz]
 [2024-04-14 10:16:07] INFO root fetch - main [MainThread]: End processing [wiliot-tools]: success
 [2024-04-14 10:16:07] INFO root fetch - main [MainThread]: Store serial: [22757265]
+[2024-04-14 10:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22757265]
+[2024-04-14 10:18:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-14 10:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phospho
+[2024-04-14 10:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot_plugin_imagetools
+[2024-04-14 10:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prep-flow
+[2024-04-14 10:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scwrypts
+[2024-04-14 10:18:16] INFO root fetch - processPackages [scwrypts]: New version: [4.2.0] Old Version: [4.1.5]
+[2024-04-14 10:18:16] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/79/ef/196c162e90eecef2a4ff1699b922db9ce101658828e3791d6389234808b0/scwrypts-4.1.5.tar.gz
+[2024-04-14 10:18:16] INFO root fetch - processPackages [prep-flow]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-14 10:18:16] INFO root fetch - processPackages [phospho]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-14 10:18:16] INFO root fetch - processPackages [nonebot_plugin_imagetools]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-14 10:18:17] INFO root fetch - processPackages [phospho]: Downloading https://files.pythonhosted.org/packages/a5/c2/cddfd715eafd3cad1eee4a415d1b8fab3af6c61521607e3faf6154b8492b/phospho-0.3.8.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [scwrypts]: Downloading https://files.pythonhosted.org/packages/90/be/c5d761a8748bd3c5a406e23c054d3a7cfe0a80d236dd43052c81a84030a6/scwrypts-4.2.0.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [nonebot_plugin_imagetools]: Downloading https://files.pythonhosted.org/packages/8f/21/047e7a5a06c5579b8594bc5957d14cfc1c09688e6db19a44afac720c55ce/nonebot_plugin_imagetools-0.4.1.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [prep-flow]: Downloading https://files.pythonhosted.org/packages/a2/d4/4abd9441532c664fd8084a29e1871996065c93c23689495f23bc5e2ba5cf/prep-flow-0.1.0.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [scwrypts]: executing diffoscope
+[2024-04-14 10:18:17] INFO root fetch - processPackages [scwrypts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scwrypts-4.1.5.tar.gz tmp/scwrypts-4.2.0.tar.gz --markdown 20240414/s/scwrypts/4.1.5-4.2.0/README.md --exclude *.pyd
+[2024-04-14 10:18:17] INFO root fetch - processPackages [phospho]: Downloading https://files.pythonhosted.org/packages/dc/6e/2888f8262e52b24df8d71b89041baf1f0798c159bee4cc0c0fa17bcfbc7c/phospho-0.3.9.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [nonebot_plugin_imagetools]: Downloading https://files.pythonhosted.org/packages/b9/ca/cc7ded1badb294c29e558b0f158704e5583dc9ca3878f5bc5bc00ec14df4/nonebot_plugin_imagetools-0.4.2.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [prep-flow]: Downloading https://files.pythonhosted.org/packages/03/30/18806eadd7e7006336ac6efa79dc022939e6d5faf7fde134c5830dfc4e28/prep_flow-0.1.1.tar.gz
+[2024-04-14 10:18:17] INFO root fetch - processPackages [phospho]: executing diffoscope
+[2024-04-14 10:18:17] INFO root fetch - processPackages [phospho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phospho-0.3.8.tar.gz tmp/phospho-0.3.9.tar.gz --markdown 20240414/p/phospho/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-14 10:18:17] INFO root fetch - processPackages [nonebot_plugin_imagetools]: executing diffoscope
+[2024-04-14 10:18:17] INFO root fetch - processPackages [nonebot_plugin_imagetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_imagetools-0.4.1.tar.gz tmp/nonebot_plugin_imagetools-0.4.2.tar.gz --markdown 20240414/n/nonebot_plugin_imagetools/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-14 10:18:17] INFO root fetch - processPackages [prep-flow]: executing diffoscope
+[2024-04-14 10:18:17] INFO root fetch - processPackages [prep-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240414:/home/abi/fetcher/20240414:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prep-flow-0.1.0.tar.gz tmp/prep_flow-0.1.1.tar.gz --markdown 20240414/p/prep-flow/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-14 10:18:17] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.1.5.tar.gz]
+[2024-04-14 10:18:17] INFO root fetch - processPackages [scwrypts]: Remove: archive file [/home/abi/fetcher/tmp/scwrypts-4.2.0.tar.gz]
+[2024-04-14 10:18:17] INFO root fetch - main [MainThread]: End processing [scwrypts]: success
+[2024-04-14 10:18:18] INFO root fetch - processPackages [prep-flow]: Remove: archive file [/home/abi/fetcher/tmp/prep-flow-0.1.0.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - processPackages [prep-flow]: Remove: archive file [/home/abi/fetcher/tmp/prep_flow-0.1.1.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - main [MainThread]: End processing [prep-flow]: success
+[2024-04-14 10:18:18] INFO root fetch - processPackages [nonebot_plugin_imagetools]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_imagetools-0.4.1.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - processPackages [nonebot_plugin_imagetools]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_imagetools-0.4.2.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_imagetools]: success
+[2024-04-14 10:18:18] INFO root fetch - processPackages [phospho]: Remove: archive file [/home/abi/fetcher/tmp/phospho-0.3.8.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - processPackages [phospho]: Remove: archive file [/home/abi/fetcher/tmp/phospho-0.3.9.tar.gz]
+[2024-04-14 10:18:18] INFO root fetch - main [MainThread]: End processing [phospho]: success
+[2024-04-14 10:18:18] INFO root fetch - main [MainThread]: Store serial: [22757277]
